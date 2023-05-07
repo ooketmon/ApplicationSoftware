@@ -58,6 +58,25 @@
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
+            this.pictureBox24 = new System.Windows.Forms.PictureBox();
+            this.pictureBox23 = new System.Windows.Forms.PictureBox();
+            this.pictureBox25 = new System.Windows.Forms.PictureBox();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -74,6 +93,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -332,7 +360,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.label10.Location = new System.Drawing.Point(251, 25);
+            this.label10.Location = new System.Drawing.Point(250, 25);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(84, 20);
             this.label10.TabIndex = 1;
@@ -387,18 +415,228 @@
             // 
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.label14.Location = new System.Drawing.Point(44, 70);
+            this.label14.Location = new System.Drawing.Point(45, 70);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(76, 20);
             this.label14.TabIndex = 1;
             this.label14.Text = "Open Lab";
             this.label14.Click += new System.EventHandler(this.label1_Click);
             // 
+            // pictureBox17
+            // 
+            this.pictureBox17.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBox17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox17.Location = new System.Drawing.Point(446, 282);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(62, 33);
+            this.pictureBox17.TabIndex = 0;
+            this.pictureBox17.TabStop = false;
+            // 
+            // pictureBox19
+            // 
+            this.pictureBox19.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBox19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox19.Location = new System.Drawing.Point(668, 250);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(62, 33);
+            this.pictureBox19.TabIndex = 0;
+            this.pictureBox19.TabStop = false;
+            // 
+            // pictureBox20
+            // 
+            this.pictureBox20.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBox20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox20.Location = new System.Drawing.Point(668, 289);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(62, 33);
+            this.pictureBox20.TabIndex = 0;
+            this.pictureBox20.TabStop = false;
+            // 
+            // pictureBox21
+            // 
+            this.pictureBox21.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBox21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox21.Location = new System.Drawing.Point(757, 250);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(62, 33);
+            this.pictureBox21.TabIndex = 0;
+            this.pictureBox21.TabStop = false;
+            // 
+            // pictureBox22
+            // 
+            this.pictureBox22.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBox22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox22.Location = new System.Drawing.Point(757, 289);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(62, 33);
+            this.pictureBox22.TabIndex = 0;
+            this.pictureBox22.TabStop = false;
+            // 
+            // pictureBox24
+            // 
+            this.pictureBox24.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBox24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox24.Location = new System.Drawing.Point(525, 182);
+            this.pictureBox24.Name = "pictureBox24";
+            this.pictureBox24.Size = new System.Drawing.Size(44, 66);
+            this.pictureBox24.TabIndex = 0;
+            this.pictureBox24.TabStop = false;
+            // 
+            // pictureBox23
+            // 
+            this.pictureBox23.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBox23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox23.Location = new System.Drawing.Point(256, 48);
+            this.pictureBox23.Name = "pictureBox23";
+            this.pictureBox23.Size = new System.Drawing.Size(50, 32);
+            this.pictureBox23.TabIndex = 0;
+            this.pictureBox23.TabStop = false;
+            // 
+            // pictureBox25
+            // 
+            this.pictureBox25.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBox25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox25.Location = new System.Drawing.Point(310, 78);
+            this.pictureBox25.Name = "pictureBox25";
+            this.pictureBox25.Size = new System.Drawing.Size(48, 46);
+            this.pictureBox25.TabIndex = 0;
+            this.pictureBox25.TabStop = false;
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBox18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox18.Location = new System.Drawing.Point(583, 377);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(50, 32);
+            this.pictureBox18.TabIndex = 0;
+            this.pictureBox18.TabStop = false;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.label15.Location = new System.Drawing.Point(1084, 713);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(33, 20);
+            this.label15.TabIndex = 1;
+            this.label15.Text = "206";
+            this.label15.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.label16.Location = new System.Drawing.Point(262, 56);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(39, 20);
+            this.label16.TabIndex = 2;
+            this.label16.Text = "입구";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.label17.Location = new System.Drawing.Point(456, 289);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(39, 20);
+            this.label17.TabIndex = 2;
+            this.label17.Text = "입구";
+            this.label17.Click += new System.EventHandler(this.label16_Click);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.label18.Location = new System.Drawing.Point(588, 384);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(39, 20);
+            this.label18.TabIndex = 2;
+            this.label18.Text = "입구";
+            this.label18.Click += new System.EventHandler(this.label16_Click);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.label19.Location = new System.Drawing.Point(677, 258);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(39, 20);
+            this.label19.TabIndex = 2;
+            this.label19.Text = "입구";
+            this.label19.Click += new System.EventHandler(this.label16_Click);
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.label20.Location = new System.Drawing.Point(677, 298);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(39, 20);
+            this.label20.TabIndex = 2;
+            this.label20.Text = "입구";
+            this.label20.Click += new System.EventHandler(this.label16_Click);
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.label21.Location = new System.Drawing.Point(768, 258);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(39, 20);
+            this.label21.TabIndex = 2;
+            this.label21.Text = "입구";
+            this.label21.Click += new System.EventHandler(this.label16_Click);
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.label22.Location = new System.Drawing.Point(768, 295);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(39, 20);
+            this.label22.TabIndex = 2;
+            this.label22.Text = "입구";
+            this.label22.Click += new System.EventHandler(this.label16_Click);
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.label23.Location = new System.Drawing.Point(526, 216);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(39, 20);
+            this.label23.TabIndex = 2;
+            this.label23.Text = "입구";
+            this.label23.Click += new System.EventHandler(this.label16_Click);
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.label24.Location = new System.Drawing.Point(315, 97);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(39, 20);
+            this.label24.TabIndex = 2;
+            this.label24.Text = "입구";
+            this.label24.Click += new System.EventHandler(this.label16_Click);
+            // 
             // _2ndFloor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label23);
+            this.Controls.Add(this.label22);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label24);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
@@ -413,6 +651,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox18);
+            this.Controls.Add(this.pictureBox25);
+            this.Controls.Add(this.pictureBox23);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox15);
@@ -422,6 +663,12 @@
             this.Controls.Add(this.pictureBox13);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox12);
+            this.Controls.Add(this.pictureBox24);
+            this.Controls.Add(this.pictureBox22);
+            this.Controls.Add(this.pictureBox21);
+            this.Controls.Add(this.pictureBox20);
+            this.Controls.Add(this.pictureBox19);
+            this.Controls.Add(this.pictureBox17);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.pictureBox9);
@@ -448,6 +695,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -485,5 +741,24 @@
         private Label label13;
         private PictureBox pictureBox16;
         private Label label14;
+        private PictureBox pictureBox17;
+        private PictureBox pictureBox19;
+        private PictureBox pictureBox20;
+        private PictureBox pictureBox21;
+        private PictureBox pictureBox22;
+        private PictureBox pictureBox24;
+        private PictureBox pictureBox23;
+        private PictureBox pictureBox25;
+        private PictureBox pictureBox18;
+        private Label label15;
+        private Label label16;
+        private Label label17;
+        private Label label18;
+        private Label label19;
+        private Label label20;
+        private Label label21;
+        private Label label22;
+        private Label label23;
+        private Label label24;
     }
 }
