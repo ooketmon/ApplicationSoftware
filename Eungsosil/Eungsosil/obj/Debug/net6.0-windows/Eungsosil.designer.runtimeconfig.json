@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\Jiwoo\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Jiwoo\\.nuget\\packages"
+      "C:\\Users\\LSH\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\LSH\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

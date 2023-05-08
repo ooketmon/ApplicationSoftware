@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\GitHub\\ApplicationSoftware\\Eungsosil\\Eungsosil\\Eungsosil.csproj": {}
+    "C:\\Users\\LSH\\Desktop\\as_team_project\\Eungsosil\\Eungsosil\\Eungsosil.csproj": {}
   },
   "projects": {
-    "E:\\GitHub\\ApplicationSoftware\\Eungsosil\\Eungsosil\\Eungsosil.csproj": {
+    "C:\\Users\\LSH\\Desktop\\as_team_project\\Eungsosil\\Eungsosil\\Eungsosil.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GitHub\\ApplicationSoftware\\Eungsosil\\Eungsosil\\Eungsosil.csproj",
+        "projectUniqueName": "C:\\Users\\LSH\\Desktop\\as_team_project\\Eungsosil\\Eungsosil\\Eungsosil.csproj",
         "projectName": "Eungsosil",
-        "projectPath": "E:\\GitHub\\ApplicationSoftware\\Eungsosil\\Eungsosil\\Eungsosil.csproj",
-        "packagesPath": "C:\\Users\\Jiwoo\\.nuget\\packages\\",
-        "outputPath": "E:\\GitHub\\ApplicationSoftware\\Eungsosil\\Eungsosil\\obj\\",
+        "projectPath": "C:\\Users\\LSH\\Desktop\\as_team_project\\Eungsosil\\Eungsosil\\Eungsosil.csproj",
+        "packagesPath": "C:\\Users\\LSH\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LSH\\Desktop\\as_team_project\\Eungsosil\\Eungsosil\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jiwoo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LSH\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +39,12 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Microsoft.Web.WebView2": {
+              "target": "Package",
+              "version": "[1.0.1722.45, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -58,7 +64,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
