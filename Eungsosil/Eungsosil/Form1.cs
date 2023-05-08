@@ -30,7 +30,7 @@ namespace Eungsosil
             {
 
                 var res = await web_view.ExecuteScriptAsync("document.getElementsByClassName('tablegw')[2].getElementsByTagName('td')[13].innerText;");
-                res=res.Replace('"', ' ').Trim();
+                res = res.Replace('"', ' ').Trim();
                 try
                 {
                     total_grade = Double.Parse(res);
@@ -68,8 +68,11 @@ namespace Eungsosil
 
                     }
                 }
-
-                textBox1.Text = "√— ∆Ú¡°:" + total_grade.ToString()+"\r\n";
+                await Task.Delay(3000);
+                textBox1.Left = web_view.Left;
+                textBox1.Top = web_view.Top;
+                web_view.Dispose();
+                textBox1.Text = "√— ∆Ú¡°:" + total_grade.ToString() + "\r\n";
                 foreach (var item in course_grade)
                 {
                     textBox1.Text += item.Key + ":" + item.Value + "\r\n===\r\n";
