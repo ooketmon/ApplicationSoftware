@@ -65,7 +65,7 @@
             panel16 = new Panel();
             label17 = new Label();
             character = new Panel();
-            label23 = new Label();
+            char_name = new Label();
             panel17 = new Panel();
             label24 = new Label();
             panel21 = new Panel();
@@ -471,20 +471,20 @@
             // 
             character.BackColor = Color.Silver;
             character.BorderStyle = BorderStyle.FixedSingle;
-            character.Controls.Add(label23);
+            character.Controls.Add(char_name);
             character.Location = new Point(365, 601);
             character.Name = "character";
             character.Size = new Size(64, 62);
             character.TabIndex = 2;
             // 
-            // label23
+            // char_name
             // 
-            label23.BorderStyle = BorderStyle.FixedSingle;
-            label23.Location = new Point(3, 27);
-            label23.Name = "label23";
-            label23.Size = new Size(54, 33);
-            label23.TabIndex = 0;
-            label23.Text = "캐릭터";
+            char_name.BorderStyle = BorderStyle.FixedSingle;
+            char_name.Location = new Point(3, 27);
+            char_name.Name = "char_name";
+            char_name.Size = new Size(54, 33);
+            char_name.TabIndex = 0;
+            char_name.Text = "캐릭터";
             // 
             // panel17
             // 
@@ -826,7 +826,7 @@
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Panel character;
-        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label char_name;
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Panel panel21;

@@ -30,6 +30,7 @@
         {
             web_view = new Microsoft.Web.WebView2.WinForms.WebView2();
             textBox1 = new TextBox();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)web_view).BeginInit();
             SuspendLayout();
             // 
@@ -47,12 +48,23 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(53, 373);
+            textBox1.Location = new Point(64, 373);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.ScrollBars = ScrollBars.Both;
             textBox1.Size = new Size(685, 148);
             textBox1.TabIndex = 1;
+            textBox1.TextChanged += textBox1_TextChanged;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(339, 409);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 2;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Form1
             // 
@@ -61,6 +73,7 @@
             ClientSize = new Size(800, 450);
             Controls.Add(textBox1);
             Controls.Add(web_view);
+            Controls.Add(button1);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
@@ -73,5 +86,6 @@
 
         private Microsoft.Web.WebView2.WinForms.WebView2 web_view;
         private TextBox textBox1;
+        private Button button1;
     }
 }

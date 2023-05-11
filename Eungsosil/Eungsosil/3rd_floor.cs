@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Eungsosil;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,6 +30,7 @@ namespace steal_the_exam
             }
             character.Left = stair_enter.Left - (character.Width);
             character.Top = stair_enter.Top;
+            char_name.Text = Student_INFO.name;
 
         }
         public _3rd_floor(string place)
