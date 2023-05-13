@@ -149,11 +149,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LSH\\Desktop\\as_team_project\\Eungsosil\\Eungsosil\\Eungsosil.csproj",
+      "projectUniqueName": "C:\\Users\\LSH\\Desktop\\project\\Eungsosil\\Eungsosil\\Eungsosil.csproj",
       "projectName": "Eungsosil",
-      "projectPath": "C:\\Users\\LSH\\Desktop\\as_team_project\\Eungsosil\\Eungsosil\\Eungsosil.csproj",
+      "projectPath": "C:\\Users\\LSH\\Desktop\\project\\Eungsosil\\Eungsosil\\Eungsosil.csproj",
       "packagesPath": "C:\\Users\\LSH\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LSH\\Desktop\\as_team_project\\Eungsosil\\Eungsosil\\obj\\",
+      "outputPath": "C:\\Users\\LSH\\Desktop\\project\\Eungsosil\\Eungsosil\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\LSH\\AppData\\Roaming\\NuGet\\NuGet.Config",
