@@ -93,6 +93,9 @@
     <EmbeddedResource Include="Floor4.resx">
       <DependentUpon>Floor4.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Floor8.resx">
+      <DependentUpon>Floor8.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InitMenu.resx">
       <DependentUpon>InitMenu.cs</DependentUpon>
     </EmbeddedResource>
