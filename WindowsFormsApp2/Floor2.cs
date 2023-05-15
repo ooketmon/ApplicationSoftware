@@ -15,6 +15,7 @@ namespace WindowsFormsApp2
         public Floor2()
         {
             InitializeComponent();
+            this.CenterToScreen();
         }
         private void Play_FormClosing(object sender, FormClosingEventArgs e)
         {
