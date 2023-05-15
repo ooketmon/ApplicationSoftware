@@ -73,18 +73,51 @@ namespace WindowsFormsApp2
                         string key = res.Replace('"', ' ').Trim();
                         res = await web_view.ExecuteScriptAsync(String.Format("document.getElementsByClassName('AType')[{0}].getElementsByTagName('tbody')[0].getElementsByTagName('tr')[{1}].getElementsByTagName('td')[5].innerText", i, j));
                         string value = res.Replace('"', ' ').Trim();
-                        if (key == "null" || value == "null" || String.IsNullOrEmpty(key) || String.IsNullOrWhiteSpace(key) || String.IsNullOrEmpty(value) || String.IsNullOrWhiteSpace(value))
+                        if (key == "null" || value == "null" || String.IsNullOrEmpty(key) || String.IsNullOrWhiteSpace(key))
                         {
                             continue;
                         }
 
                         try
                         {
-                            STUDENT_INFO.course_grade.Add(key, value);
+                            double real_value=10;
+                            switch (value)
+                            {
+                                case "F":
+                                    real_value = 0.0;
+                                    break;
+                                case "D0":
+                                    real_value= 1.0;
+                                    break;
+                                case "D+":
+                                    real_value = 1.5;
+                                    break;
+                                case "C":
+                                    real_value = 2.0;
+                                    break;
+                                case "C+":
+                                    real_value = 2.5;
+                                    break;
+                                case "B0":
+                                    real_value = 3.0;
+                                    break;
+                                case "B+":
+                                    real_value = 3.5;
+                                    break;
+                                case "A0":
+                                    real_value = 4.0;
+                                    break;
+                                case "A+":
+                                    real_value = 4.5;
+                                    break;
+                            }
+
+                            
+                            STUDENT_INFO.all_course_grade.Add(key, real_value);
                         }
                         catch (Exception)
                         {
-
+                            //비동기 작업을 대비함. 의미는 딱히 없음.
                         }
 
 
@@ -94,13 +127,30 @@ namespace WindowsFormsApp2
 
                 textBox1.Text += "이름:" + STUDENT_INFO.name + "\r\n";
                 textBox1.Text += "총 평점:" + STUDENT_INFO.total_grade.ToString() + "\r\n";
-                foreach (var item in STUDENT_INFO.course_grade)
+                foreach (var item in STUDENT_INFO.all_course_grade)
                 {
                     textBox1.Text += item.Key + ":" + item.Value + "\r\n===\r\n";
                 }
                 textBox1.Top=web_view.Top;
                 textBox1.Left=web_view.Left;
                 web_view.Hide();
+                if(STUDENT_INFO.name.Length > 0 && STUDENT_INFO.total_grade!=-1 && STUDENT_INFO.all_course_grade.Count>=4) {
+                    web_view.Dispose();
+                    STUDENT_INFO.all_course_grade = STUDENT_INFO.all_course_grade.OrderBy(x => x.Value).ToDictionary(x=>x.Key,x=>x.Value);
+                    var dic_iter=STUDENT_INFO.all_course_grade.GetEnumerator();
+                    for (int i = 0; i < 4; i++)
+                    {
+                        dic_iter.MoveNext();
+                        var item=dic_iter.Current;
+                        STUDENT_INFO.low_grade_courses.Add(item.Key);
+                    }
+                    textBox1.Text += "성적이 낮은 4개 과목:\r\n";
+                    foreach(var item in STUDENT_INFO.low_grade_courses)
+                    {
+                        textBox1.Text += item + "\r\n";
+                    }
+                    
+                }
 
 
             }
