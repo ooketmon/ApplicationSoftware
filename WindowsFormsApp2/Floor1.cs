@@ -43,10 +43,22 @@ namespace WindowsFormsApp2
 
         private void timerGMain_Tick(object sender, EventArgs e) //게임 메인 타이머
         {
-            if (goLeft) player.Left -= playerSpeed;
-            if (goRight) player.Left += playerSpeed;
-            if (goUp) player.Top -= playerSpeed;
-            if (goDown) player.Top += playerSpeed;
+            if (goLeft==true&&player.Left>0) player.Left -= playerSpeed;
+            if (goRight==true&&player.Left<1160) player.Left += playerSpeed;
+            if (goUp==true&&player.Top>0) player.Top -= playerSpeed;
+            if (goDown==true&&player.Top<755) player.Top += playerSpeed;
+
+            foreach(Control x in this.Controls)
+            {
+                if(x is PictureBox && (string)x.Name == "stairs1")
+                {
+                    if(player.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        new Floor2().Show();
+                        this.Hide();
+                    }
+                }
+            }
         }
     }
 }

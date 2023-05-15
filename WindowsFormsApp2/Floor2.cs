@@ -16,7 +16,10 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
         }
-
+        private void Play_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
         private void Floor2_Load(object sender, EventArgs e)
         {
 

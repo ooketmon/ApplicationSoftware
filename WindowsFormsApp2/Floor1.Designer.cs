@@ -58,6 +58,7 @@
             this.pictureBox25 = new System.Windows.Forms.PictureBox();
             this.pictureBox26 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.stairs1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -86,12 +87,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stairs1)).BeginInit();
             this.SuspendLayout();
             // 
             // player
             // 
             this.player.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.player.Location = new System.Drawing.Point(1020, 439);
+            this.player.Location = new System.Drawing.Point(1033, 755);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(40, 45);
             this.player.TabIndex = 0;
@@ -346,12 +348,23 @@
             this.pictureBox2.TabIndex = 29;
             this.pictureBox2.TabStop = false;
             // 
+            // stairs1
+            // 
+            this.stairs1.Location = new System.Drawing.Point(1085, 60);
+            this.stairs1.Name = "stairs1";
+            this.stairs1.Size = new System.Drawing.Size(50, 55);
+            this.stairs1.TabIndex = 56;
+            this.stairs1.TabStop = false;
+            this.stairs1.Visible = false;
+            // 
             // Floor1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1200, 800);
+            this.Controls.Add(this.player);
+            this.Controls.Add(this.stairs1);
             this.Controls.Add(this.pictureBox26);
             this.Controls.Add(this.pictureBox25);
             this.Controls.Add(this.pictureBox27);
@@ -362,7 +375,6 @@
             this.Controls.Add(this.pictureBox22);
             this.Controls.Add(this.pictureBox21);
             this.Controls.Add(this.pictureBox15);
-            this.Controls.Add(this.player);
             this.Controls.Add(this.pictureBox19);
             this.Controls.Add(this.pictureBox18);
             this.Controls.Add(this.pictureBox16);
@@ -414,6 +426,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stairs1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -449,5 +462,6 @@
         private System.Windows.Forms.PictureBox pictureBox25;
         private System.Windows.Forms.PictureBox pictureBox26;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox stairs1;
     }
 }
