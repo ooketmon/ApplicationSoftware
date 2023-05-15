@@ -201,7 +201,7 @@
             // player
             // 
             this.player.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.player.Location = new System.Drawing.Point(520, 330);
+            this.player.Location = new System.Drawing.Point(375, 339);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(40, 45);
             this.player.TabIndex = 33;
