@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="crawling_test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="crawling_test.Designer.cs">
+      <DependentUpon>crawling_test.cs</DependentUpon>
+	</Compile>
     <Compile Include="ConvMode.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="STUDENT_INFO.cs" />
+    <EmbeddedResource Include="crawling_test.resx">
+      <DependentUpon>crawling_test.cs</DependentUpon>
+	</EmbeddedResource>
     <EmbeddedResource Include="ConvMode.resx">
       <DependentUpon>ConvMode.cs</DependentUpon>
     </EmbeddedResource>
