@@ -62,6 +62,11 @@
     </Compile>
     <Compile Include="crawling_test.Designer.cs">
       <DependentUpon>crawling_test.cs</DependentUpon>
+    <Compile Include="ConvMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConvMode.Designer.cs">
+      <DependentUpon>ConvMode.cs</DependentUpon>
     </Compile>
     <Compile Include="Floor2.cs">
       <SubType>Form</SubType>
@@ -104,6 +109,8 @@
     <Compile Include="STUDENT_INFO.cs" />
     <EmbeddedResource Include="crawling_test.resx">
       <DependentUpon>crawling_test.cs</DependentUpon>
+    <EmbeddedResource Include="ConvMode.resx">
+      <DependentUpon>ConvMode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Floor2.resx">
       <DependentUpon>Floor2.cs</DependentUpon>

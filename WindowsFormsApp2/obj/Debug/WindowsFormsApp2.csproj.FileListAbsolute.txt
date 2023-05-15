@@ -1,0 +1,15 @@
+C:\Users\SOOBIN\source\repos\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\SOOBIN\source\repos\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\SOOBIN\source\repos\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\SOOBIN\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+C:\Users\SOOBIN\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
+C:\Users\SOOBIN\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\SOOBIN\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\SOOBIN\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\SOOBIN\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\SOOBIN\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\SOOBIN\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.InitMenu.resources
+C:\Users\SOOBIN\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor1.resources
+C:\Users\SOOBIN\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor2.resources
+C:\Users\SOOBIN\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor3.resources
+C:\Users\SOOBIN\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor4.resources
