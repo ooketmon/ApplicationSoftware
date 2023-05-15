@@ -291,6 +291,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Floor2";
             this.Text = "2층";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Play_FormClosing);
             this.Load += new System.EventHandler(this.Floor2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
