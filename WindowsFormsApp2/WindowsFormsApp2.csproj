@@ -82,6 +82,7 @@
     <Compile Include="Floor1.Designer.cs">
       <DependentUpon>Floor1.cs</DependentUpon>
     </Compile>
+    <Compile Include="PlayerControl.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Floor2.resx">

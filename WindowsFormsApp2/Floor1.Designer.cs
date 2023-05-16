@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.timer_gmain = new System.Windows.Forms.Timer(this.components);
+            this.timerFloor1 = new System.Windows.Forms.Timer(this.components);
             this.player = new System.Windows.Forms.PictureBox();
             this.stairs1 = new System.Windows.Forms.PictureBox();
             this.pictureBox26 = new System.Windows.Forms.PictureBox();
@@ -132,11 +132,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).BeginInit();
             this.SuspendLayout();
             // 
-            // timer_gmain
+            // timerFloor1
             // 
-            this.timer_gmain.Enabled = true;
-            this.timer_gmain.Interval = 20;
-            this.timer_gmain.Tick += new System.EventHandler(this.timerGMain_Tick);
+            this.timerFloor1.Enabled = true;
+            this.timerFloor1.Interval = 20;
+            this.timerFloor1.Tick += new System.EventHandler(this.timerFloor1_Tick);
             // 
             // player
             // 
@@ -756,9 +756,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox player;
-        private System.Windows.Forms.Timer timer_gmain;
+        private System.Windows.Forms.Timer timerFloor1;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox8;
@@ -808,5 +806,6 @@
         private System.Windows.Forms.PictureBox pictureBox46;
         private System.Windows.Forms.PictureBox pictureBox47;
         private System.Windows.Forms.PictureBox pictureBox48;
+        private System.Windows.Forms.PictureBox player;
     }
 }
