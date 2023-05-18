@@ -63,9 +63,9 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap char_example2 {
+        internal static System.Drawing.Bitmap IMG_0792 {
             get {
-                object obj = ResourceManager.GetObject("char-example2", resourceCulture);
+                object obj = ResourceManager.GetObject("IMG_0792", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
