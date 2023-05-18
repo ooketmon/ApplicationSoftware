@@ -57,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControlEnvironment.cs" />
     <Compile Include="ConvWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +168,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="resources\IMG_0793.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\char-example2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Microsoft.Web.WebView2.1.0.1774.30\build\Microsoft.Web.WebView2.targets" Condition="Exists('packages\Microsoft.Web.WebView2.1.0.1774.30\build\Microsoft.Web.WebView2.targets')" />

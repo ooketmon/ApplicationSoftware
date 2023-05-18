@@ -28,86 +28,86 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.imgConvBg = new System.Windows.Forms.PictureBox();
+            this.txtCharName = new System.Windows.Forms.Label();
+            this.txtConv = new System.Windows.Forms.Label();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.btnSkip = new System.Windows.Forms.Button();
+            this.btnPrev = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.imgConvBg)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // imgConvBg
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1202, 275);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.imgConvBg.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.imgConvBg.Location = new System.Drawing.Point(0, 0);
+            this.imgConvBg.Name = "imgConvBg";
+            this.imgConvBg.Size = new System.Drawing.Size(1202, 275);
+            this.imgConvBg.TabIndex = 0;
+            this.imgConvBg.TabStop = false;
             // 
-            // label1
+            // txtCharName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("굴림", 20F);
-            this.label1.Location = new System.Drawing.Point(12, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(254, 34);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "nameCharacter";
+            this.txtCharName.AutoSize = true;
+            this.txtCharName.Font = new System.Drawing.Font("굴림", 20F);
+            this.txtCharName.Location = new System.Drawing.Point(12, 20);
+            this.txtCharName.Name = "txtCharName";
+            this.txtCharName.Size = new System.Drawing.Size(218, 34);
+            this.txtCharName.TabIndex = 1;
+            this.txtCharName.Text = "txtCharName";
             // 
-            // label2
+            // txtConv
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("굴림", 20F);
-            this.label2.Location = new System.Drawing.Point(12, 89);
-            this.label2.MinimumSize = new System.Drawing.Size(1100, 150);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1100, 150);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "contentConv";
+            this.txtConv.AutoSize = true;
+            this.txtConv.Font = new System.Drawing.Font("굴림", 20F);
+            this.txtConv.Location = new System.Drawing.Point(12, 89);
+            this.txtConv.MinimumSize = new System.Drawing.Size(1100, 150);
+            this.txtConv.Name = "txtConv";
+            this.txtConv.Size = new System.Drawing.Size(1100, 150);
+            this.txtConv.TabIndex = 1;
+            this.txtConv.Text = "txtConv";
             // 
-            // button1
+            // btnNext
             // 
-            this.button1.Location = new System.Drawing.Point(1018, 212);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 49);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "<";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnNext.Location = new System.Drawing.Point(1113, 171);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(75, 49);
+            this.btnNext.TabIndex = 2;
+            this.btnNext.Text = "▼";
+            this.btnNext.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnSkip
             // 
-            this.button2.Location = new System.Drawing.Point(1113, 212);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 49);
-            this.button2.TabIndex = 2;
-            this.button2.Text = ">";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnSkip.Location = new System.Drawing.Point(1113, 12);
+            this.btnSkip.Name = "btnSkip";
+            this.btnSkip.Size = new System.Drawing.Size(75, 27);
+            this.btnSkip.TabIndex = 2;
+            this.btnSkip.Text = "Skip";
+            this.btnSkip.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnPrev
             // 
-            this.button3.Location = new System.Drawing.Point(1113, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 27);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Skip";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnPrev.Location = new System.Drawing.Point(1113, 103);
+            this.btnPrev.Name = "btnPrev";
+            this.btnPrev.Size = new System.Drawing.Size(75, 49);
+            this.btnPrev.TabIndex = 2;
+            this.btnPrev.Text = "▲";
+            this.btnPrev.UseVisualStyleBackColor = true;
             // 
             // ConvWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 273);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btnSkip);
+            this.Controls.Add(this.btnNext);
+            this.Controls.Add(this.btnPrev);
+            this.Controls.Add(this.txtConv);
+            this.Controls.Add(this.txtCharName);
+            this.Controls.Add(this.imgConvBg);
             this.Name = "ConvWindow";
             this.Text = "ConvWindow";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgConvBg)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -115,11 +115,11 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.PictureBox imgConvBg;
+        private System.Windows.Forms.Label txtConv;
+        private System.Windows.Forms.Button btnNext;
+        private System.Windows.Forms.Button btnSkip;
+        private System.Windows.Forms.Label txtCharName;
+        private System.Windows.Forms.Button btnPrev;
     }
 }

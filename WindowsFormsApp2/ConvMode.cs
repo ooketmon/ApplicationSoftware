@@ -16,5 +16,15 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
         }
+
+        private void imgChar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ConvMode_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
