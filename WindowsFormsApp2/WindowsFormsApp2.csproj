@@ -16,7 +16,7 @@
     </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -78,6 +78,12 @@
     <Compile Include="ConvMode.Designer.cs">
       <DependentUpon>ConvMode.cs</DependentUpon>
     </Compile>
+    <Compile Include="ElevatorChoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElevatorChoice.Designer.cs">
+      <DependentUpon>ElevatorChoice.cs</DependentUpon>
+    </Compile>
     <Compile Include="Floor2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,18 @@
     <Compile Include="Floor1.Designer.cs">
       <DependentUpon>Floor1.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoginStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginStart.Designer.cs">
+      <DependentUpon>LoginStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Opening.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opening.Designer.cs">
+      <DependentUpon>Opening.cs</DependentUpon>
+    </Compile>
     <Compile Include="PlayerControl.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -126,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConvMode.resx">
       <DependentUpon>ConvMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElevatorChoice.resx">
+      <DependentUpon>ElevatorChoice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Floor2.resx">
       <DependentUpon>Floor2.cs</DependentUpon>
@@ -144,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Floor1.resx">
       <DependentUpon>Floor1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginStart.resx">
+      <DependentUpon>LoginStart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -171,6 +195,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="resources\IMG_0793.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\LibraryComputer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="resources\char-example2.jpg" />
+    <Content Include="resources\Library2%281%29.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Microsoft.Web.WebView2.1.0.1774.30\build\Microsoft.Web.WebView2.targets" Condition="Exists('packages\Microsoft.Web.WebView2.1.0.1774.30\build\Microsoft.Web.WebView2.targets')" />

@@ -12,6 +12,9 @@ namespace WindowsFormsApp2
 {
     public partial class Floor8 : Form
     {
+        private PlayerControl playerMove;
+        public bool playerisOnStair = false;
+        public bool playerisOnElevator = false;
         public Floor8()
         {
             InitializeComponent();

@@ -13,8 +13,8 @@ namespace WindowsFormsApp2
     public partial class Floor1 : Form
     {
         private PlayerControl playerMove;
-        bool playerisOnStair = false;
-        bool playerisOnElevator = false;
+        public bool playerisOnStair = false;
+        public bool playerisOnElevator = false;
         public Floor1()
         {
             InitializeComponent();
@@ -48,6 +48,22 @@ namespace WindowsFormsApp2
                         floor2.Show();
                         this.Hide();
                         return;
+                    }
+                }
+                if(x is PictureBox && (string)x.Name == "elevator")
+                {
+                    if (player.Bounds.IntersectsWith(x.Bounds) && !playerisOnElevator)
+                    {
+                        playerisOnElevator= true;
+                        ElevatorChoice choice = new ElevatorChoice(1);
+
+                        choice.ControlBox = false;
+                        choice.Show();
+                        choice.Left = player.Left;
+                        choice.Top= player.Top;
+                        choice.FormClosed += (choiceSender,choiceEvent) => {
+                            this.Hide();
+                        };
                     }
                 }
             }

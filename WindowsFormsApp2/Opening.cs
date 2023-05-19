@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    public partial class InitMenu : Form
+    public partial class Opening : Form
     {
-        public InitMenu()
+        public Opening()
         {
             InitializeComponent();
-            this.CenterToScreen();
-        }
-
-        private void btnStart_Click(object sender, EventArgs e)
-        {
-            new LoginStart().Show();
-            this.Hide();
         }
     }
 }
