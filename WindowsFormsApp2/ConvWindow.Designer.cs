@@ -40,7 +40,9 @@
             // nameCharacter
             // 
             this.nameCharacter.AutoSize = true;
+            this.nameCharacter.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.nameCharacter.Font = new System.Drawing.Font("굴림", 20F);
+            this.nameCharacter.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.nameCharacter.Location = new System.Drawing.Point(12, 20);
             this.nameCharacter.Name = "nameCharacter";
             this.nameCharacter.Size = new System.Drawing.Size(254, 34);
@@ -51,8 +53,9 @@
             // contentConv
             // 
             this.contentConv.AutoSize = true;
-            this.contentConv.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.contentConv.BackColor = System.Drawing.SystemColors.MenuText;
             this.contentConv.Font = new System.Drawing.Font("굴림", 20F);
+            this.contentConv.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.contentConv.Location = new System.Drawing.Point(12, 89);
             this.contentConv.MinimumSize = new System.Drawing.Size(1100, 150);
             this.contentConv.Name = "contentConv";
