@@ -15,6 +15,7 @@ namespace WindowsFormsApp2
         public ConvWindow()
         {
             InitializeComponent();
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -34,6 +35,7 @@ namespace WindowsFormsApp2
 
             contentConv.Parent = imgConvWin;
             contentConv.BackColor = Color.Transparent;
+
         }
     }
 }

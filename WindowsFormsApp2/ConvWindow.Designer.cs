@@ -56,29 +56,29 @@
             this.contentConv.BackColor = System.Drawing.SystemColors.MenuText;
             this.contentConv.Font = new System.Drawing.Font("굴림", 20F);
             this.contentConv.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.contentConv.Location = new System.Drawing.Point(12, 89);
-            this.contentConv.MinimumSize = new System.Drawing.Size(1100, 150);
+            this.contentConv.Location = new System.Drawing.Point(12, 80);
+            this.contentConv.MinimumSize = new System.Drawing.Size(1100, 100);
             this.contentConv.Name = "contentConv";
-            this.contentConv.Size = new System.Drawing.Size(1100, 150);
+            this.contentConv.Size = new System.Drawing.Size(1100, 100);
             this.contentConv.TabIndex = 1;
             this.contentConv.Text = "contentConv";
             // 
             // btnPrev
             // 
-            this.btnPrev.Location = new System.Drawing.Point(1018, 212);
+            this.btnPrev.Location = new System.Drawing.Point(1118, 76);
             this.btnPrev.Name = "btnPrev";
             this.btnPrev.Size = new System.Drawing.Size(75, 49);
             this.btnPrev.TabIndex = 2;
-            this.btnPrev.Text = "<";
+            this.btnPrev.Text = "▲";
             this.btnPrev.UseVisualStyleBackColor = true;
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(1113, 212);
+            this.btnNext.Location = new System.Drawing.Point(1118, 131);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(75, 49);
             this.btnNext.TabIndex = 2;
-            this.btnNext.Text = ">";
+            this.btnNext.Text = "▼";
             this.btnNext.UseVisualStyleBackColor = true;
             // 
             // btnSkip
@@ -95,7 +95,7 @@
             this.imgConvWin.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.imgConvWin.Location = new System.Drawing.Point(0, 0);
             this.imgConvWin.Name = "imgConvWin";
-            this.imgConvWin.Size = new System.Drawing.Size(1202, 275);
+            this.imgConvWin.Size = new System.Drawing.Size(1202, 196);
             this.imgConvWin.TabIndex = 0;
             this.imgConvWin.TabStop = false;
             // 
@@ -103,16 +103,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 273);
+            this.ClientSize = new System.Drawing.Size(1200, 189);
             this.Controls.Add(this.btnSkip);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnPrev);
             this.Controls.Add(this.contentConv);
             this.Controls.Add(this.nameCharacter);
             this.Controls.Add(this.imgConvWin);
-            this.Location = new System.Drawing.Point(1205, 0);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Location = new System.Drawing.Point(1205, 500);
             this.Name = "ConvWindow";
-            this.Text = "ConvWindow";
+            this.Text = "대화창";
             this.Load += new System.EventHandler(this.ConvWindow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imgConvWin)).EndInit();
             this.ResumeLayout(false);

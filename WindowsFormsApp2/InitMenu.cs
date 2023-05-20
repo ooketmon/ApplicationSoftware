@@ -22,6 +22,7 @@ namespace WindowsFormsApp2
         {
             new Floor1().Show();
             this.Hide();
+
         }
     }
 }
