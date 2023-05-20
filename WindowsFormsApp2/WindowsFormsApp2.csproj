@@ -118,6 +118,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="STUDENT_INFO.cs" />
+    <Compile Include="TransTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TransTextBox.Designer.cs">
+      <DependentUpon>TransTextBox.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ConvWindow.resx">
       <DependentUpon>ConvWindow.cs</DependentUpon>
     </EmbeddedResource>
