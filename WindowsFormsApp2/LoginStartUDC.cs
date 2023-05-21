@@ -130,6 +130,7 @@ namespace WindowsFormsApp2
                 if (STUDENT_INFO.name != "아무개" && STUDENT_INFO.total_grade == -1)
                 {
                     MessageBox.Show("성적이 나올 때까지 기다리자.");
+                    
 
                 }
 

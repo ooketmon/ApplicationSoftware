@@ -78,6 +78,12 @@
     <Compile Include="ConvMode.Designer.cs">
       <DependentUpon>ConvMode.cs</DependentUpon>
     </Compile>
+    <Compile Include="ElevatorChoiceUDC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ElevatorChoiceUDC.Designer.cs">
+      <DependentUpon>ElevatorChoiceUDC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Floor2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConvMode.resx">
       <DependentUpon>ConvMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElevatorChoiceUDC.resx">
+      <DependentUpon>ElevatorChoiceUDC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Floor2.resx">
       <DependentUpon>Floor2.cs</DependentUpon>

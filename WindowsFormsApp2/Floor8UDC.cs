@@ -58,14 +58,15 @@ namespace WindowsFormsApp2
 
             foreach (Control x in this.Controls)
             {
-                if (x is PictureBox && (string)x.Name == "stairs2")
-                {
-                    if (player.Bounds.IntersectsWith(x.Bounds) && !playerisOnStair)
-                    {
 
-                    }
-                }
             }
+        }
+
+        private void Floor8UDC_Load(object sender, EventArgs e)
+        {
+            playerisOnStair = false;
+            playerisOnElevator = false;
+            playerMove = new PlayerControl(player);
         }
     }
 }

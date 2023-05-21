@@ -70,6 +70,15 @@ namespace WindowsFormsApp2
                         return;
                     }
                 }
+                if (x is PictureBox && (string)x.Name == "elevator")
+                {
+                    if (player.Bounds.IntersectsWith(x.Bounds) && !playerisOnElevator)
+                    {
+                        playerisOnElevator = true;
+                        ((InitMenu)this.Parent).ElevatorCall(1);
+                        return;
+                    }
+                }
             }
         }
         

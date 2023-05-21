@@ -382,7 +382,7 @@
             this.pictureBox6.TabIndex = 87;
             this.pictureBox6.TabStop = false;
             // 
-            // UserControl5
+            // Floor8UDC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -420,8 +420,9 @@
             this.Controls.Add(this.pictureBox6);
             this.MaximumSize = new System.Drawing.Size(1203, 800);
             this.MinimumSize = new System.Drawing.Size(1203, 800);
-            this.Name = "UserControl5";
+            this.Name = "Floor8UDC";
             this.Size = new System.Drawing.Size(1203, 800);
+            this.Load += new System.EventHandler(this.Floor8UDC_Load);
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
