@@ -116,6 +116,7 @@ C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\obj\Debug\Wind
 C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
 C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+<<<<<<< HEAD
 C:\Users\LSH\Desktop\개인적인_시도\WindowsFormsApp2\bin\Debug\runtimes\win-x86\native\WebView2Loader.dll
 C:\Users\LSH\Desktop\개인적인_시도\WindowsFormsApp2\bin\Debug\runtimes\win-x64\native\WebView2Loader.dll
 C:\Users\LSH\Desktop\개인적인_시도\WindowsFormsApp2\bin\Debug\runtimes\win-arm64\native\WebView2Loader.dll
@@ -190,3 +191,34 @@ C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.
 C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.LoginStartUDC.resources
 C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ConvWindowUDC.resources
 C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ConvModeUDC.resources
+=======
+E:\GitHub\ApplicationSoftware\WindowsFormsApp2\bin\Debug\runtimes\win-x86\native\WebView2Loader.dll
+E:\GitHub\ApplicationSoftware\WindowsFormsApp2\bin\Debug\runtimes\win-x64\native\WebView2Loader.dll
+E:\GitHub\ApplicationSoftware\WindowsFormsApp2\bin\Debug\runtimes\win-arm64\native\WebView2Loader.dll
+E:\GitHub\ApplicationSoftware\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+E:\GitHub\ApplicationSoftware\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+E:\GitHub\ApplicationSoftware\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+E:\GitHub\ApplicationSoftware\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.Core.dll
+E:\GitHub\ApplicationSoftware\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.WinForms.dll
+E:\GitHub\ApplicationSoftware\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.Wpf.dll
+E:\GitHub\ApplicationSoftware\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.Core.xml
+E:\GitHub\ApplicationSoftware\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.WinForms.xml
+E:\GitHub\ApplicationSoftware\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.Wpf.xml
+E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
+E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ConvWindow.resources
+E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.crawling_test.resources
+E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ConvMode.resources
+E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor2.resources
+E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor3.resources
+E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor4.resources
+E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor8.resources
+E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.InitMenu.resources
+E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor1.resources
+E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
+E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+>>>>>>> main

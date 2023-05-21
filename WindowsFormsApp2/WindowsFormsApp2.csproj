@@ -171,6 +171,11 @@
     </Compile>
     <Compile Include="ConvModeUDC.Designer.cs">
       <DependentUpon>ConvModeUDC.cs</DependentUpon>
+    <Compile Include="TransTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TransTextBox.Designer.cs">
+      <DependentUpon>TransTextBox.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="ConvWindow.resx">
       <DependentUpon>ConvWindow.cs</DependentUpon>

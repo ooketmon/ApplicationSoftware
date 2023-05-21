@@ -21,6 +21,7 @@ namespace WindowsFormsApp2
 
         private void btnStart_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             FloorChange(1);
         }
 
@@ -160,6 +161,10 @@ namespace WindowsFormsApp2
 
         private void InitMenu_Load(object sender, EventArgs e)
         {
+=======
+            new Floor1().Show();
+            this.Hide();
+>>>>>>> main
 
         }
     }
