@@ -190,3 +190,5 @@ C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.
 C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.LoginStartUDC.resources
 C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ConvWindowUDC.resources
 C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ConvModeUDC.resources
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.LoginStart.resources
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ElevatorChoice.resources

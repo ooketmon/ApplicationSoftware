@@ -30,6 +30,7 @@
         {
             this.btnStart = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnStart
@@ -54,6 +55,17 @@
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(502, 462);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(146, 75);
+            this.button1.TabIndex = 0;
+            this.button1.Tag = "btn";
+            this.button1.Text = "폼모드";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // InitMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -61,6 +73,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1200, 800);
             this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnStart);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "InitMenu";
@@ -74,6 +87,7 @@
 
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button button1;
     }
 }
 
