@@ -22,6 +22,7 @@ namespace WindowsFormsApp2
         {
             new LoginStart().Show();
             this.Hide();
+
         }
     }
 }

@@ -14,7 +14,7 @@ namespace WindowsFormsApp2
     {
         public static string imgPlaceBack  = " ";
         public static string imgChar = " ";
-          
+   
     }
 
     public static class ControlConvWidows
