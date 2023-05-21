@@ -81,6 +81,9 @@
     <Compile Include="ElevatorChoice.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ElevatorChoice.Designer.cs">
+      <DependentUpon>ElevatorChoice.cs</DependentUpon>
+    </Compile>
     <Compile Include="ElevatorChoiceUDC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -180,6 +183,12 @@
     </Compile>
     <Compile Include="ConvModeUDC.Designer.cs">
       <DependentUpon>ConvModeUDC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TransTextBox.Designer.cs">
+      <DependentUpon>TransTextBox.cs</DependentUpon>
     </Compile>
     <Compile Include="TransTextBox.cs">
       <SubType>Component</SubType>
