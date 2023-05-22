@@ -644,7 +644,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1200, 800);
+            this.ClientSize = new System.Drawing.Size(1200, 963);
             this.Controls.Add(this.pictureBox48);
             this.Controls.Add(this.pictureBox47);
             this.Controls.Add(this.pictureBox46);

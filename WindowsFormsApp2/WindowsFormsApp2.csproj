@@ -131,10 +131,21 @@
     </Compile>
     <Compile Include="LoginStart.designer.cs">
       <DependentUpon>LoginStart.cs</DependentUpon>
+    <Compile Include="Inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory.Designer.cs">
+      <DependentUpon>Inventory.cs</DependentUpon>
     </Compile>
     <Compile Include="PlayerControl.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="puzzle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="puzzle.Designer.cs">
+      <DependentUpon>puzzle.cs</DependentUpon>
+    </Compile>
     <Compile Include="STUDENT_INFO.cs" />
     <Compile Include="Floor1UDC.cs">
       <SubType>UserControl</SubType>
@@ -228,6 +239,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoginStart.resx">
       <DependentUpon>LoginStart.cs</DependentUpon>
+    <EmbeddedResource Include="Inventory.resx">
+      <DependentUpon>Inventory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -262,6 +275,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConvModeUDC.resx">
       <DependentUpon>ConvModeUDC.cs</DependentUpon>
+    <EmbeddedResource Include="puzzle.resx">
+      <DependentUpon>puzzle.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
