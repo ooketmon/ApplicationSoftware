@@ -131,6 +131,7 @@
     </Compile>
     <Compile Include="LoginStart.designer.cs">
       <DependentUpon>LoginStart.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inventory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -239,6 +240,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoginStart.resx">
       <DependentUpon>LoginStart.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inventory.resx">
       <DependentUpon>Inventory.cs</DependentUpon>
     </EmbeddedResource>
@@ -275,6 +277,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConvModeUDC.resx">
       <DependentUpon>ConvModeUDC.cs</DependentUpon>
+      </EmbeddedResource>
     <EmbeddedResource Include="puzzle.resx">
       <DependentUpon>puzzle.cs</DependentUpon>
     </EmbeddedResource>
