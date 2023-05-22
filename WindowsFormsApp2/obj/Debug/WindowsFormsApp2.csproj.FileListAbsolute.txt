@@ -146,3 +146,4 @@ C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSof
 C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
 C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Inventory.resources
