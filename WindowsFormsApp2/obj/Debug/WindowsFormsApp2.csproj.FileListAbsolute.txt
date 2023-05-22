@@ -189,3 +189,16 @@ C:\Users\SOOBIN\Desktop\광운대 3-1\응용소프트웨어실습\팀프로젝�
 C:\Users\SOOBIN\Desktop\광운대 3-1\응용소프트웨어실습\팀프로젝트%\Github\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
 C:\Users\SOOBIN\Desktop\광운대 3-1\응용소프트웨어실습\팀프로젝트%\Github\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 C:\Users\SOOBIN\Desktop\광운대 3-1\응용소프트웨어실습\팀프로젝트%\Github\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ElevatorChoice.resources
+C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ElevatorChoiceUDC.resources
+C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.LoginStart.resources
+C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Inventory.resources
+C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor1UDC.resources
+C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor2UDC.resources
+C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor3UDC.resources
+C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor4UDC.resources
+C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor8UDC.resources
+C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.LoginStartUDC.resources
+C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ConvWindowUDC.resources
+C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ConvModeUDC.resources
+C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.puzzle.resources

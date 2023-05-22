@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,102 +27,306 @@ namespace WindowsFormsApp2
             {
                 return base.ProcessCmdKey(ref msg, keyData);
             }
-        }
+           }
         int currentFloor = 0;
-        List<Button> buttons=new List<Button>();
         int index = 0;
-
+        List<Button> buttons;
         public ElevatorChoiceUDC()
         {
             InitializeComponent();
+            buttons = new List<Button>();
         }
         public ElevatorChoiceUDC(int floor)
         {
             InitializeComponent();
             currentFloor= floor;
+            buttons = new List<Button>();
         }
 
         private void ElevatorChoiceUDC_Load(object sender, EventArgs e)
         {
-            var allControls = this.Controls;
-
-            foreach (var button in allControls)
+            switch (currentFloor)
             {
-                if (button.GetType()==typeof(Label))
-                {
-                    continue;
-                }
-                if ((button as Button).Text[0] - '0' == currentFloor)
-                {
-                    this.Controls.Remove((Button)button);
-                }
-                else
-                {
-                    buttons.Add((Button)button);
-                }
+                case 1:
+                    buttons.Add(button2);
+                    buttons.Add(button3);
+                    buttons.Add(button4);
+                    buttons.Add(button5);
+                    this.Controls.Remove(button1);
+                    break;
+                case 2:
+                    buttons.Add(button1);
+                    buttons.Add(button3);
+                    buttons.Add(button4);
+                    buttons.Add(button5);
+                    this.Controls.Remove(button2);
+                    break;
+                case 3:
+                    buttons.Add(button1);
+                    buttons.Add(button2);
+                    buttons.Add(button4);
+                    buttons.Add(button5);
+                    this.Controls.Remove(button3);
+                    break;
+                case 4:
+                    buttons.Add(button1);
+                    buttons.Add(button2);
+                    buttons.Add(button3);
+                    buttons.Add(button5);
+                    this.Controls.Remove(button4);
+                    break;
+                case 8:
+                    buttons.Add(button1);
+                    buttons.Add(button2);
+                    buttons.Add(button3);
+                    buttons.Add(button4);
+                    this.Controls.Remove(button5);
+                    break; ;
             }
+            //buttons.Reverse();
+            index = buttons.Count-1;
+
         }
 
         private void ElevatorChoiceUDC_KeyUp(object sender, KeyEventArgs e)
         {
-            
-            switch (e.KeyCode)
-            {
-                case Keys.Left:
-                    if (index <buttons.Count-1)
+            switch (currentFloor) {
+                case 1:
+                    switch (e.KeyCode)
                     {
-                        index++;
+                        case Keys.Right:
+                        case Keys.Left:
+                            if (index==1)
+                            {
+                                index=2;
+                            }
+                            else if (index==2)
+                            {
+                                index = 1;
+                            }
+                            buttons[index].Focus();
+                            break;
+                        case Keys.Up:
+                            if (index < buttons.Count - 2)
+                            {
+                                index += 2;
+                            }
+                            else if (index == buttons.Count - 2)
+                            {
+                                index = 0;
+                            }
+                            else
+                            {
+                                index = 1;
+                            }
+                            buttons[index].Focus();
+                            break;
+                        case Keys.Down:
+                            if (index > 1)
+                            {
+                                index -= 2;
+                            }
+                            else if (index == 1)
+                            {
+                                index = buttons.Count - 1;
+                            }
+                            else
+                            {
+                                index = buttons.Count - 2;
+                            }
+                            buttons[index].Focus();
+                            break;
                     }
-                    else
-                    {
-                        index = 0;
-                    }
-                    buttons[index].Focus();
                     break;
-                case Keys.Right:
-                    if (index>0)
+                case 2:
+                    switch (e.KeyCode)
                     {
-                        index--;
+                        case Keys.Right:
+                        case Keys.Left:
+                            if (index==1)
+                            {
+                                index=2;
+                            }
+                            else if(index==2)
+                            {
+                                index=1;
+                            }
+                            buttons[index].Focus();
+                            break;
+                        case Keys.Down:
+                            if (index ==0 )
+                            {
+                                index =1;
+                            }
+                            else if (index==1)
+                            {
+                                index = 3;
+                            }
+                            else if(index==3)
+                            {
+                                index = 0;
+                            }
+                            buttons[index].Focus();
+                            break;
+                        case Keys.Up:
+                            if (index==3)
+                            {
+                                index =1;
+                            }
+                            else if (index == 1)
+                            {
+                                index = 0;
+                            }
+                            else if(index==0)
+                            {
+                                index = 3;
+                            }
+                            buttons[index].Focus();
+                            break;
                     }
-                    else
-                    {
-                        index = buttons.Count-1;
-                    }
-                    buttons[index].Focus();
                     break;
-                case Keys.Down:
-                    if (index <buttons.Count-2)
+                case 3:
+                    switch (e.KeyCode)
                     {
-                        index += 2;
+                        case Keys.Right:
+                        case Keys.Left:
+                            if (index == 0)
+                            {
+                                index = 1;
+                            }
+                            else if(index==1)
+                            {
+                                index=0;
+                            }
+                            buttons[index].Focus();
+                            break;
+                        case Keys.Down:
+                            if (index == 0)
+                            {
+                                index = 3;
+                            }
+                            else if (index == 1)
+                            {
+                                index = 2;
+                            }else if(index==3)
+                            {
+                                index = 0;
+                            }
+                            buttons[index].Focus();
+                            break;
+                        case Keys.Up:
+                            if (index == 0)
+                            {
+                                index = 3;
+                            }
+                            else if (index == 3)
+                            {
+                                index = 0;
+                            }
+                            else if(index==2)
+                            {
+                                index = 1;
+                            }
+                            else
+                            {
+                                index = 2;
+                            }
+                            buttons[index].Focus();
+                            break;
                     }
-                    else if (index == buttons.Count-2)
-                    {
-                        index = 0;
-                    }
-                    else
-                    {
-                        index =1;
-                    }
-                    buttons[index].Focus();
                     break;
-                case Keys.Up:
-                    if (index >1)
+                case 4:
+                    switch (e.KeyCode)
                     {
-                        index -= 2;
+                        case Keys.Right:
+                        case Keys.Left:
+                            if (index == 0)
+                            {
+                                index = 1;
+                            }
+                            else if (index == 1)
+                            {
+                                index = 0;
+                            }
+                            buttons[index].Focus();
+                            break;
+                        case Keys.Down:
+                            if (index == 0)
+                            {
+                                index = 2;
+                            }
+                            else if (index == 2)
+                            {
+                                index = 3;
+                            }
+                            else if (index == 3)
+                            {
+                                index = 0;
+                            }
+                            buttons[index].Focus();
+                            break;
+                        case Keys.Up:
+                            if (index == 3)
+                            {
+                                index = 2;
+                            }
+                            else if (index == 2)
+                            {
+                                index = 0;
+                            }
+                            else if (index == 0)
+                            {
+                                index = 3;
+                            }
+                            buttons[index].Focus();
+                            break;
                     }
-                    else if (index ==1)
-                    {
-                        index = buttons.Count-1;
-                    }
-                    else
-                    {
-                        index =buttons.Count-2;
-                    }
-                    buttons[index].Focus();
                     break;
-            }
-            
+                case 8:
+                    switch (e.KeyCode)
+                    {
+                        case Keys.Right:
+                        case Keys.Left:
+                            if (index == 0)
+                            {
+                                index = 1;
+                            }
+                            else if (index == 1)
+                            {
+                                index = 0;
+                            }
+                            else if (index == 3)
+                            {
+                                index = 2;
+                            }
+                            else
+                            {
+                                index = 3;
+                            }
+
+                            buttons[index].Focus();
+                            break;
+                        case Keys.Down:
+                        case Keys.Up:
+                            if (index > 1)
+                            {
+                                index -= 2;
+                            }
+                            else if (index == 1)
+                            {
+                                index = 3;
+                            }
+                            else if (index == 0)
+                            {
+                                index = 2;
+                            }
+                            buttons[index].Focus();
+                            break;
+                    }
+                    break;
         }
+            
+     }
 
         private void Button_Click(object sender, EventArgs e)
         {
