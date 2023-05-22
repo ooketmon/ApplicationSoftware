@@ -35,18 +35,18 @@ namespace WindowsFormsApp2
             }
         }
 
-        private void UserControl4_Load(object sender, EventArgs e)
+        private void Floor4_Load(object sender, EventArgs e)
         {
             playerisOnStair = false;
             playerisOnElevator = false;
             playerMove = new PlayerControl(player);
         }
-        private void UserControl4_KeyUp(object sender, KeyEventArgs e)
+        private void Floor4_KeyUp(object sender, KeyEventArgs e)
         {
             playerMove.PlayerKeyUp(sender, e);
         }
 
-        private void UserControl4_KeyDown(object sender, KeyEventArgs e)
+        private void Floor4_KeyDown(object sender, KeyEventArgs e)
         {
             playerMove.PlayerKeyDown(sender, e);
         }
@@ -76,6 +76,71 @@ namespace WindowsFormsApp2
                     }
                 }
             }
+        }
+
+        private void pictureBox18_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox28_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void stairs2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox29_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox23_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox24_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

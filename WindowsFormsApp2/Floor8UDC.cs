@@ -35,24 +35,18 @@ namespace WindowsFormsApp2
                 return base.ProcessCmdKey(ref msg, keyData);
             }
         }
-        private void Floor8UDC_Load(object sender, EventArgs e)
+        private void Floor8_Load(object sender, EventArgs e)
         {
             playerisOnStair = false;
             playerisOnElevator = false;
             playerMove = new PlayerControl(player);
         }
-        private void UserControl5_Load(object sender, EventArgs e)
-        {
-            playerisOnStair = false;
-            playerisOnElevator = false;
-            playerMove = new PlayerControl(player);
-        }
-        private void UserControl5_KeyUp(object sender, KeyEventArgs e)
+        private void Floor8_KeyUp(object sender, KeyEventArgs e)
         {
             playerMove.PlayerKeyUp(sender, e);
         }
 
-        private void UserControl5_KeyDown(object sender, KeyEventArgs e)
+        private void Floor8_KeyDown(object sender, KeyEventArgs e)
         {
             playerMove.PlayerKeyDown(sender, e);
         }

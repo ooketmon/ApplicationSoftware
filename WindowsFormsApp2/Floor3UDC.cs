@@ -10,7 +10,6 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-
     public partial class Floor3UDC : UserControl
     {
         private PlayerControl playerMove;
