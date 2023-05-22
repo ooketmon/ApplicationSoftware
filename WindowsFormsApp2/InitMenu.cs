@@ -59,8 +59,6 @@ namespace WindowsFormsApp2
             
             ElevatorChoiceUDC elevator = new ElevatorChoiceUDC(floor);
             
-
-
             Control main_floor = null;
             foreach(Control ctrl in this.Controls)
             {

@@ -35,7 +35,12 @@ namespace WindowsFormsApp2
                 return base.ProcessCmdKey(ref msg, keyData);
             }
         }
-
+        private void Floor8UDC_Load(object sender, EventArgs e)
+        {
+            playerisOnStair = false;
+            playerisOnElevator = false;
+            playerMove = new PlayerControl(player);
+        }
         private void UserControl5_Load(object sender, EventArgs e)
         {
             playerisOnStair = false;
@@ -58,15 +63,16 @@ namespace WindowsFormsApp2
 
             foreach (Control x in this.Controls)
             {
-
+                if (x is PictureBox && (string)x.Name == "elevator")
+                {
+                    if (player.Bounds.IntersectsWith(x.Bounds) && !playerisOnElevator)
+                    {
+                        playerisOnElevator = true;
+                        ((InitMenu)this.Parent).ElevatorCall(8);
+                        return;
+                    }
+                }
             }
-        }
-
-        private void Floor8UDC_Load(object sender, EventArgs e)
-        {
-            playerisOnStair = false;
-            playerisOnElevator = false;
-            playerMove = new PlayerControl(player);
         }
     }
 }

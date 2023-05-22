@@ -45,15 +45,8 @@ namespace WindowsFormsApp2
             playerMove = new PlayerControl(player);
         }
 
-        private void UserControl1_KeyUp(object sender, KeyEventArgs e)
-        {
-            playerMove.PlayerKeyUp(sender, e);
-        }
-
-        private void UserControl1_KeyDown(object sender, KeyEventArgs e)
-        {
-            playerMove.PlayerKeyDown(sender, e);
-        }
+        private void UserControl1_KeyUp(object sender, KeyEventArgs e) { playerMove.PlayerKeyUp(sender, e); }
+        private void UserControl1_KeyDown(object sender, KeyEventArgs e) { playerMove.PlayerKeyDown(sender, e); }
 
         private void timerFloor1_Tick(object sender, EventArgs e)
         {
