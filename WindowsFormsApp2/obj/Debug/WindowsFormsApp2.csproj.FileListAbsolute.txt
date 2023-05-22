@@ -1,147 +1,40 @@
-C:\Users\SOOBIN\source\repos\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
-C:\Users\SOOBIN\source\repos\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
-C:\Users\SOOBIN\source\repos\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
-C:\Users\SOOBIN\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
-C:\Users\SOOBIN\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
-C:\Users\SOOBIN\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
-C:\Users\SOOBIN\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
-C:\Users\SOOBIN\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
-C:\Users\SOOBIN\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
-C:\Users\SOOBIN\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
-C:\Users\SOOBIN\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.InitMenu.resources
-C:\Users\SOOBIN\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor1.resources
-C:\Users\SOOBIN\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor2.resources
-C:\Users\SOOBIN\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor3.resources
-C:\Users\SOOBIN\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor4.resources
-C:\Users\SOOBIN\Desktop\광운대 3-1\응용소프트웨어실습\팀프로젝트%\Team\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
-C:\Users\SOOBIN\Desktop\광운대 3-1\응용소프트웨어실습\팀프로젝트%\Team\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
-C:\Users\SOOBIN\Desktop\광운대 3-1\응용소프트웨어실습\팀프로젝트%\Team\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
-C:\Users\SOOBIN\Desktop\광운대 3-1\응용소프트웨어실습\팀프로젝트%\Team\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
-C:\Users\SOOBIN\Desktop\광운대 3-1\응용소프트웨어실습\팀프로젝트%\Team\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
-C:\Users\SOOBIN\Desktop\광운대 3-1\응용소프트웨어실습\팀프로젝트%\Team\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor2.resources
-C:\Users\SOOBIN\Desktop\광운대 3-1\응용소프트웨어실습\팀프로젝트%\Team\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor3.resources
-C:\Users\SOOBIN\Desktop\광운대 3-1\응용소프트웨어실습\팀프로젝트%\Team\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor4.resources
-C:\Users\SOOBIN\Desktop\광운대 3-1\응용소프트웨어실습\팀프로젝트%\Team\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor8.resources
-C:\Users\SOOBIN\Desktop\광운대 3-1\응용소프트웨어실습\팀프로젝트%\Team\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.InitMenu.resources
-C:\Users\SOOBIN\Desktop\광운대 3-1\응용소프트웨어실습\팀프로젝트%\Team\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor1.resources
-C:\Users\SOOBIN\Desktop\광운대 3-1\응용소프트웨어실습\팀프로젝트%\Team\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
-C:\Users\SOOBIN\Desktop\광운대 3-1\응용소프트웨어실습\팀프로젝트%\Team\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
-C:\Users\SOOBIN\Desktop\광운대 3-1\응용소프트웨어실습\팀프로젝트%\Team\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
-C:\Users\SOOBIN\Desktop\광운대 3-1\응용소프트웨어실습\팀프로젝트%\Team\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
-C:\Users\SOOBIN\Desktop\광운대 3-1\응용소프트웨어실습\팀프로젝트%\Team\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
-C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
-C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
-C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
-C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.Core.dll
-C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.WinForms.dll
-C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.Wpf.dll
-C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.Core.xml
-C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.WinForms.xml
-C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.Wpf.xml
-C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
-C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
-C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ConvWindow.resources
-C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.crawling_test.resources
-C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ConvMode.resources
-C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor2.resources
-C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor3.resources
-C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor4.resources
-C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor8.resources
-C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.InitMenu.resources
-C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor1.resources
-C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
-C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
-C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
-C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
-C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
-C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
-C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\bin\Debug\runtimes\win-x86\native\WebView2Loader.dll
-C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\bin\Debug\runtimes\win-x64\native\WebView2Loader.dll
-C:\Users\LSH\Desktop\project_main\WindowsFormsApp2\bin\Debug\runtimes\win-arm64\native\WebView2Loader.dll
-C:\Users\LSH\Desktop\project_main - 복사본\WindowsFormsApp2\bin\Debug\runtimes\win-x86\native\WebView2Loader.dll
-C:\Users\LSH\Desktop\project_main - 복사본\WindowsFormsApp2\bin\Debug\runtimes\win-x64\native\WebView2Loader.dll
-C:\Users\LSH\Desktop\project_main - 복사본\WindowsFormsApp2\bin\Debug\runtimes\win-arm64\native\WebView2Loader.dll
-C:\Users\LSH\Desktop\project_main - 복사본\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
-C:\Users\LSH\Desktop\project_main - 복사본\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
-C:\Users\LSH\Desktop\project_main - 복사본\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
-C:\Users\LSH\Desktop\project_main - 복사본\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.Core.dll
-C:\Users\LSH\Desktop\project_main - 복사본\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.WinForms.dll
-C:\Users\LSH\Desktop\project_main - 복사본\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.Wpf.dll
-C:\Users\LSH\Desktop\project_main - 복사본\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.Core.xml
-C:\Users\LSH\Desktop\project_main - 복사본\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.WinForms.xml
-C:\Users\LSH\Desktop\project_main - 복사본\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.Wpf.xml
-C:\Users\LSH\Desktop\project_main - 복사본\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
-C:\Users\LSH\Desktop\project_main - 복사본\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
-C:\Users\LSH\Desktop\project_main - 복사본\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ConvWindow.resources
-C:\Users\LSH\Desktop\project_main - 복사본\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.crawling_test.resources
-C:\Users\LSH\Desktop\project_main - 복사본\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ConvMode.resources
-C:\Users\LSH\Desktop\project_main - 복사본\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor2.resources
-C:\Users\LSH\Desktop\project_main - 복사본\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor3.resources
-C:\Users\LSH\Desktop\project_main - 복사본\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor4.resources
-C:\Users\LSH\Desktop\project_main - 복사본\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor8.resources
-C:\Users\LSH\Desktop\project_main - 복사본\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.InitMenu.resources
-C:\Users\LSH\Desktop\project_main - 복사본\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor1.resources
-C:\Users\LSH\Desktop\project_main - 복사본\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
-C:\Users\LSH\Desktop\project_main - 복사본\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
-C:\Users\LSH\Desktop\project_main - 복사본\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
-C:\Users\LSH\Desktop\project_main - 복사본\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
-C:\Users\LSH\Desktop\project_main - 복사본\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
-C:\Users\LSH\Desktop\project_main - 복사본\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
-C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\bin\Debug\runtimes\win-x86\native\WebView2Loader.dll
-C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\bin\Debug\runtimes\win-x64\native\WebView2Loader.dll
-C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\bin\Debug\runtimes\win-arm64\native\WebView2Loader.dll
-C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
-C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
-C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
-C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.Core.dll
-C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.WinForms.dll
-C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.Wpf.dll
-C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.Core.xml
-C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.WinForms.xml
-C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.Wpf.xml
-C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
-C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
-C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ConvWindow.resources
-C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.crawling_test.resources
-C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ConvMode.resources
-C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor2.resources
-C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor3.resources
-C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor4.resources
-C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor8.resources
-C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.InitMenu.resources
-C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor1.resources
-C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
-C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
-C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
-C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
-C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
-C:\Users\LSH\Desktop\project_main _based_update1\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
-E:\GitHub\ApplicationSoftware\WindowsFormsApp2\bin\Debug\runtimes\win-x86\native\WebView2Loader.dll
-E:\GitHub\ApplicationSoftware\WindowsFormsApp2\bin\Debug\runtimes\win-x64\native\WebView2Loader.dll
-E:\GitHub\ApplicationSoftware\WindowsFormsApp2\bin\Debug\runtimes\win-arm64\native\WebView2Loader.dll
-E:\GitHub\ApplicationSoftware\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
-E:\GitHub\ApplicationSoftware\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
-E:\GitHub\ApplicationSoftware\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
-E:\GitHub\ApplicationSoftware\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.Core.dll
-E:\GitHub\ApplicationSoftware\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.WinForms.dll
-E:\GitHub\ApplicationSoftware\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.Wpf.dll
-E:\GitHub\ApplicationSoftware\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.Core.xml
-E:\GitHub\ApplicationSoftware\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.WinForms.xml
-E:\GitHub\ApplicationSoftware\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.Wpf.xml
-E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
-E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
-E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ConvWindow.resources
-E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.crawling_test.resources
-E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ConvMode.resources
-E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor2.resources
-E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor3.resources
-E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor4.resources
-E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor8.resources
-E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.InitMenu.resources
-E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor1.resources
-E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
-E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
-E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
-E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
-E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
-E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\bin\Debug\runtimes\win-x86\native\WebView2Loader.dll
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\bin\Debug\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\bin\Debug\runtimes\win-arm64\native\WebView2Loader.dll
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.Core.dll
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.WinForms.dll
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.Wpf.dll
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.Core.xml
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.WinForms.xml
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.Wpf.xml
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ConvWindow.resources
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.crawling_test.resources
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ConvMode.resources
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ElevatorChoice.resources
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ElevatorChoiceUDC.resources
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor2.resources
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor3.resources
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor4.resources
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor8.resources
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.InitMenu.resources
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor1.resources
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.LoginStart.resources
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor1UDC.resources
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor2UDC.resources
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor3UDC.resources
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor4UDC.resources
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor8UDC.resources
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.LoginStartUDC.resources
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ConvWindowUDC.resources
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ConvModeUDC.resources
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\LSH\Desktop\challeng_trial\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb

@@ -19,13 +19,15 @@ namespace WindowsFormsApp2
         }
         public void PlayerKeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Left) goLeft = true;
+      
+            if (e.KeyCode==Keys.Left) goLeft = true;
             if (e.KeyCode == Keys.Right) goRight = true;
             if (e.KeyCode == Keys.Up) goUp = true;
             if (e.KeyCode == Keys.Down) goDown = true;
         }
         public void PlayerKeyUp(object sender, KeyEventArgs e)
         {
+            
             if (e.KeyCode == Keys.Left) goLeft = false;
             if (e.KeyCode == Keys.Right) goRight = false;
             if (e.KeyCode == Keys.Up) goUp = false;
@@ -33,6 +35,7 @@ namespace WindowsFormsApp2
         }
         public void MovePlayer()
         {
+            
             int playerX = player.Left;
             int playerY = player.Top;
 

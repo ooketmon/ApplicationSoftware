@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.btnStart = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnStart
@@ -37,9 +39,32 @@
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(146, 75);
             this.btnStart.TabIndex = 0;
+            this.btnStart.Tag = "btn";
             this.btnStart.Text = "시작하기";
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.Location = new System.Drawing.Point(502, 188);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(136, 85);
+            this.btnLogin.TabIndex = 1;
+            this.btnLogin.Tag = "btn";
+            this.btnLogin.Text = "로그인 하러 가기";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(502, 462);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(146, 75);
+            this.button1.TabIndex = 0;
+            this.button1.Tag = "btn";
+            this.button1.Text = "폼모드";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // InitMenu
             // 
@@ -47,10 +72,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1200, 800);
+            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnStart);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "InitMenu";
             this.Text = " A+ 받고 싶어서.. 시험지를 훔침!";
+            this.Load += new System.EventHandler(this.InitMenu_Load);
             this.ResumeLayout(false);
 
         }
@@ -58,6 +86,8 @@
         #endregion
 
         private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button button1;
     }
 }
 
