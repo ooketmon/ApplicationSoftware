@@ -296,7 +296,6 @@
     <EmbeddedResource Include="ConvModeUDC.resx">
       <DependentUpon>ConvModeUDC.cs</DependentUpon>
     </EmbeddedResource>
-      </EmbeddedResource>
     <EmbeddedResource Include="puzzle.resx">
       <DependentUpon>puzzle.cs</DependentUpon>
     </EmbeddedResource>
