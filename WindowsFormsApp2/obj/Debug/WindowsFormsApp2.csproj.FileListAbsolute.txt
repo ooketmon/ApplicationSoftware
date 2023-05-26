@@ -147,3 +147,15 @@ C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSof
 C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
 C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Inventory.resources
+C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ElevatorChoice.resources
+C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ElevatorChoiceUDC.resources
+C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.lecture1.resources
+C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.LoginStart.resources
+C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor1UDC.resources
+C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor2UDC.resources
+C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor3UDC.resources
+C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor4UDC.resources
+C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Floor8UDC.resources
+C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.LoginStartUDC.resources
+C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ConvWindowUDC.resources
+C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ConvModeUDC.resources
