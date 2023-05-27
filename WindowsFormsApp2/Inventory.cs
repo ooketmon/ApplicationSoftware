@@ -25,6 +25,9 @@ namespace WindowsFormsApp2
 
     class inven
     {
+        bool[] inventory = new bool[11];
+        
+
         item[] Arritem;
 
         public inven()
