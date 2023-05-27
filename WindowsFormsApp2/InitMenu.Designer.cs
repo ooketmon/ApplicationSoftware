@@ -37,7 +37,7 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(153, 590);
+            this.btnLogin.Location = new System.Drawing.Point(224, 590);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(136, 85);
             this.btnLogin.TabIndex = 1;
@@ -48,7 +48,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(748, 590);
+            this.button1.Location = new System.Drawing.Point(879, 600);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(146, 75);
             this.button1.TabIndex = 0;
@@ -57,14 +57,13 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-
             // btnStart
             // 
             this.btnStart.BackColor = System.Drawing.Color.Transparent;
             this.btnStart.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.btn_start;
             this.btnStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnStart.Location = new System.Drawing.Point(396, 581);
+            this.btnStart.Location = new System.Drawing.Point(481, 607);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(270, 60);
             this.btnStart.TabIndex = 0;
@@ -83,20 +82,12 @@
             this.init_image.TabIndex = 2;
             this.init_image.TabStop = false;
             // 
-
-            this.init_image.Size = new System.Drawing.Size(1052, 773);
-            this.init_image.TabIndex = 2;
-            this.init_image.TabStop = false;
-            // 
-
             // InitMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-
-            this.ClientSize = new System.Drawing.Size(1052, 773);
-
+            this.ClientSize = new System.Drawing.Size(1200, 800);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.btnLogin);
