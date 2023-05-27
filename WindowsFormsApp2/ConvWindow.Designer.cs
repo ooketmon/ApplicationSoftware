@@ -95,7 +95,7 @@
             this.imgConvWin.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.imgConvWin.Location = new System.Drawing.Point(0, 0);
             this.imgConvWin.Name = "imgConvWin";
-            this.imgConvWin.Size = new System.Drawing.Size(1202, 170);
+            this.imgConvWin.Size = new System.Drawing.Size(1202, 187);
             this.imgConvWin.TabIndex = 0;
             this.imgConvWin.TabStop = false;
             // 
@@ -103,7 +103,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 189);
+            this.ClientSize = new System.Drawing.Size(1200, 187);
             this.Controls.Add(this.btnSkip);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnPrev);
