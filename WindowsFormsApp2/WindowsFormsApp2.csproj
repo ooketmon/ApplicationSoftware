@@ -320,6 +320,10 @@
     <Content Include="resources\Floor1\IMG_0808.PNG" />
     <None Include="resources\Floor1\IMG_0826.PNG" />
     <Content Include="resources\Floor1\IMG_0827.PNG" />
+    <None Include="resources\Floor1\IMG_0829.PNG" />
+    <None Include="resources\Floor1\IMG_0830.PNG" />
+    <None Include="resources\Floor1\IMG_0831.PNG" />
+    <None Include="resources\Floor1\IMG_0832.PNG" />
     <Content Include="resources\Player\IMG_0809.PNG" />
     <Content Include="resources\Player\IMG_0811.PNG" />
     <Content Include="resources\Player\IMG_0812.PNG" />
