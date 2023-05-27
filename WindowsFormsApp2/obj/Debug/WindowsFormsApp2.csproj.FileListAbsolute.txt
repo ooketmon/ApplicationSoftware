@@ -259,3 +259,5 @@ C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSof
 C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.inventory_item.resources
 E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.inventory_item.resources
 E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.lecture1.resources
+C:\Users\SOOBIN\Desktop\광운대 3-1\응용소프트웨어실습\팀프로젝트%\Github\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.inventory_item.resources
+C:\Users\SOOBIN\Desktop\광운대 3-1\응용소프트웨어실습\팀프로젝트%\Github\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.lecture1.resources

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.timerFloor1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox48 = new System.Windows.Forms.PictureBox();
             this.pictureBox47 = new System.Windows.Forms.PictureBox();
             this.pictureBox46 = new System.Windows.Forms.PictureBox();
@@ -79,7 +80,6 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.timerFloor1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox38 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
@@ -133,6 +133,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
             this.SuspendLayout();
+            // 
+            // timerFloor1
+            // 
+            this.timerFloor1.Enabled = true;
+            this.timerFloor1.Interval = 20;
+            this.timerFloor1.Tick += new System.EventHandler(this.timerFloor1_Tick);
             // 
             // pictureBox48
             // 
@@ -340,10 +346,13 @@
             // 
             // player
             // 
-            this.player.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.player.Location = new System.Drawing.Point(951, 220);
+            this.player.BackColor = System.Drawing.Color.Transparent;
+            this.player.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.player.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0809;
+            this.player.Location = new System.Drawing.Point(961, 265);
             this.player.Name = "player";
-            this.player.Size = new System.Drawing.Size(40, 45);
+            this.player.Size = new System.Drawing.Size(39, 45);
+            this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.player.TabIndex = 78;
             this.player.TabStop = false;
             // 
@@ -636,12 +645,6 @@
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Tag = "obstacle";
             // 
-            // timerFloor1
-            // 
-            this.timerFloor1.Enabled = true;
-            this.timerFloor1.Interval = 20;
-            this.timerFloor1.Tick += new System.EventHandler(this.timerFloor1_Tick);
-            // 
             // pictureBox38
             // 
             this.pictureBox38.Location = new System.Drawing.Point(746, -40);
@@ -708,10 +711,10 @@
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox38);
-            this.MaximumSize = new System.Drawing.Size(1218, 847);
-            this.MinimumSize = new System.Drawing.Size(1218, 847);
+            this.MaximumSize = new System.Drawing.Size(1200, 800);
+            this.MinimumSize = new System.Drawing.Size(1200, 800);
             this.Name = "Floor1UDC";
-            this.Size = new System.Drawing.Size(1218, 847);
+            this.Size = new System.Drawing.Size(1200, 800);
             this.Load += new System.EventHandler(this.UserControl1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.UserControl1_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.UserControl1_KeyUp);
@@ -767,6 +770,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
