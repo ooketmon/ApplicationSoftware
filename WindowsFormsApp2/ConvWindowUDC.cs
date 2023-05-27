@@ -16,5 +16,19 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ConvWindowUDC_Load(object sender, EventArgs e)
+        {
+            nameCharacter.Parent = imgConvWin;
+            nameCharacter.BackColor = Color.Transparent;
+
+            contentConv.Parent = imgConvWin;
+            contentConv.BackColor = Color.Transparent;
+        }
     }
 }

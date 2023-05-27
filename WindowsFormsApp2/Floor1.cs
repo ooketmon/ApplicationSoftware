@@ -23,11 +23,11 @@ namespace WindowsFormsApp2
             playerMove = new PlayerControl(player);
 
 
-            //show a window for text-conversation under the this window
-            ConvWindow ConvWindow = new ConvWindow();
-            ConvWindow.StartPosition = FormStartPosition.Manual;
-            ConvWindow.Location = new Point(this.Location.X, this.Location.Y + this.Height);
-            ConvWindow.Show();
+            ////show a window for text-conversation under the this window
+            //ConvWindow ConvWindow = new ConvWindow();
+            //ConvWindow.StartPosition = FormStartPosition.Manual;
+            //ConvWindow.Location = new Point(this.Location.X, this.Location.Y + this.Height);
+            //ConvWindow.Show();
         }
         private void Play_FormClosing(object sender, FormClosingEventArgs e)
         {

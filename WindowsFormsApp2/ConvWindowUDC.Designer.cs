@@ -31,10 +31,10 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.contentConv = new System.Windows.Forms.Label();
+            this.imgConvWin = new System.Windows.Forms.PictureBox();
+            this.nameCharacter = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.imgConvWin)).BeginInit();
             this.SuspendLayout();
             // 
             // button3
@@ -64,51 +64,57 @@
             this.button1.Text = "<";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // contentConv
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("굴림", 20F);
-            this.label2.Location = new System.Drawing.Point(12, 89);
-            this.label2.MinimumSize = new System.Drawing.Size(1100, 150);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1100, 150);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "contentConv";
+            this.contentConv.AutoSize = true;
+            this.contentConv.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.contentConv.Font = new System.Drawing.Font("굴림", 20F);
+            this.contentConv.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.contentConv.Location = new System.Drawing.Point(12, 89);
+            this.contentConv.MinimumSize = new System.Drawing.Size(1100, 150);
+            this.contentConv.Name = "contentConv";
+            this.contentConv.Size = new System.Drawing.Size(1100, 150);
+            this.contentConv.TabIndex = 4;
+            this.contentConv.Text = "contentConv";
             // 
-            // label1
+            // imgConvWin
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("굴림", 20F);
-            this.label1.Location = new System.Drawing.Point(12, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(254, 34);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "nameCharacter";
+            this.imgConvWin.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.imgConvWin.Location = new System.Drawing.Point(0, -1);
+            this.imgConvWin.Name = "imgConvWin";
+            this.imgConvWin.Size = new System.Drawing.Size(1202, 275);
+            this.imgConvWin.TabIndex = 3;
+            this.imgConvWin.TabStop = false;
+            this.imgConvWin.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // pictureBox1
+            // nameCharacter
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1202, 275);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.nameCharacter.AutoSize = true;
+            this.nameCharacter.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.nameCharacter.Font = new System.Drawing.Font("굴림", 20F);
+            this.nameCharacter.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.nameCharacter.Location = new System.Drawing.Point(12, 20);
+            this.nameCharacter.Name = "nameCharacter";
+            this.nameCharacter.Size = new System.Drawing.Size(254, 34);
+            this.nameCharacter.TabIndex = 5;
+            this.nameCharacter.Text = "nameCharacter";
             // 
-            // UserControl7
+            // ConvWindowUDC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.contentConv);
+            this.Controls.Add(this.nameCharacter);
+            this.Controls.Add(this.imgConvWin);
             this.MaximumSize = new System.Drawing.Size(1202, 275);
             this.MinimumSize = new System.Drawing.Size(1202, 275);
-            this.Name = "UserControl7";
+            this.Name = "ConvWindowUDC";
             this.Size = new System.Drawing.Size(1202, 275);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.ConvWindowUDC_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.imgConvWin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -119,8 +125,8 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label contentConv;
+        private System.Windows.Forms.PictureBox imgConvWin;
+        private System.Windows.Forms.Label nameCharacter;
     }
 }
