@@ -317,7 +317,9 @@
     <None Include="resources\IMG_0793.PNG" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="resources\btn_start.png" />
     <Content Include="resources\char-example2.jpg" />
+    <None Include="resources\init_image.png" />
     <Content Include="resources\Library2%281%29.jpg" />
     <Content Include="resources\LibraryComputer.png" />
   </ItemGroup>
