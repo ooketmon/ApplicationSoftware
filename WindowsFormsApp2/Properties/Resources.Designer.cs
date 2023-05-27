@@ -63,6 +63,16 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap btn_start {
+            get {
+                object obj = ResourceManager.GetObject("btn_start", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap char_example2 {
             get {
                 object obj = ResourceManager.GetObject("char-example2", resourceCulture);
@@ -76,6 +86,16 @@ namespace WindowsFormsApp2.Properties {
         internal static System.Drawing.Bitmap IMG_0793 {
             get {
                 object obj = ResourceManager.GetObject("IMG_0793", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap init_image {
+            get {
+                object obj = ResourceManager.GetObject("init_image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
