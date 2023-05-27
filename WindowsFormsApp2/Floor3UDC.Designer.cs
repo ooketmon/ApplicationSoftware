@@ -613,10 +613,10 @@
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox43);
-            this.MaximumSize = new System.Drawing.Size(1200, 1100);
-            this.MinimumSize = new System.Drawing.Size(1200, 1100);
+            this.MaximumSize = new System.Drawing.Size(1200, 847);
+            this.MinimumSize = new System.Drawing.Size(1200, 847);
             this.Name = "Floor3UDC";
-            this.Size = new System.Drawing.Size(1200, 1100);
+            this.Size = new System.Drawing.Size(1200, 847);
             this.Load += new System.EventHandler(this.UserControl3_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.UserControl3_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.UserControl3_KeyUp);

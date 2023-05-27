@@ -57,6 +57,7 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+
             // btnStart
             // 
             this.btnStart.BackColor = System.Drawing.Color.Transparent;
@@ -78,15 +79,24 @@
             this.init_image.Dock = System.Windows.Forms.DockStyle.Fill;
             this.init_image.Location = new System.Drawing.Point(0, 0);
             this.init_image.Name = "init_image";
+            this.init_image.Size = new System.Drawing.Size(1200, 800);
+            this.init_image.TabIndex = 2;
+            this.init_image.TabStop = false;
+            // 
+
             this.init_image.Size = new System.Drawing.Size(1052, 773);
             this.init_image.TabIndex = 2;
             this.init_image.TabStop = false;
             // 
+
             // InitMenu
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+
             this.ClientSize = new System.Drawing.Size(1052, 773);
+
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.btnLogin);

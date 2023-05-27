@@ -74,5 +74,10 @@ namespace WindowsFormsApp2
                 }
             }
         }
+
+        private void convWindowUDC1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
