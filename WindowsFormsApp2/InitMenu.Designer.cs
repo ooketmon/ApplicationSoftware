@@ -66,12 +66,45 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+<<<<<<< Updated upstream
+=======
+            // btnStart
+            // 
+            this.btnStart.BackColor = System.Drawing.Color.Transparent;
+            this.btnStart.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.btn_start;
+            this.btnStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnStart.Location = new System.Drawing.Point(396, 581);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(270, 60);
+            this.btnStart.TabIndex = 0;
+            this.btnStart.Tag = "btn";
+            this.btnStart.UseVisualStyleBackColor = false;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+            // 
+            // init_image
+            // 
+            this.init_image.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.init_image;
+            this.init_image.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.init_image.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.init_image.Location = new System.Drawing.Point(0, 0);
+            this.init_image.Name = "init_image";
+            this.init_image.Size = new System.Drawing.Size(1200, 800);
+            this.init_image.TabIndex = 2;
+            this.init_image.TabStop = false;
+            // 
+>>>>>>> Stashed changes
             // InitMenu
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+<<<<<<< Updated upstream
             this.ClientSize = new System.Drawing.Size(1052, 773);
             this.Controls.Add(this.btnLogin);
+=======
+            this.ClientSize = new System.Drawing.Size(1200, 800);
+>>>>>>> Stashed changes
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnStart);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;

@@ -81,7 +81,6 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.timerFloor1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox38 = new System.Windows.Forms.PictureBox();
-            this.imgConvWin = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).BeginInit();
@@ -133,7 +132,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgConvWin)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox48
@@ -654,21 +652,11 @@
             this.pictureBox38.Tag = "elevator";
             this.pictureBox38.Visible = false;
             // 
-            // imgConvWin
-            // 
-            this.imgConvWin.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.imgConvWin.Location = new System.Drawing.Point(0, 800);
-            this.imgConvWin.Name = "imgConvWin";
-            this.imgConvWin.Size = new System.Drawing.Size(1202, 173);
-            this.imgConvWin.TabIndex = 145;
-            this.imgConvWin.TabStop = false;
-            // 
             // Floor1UDC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.Controls.Add(this.imgConvWin);
             this.Controls.Add(this.pictureBox48);
             this.Controls.Add(this.pictureBox47);
             this.Controls.Add(this.pictureBox46);
@@ -720,10 +708,10 @@
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox38);
-            this.MaximumSize = new System.Drawing.Size(1200, 1000);
-            this.MinimumSize = new System.Drawing.Size(1200, 1000);
+            this.MaximumSize = new System.Drawing.Size(1200, 847);
+            this.MinimumSize = new System.Drawing.Size(1200, 847);
             this.Name = "Floor1UDC";
-            this.Size = new System.Drawing.Size(1200, 1000);
+            this.Size = new System.Drawing.Size(1200, 847);
             this.Load += new System.EventHandler(this.UserControl1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.UserControl1_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.UserControl1_KeyUp);
@@ -778,7 +766,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgConvWin)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -837,6 +824,5 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Timer timerFloor1;
         private System.Windows.Forms.PictureBox pictureBox38;
-        private System.Windows.Forms.PictureBox imgConvWin;
     }
 }

@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.contentConv = new System.Windows.Forms.Label();
             this.imgConvWin = new System.Windows.Forms.PictureBox();
             this.nameCharacter = new System.Windows.Forms.Label();
@@ -46,43 +44,25 @@
             this.button3.Text = "Skip";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(1113, 212);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 49);
-            this.button2.TabIndex = 7;
-            this.button2.Text = ">";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(1018, 212);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 49);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "<";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // contentConv
             // 
             this.contentConv.AutoSize = true;
             this.contentConv.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.contentConv.Font = new System.Drawing.Font("굴림", 20F);
             this.contentConv.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.contentConv.Location = new System.Drawing.Point(12, 89);
-            this.contentConv.MinimumSize = new System.Drawing.Size(1100, 150);
+            this.contentConv.Location = new System.Drawing.Point(12, 54);
+            this.contentConv.MinimumSize = new System.Drawing.Size(1100, 100);
             this.contentConv.Name = "contentConv";
-            this.contentConv.Size = new System.Drawing.Size(1100, 150);
+            this.contentConv.Size = new System.Drawing.Size(1100, 100);
             this.contentConv.TabIndex = 4;
             this.contentConv.Text = "contentConv";
             // 
             // imgConvWin
             // 
             this.imgConvWin.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.imgConvWin.Location = new System.Drawing.Point(0, -1);
+            this.imgConvWin.Location = new System.Drawing.Point(0, 0);
             this.imgConvWin.Name = "imgConvWin";
-            this.imgConvWin.Size = new System.Drawing.Size(1202, 275);
+            this.imgConvWin.Size = new System.Drawing.Size(1202, 170);
             this.imgConvWin.TabIndex = 3;
             this.imgConvWin.TabStop = false;
             this.imgConvWin.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -93,7 +73,7 @@
             this.nameCharacter.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.nameCharacter.Font = new System.Drawing.Font("굴림", 20F);
             this.nameCharacter.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nameCharacter.Location = new System.Drawing.Point(12, 20);
+            this.nameCharacter.Location = new System.Drawing.Point(12, 12);
             this.nameCharacter.Name = "nameCharacter";
             this.nameCharacter.Size = new System.Drawing.Size(254, 34);
             this.nameCharacter.TabIndex = 5;
@@ -104,15 +84,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.contentConv);
             this.Controls.Add(this.nameCharacter);
             this.Controls.Add(this.imgConvWin);
-            this.MaximumSize = new System.Drawing.Size(1202, 275);
-            this.MinimumSize = new System.Drawing.Size(1202, 275);
+            this.MaximumSize = new System.Drawing.Size(1202, 170);
+            this.MinimumSize = new System.Drawing.Size(1202, 170);
             this.Name = "ConvWindowUDC";
-            this.Size = new System.Drawing.Size(1202, 275);
+            this.Size = new System.Drawing.Size(1202, 170);
             this.Load += new System.EventHandler(this.ConvWindowUDC_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imgConvWin)).EndInit();
             this.ResumeLayout(false);
@@ -123,8 +101,6 @@
         #endregion
 
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label contentConv;
         private System.Windows.Forms.PictureBox imgConvWin;
         private System.Windows.Forms.Label nameCharacter;

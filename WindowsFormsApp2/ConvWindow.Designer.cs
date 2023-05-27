@@ -43,7 +43,7 @@
             this.nameCharacter.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.nameCharacter.Font = new System.Drawing.Font("굴림", 20F);
             this.nameCharacter.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nameCharacter.Location = new System.Drawing.Point(12, 20);
+            this.nameCharacter.Location = new System.Drawing.Point(12, 9);
             this.nameCharacter.Name = "nameCharacter";
             this.nameCharacter.Size = new System.Drawing.Size(254, 34);
             this.nameCharacter.TabIndex = 1;
@@ -56,7 +56,7 @@
             this.contentConv.BackColor = System.Drawing.SystemColors.MenuText;
             this.contentConv.Font = new System.Drawing.Font("굴림", 20F);
             this.contentConv.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.contentConv.Location = new System.Drawing.Point(12, 80);
+            this.contentConv.Location = new System.Drawing.Point(12, 54);
             this.contentConv.MinimumSize = new System.Drawing.Size(1100, 100);
             this.contentConv.Name = "contentConv";
             this.contentConv.Size = new System.Drawing.Size(1100, 100);
@@ -95,7 +95,7 @@
             this.imgConvWin.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.imgConvWin.Location = new System.Drawing.Point(0, 0);
             this.imgConvWin.Name = "imgConvWin";
-            this.imgConvWin.Size = new System.Drawing.Size(1202, 196);
+            this.imgConvWin.Size = new System.Drawing.Size(1202, 170);
             this.imgConvWin.TabIndex = 0;
             this.imgConvWin.TabStop = false;
             // 
