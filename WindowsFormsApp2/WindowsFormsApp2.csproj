@@ -126,6 +126,18 @@
     <Compile Include="Floor1.Designer.cs">
       <DependentUpon>Floor1.cs</DependentUpon>
     </Compile>
+    <Compile Include="inventory_item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="inventory_item.Designer.cs">
+      <DependentUpon>inventory_item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lecture1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="lecture1.Designer.cs">
+      <DependentUpon>lecture1.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginStart.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -237,6 +249,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Floor1.resx">
       <DependentUpon>Floor1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventory_item.resx">
+      <DependentUpon>inventory_item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lecture1.resx">
+      <DependentUpon>lecture1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginStart.resx">
       <DependentUpon>LoginStart.cs</DependentUpon>
