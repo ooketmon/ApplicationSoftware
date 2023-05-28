@@ -27,6 +27,7 @@ namespace WindowsFormsApp2
             nameCharacter.Parent = imgConvWin;
             nameCharacter.BackColor = Color.Transparent;
 
+
             contentConv.Parent = imgConvWin;
             contentConv.BackColor = Color.Transparent;
         }

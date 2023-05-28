@@ -185,6 +185,7 @@
             this.pictureBox44.Size = new System.Drawing.Size(45, 65);
             this.pictureBox44.TabIndex = 123;
             this.pictureBox44.TabStop = false;
+            this.pictureBox44.Tag = "LockedDoor";
             this.pictureBox44.Visible = false;
             // 
             // pictureBox43
@@ -214,6 +215,7 @@
             this.pictureBox41.Size = new System.Drawing.Size(45, 65);
             this.pictureBox41.TabIndex = 120;
             this.pictureBox41.TabStop = false;
+            this.pictureBox41.Tag = "LockedDoor";
             this.pictureBox41.Visible = false;
             // 
             // pictureBox40
@@ -325,6 +327,7 @@
             this.pictureBox30.Size = new System.Drawing.Size(60, 65);
             this.pictureBox30.TabIndex = 109;
             this.pictureBox30.TabStop = false;
+            this.pictureBox30.Tag = "LockedDoor";
             this.pictureBox30.Visible = false;
             // 
             // pictureBox29
