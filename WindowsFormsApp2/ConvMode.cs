@@ -34,7 +34,8 @@ namespace WindowsFormsApp2
             ConvMode cm = new ConvMode();
 
             System.Drawing.Text.PrivateFontCollection privateFonts = new System.Drawing.Text.PrivateFontCollection();
-            privateFonts.AddFontFile("./resources/Mabinogi_Classic_TTF.ttf");
+            privateFonts.AddFontFile("./resources/Mabinogi_Classic_TTF.ttf"); // 마비노기 옛체 
+            privateFonts.AddFontFile("./resources/NeoDunggeunmoPro-Regular.ttf"); // 둥근모
 
             Font name = new Font(privateFonts.Families[0], 20f);
             Font content = new Font(privateFonts.Families[0], 26f);
@@ -91,11 +92,6 @@ namespace WindowsFormsApp2
             }
 
             contentConv.Text = text.Substring(0, counter);
-
-
-                
-
-
 
         }
     }
