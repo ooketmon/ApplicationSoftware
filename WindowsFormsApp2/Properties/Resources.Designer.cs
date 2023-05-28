@@ -73,9 +73,29 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap Button {
+            get {
+                object obj = ResourceManager.GetObject("Button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap char_example2 {
             get {
                 object obj = ResourceManager.GetObject("char-example2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap ConvBack {
+            get {
+                object obj = ResourceManager.GetObject("ConvBack", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -196,6 +216,46 @@ namespace WindowsFormsApp2.Properties {
         internal static System.Drawing.Bitmap LibraryComputer {
             get {
                 object obj = ResourceManager.GetObject("LibraryComputer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static byte[] Mabinogi_Classic_TTF {
+            get {
+                object obj = ResourceManager.GetObject("Mabinogi_Classic_TTF", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static byte[] NeoDunggeunmoPro_Regular {
+            get {
+                object obj = ResourceManager.GetObject("NeoDunggeunmoPro_Regular", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap s_1 {
+            get {
+                object obj = ResourceManager.GetObject("s_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap ui_contentConversation {
+            get {
+                object obj = ResourceManager.GetObject("ui_contentConversation", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

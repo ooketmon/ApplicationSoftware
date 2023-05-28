@@ -8,6 +8,7 @@ using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace WindowsFormsApp2
 {
@@ -21,6 +22,8 @@ namespace WindowsFormsApp2
 
         private void btnStart_Click(object sender, EventArgs e)
         {
+            ConvMode cm = new ConvMode();
+            cm.ShowDialog();
             FloorChange(1);
         }
 
@@ -54,6 +57,19 @@ namespace WindowsFormsApp2
             tmp.Focus();
         }
 
+        //public int collision =0 ;
+        //public void ConversationMode(int collision)
+        //{
+        //    this.Controls.Clear();
+        //    this.Controls.Add(new ConvModeUDC());
+        //    switch (collision)
+        //    {
+
+        //    }
+        //    new ConvModeUDC().Focus();
+        //}
+
+      
         public void ElevatorCall(int floor)
         {
             
