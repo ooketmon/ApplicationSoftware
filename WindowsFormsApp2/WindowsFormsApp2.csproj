@@ -108,6 +108,7 @@
     <Compile Include="Floor8.Designer.cs">
       <DependentUpon>Floor8.cs</DependentUpon>
     </Compile>
+    <Compile Include="FontManager.cs" />
     <Compile Include="InitMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -300,6 +301,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="resources\Mabinogi_Classic_TTF.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
