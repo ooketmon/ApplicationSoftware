@@ -23,6 +23,7 @@ namespace WindowsFormsApp2
             imgCharacter.Controls.Add(imgCharBack);
             imgCharBack.Location = new Point(0, 0);
             imgCharBack.BackColor = Color.Transparent;
+            nameCharacter.TextAlign = ContentAlignment.MiddleCenter;
 
         }
 
@@ -70,7 +71,7 @@ namespace WindowsFormsApp2
             //contentConv.BackColor = Color.Transparent;
         }
 
-        private void btnSkip_Click(object sender, EventArgs e)
+        public void btnSkip_Click(object sender, EventArgs e)
         {
             this.Close();
         }
