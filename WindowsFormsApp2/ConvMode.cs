@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Drawing.Text;
 using System.Runtime.InteropServices;
 using System.Reflection.Emit;
+using WindowsFormsApp2.Properties;
 
 namespace WindowsFormsApp2
 {
@@ -18,6 +19,10 @@ namespace WindowsFormsApp2
         public ConvMode()
         {
             InitializeComponent();
+
+            imgCharacter.Controls.Add(imgCharBack);
+            imgCharBack.Location = new Point(0, 0);
+            imgCharBack.BackColor = Color.Transparent;
 
         }
 
@@ -94,5 +99,6 @@ namespace WindowsFormsApp2
             contentConv.Text = text.Substring(0, counter);
 
         }
+
     }
 }

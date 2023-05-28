@@ -317,6 +317,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="resources\Floor1\IMG_0808.PNG" />
+    <None Include="resources\ui\contentConversation.png" />
     <None Include="resources\saebit-cartoon\s-1.png" />
     <None Include="resources\Floor1\IMG_0826.PNG" />
     <Content Include="resources\Floor1\IMG_0827.PNG" />
