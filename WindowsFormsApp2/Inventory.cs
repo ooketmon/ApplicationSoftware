@@ -17,100 +17,101 @@ namespace WindowsFormsApp2
             InitializeComponent();
         }
 
+
         private void Inventory_Load(object sender, EventArgs e)
         {
 
         }
     }
 
-    class inven
+    class Inven
     {
         bool[] inventory = new bool[11];
         
 
-        item[] Arritem;
-
-        public inven()
+        public Inven()
         {
-            Arritem = new item[11];
+            for(int i = 0; i < 11; i++){
+                inventory[i] = false;
+            }
         }
     }
 
-    class item
+    class Item
     {
         //1. 게시판 - 강의실1 - 연구실1 관련 item
-        int mPapper1;
-        int mTest1;
-        public int Papper_1
+        bool mPapper1;
+        bool mTest1;
+        public bool Papper_1
         {
             get { return mPapper1; }
             set { mPapper1 = value; }
         }
-        public int Test_1
+        public bool Test_1
         {
             get { return mTest1; }
             set { mTest1 = value; }
         }
         //2. 강의실2 - 연구실2 관련 item
-        int mTest2;
-        public int Test_2
+        bool mTest2;
+        public bool Test_2
         {
             get { return mTest2; }
             set { mTest2 = value; }
         }
         //3. 창업동아리 - 강의실3 - 연구실3 관련 item
-        int mPapper3;
-        int mCardkey3;
-        int mPoster3;
-        int mTest3;
-        public int Papper_3
+        bool mPapper3;
+        bool mCardkey3;
+        bool mPoster3;
+        bool mTest3;
+        public bool Papper_3
         {
             get { return mPapper3; }
             set { mPapper3 = value; }
         }
-        public int Cardkey_3
+        public bool Cardkey_3
         {
             get { return mCardkey3; }
             set { mCardkey3 = value; }
         }
-        public int Poster_3
+        public bool Poster_3
         {
             get { return mPoster3; }
             set { mPoster3 = value; }
         }
-        public int Test_3
+        public bool Test_3
         {
             get { return mTest3; }
             set { mTest3 = value; }
         }
         //4. 과사 - 경비실 - 실습실 - 연구실4 관련 item
-        int mPapper4;
-        int mSafekey4;
-        int mKey4;
-        int mTest4;
-        public int Papper_4
+        bool mPapper4;
+        bool mSafekey4;
+        bool mKey4;
+        bool mTest4;
+        public bool Papper_4
         {
             get { return mPapper4; }
             set { mPapper4 = value; }
         }
-        public int Safekey_4
+        public bool Safekey_4
         {
             get { return mSafekey4; }
             set { mSafekey4 = value; }
         }
-        public int Key_4
+        public bool Key_4
         {
             get { return mKey4; }
             set { mKey4 = value; }
         }
-        public int Test_4
+        public bool Test_4
         {
             get { return mTest4; }
             set { mTest4 = value; }
         }
         //5. 대학원 강의실 관련 item
-        int mCardkey5;
-        public int Cardkey_5
+        bool mCardkey5;
+        public bool Cardkey_5
         {
             get { return mCardkey5; }
             set { mCardkey5 = value; }

@@ -35,7 +35,8 @@ namespace WindowsFormsApp2
         public Floor1UDC()
         {
             InitializeComponent();
-         
+            //this.KeyPreview = true; // KeyPreview 속성을 true로 설정
+            this.KeyDown += Inventory_KeyDown; // 이벤트 핸들러 등록
         }
 
         private void UserControl1_Load(object sender, EventArgs e)
@@ -78,6 +79,23 @@ namespace WindowsFormsApp2
         private void convWindowUDC1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Inventory_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.I)
+            {
+                ShowInventory();
+            }
+        }
+
+        private void ShowInventory()
+        {
+            // 호출할 폼의 인스턴스 생성
+            Inventory inventory = new Inventory();
+
+            // 폼을 보여줌
+            inventory.Show();
         }
     }
 }
