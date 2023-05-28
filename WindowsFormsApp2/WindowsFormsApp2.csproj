@@ -45,7 +45,7 @@
       <HintPath>packages\Microsoft.Web.WebView2.1.0.1774.30\lib\net45\Microsoft.Web.WebView2.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="System">
-      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -308,17 +308,41 @@
     <None Include="resources\IMG_0793.PNG" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="resources\Floor1\IMG_0808.PNG" />
+    <None Include="resources\Floor1\IMG_0826.PNG" />
+    <Content Include="resources\Floor1\IMG_0827.PNG" />
+    <None Include="resources\Floor1\IMG_0829.PNG" />
+    <None Include="resources\Floor1\IMG_0830.PNG" />
+    <None Include="resources\Floor1\IMG_0831.PNG" />
+    <None Include="resources\Floor1\IMG_0832.PNG" />
+    <Content Include="resources\Player\IMG_0809.PNG" />
+    <Content Include="resources\Player\IMG_0811.PNG" />
+    <Content Include="resources\Player\IMG_0812.PNG" />
+    <Content Include="resources\Player\IMG_0813.PNG" />
+    <Content Include="resources\Player\IMG_0814.PNG" />
+    <Content Include="resources\Player\IMG_0815.PNG" />
+    <Content Include="resources\Player\IMG_0816.PNG" />
+    <Content Include="resources\Player\IMG_0817.PNG" />
+    <Content Include="resources\Player\IMG_0818.PNG" />
+    <Content Include="resources\Player\IMG_0819.PNG" />
+    <Content Include="resources\Player\IMG_0820.PNG" />
+    <Content Include="resources\Player\IMG_0821.PNG" />
+    <Content Include="resources\Player\IMG_0822.PNG" />
+    <Content Include="resources\Player\IMG_0823.PNG" />
+    <Content Include="resources\Player\IMG_0824.PNG" />
+    <Content Include="resources\Player\IMG_0825.PNG" />
     <None Include="resources\btn_start.png" />
     <Content Include="resources\char-example2.jpg" />
     <None Include="resources\init_image.png" />
     <Content Include="resources\Library2%281%29.jpg" />
     <Content Include="resources\LibraryComputer.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Microsoft.Web.WebView2.1.0.1774.30\build\Microsoft.Web.WebView2.targets" Condition="Exists('packages\Microsoft.Web.WebView2.1.0.1774.30\build\Microsoft.Web.WebView2.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
-      <ErrorText>이 프로젝트는 이 컴퓨터에 없는 NuGet 패키지를 참조합니다. 해당 패키지를 다운로드하려면 NuGet 패키지 복원을 사용하십시오. 자세한 내용은 http://go.microsoft.com/fwlink/?LinkID=322105를 참조하십시오. 누락된 파일은 {0}입니다.</ErrorText>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('packages\Microsoft.Web.WebView2.1.0.1774.30\build\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.Web.WebView2.1.0.1774.30\build\Microsoft.Web.WebView2.targets'))" />
   </Target>

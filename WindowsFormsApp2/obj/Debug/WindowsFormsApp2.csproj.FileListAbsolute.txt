@@ -147,7 +147,6 @@ C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSof
 C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
 C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Inventory.resources
-<<<<<<< HEAD
 C:\Users\SOOBIN\Desktop\광운대 3-1\응용소프트웨어실습\팀프로젝트%\Github\WindowsFormsApp2\bin\Debug\runtimes\win-x86\native\WebView2Loader.dll
 C:\Users\SOOBIN\Desktop\광운대 3-1\응용소프트웨어실습\팀프로젝트%\Github\WindowsFormsApp2\bin\Debug\runtimes\win-x64\native\WebView2Loader.dll
 C:\Users\SOOBIN\Desktop\광운대 3-1\응용소프트웨어실습\팀프로젝트%\Github\WindowsFormsApp2\bin\Debug\runtimes\win-arm64\native\WebView2Loader.dll
@@ -244,7 +243,6 @@ E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj
 E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
 E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
-=======
 C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ElevatorChoice.resources
 C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ElevatorChoiceUDC.resources
 C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.lecture1.resources
@@ -258,6 +256,7 @@ C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSof
 C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ConvWindowUDC.resources
 C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ConvModeUDC.resources
 C:\Users\admin\Desktop\대학생\3학년\1학기\응소실\팀플\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.inventory_item.resources
->>>>>>> main
 E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.inventory_item.resources
 E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.lecture1.resources
+C:\Users\SOOBIN\Desktop\광운대 3-1\응용소프트웨어실습\팀프로젝트%\Github\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.inventory_item.resources
+C:\Users\SOOBIN\Desktop\광운대 3-1\응용소프트웨어실습\팀프로젝트%\Github\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.lecture1.resources

@@ -118,22 +118,46 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="LibraryComputer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\LibraryComputer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="IMG_0793" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\IMG_0793.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Library2(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Library2(1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMG_0827" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Floor1\IMG_0827.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LibraryComputer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\LibraryComputer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="char-example2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\char-example2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="IMG_0826" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Floor1\IMG_0826.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="init_image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\init_image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="IMG_0830" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Floor1\IMG_0830.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="btn_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\btn_start.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMG_0793" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\IMG_0793.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMG_0831" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Floor1\IMG_0831.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMG_0808" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Floor1\IMG_0808.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMG_0829" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Floor1\IMG_0829.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMG_0809" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Player\IMG_0809.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMG_0832" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Floor1\IMG_0832.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

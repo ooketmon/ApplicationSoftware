@@ -11,7 +11,7 @@ namespace WindowsFormsApp2
     internal class PlayerControl
     {
         private PictureBox player;
-        int playerSpeed = 8;
+        int playerSpeed = 5;
         bool goLeft, goRight, goUp, goDown;
 
         private IEnumerable<Control> Controls;
