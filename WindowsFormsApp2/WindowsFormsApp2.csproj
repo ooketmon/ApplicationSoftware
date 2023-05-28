@@ -59,207 +59,198 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ControlConversation.cs" />
-    <Compile Include="ControlEnvironment.cs" />
-    <Compile Include="crawling_test.cs">
+    <Compile Include="Classes\ControlConversation.cs" />
+    <Compile Include="Classes\ControlEnvironment.cs" />
+    <Compile Include="Forms\crawling_test.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="crawling_test.Designer.cs">
+    <Compile Include="Forms\crawling_test.Designer.cs">
       <DependentUpon>crawling_test.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConvMode.cs">
+    <Compile Include="Forms\ConvMode.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConvMode.Designer.cs">
+    <Compile Include="Forms\ConvMode.Designer.cs">
       <DependentUpon>ConvMode.cs</DependentUpon>
     </Compile>
-    <Compile Include="ElevatorChoice.cs">
+    <Compile Include="Not-Use\ElevatorChoice.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ElevatorChoice.Designer.cs">
+    <Compile Include="Not-Use\ElevatorChoice.Designer.cs">
       <DependentUpon>ElevatorChoice.cs</DependentUpon>
     </Compile>
-    <Compile Include="ElevatorChoiceUDC.cs">
+    <Compile Include="UDC\ElevatorChoiceUDC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ElevatorChoiceUDC.Designer.cs">
+    <Compile Include="UDC\ElevatorChoiceUDC.Designer.cs">
       <DependentUpon>ElevatorChoiceUDC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Floor2.cs">
+    <Compile Include="Not-Use\Floor2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Floor2.Designer.cs">
+    <Compile Include="Not-Use\Floor2.Designer.cs">
       <DependentUpon>Floor2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Floor3.cs">
+    <Compile Include="Not-Use\Floor3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Floor3.Designer.cs">
+    <Compile Include="Not-Use\Floor3.Designer.cs">
       <DependentUpon>Floor3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Floor4.cs">
+    <Compile Include="Not-Use\Floor4.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Floor4.Designer.cs">
+    <Compile Include="Not-Use\Floor4.Designer.cs">
       <DependentUpon>Floor4.cs</DependentUpon>
     </Compile>
-    <Compile Include="Floor8.cs">
+    <Compile Include="Not-Use\Floor8.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Floor8.Designer.cs">
+    <Compile Include="Not-Use\Floor8.Designer.cs">
       <DependentUpon>Floor8.cs</DependentUpon>
     </Compile>
-    <Compile Include="FontManager.cs" />
-    <Compile Include="InitMenu.cs">
+    <Compile Include="Classes\FontManager.cs" />
+    <Compile Include="Forms\InitMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InitMenu.Designer.cs">
+    <Compile Include="Forms\InitMenu.Designer.cs">
       <DependentUpon>InitMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Floor1.cs">
+    <Compile Include="Not-Use\Floor1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Floor1.Designer.cs">
+    <Compile Include="Not-Use\Floor1.Designer.cs">
       <DependentUpon>Floor1.cs</DependentUpon>
     </Compile>
-    <Compile Include="inventory_item.cs">
+    <Compile Include="UDC\inventory_item.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="inventory_item.Designer.cs">
+    <Compile Include="UDC\inventory_item.Designer.cs">
       <DependentUpon>inventory_item.cs</DependentUpon>
     </Compile>
-    <Compile Include="lecture1.cs">
+    <Compile Include="UDC\lecture1.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="lecture1.Designer.cs">
+    <Compile Include="UDC\lecture1.Designer.cs">
       <DependentUpon>lecture1.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginStart.cs">
+    <Compile Include="Not-Use\LoginStart.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginStart.designer.cs">
+    <Compile Include="Not-Use\LoginStart.designer.cs">
       <DependentUpon>LoginStart.cs</DependentUpon>
     </Compile>
-    <Compile Include="Inventory.cs">
+    <Compile Include="Forms\Inventory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Inventory.Designer.cs">
+    <Compile Include="Forms\Inventory.Designer.cs">
       <DependentUpon>Inventory.cs</DependentUpon>
     </Compile>
-    <Compile Include="PlayerControl.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Classes\PlayerControl.cs" />
+    <Compile Include="Classes\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="puzzle.cs">
+    <Compile Include="UDC\puzzle.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="puzzle.Designer.cs">
+    <Compile Include="UDC\puzzle.Designer.cs">
       <DependentUpon>puzzle.cs</DependentUpon>
     </Compile>
-    <Compile Include="StaticItem.cs" />
-    <Compile Include="STUDENT_INFO.cs" />
-    <Compile Include="Floor1UDC.cs">
+    <Compile Include="Classes\StaticItem.cs" />
+    <Compile Include="Classes\STUDENT_INFO.cs" />
+    <Compile Include="UDC\Floor1UDC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Floor1UDC.Designer.cs">
+    <Compile Include="UDC\Floor1UDC.Designer.cs">
       <DependentUpon>Floor1UDC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Floor2UDC.cs">
+    <Compile Include="UDC\Floor2UDC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Floor2UDC.Designer.cs">
+    <Compile Include="UDC\Floor2UDC.Designer.cs">
       <DependentUpon>Floor2UDC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Floor3UDC.cs">
+    <Compile Include="UDC\Floor3UDC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Floor3UDC.Designer.cs">
+    <Compile Include="UDC\Floor3UDC.Designer.cs">
       <DependentUpon>Floor3UDC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Floor4UDC.cs">
+    <Compile Include="UDC\Floor4UDC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Floor4UDC.Designer.cs">
+    <Compile Include="UDC\Floor4UDC.Designer.cs">
       <DependentUpon>Floor4UDC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Floor8UDC.cs">
+    <Compile Include="UDC\Floor8UDC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Floor8UDC.Designer.cs">
+    <Compile Include="UDC\Floor8UDC.Designer.cs">
       <DependentUpon>Floor8UDC.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginStartUDC.cs">
+    <Compile Include="UDC\LoginStartUDC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="LoginStartUDC.Designer.cs">
+    <Compile Include="UDC\LoginStartUDC.Designer.cs">
       <DependentUpon>LoginStartUDC.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConvWindowUDC.cs">
+    <Compile Include="UDC\ConvWindowUDC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ConvWindowUDC.Designer.cs">
+    <Compile Include="UDC\ConvWindowUDC.Designer.cs">
       <DependentUpon>ConvWindowUDC.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConvModeUDC.cs">
+    <Compile Include="UDC\ConvModeUDC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ConvModeUDC.Designer.cs">
+    <Compile Include="UDC\ConvModeUDC.Designer.cs">
       <DependentUpon>ConvModeUDC.cs</DependentUpon>
     </Compile>
-    <Compile Include="temp.cs">
+    <Compile Include="Forms\temp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="temp.Designer.cs">
+    <Compile Include="Forms\temp.Designer.cs">
       <DependentUpon>temp.cs</DependentUpon>
     </Compile>
-    <Compile Include="TransTextBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="TransTextBox.Designer.cs">
-      <DependentUpon>TransTextBox.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TransTextBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <EmbeddedResource Include="crawling_test.resx">
+    <EmbeddedResource Include="Forms\crawling_test.resx">
       <DependentUpon>crawling_test.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConvMode.resx">
+    <EmbeddedResource Include="Forms\ConvMode.resx">
       <DependentUpon>ConvMode.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ElevatorChoice.resx">
+    <EmbeddedResource Include="Not-Use\ElevatorChoice.resx">
       <DependentUpon>ElevatorChoice.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ElevatorChoiceUDC.resx">
+    <EmbeddedResource Include="UDC\ElevatorChoiceUDC.resx">
       <DependentUpon>ElevatorChoiceUDC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Floor2.resx">
+    <EmbeddedResource Include="Not-Use\Floor2.resx">
       <DependentUpon>Floor2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Floor3.resx">
+    <EmbeddedResource Include="Not-Use\Floor3.resx">
       <DependentUpon>Floor3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Floor4.resx">
+    <EmbeddedResource Include="Not-Use\Floor4.resx">
       <DependentUpon>Floor4.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Floor8.resx">
+    <EmbeddedResource Include="Not-Use\Floor8.resx">
       <DependentUpon>Floor8.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InitMenu.resx">
+    <EmbeddedResource Include="Forms\InitMenu.resx">
       <DependentUpon>InitMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Floor1.resx">
+    <EmbeddedResource Include="Not-Use\Floor1.resx">
       <DependentUpon>Floor1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="inventory_item.resx">
+    <EmbeddedResource Include="UDC\inventory_item.resx">
       <DependentUpon>inventory_item.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="lecture1.resx">
+    <EmbeddedResource Include="UDC\lecture1.resx">
       <DependentUpon>lecture1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginStart.resx">
+    <EmbeddedResource Include="Not-Use\LoginStart.resx">
       <DependentUpon>LoginStart.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Inventory.resx">
+    <EmbeddedResource Include="Forms\Inventory.resx">
       <DependentUpon>Inventory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -272,34 +263,34 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Floor1UDC.resx">
+    <EmbeddedResource Include="UDC\Floor1UDC.resx">
       <DependentUpon>Floor1UDC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Floor2UDC.resx">
+    <EmbeddedResource Include="UDC\Floor2UDC.resx">
       <DependentUpon>Floor2UDC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Floor3UDC.resx">
+    <EmbeddedResource Include="UDC\Floor3UDC.resx">
       <DependentUpon>Floor3UDC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Floor4UDC.resx">
+    <EmbeddedResource Include="UDC\Floor4UDC.resx">
       <DependentUpon>Floor4UDC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Floor8UDC.resx">
+    <EmbeddedResource Include="UDC\Floor8UDC.resx">
       <DependentUpon>Floor8UDC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginStartUDC.resx">
+    <EmbeddedResource Include="UDC\LoginStartUDC.resx">
       <DependentUpon>LoginStartUDC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConvWindowUDC.resx">
+    <EmbeddedResource Include="UDC\ConvWindowUDC.resx">
       <DependentUpon>ConvWindowUDC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConvModeUDC.resx">
+    <EmbeddedResource Include="UDC\ConvModeUDC.resx">
       <DependentUpon>ConvModeUDC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="puzzle.resx">
+    <EmbeddedResource Include="UDC\puzzle.resx">
       <DependentUpon>puzzle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="temp.resx">
+    <EmbeddedResource Include="Forms\temp.resx">
       <DependentUpon>temp.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -320,7 +311,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="Forms\App.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="resources\IMG_0793.PNG" />
