@@ -10,14 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    public partial class lecture1 : UserControl
+    public partial class temp : Form
     {
-        public lecture1()
+        public temp()
         {
             InitializeComponent();
-
-            clue_example.BackColor = Color.Transparent;
-            clue_example.Parent = ;
         }
     }
 }
