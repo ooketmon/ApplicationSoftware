@@ -15,8 +15,15 @@ namespace WindowsFormsApp2
         public Inventory()
         {
             InitializeComponent();
+            this.KeyDown += Inventory_KeyDown; // 이벤트 핸들러 등록
         }
-
+        private void Inventory_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.I)
+            {
+                this.Close();
+            }
+        }
 
         private void Inventory_Load(object sender, EventArgs e)
         {

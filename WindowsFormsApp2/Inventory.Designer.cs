@@ -180,7 +180,9 @@
             this.Controls.Add(this.box_cardkey);
             this.Controls.Add(this.box_papper_3);
             this.Controls.Add(this.box_papper_1);
+            this.Location = new System.Drawing.Point(50, 50);
             this.Name = "Inventory";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Inventory";
             this.Load += new System.EventHandler(this.Inventory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.box_papper_1)).EndInit();

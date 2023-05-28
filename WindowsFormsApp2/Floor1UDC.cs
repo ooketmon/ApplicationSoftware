@@ -95,7 +95,7 @@ namespace WindowsFormsApp2
             Inventory inventory = new Inventory();
 
             // 폼을 보여줌
-            inventory.Show();
+            inventory.ShowDialog();
         }
     }
 }
