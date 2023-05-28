@@ -29,26 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.imgCharacter = new System.Windows.Forms.PictureBox();
             this.btnSkip = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnPrev = new System.Windows.Forms.Button();
             this.contentConv = new System.Windows.Forms.Label();
             this.nameCharacter = new System.Windows.Forms.Label();
-            this.imgConvWindowBack = new System.Windows.Forms.PictureBox();
             this.timerLetter = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.imgCharacter)).BeginInit();
+            this.imgConvWindowBack = new System.Windows.Forms.PictureBox();
+            this.imgCharacter = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.imgConvWindowBack)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCharacter)).BeginInit();
             this.SuspendLayout();
-            // 
-            // imgCharacter
-            // 
-            this.imgCharacter.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.imgCharacter.Location = new System.Drawing.Point(115, 225);
-            this.imgCharacter.Name = "imgCharacter";
-            this.imgCharacter.Size = new System.Drawing.Size(289, 480);
-            this.imgCharacter.TabIndex = 1;
-            this.imgCharacter.TabStop = false;
             // 
             // btnSkip
             // 
@@ -104,6 +95,10 @@
             this.nameCharacter.TabIndex = 5;
             this.nameCharacter.Text = "nameCharacter";
             // 
+            // timerLetter
+            // 
+            this.timerLetter.Tick += new System.EventHandler(this.timerLetter_Tick);
+            // 
             // imgConvWindowBack
             // 
             this.imgConvWindowBack.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -113,14 +108,20 @@
             this.imgConvWindowBack.TabIndex = 3;
             this.imgConvWindowBack.TabStop = false;
             // 
-            // timerLetter
+            // imgCharacter
             // 
-            this.timerLetter.Tick += new System.EventHandler(this.timerLetter_Tick);
+            this.imgCharacter.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.imgCharacter.Location = new System.Drawing.Point(115, 225);
+            this.imgCharacter.Name = "imgCharacter";
+            this.imgCharacter.Size = new System.Drawing.Size(289, 480);
+            this.imgCharacter.TabIndex = 1;
+            this.imgCharacter.TabStop = false;
             // 
             // ConvMode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1200, 800);
             this.Controls.Add(this.btnSkip);
             this.Controls.Add(this.btnNext);
@@ -133,21 +134,21 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ConvMode";
             this.Load += new System.EventHandler(this.ConvMode_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.imgCharacter)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgConvWindowBack)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCharacter)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox imgCharacter;
         private System.Windows.Forms.Button btnSkip;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnPrev;
-        private System.Windows.Forms.Label contentConv;
-        private System.Windows.Forms.Label nameCharacter;
-        private System.Windows.Forms.PictureBox imgConvWindowBack;
         private System.Windows.Forms.Timer timerLetter;
+        public System.Windows.Forms.Label contentConv;
+        public System.Windows.Forms.Label nameCharacter;
+        public System.Windows.Forms.PictureBox imgCharacter;
+        public System.Windows.Forms.PictureBox imgConvWindowBack;
     }
 }

@@ -59,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControlConversation.cs" />
     <Compile Include="ControlEnvironment.cs" />
     <Compile Include="crawling_test.cs">
       <SubType>Form</SubType>
@@ -316,6 +317,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="resources\Floor1\IMG_0808.PNG" />
+    <None Include="resources\saebit-cartoon\s-1.png" />
     <None Include="resources\Floor1\IMG_0826.PNG" />
     <Content Include="resources\Floor1\IMG_0827.PNG" />
     <None Include="resources\Floor1\IMG_0829.PNG" />
