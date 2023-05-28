@@ -93,6 +93,9 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap clue_example {
+            get {
+                object obj = ResourceManager.GetObject("clue_example", resourceCulture);
         internal static System.Drawing.Bitmap ConvBack {
             get {
                 object obj = ResourceManager.GetObject("ConvBack", resourceCulture);
