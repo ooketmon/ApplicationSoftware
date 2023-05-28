@@ -1,0 +1,51 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace WindowsFormsApp2
+{
+    public class StaticItem
+    {
+        static bool[] inventory = new bool[12];
+
+        //1. 게시판 - 강의실1 - 연구실1 관련 item
+        static bool mPapper1 = false;
+        static bool mTest1 = false;
+
+        //2. 강의실2 - 연구실2 관련 item
+        static bool mTest2 = false;
+
+        //3. 창업동아리 - 강의실3 - 연구실3 관련 item
+        static bool mPapper3 = false;
+        static bool mCardkey3 = false;
+        static bool mPoster3 = false;
+        static bool mTest3 = false;
+
+        //4. 과사 - 경비실 - 실습실 - 연구실4 관련 item
+        static bool mPapper4 = false;
+        static bool mSafekey4 = false;
+        static bool mKey4 = false;
+        static bool mTest4 = false;
+
+        //5. 대학원 강의실 관련 item
+        static bool mCardkey5 = false;
+
+        public static void inventory_set(object sender, EventArgs e) 
+        {
+            inventory[0] = mPapper1;
+            inventory[1] = mTest1;
+            inventory[2] = mTest2;
+            inventory[3] = mPapper3;
+            inventory[4] = mCardkey3;
+            inventory[5] = mPoster3;
+            inventory[6] = mTest3;
+            inventory[7] = mPapper4;
+            inventory[8] = mSafekey4;
+            inventory[9] = mKey4;
+            inventory[10] = mTest4;
+            inventory[11] = mCardkey5;
+        }
+    }
+}
