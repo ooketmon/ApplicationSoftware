@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.imgCharacter = new System.Windows.Forms.PictureBox();
             this.btnSkip = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
@@ -35,6 +36,7 @@
             this.contentConv = new System.Windows.Forms.Label();
             this.nameCharacter = new System.Windows.Forms.Label();
             this.imgConvWindowBack = new System.Windows.Forms.PictureBox();
+            this.timerLetter = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.imgCharacter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgConvWindowBack)).BeginInit();
             this.SuspendLayout();
@@ -88,11 +90,12 @@
             this.contentConv.Size = new System.Drawing.Size(1100, 100);
             this.contentConv.TabIndex = 4;
             this.contentConv.Text = "contentConv";
+            this.contentConv.Click += new System.EventHandler(this.contentConv_Click);
             // 
             // nameCharacter
             // 
             this.nameCharacter.AutoSize = true;
-            this.nameCharacter.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.nameCharacter.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.nameCharacter.Font = new System.Drawing.Font("굴림", 20F);
             this.nameCharacter.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.nameCharacter.Location = new System.Drawing.Point(9, 626);
@@ -109,6 +112,10 @@
             this.imgConvWindowBack.Size = new System.Drawing.Size(1202, 187);
             this.imgConvWindowBack.TabIndex = 3;
             this.imgConvWindowBack.TabStop = false;
+            // 
+            // timerLetter
+            // 
+            this.timerLetter.Tick += new System.EventHandler(this.timerLetter_Tick);
             // 
             // ConvMode
             // 
@@ -141,5 +148,6 @@
         private System.Windows.Forms.Label contentConv;
         private System.Windows.Forms.Label nameCharacter;
         private System.Windows.Forms.PictureBox imgConvWindowBack;
+        private System.Windows.Forms.Timer timerLetter;
     }
 }
