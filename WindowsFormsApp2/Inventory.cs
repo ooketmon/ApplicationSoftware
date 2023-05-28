@@ -18,8 +18,14 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
             this.KeyDown += Inventory_KeyDown; // 이벤트 핸들러 등록
+
+            clue_ex.BackColor = Color.Transparent;
+            clue_ex.Parent = box_papper_1;
+
+            if (mPapper1 == true) { clue_ex.Visible = true; }
+            else { clue_ex.Visible = false;}
         }
-        private void Inventory_KeyDown(object sender, KeyEventArgs e)
+        public void Inventory_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.I)
             {
@@ -32,19 +38,5 @@ namespace WindowsFormsApp2
 
         }
     }
-
-    class Inven
-    {
-        bool[] inventory = new bool[11];
-        
-
-        public Inven()
-        {
-            for(int i = 0; i < 11; i++){
-                inventory[i] = false;
-            }
-        }
-    }
-
     
 }

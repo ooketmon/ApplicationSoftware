@@ -55,6 +55,7 @@
             this.clue_example.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.clue_example.TabIndex = 1;
             this.clue_example.TabStop = false;
+            this.clue_example.Click += new System.EventHandler(this.clue_example_Click);
             // 
             // lecture1
             // 

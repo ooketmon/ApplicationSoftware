@@ -8,31 +8,31 @@ namespace WindowsFormsApp2
 {
     public class StaticItem
     {
-        static bool[] inventory = new bool[12];
+        public static bool[] inventory = new bool[12];
 
         //1. 게시판 - 강의실1 - 연구실1 관련 item
-        static bool mPapper1 = false;
-        static bool mTest1 = false;
+        public static bool mPapper1 = false;
+        public static bool mTest1 = false;
 
         //2. 강의실2 - 연구실2 관련 item
-        static bool mTest2 = false;
+        public static bool mTest2 = false;
 
         //3. 창업동아리 - 강의실3 - 연구실3 관련 item
-        static bool mPapper3 = false;
-        static bool mCardkey3 = false;
-        static bool mPoster3 = false;
-        static bool mTest3 = false;
+        public static bool mPapper3 = false;
+        public static bool mCardkey3 = false;
+        public static bool mPoster3 = false;
+        public static bool mTest3 = false;
 
         //4. 과사 - 경비실 - 실습실 - 연구실4 관련 item
-        static bool mPapper4 = false;
-        static bool mSafekey4 = false;
-        static bool mKey4 = false;
-        static bool mTest4 = false;
+        public static bool mPapper4 = false;
+        public static bool mSafekey4 = false;
+        public static bool mKey4 = false;
+        public static bool mTest4 = false;
 
         //5. 대학원 강의실 관련 item
-        static bool mCardkey5 = false;
+        public static bool mCardkey5 = false;
 
-        public static void inventory_set(object sender, EventArgs e) 
+        public static void inventory_set() 
         {
             inventory[0] = mPapper1;
             inventory[1] = mTest1;
