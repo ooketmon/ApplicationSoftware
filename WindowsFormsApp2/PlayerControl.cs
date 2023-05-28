@@ -13,6 +13,9 @@ namespace WindowsFormsApp2
         private PictureBox player;
         int playerSpeed = 8;
         bool goLeft, goRight, goUp, goDown;
+
+        private IEnumerable<Control> Controls;
+
         public PlayerControl(PictureBox player)
         {
             this.player = player;
@@ -62,7 +65,19 @@ namespace WindowsFormsApp2
                 player.Left = playerX;
                 player.Top = playerY;
             }
+
+            //foreach (Control x in this.Controls)
+            //{
+            //    if(x is PictureBox && (string)x.Tag =="LockedDoor")
+            //    {
+            //        if (player.Bounds.IntersectsWith(x.Bounds))
+            //        {
+            //            InitMenu.collision = 1; 
+            //        }
+            //    }
+            //}
         }
+
 
     }
 }

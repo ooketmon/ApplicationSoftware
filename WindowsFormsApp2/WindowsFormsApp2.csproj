@@ -60,12 +60,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ControlEnvironment.cs" />
-    <Compile Include="ConvWindow.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ConvWindow.Designer.cs">
-      <DependentUpon>ConvWindow.cs</DependentUpon>
-    </Compile>
     <Compile Include="crawling_test.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -217,9 +211,6 @@
     <Compile Include="TransTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <EmbeddedResource Include="ConvWindow.resx">
-      <DependentUpon>ConvWindow.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="crawling_test.resx">
       <DependentUpon>crawling_test.cs</DependentUpon>
     </EmbeddedResource>

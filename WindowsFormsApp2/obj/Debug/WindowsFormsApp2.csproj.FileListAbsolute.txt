@@ -217,7 +217,6 @@ E:\GitHub\ApplicationSoftware\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.
 E:\GitHub\ApplicationSoftware\WindowsFormsApp2\bin\Debug\Microsoft.Web.WebView2.Wpf.xml
 E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
 E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
-E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ConvWindow.resources
 E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.crawling_test.resources
 E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ConvMode.resources
 E:\GitHub\ApplicationSoftware\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ElevatorChoice.resources
