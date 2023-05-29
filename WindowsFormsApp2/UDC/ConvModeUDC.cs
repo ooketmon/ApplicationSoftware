@@ -83,7 +83,7 @@ namespace WindowsFormsApp2.UDC
 
         private void btnSkip_Click(object sender, EventArgs e)
         {
-            (this.Parent as InitMenu).FloorChange(1);
+            (this.Parent as InitMenu).GoToLogin();
         }
     }
 }

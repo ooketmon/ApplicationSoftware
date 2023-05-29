@@ -15,6 +15,7 @@ namespace WindowsFormsApp2
         private PlayerControl playerMove;
         bool playerisOnStair = false;
         bool playerisOnElevator = false;
+
         public Floor2UDC()
         {
             InitializeComponent();
@@ -42,6 +43,7 @@ namespace WindowsFormsApp2
             playerisOnStair = false;
             playerisOnElevator = false;
             playerMove = new PlayerControl(player);
+
         }
         private void UserControl2_KeyUp(object sender, KeyEventArgs e)
         {
@@ -53,10 +55,9 @@ namespace WindowsFormsApp2
             playerMove.PlayerKeyDown(sender, e);
         }
 
+
         private void timerFloor2_Tick(object sender, EventArgs e)
         {
-            playerMove.MovePlayer();
-
             foreach (Control x in this.Controls)
             {
                 if (x is PictureBox && (string)x.Name == "stairs2")
@@ -79,5 +80,7 @@ namespace WindowsFormsApp2
                 }
             }
         }
+
+
     }
 }

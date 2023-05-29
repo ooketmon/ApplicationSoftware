@@ -25,6 +25,11 @@ namespace WindowsFormsApp2
             this.CenterToScreen();
         }
 
+        public void CallMainMenu()
+        {
+            this.Controls.Clear();
+            this.Controls.Add(new InitWindow());
+        }
 
         public void FloorChange(int floor)
         {
@@ -152,7 +157,7 @@ namespace WindowsFormsApp2
         }
         private void InitMenu_Load(object sender, EventArgs e)
         {
-            this.Controls.Add(new InitWindow());
+            CallMainMenu(); 
         }
         public void GoToLogin()
         {

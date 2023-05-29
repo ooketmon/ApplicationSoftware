@@ -24,8 +24,11 @@ namespace WindowsFormsApp2
             STUDENT_INFO.low_grade_courses = new List<string>();
             pictureBox1.Parent = pictureBox2;
             pictureBox1.BackColor = Color.Transparent;
-            MessageBox.Show("잠깐 성적 좀 볼까..?");
             web_view.Source = new Uri("https://klas.kw.ac.kr");
+            if (web_view.Source != null)
+            {
+                MessageBox.Show("피곤하네..잠깐 성적 좀 볼까..?");
+            }
         }
 
         private async void web_view_NavigationCompleted(object sender, Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs e)
@@ -159,8 +162,8 @@ namespace WindowsFormsApp2
                     }
                     else
                     {
-                        MessageBox.Show("헉..!!");
-                        (this.Parent as InitMenu).CallPrologue();
+                        MessageBox.Show("헉..!! 순진하게 공부할 시간은 없어..!");
+                        (this.Parent as InitMenu).FloorChange(1);
                     }
                 }
 
