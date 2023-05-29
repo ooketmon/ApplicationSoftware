@@ -416,6 +416,7 @@
     <None Include="resources\Elevator\IMG_0838.PNG" />
     <None Include="resources\Elevator\IMG_0839.PNG" />
     <None Include="resources\20230529_122153.jpg" />
+    <None Include="resources\clue\2F_PC2.png" />
     <Content Include="resources\Floor1\IMG_0808.PNG" />
     <None Include="resources\ui\Button.png" />
     <None Include="resources\ui\ConvBack.png" />
@@ -468,6 +469,7 @@
     <None Include="resources\Floor1\IMG_0871.PNG" />
     <None Include="resources\Floor1\IMG_0872.PNG" />
     <None Include="resources\Floor1\IMG_0874.PNG" />
+    <None Include="resources\lecture-room-3.png" />
     <Content Include="resources\Player\IMG_0809.PNG" />
     <Content Include="resources\Player\IMG_0811.PNG" />
     <Content Include="resources\Player\IMG_0812.PNG" />

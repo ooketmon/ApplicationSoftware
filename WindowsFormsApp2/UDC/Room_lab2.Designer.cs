@@ -28,60 +28,63 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.lab2 = new System.Windows.Forms.PictureBox();
+            this.labPC_2 = new System.Windows.Forms.PictureBox();
+            this.Printer_2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.lab2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.labPC_2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Printer_2)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // lab2
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1200, 800);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.lab2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lab2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lab2.Location = new System.Drawing.Point(0, 0);
+            this.lab2.Name = "lab2";
+            this.lab2.Size = new System.Drawing.Size(1200, 800);
+            this.lab2.TabIndex = 0;
+            this.lab2.TabStop = false;
             // 
-            // pictureBox2
+            // labPC_2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(240, 221);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.labPC_2.Location = new System.Drawing.Point(299, 246);
+            this.labPC_2.Name = "labPC_2";
+            this.labPC_2.Size = new System.Drawing.Size(178, 89);
+            this.labPC_2.TabIndex = 1;
+            this.labPC_2.TabStop = false;
             // 
-            // pictureBox3
+            // Printer_2
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(550, 375);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
+            this.Printer_2.BackColor = System.Drawing.Color.Transparent;
+            this.Printer_2.Image = global::WindowsFormsApp2.Properties.Resources._8F_Printer1;
+            this.Printer_2.Location = new System.Drawing.Point(696, 152);
+            this.Printer_2.Name = "Printer_2";
+            this.Printer_2.Size = new System.Drawing.Size(329, 385);
+            this.Printer_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Printer_2.TabIndex = 2;
+            this.Printer_2.TabStop = false;
             // 
             // Room_lab2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.Printer_2);
+            this.Controls.Add(this.labPC_2);
+            this.Controls.Add(this.lab2);
             this.Name = "Room_lab2";
             this.Size = new System.Drawing.Size(1200, 800);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lab2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.labPC_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Printer_2)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox lab2;
+        private System.Windows.Forms.PictureBox labPC_2;
+        private System.Windows.Forms.PictureBox Printer_2;
     }
 }
