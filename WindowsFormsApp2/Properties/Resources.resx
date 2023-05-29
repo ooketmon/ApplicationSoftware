@@ -145,8 +145,11 @@
   <data name="right1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Player\right1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_3_Test" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\clue\3_Test.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IMG_0829" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Floor1\IMG_0829.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2F_Poster4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clue\2F_Poster4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IMG_0827" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Floor1\IMG_0827.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,6 +169,9 @@
   <data name="IMG_0830" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Floor1\IMG_0830.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="IMG_0808" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Floor1\IMG_0808.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="back2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Player\back2.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -184,8 +190,14 @@
   <data name="IMG_0832" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Floor1\IMG_0832.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IMG_0831" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\Floor1\IMG_0831.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lecture-room-4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\lecture-room-4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_2F_board" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\2F-board.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3_Test" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clue\3_Test.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="s_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\saebit-cartoon\s-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,8 +220,8 @@
   <data name="_5_Cardkey_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\clue\5_Cardkey .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IMG_0829" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\Floor1\IMG_0829.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="_2F_Poster1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clue\2F_Poster1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_4_Papper" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\clue\4_Papper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,8 +235,8 @@
   <data name="front2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Player\front2.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IMG_0808" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\Floor1\IMG_0808.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IMG_0831" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Floor1\IMG_0831.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="back1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Player\back1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -262,7 +274,7 @@
   <data name="back3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Player\back3.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tri" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\tri.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="8F_Printer1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clue\8F_Printer1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
