@@ -292,4 +292,16 @@
   <data name="IMG_0835" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Elevator\IMG_0835.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="IMG_0836" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Elevator\IMG_0836.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMG_0837" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Elevator\IMG_0837.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMG_0838" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Elevator\IMG_0838.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMG_0839" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Elevator\IMG_0839.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

@@ -352,7 +352,7 @@
             // 
             // player
             // 
-            this.player.BackColor = System.Drawing.Color.RosyBrown;
+            this.player.BackColor = System.Drawing.Color.Silver;
             this.player.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.player.Location = new System.Drawing.Point(1038, 485);
             this.player.Name = "player";

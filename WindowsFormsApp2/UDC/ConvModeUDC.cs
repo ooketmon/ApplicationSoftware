@@ -15,7 +15,7 @@ namespace WindowsFormsApp2.UDC
 
         int counter = 0;
         int len = 0;
-        string text;
+        public string text;
         string where_event_occur;
         ControlConversationUDC controller = null;
         public ConvModeUDC()
@@ -37,7 +37,14 @@ namespace WindowsFormsApp2.UDC
             nameCharacter.TextAlign = ContentAlignment.MiddleCenter;
             where_event_occur = place;
         }
-
+        public void timerReset()
+        {
+            counter = 0;
+            if (!timerLetter.Enabled)
+            {
+                timerLetter.Start();
+            }
+        }
         private void ConvModeUDC_Load(object sender, EventArgs e)
         {
             nameCharacter.Text = "캐릭터 이름";
@@ -50,6 +57,9 @@ namespace WindowsFormsApp2.UDC
             }else if (where_event_occur == "prologue")
             {
                 controller.Prologue();
+            }else if (where_event_occur.StartsWith("board"))
+            {
+                controller.BoardInit(where_event_occur);
             }
 
             System.Drawing.Text.PrivateFontCollection privateFonts = new System.Drawing.Text.PrivateFontCollection();
@@ -85,17 +95,19 @@ namespace WindowsFormsApp2.UDC
 
 
 
-            if (counter > len)
+            if (!(String.IsNullOrEmpty(text))&&counter > text.Length)
             {
                 counter = 0;
                 contentConv.Text = "";
             }
-            else if (counter == len)
+            else if (counter == text.Length)
             {
                 timerLetter.Stop();
             }
-
-            contentConv.Text = text.Substring(0, counter);
+            if (!String.IsNullOrEmpty(text))
+            {
+                contentConv.Text = text.Substring(0, counter);
+            }
         }
 
         private void btnSkip_Click(object sender, EventArgs e)

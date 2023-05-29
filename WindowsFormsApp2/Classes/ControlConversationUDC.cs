@@ -16,17 +16,47 @@ namespace WindowsFormsApp2
         }
         public void  Prologue()
         {
+            phase++;
             eventType = "prologue";
             target.nameCharacter.Text = string.Format("{0}",STUDENT_INFO.name);
-            target.contentConv.Text ="이렇게 된 이상 어쩔 수 없지..";
+            target.contentConv.Text = "눈 깜짝할 새 시험기간이 다가와버렸네..";
             target.BackgroundImage = Properties.Resources.s_1;
             target.imgCharacter.Image = Properties.Resources.player_anime_ver;
             target.imgCharacter.SizeMode = PictureBoxSizeMode.StretchImage;
         }
-
+        public void Prologue2()
+        {
+            phase++;
+            target.text = "보아하니 이번 시험도 범위도 못 훑고 가게 생겼어.";
+            target.contentConv.Text = "";
+            target.timerReset();
+        }
+        public void Prologue3()
+        {
+            phase++;
+            target.text = "그래! 시험지를 훔쳐버리자!";
+            target.contentConv.Text = "";
+            target.timerReset();
+        }
         public void BoardInit(string board_info)
         {
-
+            eventType = board_info;
+            phase++;
+            string number_only = board_info.Substring(5);
+            string[] number_info = number_only.Split('_');
+            target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
+            
+            target.contentConv.Text= string.Format("이건 {0}층 게시판인 것 같다.", number_info[0]);
+            Room_Board board_background = new Room_Board();
+            target.Controls.Add(board_background);
+            board_background.Dock = DockStyle.Fill;
+            board_background.SendToBack();
+            board_background.BackColor = Color.Transparent;
+            //target.BackgroundImage = Properties.Resources.s_1;
+            //target.imgCharacter.Image = Properties.Resources.player_anime_ver;
+            //target.imgCharacter.SizeMode = PictureBoxSizeMode.StretchImage;
+            target.imgCharacter.Visible = false;
+            target.imgCharBack.Visible = false;
         } 
 
         public void LabInit(string lab_info)
@@ -41,28 +71,24 @@ namespace WindowsFormsApp2
             string number_only = room_info.Substring(4);
             string[] number_info = number_only.Split('_');
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
-            target.contentConv.Text = string.Format("여기는 {0}층 {1}호실인 것 같다.", number_info[0], number_info[1]);
+            target.contentConv.Text= string.Format("여기는 {0}층 {1}호실인 것 같다.", number_info[0], number_info[1]);
+            //여기 부분은 switch문이나 if문으로 서로 다른 강의실을 호출할 수도 있습니다.
             Room_lecture1 room_background = new Room_lecture1();
             target.Controls.Add(room_background);
             room_background.Dock= DockStyle.Fill;
             room_background.SendToBack();
             room_background.BackColor = Color.Transparent;
-            //target.BackgroundImage = Properties.Resources.s_1;
-            //target.imgCharacter.Image = Properties.Resources.player_anime_ver;
-            //target.imgCharacter.SizeMode = PictureBoxSizeMode.StretchImage;
             target.imgCharacter.Visible=false;
             target.imgCharBack.Visible = false;
         }
         public void RoomPhase2()
         {
             phase++;
-            target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
-            target.contentConv.Text = "별 게 없으니 나가보자.";
-            target.BackgroundImage = Properties.Resources.s_1;
-            target.imgCharacter.Image = Properties.Resources.player_anime_ver;
-            target.imgCharacter.SizeMode = PictureBoxSizeMode.StretchImage;
-
+            target.text = "별 게 없으니 나가보자.";
+            target.contentConv.Text = "";
+            target.timerReset();
         }
+
         public void GameStart1()
         {
             target.nameCharacter.Text = "'나'";
@@ -75,9 +101,22 @@ namespace WindowsFormsApp2
         {
             if (eventType == "prologue")
             {
-                (target.Parent as InitMenu).FloorChange(1);
+                switch (phase)
+                {
+                    case 1:
+                        Prologue2();
+                        break;
+                    case 2:
+                        Prologue3();
+                        break;
+                    default:
+                        (target.Parent as InitMenu).FloorChange(1);
+                        break;
+
+                }
                 return;
             }
+
             if (eventType.StartsWith("room"))
             {
                 if (phase < 2)
@@ -99,13 +138,9 @@ namespace WindowsFormsApp2
                             foreach(Control c in tmp1.Controls)
                             {
                                 if (c.Name == "player")
-                                {
-                                    player = c;
-                                }
+                                player = c;
                                 if (c.Name == eventType)
-                                {
-                                    room = c;
-                                }
+                                room = c;
                             }
                             switch (room.Name)
                             {
@@ -134,13 +169,9 @@ namespace WindowsFormsApp2
                             foreach (Control c in tmp2.Controls)
                             {
                                 if (c.Name == "player")
-                                {
-                                    player = c;
-                                }
+                                player = c;
                                 if (c.Name == eventType)
-                                {
-                                    room = c;
-                                }
+                                room = c;
                             }
                             player.Left = room.Left;
                             player.Top = room.Top-50;
@@ -151,13 +182,10 @@ namespace WindowsFormsApp2
                             foreach (Control c in tmp3.Controls)
                             {
                                 if (c.Name == "player")
-                                {
-                                    player = c;
-                                }
+                                     player = c;
+                                
                                 if (c.Name == eventType)
-                                {
                                     room = c;
-                                }
                             }
                             player.Left = room.Left;
                             player.Top = room.Top - 50;
@@ -167,8 +195,25 @@ namespace WindowsFormsApp2
                             break;
 
                     }
-                    
                 }
+                return;
+            }
+            if (eventType.StartsWith("board"))
+            {
+                Floor2UDC tmp=new Floor2UDC();
+                Control player = null;
+                Control board = null;
+                foreach(Control c in tmp.Controls)
+                {
+                    if (c.Name == "player")
+                        player = c;
+                    if(c.Name== eventType)
+                        board = c;
+                }
+                player.Left = board.Left+50;
+                player.Top = board.Top;
+                (target.Parent as InitMenu ).ConvComeback(tmp);
+                return;
             }
         }
     }

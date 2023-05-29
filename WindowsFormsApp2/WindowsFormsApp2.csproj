@@ -402,6 +402,10 @@
     <None Include="resources\clue\2F_Poster4.png" />
     <None Include="resources\clue\8F_Printer1.png" />
     <None Include="resources\Elevator\IMG_0835.PNG" />
+    <None Include="resources\Elevator\IMG_0836.PNG" />
+    <None Include="resources\Elevator\IMG_0837.PNG" />
+    <None Include="resources\Elevator\IMG_0838.PNG" />
+    <None Include="resources\Elevator\IMG_0839.PNG" />
     <Content Include="resources\Floor1\IMG_0808.PNG" />
     <None Include="resources\ui\Button.png" />
     <None Include="resources\ui\ConvBack.png" />

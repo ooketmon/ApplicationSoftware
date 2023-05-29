@@ -33,7 +33,7 @@
             this.btnNext = new System.Windows.Forms.Button();
             this.btnPrev = new System.Windows.Forms.Button();
             this.contentConv = new System.Windows.Forms.Label();
-            this.pictureBox42 = new System.Windows.Forms.PictureBox();
+            this.board2_1 = new System.Windows.Forms.PictureBox();
             this.pictureBox41 = new System.Windows.Forms.PictureBox();
             this.pictureBox38 = new System.Windows.Forms.PictureBox();
             this.pictureBox37 = new System.Windows.Forms.PictureBox();
@@ -78,7 +78,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox43 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.board2_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
@@ -162,15 +162,15 @@
             this.contentConv.TabIndex = 145;
             this.contentConv.Text = "contentConv";
             // 
-            // pictureBox42
+            // board2_1
             // 
-            this.pictureBox42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pictureBox42.Location = new System.Drawing.Point(205, 355);
-            this.pictureBox42.Name = "pictureBox42";
-            this.pictureBox42.Size = new System.Drawing.Size(15, 105);
-            this.pictureBox42.TabIndex = 142;
-            this.pictureBox42.TabStop = false;
-            this.pictureBox42.Tag = "obstacle";
+            this.board2_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.board2_1.Location = new System.Drawing.Point(205, 355);
+            this.board2_1.Name = "board2_1";
+            this.board2_1.Size = new System.Drawing.Size(15, 105);
+            this.board2_1.TabIndex = 142;
+            this.board2_1.TabStop = false;
+            this.board2_1.Tag = "";
             // 
             // pictureBox41
             // 
@@ -461,7 +461,7 @@
             this.pictureBox16.BackColor = System.Drawing.SystemColors.ControlDark;
             this.pictureBox16.Location = new System.Drawing.Point(0, 260);
             this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(220, 200);
+            this.pictureBox16.Size = new System.Drawing.Size(206, 200);
             this.pictureBox16.TabIndex = 78;
             this.pictureBox16.TabStop = false;
             this.pictureBox16.Tag = "obstacle";
@@ -613,7 +613,7 @@
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnPrev);
             this.Controls.Add(this.contentConv);
-            this.Controls.Add(this.pictureBox42);
+            this.Controls.Add(this.board2_1);
             this.Controls.Add(this.pictureBox41);
             this.Controls.Add(this.pictureBox38);
             this.Controls.Add(this.pictureBox37);
@@ -665,7 +665,7 @@
             this.Load += new System.EventHandler(this.UserControl2_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.UserControl2_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.UserControl2_KeyUp);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.board2_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
@@ -761,7 +761,7 @@
         private System.Windows.Forms.PictureBox pictureBox37;
         private System.Windows.Forms.PictureBox pictureBox38;
         private System.Windows.Forms.PictureBox pictureBox41;
-        private System.Windows.Forms.PictureBox pictureBox42;
+        private System.Windows.Forms.PictureBox board2_1;
         private System.Windows.Forms.PictureBox pictureBox43;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnPrev;
