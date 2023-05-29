@@ -24,6 +24,16 @@ namespace WindowsFormsApp2
             target.imgCharacter.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
+        public void BoardInit(string board_info)
+        {
+
+        } 
+
+        public void LabInit(string lab_info)
+        {
+
+        }
+
         public void RoomInit(string room_info)
         {
             eventType = room_info;
@@ -32,9 +42,16 @@ namespace WindowsFormsApp2
             string[] number_info = number_only.Split('_');
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
             target.contentConv.Text = string.Format("여기는 {0}층 {1}호실인 것 같다.", number_info[0], number_info[1]);
-            target.BackgroundImage = Properties.Resources.s_1;
-            target.imgCharacter.Image = Properties.Resources.player_anime_ver;
-            target.imgCharacter.SizeMode = PictureBoxSizeMode.StretchImage;
+            Room_lecture1 room_background = new Room_lecture1();
+            target.Controls.Add(room_background);
+            room_background.Dock= DockStyle.Fill;
+            room_background.SendToBack();
+            room_background.BackColor = Color.Transparent;
+            //target.BackgroundImage = Properties.Resources.s_1;
+            //target.imgCharacter.Image = Properties.Resources.player_anime_ver;
+            //target.imgCharacter.SizeMode = PictureBoxSizeMode.StretchImage;
+            target.imgCharacter.Visible=false;
+            target.imgCharBack.Visible = false;
         }
         public void RoomPhase2()
         {
