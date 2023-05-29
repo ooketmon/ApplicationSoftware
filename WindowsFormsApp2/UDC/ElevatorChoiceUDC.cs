@@ -330,26 +330,26 @@ namespace WindowsFormsApp2
 
         private void Button_Click(object sender, EventArgs e)
         {
-            string buttonText = (sender as Button).Text;
+            string buttonText = (sender as Button).Name;
             switch (buttonText)
             {
-                case "1F":
+                case "button1":
                     (this.Parent as InitMenu).FloorChange(1);
                     break;
-                case "2F":
+                case "button2":
 
                     (this.Parent as InitMenu).FloorChange(2);
                     break;
-                case "3F":
+                case "button3":
                     (this.Parent as InitMenu).FloorChange(3);
 
                     break;
-                case "4F":
+                case "button4":
 
                     (this.Parent as InitMenu).FloorChange(4);
 
                     break;
-                case "8F":
+                case "button5":
 
                     (this.Parent as InitMenu).FloorChange(8);
 

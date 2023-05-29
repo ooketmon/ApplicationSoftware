@@ -95,11 +95,26 @@ namespace WindowsFormsApp2
                 if (!goLeft && !goRight && !goUp && !goDown)
                 {
                     // 정지 이미지 표시
+                    switch (currentDirection)
+                    {
+                        case Keys.Left:
+                            currentImageIndex = 2;
+                            break;
+                        case Keys.Right:
+                            currentImageIndex = 3;
+                            break;
+                        case Keys.Up:
+                            currentImageIndex = 1;
+                            break;
+                        case Keys.Down:
+                            currentImageIndex = 0;
+                            break;
+                    }
                     player.Image = stopImages[currentImageIndex];
                 }
                 else
                 {
-                    currentImageIndex = (currentImageIndex + 1) % directionImages[currentDirection].Length;
+                    currentImageIndex = (currentImageIndex +1) % directionImages[currentDirection].Length;
                     player.Image = directionImages[currentDirection][currentImageIndex];
                 }
             }
@@ -144,6 +159,21 @@ namespace WindowsFormsApp2
                 player.Top = playerY;
                 if (!goLeft && !goRight && !goUp && !goDown)
                 {
+                    switch (currentDirection)
+                    {
+                        case Keys.Left:
+                            currentImageIndex = 2;
+                            break;
+                        case Keys.Right:
+                            currentImageIndex = 3;
+                            break;
+                        case Keys.Up:
+                            currentImageIndex = 1;
+                            break;
+                        case Keys.Down:
+                            currentImageIndex = 0;
+                            break;
+                    }
                     // 정지 이미지 표시
                     player.Image = stopImages[currentImageIndex];
                 }
