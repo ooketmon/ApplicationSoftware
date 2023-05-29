@@ -59,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\ControlConversationUDC.cs" />
     <Compile Include="Classes\ControlConversation.cs" />
     <Compile Include="Classes\ControlEnvironment.cs" />
     <Compile Include="Forms\crawling_test.cs">
@@ -73,41 +74,23 @@
     <Compile Include="Forms\ConvMode.Designer.cs">
       <DependentUpon>ConvMode.cs</DependentUpon>
     </Compile>
-    <Compile Include="Not-Use\ElevatorChoice.cs">
-      <SubType>Form</SubType>
+    <Compile Include="UDC\Chaser.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Not-Use\ElevatorChoice.Designer.cs">
-      <DependentUpon>ElevatorChoice.cs</DependentUpon>
+    <Compile Include="UDC\Chaser.designer.cs">
+      <DependentUpon>Chaser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UDC\ConvModeUDC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UDC\ConvModeUDC.Designer.cs">
+      <DependentUpon>ConvModeUDC.cs</DependentUpon>
     </Compile>
     <Compile Include="UDC\ElevatorChoiceUDC.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UDC\ElevatorChoiceUDC.Designer.cs">
       <DependentUpon>ElevatorChoiceUDC.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Not-Use\Floor2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Not-Use\Floor2.Designer.cs">
-      <DependentUpon>Floor2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Not-Use\Floor3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Not-Use\Floor3.Designer.cs">
-      <DependentUpon>Floor3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Not-Use\Floor4.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Not-Use\Floor4.Designer.cs">
-      <DependentUpon>Floor4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Not-Use\Floor8.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Not-Use\Floor8.Designer.cs">
-      <DependentUpon>Floor8.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\FontManager.cs" />
     <Compile Include="Forms\InitMenu.cs">
@@ -116,11 +99,11 @@
     <Compile Include="Forms\InitMenu.Designer.cs">
       <DependentUpon>InitMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Not-Use\Floor1.cs">
-      <SubType>Form</SubType>
+    <Compile Include="UDC\InitWindow.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Not-Use\Floor1.Designer.cs">
-      <DependentUpon>Floor1.cs</DependentUpon>
+    <Compile Include="UDC\InitWindow.designer.cs">
+      <DependentUpon>InitWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="UDC\inventory_item.cs">
       <SubType>UserControl</SubType>
@@ -133,12 +116,6 @@
     </Compile>
     <Compile Include="UDC\lecture1.Designer.cs">
       <DependentUpon>lecture1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Not-Use\LoginStart.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Not-Use\LoginStart.designer.cs">
-      <DependentUpon>LoginStart.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Inventory.cs">
       <SubType>Form</SubType>
@@ -199,12 +176,6 @@
     <Compile Include="UDC\ConvWindowUDC.Designer.cs">
       <DependentUpon>ConvWindowUDC.cs</DependentUpon>
     </Compile>
-    <Compile Include="UDC\ConvModeUDC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UDC\ConvModeUDC.Designer.cs">
-      <DependentUpon>ConvModeUDC.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\temp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -217,38 +188,26 @@
     <EmbeddedResource Include="Forms\ConvMode.resx">
       <DependentUpon>ConvMode.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Not-Use\ElevatorChoice.resx">
-      <DependentUpon>ElevatorChoice.cs</DependentUpon>
+    <EmbeddedResource Include="UDC\Chaser.resx">
+      <DependentUpon>Chaser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UDC\ConvModeUDC.resx">
+      <DependentUpon>ConvModeUDC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UDC\ElevatorChoiceUDC.resx">
       <DependentUpon>ElevatorChoiceUDC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Not-Use\Floor2.resx">
-      <DependentUpon>Floor2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Not-Use\Floor3.resx">
-      <DependentUpon>Floor3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Not-Use\Floor4.resx">
-      <DependentUpon>Floor4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Not-Use\Floor8.resx">
-      <DependentUpon>Floor8.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\InitMenu.resx">
       <DependentUpon>InitMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Not-Use\Floor1.resx">
-      <DependentUpon>Floor1.cs</DependentUpon>
+    <EmbeddedResource Include="UDC\InitWindow.resx">
+      <DependentUpon>InitWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UDC\inventory_item.resx">
       <DependentUpon>inventory_item.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UDC\lecture1.resx">
       <DependentUpon>lecture1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Not-Use\LoginStart.resx">
-      <DependentUpon>LoginStart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Inventory.resx">
       <DependentUpon>Inventory.cs</DependentUpon>
@@ -283,9 +242,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UDC\ConvWindowUDC.resx">
       <DependentUpon>ConvWindowUDC.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UDC\ConvModeUDC.resx">
-      <DependentUpon>ConvModeUDC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UDC\puzzle.resx">
       <DependentUpon>puzzle.cs</DependentUpon>

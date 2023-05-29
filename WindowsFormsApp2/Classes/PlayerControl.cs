@@ -13,9 +13,6 @@ namespace WindowsFormsApp2
         private PictureBox player;
         int playerSpeed = 5;
         bool goLeft, goRight, goUp, goDown;
-
-        private IEnumerable<Control> Controls;
-
         public PlayerControl(PictureBox player)
         {
             this.player = player;
@@ -65,19 +62,35 @@ namespace WindowsFormsApp2
                 player.Left = playerX;
                 player.Top = playerY;
             }
-
-            //foreach (Control x in this.Controls)
-            //{
-            //    if(x is PictureBox && (string)x.Tag =="LockedDoor")
-            //    {
-            //        if (player.Bounds.IntersectsWith(x.Bounds))
-            //        {
-            //            InitMenu.collision = 1; 
-            //        }
-            //    }
-            //}
         }
+        public void MovePlayerWithoutBool(KeyEventArgs e)
+        {
+            int playerX = player.Left;
+            int playerY = player.Top;
+            if (e.KeyCode == Keys.Left && player.Left > 4) { playerX -= playerSpeed; };
+            if (e.KeyCode == Keys.Right && player.Left < 1014) { playerX += playerSpeed; };
+            if (e.KeyCode == Keys.Up && player.Top > 4) { playerY -= playerSpeed; };
+            if (e.KeyCode == Keys.Down && player.Top < 604) { playerY += playerSpeed; };
 
+            Rectangle playerBounds = new Rectangle(playerX, playerY, player.Width, player.Height);
+            bool isCollision = false;
+            foreach (Control x in player.Parent.Controls)
+            {
+                if (x is PictureBox && (string)x.Tag == "obstacle")
+                {
+                    if (playerBounds.IntersectsWith(x.Bounds))
+                    {
+                        isCollision = true;
+                        break;
+                    }
+                }
+            }
+            if (!isCollision)
+            {
+                player.Left = playerX;
+                player.Top = playerY;
+            }
+        }
 
     }
 }

@@ -153,13 +153,14 @@ namespace WindowsFormsApp2
                         }
 
                     }
-                    if (STUDENT_INFO.low_grade_courses.Count < 4)
+                    if (STUDENT_INFO.low_grade_courses.Count < 0)
                     {
                         MessageBox.Show("난 꽤 성실하게 산 거 같아!");
                     }
                     else
                     {
                         MessageBox.Show("헉..!!");
+                        (this.Parent as InitMenu).CallPrologue();
                     }
                 }
 

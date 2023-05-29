@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp2
+﻿namespace WindowsFormsApp2.UDC
 {
     partial class ConvModeUDC
     {
@@ -28,49 +28,126 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.components = new System.ComponentModel.Container();
+            this.contentConv = new System.Windows.Forms.Label();
+            this.nameCharacter = new System.Windows.Forms.Label();
+            this.timerLetter = new System.Windows.Forms.Timer(this.components);
+            this.imgCharacter = new System.Windows.Forms.PictureBox();
+            this.btnSkip = new System.Windows.Forms.Button();
+            this.imgConvWindowBack = new System.Windows.Forms.PictureBox();
+            this.imgCharBack = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCharacter)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgConvWindowBack)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCharBack)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox2
+            // contentConv
             // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBox2.Location = new System.Drawing.Point(560, 191);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(363, 614);
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
+            this.contentConv.AutoSize = true;
+            this.contentConv.BackColor = System.Drawing.Color.White;
+            this.contentConv.Font = new System.Drawing.Font("굴림", 20F);
+            this.contentConv.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.contentConv.Location = new System.Drawing.Point(25, 695);
+            this.contentConv.MinimumSize = new System.Drawing.Size(1050, 80);
+            this.contentConv.Name = "contentConv";
+            this.contentConv.Size = new System.Drawing.Size(1050, 80);
+            this.contentConv.TabIndex = 10;
+            this.contentConv.Text = "contentConv";
+            this.contentConv.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.contentConv.UseWaitCursor = true;
             // 
-            // pictureBox1
+            // nameCharacter
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox1.Location = new System.Drawing.Point(2, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1200, 816);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.nameCharacter.AutoSize = true;
+            this.nameCharacter.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.nameCharacter.Font = new System.Drawing.Font("굴림", 20F);
+            this.nameCharacter.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.nameCharacter.Location = new System.Drawing.Point(32, 645);
+            this.nameCharacter.MaximumSize = new System.Drawing.Size(210, 34);
+            this.nameCharacter.MinimumSize = new System.Drawing.Size(210, 34);
+            this.nameCharacter.Name = "nameCharacter";
+            this.nameCharacter.Size = new System.Drawing.Size(210, 34);
+            this.nameCharacter.TabIndex = 11;
+            this.nameCharacter.Text = "nameCharacter";
+            this.nameCharacter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // UserControl8
+            // timerLetter
+            // 
+            this.timerLetter.Tick += new System.EventHandler(this.timerLetter_Tick_1);
+            // 
+            // imgCharacter
+            // 
+            this.imgCharacter.BackColor = System.Drawing.Color.Transparent;
+            this.imgCharacter.Location = new System.Drawing.Point(123, 223);
+            this.imgCharacter.Name = "imgCharacter";
+            this.imgCharacter.Size = new System.Drawing.Size(289, 480);
+            this.imgCharacter.TabIndex = 8;
+            this.imgCharacter.TabStop = false;
+            // 
+            // btnSkip
+            // 
+            this.btnSkip.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.Button;
+            this.btnSkip.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSkip.Location = new System.Drawing.Point(1059, 664);
+            this.btnSkip.Name = "btnSkip";
+            this.btnSkip.Size = new System.Drawing.Size(100, 100);
+            this.btnSkip.TabIndex = 12;
+            this.btnSkip.Text = "▶";
+            this.btnSkip.UseVisualStyleBackColor = true;
+            this.btnSkip.Click += new System.EventHandler(this.btnSkip_Click);
+            // 
+            // imgConvWindowBack
+            // 
+            this.imgConvWindowBack.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.imgConvWindowBack.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.ConvBack;
+            this.imgConvWindowBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imgConvWindowBack.Location = new System.Drawing.Point(-1, 614);
+            this.imgConvWindowBack.Name = "imgConvWindowBack";
+            this.imgConvWindowBack.Size = new System.Drawing.Size(1202, 187);
+            this.imgConvWindowBack.TabIndex = 9;
+            this.imgConvWindowBack.TabStop = false;
+            // 
+            // imgCharBack
+            // 
+            this.imgCharBack.BackColor = System.Drawing.Color.Transparent;
+            this.imgCharBack.Location = new System.Drawing.Point(149, 234);
+            this.imgCharBack.Name = "imgCharBack";
+            this.imgCharBack.Size = new System.Drawing.Size(289, 480);
+            this.imgCharBack.TabIndex = 13;
+            this.imgCharBack.TabStop = false;
+            // 
+            // ConvModeUDC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.MaximumSize = new System.Drawing.Size(1203, 800);
-            this.MinimumSize = new System.Drawing.Size(1203, 800);
-            this.Name = "UserControl8";
-            this.Size = new System.Drawing.Size(1203, 800);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.btnSkip);
+            this.Controls.Add(this.contentConv);
+            this.Controls.Add(this.nameCharacter);
+            this.Controls.Add(this.imgConvWindowBack);
+            this.Controls.Add(this.imgCharBack);
+            this.Controls.Add(this.imgCharacter);
+            this.MaximumSize = new System.Drawing.Size(1200, 800);
+            this.MinimumSize = new System.Drawing.Size(1200, 800);
+            this.Name = "ConvModeUDC";
+            this.Size = new System.Drawing.Size(1200, 800);
+            this.Load += new System.EventHandler(this.ConvModeUDC_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.imgCharacter)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgConvWindowBack)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCharBack)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.Label contentConv;
+        public System.Windows.Forms.Label nameCharacter;
+        public System.Windows.Forms.PictureBox imgCharacter;
+        private System.Windows.Forms.Timer timerLetter;
+        private System.Windows.Forms.Button btnSkip;
+        public System.Windows.Forms.PictureBox imgConvWindowBack;
+        public System.Windows.Forms.PictureBox imgCharBack;
     }
 }

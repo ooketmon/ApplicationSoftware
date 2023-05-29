@@ -101,5 +101,24 @@ namespace WindowsFormsApp2
 
         }
 
+        private void nameCharacter_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void imgConvWindowBack_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void imgCharacter_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void imgCharBack_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

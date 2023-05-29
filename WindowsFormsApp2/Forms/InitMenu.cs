@@ -8,24 +8,23 @@ using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows.Forms.VisualStyles;
+using WindowsFormsApp2.UDC;
 
 namespace WindowsFormsApp2
 {
     public partial class InitMenu : Form
     {
+        public bool floor8MissionComplete = false;
+        public bool floor1MissionComplete = false;
+        public bool guardmanChasing = false;
+        public bool assistantChasing = true;
+
         public InitMenu()
         {
             InitializeComponent();
             this.CenterToScreen();
         }
 
-        private void btnStart_Click(object sender, EventArgs e)
-        {
-            ConvMode cm = new ConvMode();
-            cm.ShowDialog();
-            FloorChange(1);
-        }
 
         public void FloorChange(int floor)
         {
@@ -56,20 +55,11 @@ namespace WindowsFormsApp2
             }
             tmp.Focus();
         }
-
-        //public int collision =0 ;
-        //public void ConversationMode(int collision)
-        //{
-        //    this.Controls.Clear();
-        //    this.Controls.Add(new ConvModeUDC());
-        //    switch (collision)
-        //    {
-
-        //    }
-        //    new ConvModeUDC().Focus();
-        //}
-
-      
+        public void CallPrologue()
+        {
+            this.Controls.Clear();
+            this.Controls.Add(new ConvModeUDC());
+        }
         public void ElevatorCall(int floor)
         {
             
@@ -160,27 +150,16 @@ namespace WindowsFormsApp2
             elevator.Focus();
 
         }
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-            this.Controls.Clear();
-            LoginStartUDC crawling = new LoginStartUDC();
-
-
-            this.Controls.Add(crawling);
-
-            crawling.Focus();
-            
-        }
-
         private void InitMenu_Load(object sender, EventArgs e)
         {
-
+            this.Controls.Add(new InitWindow());
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        public void GoToLogin()
         {
-            new LoginStart().Show();
-            this.Hide();
+            this.Controls.Clear();
+            this.Controls.Add(new LoginStartUDC());
+
         }
+
     }
 }

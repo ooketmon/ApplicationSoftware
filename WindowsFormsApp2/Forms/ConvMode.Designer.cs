@@ -71,6 +71,7 @@
             this.nameCharacter.TabIndex = 5;
             this.nameCharacter.Text = "nameCharacter";
             this.nameCharacter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.nameCharacter.Click += new System.EventHandler(this.nameCharacter_Click);
             // 
             // timerLetter
             // 
@@ -98,6 +99,7 @@
             this.imgConvWindowBack.Size = new System.Drawing.Size(1202, 187);
             this.imgConvWindowBack.TabIndex = 3;
             this.imgConvWindowBack.TabStop = false;
+            this.imgConvWindowBack.Click += new System.EventHandler(this.imgConvWindowBack_Click);
             // 
             // imgCharacter
             // 
@@ -107,6 +109,7 @@
             this.imgCharacter.Size = new System.Drawing.Size(289, 480);
             this.imgCharacter.TabIndex = 1;
             this.imgCharacter.TabStop = false;
+            this.imgCharacter.Click += new System.EventHandler(this.imgCharacter_Click);
             // 
             // imgCharBack
             // 
@@ -116,6 +119,7 @@
             this.imgCharBack.Size = new System.Drawing.Size(289, 480);
             this.imgCharBack.TabIndex = 7;
             this.imgCharBack.TabStop = false;
+            this.imgCharBack.Click += new System.EventHandler(this.imgCharBack_Click);
             // 
             // ConvMode
             // 

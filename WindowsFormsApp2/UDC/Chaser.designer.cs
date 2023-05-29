@@ -1,13 +1,13 @@
 ﻿namespace WindowsFormsApp2
 {
-    partial class InitMenu
+    partial class Chaser
     {
-        /// <summary>
+        /// <summary> 
         /// 필수 디자이너 변수입니다.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
+        /// <summary> 
         /// 사용 중인 모든 리소스를 정리합니다.
         /// </summary>
         /// <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
@@ -20,32 +20,42 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form 디자이너에서 생성한 코드
+        #region 구성 요소 디자이너에서 생성한 코드
 
-        /// <summary>
+        /// <summary> 
         /// 디자이너 지원에 필요한 메서드입니다. 
         /// 이 메서드의 내용을 코드 편집기로 수정하지 마세요.
         /// </summary>
         private void InitializeComponent()
         {
+            this.character = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.character)).BeginInit();
             this.SuspendLayout();
             // 
-            // InitMenu
+            // character
+            // 
+            this.character.BackColor = System.Drawing.Color.Blue;
+            this.character.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.character.Location = new System.Drawing.Point(0, 0);
+            this.character.Name = "character";
+            this.character.Size = new System.Drawing.Size(40, 45);
+            this.character.TabIndex = 179;
+            this.character.TabStop = false;
+            // 
+            // Chaser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1200, 800);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Name = "InitMenu";
-            this.Text = " A+ 받고 싶어서.. 시험지를 훔침!";
-            this.Load += new System.EventHandler(this.InitMenu_Load);
+            this.Controls.Add(this.character);
+            this.Name = "Chaser";
+            this.Size = new System.Drawing.Size(40, 45);
+            ((System.ComponentModel.ISupportInitialize)(this.character)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.PictureBox character;
     }
 }
-
