@@ -58,6 +58,7 @@ namespace WindowsFormsApp2
 
         private void timerFloor2_Tick(object sender, EventArgs e)
         {
+            playerMove.MovePlayer();
             foreach (Control x in this.Controls)
             {
                 if (x is PictureBox && (string)x.Name == "stairs2")
