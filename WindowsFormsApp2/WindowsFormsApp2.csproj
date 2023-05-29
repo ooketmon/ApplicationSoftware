@@ -305,6 +305,11 @@
     <None Include="resources\clue\4_Key.png" />
     <None Include="resources\clue\4_Test.png" />
     <None Include="resources\clue\5_Cardkey .png" />
+    <None Include="resources\ele_btn1.jpg" />
+    <None Include="resources\ele_btn2.jpg" />
+    <None Include="resources\ele_btn3.jpg" />
+    <None Include="resources\ele_btn4.jpg" />
+    <None Include="resources\ele_btn8.jpg" />
     <Content Include="resources\Floor1\IMG_0808.PNG" />
     <None Include="resources\ui\Button.png" />
     <None Include="resources\ui\ConvBack.png" />
@@ -324,6 +329,7 @@
     <None Include="resources\Player\front2.PNG" />
     <None Include="resources\Player\front3.PNG" />
     <None Include="resources\Player\front4.PNG" />
+    <None Include="resources\ironstyle.jpg" />
     <Content Include="resources\Player\IMG_0809.PNG" />
     <Content Include="resources\Player\IMG_0811.PNG" />
     <Content Include="resources\Player\IMG_0812.PNG" />

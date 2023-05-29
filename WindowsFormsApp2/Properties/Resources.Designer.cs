@@ -253,6 +253,56 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap ele_btn1 {
+            get {
+                object obj = ResourceManager.GetObject("ele_btn1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap ele_btn2 {
+            get {
+                object obj = ResourceManager.GetObject("ele_btn2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap ele_btn3 {
+            get {
+                object obj = ResourceManager.GetObject("ele_btn3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap ele_btn4 {
+            get {
+                object obj = ResourceManager.GetObject("ele_btn4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap ele_btn8 {
+            get {
+                object obj = ResourceManager.GetObject("ele_btn8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap front1 {
             get {
                 object obj = ResourceManager.GetObject("front1", resourceCulture);
@@ -376,6 +426,16 @@ namespace WindowsFormsApp2.Properties {
         internal static System.Drawing.Bitmap init_image {
             get {
                 object obj = ResourceManager.GetObject("init_image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap ironstyle {
+            get {
+                object obj = ResourceManager.GetObject("ironstyle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
