@@ -92,6 +92,7 @@
             this.Test_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Test_4.TabIndex = 22;
             this.Test_4.TabStop = false;
+            this.Test_4.Click += new System.EventHandler(this.Item_Press);
             // 
             // Key_4
             // 
@@ -107,6 +108,7 @@
             this.Key_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Key_4.TabIndex = 21;
             this.Key_4.TabStop = false;
+            this.Key_4.Click += new System.EventHandler(this.Item_Press);
             // 
             // Safecard_4
             // 
@@ -122,6 +124,7 @@
             this.Safecard_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Safecard_4.TabIndex = 20;
             this.Safecard_4.TabStop = false;
+            this.Safecard_4.Click += new System.EventHandler(this.Item_Press);
             // 
             // Papper_4
             // 
@@ -137,6 +140,7 @@
             this.Papper_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Papper_4.TabIndex = 19;
             this.Papper_4.TabStop = false;
+            this.Papper_4.Click += new System.EventHandler(this.Item_Press);
             // 
             // Test_3
             // 
@@ -152,6 +156,7 @@
             this.Test_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Test_3.TabIndex = 18;
             this.Test_3.TabStop = false;
+            this.Test_3.Click += new System.EventHandler(this.Item_Press);
             // 
             // Poster_3
             // 
@@ -167,6 +172,7 @@
             this.Poster_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Poster_3.TabIndex = 17;
             this.Poster_3.TabStop = false;
+            this.Poster_3.Click += new System.EventHandler(this.Item_Press);
             // 
             // Cardkey_3
             // 
@@ -182,6 +188,7 @@
             this.Cardkey_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Cardkey_3.TabIndex = 16;
             this.Cardkey_3.TabStop = false;
+            this.Cardkey_3.Click += new System.EventHandler(this.Item_Press);
             // 
             // Papper_3
             // 
@@ -197,6 +204,7 @@
             this.Papper_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Papper_3.TabIndex = 15;
             this.Papper_3.TabStop = false;
+            this.Papper_3.Click += new System.EventHandler(this.Item_Press);
             // 
             // Test_2
             // 
@@ -212,6 +220,7 @@
             this.Test_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Test_2.TabIndex = 14;
             this.Test_2.TabStop = false;
+            this.Test_2.Click += new System.EventHandler(this.Item_Press);
             // 
             // Test_1
             // 
@@ -224,6 +233,7 @@
             this.Test_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Test_1.TabIndex = 13;
             this.Test_1.TabStop = false;
+            this.Test_1.Click += new System.EventHandler(this.Item_Press);
             // 
             // Papper_1
             // 
@@ -236,6 +246,7 @@
             this.Papper_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Papper_1.TabIndex = 12;
             this.Papper_1.TabStop = false;
+            this.Papper_1.Click += new System.EventHandler(this.Item_Press);
             // 
             // box_papper_4
             // 
@@ -359,6 +370,7 @@
             this.Cardkey_5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Cardkey_5.TabIndex = 23;
             this.Cardkey_5.TabStop = false;
+            this.Cardkey_5.Click += new System.EventHandler(this.Item_Press);
             // 
             // Inventory
             // 
@@ -390,6 +402,8 @@
             this.Controls.Add(this.box_papper_3);
             this.Controls.Add(this.box_papper_1);
             this.Location = new System.Drawing.Point(50, 50);
+            this.MaximumSize = new System.Drawing.Size(375, 495);
+            this.MinimumSize = new System.Drawing.Size(375, 495);
             this.Name = "Inventory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Inventory";

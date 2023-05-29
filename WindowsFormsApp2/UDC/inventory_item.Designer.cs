@@ -35,18 +35,21 @@
             // 
             // btn_iclose
             // 
-            this.btn_iclose.Location = new System.Drawing.Point(115, 260);
+            this.btn_iclose.Location = new System.Drawing.Point(169, 461);
             this.btn_iclose.Name = "btn_iclose";
             this.btn_iclose.Size = new System.Drawing.Size(70, 30);
             this.btn_iclose.TabIndex = 0;
             this.btn_iclose.Text = "닫기";
             this.btn_iclose.UseVisualStyleBackColor = true;
+            this.btn_iclose.Click += new System.EventHandler(this.btn_iclose_Click);
             // 
             // pic_Item
             // 
-            this.pic_Item.Location = new System.Drawing.Point(0, 0);
+            this.pic_Item.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pic_Item.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pic_Item.Location = new System.Drawing.Point(23, 11);
             this.pic_Item.Name = "pic_Item";
-            this.pic_Item.Size = new System.Drawing.Size(300, 250);
+            this.pic_Item.Size = new System.Drawing.Size(375, 437);
             this.pic_Item.TabIndex = 1;
             this.pic_Item.TabStop = false;
             // 
@@ -57,7 +60,7 @@
             this.Controls.Add(this.pic_Item);
             this.Controls.Add(this.btn_iclose);
             this.Name = "inventory_item";
-            this.Size = new System.Drawing.Size(300, 300);
+            this.Size = new System.Drawing.Size(375, 495);
             ((System.ComponentModel.ISupportInitialize)(this.pic_Item)).EndInit();
             this.ResumeLayout(false);
 

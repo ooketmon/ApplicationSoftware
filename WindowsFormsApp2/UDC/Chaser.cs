@@ -12,7 +12,7 @@ namespace WindowsFormsApp2
 {
     public partial class Chaser : UserControl
     {
-        
+        int chaser_speed = 3;
         public Chaser()
         {
             InitializeComponent();
@@ -32,7 +32,6 @@ namespace WindowsFormsApp2
                     chaser1 = c;
                 }
             }
-            int chaser_speed = 5;
             int player_x = player.Left;
             int player_y = player.Top;
             int chaser_x = chaser1.Left;

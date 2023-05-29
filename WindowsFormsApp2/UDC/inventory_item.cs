@@ -16,5 +16,17 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
         }
+
+        private void btn_iclose_Click(object sender, EventArgs e)
+        {
+            (this.Parent as Inventory).CancelMaximize();
+        }
+
+        public void setMainItem(Bitmap resourceName)
+        {
+           
+            pic_Item.BackgroundImage = resourceName;
+        }
+
     }
 }
