@@ -38,6 +38,7 @@ namespace WindowsFormsApp2
             switch (floor)
             {
                 case 1:
+
                     tmp = new Floor1UDC();
                     this.Controls.Add(tmp);
                     break;
@@ -153,6 +154,10 @@ namespace WindowsFormsApp2
             this.Controls.Add(elevator);
             elevator.BringToFront();
             elevator.Focus();
+
+        }
+        private void StairCall(int floor)
+        {
 
         }
         private void InitMenu_Load(object sender, EventArgs e)

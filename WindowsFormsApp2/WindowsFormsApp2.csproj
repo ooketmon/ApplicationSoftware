@@ -182,6 +182,12 @@
     <Compile Include="Forms\temp.Designer.cs">
       <DependentUpon>temp.cs</DependentUpon>
     </Compile>
+    <Compile Include="UDC\StairChoice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UDC\StairChoice.Designer.cs">
+      <DependentUpon>StairChoice.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\crawling_test.resx">
       <DependentUpon>crawling_test.cs</DependentUpon>
     </EmbeddedResource>
@@ -249,6 +255,9 @@
     <EmbeddedResource Include="Forms\temp.resx">
       <DependentUpon>temp.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UDC\StairChoice.resx">
+      <DependentUpon>StairChoice.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -273,6 +282,7 @@
     <None Include="resources\IMG_0793.PNG" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="resources\Stair.png" />
     <None Include="resources\Player\right4.PNG" />
     <None Include="resources\Player\right3.PNG" />
     <None Include="resources\Player\right2.PNG" />

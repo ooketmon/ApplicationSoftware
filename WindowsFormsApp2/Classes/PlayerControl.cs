@@ -47,7 +47,6 @@ namespace WindowsFormsApp2
         }
         public void PlayerKeyUp(object sender, KeyEventArgs e)
         {
-            
             if (e.KeyCode == Keys.Left) { goLeft = false; ResetPlayerImage(); }
             if (e.KeyCode == Keys.Right) {goRight = false; ResetPlayerImage(); }
             if (e.KeyCode == Keys.Up) { goUp = false; ResetPlayerImage(); }

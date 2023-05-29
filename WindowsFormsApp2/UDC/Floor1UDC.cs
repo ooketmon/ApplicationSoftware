@@ -34,9 +34,6 @@ namespace WindowsFormsApp2
                         UserControl1_KeyUp(new object[] {},new KeyEventArgs(keyData));  break;
                 }
      
- 
-
-      
                 return true;
             }
             else
@@ -72,7 +69,7 @@ namespace WindowsFormsApp2
                     if (player.Bounds.IntersectsWith(x.Bounds) && !playerisOnStair)
                     {
                         playerisOnStair = true;
-                        ((InitMenu)this.Parent).FloorChange(2);
+                        ((InitMenu)this.Parent).FloorChange(1);
                         return;
                     }
                 }
