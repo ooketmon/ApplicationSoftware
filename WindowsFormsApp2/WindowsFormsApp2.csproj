@@ -45,7 +45,7 @@
       <HintPath>packages\Microsoft.Web.WebView2.1.0.1774.30\lib\net45\Microsoft.Web.WebView2.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="System">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -73,6 +73,11 @@
     </Compile>
     <Compile Include="Forms\ConvMode.Designer.cs">
       <DependentUpon>ConvMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="UDC\Chaser.cs">
       <SubType>UserControl</SubType>
@@ -220,14 +225,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="UDC\Floor1UDC.resx">
       <DependentUpon>Floor1UDC.cs</DependentUpon>
     </EmbeddedResource>
@@ -292,7 +292,6 @@
     <None Include="resources\Player\left2.PNG" />
     <None Include="resources\Player\left1.PNG" />
     <None Include="resources\Player\player-anime-ver.png" />
-    <None Include="resources\clue_example.png" />
     <None Include="resources\clue\1_Papper.png" />
     <None Include="resources\clue\1_Test.png" />
     <None Include="resources\clue\2_Test.png" />
@@ -341,7 +340,6 @@
     <Content Include="resources\Player\IMG_0824.PNG" />
     <Content Include="resources\Player\IMG_0825.PNG" />
     <None Include="resources\btn_start.png" />
-    <Content Include="resources\char-example2.jpg" />
     <None Include="resources\init_image.png" />
     <Content Include="resources\Library2%281%29.jpg" />
     <Content Include="resources\LibraryComputer.png" />
@@ -351,7 +349,7 @@
   <Import Project="packages\Microsoft.Web.WebView2.1.0.1774.30\build\Microsoft.Web.WebView2.targets" Condition="Exists('packages\Microsoft.Web.WebView2.1.0.1774.30\build\Microsoft.Web.WebView2.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
-      <ErrorText>이 프로젝트는 이 컴퓨터에 없는 NuGet 패키지를 참조합니다. 해당 패키지를 다운로드하려면 NuGet 패키지 복원을 사용하십시오. 자세한 내용은 http://go.microsoft.com/fwlink/?LinkID=322105를 참조하십시오. 누락된 파일은 {0}입니다.</ErrorText>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('packages\Microsoft.Web.WebView2.1.0.1774.30\build\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.Web.WebView2.1.0.1774.30\build\Microsoft.Web.WebView2.targets'))" />
   </Target>

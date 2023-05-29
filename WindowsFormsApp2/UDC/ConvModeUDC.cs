@@ -16,6 +16,7 @@ namespace WindowsFormsApp2.UDC
         int counter = 0;
         int len = 0;
         string text;
+        string where_event_occur;
         ControlConversationUDC controller = null;
         public ConvModeUDC()
         {
@@ -27,13 +28,29 @@ namespace WindowsFormsApp2.UDC
 
         }
 
+        public ConvModeUDC(string place)
+        {
+            InitializeComponent();
+            imgCharacter.Controls.Add(imgCharBack);
+            imgCharBack.Location = new Point(0, 0);
+            imgCharBack.BackColor = Color.Transparent;
+            nameCharacter.TextAlign = ContentAlignment.MiddleCenter;
+            where_event_occur = place;
+        }
+
         private void ConvModeUDC_Load(object sender, EventArgs e)
         {
             nameCharacter.Text = "캐릭터 이름";
             contentConv.Text = "대화 내용";
 
             controller = new ControlConversationUDC(this);
-            controller.Prologue();
+            if (where_event_occur.StartsWith("room"))
+            {
+                controller.RoomInit(where_event_occur);
+            }else if (where_event_occur == "prologue")
+            {
+                controller.Prologue();
+            }
 
             System.Drawing.Text.PrivateFontCollection privateFonts = new System.Drawing.Text.PrivateFontCollection();
             privateFonts.AddFontFile("./resources/Mabinogi_Classic_TTF.ttf"); // 마비노기 옛체 
@@ -83,7 +100,7 @@ namespace WindowsFormsApp2.UDC
 
         private void btnSkip_Click(object sender, EventArgs e)
         {
-            (this.Parent as InitMenu).FloorChange(1);
+            controller.SkipConversation();
         }
     }
 }

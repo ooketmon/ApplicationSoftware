@@ -15,7 +15,7 @@ namespace WindowsFormsApp2
         private PlayerControl playerMove;
         bool playerisOnStair = false;
         bool playerisOnElevator = false;
-
+        bool roomHitTest=false;
         public Floor2UDC()
         {
             InitializeComponent();
@@ -28,8 +28,8 @@ namespace WindowsFormsApp2
                 (keyData == Keys.Up) || (keyData == Keys.Down))
             {
 
-                playerMove.PlayerKeyDown(new object[] { }, new KeyEventArgs(keyData));
-
+              //  playerMove.PlayerKeyDown(new object[] { }, new KeyEventArgs(keyData));
+              UserControl2_KeyDown(new object[] {},new KeyEventArgs(keyData));  
                 return true;
             }
             else
@@ -52,13 +52,13 @@ namespace WindowsFormsApp2
 
         private void UserControl2_KeyDown(object sender, KeyEventArgs e)
         {
-            playerMove.PlayerKeyDown(sender, e);
+            playerMove.MovePlayerWithoutBool(e);
         }
 
 
         private void timerFloor2_Tick(object sender, EventArgs e)
         {
-            playerMove.MovePlayer();
+            //playerMove.MovePlayer();
             foreach (Control x in this.Controls)
             {
                 if (x is PictureBox && (string)x.Name == "stairs2")
@@ -76,6 +76,15 @@ namespace WindowsFormsApp2
                     {
                         playerisOnElevator = true;
                         ((InitMenu)this.Parent).ElevatorCall(2);
+                        return;
+                    }
+                }
+                if (x is PictureBox && (x.Name as string).StartsWith("room"))
+                {
+                    if (player.Bounds.IntersectsWith(x.Bounds)&&!roomHitTest)
+                    {
+                        roomHitTest = true;
+                        ((InitMenu)this.Parent).CallConvMode(x.Name.ToString());
                         return;
                     }
                 }

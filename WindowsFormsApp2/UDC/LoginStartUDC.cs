@@ -164,7 +164,7 @@ namespace WindowsFormsApp2
                     else
                     {
                         MessageBox.Show("헉..!! 순진하게 공부할 시간은 없어..!");
-                        (this.Parent as InitMenu).CallPrologue();
+                        (this.Parent as InitMenu).CallConvMode("prologue");
                     }
                 }
 

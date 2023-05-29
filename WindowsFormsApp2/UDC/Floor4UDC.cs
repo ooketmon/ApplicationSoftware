@@ -15,6 +15,8 @@ namespace WindowsFormsApp2
         private PlayerControl playerMove;
         bool playerisOnStair = false;
         bool playerisOnElevator = false;
+        bool roomHitTest = false;
+
         public Floor4UDC()
         {
             InitializeComponent();
@@ -72,6 +74,15 @@ namespace WindowsFormsApp2
                     {
                         playerisOnElevator = true;
                         ((InitMenu)this.Parent).ElevatorCall(4);
+                        return;
+                    }
+                }
+                if (x is PictureBox && (x.Name as string).StartsWith("room"))
+                {
+                    if (player.Bounds.IntersectsWith(x.Bounds)&&!roomHitTest)
+                    {
+                        roomHitTest = true;
+                        ((InitMenu)this.Parent).CallConvMode((string)x.Name);
                         return;
                     }
                 }
