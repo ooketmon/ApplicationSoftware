@@ -229,4 +229,40 @@
   <data name="right4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Player\right4.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="_1_Papper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clue\1_Papper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1_Test" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clue\1_Test.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_2_Test" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clue\2_Test.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3_Cardkey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clue\3_Cardkey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3_Papper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clue\3_Papper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3_Poster" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clue\3_Poster.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3_Test" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clue\3_Test.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_4_Key" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clue\4_Key.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_4_Papper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clue\4_Papper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_4_Safecard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clue\4_Safecard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_4_Test" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clue\4_Test.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_5_Cardkey_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clue\5_Cardkey .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

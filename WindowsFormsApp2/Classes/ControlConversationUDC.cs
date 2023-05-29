@@ -24,7 +24,7 @@ namespace WindowsFormsApp2
             target.nameCharacter.Text = "'나'";
             target.contentConv.Text = "어디 ";
             target.BackgroundImage = Properties.Resources.s_1;
-            target.imgCharacter.Image = Properties.Resources.IMG_0809;
+            target.imgCharacter.Image = Properties.Resources.player_anime_ver;
             target.imgCharacter.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
