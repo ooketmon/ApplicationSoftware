@@ -28,6 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.Cardkey_5 = new System.Windows.Forms.PictureBox();
+            this.Test_4 = new System.Windows.Forms.PictureBox();
+            this.Key_4 = new System.Windows.Forms.PictureBox();
+            this.Safecard_4 = new System.Windows.Forms.PictureBox();
+            this.Papper_4 = new System.Windows.Forms.PictureBox();
+            this.Test_3 = new System.Windows.Forms.PictureBox();
+            this.Poster_3 = new System.Windows.Forms.PictureBox();
+            this.Cardkey_3 = new System.Windows.Forms.PictureBox();
+            this.Papper_3 = new System.Windows.Forms.PictureBox();
+            this.Test_2 = new System.Windows.Forms.PictureBox();
+            this.Test_1 = new System.Windows.Forms.PictureBox();
+            this.Papper_1 = new System.Windows.Forms.PictureBox();
             this.box_papper_4 = new System.Windows.Forms.PictureBox();
             this.box_key = new System.Windows.Forms.PictureBox();
             this.box_test_4 = new System.Windows.Forms.PictureBox();
@@ -40,7 +52,18 @@
             this.box_cardkey = new System.Windows.Forms.PictureBox();
             this.box_papper_3 = new System.Windows.Forms.PictureBox();
             this.box_papper_1 = new System.Windows.Forms.PictureBox();
-            this.clue_ex = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Cardkey_5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Test_4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Key_4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Safecard_4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Papper_4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Test_3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Poster_3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cardkey_3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Papper_3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Test_2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Test_1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Papper_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_papper_4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_key)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_test_4)).BeginInit();
@@ -53,8 +76,181 @@
             ((System.ComponentModel.ISupportInitialize)(this.box_cardkey)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_papper_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_papper_1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clue_ex)).BeginInit();
             this.SuspendLayout();
+            // 
+            // Cardkey_5
+            // 
+            this.Cardkey_5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Cardkey_5.BackColor = System.Drawing.Color.Transparent;
+            this.Cardkey_5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Cardkey_5.Image = global::WindowsFormsApp2.Properties.Resources._5_Cardkey_;
+            this.Cardkey_5.Location = new System.Drawing.Point(19, 373);
+            this.Cardkey_5.Name = "Cardkey_5";
+            this.Cardkey_5.Size = new System.Drawing.Size(62, 50);
+            this.Cardkey_5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Cardkey_5.TabIndex = 23;
+            this.Cardkey_5.TabStop = false;
+            // 
+            // Test_4
+            // 
+            this.Test_4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Test_4.BackColor = System.Drawing.Color.Transparent;
+            this.Test_4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Test_4.Image = global::WindowsFormsApp2.Properties.Resources._4_Test;
+            this.Test_4.Location = new System.Drawing.Point(285, 279);
+            this.Test_4.Name = "Test_4";
+            this.Test_4.Size = new System.Drawing.Size(50, 63);
+            this.Test_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Test_4.TabIndex = 22;
+            this.Test_4.TabStop = false;
+            // 
+            // Key_4
+            // 
+            this.Key_4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Key_4.BackColor = System.Drawing.Color.Transparent;
+            this.Key_4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Key_4.Image = global::WindowsFormsApp2.Properties.Resources._4_Key;
+            this.Key_4.Location = new System.Drawing.Point(191, 286);
+            this.Key_4.Name = "Key_4";
+            this.Key_4.Size = new System.Drawing.Size(63, 50);
+            this.Key_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Key_4.TabIndex = 21;
+            this.Key_4.TabStop = false;
+            // 
+            // Safecard_4
+            // 
+            this.Safecard_4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Safecard_4.BackColor = System.Drawing.Color.Transparent;
+            this.Safecard_4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Safecard_4.Image = global::WindowsFormsApp2.Properties.Resources._4_Safecard;
+            this.Safecard_4.Location = new System.Drawing.Point(106, 286);
+            this.Safecard_4.Name = "Safecard_4";
+            this.Safecard_4.Size = new System.Drawing.Size(62, 50);
+            this.Safecard_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Safecard_4.TabIndex = 20;
+            this.Safecard_4.TabStop = false;
+            // 
+            // Papper_4
+            // 
+            this.Papper_4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Papper_4.BackColor = System.Drawing.Color.Transparent;
+            this.Papper_4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Papper_4.Image = global::WindowsFormsApp2.Properties.Resources._4_Papper;
+            this.Papper_4.Location = new System.Drawing.Point(17, 279);
+            this.Papper_4.Name = "Papper_4";
+            this.Papper_4.Size = new System.Drawing.Size(62, 63);
+            this.Papper_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Papper_4.TabIndex = 19;
+            this.Papper_4.TabStop = false;
+            // 
+            // Test_3
+            // 
+            this.Test_3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Test_3.BackColor = System.Drawing.Color.Transparent;
+            this.Test_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Test_3.Image = global::WindowsFormsApp2.Properties.Resources._3_Test;
+            this.Test_3.Location = new System.Drawing.Point(285, 193);
+            this.Test_3.Name = "Test_3";
+            this.Test_3.Size = new System.Drawing.Size(50, 63);
+            this.Test_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Test_3.TabIndex = 18;
+            this.Test_3.TabStop = false;
+            // 
+            // Poster_3
+            // 
+            this.Poster_3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Poster_3.BackColor = System.Drawing.Color.Transparent;
+            this.Poster_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Poster_3.Image = global::WindowsFormsApp2.Properties.Resources._3_Poster;
+            this.Poster_3.Location = new System.Drawing.Point(199, 193);
+            this.Poster_3.Name = "Poster_3";
+            this.Poster_3.Size = new System.Drawing.Size(50, 63);
+            this.Poster_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Poster_3.TabIndex = 17;
+            this.Poster_3.TabStop = false;
+            // 
+            // Cardkey_3
+            // 
+            this.Cardkey_3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Cardkey_3.BackColor = System.Drawing.Color.Transparent;
+            this.Cardkey_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Cardkey_3.Image = global::WindowsFormsApp2.Properties.Resources._3_Cardkey;
+            this.Cardkey_3.Location = new System.Drawing.Point(106, 198);
+            this.Cardkey_3.Name = "Cardkey_3";
+            this.Cardkey_3.Size = new System.Drawing.Size(62, 50);
+            this.Cardkey_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Cardkey_3.TabIndex = 16;
+            this.Cardkey_3.TabStop = false;
+            // 
+            // Papper_3
+            // 
+            this.Papper_3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Papper_3.BackColor = System.Drawing.Color.Transparent;
+            this.Papper_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Papper_3.Image = global::WindowsFormsApp2.Properties.Resources._3_Papper;
+            this.Papper_3.Location = new System.Drawing.Point(20, 199);
+            this.Papper_3.Name = "Papper_3";
+            this.Papper_3.Size = new System.Drawing.Size(58, 50);
+            this.Papper_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Papper_3.TabIndex = 15;
+            this.Papper_3.TabStop = false;
+            // 
+            // Test_2
+            // 
+            this.Test_2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Test_2.BackColor = System.Drawing.Color.Transparent;
+            this.Test_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Test_2.Image = global::WindowsFormsApp2.Properties.Resources._2_Test;
+            this.Test_2.Location = new System.Drawing.Point(24, 105);
+            this.Test_2.Name = "Test_2";
+            this.Test_2.Size = new System.Drawing.Size(50, 63);
+            this.Test_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Test_2.TabIndex = 14;
+            this.Test_2.TabStop = false;
+            // 
+            // Test_1
+            // 
+            this.Test_1.BackColor = System.Drawing.Color.Transparent;
+            this.Test_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Test_1.Image = global::WindowsFormsApp2.Properties.Resources._1_Test;
+            this.Test_1.Location = new System.Drawing.Point(111, 18);
+            this.Test_1.Name = "Test_1";
+            this.Test_1.Size = new System.Drawing.Size(50, 63);
+            this.Test_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Test_1.TabIndex = 13;
+            this.Test_1.TabStop = false;
+            // 
+            // Papper_1
+            // 
+            this.Papper_1.BackColor = System.Drawing.Color.Transparent;
+            this.Papper_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Papper_1.Image = global::WindowsFormsApp2.Properties.Resources._1_Papper;
+            this.Papper_1.Location = new System.Drawing.Point(16, 18);
+            this.Papper_1.Name = "Papper_1";
+            this.Papper_1.Size = new System.Drawing.Size(66, 63);
+            this.Papper_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Papper_1.TabIndex = 12;
+            this.Papper_1.TabStop = false;
             // 
             // box_papper_4
             // 
@@ -164,25 +360,23 @@
             this.box_papper_1.TabIndex = 0;
             this.box_papper_1.TabStop = false;
             // 
-            // clue_ex
-            // 
-            this.clue_ex.BackColor = System.Drawing.Color.Transparent;
-            this.clue_ex.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.clue_ex.Image = global::WindowsFormsApp2.Properties.Resources.clue_example;
-            this.clue_ex.Location = new System.Drawing.Point(16, 25);
-            this.clue_ex.Name = "clue_ex";
-            this.clue_ex.Size = new System.Drawing.Size(66, 50);
-            this.clue_ex.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.clue_ex.TabIndex = 12;
-            this.clue_ex.TabStop = false;
-            // 
             // Inventory
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(357, 448);
-            this.Controls.Add(this.clue_ex);
+            this.Controls.Add(this.Cardkey_5);
+            this.Controls.Add(this.Test_4);
+            this.Controls.Add(this.Key_4);
+            this.Controls.Add(this.Safecard_4);
+            this.Controls.Add(this.Papper_4);
+            this.Controls.Add(this.Test_3);
+            this.Controls.Add(this.Poster_3);
+            this.Controls.Add(this.Cardkey_3);
+            this.Controls.Add(this.Papper_3);
+            this.Controls.Add(this.Test_2);
+            this.Controls.Add(this.Test_1);
+            this.Controls.Add(this.Papper_1);
             this.Controls.Add(this.box_papper_4);
             this.Controls.Add(this.box_key);
             this.Controls.Add(this.box_test_4);
@@ -200,6 +394,18 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Inventory";
             this.Load += new System.EventHandler(this.Inventory_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.Cardkey_5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Test_4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Key_4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Safecard_4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Papper_4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Test_3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Poster_3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cardkey_3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Papper_3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Test_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Test_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Papper_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_papper_4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_key)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_test_4)).EndInit();
@@ -212,7 +418,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.box_cardkey)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_papper_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_papper_1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clue_ex)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -231,6 +436,17 @@
         private System.Windows.Forms.PictureBox box_test_4;
         private System.Windows.Forms.PictureBox box_key;
         private System.Windows.Forms.PictureBox box_papper_4;
-        public System.Windows.Forms.PictureBox clue_ex;
+        public System.Windows.Forms.PictureBox Papper_1;
+        private System.Windows.Forms.PictureBox Test_1;
+        private System.Windows.Forms.PictureBox Test_2;
+        private System.Windows.Forms.PictureBox Papper_3;
+        private System.Windows.Forms.PictureBox Cardkey_3;
+        private System.Windows.Forms.PictureBox Poster_3;
+        private System.Windows.Forms.PictureBox Test_3;
+        private System.Windows.Forms.PictureBox Papper_4;
+        private System.Windows.Forms.PictureBox Safecard_4;
+        private System.Windows.Forms.PictureBox Key_4;
+        private System.Windows.Forms.PictureBox Test_4;
+        private System.Windows.Forms.PictureBox Cardkey_5;
     }
 }
