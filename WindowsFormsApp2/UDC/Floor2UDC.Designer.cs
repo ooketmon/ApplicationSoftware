@@ -57,7 +57,7 @@
             this.pictureBox22 = new System.Windows.Forms.PictureBox();
             this.pictureBox29 = new System.Windows.Forms.PictureBox();
             this.pictureBox28 = new System.Windows.Forms.PictureBox();
-            this.stairs2 = new System.Windows.Forms.PictureBox();
+            this.stair = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
@@ -102,7 +102,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stairs2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stair)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
@@ -395,14 +395,14 @@
             this.pictureBox28.TabStop = false;
             this.pictureBox28.Tag = "obstacle";
             // 
-            // stairs2
+            // stair
             // 
-            this.stairs2.Location = new System.Drawing.Point(755, 145);
-            this.stairs2.Name = "stairs2";
-            this.stairs2.Size = new System.Drawing.Size(60, 65);
-            this.stairs2.TabIndex = 84;
-            this.stairs2.TabStop = false;
-            this.stairs2.Visible = false;
+            this.stair.Location = new System.Drawing.Point(755, 145);
+            this.stair.Name = "stair";
+            this.stair.Size = new System.Drawing.Size(60, 65);
+            this.stair.TabIndex = 84;
+            this.stair.TabStop = false;
+            this.stair.Visible = false;
             // 
             // pictureBox5
             // 
@@ -477,7 +477,7 @@
             // player
             // 
             this.player.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.player.Location = new System.Drawing.Point(668, 145);
+            this.player.Location = new System.Drawing.Point(687, 155);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(40, 45);
             this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -635,7 +635,7 @@
             this.Controls.Add(this.pictureBox22);
             this.Controls.Add(this.pictureBox29);
             this.Controls.Add(this.pictureBox28);
-            this.Controls.Add(this.stairs2);
+            this.Controls.Add(this.stair);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox21);
             this.Controls.Add(this.pictureBox20);
@@ -687,7 +687,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stairs2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stair)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
@@ -717,7 +717,7 @@
 
         private System.Windows.Forms.PictureBox pictureBox29;
         private System.Windows.Forms.PictureBox pictureBox28;
-        private System.Windows.Forms.PictureBox stairs2;
+        private System.Windows.Forms.PictureBox stair;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox21;
         private System.Windows.Forms.PictureBox pictureBox20;

@@ -58,7 +58,7 @@ namespace WindowsFormsApp2
 
             foreach (Control x in this.Controls)
             {
-                if (x is PictureBox && (string)x.Name == "stairs2")
+                if (x is PictureBox && (string)x.Name == "stair")
                 {
                     if (player.Bounds.IntersectsWith(x.Bounds) && !playerisOnStair)
                     {

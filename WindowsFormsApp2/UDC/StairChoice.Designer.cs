@@ -62,7 +62,7 @@
             this.Controls.Add(this.down);
             this.DoubleBuffered = true;
             this.Name = "StairChoice";
-            this.Size = new System.Drawing.Size(302, 222);
+            this.Size = new System.Drawing.Size(300, 220);
             this.ResumeLayout(false);
 
         }
