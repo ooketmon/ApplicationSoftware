@@ -63,7 +63,7 @@ namespace WindowsFormsApp2
                     if (player.Bounds.IntersectsWith(x.Bounds) && !playerisOnStair)
                     {
                         playerisOnStair = true;
-                        ((InitMenu)this.Parent).FloorChange(4);
+                        ((InitMenu)this.Parent).StairCall(3);
                         return;
                     }
                 }

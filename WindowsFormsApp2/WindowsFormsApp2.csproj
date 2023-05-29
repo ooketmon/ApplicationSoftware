@@ -74,6 +74,11 @@
     <Compile Include="Forms\ConvMode.Designer.cs">
       <DependentUpon>ConvMode.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="UDC\Chaser.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -220,14 +225,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="UDC\Floor1UDC.resx">
       <DependentUpon>Floor1UDC.cs</DependentUpon>
     </EmbeddedResource>
@@ -282,6 +282,7 @@
     <None Include="resources\IMG_0793.PNG" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="resources\tri.png" />
     <None Include="resources\Stair.png" />
     <None Include="resources\Player\right4.PNG" />
     <None Include="resources\Player\right3.PNG" />

@@ -243,26 +243,6 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap char_example2 {
-            get {
-                object obj = ResourceManager.GetObject("char-example2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap clue_example {
-            get {
-                object obj = ResourceManager.GetObject("clue_example", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
         internal static System.Drawing.Bitmap ConvBack {
             get {
                 object obj = ResourceManager.GetObject("ConvBack", resourceCulture);
@@ -546,6 +526,16 @@ namespace WindowsFormsApp2.Properties {
         internal static System.Drawing.Bitmap Stair {
             get {
                 object obj = ResourceManager.GetObject("Stair", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap tri {
+            get {
+                object obj = ResourceManager.GetObject("tri", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

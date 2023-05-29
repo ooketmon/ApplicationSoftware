@@ -156,9 +156,17 @@ namespace WindowsFormsApp2
             elevator.Focus();
 
         }
-        private void StairCall(int floor)
+        public void StairCall(int floor)
         {
-
+            StairChoice stair = new StairChoice(floor);
+            Control main_floor = null;
+            foreach(Control ctrl in this.Controls)
+            {
+                main_floor = ctrl;
+            }
+            this.Controls.Add(stair);
+            stair.BringToFront();
+            stair.Focus();
         }
         private void InitMenu_Load(object sender, EventArgs e)
         {
