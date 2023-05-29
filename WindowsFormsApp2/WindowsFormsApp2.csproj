@@ -395,6 +395,10 @@
     <None Include="resources\clue\4_Key.png" />
     <None Include="resources\clue\4_Test.png" />
     <None Include="resources\clue\5_Cardkey .png" />
+    <None Include="resources\clue\2F_Poster1.png" />
+    <None Include="resources\2F-board.png" />
+    <None Include="resources\clue\2F_Poster4.png" />
+    <None Include="resources\clue\8F_Printer1.png" />
     <Content Include="resources\Floor1\IMG_0808.PNG" />
     <None Include="resources\ui\Button.png" />
     <None Include="resources\ui\ConvBack.png" />
@@ -414,6 +418,7 @@
     <None Include="resources\Player\front2.PNG" />
     <None Include="resources\Player\front3.PNG" />
     <None Include="resources\Player\front4.PNG" />
+    <None Include="resources\lecture-room-4.png" />
     <Content Include="resources\Player\IMG_0809.PNG" />
     <Content Include="resources\Player\IMG_0811.PNG" />
     <Content Include="resources\Player\IMG_0812.PNG" />

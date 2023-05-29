@@ -28,17 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Room_Board));
+            this.Poster_1 = new System.Windows.Forms.PictureBox();
+            this.Poster_4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Poster_1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Poster_4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
+            // 
+            // Poster_1
+            // 
+            this.Poster_1.Image = global::WindowsFormsApp2.Properties.Resources._2F_Poster1;
+            this.Poster_1.Location = new System.Drawing.Point(682, 360);
+            this.Poster_1.Name = "Poster_1";
+            this.Poster_1.Size = new System.Drawing.Size(144, 175);
+            this.Poster_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Poster_1.TabIndex = 2;
+            this.Poster_1.TabStop = false;
+            // 
+            // Poster_4
+            // 
+            this.Poster_4.Image = global::WindowsFormsApp2.Properties.Resources._2F_Poster4;
+            this.Poster_4.Location = new System.Drawing.Point(146, 476);
+            this.Poster_4.Name = "Poster_4";
+            this.Poster_4.Size = new System.Drawing.Size(119, 79);
+            this.Poster_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Poster_4.TabIndex = 1;
+            this.Poster_4.TabStop = false;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
@@ -46,34 +69,18 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(134, 352);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(165, 207);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(776, 43);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(235, 324);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
             // Room_Board
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.Poster_1);
+            this.Controls.Add(this.Poster_4);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Room_Board";
             this.Size = new System.Drawing.Size(1200, 800);
+            ((System.ComponentModel.ISupportInitialize)(this.Poster_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Poster_4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -81,7 +88,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox Poster_4;
+        private System.Windows.Forms.PictureBox Poster_1;
     }
 }

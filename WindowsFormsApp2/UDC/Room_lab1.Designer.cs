@@ -28,47 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.Printer_1 = new System.Windows.Forms.PictureBox();
+            this.lab1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Printer_1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lab1)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // Printer_1
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1200, 800);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.Printer_1.Image = global::WindowsFormsApp2.Properties.Resources._8F_Printer1;
+            this.Printer_1.Location = new System.Drawing.Point(563, 157);
+            this.Printer_1.Name = "Printer_1";
+            this.Printer_1.Size = new System.Drawing.Size(279, 341);
+            this.Printer_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Printer_1.TabIndex = 1;
+            this.Printer_1.TabStop = false;
+            this.Printer_1.Click += new System.EventHandler(this.Printer1_Click);
             // 
-            // pictureBox2
+            // lab1
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(223, 88);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(421, 614);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.lab1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lab1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lab1.Location = new System.Drawing.Point(0, 0);
+            this.lab1.Name = "lab1";
+            this.lab1.Size = new System.Drawing.Size(1200, 800);
+            this.lab1.TabIndex = 0;
+            this.lab1.TabStop = false;
             // 
             // Room_lab1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.Printer_1);
+            this.Controls.Add(this.lab1);
             this.Name = "Room_lab1";
             this.Size = new System.Drawing.Size(1200, 800);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Printer_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lab1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox lab1;
+        private System.Windows.Forms.PictureBox Printer_1;
     }
 }

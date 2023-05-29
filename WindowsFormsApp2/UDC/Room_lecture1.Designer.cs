@@ -28,52 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Papper_1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.lecture1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Papper_1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lecture1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.Library2_1_;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1200, 800);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // Papper_1
             // 
             this.Papper_1.BackColor = System.Drawing.Color.Transparent;
             this.Papper_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Papper_1.Image = global::WindowsFormsApp2.Properties.Resources._1_Papper;
-            this.Papper_1.Location = new System.Drawing.Point(826, 420);
+            this.Papper_1.Location = new System.Drawing.Point(1146, 376);
             this.Papper_1.Name = "Papper_1";
-            this.Papper_1.Size = new System.Drawing.Size(152, 114);
+            this.Papper_1.Size = new System.Drawing.Size(34, 30);
             this.Papper_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Papper_1.TabIndex = 1;
             this.Papper_1.TabStop = false;
-            this.Papper_1.Click += new System.EventHandler(this.clue_example_Click);
+            this.Papper_1.Click += new System.EventHandler(this.Papper1_Click);
+            // 
+            // lecture1
+            // 
+            this.lecture1.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.lecture_room_4;
+            this.lecture1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.lecture1.Location = new System.Drawing.Point(0, 0);
+            this.lecture1.Name = "lecture1";
+            this.lecture1.Size = new System.Drawing.Size(1200, 800);
+            this.lecture1.TabIndex = 0;
+            this.lecture1.TabStop = false;
             // 
             // Room_lecture1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.Papper_1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.lecture1);
             this.Name = "Room_lecture1";
             this.Size = new System.Drawing.Size(1200, 800);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Papper_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lecture1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox lecture1;
         private System.Windows.Forms.PictureBox Papper_1;
     }
 }
