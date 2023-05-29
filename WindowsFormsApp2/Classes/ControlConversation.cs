@@ -9,12 +9,12 @@ namespace WindowsFormsApp2
 
         static ConvMode ConvMode = Application.OpenForms.OfType<ConvMode>().FirstOrDefault();   
 
-        public static void  GameStart()
+        public static void  Prologue()
         {
             ConvMode.nameCharacter.Text = "'나'";
             ConvMode.contentConv.Text ="아..시험기간이 또 다가왔네";
             ConvMode.BackgroundImage = Properties.Resources.s_1;
-            ConvMode.imgCharacter.Image = Properties.Resources.IMG_0809;
+            ConvMode.imgCharacter.Image = Properties.Resources.player_anime_ver;
             ConvMode.imgCharacter.SizeMode = PictureBoxSizeMode.StretchImage;
         }
         public static void GameStart1()

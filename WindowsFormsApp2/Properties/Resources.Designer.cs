@@ -93,14 +93,16 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap clue_example
-        {
-            get
-            {
+        internal static System.Drawing.Bitmap clue_example {
+            get {
                 object obj = ResourceManager.GetObject("clue_example", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap ConvBack {
             get {
                 object obj = ResourceManager.GetObject("ConvBack", resourceCulture);
@@ -245,6 +247,16 @@ namespace WindowsFormsApp2.Properties {
             get {
                 object obj = ResourceManager.GetObject("NeoDunggeunmoPro_Regular", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap player_anime_ver {
+            get {
+                object obj = ResourceManager.GetObject("player_anime_ver", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

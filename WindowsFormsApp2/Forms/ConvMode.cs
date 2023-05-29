@@ -42,7 +42,7 @@ namespace WindowsFormsApp2
             contentConv.Text = "대화 내용";
 
 
-            ControlConversation.GameStart();
+            ControlConversation.Prologue();
 
             System.Drawing.Text.PrivateFontCollection privateFonts = new System.Drawing.Text.PrivateFontCollection();
             privateFonts.AddFontFile("./resources/Mabinogi_Classic_TTF.ttf"); // 마비노기 옛체 
