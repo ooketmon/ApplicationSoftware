@@ -47,7 +47,7 @@ namespace WindowsFormsApp2
         }
         public void PlayerKeyUp(object sender, KeyEventArgs e)
         {
-
+            
             if (e.KeyCode == Keys.Left) { goLeft = false; ResetPlayerImage(); }
             if (e.KeyCode == Keys.Right) {goRight = false; ResetPlayerImage(); }
             if (e.KeyCode == Keys.Up) { goUp = false; ResetPlayerImage(); }
@@ -68,11 +68,13 @@ namespace WindowsFormsApp2
             if (goRight && playerX < 1014) { playerX += playerSpeed; };
             if (goUp && playerY > 4) { playerY -= playerSpeed; };
             if (goDown && playerY < 604) { playerY += playerSpeed; };
+            
             if (!goLeft && !goRight && !goUp && !goDown)
             {
                 // 정지 이미지 표시
                 player.Image = stopImages[currentImageIndex];
             }
+            
 
             Rectangle playerBounds = new Rectangle(playerX, playerY, player.Width, player.Height);
             bool isCollision = false;
@@ -91,9 +93,16 @@ namespace WindowsFormsApp2
             {
                 player.Left = playerX;
                 player.Top = playerY;
-
-                currentImageIndex = (currentImageIndex + 1) % directionImages[currentDirection].Length;
-                player.Image = directionImages[currentDirection][currentImageIndex];
+                if (!goLeft && !goRight && !goUp && !goDown)
+                {
+                    // 정지 이미지 표시
+                    player.Image = stopImages[currentImageIndex];
+                }
+                else
+                {
+                    currentImageIndex = (currentImageIndex + 1) % directionImages[currentDirection].Length;
+                    player.Image = directionImages[currentDirection][currentImageIndex];
+                }
             }
 
             //foreach (Control x in this.Controls)

@@ -22,8 +22,20 @@ namespace WindowsFormsApp2
             if ((keyData == Keys.Right) || (keyData == Keys.Left) ||
                 (keyData == Keys.Up) || (keyData == Keys.Down))
             {
-                //this.UserControl1_KeyUp(new object[] {},new KeyEventArgs(keyData));
-                playerMove.PlayerKeyDown(new object[] { }, new KeyEventArgs(keyData));
+
+
+                switch (msg.Msg)
+                {
+                    case 0x100:
+                    case 0x104:
+                        UserControl1_KeyDown(new object[] {},new KeyEventArgs(keyData)); break;
+                    case 0x101:
+                    case 0x105:
+                        UserControl1_KeyUp(new object[] {},new KeyEventArgs(keyData));  break;
+                }
+     
+ 
+
       
                 return true;
             }
@@ -96,6 +108,11 @@ namespace WindowsFormsApp2
 
             // 폼을 보여줌
             inventory.ShowDialog();
+        }
+
+        private void player_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
