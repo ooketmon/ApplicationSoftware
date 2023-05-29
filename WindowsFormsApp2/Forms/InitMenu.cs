@@ -242,6 +242,19 @@ namespace WindowsFormsApp2
             stair.BringToFront();
             stair.Focus();
         }
+
+        public void ConvComeback(Control floor)
+        {
+            Controls.Clear();
+            Controls.Add(floor);
+            floor.Focus();
+        }
+
+        public void CallConvMode(string place)
+        {
+            Controls.Clear();
+            Controls.Add(new ConvModeUDC(place));
+        }
         private void InitMenu_Load(object sender, EventArgs e)
         {
             CallMainMenu(); 

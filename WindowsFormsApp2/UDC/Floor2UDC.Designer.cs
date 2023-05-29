@@ -42,15 +42,15 @@
             this.pictureBox34 = new System.Windows.Forms.PictureBox();
             this.pictureBox33 = new System.Windows.Forms.PictureBox();
             this.pictureBox32 = new System.Windows.Forms.PictureBox();
-            this.pictureBox31 = new System.Windows.Forms.PictureBox();
+            this.room2_4 = new System.Windows.Forms.PictureBox();
             this.pictureBox30 = new System.Windows.Forms.PictureBox();
             this.pictureBox27 = new System.Windows.Forms.PictureBox();
-            this.pictureBox26 = new System.Windows.Forms.PictureBox();
+            this.room2_3 = new System.Windows.Forms.PictureBox();
             this.pictureBox25 = new System.Windows.Forms.PictureBox();
-            this.pictureBox24 = new System.Windows.Forms.PictureBox();
+            this.room2_2 = new System.Windows.Forms.PictureBox();
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.room2_1 = new System.Windows.Forms.PictureBox();
+            this.room2_5 = new System.Windows.Forms.PictureBox();
             this.pictureBox40 = new System.Windows.Forms.PictureBox();
             this.pictureBox39 = new System.Windows.Forms.PictureBox();
             this.elevator = new System.Windows.Forms.PictureBox();
@@ -87,15 +87,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.room2_4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.room2_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.room2_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.room2_1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.room2_5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elevator)).BeginInit();
@@ -252,14 +252,14 @@
             this.pictureBox32.TabStop = false;
             this.pictureBox32.Tag = "obstacle";
             // 
-            // pictureBox31
+            // room2_4
             // 
-            this.pictureBox31.Location = new System.Drawing.Point(585, 505);
-            this.pictureBox31.Name = "pictureBox31";
-            this.pictureBox31.Size = new System.Drawing.Size(60, 65);
-            this.pictureBox31.TabIndex = 133;
-            this.pictureBox31.TabStop = false;
-            this.pictureBox31.Visible = false;
+            this.room2_4.Location = new System.Drawing.Point(585, 505);
+            this.room2_4.Name = "room2_4";
+            this.room2_4.Size = new System.Drawing.Size(60, 65);
+            this.room2_4.TabIndex = 133;
+            this.room2_4.TabStop = false;
+            this.room2_4.Visible = false;
             // 
             // pictureBox30
             // 
@@ -280,14 +280,14 @@
             this.pictureBox27.TabStop = false;
             this.pictureBox27.Tag = "obstacle";
             // 
-            // pictureBox26
+            // room2_3
             // 
-            this.pictureBox26.Location = new System.Drawing.Point(840, 585);
-            this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(60, 65);
-            this.pictureBox26.TabIndex = 130;
-            this.pictureBox26.TabStop = false;
-            this.pictureBox26.Visible = false;
+            this.room2_3.Location = new System.Drawing.Point(840, 585);
+            this.room2_3.Name = "room2_3";
+            this.room2_3.Size = new System.Drawing.Size(60, 65);
+            this.room2_3.TabIndex = 130;
+            this.room2_3.TabStop = false;
+            this.room2_3.Visible = false;
             // 
             // pictureBox25
             // 
@@ -296,16 +296,17 @@
             this.pictureBox25.Size = new System.Drawing.Size(60, 65);
             this.pictureBox25.TabIndex = 129;
             this.pictureBox25.TabStop = false;
+            this.pictureBox25.Tag = "lock";
             this.pictureBox25.Visible = false;
             // 
-            // pictureBox24
+            // room2_2
             // 
-            this.pictureBox24.Location = new System.Drawing.Point(1055, 340);
-            this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.Size = new System.Drawing.Size(60, 65);
-            this.pictureBox24.TabIndex = 128;
-            this.pictureBox24.TabStop = false;
-            this.pictureBox24.Visible = false;
+            this.room2_2.Location = new System.Drawing.Point(1055, 340);
+            this.room2_2.Name = "room2_2";
+            this.room2_2.Size = new System.Drawing.Size(60, 65);
+            this.room2_2.TabIndex = 128;
+            this.room2_2.TabStop = false;
+            this.room2_2.Visible = false;
             // 
             // pictureBox23
             // 
@@ -317,23 +318,24 @@
             this.pictureBox23.TabStop = false;
             this.pictureBox23.Tag = "obstacle";
             // 
-            // pictureBox8
+            // room2_1
             // 
-            this.pictureBox8.Location = new System.Drawing.Point(840, 325);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(60, 65);
-            this.pictureBox8.TabIndex = 126;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Visible = false;
+            this.room2_1.ImageLocation = "0";
+            this.room2_1.Location = new System.Drawing.Point(841, 326);
+            this.room2_1.Name = "room2_1";
+            this.room2_1.Size = new System.Drawing.Size(60, 65);
+            this.room2_1.TabIndex = 126;
+            this.room2_1.TabStop = false;
+            this.room2_1.Visible = false;
             // 
-            // pictureBox7
+            // room2_5
             // 
-            this.pictureBox7.Location = new System.Drawing.Point(160, 290);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(60, 65);
-            this.pictureBox7.TabIndex = 125;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Visible = false;
+            this.room2_5.Location = new System.Drawing.Point(160, 290);
+            this.room2_5.Name = "room2_5";
+            this.room2_5.Size = new System.Drawing.Size(60, 65);
+            this.room2_5.TabIndex = 125;
+            this.room2_5.TabStop = false;
+            this.room2_5.Visible = false;
             // 
             // pictureBox40
             // 
@@ -620,15 +622,15 @@
             this.Controls.Add(this.pictureBox34);
             this.Controls.Add(this.pictureBox33);
             this.Controls.Add(this.pictureBox32);
-            this.Controls.Add(this.pictureBox31);
+            this.Controls.Add(this.room2_4);
             this.Controls.Add(this.pictureBox30);
             this.Controls.Add(this.pictureBox27);
-            this.Controls.Add(this.pictureBox26);
+            this.Controls.Add(this.room2_3);
             this.Controls.Add(this.pictureBox25);
-            this.Controls.Add(this.pictureBox24);
+            this.Controls.Add(this.room2_2);
             this.Controls.Add(this.pictureBox23);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.room2_1);
+            this.Controls.Add(this.room2_5);
             this.Controls.Add(this.pictureBox40);
             this.Controls.Add(this.pictureBox39);
             this.Controls.Add(this.elevator);
@@ -672,15 +674,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.room2_4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.room2_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.room2_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.room2_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.room2_5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elevator)).EndInit();
@@ -742,15 +744,15 @@
         private System.Windows.Forms.PictureBox pictureBox39;
         private System.Windows.Forms.PictureBox elevator;
         private System.Windows.Forms.PictureBox pictureBox22;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox room2_5;
+        private System.Windows.Forms.PictureBox room2_1;
         private System.Windows.Forms.PictureBox pictureBox23;
-        private System.Windows.Forms.PictureBox pictureBox24;
+        private System.Windows.Forms.PictureBox room2_2;
         private System.Windows.Forms.PictureBox pictureBox25;
-        private System.Windows.Forms.PictureBox pictureBox26;
+        private System.Windows.Forms.PictureBox room2_3;
         private System.Windows.Forms.PictureBox pictureBox27;
         private System.Windows.Forms.PictureBox pictureBox30;
-        private System.Windows.Forms.PictureBox pictureBox31;
+        private System.Windows.Forms.PictureBox room2_4;
         private System.Windows.Forms.PictureBox pictureBox32;
         private System.Windows.Forms.PictureBox pictureBox33;
         private System.Windows.Forms.PictureBox pictureBox34;

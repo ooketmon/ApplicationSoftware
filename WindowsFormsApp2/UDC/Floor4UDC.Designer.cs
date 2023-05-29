@@ -49,7 +49,7 @@
             this.pictureBox37 = new System.Windows.Forms.PictureBox();
             this.pictureBox36 = new System.Windows.Forms.PictureBox();
             this.pictureBox35 = new System.Windows.Forms.PictureBox();
-            this.pictureBox34 = new System.Windows.Forms.PictureBox();
+            this.room4_1 = new System.Windows.Forms.PictureBox();
             this.pictureBox32 = new System.Windows.Forms.PictureBox();
             this.pictureBox33 = new System.Windows.Forms.PictureBox();
             this.pictureBox30 = new System.Windows.Forms.PictureBox();
@@ -107,7 +107,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.room4_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
@@ -286,6 +286,7 @@
             this.pictureBox42.Size = new System.Drawing.Size(60, 65);
             this.pictureBox42.TabIndex = 144;
             this.pictureBox42.TabStop = false;
+            this.pictureBox42.Tag = "lock";
             this.pictureBox42.Visible = false;
             // 
             // pictureBox41
@@ -295,6 +296,7 @@
             this.pictureBox41.Size = new System.Drawing.Size(60, 65);
             this.pictureBox41.TabIndex = 143;
             this.pictureBox41.TabStop = false;
+            this.pictureBox41.Tag = "lock";
             this.pictureBox41.Visible = false;
             // 
             // pictureBox38
@@ -337,14 +339,14 @@
             this.pictureBox35.TabStop = false;
             this.pictureBox35.Tag = "obstacle";
             // 
-            // pictureBox34
+            // room4_1
             // 
-            this.pictureBox34.Location = new System.Drawing.Point(355, 485);
-            this.pictureBox34.Name = "pictureBox34";
-            this.pictureBox34.Size = new System.Drawing.Size(60, 65);
-            this.pictureBox34.TabIndex = 138;
-            this.pictureBox34.TabStop = false;
-            this.pictureBox34.Visible = false;
+            this.room4_1.Location = new System.Drawing.Point(355, 485);
+            this.room4_1.Name = "room4_1";
+            this.room4_1.Size = new System.Drawing.Size(60, 65);
+            this.room4_1.TabIndex = 138;
+            this.room4_1.TabStop = false;
+            this.room4_1.Visible = false;
             // 
             // pictureBox32
             // 
@@ -353,6 +355,7 @@
             this.pictureBox32.Size = new System.Drawing.Size(60, 65);
             this.pictureBox32.TabIndex = 137;
             this.pictureBox32.TabStop = false;
+            this.pictureBox32.Tag = "lock";
             this.pictureBox32.Visible = false;
             // 
             // pictureBox33
@@ -372,6 +375,7 @@
             this.pictureBox30.Size = new System.Drawing.Size(60, 65);
             this.pictureBox30.TabIndex = 135;
             this.pictureBox30.TabStop = false;
+            this.pictureBox30.Tag = "lock";
             this.pictureBox30.Visible = false;
             // 
             // pictureBox31
@@ -391,6 +395,7 @@
             this.pictureBox26.Size = new System.Drawing.Size(60, 65);
             this.pictureBox26.TabIndex = 133;
             this.pictureBox26.TabStop = false;
+            this.pictureBox26.Tag = "lock";
             this.pictureBox26.Visible = false;
             // 
             // pictureBox27
@@ -410,6 +415,7 @@
             this.pictureBox25.Size = new System.Drawing.Size(60, 65);
             this.pictureBox25.TabIndex = 131;
             this.pictureBox25.TabStop = false;
+            this.pictureBox25.Tag = "lock";
             this.pictureBox25.Visible = false;
             // 
             // pictureBox21
@@ -757,7 +763,7 @@
             this.Controls.Add(this.pictureBox37);
             this.Controls.Add(this.pictureBox36);
             this.Controls.Add(this.pictureBox35);
-            this.Controls.Add(this.pictureBox34);
+            this.Controls.Add(this.room4_1);
             this.Controls.Add(this.pictureBox32);
             this.Controls.Add(this.pictureBox33);
             this.Controls.Add(this.pictureBox30);
@@ -822,7 +828,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.room4_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
@@ -906,7 +912,7 @@
         private System.Windows.Forms.PictureBox pictureBox31;
         private System.Windows.Forms.PictureBox pictureBox32;
         private System.Windows.Forms.PictureBox pictureBox33;
-        private System.Windows.Forms.PictureBox pictureBox34;
+        private System.Windows.Forms.PictureBox room4_1;
         private System.Windows.Forms.PictureBox pictureBox35;
         private System.Windows.Forms.PictureBox pictureBox36;
         private System.Windows.Forms.PictureBox pictureBox37;

@@ -82,6 +82,14 @@ namespace WindowsFormsApp2
                         return;
                     }
                 }
+
+                if (x is PictureBox && (x.Name as string).StartsWith("room"))
+                {
+                    if (player.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        ((InitMenu)this.Parent).CallConvMode(x.Name.ToString());
+                    }
+                }
             }
         }
 
