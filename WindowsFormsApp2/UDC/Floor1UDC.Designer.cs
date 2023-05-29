@@ -352,9 +352,8 @@
             // 
             // player
             // 
-            this.player.BackColor = System.Drawing.Color.Transparent;
+            this.player.BackColor = System.Drawing.Color.RosyBrown;
             this.player.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0809;
             this.player.Location = new System.Drawing.Point(1038, 485);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(39, 45);

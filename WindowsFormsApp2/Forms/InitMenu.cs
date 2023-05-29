@@ -179,8 +179,8 @@ namespace WindowsFormsApp2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new LoginStart().Show();
-            this.Hide();
+            //new LoginStart().Show();
+            //this.Hide();
         }
     }
 }
