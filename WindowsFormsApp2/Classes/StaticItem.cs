@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
     public class StaticItem
     {
         public static bool[] inventory = new bool[12];
+        public static string[] items = new string[12] { "Papper_1","Test_1","Test_2","Papper_3","Cardkey_3","Poster_3","Test_3","Papper_4","Safecard_4","Key_4","Test_4","Cardkey_5"};
 
         //1. 게시판 - 강의실1 - 연구실1 관련 item
         public static bool mPapper1 = false;

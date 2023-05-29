@@ -18,8 +18,8 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
 
-            clue_example.BackColor = Color.Transparent;
-            clue_example.Parent = pictureBox1;
+            Papper_1.BackColor = Color.Transparent;
+            Papper_1.Parent = pictureBox1;
         }
 
         public void clue_example_Click(object sender, EventArgs e)
@@ -27,7 +27,7 @@ namespace WindowsFormsApp2
             // 단서 example 함수 _ 클릭 이벤트 발생시
             mPapper1 = true;
             inventory_set();
-            clue_example.Visible = false;
+            Papper_1.Visible = false;
 
         }
     }
