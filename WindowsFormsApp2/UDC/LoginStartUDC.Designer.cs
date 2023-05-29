@@ -41,9 +41,9 @@
             this.web_view.AllowExternalDrop = true;
             this.web_view.CreationProperties = null;
             this.web_view.DefaultBackgroundColor = System.Drawing.Color.White;
-            this.web_view.Location = new System.Drawing.Point(298, 172);
+            this.web_view.Location = new System.Drawing.Point(297, 154);
             this.web_view.Name = "web_view";
-            this.web_view.Size = new System.Drawing.Size(646, 298);
+            this.web_view.Size = new System.Drawing.Size(646, 335);
             this.web_view.TabIndex = 6;
             this.web_view.ZoomFactor = 1D;
             this.web_view.NavigationCompleted += new System.EventHandler<Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs>(this.web_view_NavigationCompleted);
