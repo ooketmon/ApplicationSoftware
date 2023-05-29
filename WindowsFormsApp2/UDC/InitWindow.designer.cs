@@ -39,7 +39,7 @@
             this.btnStart.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.btn_start;
             this.btnStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnStart.Location = new System.Drawing.Point(481, 649);
+            this.btnStart.Location = new System.Drawing.Point(481, 670);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(270, 60);
             this.btnStart.TabIndex = 4;

@@ -441,6 +441,16 @@ namespace WindowsFormsApp2.Properties {
         }
         
         /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap LibraryComputer_1 {
+            get {
+                object obj = ResourceManager.GetObject("LibraryComputer 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   System.Byte[] 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
         internal static byte[] Mabinogi_Classic_TTF {
@@ -516,6 +526,26 @@ namespace WindowsFormsApp2.Properties {
         internal static System.Drawing.Bitmap s_1 {
             get {
                 object obj = ResourceManager.GetObject("s_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap SmartSelectImage_2023_05_29_16_52_30 {
+            get {
+                object obj = ResourceManager.GetObject("SmartSelectImage_2023-05-29-16-52-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap SmartSelectImage_2023_05_29_17_08_29_1 {
+            get {
+                object obj = ResourceManager.GetObject("SmartSelectImage_2023-05-29-17-08-29 1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

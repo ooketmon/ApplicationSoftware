@@ -282,6 +282,8 @@
     <None Include="resources\IMG_0793.PNG" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="resources\SmartSelectImage_2023-05-29-17-08-29 1.png" />
+    <None Include="resources\SmartSelectImage_2023-05-29-16-52-30.png" />
     <None Include="resources\tri.png" />
     <None Include="resources\Stair.png" />
     <None Include="resources\Player\right4.PNG" />
@@ -325,6 +327,7 @@
     <None Include="resources\Player\front2.PNG" />
     <None Include="resources\Player\front3.PNG" />
     <None Include="resources\Player\front4.PNG" />
+    <None Include="resources\LibraryComputer 1.png" />
     <Content Include="resources\Player\IMG_0809.PNG" />
     <Content Include="resources\Player\IMG_0811.PNG" />
     <Content Include="resources\Player\IMG_0812.PNG" />

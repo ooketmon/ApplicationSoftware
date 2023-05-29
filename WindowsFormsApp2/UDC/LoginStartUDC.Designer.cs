@@ -41,9 +41,9 @@
             this.web_view.AllowExternalDrop = true;
             this.web_view.CreationProperties = null;
             this.web_view.DefaultBackgroundColor = System.Drawing.Color.White;
-            this.web_view.Location = new System.Drawing.Point(283, 181);
+            this.web_view.Location = new System.Drawing.Point(298, 172);
             this.web_view.Name = "web_view";
-            this.web_view.Size = new System.Drawing.Size(660, 293);
+            this.web_view.Size = new System.Drawing.Size(646, 298);
             this.web_view.TabIndex = 6;
             this.web_view.ZoomFactor = 1D;
             this.web_view.NavigationCompleted += new System.EventHandler<Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs>(this.web_view_NavigationCompleted);
@@ -51,10 +51,10 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Black;
-            this.pictureBox1.Image = global::WindowsFormsApp2.Properties.Resources.LibraryComputer;
-            this.pictureBox1.Location = new System.Drawing.Point(50, 108);
+            this.pictureBox1.Image = global::WindowsFormsApp2.Properties.Resources.SmartSelectImage_2023_05_29_17_08_29_1;
+            this.pictureBox1.Location = new System.Drawing.Point(61, 93);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1063, 692);
+            this.pictureBox1.Size = new System.Drawing.Size(1063, 707);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -62,7 +62,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Image = global::WindowsFormsApp2.Properties.Resources.Library2_1_;
+            this.pictureBox2.Image = global::WindowsFormsApp2.Properties.Resources.SmartSelectImage_2023_05_29_16_52_30;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(1203, 800);
