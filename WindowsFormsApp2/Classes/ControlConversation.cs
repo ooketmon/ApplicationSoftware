@@ -22,7 +22,7 @@ namespace WindowsFormsApp2
             ConvMode.nameCharacter.Text = "'나'";
             ConvMode.contentConv.Text = "어디 ";
             ConvMode.BackgroundImage = Properties.Resources.s_1;
-            ConvMode.imgCharacter.Image = Properties.Resources.IMG_0809;
+            //ConvMode.imgCharacter.Image = Properties.Resources.IMG_0809;
             ConvMode.imgCharacter.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
