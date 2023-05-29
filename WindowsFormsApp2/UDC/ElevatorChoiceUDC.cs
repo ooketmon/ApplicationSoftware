@@ -27,7 +27,7 @@ namespace WindowsFormsApp2
             {
                 return base.ProcessCmdKey(ref msg, keyData);
             }
-           }
+        }
         int currentFloor = 0;
         int index = 0;
         List<Button> buttons;

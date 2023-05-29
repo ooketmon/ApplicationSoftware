@@ -64,12 +64,12 @@ namespace WindowsFormsApp2
                
             foreach (Control x in this.Controls)
             {
-                if (x is PictureBox && (string)x.Name == "stairs1")
+                if (x is PictureBox && (string)x.Name == "stair")
                 {
                     if (player.Bounds.IntersectsWith(x.Bounds) && !playerisOnStair)
                     {
                         playerisOnStair = true;
-                        ((InitMenu)this.Parent).FloorChange(1);
+                        ((InitMenu)this.Parent).StairCall(1);
                         return;
                     }
                 }

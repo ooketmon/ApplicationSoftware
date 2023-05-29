@@ -52,7 +52,7 @@
             this.pictureBox29 = new System.Windows.Forms.PictureBox();
             this.pictureBox28 = new System.Windows.Forms.PictureBox();
             this.player = new System.Windows.Forms.PictureBox();
-            this.stairs1 = new System.Windows.Forms.PictureBox();
+            this.stair = new System.Windows.Forms.PictureBox();
             this.pictureBox26 = new System.Windows.Forms.PictureBox();
             this.pictureBox25 = new System.Windows.Forms.PictureBox();
             this.pictureBox27 = new System.Windows.Forms.PictureBox();
@@ -102,7 +102,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stairs1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stair)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
@@ -361,14 +361,14 @@
             this.player.TabIndex = 78;
             this.player.TabStop = false;
             // 
-            // stairs1
+            // stair
             // 
-            this.stairs1.Location = new System.Drawing.Point(1085, 65);
-            this.stairs1.Name = "stairs1";
-            this.stairs1.Size = new System.Drawing.Size(60, 65);
-            this.stairs1.TabIndex = 106;
-            this.stairs1.TabStop = false;
-            this.stairs1.Visible = false;
+            this.stair.Location = new System.Drawing.Point(1085, 65);
+            this.stair.Name = "stair";
+            this.stair.Size = new System.Drawing.Size(60, 65);
+            this.stair.TabIndex = 106;
+            this.stair.TabStop = false;
+            this.stair.Visible = false;
             // 
             // pictureBox26
             // 
@@ -683,7 +683,7 @@
             this.Controls.Add(this.pictureBox31);
             this.Controls.Add(this.pictureBox29);
             this.Controls.Add(this.pictureBox28);
-            this.Controls.Add(this.stairs1);
+            this.Controls.Add(this.stair);
             this.Controls.Add(this.pictureBox26);
             this.Controls.Add(this.pictureBox25);
             this.Controls.Add(this.pictureBox27);
@@ -743,7 +743,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stairs1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stair)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
@@ -800,7 +800,7 @@
         private System.Windows.Forms.PictureBox pictureBox29;
         private System.Windows.Forms.PictureBox pictureBox28;
         private System.Windows.Forms.PictureBox player;
-        private System.Windows.Forms.PictureBox stairs1;
+        private System.Windows.Forms.PictureBox stair;
         private System.Windows.Forms.PictureBox pictureBox26;
         private System.Windows.Forms.PictureBox pictureBox25;
         private System.Windows.Forms.PictureBox pictureBox27;

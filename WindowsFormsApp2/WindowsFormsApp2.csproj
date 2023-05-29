@@ -282,6 +282,7 @@
     <None Include="resources\IMG_0793.PNG" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="resources\tri.png" />
     <None Include="resources\Stair.png" />
     <None Include="resources\Player\right4.PNG" />
     <None Include="resources\Player\right3.PNG" />

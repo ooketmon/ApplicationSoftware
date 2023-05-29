@@ -70,7 +70,7 @@
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
-            // UserControl6
+            // LoginStartUDC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -79,7 +79,7 @@
             this.Controls.Add(this.pictureBox2);
             this.MaximumSize = new System.Drawing.Size(1203, 800);
             this.MinimumSize = new System.Drawing.Size(1203, 800);
-            this.Name = "UserControl6";
+            this.Name = "LoginStartUDC";
             this.Size = new System.Drawing.Size(1203, 800);
             this.Load += new System.EventHandler(this.UserControl6_Load);
             ((System.ComponentModel.ISupportInitialize)(this.web_view)).EndInit();

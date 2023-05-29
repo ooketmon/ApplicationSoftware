@@ -28,7 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.down = new System.Windows.Forms.Button();
+            this.up = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // down
+            // 
+            this.down.Location = new System.Drawing.Point(47, 99);
+            this.down.Name = "down";
+            this.down.Size = new System.Drawing.Size(75, 23);
+            this.down.TabIndex = 2;
+            this.down.Text = "내려가기";
+            this.down.UseVisualStyleBackColor = true;
+            this.down.Click += new System.EventHandler(this.down_Click);
+            // 
+            // up
+            // 
+            this.up.Location = new System.Drawing.Point(184, 99);
+            this.up.Name = "up";
+            this.up.Size = new System.Drawing.Size(75, 23);
+            this.up.TabIndex = 3;
+            this.up.Text = "올라가기";
+            this.up.UseVisualStyleBackColor = true;
+            this.up.Click += new System.EventHandler(this.up_Click);
             // 
             // StairChoice
             // 
@@ -36,13 +58,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.Stair;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.up);
+            this.Controls.Add(this.down);
             this.DoubleBuffered = true;
             this.Name = "StairChoice";
-            this.Size = new System.Drawing.Size(302, 222);
+            this.Size = new System.Drawing.Size(300, 220);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button down;
+        private System.Windows.Forms.Button up;
     }
 }

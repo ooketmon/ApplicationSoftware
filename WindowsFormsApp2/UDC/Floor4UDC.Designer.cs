@@ -58,7 +58,7 @@
             this.pictureBox27 = new System.Windows.Forms.PictureBox();
             this.pictureBox25 = new System.Windows.Forms.PictureBox();
             this.pictureBox21 = new System.Windows.Forms.PictureBox();
-            this.stairs2 = new System.Windows.Forms.PictureBox();
+            this.stair = new System.Windows.Forms.PictureBox();
             this.pictureBox40 = new System.Windows.Forms.PictureBox();
             this.pictureBox39 = new System.Windows.Forms.PictureBox();
             this.elevator = new System.Windows.Forms.PictureBox();
@@ -116,7 +116,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stairs2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stair)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elevator)).BeginInit();
@@ -428,15 +428,15 @@
             this.pictureBox21.TabStop = false;
             this.pictureBox21.Tag = "obstacle";
             // 
-            // stairs2
+            // stair
             // 
-            this.stairs2.Location = new System.Drawing.Point(755, 145);
-            this.stairs2.Name = "stairs2";
-            this.stairs2.Size = new System.Drawing.Size(60, 65);
-            this.stairs2.TabIndex = 103;
-            this.stairs2.TabStop = false;
-            this.stairs2.Visible = false;
-            this.stairs2.Click += new System.EventHandler(this.stairs2_Click);
+            this.stair.Location = new System.Drawing.Point(755, 145);
+            this.stair.Name = "stair";
+            this.stair.Size = new System.Drawing.Size(60, 65);
+            this.stair.TabIndex = 103;
+            this.stair.TabStop = false;
+            this.stair.Visible = false;
+            this.stair.Click += new System.EventHandler(this.stairs2_Click);
             // 
             // pictureBox40
             // 
@@ -772,7 +772,7 @@
             this.Controls.Add(this.pictureBox27);
             this.Controls.Add(this.pictureBox25);
             this.Controls.Add(this.pictureBox21);
-            this.Controls.Add(this.stairs2);
+            this.Controls.Add(this.stair);
             this.Controls.Add(this.pictureBox40);
             this.Controls.Add(this.pictureBox39);
             this.Controls.Add(this.elevator);
@@ -837,7 +837,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stairs2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stair)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elevator)).EndInit();
@@ -878,7 +878,7 @@
         private System.Windows.Forms.PictureBox pictureBox28;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.PictureBox stairs2;
+        private System.Windows.Forms.PictureBox stair;
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox11;

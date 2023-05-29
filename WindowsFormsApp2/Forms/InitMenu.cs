@@ -156,9 +156,91 @@ namespace WindowsFormsApp2
             elevator.Focus();
 
         }
-        private void StairCall(int floor)
+        public void StairCall(int floor)
         {
+            StairChoice stair = new StairChoice(floor);
+            Control main_floor = null;
+            foreach(Control ctrl in this.Controls)
+            {
+                main_floor = ctrl;
+            }
+            switch (floor)
+            {
 
+                case 1:
+                    Floor1UDC target1 = (main_floor as Floor1UDC);
+                    Control character1 = null;
+                    foreach (Control item in target1.Controls)
+                    {
+                        if (item.Name == "stair")
+                        {
+                            character1 = item;
+                            break;
+                        }
+                    }
+                    stair.Left = character1.Left-220;
+                    stair.Top = character1.Top;
+                    break;
+                case 2:
+                    Floor2UDC target2 = (main_floor as Floor2UDC);
+                    Control character2 = null;
+                    foreach (Control item in target2.Controls)
+                    {
+                        if (item.Name == "stair")
+                        {
+                            character2 = item;
+                            break;
+                        }
+                    }
+                    stair.Left = character2.Left - 100;
+                    stair.Top = character2.Top;
+                    break;
+                case 3:
+                    Floor3UDC target3 = (main_floor as Floor3UDC);
+                    Control character3 = null;
+                    foreach (Control item in target3.Controls)
+                    {
+                        if (item.Name == "stair")
+                        {
+                            character3 = item;
+                            break;
+                        }
+                    }
+                    stair.Left = character3.Left - 100;
+                    stair.Top = character3.Top;
+                    break;
+                case 4:
+                    Floor4UDC target4 = (main_floor as Floor4UDC);
+                    Control character4 = null;
+                    foreach (Control item in target4.Controls)
+                    {
+                        if (item.Name == "stair")
+                        {
+                            character4 = item;
+                            break;
+                        }
+                    }
+                    stair.Left = character4.Left - 100;
+                    stair.Top = character4.Top;
+                    break;
+                /*case 8:
+                    Floor8UDC target8 = (main_floor as Floor8UDC);
+                    Control character8 = null;
+                    foreach (Control item in target8.Controls)
+                    {
+                        if (item.Name == "stair")
+                        {
+                            character8 = item;
+                            break;
+                        }
+                    }
+                    elevator.Left = character8.Left - 100;
+                    elevator.Top = character8.Top;
+                    break;*/
+            }
+            this.Controls.Add(stair);
+            stair.BringToFront();
+            stair.Focus();
         }
 
         public void ConvComeback(Control floor)
