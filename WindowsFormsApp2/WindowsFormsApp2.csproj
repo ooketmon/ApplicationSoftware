@@ -78,6 +78,7 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="UDC\Room_Board.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -245,6 +246,7 @@
     </Compile>
     <Compile Include="UDC\StairChoice.Designer.cs">
       <DependentUpon>StairChoice.cs</DependentUpon>
+    </Compile>
     <Compile Include="UDC\Room_StartupClub3.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -333,6 +335,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UDC\StairChoice.resx">
       <DependentUpon>StairChoice.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UDC\Room_lecture2.resx">
       <DependentUpon>Room_lecture2.cs</DependentUpon>
     </EmbeddedResource>
