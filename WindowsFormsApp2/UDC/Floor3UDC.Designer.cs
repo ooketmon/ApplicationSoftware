@@ -223,6 +223,7 @@
             this.player.Location = new System.Drawing.Point(672, 150);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(40, 45);
+            this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.player.TabIndex = 78;
             this.player.TabStop = false;
             // 
@@ -666,6 +667,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

@@ -543,6 +543,16 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap Stair {
+            get {
+                object obj = ResourceManager.GetObject("Stair", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap ui_contentConversation {
             get {
                 object obj = ResourceManager.GetObject("ui_contentConversation", resourceCulture);

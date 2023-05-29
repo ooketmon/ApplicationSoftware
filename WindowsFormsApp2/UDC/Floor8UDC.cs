@@ -93,12 +93,12 @@ namespace WindowsFormsApp2
         }
         private void Floor8_KeyUp(object sender, KeyEventArgs e)
         {
-
+            playerMove.PlayerKeyUp(sender, e);
         }
 
         private void Floor8_KeyDown(object sender, KeyEventArgs e)
         {
-            //playerMove.MovePlayerWithoutBool(e);
+            playerMove.MovePlayerWithoutBool(e);
         }
 
         private void timerFloor8_Tick(object sender, EventArgs e)

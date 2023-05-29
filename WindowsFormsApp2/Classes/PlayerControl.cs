@@ -47,7 +47,6 @@ namespace WindowsFormsApp2
         }
         public void PlayerKeyUp(object sender, KeyEventArgs e)
         {
-            
             if (e.KeyCode == Keys.Left) { goLeft = false; ResetPlayerImage(); }
             if (e.KeyCode == Keys.Right) {goRight = false; ResetPlayerImage(); }
             if (e.KeyCode == Keys.Up) { goUp = false; ResetPlayerImage(); }
@@ -115,6 +114,48 @@ namespace WindowsFormsApp2
             //        }
             //    }
             //}
+        }
+
+        public void MovePlayerWithoutBool(KeyEventArgs e)
+        {
+            int playerX = player.Left;
+            int playerY = player.Top;
+            if (e.KeyCode == Keys.Left && player.Left > 4) { playerX -= playerSpeed; currentDirection = Keys.Left;goLeft = true; };
+            if (e.KeyCode == Keys.Right && player.Left < 1014) { playerX += playerSpeed; currentDirection = Keys.Right; goRight = true; };
+            if (e.KeyCode == Keys.Up && player.Top > 4) { playerY -= playerSpeed; currentDirection = Keys.Up; goUp = true; };
+            if (e.KeyCode == Keys.Down && player.Top < 604) { playerY += playerSpeed; currentDirection = Keys.Down; goDown = true; };
+
+            Rectangle playerBounds = new Rectangle(playerX, playerY, player.Width, player.Height);
+            bool isCollision = false;
+            foreach (Control x in player.Parent.Controls)
+            {
+                if (x is PictureBox && (string)x.Tag == "obstacle")
+                {
+                    if (playerBounds.IntersectsWith(x.Bounds))
+                    {
+                        isCollision = true;
+                        break;
+                    }
+                }
+            }
+            if (!isCollision)
+            {
+                player.Left = playerX;
+                player.Top = playerY;
+                if (!goLeft && !goRight && !goUp && !goDown)
+                {
+                    // 정지 이미지 표시
+                    player.Image = stopImages[currentImageIndex];
+                }
+                else
+                {
+
+                        currentImageIndex++;
+                        currentImageIndex = (currentImageIndex) % directionImages[currentDirection].Length;
+                        player.Image = directionImages[currentDirection][currentImageIndex];
+                    
+                }
+            }
         }
 
 

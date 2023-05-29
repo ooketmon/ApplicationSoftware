@@ -19,7 +19,8 @@ namespace WindowsFormsApp2
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            (this.Parent as InitMenu).CallPrologue();
+            //(this.Parent as InitMenu).GoToLogin()
+            (this.Parent as InitMenu).FloorChange(1);
         }
 
     }
