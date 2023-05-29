@@ -19,11 +19,33 @@ namespace WindowsFormsApp2
             InitializeComponent();
             this.KeyDown += Inventory_KeyDown; // 이벤트 핸들러 등록
 
-            clue_ex.BackColor = Color.Transparent;
-            clue_ex.Parent = box_papper_1;
+            //배경 투명하게
+            Papper_1.BackColor = Color.Transparent;
+            Papper_1.Parent = box_papper_1;
+            Papper_1.Location = new Point(3, 10);
 
-            if (mPapper1 == true) { clue_ex.Visible = true; }
-            else { clue_ex.Visible = false;}
+            Cardkey_3.BackColor = Color.Transparent;
+            Cardkey_3.Parent = box_cardkey;
+            Cardkey_3.Location = new Point(6, 10);
+
+            Papper_4.BackColor = Color.Transparent;
+            Papper_4.Parent = box_papper_4;
+            Papper_4.Location = new Point(6, 10);
+
+            Safecard_4.BackColor = Color.Transparent;
+            Safecard_4.Parent = box_safecard;
+            Safecard_4.Location = new Point(6, 10);
+
+            Key_4.BackColor = Color.Transparent;
+            Key_4.Parent = box_key;
+            Key_4.Location = new Point(6, 10);
+
+            Cardkey_5.BackColor = Color.Transparent;
+            Cardkey_5.Parent = box_cardkey_2;
+            Cardkey_5.Location = new Point(6, 10);
+
+            if (mPapper1 == true) { Papper_1.Visible = true; }
+            else { Papper_1.Visible = false;}
         }
         public void Inventory_KeyDown(object sender, KeyEventArgs e)
         {
