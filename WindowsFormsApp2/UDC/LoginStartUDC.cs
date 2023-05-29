@@ -159,11 +159,12 @@ namespace WindowsFormsApp2
                     if (STUDENT_INFO.low_grade_courses.Count < 0)
                     {
                         MessageBox.Show("난 꽤 성실하게 산 거 같아!");
+                        (this.Parent as InitMenu).CallMainMenu();
                     }
                     else
                     {
                         MessageBox.Show("헉..!! 순진하게 공부할 시간은 없어..!");
-                        (this.Parent as InitMenu).FloorChange(1);
+                        (this.Parent as InitMenu).CallPrologue();
                     }
                 }
 
