@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(temp));
             this.floor1UDC1 = new WindowsFormsApp2.Floor1UDC();
-            this.lecture11 = new WindowsFormsApp2.lecture1();
+            this.lecture11 = new WindowsFormsApp2.Room_lecture1();
             this.SuspendLayout();
             // 
             // floor1UDC1
@@ -67,7 +67,7 @@
 
         #endregion
 
-        private lecture1 lecture11;
+        private Room_lecture1 lecture11;
         private Floor1UDC floor1UDC1;
     }
 }

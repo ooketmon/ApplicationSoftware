@@ -12,9 +12,9 @@ using static WindowsFormsApp2.StaticItem;
 
 namespace WindowsFormsApp2
 {
-    public partial class lecture1 : UserControl
+    public partial class Room_lecture1 : UserControl
     {
-        public lecture1()
+        public Room_lecture1()
         {
             InitializeComponent();
 
