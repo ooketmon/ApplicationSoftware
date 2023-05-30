@@ -25,9 +25,7 @@ namespace WindowsFormsApp2
         Chaser chaser = null;
 
         System.Threading.Timer chaser_timer;
-        System.Threading.Timer conv_timer;
 
-        public delegate void conv_delegate();
         public delegate void chase_delegate();
 
         public Floor8UDC()

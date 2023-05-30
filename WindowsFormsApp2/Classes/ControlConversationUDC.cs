@@ -71,7 +71,20 @@ namespace WindowsFormsApp2
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
             target.contentConv.Text= string.Format("여기는 {0}층 {1}호실인 것 같다.", number_info[0], number_info[1]);
             //여기 부분은 switch문이나 if문으로 서로 다른 강의실을 호출할 수도 있습니다.
-            Room_lecture1 room_background = new Room_lecture1();
+            int floor_info = Convert.ToInt32(number_info[0]);
+            Control room_background = null;
+            switch (floor_info)
+            {
+                case 2:
+                    room_background = new Room_lecture1();
+                    break;
+                case 3:
+                    room_background=new Room_lecture2();
+                    break;
+                case 4:
+                    room_background=new Room_lecture3();
+                    break;
+            }
             target.Controls.Add(room_background);
             room_background.Dock= DockStyle.Fill;
             room_background.SendToBack();

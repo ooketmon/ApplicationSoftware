@@ -684,7 +684,7 @@
             // player
             // 
             this.player.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.player.Location = new System.Drawing.Point(697, 303);
+            this.player.Location = new System.Drawing.Point(675, 165);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(40, 45);
             this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;

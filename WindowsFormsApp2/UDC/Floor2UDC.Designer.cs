@@ -43,10 +43,10 @@
             this.pictureBox33 = new System.Windows.Forms.PictureBox();
             this.pictureBox32 = new System.Windows.Forms.PictureBox();
             this.room2_4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox30 = new System.Windows.Forms.PictureBox();
+            this.any = new System.Windows.Forms.PictureBox();
             this.pictureBox27 = new System.Windows.Forms.PictureBox();
             this.room2_3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox25 = new System.Windows.Forms.PictureBox();
+            this.locked = new System.Windows.Forms.PictureBox();
             this.room2_2 = new System.Windows.Forms.PictureBox();
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
             this.room2_1 = new System.Windows.Forms.PictureBox();
@@ -88,10 +88,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.room2_4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.any)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.room2_3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.locked)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.room2_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.room2_1)).BeginInit();
@@ -261,14 +261,14 @@
             this.room2_4.TabStop = false;
             this.room2_4.Visible = false;
             // 
-            // pictureBox30
+            // any
             // 
-            this.pictureBox30.Location = new System.Drawing.Point(780, 700);
-            this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(60, 65);
-            this.pictureBox30.TabIndex = 132;
-            this.pictureBox30.TabStop = false;
-            this.pictureBox30.Visible = false;
+            this.any.Location = new System.Drawing.Point(780, 700);
+            this.any.Name = "any";
+            this.any.Size = new System.Drawing.Size(60, 65);
+            this.any.TabIndex = 132;
+            this.any.TabStop = false;
+            this.any.Visible = false;
             // 
             // pictureBox27
             // 
@@ -289,15 +289,15 @@
             this.room2_3.TabStop = false;
             this.room2_3.Visible = false;
             // 
-            // pictureBox25
+            // locked
             // 
-            this.pictureBox25.Location = new System.Drawing.Point(1055, 570);
-            this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(60, 65);
-            this.pictureBox25.TabIndex = 129;
-            this.pictureBox25.TabStop = false;
-            this.pictureBox25.Tag = "lock";
-            this.pictureBox25.Visible = false;
+            this.locked.Location = new System.Drawing.Point(1055, 570);
+            this.locked.Name = "locked";
+            this.locked.Size = new System.Drawing.Size(60, 65);
+            this.locked.TabIndex = 129;
+            this.locked.TabStop = false;
+            this.locked.Tag = "lock";
+            this.locked.Visible = false;
             // 
             // room2_2
             // 
@@ -623,10 +623,10 @@
             this.Controls.Add(this.pictureBox33);
             this.Controls.Add(this.pictureBox32);
             this.Controls.Add(this.room2_4);
-            this.Controls.Add(this.pictureBox30);
+            this.Controls.Add(this.any);
             this.Controls.Add(this.pictureBox27);
             this.Controls.Add(this.room2_3);
-            this.Controls.Add(this.pictureBox25);
+            this.Controls.Add(this.locked);
             this.Controls.Add(this.room2_2);
             this.Controls.Add(this.pictureBox23);
             this.Controls.Add(this.room2_1);
@@ -675,10 +675,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.room2_4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.any)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.room2_3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.locked)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.room2_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.room2_1)).EndInit();
@@ -748,10 +748,10 @@
         private System.Windows.Forms.PictureBox room2_1;
         private System.Windows.Forms.PictureBox pictureBox23;
         private System.Windows.Forms.PictureBox room2_2;
-        private System.Windows.Forms.PictureBox pictureBox25;
+        private System.Windows.Forms.PictureBox locked;
         private System.Windows.Forms.PictureBox room2_3;
         private System.Windows.Forms.PictureBox pictureBox27;
-        private System.Windows.Forms.PictureBox pictureBox30;
+        private System.Windows.Forms.PictureBox any;
         private System.Windows.Forms.PictureBox room2_4;
         private System.Windows.Forms.PictureBox pictureBox32;
         private System.Windows.Forms.PictureBox pictureBox33;

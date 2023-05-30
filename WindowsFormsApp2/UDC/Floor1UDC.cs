@@ -8,6 +8,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static WindowsFormsApp2.Floor8UDC;
 
 namespace WindowsFormsApp2
 {
@@ -16,6 +17,10 @@ namespace WindowsFormsApp2
         private PlayerControl playerMove;
         bool playerisOnStair = false;
         bool playerisOnElevator = false;
+        System.Threading.Timer wood_timer;
+
+        public delegate void wood_delegate();
+
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
@@ -57,6 +62,9 @@ namespace WindowsFormsApp2
             playerisOnStair = false;
             playerisOnElevator = false;
             playerMove = new PlayerControl(player);
+            wood_timer = new System.Threading.Timer(WoodCallBack);
+            wood_timer.Change(0, 30);
+
         }
 
         private void UserControl1_KeyUp(object sender, KeyEventArgs e) { playerMove.PlayerKeyUp(sender, e); }
@@ -86,14 +94,9 @@ namespace WindowsFormsApp2
                         return;
                     }
                 }
+                
 
-                if (x is PictureBox && (x.Name as string).StartsWith("room"))
-                {
-                    if (player.Bounds.IntersectsWith(x.Bounds))
-                    {
-                        ((InitMenu)this.Parent).CallConvMode(x.Name.ToString());
-                    }
-                }
+
             }
         }
 
@@ -131,5 +134,101 @@ namespace WindowsFormsApp2
         {
 
         }
+        public void WoodCallBack(object status)
+        {
+            BeginInvoke(new wood_delegate(
+                () =>
+                {
+                    foreach (Control x in this.Controls)
+                    {
+                        if (x.Name.Equals("pic1"))
+                        {
+                            if (player.Bounds.IntersectsWith(x.Bounds))
+                            {
+                                Bitmap background_image = Properties.Resources.IMG_0808;
+                                Rectangle rect = Rectangle.Intersect(x.Bounds, player.Bounds);
+                                Size image_size = new Size(rect.Width, rect.Height);
+
+                                Bitmap resized_image=new Bitmap(background_image, image_size);
+                                Bitmap final_image = new Bitmap(player.Width, player.Height);
+                                player.BackgroundImageLayout = ImageLayout.None;
+                                if (!x.Bounds.Contains(player.Bounds)&&player.Top - x.Top < 0 && player.Left - x.Left < 0)
+                                {
+                                    int resized_y = 1;
+                                    int resized_x = 1;
+                                    for (int i = player.Height-1 ; i >=0; i--)
+                                    {
+                                        for (int j = player.Width-1; j >=0; j--)
+                                        {
+                                            if (resized_y >= resized_image.Height || resized_x>=resized_image.Width)
+                                            {
+                                                break;
+                                            }
+
+                                            final_image.SetPixel(j, i, resized_image.GetPixel(resized_x, resized_y));
+                                            resized_x++;
+                                        }
+                                        resized_y++;
+                                        resized_x = 0;
+                                    }
+                                    player.BackgroundImage = final_image;
+                                }
+                                else if (!x.Bounds.Contains(player.Bounds)&&player.Top - x.Top < 0)
+                                {
+                                    int resized_y = 1;
+                                    for(int i = player.Height-1; i >= 0; i--)
+                                    {
+                                        for(int j = 0; j < player.Width; j++)
+                                        {
+                                            if(resized_y >= resized_image.Height || image_size.Width <=j)
+                                            {
+                                                break;
+                                            }
+                                    
+                                            final_image.SetPixel(j, i, resized_image.GetPixel(j, resized_y));
+                                            
+                                        }
+                                        resized_y++;
+                                    }
+                                    player.BackgroundImage = final_image;
+                                }else if (!x.Bounds.Contains(player.Bounds)&&player.Left-x.Left<0)
+                                {
+                                    int resized_x = 1;
+                                    for (int i = player.Width-1; i >=0; i--)
+                                    {
+                                        for (int j = 0; j < player.Height; j++)
+                                        {
+                                            if (resized_x >= resized_image.Width || image_size.Height<=j)
+                                            {
+                                                break;
+                                            }
+                                            final_image.SetPixel(i, j, resized_image.GetPixel(resized_x, j));
+
+                                        }
+                                        resized_x++;
+                                    }
+                                    player.BackgroundImage = final_image;
+                                }
+                                else
+                                {
+                                    player.BackgroundImage = resized_image;
+                                }
+                                
+
+                                return;
+                            }
+                            else
+                            {
+                                player.BackgroundImage = null;
+                                
+                                return;
+                            }
+                        }
+
+
+                    }
+                }));
+        }
+
     }
 }

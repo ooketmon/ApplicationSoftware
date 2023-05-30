@@ -150,7 +150,7 @@
             this.Test_3.BackColor = System.Drawing.Color.Transparent;
             this.Test_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Test_3.Image = global::WindowsFormsApp2.Properties.Resources._3_Test;
-            this.Test_3.Location = new System.Drawing.Point(285, 193);
+            this.Test_3.Location = new System.Drawing.Point(286, 193);
             this.Test_3.Name = "Test_3";
             this.Test_3.Size = new System.Drawing.Size(50, 63);
             this.Test_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -166,7 +166,7 @@
             this.Poster_3.BackColor = System.Drawing.Color.Transparent;
             this.Poster_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Poster_3.Image = global::WindowsFormsApp2.Properties.Resources._3_Poster;
-            this.Poster_3.Location = new System.Drawing.Point(199, 193);
+            this.Poster_3.Location = new System.Drawing.Point(197, 193);
             this.Poster_3.Name = "Poster_3";
             this.Poster_3.Size = new System.Drawing.Size(50, 63);
             this.Poster_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
