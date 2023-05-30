@@ -79,12 +79,6 @@ namespace WindowsFormsApp2
             target.imgCharacter.Visible=false;
             target.imgCharBack.Visible = false;
         }
-        public void RoomPhase2()
-        {
-            phase++;
-            target.text = "별 게 없으니 나가보자.";
-            target.timerReset();
-        }
 
         public void GameStart1()
         {
@@ -116,13 +110,7 @@ namespace WindowsFormsApp2
 
             if (eventType.StartsWith("room"))
             {
-                if (phase < 2)
-                {
-                    RoomPhase2();
-                    return;
-                }
-                else
-                {
+                
                     string number_only = eventType.Substring(4);
                     string[] number_info = number_only.Split('_');
                     int floor = Convert.ToInt32(number_info[0]);
@@ -192,7 +180,7 @@ namespace WindowsFormsApp2
                             break;
 
                     }
-                }
+                
                 return;
             }
             if (eventType.StartsWith("board"))

@@ -115,12 +115,14 @@ namespace WindowsFormsApp2.UDC
             if (where_event_occur.StartsWith("room"))
             {
                 controller.RoomInit(where_event_occur);
+                this.btnSkip.Text = "나가기";
             }else if (where_event_occur == "prologue")
             {
                 controller.Prologue();
             }else if (where_event_occur.StartsWith("board"))
             {
                 controller.BoardInit(where_event_occur);
+                this.btnSkip.Text = "나가기";
             }
 
             System.Drawing.Text.PrivateFontCollection privateFonts = new System.Drawing.Text.PrivateFontCollection();
@@ -130,10 +132,12 @@ namespace WindowsFormsApp2.UDC
             // 폰트 설정
             Font name = new Font(privateFonts.Families[0], 20f);
             Font content = new Font(privateFonts.Families[0], 26f);
+            Font button_text = new Font(privateFonts.Families[1], 15f);
 
 
             nameCharacter.Font = name;
             contentConv.Font = content;
+            btnSkip.Font = button_text;
 
 
             // 텍스트 한글자씩 뜨도록

@@ -102,53 +102,57 @@ namespace WindowsFormsApp2
             inventory_item maximizedItem=new inventory_item();
             
             Bitmap resourceName = null;
-            if (itemName == items[0])
+            if (itemName == items[0] && inventory[0])
             {
                 resourceName = Properties.Resources._1_Papper;
             }
-            if (itemName == items[1])
+            else if (itemName == items[1] && inventory[0])
             {
                 resourceName = Properties.Resources._1_Test;
             }
-            if (itemName == items[2])
+            else if (itemName == items[2] && inventory[0])
             {
                 resourceName = Properties.Resources._2_Test;
             }
-            if (itemName == items[3])
+            else if (itemName == items[3] && inventory[0])
             {
                 resourceName = Properties.Resources._3_Papper;
             }
-            if (itemName == items[4])
+            else if (itemName == items[4] && inventory[0])
             {
                 resourceName = Properties.Resources._3_Cardkey;
             }
-            if (itemName == items[5])
+            else if (itemName == items[5] && inventory[0])
             {
                 resourceName = Properties.Resources._3_Poster;
             }
-            if (itemName == items[6])
+            else if (itemName == items[6] && inventory[0])
             {
                 resourceName = Properties.Resources._3_Test;
             }
-            if (itemName == items[7])
+            else if (itemName == items[7] && inventory[0])
             {
                 resourceName = Properties.Resources._4_Papper;
             }
-            if (itemName == items[8])
+            else if (itemName == items[8] && inventory[0])
             {
                 resourceName = Properties.Resources._4_Safecard;
             }
-            if (itemName == items[9])
+            else if (itemName == items[9] && inventory[0])
             {
                 resourceName = Properties.Resources._4_Key;
             }
-            if (itemName == items[10])
+            else if (itemName == items[10] && inventory[0])
             {
                 resourceName = Properties.Resources._4_Test;
             }
-            if (itemName == items[11])
+            else if (itemName == items[11] && inventory[0])
             {
                 resourceName = Properties.Resources._5_Cardkey_;
+            }
+            else
+            {
+                return;
             }
             
             maximizedItem.setMainItem(resourceName);
@@ -161,10 +165,7 @@ namespace WindowsFormsApp2
         }
         private void Inventory_Load(object sender, EventArgs e)
         {
-            for(int i=0;i<inventory.Length;i++)
-            {
-                inventory[i] = true;
-            }
+
             if (inventory[0] == true) { Papper_1.Visible = true; }
             else { Papper_1.Visible = false; }
             if (inventory[1] == true) { Test_1.Visible = true; }
