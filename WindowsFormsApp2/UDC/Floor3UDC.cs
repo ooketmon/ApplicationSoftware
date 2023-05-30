@@ -20,6 +20,7 @@ namespace WindowsFormsApp2
         public Floor3UDC()
         {
             InitializeComponent();
+            this.KeyDown += Inventory_KeyDown;
         }
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
@@ -30,13 +31,40 @@ namespace WindowsFormsApp2
                 playerMove.PlayerKeyDown(new object[] { }, new KeyEventArgs(keyData));
 
                 return true;
+            }else if (keyData == Keys.I)
+            {
+                Inventory_KeyDown(new object[] {}, new KeyEventArgs(keyData));
+                return true;
             }
             else
             {
                 return base.ProcessCmdKey(ref msg, keyData);
             }
         }
+        private void Inventory_KeyDown(object sender, KeyEventArgs e)
+        {
+            playerMove.ForceToStop();
+            foreach (Form f in Application.OpenForms)
+            {
+                    if (f.GetType() == typeof(Inventory))
+                    {
+                        f.Close();
+                        return;
+                    }
+             }
 
+            ShowInventory();
+            
+        }
+
+        private void ShowInventory()
+        {
+            // 호출할 폼의 인스턴스 생성
+            Inventory inventory = new Inventory();
+            // 폼을 보여줌
+            inventory.Show();
+
+        }
         private void UserControl3_Load(object sender, EventArgs e)
         {
             playerisOnStair = false;

@@ -39,14 +39,75 @@ namespace WindowsFormsApp2.UDC
         }
         public void timerReset()
         {
+            try
+            {
+                contentConv.Text = "";
+            }
+            catch (Exception)
+            {
+
+            }
             counter = 0;
             if (!timerLetter.Enabled)
             {
                 timerLetter.Start();
             }
         }
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.I && where_event_occur!="prologue")
+            {
+                Inventory_KeyDown(new object[] { }, new KeyEventArgs(keyData));
+                return true;
+            }else if (keyData == Keys.Space || keyData==Keys.Enter)
+            {
+                controller.SkipConversation();
+                return true;
+            }
+            else
+            {
+                return base.ProcessCmdKey(ref msg, keyData);
+            }
+        }
+        private void Inventory_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.I)
+            {
+                foreach (Form f in Application.OpenForms)
+                {
+                    if (f.GetType() == typeof(Inventory))
+                    {
+                        f.Close();
+                        return;
+                    }
+                }
+
+                ShowInventory();
+                System.Drawing.Text.PrivateFontCollection privateFonts = new System.Drawing.Text.PrivateFontCollection();
+                privateFonts.AddFontFile("./resources/Mabinogi_Classic_TTF.ttf"); // 마비노기 옛체 
+                privateFonts.AddFontFile("./resources/NeoDunggeunmoPro-Regular.ttf"); // 둥근모
+
+                // 폰트 설정
+                Font name = new Font(privateFonts.Families[0], 20f);
+                Font content = new Font(privateFonts.Families[0], 26f);
+
+
+                nameCharacter.Font = name;
+                contentConv.Font = content;
+            }
+        }
+
+        private void ShowInventory()
+        {
+            // 호출할 폼의 인스턴스 생성
+            Inventory inventory = new Inventory();
+            // 폼을 보여줌
+            inventory.Show();
+
+        }
         private void ConvModeUDC_Load(object sender, EventArgs e)
         {
+            this.KeyDown += Inventory_KeyDown;
             nameCharacter.Text = "캐릭터 이름";
             contentConv.Text = "대화 내용";
 

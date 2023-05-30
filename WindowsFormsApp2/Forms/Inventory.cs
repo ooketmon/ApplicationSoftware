@@ -94,11 +94,13 @@ namespace WindowsFormsApp2
                 }
             }
             Controls.Remove(target);
+            this.Focus();
         }
         public void Item_Press(object sender, EventArgs e)
         {
             string itemName = (sender as Control).Name;
             inventory_item maximizedItem=new inventory_item();
+            
             Bitmap resourceName = null;
             if (itemName == items[0])
             {
@@ -148,12 +150,10 @@ namespace WindowsFormsApp2
             {
                 resourceName = Properties.Resources._5_Cardkey_;
             }
+            
             maximizedItem.setMainItem(resourceName);
             Controls.Add(maximizedItem);
 
-            maximizedItem.Left = (this.Width - maximizedItem.Width) / 2;
-
-            maximizedItem.Top = (this.Height - maximizedItem.Height) / 2;
             maximizedItem.Dock = DockStyle.Fill;
             maximizedItem.BringToFront();
 

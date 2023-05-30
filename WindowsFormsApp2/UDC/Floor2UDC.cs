@@ -19,7 +19,6 @@ namespace WindowsFormsApp2
         public Floor2UDC()
         {
             InitializeComponent();
-
         }
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
@@ -32,7 +31,11 @@ namespace WindowsFormsApp2
               UserControl2_KeyDown(new object[] {},new KeyEventArgs(keyData));  
                 return true;
             }
-            else
+            else if (keyData == Keys.I)
+            {
+                Inventory_KeyDown(new object[] {},new KeyEventArgs(keyData));
+                return true;
+            }else
             {
                 return base.ProcessCmdKey(ref msg, keyData);
             }
@@ -55,7 +58,30 @@ namespace WindowsFormsApp2
             playerMove.MovePlayerWithoutBool(e);
         }
 
+        private void Inventory_KeyDown(object sender, KeyEventArgs e)
+        {
+            playerMove.ForceToStop();
+            foreach (Form f in Application.OpenForms)
+            {
+                    if (f.GetType() == typeof(Inventory))
+                    {
+                        f.Close();
+                        return;
+                    }
+             }
 
+            ShowInventory();
+            
+        }
+
+        private void ShowInventory()
+        {
+            // 호출할 폼의 인스턴스 생성
+            Inventory inventory = new Inventory();
+            // 폼을 보여줌
+            inventory.Show();
+
+        }
         private void timerFloor2_Tick(object sender, EventArgs e)
         {
             //playerMove.MovePlayer();

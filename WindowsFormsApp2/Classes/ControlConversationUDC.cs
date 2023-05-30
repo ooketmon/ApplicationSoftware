@@ -28,14 +28,12 @@ namespace WindowsFormsApp2
         {
             phase++;
             target.text = "보아하니 이번 시험도 범위도 못 훑고 가게 생겼어.";
-            target.contentConv.Text = "";
             target.timerReset();
         }
         public void Prologue3()
         {
             phase++;
             target.text = "그래! 시험지를 훔쳐버리자!";
-            target.contentConv.Text = "";
             target.timerReset();
         }
         public void BoardInit(string board_info)
@@ -85,7 +83,6 @@ namespace WindowsFormsApp2
         {
             phase++;
             target.text = "별 게 없으니 나가보자.";
-            target.contentConv.Text = "";
             target.timerReset();
         }
 

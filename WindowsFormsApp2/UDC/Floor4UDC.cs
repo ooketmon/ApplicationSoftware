@@ -21,6 +21,30 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
         }
+        private void Inventory_KeyDown(object sender, KeyEventArgs e)
+        {
+            playerMove.ForceToStop();
+            foreach (Form f in Application.OpenForms)
+             {
+                if (f.GetType() == typeof(Inventory))
+                {
+                     f.Close();
+                     return;
+                }
+            }
+
+            ShowInventory();
+            
+        }
+
+        private void ShowInventory()
+        {
+            // 호출할 폼의 인스턴스 생성
+            Inventory inventory = new Inventory();
+            // 폼을 보여줌
+            inventory.Show();
+
+        }
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
             if ((keyData == Keys.Right) || (keyData == Keys.Left) ||
@@ -29,6 +53,10 @@ namespace WindowsFormsApp2
 
                 playerMove.PlayerKeyDown(new object[] { }, new KeyEventArgs(keyData));
 
+                return true;
+            }else if (keyData == Keys.I)
+            {
+                Inventory_KeyDown(new object[] {},new KeyEventArgs(keyData));
                 return true;
             }
             else

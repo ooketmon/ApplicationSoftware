@@ -61,11 +61,6 @@ namespace WindowsFormsApp2
             }
             tmp.Focus();
         }
-        public void CallPrologue()
-        {
-            this.Controls.Clear();
-            this.Controls.Add(new ConvModeUDC());
-        }
         public void ElevatorCall(int floor)
         {
             
@@ -253,7 +248,9 @@ namespace WindowsFormsApp2
         public void CallConvMode(string place)
         {
             Controls.Clear();
-            Controls.Add(new ConvModeUDC(place));
+            ConvModeUDC tmp = new ConvModeUDC(place);
+            Controls.Add(tmp);
+            tmp.Focus();
         }
         private void InitMenu_Load(object sender, EventArgs e)
         {
@@ -266,5 +263,8 @@ namespace WindowsFormsApp2
 
         }
 
+        private void InitMenu_KeyDown(object sender, KeyEventArgs e)
+        {
+        }
     }
 }

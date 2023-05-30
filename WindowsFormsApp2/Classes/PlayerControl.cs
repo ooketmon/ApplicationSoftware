@@ -52,6 +52,15 @@ namespace WindowsFormsApp2
             if (e.KeyCode == Keys.Up) { goUp = false; ResetPlayerImage(); }
             if (e.KeyCode == Keys.Down) { goDown = false; ResetPlayerImage(); }
         }
+
+        public void ForceToStop()
+        {
+            goLeft= false;
+            goRight= false;
+            goUp= false;
+            goDown= false;
+            player.Image = stopImages[currentImageIndex];
+        }
         private void ResetPlayerImage()
         {
             currentImageIndex = 0;
