@@ -333,6 +333,16 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap guardmanroom {
+            get {
+                object obj = ResourceManager.GetObject("guardmanroom", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap IMG_0793 {
             get {
                 object obj = ResourceManager.GetObject("IMG_0793", resourceCulture);
@@ -546,6 +556,16 @@ namespace WindowsFormsApp2.Properties {
         internal static System.Drawing.Bitmap LibraryComputer_1 {
             get {
                 object obj = ResourceManager.GetObject("LibraryComputer 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap lobby_sofa {
+            get {
+                object obj = ResourceManager.GetObject("lobby_sofa", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

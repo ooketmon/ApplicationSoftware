@@ -17,6 +17,8 @@ namespace WindowsFormsApp2
         private PlayerControl playerMove;
         bool playerisOnStair = false;
         bool playerisOnElevator = false;
+        bool convHitTest = false;
+
         System.Threading.Timer wood_timer;
 
         public delegate void wood_delegate();
@@ -63,7 +65,7 @@ namespace WindowsFormsApp2
             playerisOnElevator = false;
             playerMove = new PlayerControl(player);
             wood_timer = new System.Threading.Timer(WoodCallBack);
-            wood_timer.Change(0, 30);
+            wood_timer.Change(0, 10);
 
         }
 
@@ -94,7 +96,16 @@ namespace WindowsFormsApp2
                         return;
                     }
                 }
-                
+                if (x is PictureBox && ((x.Name as string)=="guardroom" || (x.Name as string)=="hintNPC_1"))
+                {
+                    if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest)
+                    {
+                        convHitTest = true;
+                        ((InitMenu)this.Parent).CallConvMode(x.Name.ToString());
+                        return;
+                    }
+                }
+
 
 
             }
@@ -107,18 +118,20 @@ namespace WindowsFormsApp2
 
         private void Inventory_KeyDown(object sender, KeyEventArgs e)
         {
-             playerMove.ForceToStop();
-             foreach (Form f in Application.OpenForms)
-             {
-                   if (f.GetType() == typeof(Inventory))
-                   {
-                       f.Close();
-                       return;
-                   }
-             }
-            
-              ShowInventory();
-            
+            playerMove.ForceToStop();
+           
+            if (e.KeyCode == Keys.I)
+            {
+                if((this.Parent as InitMenu).inventory.Visible)
+                {
+                    (this.Parent as InitMenu).inventory.Hide();
+                }
+                else
+                {
+                    (this.Parent as InitMenu).inventory.Show();
+                }
+            }
+
         }
 
         private void ShowInventory()

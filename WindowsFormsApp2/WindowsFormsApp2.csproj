@@ -79,6 +79,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="UDC\Place_Meeting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UDC\Place_Meeting.Designer.cs">
+      <DependentUpon>Place_Meeting.cs</DependentUpon>
+    </Compile>
     <Compile Include="UDC\Room_Board.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -277,6 +283,9 @@
     <EmbeddedResource Include="UDC\inventory_item.resx">
       <DependentUpon>inventory_item.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UDC\Place_Meeting.resx">
+      <DependentUpon>Place_Meeting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UDC\Room_Board.resx">
       <DependentUpon>Room_Board.cs</DependentUpon>
     </EmbeddedResource>
@@ -406,6 +415,7 @@
     <None Include="resources\Elevator\IMG_0837.PNG" />
     <None Include="resources\Elevator\IMG_0838.PNG" />
     <None Include="resources\Elevator\IMG_0839.PNG" />
+    <None Include="resources\20230529_122153.jpg" />
     <Content Include="resources\Floor1\IMG_0808.PNG" />
     <None Include="resources\ui\Button.png" />
     <None Include="resources\ui\ConvBack.png" />
@@ -427,6 +437,9 @@
     <None Include="resources\Player\front4.PNG" />
     <None Include="resources\LibraryComputer 1.png" />
     <None Include="resources\lecture-room-4.png" />
+    <None Include="resources\guardmanroom.jpg" />
+    <None Include="resources\lobby-sofa2.png" />
+    <None Include="resources\lobby-2.png" />
     <Content Include="resources\Player\IMG_0809.PNG" />
     <Content Include="resources\Player\IMG_0811.PNG" />
     <Content Include="resources\Player\IMG_0812.PNG" />

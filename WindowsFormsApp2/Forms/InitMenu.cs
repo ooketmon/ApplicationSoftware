@@ -16,9 +16,11 @@ namespace WindowsFormsApp2
     {
         public bool floor8MissionComplete = false;
         public bool floor1MissionComplete = false;
+        public bool havetoGoGuardRoom = false;
         public bool guardmanChasing = false;
-        public bool assistantChasing = true;
+        public bool assistantChasing = false;
         public bool firstStart = true;
+        public Inventory inventory = new Inventory();
 
         public InitMenu()
         {
@@ -82,6 +84,9 @@ namespace WindowsFormsApp2
             }
             tmp.Focus();
         }
+
+
+
         public void ElevatorCall(int floor)
         {
             if (firstStart)

@@ -14,6 +14,8 @@ namespace WindowsFormsApp2
 {
     public partial class Room_lecture1 : UserControl
     {
+        ControlConversationUDC controller=null;
+
         public Room_lecture1()
         {
             InitializeComponent();
@@ -21,15 +23,33 @@ namespace WindowsFormsApp2
             Papper_1.BackColor = Color.Transparent;
             Papper_1.Parent = lecture1;
 
-            this.KeyDown += Inventory_KeyDown; // 이벤트 핸들러 등록
+            //this.KeyDown += Inventory_KeyDown; // 이벤트 핸들러 등록
         }
 
+        public Room_lecture1(ControlConversationUDC ctrl)
+        {
+            InitializeComponent();
+
+            Papper_1.BackColor = Color.Transparent;
+            Papper_1.Parent = lecture1;
+
+            controller= ctrl;
+        }
         private void Papper1_Click(object sender, EventArgs e)
         {
             // 단서 papper1 함수 _ 클릭 이벤트 발생시
             mPapper1 = true;
             inventory_set();
             Papper_1.Visible = false;
+            foreach (Form f in Application.OpenForms)
+            {
+                if (f.GetType() == typeof(Inventory))
+                {
+                    (f as Inventory).Inventory_ItemVisibility_Check();
+                }
+            }
+            controller.Papper1Get();
+            
         }
 
         private void Inventory_KeyDown(object sender, KeyEventArgs e)
@@ -47,6 +67,15 @@ namespace WindowsFormsApp2
 
             // 폼을 보여줌
             inventory.ShowDialog();
+        }
+
+
+        private void Room_lecture1_Load(object sender, EventArgs e)
+        {
+            if (mPapper1)
+            {
+                Papper_1.Visible = false;
+            }
         }
     }
 }

@@ -61,17 +61,18 @@ namespace WindowsFormsApp2
         private void Inventory_KeyDown(object sender, KeyEventArgs e)
         {
             playerMove.ForceToStop();
-            foreach (Form f in Application.OpenForms)
+            Form target = null;
+            if (e.KeyCode == Keys.I)
             {
-                    if (f.GetType() == typeof(Inventory))
-                    {
-                        f.Close();
-                        return;
-                    }
-             }
-
-            ShowInventory();
-            
+                if ((this.Parent as InitMenu).inventory.Visible)
+                {
+                    (this.Parent as InitMenu).inventory.Hide();
+                }
+                else
+                {
+                    (this.Parent as InitMenu).inventory.Show();
+                }
+            }
         }
 
         private void ShowInventory()

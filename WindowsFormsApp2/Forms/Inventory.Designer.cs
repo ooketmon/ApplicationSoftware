@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.Cardkey_5 = new System.Windows.Forms.PictureBox();
             this.Test_4 = new System.Windows.Forms.PictureBox();
             this.Key_4 = new System.Windows.Forms.PictureBox();
             this.Safecard_4 = new System.Windows.Forms.PictureBox();
@@ -42,6 +43,7 @@
             this.box_papper_4 = new System.Windows.Forms.PictureBox();
             this.box_key = new System.Windows.Forms.PictureBox();
             this.box_test_4 = new System.Windows.Forms.PictureBox();
+            this.box_cardkey_2 = new System.Windows.Forms.PictureBox();
             this.box_test_3 = new System.Windows.Forms.PictureBox();
             this.box_test_2 = new System.Windows.Forms.PictureBox();
             this.box_test_1 = new System.Windows.Forms.PictureBox();
@@ -50,8 +52,7 @@
             this.box_cardkey = new System.Windows.Forms.PictureBox();
             this.box_papper_3 = new System.Windows.Forms.PictureBox();
             this.box_papper_1 = new System.Windows.Forms.PictureBox();
-            this.box_cardkey_2 = new System.Windows.Forms.PictureBox();
-            this.Cardkey_5 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Cardkey_5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Test_4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Key_4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Safecard_4)).BeginInit();
@@ -66,6 +67,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.box_papper_4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_key)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_test_4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.box_cardkey_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_test_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_test_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_test_1)).BeginInit();
@@ -74,9 +76,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.box_cardkey)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_papper_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_papper_1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.box_cardkey_2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cardkey_5)).BeginInit();
             this.SuspendLayout();
+            // 
+            // Cardkey_5
+            // 
+            this.Cardkey_5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Cardkey_5.BackColor = System.Drawing.Color.Transparent;
+            this.Cardkey_5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Cardkey_5.Image = global::WindowsFormsApp2.Properties.Resources._5_Cardkey_;
+            this.Cardkey_5.Location = new System.Drawing.Point(19, 373);
+            this.Cardkey_5.Name = "Cardkey_5";
+            this.Cardkey_5.Size = new System.Drawing.Size(62, 50);
+            this.Cardkey_5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Cardkey_5.TabIndex = 23;
+            this.Cardkey_5.TabStop = false;
+            this.Cardkey_5.Click += new System.EventHandler(this.Item_Press);
             // 
             // Test_4
             // 
@@ -275,6 +291,15 @@
             this.box_test_4.TabIndex = 9;
             this.box_test_4.TabStop = false;
             // 
+            // box_cardkey_2
+            // 
+            this.box_cardkey_2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.box_cardkey_2.Location = new System.Drawing.Point(12, 360);
+            this.box_cardkey_2.Name = "box_cardkey_2";
+            this.box_cardkey_2.Size = new System.Drawing.Size(75, 75);
+            this.box_cardkey_2.TabIndex = 8;
+            this.box_cardkey_2.TabStop = false;
+            // 
             // box_test_3
             // 
             this.box_test_3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -347,36 +372,12 @@
             this.box_papper_1.TabIndex = 0;
             this.box_papper_1.TabStop = false;
             // 
-            // box_cardkey_2
-            // 
-            this.box_cardkey_2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.box_cardkey_2.Location = new System.Drawing.Point(12, 360);
-            this.box_cardkey_2.Name = "box_cardkey_2";
-            this.box_cardkey_2.Size = new System.Drawing.Size(75, 75);
-            this.box_cardkey_2.TabIndex = 8;
-            this.box_cardkey_2.TabStop = false;
-            // 
-            // Cardkey_5
-            // 
-            this.Cardkey_5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Cardkey_5.BackColor = System.Drawing.Color.Transparent;
-            this.Cardkey_5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Cardkey_5.Image = global::WindowsFormsApp2.Properties.Resources._5_Cardkey_;
-            this.Cardkey_5.Location = new System.Drawing.Point(19, 373);
-            this.Cardkey_5.Name = "Cardkey_5";
-            this.Cardkey_5.Size = new System.Drawing.Size(62, 50);
-            this.Cardkey_5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Cardkey_5.TabIndex = 23;
-            this.Cardkey_5.TabStop = false;
-            this.Cardkey_5.Click += new System.EventHandler(this.Item_Press);
-            // 
             // Inventory
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(357, 448);
+            this.ControlBox = false;
             this.Controls.Add(this.Cardkey_5);
             this.Controls.Add(this.Test_4);
             this.Controls.Add(this.Key_4);
@@ -408,6 +409,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Inventory";
             this.Load += new System.EventHandler(this.Inventory_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.Cardkey_5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Test_4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Key_4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Safecard_4)).EndInit();
@@ -422,6 +424,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.box_papper_4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_key)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_test_4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.box_cardkey_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_test_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_test_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_test_1)).EndInit();
@@ -430,8 +433,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.box_cardkey)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_papper_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_papper_1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.box_cardkey_2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Cardkey_5)).EndInit();
             this.ResumeLayout(false);
 
         }

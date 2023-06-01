@@ -78,7 +78,7 @@ namespace WindowsFormsApp2
         {
             if (e.KeyCode == Keys.I)
             {
-                this.Close();
+                this.Hide();
             }
         }
 
@@ -106,47 +106,47 @@ namespace WindowsFormsApp2
             {
                 resourceName = Properties.Resources._1_Papper;
             }
-            else if (itemName == items[1] && inventory[0])
+            else if (itemName == items[1] && inventory[1])
             {
                 resourceName = Properties.Resources._1_Test;
             }
-            else if (itemName == items[2] && inventory[0])
+            else if (itemName == items[2] && inventory[2])
             {
                 resourceName = Properties.Resources._2_Test;
             }
-            else if (itemName == items[3] && inventory[0])
+            else if (itemName == items[3] && inventory[3])
             {
                 resourceName = Properties.Resources._3_Papper;
             }
-            else if (itemName == items[4] && inventory[0])
+            else if (itemName == items[4] && inventory[4])
             {
                 resourceName = Properties.Resources._3_Cardkey;
             }
-            else if (itemName == items[5] && inventory[0])
+            else if (itemName == items[5] && inventory[5])
             {
                 resourceName = Properties.Resources._3_Poster;
             }
-            else if (itemName == items[6] && inventory[0])
+            else if (itemName == items[6] && inventory[6])
             {
                 resourceName = Properties.Resources._3_Test;
             }
-            else if (itemName == items[7] && inventory[0])
+            else if (itemName == items[7] && inventory[7])
             {
                 resourceName = Properties.Resources._4_Papper;
             }
-            else if (itemName == items[8] && inventory[0])
+            else if (itemName == items[8] && inventory[8])
             {
                 resourceName = Properties.Resources._4_Safecard;
             }
-            else if (itemName == items[9] && inventory[0])
+            else if (itemName == items[9] && inventory[9])
             {
                 resourceName = Properties.Resources._4_Key;
             }
-            else if (itemName == items[10] && inventory[0])
+            else if (itemName == items[10] && inventory[10])
             {
                 resourceName = Properties.Resources._4_Test;
             }
-            else if (itemName == items[11] && inventory[0])
+            else if (itemName == items[11] && inventory[11])
             {
                 resourceName = Properties.Resources._5_Cardkey_;
             }
@@ -163,9 +163,9 @@ namespace WindowsFormsApp2
 
 
         }
-        private void Inventory_Load(object sender, EventArgs e)
-        {
 
+        public void Inventory_ItemVisibility_Check()
+        {
             if (inventory[0] == true) { Papper_1.Visible = true; }
             else { Papper_1.Visible = false; }
             if (inventory[1] == true) { Test_1.Visible = true; }
@@ -190,6 +190,15 @@ namespace WindowsFormsApp2
             else { Test_4.Visible = false; }
             if (inventory[11] == true) { Cardkey_5.Visible = true; }
             else { Cardkey_5.Visible = false; }
+        }
+        private void Inventory_Load(object sender, EventArgs e)
+        {
+            Inventory_ItemVisibility_Check();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
     

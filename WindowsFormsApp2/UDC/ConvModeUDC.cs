@@ -18,6 +18,7 @@ namespace WindowsFormsApp2.UDC
         public string text;
         string where_event_occur;
         ControlConversationUDC controller = null;
+
         public ConvModeUDC()
         {
             InitializeComponent();
@@ -48,6 +49,13 @@ namespace WindowsFormsApp2.UDC
 
             }
             counter = 0;
+            System.Drawing.Text.PrivateFontCollection privateFonts = new System.Drawing.Text.PrivateFontCollection();
+            privateFonts.AddFontFile("./resources/Mabinogi_Classic_TTF.ttf"); // 마비노기 옛체 
+            privateFonts.AddFontFile("./resources/NeoDunggeunmoPro-Regular.ttf"); // 둥근모
+            Font name = new Font(privateFonts.Families[0], 20f);
+            Font content = new Font(privateFonts.Families[0], 26f);
+            nameCharacter.Font = name;
+            contentConv.Font = content;
             if (!timerLetter.Enabled)
             {
                 timerLetter.Start();
@@ -73,38 +81,17 @@ namespace WindowsFormsApp2.UDC
         {
             if (e.KeyCode == Keys.I)
             {
-                foreach (Form f in Application.OpenForms)
+                if ((this.Parent as InitMenu).inventory.Visible)
                 {
-                    if (f.GetType() == typeof(Inventory))
-                    {
-                        f.Close();
-                        return;
-                    }
+                    (this.Parent as InitMenu).inventory.Hide();
                 }
-
-                ShowInventory();
-                System.Drawing.Text.PrivateFontCollection privateFonts = new System.Drawing.Text.PrivateFontCollection();
-                privateFonts.AddFontFile("./resources/Mabinogi_Classic_TTF.ttf"); // 마비노기 옛체 
-                privateFonts.AddFontFile("./resources/NeoDunggeunmoPro-Regular.ttf"); // 둥근모
-
-                // 폰트 설정
-                Font name = new Font(privateFonts.Families[0], 20f);
-                Font content = new Font(privateFonts.Families[0], 26f);
-
-
-                nameCharacter.Font = name;
-                contentConv.Font = content;
+                else
+                {
+                    (this.Parent as InitMenu).inventory.Show();
+                }
             }
         }
 
-        private void ShowInventory()
-        {
-            // 호출할 폼의 인스턴스 생성
-            Inventory inventory = new Inventory();
-            // 폼을 보여줌
-            inventory.Show();
-
-        }
         private void ConvModeUDC_Load(object sender, EventArgs e)
         {
             this.KeyDown += Inventory_KeyDown;
@@ -116,15 +103,27 @@ namespace WindowsFormsApp2.UDC
             {
                 controller.RoomInit(where_event_occur);
                 this.btnSkip.Text = "나가기";
-            }else if (where_event_occur == "prologue")
+            } else if (where_event_occur == "prologue")
             {
                 controller.Prologue();
-            }else if (where_event_occur.StartsWith("board"))
+            } else if (where_event_occur.StartsWith("board"))
             {
                 controller.BoardInit(where_event_occur);
                 this.btnSkip.Text = "나가기";
-            }
+            } else if (where_event_occur == "guardroom" && !(this.Parent as InitMenu).havetoGoGuardRoom)
+            {
+                controller.GuardRoom_JustEnter_Init(where_event_occur);
 
+            } else if (where_event_occur == "guardroom" && (this.Parent as InitMenu).havetoGoGuardRoom && !StaticItem.mSafekey4)
+            {
+                controller.GuardRoom_GetPracticeRoomKey_Init(where_event_occur);
+            } else if (where_event_occur=="guardroom"&&StaticItem.mSafekey4) {
+                controller.GuardRoom_Do_Nothing(where_event_occur);
+            }
+            else if (where_event_occur == "hintNPC_1")
+            {
+                controller.firstFloorNPC_Init(where_event_occur);
+            }
             System.Drawing.Text.PrivateFontCollection privateFonts = new System.Drawing.Text.PrivateFontCollection();
             privateFonts.AddFontFile("./resources/Mabinogi_Classic_TTF.ttf"); // 마비노기 옛체 
             privateFonts.AddFontFile("./resources/NeoDunggeunmoPro-Regular.ttf"); // 둥근모
@@ -146,6 +145,7 @@ namespace WindowsFormsApp2.UDC
 
             contentConv.Text = "";
             timerLetter.Start();
+
 
             //nameCharacter.Parent = imgConvWindowBack;
             //nameCharacter.BackColor = Color.Transparent;

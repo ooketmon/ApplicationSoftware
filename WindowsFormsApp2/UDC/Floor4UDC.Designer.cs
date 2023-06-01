@@ -47,7 +47,7 @@
             this.pictureBox41 = new System.Windows.Forms.PictureBox();
             this.pictureBox38 = new System.Windows.Forms.PictureBox();
             this.pictureBox37 = new System.Windows.Forms.PictureBox();
-            this.pictureBox36 = new System.Windows.Forms.PictureBox();
+            this.board4_1 = new System.Windows.Forms.PictureBox();
             this.pictureBox35 = new System.Windows.Forms.PictureBox();
             this.room4_1 = new System.Windows.Forms.PictureBox();
             this.pictureBox32 = new System.Windows.Forms.PictureBox();
@@ -105,7 +105,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.board4_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.room4_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
@@ -319,15 +319,15 @@
             this.pictureBox37.TabStop = false;
             this.pictureBox37.Tag = "obstacle";
             // 
-            // pictureBox36
+            // board4_1
             // 
-            this.pictureBox36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pictureBox36.Location = new System.Drawing.Point(415, 485);
-            this.pictureBox36.Name = "pictureBox36";
-            this.pictureBox36.Size = new System.Drawing.Size(350, 15);
-            this.pictureBox36.TabIndex = 140;
-            this.pictureBox36.TabStop = false;
-            this.pictureBox36.Tag = "obstacle";
+            this.board4_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.board4_1.Location = new System.Drawing.Point(415, 485);
+            this.board4_1.Name = "board4_1";
+            this.board4_1.Size = new System.Drawing.Size(350, 15);
+            this.board4_1.TabIndex = 140;
+            this.board4_1.TabStop = false;
+            this.board4_1.Tag = "";
             // 
             // pictureBox35
             // 
@@ -761,7 +761,7 @@
             this.Controls.Add(this.pictureBox41);
             this.Controls.Add(this.pictureBox38);
             this.Controls.Add(this.pictureBox37);
-            this.Controls.Add(this.pictureBox36);
+            this.Controls.Add(this.board4_1);
             this.Controls.Add(this.pictureBox35);
             this.Controls.Add(this.room4_1);
             this.Controls.Add(this.pictureBox32);
@@ -826,7 +826,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.board4_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.room4_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
@@ -914,7 +914,7 @@
         private System.Windows.Forms.PictureBox pictureBox33;
         private System.Windows.Forms.PictureBox room4_1;
         private System.Windows.Forms.PictureBox pictureBox35;
-        private System.Windows.Forms.PictureBox pictureBox36;
+        private System.Windows.Forms.PictureBox board4_1;
         private System.Windows.Forms.PictureBox pictureBox37;
         private System.Windows.Forms.PictureBox pictureBox38;
         private System.Windows.Forms.PictureBox pictureBox41;

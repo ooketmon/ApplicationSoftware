@@ -77,7 +77,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox43 = new System.Windows.Forms.PictureBox();
+            this.meetingplace = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.board2_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
@@ -122,7 +122,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.meetingplace)).BeginInit();
             this.SuspendLayout();
             // 
             // timerFloor2
@@ -165,9 +165,9 @@
             // board2_1
             // 
             this.board2_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.board2_1.Location = new System.Drawing.Point(205, 355);
+            this.board2_1.Location = new System.Drawing.Point(205, 381);
             this.board2_1.Name = "board2_1";
-            this.board2_1.Size = new System.Drawing.Size(15, 105);
+            this.board2_1.Size = new System.Drawing.Size(15, 80);
             this.board2_1.TabIndex = 142;
             this.board2_1.TabStop = false;
             this.board2_1.Tag = "";
@@ -332,7 +332,7 @@
             // 
             this.room2_5.Location = new System.Drawing.Point(160, 290);
             this.room2_5.Name = "room2_5";
-            this.room2_5.Size = new System.Drawing.Size(60, 65);
+            this.room2_5.Size = new System.Drawing.Size(60, 100);
             this.room2_5.TabIndex = 125;
             this.room2_5.TabStop = false;
             this.room2_5.Visible = false;
@@ -559,9 +559,9 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBox2.Location = new System.Drawing.Point(415, 0);
+            this.pictureBox2.Location = new System.Drawing.Point(627, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(60, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(133, 50);
             this.pictureBox2.TabIndex = 68;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Tag = "obstacle";
@@ -596,20 +596,23 @@
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Tag = "obstacle";
             // 
-            // pictureBox43
+            // meetingplace
             // 
-            this.pictureBox43.Location = new System.Drawing.Point(415, 0);
-            this.pictureBox43.Name = "pictureBox43";
-            this.pictureBox43.Size = new System.Drawing.Size(60, 65);
-            this.pictureBox43.TabIndex = 143;
-            this.pictureBox43.TabStop = false;
-            this.pictureBox43.Tag = "elevator";
-            this.pictureBox43.Visible = false;
+            this.meetingplace.Location = new System.Drawing.Point(627, 27);
+            this.meetingplace.Name = "meetingplace";
+            this.meetingplace.Size = new System.Drawing.Size(133, 43);
+            this.meetingplace.TabIndex = 143;
+            this.meetingplace.TabStop = false;
+            this.meetingplace.Tag = "";
+            this.meetingplace.Visible = false;
             // 
             // Floor2UDC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.player);
+            this.Controls.Add(this.room2_5);
+            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnPrev);
             this.Controls.Add(this.contentConv);
@@ -630,7 +633,6 @@
             this.Controls.Add(this.room2_2);
             this.Controls.Add(this.pictureBox23);
             this.Controls.Add(this.room2_1);
-            this.Controls.Add(this.room2_5);
             this.Controls.Add(this.pictureBox40);
             this.Controls.Add(this.pictureBox39);
             this.Controls.Add(this.elevator);
@@ -645,7 +647,6 @@
             this.Controls.Add(this.pictureBox18);
             this.Controls.Add(this.pictureBox16);
             this.Controls.Add(this.pictureBox15);
-            this.Controls.Add(this.player);
             this.Controls.Add(this.pictureBox14);
             this.Controls.Add(this.pictureBox13);
             this.Controls.Add(this.pictureBox12);
@@ -655,9 +656,8 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox43);
+            this.Controls.Add(this.meetingplace);
             this.MaximumSize = new System.Drawing.Size(1200, 800);
             this.MinimumSize = new System.Drawing.Size(1200, 800);
             this.Name = "Floor2UDC";
@@ -709,7 +709,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.meetingplace)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -762,7 +762,7 @@
         private System.Windows.Forms.PictureBox pictureBox38;
         private System.Windows.Forms.PictureBox pictureBox41;
         private System.Windows.Forms.PictureBox board2_1;
-        private System.Windows.Forms.PictureBox pictureBox43;
+        private System.Windows.Forms.PictureBox meetingplace;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnPrev;
         private System.Windows.Forms.Label contentConv;
