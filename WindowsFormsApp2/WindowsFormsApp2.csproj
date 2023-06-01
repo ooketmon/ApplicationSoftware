@@ -437,6 +437,11 @@
     <None Include="resources\Floor1\IMG_0848.PNG" />
     <None Include="resources\Floor1\IMG_0849.PNG" />
     <None Include="resources\Floor1\IMG_0850.PNG" />
+    <None Include="resources\Floor2\IMG_0851.PNG" />
+    <None Include="resources\Floor2\IMG_0852.PNG" />
+    <None Include="resources\Floor2\IMG_0853.PNG" />
+    <None Include="resources\Floor2\IMG_0854.PNG" />
+    <None Include="resources\Floor2\IMG_0855.PNG" />
     <Content Include="resources\Player\IMG_0809.PNG" />
     <Content Include="resources\Player\IMG_0811.PNG" />
     <Content Include="resources\Player\IMG_0812.PNG" />

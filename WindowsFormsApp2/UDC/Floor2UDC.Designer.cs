@@ -518,7 +518,7 @@
             // 
             // pictureBox11
             // 
-            this.pictureBox11.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBox11.BackColor = System.Drawing.Color.Black;
             this.pictureBox11.Location = new System.Drawing.Point(1040, 0);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(160, 390);
@@ -528,7 +528,7 @@
             // 
             // pictureBox10
             // 
-            this.pictureBox10.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBox10.BackColor = System.Drawing.Color.Black;
             this.pictureBox10.Location = new System.Drawing.Point(855, 0);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(185, 390);
@@ -610,6 +610,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.IMG_0855;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnPrev);
             this.Controls.Add(this.contentConv);
@@ -658,6 +660,7 @@
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox43);
+            this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(0);
             this.MaximumSize = new System.Drawing.Size(1200, 800);
             this.MinimumSize = new System.Drawing.Size(1200, 800);
