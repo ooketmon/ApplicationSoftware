@@ -37,6 +37,7 @@
             this.pictureBox44 = new System.Windows.Forms.PictureBox();
             this.pictureBox43 = new System.Windows.Forms.PictureBox();
             this.pictureBox42 = new System.Windows.Forms.PictureBox();
+            this.pictureBox41 = new System.Windows.Forms.PictureBox();
             this.guardroom = new System.Windows.Forms.PictureBox();
             this.pictureBox40 = new System.Windows.Forms.PictureBox();
             this.pictureBox39 = new System.Windows.Forms.PictureBox();
@@ -79,9 +80,6 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox38 = new System.Windows.Forms.PictureBox();
             this.pic1 = new System.Windows.Forms.PictureBox();
-<<<<<<< HEAD
-            this.hintNPC_1 = new System.Windows.Forms.PictureBox();
-=======
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
@@ -94,7 +92,7 @@
             this.pictureBox55 = new System.Windows.Forms.PictureBox();
             this.pictureBox56 = new System.Windows.Forms.PictureBox();
             this.pictureBox57 = new System.Windows.Forms.PictureBox();
->>>>>>> ab855c4f60a65c07aeab31036d415680b2ae73ff
+            this.hintNPC_1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).BeginInit();
@@ -102,6 +100,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guardroom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).BeginInit();
@@ -144,9 +143,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic1)).BeginInit();
-<<<<<<< HEAD
-            ((System.ComponentModel.ISupportInitialize)(this.hintNPC_1)).BeginInit();
-=======
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
@@ -159,7 +155,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox55)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox57)).BeginInit();
->>>>>>> ab855c4f60a65c07aeab31036d415680b2ae73ff
+            ((System.ComponentModel.ISupportInitialize)(this.hintNPC_1)).BeginInit();
             this.SuspendLayout();
             // 
             // timerFloor1
@@ -238,17 +234,8 @@
             this.pictureBox42.TabStop = false;
             this.pictureBox42.Tag = "obstacle";
             // 
-            // guardroom
+            // pictureBox41
             // 
-<<<<<<< HEAD
-            this.guardroom.Location = new System.Drawing.Point(1155, 215);
-            this.guardroom.Name = "guardroom";
-            this.guardroom.Size = new System.Drawing.Size(45, 65);
-            this.guardroom.TabIndex = 120;
-            this.guardroom.TabStop = false;
-            this.guardroom.Tag = "";
-            this.guardroom.Visible = false;
-=======
             this.pictureBox41.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0843;
             this.pictureBox41.Location = new System.Drawing.Point(1155, 215);
             this.pictureBox41.Name = "pictureBox41";
@@ -256,7 +243,16 @@
             this.pictureBox41.TabIndex = 120;
             this.pictureBox41.TabStop = false;
             this.pictureBox41.Tag = "LockedDoor";
->>>>>>> ab855c4f60a65c07aeab31036d415680b2ae73ff
+            // 
+            // guardroom
+            // 
+            this.guardroom.Location = new System.Drawing.Point(1155, 215);
+            this.guardroom.Name = "guardroom";
+            this.guardroom.Size = new System.Drawing.Size(45, 65);
+            this.guardroom.TabIndex = 120;
+            this.guardroom.TabStop = false;
+            this.guardroom.Tag = "";
+            this.guardroom.Visible = false;
             // 
             // pictureBox40
             // 
@@ -691,16 +687,6 @@
             this.pic1.TabStop = false;
             this.pic1.Tag = "wood";
             // 
-<<<<<<< HEAD
-            // hintNPC_1
-            // 
-            this.hintNPC_1.Location = new System.Drawing.Point(571, 430);
-            this.hintNPC_1.Name = "hintNPC_1";
-            this.hintNPC_1.Size = new System.Drawing.Size(45, 50);
-            this.hintNPC_1.TabIndex = 146;
-            this.hintNPC_1.TabStop = false;
-            this.hintNPC_1.Tag = "";
-=======
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.SystemColors.ControlDark;
@@ -844,7 +830,15 @@
             this.pictureBox57.TabIndex = 157;
             this.pictureBox57.TabStop = false;
             this.pictureBox57.Tag = "";
->>>>>>> ab855c4f60a65c07aeab31036d415680b2ae73ff
+            // 
+            // hintNPC_1
+            // 
+            this.hintNPC_1.Location = new System.Drawing.Point(578, 389);
+            this.hintNPC_1.Name = "hintNPC_1";
+            this.hintNPC_1.Size = new System.Drawing.Size(32, 35);
+            this.hintNPC_1.TabIndex = 146;
+            this.hintNPC_1.TabStop = false;
+            this.hintNPC_1.Tag = "";
             // 
             // Floor1UDC
             // 
@@ -931,6 +925,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guardroom)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).EndInit();
@@ -973,9 +968,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic1)).EndInit();
-<<<<<<< HEAD
-            ((System.ComponentModel.ISupportInitialize)(this.hintNPC_1)).EndInit();
-=======
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
@@ -988,7 +980,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox55)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox57)).EndInit();
->>>>>>> ab855c4f60a65c07aeab31036d415680b2ae73ff
+            ((System.ComponentModel.ISupportInitialize)(this.hintNPC_1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1003,6 +995,7 @@
         private System.Windows.Forms.PictureBox pictureBox44;
         private System.Windows.Forms.PictureBox pictureBox43;
         private System.Windows.Forms.PictureBox pictureBox42;
+        private System.Windows.Forms.PictureBox pictureBox41;
         private System.Windows.Forms.PictureBox guardroom;
         private System.Windows.Forms.PictureBox pictureBox40;
         private System.Windows.Forms.PictureBox pictureBox39;
@@ -1046,9 +1039,6 @@
         private System.Windows.Forms.Timer timerFloor1;
         private System.Windows.Forms.PictureBox pictureBox38;
         private System.Windows.Forms.PictureBox pic1;
-<<<<<<< HEAD
-        private System.Windows.Forms.PictureBox hintNPC_1;
-=======
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox18;
         private System.Windows.Forms.PictureBox pictureBox19;
@@ -1061,6 +1051,6 @@
         private System.Windows.Forms.PictureBox pictureBox55;
         private System.Windows.Forms.PictureBox pictureBox56;
         private System.Windows.Forms.PictureBox pictureBox57;
->>>>>>> ab855c4f60a65c07aeab31036d415680b2ae73ff
+        private System.Windows.Forms.PictureBox hintNPC_1;
     }
 }

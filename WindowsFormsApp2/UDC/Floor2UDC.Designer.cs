@@ -610,14 +610,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
+            this.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.IMG_0855;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.player);
             this.Controls.Add(this.room2_5);
             this.Controls.Add(this.pictureBox4);
-=======
-            this.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.IMG_0855;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
->>>>>>> ab855c4f60a65c07aeab31036d415680b2ae73ff
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnPrev);
             this.Controls.Add(this.contentConv);
@@ -662,13 +659,10 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox6);
-<<<<<<< HEAD
-            this.Controls.Add(this.meetingplace);
-=======
-            this.Controls.Add(this.pictureBox43);
+           // this.Controls.Add(this.pictureBox43);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(0);
->>>>>>> ab855c4f60a65c07aeab31036d415680b2ae73ff
+            this.Controls.Add(this.meetingplace);
             this.MaximumSize = new System.Drawing.Size(1200, 800);
             this.MinimumSize = new System.Drawing.Size(1200, 800);
             this.Name = "Floor2UDC";
