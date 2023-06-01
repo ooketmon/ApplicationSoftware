@@ -54,7 +54,7 @@
             this.init_image.Dock = System.Windows.Forms.DockStyle.Fill;
             this.init_image.Location = new System.Drawing.Point(0, 0);
             this.init_image.Name = "init_image";
-            this.init_image.Size = new System.Drawing.Size(1200, 847);
+            this.init_image.Size = new System.Drawing.Size(1200, 800);
             this.init_image.TabIndex = 6;
             this.init_image.TabStop = false;
             // 
@@ -65,8 +65,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.init_image);
+            this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "InitWindow";
-            this.Size = new System.Drawing.Size(1200, 847);
+            this.Size = new System.Drawing.Size(1200, 800);
             ((System.ComponentModel.ISupportInitialize)(this.init_image)).EndInit();
             this.ResumeLayout(false);
 

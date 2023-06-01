@@ -469,9 +469,9 @@
             // pictureBox15
             // 
             this.pictureBox15.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBox15.Location = new System.Drawing.Point(0, 70);
+            this.pictureBox15.Location = new System.Drawing.Point(0, 0);
             this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(255, 190);
+            this.pictureBox15.Size = new System.Drawing.Size(255, 260);
             this.pictureBox15.TabIndex = 77;
             this.pictureBox15.TabStop = false;
             this.pictureBox15.Tag = "obstacle";
@@ -489,9 +489,9 @@
             // pictureBox14
             // 
             this.pictureBox14.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBox14.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox14.Location = new System.Drawing.Point(255, 0);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(415, 70);
+            this.pictureBox14.Size = new System.Drawing.Size(160, 70);
             this.pictureBox14.TabIndex = 75;
             this.pictureBox14.TabStop = false;
             this.pictureBox14.Tag = "obstacle";
@@ -518,7 +518,7 @@
             // 
             // pictureBox11
             // 
-            this.pictureBox11.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBox11.BackColor = System.Drawing.Color.Black;
             this.pictureBox11.Location = new System.Drawing.Point(1040, 0);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(160, 390);
@@ -528,7 +528,7 @@
             // 
             // pictureBox10
             // 
-            this.pictureBox10.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBox10.BackColor = System.Drawing.Color.Black;
             this.pictureBox10.Location = new System.Drawing.Point(855, 0);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(185, 390);
@@ -610,9 +610,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.Controls.Add(this.player);
             this.Controls.Add(this.room2_5);
             this.Controls.Add(this.pictureBox4);
+=======
+            this.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.IMG_0855;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+>>>>>>> ab855c4f60a65c07aeab31036d415680b2ae73ff
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnPrev);
             this.Controls.Add(this.contentConv);
@@ -657,7 +662,13 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox6);
+<<<<<<< HEAD
             this.Controls.Add(this.meetingplace);
+=======
+            this.Controls.Add(this.pictureBox43);
+            this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(0);
+>>>>>>> ab855c4f60a65c07aeab31036d415680b2ae73ff
             this.MaximumSize = new System.Drawing.Size(1200, 800);
             this.MinimumSize = new System.Drawing.Size(1200, 800);
             this.Name = "Floor2UDC";
