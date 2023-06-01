@@ -469,9 +469,9 @@
             // pictureBox15
             // 
             this.pictureBox15.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBox15.Location = new System.Drawing.Point(0, 70);
+            this.pictureBox15.Location = new System.Drawing.Point(0, 0);
             this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(255, 190);
+            this.pictureBox15.Size = new System.Drawing.Size(255, 260);
             this.pictureBox15.TabIndex = 77;
             this.pictureBox15.TabStop = false;
             this.pictureBox15.Tag = "obstacle";
@@ -489,9 +489,9 @@
             // pictureBox14
             // 
             this.pictureBox14.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBox14.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox14.Location = new System.Drawing.Point(255, 0);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(415, 70);
+            this.pictureBox14.Size = new System.Drawing.Size(160, 70);
             this.pictureBox14.TabIndex = 75;
             this.pictureBox14.TabStop = false;
             this.pictureBox14.Tag = "obstacle";
@@ -658,6 +658,7 @@
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox43);
+            this.Margin = new System.Windows.Forms.Padding(0);
             this.MaximumSize = new System.Drawing.Size(1200, 800);
             this.MinimumSize = new System.Drawing.Size(1200, 800);
             this.Name = "Floor2UDC";

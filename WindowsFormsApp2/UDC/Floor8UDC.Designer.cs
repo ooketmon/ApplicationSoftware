@@ -1064,6 +1064,7 @@
             this.Controls.Add(this.pictureBox16);
             this.Controls.Add(this.pictureBox17);
             this.Controls.Add(this.pictureBox76);
+            this.Margin = new System.Windows.Forms.Padding(0);
             this.MaximumSize = new System.Drawing.Size(1202, 800);
             this.MinimumSize = new System.Drawing.Size(1202, 800);
             this.Name = "Floor8UDC";
