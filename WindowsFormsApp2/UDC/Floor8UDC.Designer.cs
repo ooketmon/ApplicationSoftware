@@ -109,6 +109,7 @@
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.pictureBox76 = new System.Windows.Forms.PictureBox();
+            this.pictureBox32 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox75)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox74)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -188,6 +189,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox76)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
             this.SuspendLayout();
             // 
             // timeFloor8
@@ -694,9 +696,9 @@
             // pictureBox31
             // 
             this.pictureBox31.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBox31.Location = new System.Drawing.Point(600, 425);
+            this.pictureBox31.Location = new System.Drawing.Point(675, 425);
             this.pictureBox31.Name = "pictureBox31";
-            this.pictureBox31.Size = new System.Drawing.Size(250, 35);
+            this.pictureBox31.Size = new System.Drawing.Size(175, 35);
             this.pictureBox31.TabIndex = 117;
             this.pictureBox31.TabStop = false;
             this.pictureBox31.Tag = "obstacle";
@@ -706,7 +708,7 @@
             this.pictureBox30.BackColor = System.Drawing.SystemColors.ControlDark;
             this.pictureBox30.Location = new System.Drawing.Point(350, 425);
             this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(250, 35);
+            this.pictureBox30.Size = new System.Drawing.Size(175, 35);
             this.pictureBox30.TabIndex = 116;
             this.pictureBox30.TabStop = false;
             this.pictureBox30.Tag = "obstacle";
@@ -980,11 +982,22 @@
             this.pictureBox76.Tag = "elevator";
             this.pictureBox76.Visible = false;
             // 
+            // pictureBox32
+            // 
+            this.pictureBox32.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBox32.Location = new System.Drawing.Point(585, 425);
+            this.pictureBox32.Name = "pictureBox32";
+            this.pictureBox32.Size = new System.Drawing.Size(30, 35);
+            this.pictureBox32.TabIndex = 178;
+            this.pictureBox32.TabStop = false;
+            this.pictureBox32.Tag = "obstacle";
+            // 
             // Floor8UDC
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.pictureBox32);
             this.Controls.Add(this.pictureBox75);
             this.Controls.Add(this.pictureBox74);
             this.Controls.Add(this.pictureBox5);
@@ -1065,10 +1078,10 @@
             this.Controls.Add(this.pictureBox17);
             this.Controls.Add(this.pictureBox76);
             this.Margin = new System.Windows.Forms.Padding(0);
-            this.MaximumSize = new System.Drawing.Size(1202, 800);
-            this.MinimumSize = new System.Drawing.Size(1202, 800);
+            this.MaximumSize = new System.Drawing.Size(1200, 800);
+            this.MinimumSize = new System.Drawing.Size(1200, 800);
             this.Name = "Floor8UDC";
-            this.Size = new System.Drawing.Size(1202, 800);
+            this.Size = new System.Drawing.Size(1200, 800);
             this.Load += new System.EventHandler(this.Floor8_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Floor8_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Floor8_KeyUp);
@@ -1151,6 +1164,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox76)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1238,5 +1252,6 @@
         private System.Windows.Forms.PictureBox pictureBox74;
         private System.Windows.Forms.PictureBox pictureBox75;
         private System.Windows.Forms.PictureBox pictureBox76;
+        private System.Windows.Forms.PictureBox pictureBox32;
     }
 }
