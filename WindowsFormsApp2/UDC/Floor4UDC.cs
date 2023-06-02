@@ -52,7 +52,7 @@ namespace WindowsFormsApp2
                 (keyData == Keys.Up) || (keyData == Keys.Down))
             {
 
-                playerMove.PlayerKeyDown(new object[] { }, new KeyEventArgs(keyData));
+                Floor4_KeyDown(new object[] { }, new KeyEventArgs(keyData));
 
                 return true;
             }else if (keyData == Keys.I)
@@ -79,12 +79,13 @@ namespace WindowsFormsApp2
 
         private void Floor4_KeyDown(object sender, KeyEventArgs e)
         {
-            playerMove.PlayerKeyDown(sender, e);
+            //playerMove.PlayerKeyDown(sender, e);
+            playerMove.MovePlayerWithoutBool(e);
         }
 
         private void timerFloor4_Tick(object sender, EventArgs e)
         {
-            playerMove.MovePlayer();
+           // playerMove.MovePlayer();
 
             foreach (Control x in this.Controls)
             {

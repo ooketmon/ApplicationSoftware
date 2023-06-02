@@ -29,29 +29,31 @@ namespace WindowsFormsApp2
         bool wood7_Hit = false;
    
         System.Threading.Timer wood_timer1;
-
         public delegate void wood_delegate1();
 
         System.Threading.Timer wood_timer2;
-
         public delegate void wood_delegate2();
 
         System.Threading.Timer wood_timer3;
-
         public delegate void wood_delegate3();
 
         System.Threading.Timer wood_timer4;
-
         public delegate void wood_delegate4();
+
         System.Threading.Timer wood_timer5;
-
         public delegate void wood_delegate5();
+
         System.Threading.Timer wood_timer6;
-
         public delegate void wood_delegate6();
-        System.Threading.Timer wood_timer7;
 
+        System.Threading.Timer wood_timer7;
         public delegate void wood_delegate7();
+
+
+        Chaser chaser = null;
+        System.Threading.Timer chaser_timer;
+        public delegate void chase_delegate();
+
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
@@ -108,14 +110,26 @@ namespace WindowsFormsApp2
             wood_timer7 = new System.Threading.Timer(WoodCallBack7);
             wood_timer7.Change(0, 10);
 
+            if ((this.Parent as InitMenu).guardmanChasing)
+            {
+                chaser = new Chaser();
+                chaser.Left = scarepoint.Left;
+                chaser.Top=scarepoint.Top+60;
+                Controls.Add(chaser);
+
+                chaser_timer = new System.Threading.Timer(Chaser_Move_CallBack);
+                chaser_timer.Change(0, 30);
+
+            }
+
         }
 
         private void UserControl1_KeyUp(object sender, KeyEventArgs e) { playerMove.PlayerKeyUp(sender, e); }
-        private void UserControl1_KeyDown(object sender, KeyEventArgs e) { playerMove.PlayerKeyDown(sender, e); }
+        private void UserControl1_KeyDown(object sender, KeyEventArgs e) { playerMove.MovePlayerWithoutBool(e); }
 
         private void timerFloor1_Tick(object sender, EventArgs e)
         {
-            playerMove.MovePlayer();
+          //  playerMove.MovePlayer();
             if (!(wood1_Hit || wood2_Hit || wood3_Hit || wood4_Hit || wood5_Hit || wood6_Hit || wood7_Hit))
             {
                 player.BackgroundImage = null;
@@ -855,6 +869,17 @@ namespace WindowsFormsApp2
                         }
 
 
+                    }
+                }));
+        }
+        public void Chaser_Move_CallBack(object status)
+        {
+            BeginInvoke(new chase_delegate(
+                () =>
+                {
+                    if (chaser != null)
+                    {
+                        chaser.chaser_move();
                     }
                 }));
         }

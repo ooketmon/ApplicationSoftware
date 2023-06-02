@@ -133,13 +133,14 @@ namespace WindowsFormsApp2
                 if (STUDENT_INFO.name != "아무개" && STUDENT_INFO.total_grade == -1)
                 {
                     MessageBox.Show("성적이 나올 때까지 기다리자.");
-                    
+                    (this.Parent as InitMenu).CallMainMenu();
 
                 }
 
                 else if (STUDENT_INFO.name != "아무개" && STUDENT_INFO.all_course_grade.Count < 4)
                 {
                     MessageBox.Show("다음 학기에 수업을 많이 들어야겠군.");
+                    (this.Parent as InitMenu).CallMainMenu();
 
                 }
                 else if (STUDENT_INFO.name != "아무개")
@@ -150,13 +151,13 @@ namespace WindowsFormsApp2
                     {
                         dic_iter.MoveNext();
                         var item = dic_iter.Current;
-                        if (item.Value < 3)
+                        if (item.Value < 4)
                         {
                             STUDENT_INFO.low_grade_courses.Add(item.Key);
                         }
 
                     }
-                    if (STUDENT_INFO.low_grade_courses.Count < 0)
+                    if (STUDENT_INFO.low_grade_courses.Count < 4)
                     {
                         MessageBox.Show("난 꽤 성실하게 산 거 같아!");
                         (this.Parent as InitMenu).CallMainMenu();

@@ -28,7 +28,7 @@ namespace WindowsFormsApp2
                 (keyData == Keys.Up) || (keyData == Keys.Down))
             {
 
-                playerMove.PlayerKeyDown(new object[] { }, new KeyEventArgs(keyData));
+                UserControl3_KeyDown(new object[] { }, new KeyEventArgs(keyData));
 
                 return true;
             }else if (keyData == Keys.I)
@@ -80,12 +80,13 @@ namespace WindowsFormsApp2
 
         private void UserControl3_KeyDown(object sender, KeyEventArgs e)
         {
-            playerMove.PlayerKeyDown(sender, e);
+            // playerMove.PlayerKeyDown(sender, e);
+            playerMove.MovePlayerWithoutBool(e);
         }
 
         private void timerFloor3_Tick(object sender, EventArgs e)
         {
-            playerMove.MovePlayer();
+            //playerMove.MovePlayer();
 
             foreach (Control x in this.Controls)
             {

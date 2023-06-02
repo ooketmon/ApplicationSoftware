@@ -49,7 +49,7 @@
             this.pictureBox33 = new System.Windows.Forms.PictureBox();
             this.pictureBox32 = new System.Windows.Forms.PictureBox();
             this.pictureBox31 = new System.Windows.Forms.PictureBox();
-            this.pictureBox30 = new System.Windows.Forms.PictureBox();
+            this.scarepoint = new System.Windows.Forms.PictureBox();
             this.pictureBox29 = new System.Windows.Forms.PictureBox();
             this.pictureBox28 = new System.Windows.Forms.PictureBox();
             this.player = new System.Windows.Forms.PictureBox();
@@ -111,7 +111,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scarepoint)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
@@ -355,16 +355,16 @@
             this.pictureBox31.TabStop = false;
             this.pictureBox31.Tag = "obstacle";
             // 
-            // pictureBox30
+            // scarepoint
             // 
-            this.pictureBox30.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0842;
-            this.pictureBox30.Location = new System.Drawing.Point(530, 150);
-            this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(60, 50);
-            this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox30.TabIndex = 109;
-            this.pictureBox30.TabStop = false;
-            this.pictureBox30.Tag = "LockedDoor";
+            this.scarepoint.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0842;
+            this.scarepoint.Location = new System.Drawing.Point(530, 150);
+            this.scarepoint.Name = "scarepoint";
+            this.scarepoint.Size = new System.Drawing.Size(60, 50);
+            this.scarepoint.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.scarepoint.TabIndex = 109;
+            this.scarepoint.TabStop = false;
+            this.scarepoint.Tag = "LockedDoor";
             // 
             // pictureBox29
             // 
@@ -446,7 +446,7 @@
             // 
             this.pictureBox24.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.pictureBox24.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0793;
-            this.pictureBox24.Location = new System.Drawing.Point(750, 635);
+            this.pictureBox24.Location = new System.Drawing.Point(748, 635);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(110, 50);
             this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -851,7 +851,7 @@
             this.Controls.Add(this.pictureBox18);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox32);
-            this.Controls.Add(this.pictureBox30);
+            this.Controls.Add(this.scarepoint);
             this.Controls.Add(this.pictureBox15);
             this.Controls.Add(this.pictureBox46);
             this.Controls.Add(this.pictureBox35);
@@ -926,7 +926,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scarepoint)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
@@ -995,7 +995,7 @@
         private System.Windows.Forms.PictureBox pictureBox33;
         private System.Windows.Forms.PictureBox pictureBox32;
         private System.Windows.Forms.PictureBox pictureBox31;
-        private System.Windows.Forms.PictureBox pictureBox30;
+        private System.Windows.Forms.PictureBox scarepoint;
         private System.Windows.Forms.PictureBox pictureBox29;
         private System.Windows.Forms.PictureBox pictureBox28;
         private System.Windows.Forms.PictureBox player;

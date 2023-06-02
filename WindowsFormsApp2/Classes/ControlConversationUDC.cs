@@ -96,7 +96,72 @@ namespace WindowsFormsApp2
 
         public void LabInit(string lab_info)
         {
-            
+            eventType = lab_info;
+            string number_only = lab_info.Substring(3);
+            string[] number_info = number_only.Split('_');
+            target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
+            target.contentConv.Text = string.Format("여기는 {0}층 {1}연구실인 것 같다.", number_info[0], number_info[1]);
+            phase++;
+
+            target.imgCharacter.Visible = false;
+            target.imgCharBack.Visible = false;
+
+        }
+
+        public void Test1Get1()
+        {
+            GetRidofEventSplit();
+            eventType += "/GetTest1";
+            phase++;
+            target.nameCharacter.Text = STUDENT_INFO.name;
+            target.text = string.Format("저기 복사기 위의 종이...혹시?");
+            target.timerReset();
+
+        }
+        public void Test1Get2()
+        {
+            phase++;
+            target.nameCharacter.Text = "System";
+            target.text = string.Format("시험지를 발견했다.");
+            target.timerReset();
+        }
+
+        public void Test2Get1()
+        {
+            GetRidofEventSplit();
+            eventType += "/GetTest2";
+            phase++;
+            target.nameCharacter.Text = STUDENT_INFO.name;
+            target.text = string.Format("교수님 컴퓨터가 켜져있군..좋아!");
+            target.timerReset();
+
+        }
+
+        public void Test2Get2()
+        {
+            phase++;
+            target.nameCharacter.Text = "System";
+            target.text = string.Format("시험지를 뽑아 가져갔다.");
+            target.timerReset();
+
+        }
+        public void Test3Get1()
+        {
+            GetRidofEventSplit();
+            eventType += "/GetTest2";
+            phase++;
+            target.nameCharacter.Text = STUDENT_INFO.name;
+            target.text = string.Format("책꽂이의 서류뭉치...수상하군..좋아!");
+            target.timerReset();
+        }
+
+        public void Test3Get2()
+        {
+            phase++;
+            target.nameCharacter.Text = "System";
+            target.text = string.Format("서류뭉치에서 시험지를 발견했다.");
+            target.timerReset();
+
         }
         public void GuardRoom_JustEnter_Init(string guard_info)
         {
@@ -282,6 +347,36 @@ namespace WindowsFormsApp2
             target.timerReset();
         }
 
+        public void Papper4Get()
+        {
+            phase++;
+            target.nameCharacter.Text = "System";
+            target.text = "쪽지를 얻었다.\r\n인벤토리에서 자세히 확인하자.";
+            foreach (Control c in target.Controls)
+            {
+                if (c.Name == "btnSkip")
+                {
+                    c.Text = "나가기";
+                }
+            }
+            target.timerReset();
+        }
+
+        public void GetKey()
+        {
+            eventType += "/GetKey";
+            phase++;
+            target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
+            target.text = string.Format("연구실 열쇠다!");
+            foreach (Control c in target.Controls)
+            {
+                if (c.Name == "btnSkip")
+                {
+                    c.Text = "나가기";
+                }
+            }
+            target.timerReset();
+        }
         public void firstFloorNPC_Init(string npcinfo)
         {
             eventType = npcinfo;

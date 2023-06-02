@@ -17,8 +17,8 @@ namespace WindowsFormsApp2
         public bool floor8MissionComplete = false;
         public bool floor1MissionComplete = false;
         public bool havetoGoGuardRoom = false;
-        public bool guardmanChasing = false;
-        public bool assistantChasing = false;
+        public bool guardmanChasing = true;
+        public bool assistantChasing = true;
         public bool firstStart = true;
         public Inventory inventory = new Inventory();
 
