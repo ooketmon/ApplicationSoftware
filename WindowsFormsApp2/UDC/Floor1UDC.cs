@@ -136,6 +136,7 @@ namespace WindowsFormsApp2
             }
             foreach (Control x in this.Controls)
             {
+                //계단 이벤트
                 if (x is PictureBox && (string)x.Name == "stair")
                 {
                     if (player.Bounds.IntersectsWith(x.Bounds) && !playerisOnStair)
@@ -145,6 +146,8 @@ namespace WindowsFormsApp2
                         return;
                     }
                 }
+
+                //엘레베이터 이벤트
                 if (x is PictureBox && (string)x.Name == "elevator")
                 {
                     if (player.Bounds.IntersectsWith(x.Bounds) && !playerisOnElevator)
@@ -154,6 +157,8 @@ namespace WindowsFormsApp2
                         return;
                     }
                 }
+
+                //경비실 이벤트
                 if (x is PictureBox && ((x.Name as string)=="guardroom" || (x.Name as string)=="hintNPC_1"))
                 {
                     if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest)
@@ -205,6 +210,13 @@ namespace WindowsFormsApp2
         {
 
         }
+
+
+
+
+        /*
+         아래는 쇼파 움직임 표현 코드
+         */
         public void WoodCallBack1(object status)
         {
             BeginInvoke(new wood_delegate1(
@@ -875,9 +887,6 @@ namespace WindowsFormsApp2
         public void Chaser_Move_CallBack(object status)
         {
             BeginInvoke(new chase_delegate(
-                () =>
-                {
-                    if (chaser != null)
                     {
                         chaser.chaser_move();
                     }
