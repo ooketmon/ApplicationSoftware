@@ -564,7 +564,7 @@ namespace WindowsFormsApp2
                     if (c.Name == eventType)
                         npc = c;
                 }
-                player.Left = npc.Left + 50;
+                player.Left = npc.Left - 50;
                 player.Top = npc.Top;
                 (target.Parent as InitMenu).ConvComeback(tmp);
                 return;

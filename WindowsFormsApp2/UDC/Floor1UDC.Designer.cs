@@ -76,19 +76,18 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pic1 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.pictureBox49 = new System.Windows.Forms.PictureBox();
             this.pictureBox50 = new System.Windows.Forms.PictureBox();
-            this.pictureBox51 = new System.Windows.Forms.PictureBox();
-            this.pictureBox52 = new System.Windows.Forms.PictureBox();
-            this.pictureBox53 = new System.Windows.Forms.PictureBox();
-            this.pictureBox54 = new System.Windows.Forms.PictureBox();
-            this.pictureBox55 = new System.Windows.Forms.PictureBox();
-            this.pictureBox56 = new System.Windows.Forms.PictureBox();
-            this.pictureBox57 = new System.Windows.Forms.PictureBox();
+            this.sofa6 = new System.Windows.Forms.PictureBox();
+            this.sofa7 = new System.Windows.Forms.PictureBox();
+            this.sofa5 = new System.Windows.Forms.PictureBox();
+            this.sofa3 = new System.Windows.Forms.PictureBox();
+            this.sofa2 = new System.Windows.Forms.PictureBox();
+            this.sofa4 = new System.Windows.Forms.PictureBox();
+            this.sofa1 = new System.Windows.Forms.PictureBox();
             this.hintNPC_1 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -139,19 +138,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox55)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox57)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sofa6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sofa7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sofa5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sofa3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sofa2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sofa4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sofa1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hintNPC_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -646,18 +644,6 @@
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Tag = "obstacle";
             // 
-            // pic1
-            // 
-            this.pic1.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.IMG_0808;
-            this.pic1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pic1.Location = new System.Drawing.Point(539, 370);
-            this.pic1.Name = "pic1";
-            this.pic1.Size = new System.Drawing.Size(411, 200);
-            this.pic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic1.TabIndex = 145;
-            this.pic1.TabStop = false;
-            this.pic1.Tag = "wood";
-            // 
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.SystemColors.ControlDark;
@@ -718,89 +704,89 @@
             this.pictureBox50.TabStop = false;
             this.pictureBox50.Tag = "";
             // 
-            // pictureBox51
+            // sofa6
             // 
-            this.pictureBox51.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBox51.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0848;
-            this.pictureBox51.Location = new System.Drawing.Point(667, 399);
-            this.pictureBox51.Name = "pictureBox51";
-            this.pictureBox51.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox51.TabIndex = 151;
-            this.pictureBox51.TabStop = false;
-            this.pictureBox51.Tag = "";
+            this.sofa6.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.sofa6.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0848;
+            this.sofa6.Location = new System.Drawing.Point(667, 399);
+            this.sofa6.Name = "sofa6";
+            this.sofa6.Size = new System.Drawing.Size(40, 40);
+            this.sofa6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.sofa6.TabIndex = 151;
+            this.sofa6.TabStop = false;
+            this.sofa6.Tag = "sofa";
             // 
-            // pictureBox52
+            // sofa7
             // 
-            this.pictureBox52.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBox52.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0847;
-            this.pictureBox52.Location = new System.Drawing.Point(570, 493);
-            this.pictureBox52.Name = "pictureBox52";
-            this.pictureBox52.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox52.TabIndex = 152;
-            this.pictureBox52.TabStop = false;
-            this.pictureBox52.Tag = "";
+            this.sofa7.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.sofa7.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0847;
+            this.sofa7.Location = new System.Drawing.Point(570, 493);
+            this.sofa7.Name = "sofa7";
+            this.sofa7.Size = new System.Drawing.Size(40, 40);
+            this.sofa7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.sofa7.TabIndex = 152;
+            this.sofa7.TabStop = false;
+            this.sofa7.Tag = "sofa";
             // 
-            // pictureBox53
+            // sofa5
             // 
-            this.pictureBox53.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBox53.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0848;
-            this.pictureBox53.Location = new System.Drawing.Point(667, 493);
-            this.pictureBox53.Name = "pictureBox53";
-            this.pictureBox53.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox53.TabIndex = 153;
-            this.pictureBox53.TabStop = false;
-            this.pictureBox53.Tag = "";
+            this.sofa5.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.sofa5.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0848;
+            this.sofa5.Location = new System.Drawing.Point(667, 493);
+            this.sofa5.Name = "sofa5";
+            this.sofa5.Size = new System.Drawing.Size(40, 40);
+            this.sofa5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.sofa5.TabIndex = 153;
+            this.sofa5.TabStop = false;
+            this.sofa5.Tag = "sofa";
             // 
-            // pictureBox54
+            // sofa3
             // 
-            this.pictureBox54.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBox54.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0847;
-            this.pictureBox54.Location = new System.Drawing.Point(777, 399);
-            this.pictureBox54.Name = "pictureBox54";
-            this.pictureBox54.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox54.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox54.TabIndex = 154;
-            this.pictureBox54.TabStop = false;
-            this.pictureBox54.Tag = "";
+            this.sofa3.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.sofa3.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0847;
+            this.sofa3.Location = new System.Drawing.Point(777, 399);
+            this.sofa3.Name = "sofa3";
+            this.sofa3.Size = new System.Drawing.Size(40, 40);
+            this.sofa3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.sofa3.TabIndex = 154;
+            this.sofa3.TabStop = false;
+            this.sofa3.Tag = "sofa";
             // 
-            // pictureBox55
+            // sofa2
             // 
-            this.pictureBox55.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBox55.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0848;
-            this.pictureBox55.Location = new System.Drawing.Point(874, 399);
-            this.pictureBox55.Name = "pictureBox55";
-            this.pictureBox55.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox55.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox55.TabIndex = 155;
-            this.pictureBox55.TabStop = false;
-            this.pictureBox55.Tag = "";
+            this.sofa2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.sofa2.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0848;
+            this.sofa2.Location = new System.Drawing.Point(874, 399);
+            this.sofa2.Name = "sofa2";
+            this.sofa2.Size = new System.Drawing.Size(40, 40);
+            this.sofa2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.sofa2.TabIndex = 155;
+            this.sofa2.TabStop = false;
+            this.sofa2.Tag = "sofa2";
             // 
-            // pictureBox56
+            // sofa4
             // 
-            this.pictureBox56.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBox56.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0847;
-            this.pictureBox56.Location = new System.Drawing.Point(777, 493);
-            this.pictureBox56.Name = "pictureBox56";
-            this.pictureBox56.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox56.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox56.TabIndex = 156;
-            this.pictureBox56.TabStop = false;
-            this.pictureBox56.Tag = "";
+            this.sofa4.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.sofa4.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0847;
+            this.sofa4.Location = new System.Drawing.Point(777, 493);
+            this.sofa4.Name = "sofa4";
+            this.sofa4.Size = new System.Drawing.Size(40, 40);
+            this.sofa4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.sofa4.TabIndex = 156;
+            this.sofa4.TabStop = false;
+            this.sofa4.Tag = "sofa";
             // 
-            // pictureBox57
+            // sofa1
             // 
-            this.pictureBox57.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBox57.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0848;
-            this.pictureBox57.Location = new System.Drawing.Point(874, 493);
-            this.pictureBox57.Name = "pictureBox57";
-            this.pictureBox57.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox57.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox57.TabIndex = 157;
-            this.pictureBox57.TabStop = false;
-            this.pictureBox57.Tag = "";
+            this.sofa1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.sofa1.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0848;
+            this.sofa1.Location = new System.Drawing.Point(874, 493);
+            this.sofa1.Name = "sofa1";
+            this.sofa1.Size = new System.Drawing.Size(40, 40);
+            this.sofa1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.sofa1.TabIndex = 157;
+            this.sofa1.TabStop = false;
+            this.sofa1.Tag = "";
             // 
             // hintNPC_1
             // 
@@ -852,13 +838,13 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.hintNPC_1);
             this.Controls.Add(this.player);
-            this.Controls.Add(this.pictureBox57);
-            this.Controls.Add(this.pictureBox56);
-            this.Controls.Add(this.pictureBox55);
-            this.Controls.Add(this.pictureBox54);
-            this.Controls.Add(this.pictureBox53);
-            this.Controls.Add(this.pictureBox52);
-            this.Controls.Add(this.pictureBox51);
+            this.Controls.Add(this.sofa1);
+            this.Controls.Add(this.sofa4);
+            this.Controls.Add(this.sofa2);
+            this.Controls.Add(this.sofa3);
+            this.Controls.Add(this.sofa5);
+            this.Controls.Add(this.sofa7);
+            this.Controls.Add(this.sofa6);
             this.Controls.Add(this.pictureBox50);
             this.Controls.Add(this.pictureBox49);
             this.Controls.Add(this.pictureBox19);
@@ -867,7 +853,6 @@
             this.Controls.Add(this.pictureBox32);
             this.Controls.Add(this.pictureBox30);
             this.Controls.Add(this.pictureBox15);
-            this.Controls.Add(this.pic1);
             this.Controls.Add(this.pictureBox46);
             this.Controls.Add(this.pictureBox35);
             this.Controls.Add(this.pictureBox48);
@@ -968,19 +953,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox55)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox57)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sofa6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sofa7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sofa5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sofa3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sofa2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sofa4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sofa1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hintNPC_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -1039,19 +1023,18 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Timer timerFloor1;
-        private System.Windows.Forms.PictureBox pic1;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox18;
         private System.Windows.Forms.PictureBox pictureBox19;
         private System.Windows.Forms.PictureBox pictureBox49;
         private System.Windows.Forms.PictureBox pictureBox50;
-        private System.Windows.Forms.PictureBox pictureBox51;
-        private System.Windows.Forms.PictureBox pictureBox52;
-        private System.Windows.Forms.PictureBox pictureBox53;
-        private System.Windows.Forms.PictureBox pictureBox54;
-        private System.Windows.Forms.PictureBox pictureBox55;
-        private System.Windows.Forms.PictureBox pictureBox56;
-        private System.Windows.Forms.PictureBox pictureBox57;
+        private System.Windows.Forms.PictureBox sofa6;
+        private System.Windows.Forms.PictureBox sofa7;
+        private System.Windows.Forms.PictureBox sofa5;
+        private System.Windows.Forms.PictureBox sofa3;
+        private System.Windows.Forms.PictureBox sofa2;
+        private System.Windows.Forms.PictureBox sofa4;
+        private System.Windows.Forms.PictureBox sofa1;
         private System.Windows.Forms.PictureBox hintNPC_1;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox2;

@@ -19,10 +19,39 @@ namespace WindowsFormsApp2
         bool playerisOnElevator = false;
         bool convHitTest = false;
 
-        System.Threading.Timer wood_timer;
 
-        public delegate void wood_delegate();
+        bool wood1_Hit = false;
+        bool wood2_Hit = false;
+        bool wood3_Hit = false;
+        bool wood4_Hit = false;
+        bool wood5_Hit = false;
+        bool wood6_Hit = false;
+        bool wood7_Hit = false;
+   
+        System.Threading.Timer wood_timer1;
 
+        public delegate void wood_delegate1();
+
+        System.Threading.Timer wood_timer2;
+
+        public delegate void wood_delegate2();
+
+        System.Threading.Timer wood_timer3;
+
+        public delegate void wood_delegate3();
+
+        System.Threading.Timer wood_timer4;
+
+        public delegate void wood_delegate4();
+        System.Threading.Timer wood_timer5;
+
+        public delegate void wood_delegate5();
+        System.Threading.Timer wood_timer6;
+
+        public delegate void wood_delegate6();
+        System.Threading.Timer wood_timer7;
+
+        public delegate void wood_delegate7();
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
@@ -64,8 +93,20 @@ namespace WindowsFormsApp2
             playerisOnStair = false;
             playerisOnElevator = false;
             playerMove = new PlayerControl(player);
-            wood_timer = new System.Threading.Timer(WoodCallBack);
-            wood_timer.Change(0, 10);
+            wood_timer1 = new System.Threading.Timer(WoodCallBack1);
+            wood_timer1.Change(0, 10);
+            wood_timer2 = new System.Threading.Timer(WoodCallBack2);
+            wood_timer2.Change(0, 10);
+            wood_timer3 = new System.Threading.Timer(WoodCallBack3);
+            wood_timer3.Change(0, 10);
+            wood_timer4 = new System.Threading.Timer(WoodCallBack4);
+            wood_timer4.Change(0, 10);
+            wood_timer5 = new System.Threading.Timer(WoodCallBack5);
+            wood_timer5.Change(0, 10);
+            wood_timer6 = new System.Threading.Timer(WoodCallBack6);
+            wood_timer6.Change(0, 10);
+            wood_timer7 = new System.Threading.Timer(WoodCallBack7);
+            wood_timer7.Change(0, 10);
 
         }
 
@@ -75,7 +116,10 @@ namespace WindowsFormsApp2
         private void timerFloor1_Tick(object sender, EventArgs e)
         {
             playerMove.MovePlayer();
-               
+            if (!(wood1_Hit || wood2_Hit || wood3_Hit || wood4_Hit || wood5_Hit || wood6_Hit || wood7_Hit))
+            {
+                player.BackgroundImage = null;
+            }
             foreach (Control x in this.Controls)
             {
                 if (x is PictureBox && (string)x.Name == "stair")
@@ -147,25 +191,26 @@ namespace WindowsFormsApp2
         {
 
         }
-        public void WoodCallBack(object status)
+        public void WoodCallBack1(object status)
         {
-            BeginInvoke(new wood_delegate(
+            BeginInvoke(new wood_delegate1(
                 () =>
                 {
                     foreach (Control x in this.Controls)
                     {
-                        if (x.Name.Equals("pic1"))
+                        if ((string)x.Name=="sofa1")
                         {
                             if (player.Bounds.IntersectsWith(x.Bounds))
                             {
-                                Bitmap background_image = Properties.Resources.IMG_0808;
+                                wood1_Hit = true;
+                                Bitmap background_image = Properties.Resources.IMG_0848;
                                 Rectangle rect = Rectangle.Intersect(x.Bounds, player.Bounds);
                                 Size image_size = new Size(rect.Width, rect.Height);
 
                                 Bitmap resized_image=new Bitmap(background_image, image_size);
                                 Bitmap final_image = new Bitmap(player.Width, player.Height);
                                 player.BackgroundImageLayout = ImageLayout.None;
-                                if (!x.Bounds.Contains(player.Bounds)&&player.Top - x.Top < 0 && player.Left - x.Left < 0)
+                                if (!x.Bounds.Contains(player.Bounds)&&player.Top - x.Top <= 0 && player.Left - x.Left <= 0)
                                 {
                                     int resized_y = 1;
                                     int resized_x = 1;
@@ -186,7 +231,7 @@ namespace WindowsFormsApp2
                                     }
                                     player.BackgroundImage = final_image;
                                 }
-                                else if (!x.Bounds.Contains(player.Bounds)&&player.Top - x.Top < 0)
+                                else if (!x.Bounds.Contains(player.Bounds)&&player.Top - x.Top <= 0)
                                 {
                                     int resized_y = 1;
                                     for(int i = player.Height-1; i >= 0; i--)
@@ -204,7 +249,7 @@ namespace WindowsFormsApp2
                                         resized_y++;
                                     }
                                     player.BackgroundImage = final_image;
-                                }else if (!x.Bounds.Contains(player.Bounds)&&player.Left-x.Left<0)
+                                }else if (!x.Bounds.Contains(player.Bounds)&&player.Left-x.Left<=0)
                                 {
                                     int resized_x = 1;
                                     for (int i = player.Width-1; i >=0; i--)
@@ -232,9 +277,7 @@ namespace WindowsFormsApp2
                             }
                             else
                             {
-                                player.BackgroundImage = null;
-                                
-                                return;
+                                wood1_Hit = false;
                             }
                         }
 
@@ -242,5 +285,579 @@ namespace WindowsFormsApp2
                     }
                 }));
         }
+        public void WoodCallBack2(object status)
+        {
+            BeginInvoke(new wood_delegate2(
+                () =>
+                {
+                    foreach (Control x in this.Controls)
+                    {
+                        if ((string)x.Name == "sofa2")
+                        {
+                            if (player.Bounds.IntersectsWith(x.Bounds))
+                            {
+                                wood2_Hit = true;
+                                Bitmap background_image = Properties.Resources.IMG_0848;
+                                Rectangle rect = Rectangle.Intersect(x.Bounds, player.Bounds);
+                                Size image_size = new Size(rect.Width, rect.Height);
+
+                                Bitmap resized_image = new Bitmap(background_image, image_size);
+                                Bitmap final_image = new Bitmap(player.Width, player.Height);
+                                player.BackgroundImageLayout = ImageLayout.None;
+                                if (!x.Bounds.Contains(player.Bounds) && player.Top - x.Top <= 0 && player.Left - x.Left <= 0)
+                                {
+                                    int resized_y = 1;
+                                    int resized_x = 1;
+                                    for (int i = player.Height - 1; i >= 0; i--)
+                                    {
+                                        for (int j = player.Width - 1; j >= 0; j--)
+                                        {
+                                            if (resized_y >= resized_image.Height || resized_x >= resized_image.Width)
+                                            {
+                                                break;
+                                            }
+
+                                            final_image.SetPixel(j, i, resized_image.GetPixel(resized_x, resized_y));
+                                            resized_x++;
+                                        }
+                                        resized_y++;
+                                        resized_x = 0;
+                                    }
+                                    player.BackgroundImage = final_image;
+                                }
+                                else if (!x.Bounds.Contains(player.Bounds) && player.Top - x.Top <= 0)
+                                {
+                                    int resized_y = 1;
+                                    for (int i = player.Height - 1; i >= 0; i--)
+                                    {
+                                        for (int j = 0; j < player.Width; j++)
+                                        {
+                                            if (resized_y >= resized_image.Height || image_size.Width <= j)
+                                            {
+                                                break;
+                                            }
+
+                                            final_image.SetPixel(j, i, resized_image.GetPixel(j, resized_y));
+
+                                        }
+                                        resized_y++;
+                                    }
+                                    player.BackgroundImage = final_image;
+                                }
+                                else if (!x.Bounds.Contains(player.Bounds) && player.Left - x.Left <= 0)
+                                {
+                                    int resized_x = 1;
+                                    for (int i = player.Width - 1; i >= 0; i--)
+                                    {
+                                        for (int j = 0; j < player.Height; j++)
+                                        {
+                                            if (resized_x >= resized_image.Width || image_size.Height <= j)
+                                            {
+                                                break;
+                                            }
+                                            final_image.SetPixel(i, j, resized_image.GetPixel(resized_x, j));
+
+                                        }
+                                        resized_x++;
+                                    }
+                                    player.BackgroundImage = final_image;
+                                }
+                                else
+                                {
+                                    player.BackgroundImage = resized_image;
+                                }
+
+
+                                return;
+                            }
+                            else
+                            {
+                                wood2_Hit = false;
+                            }
+
+                        }
+
+
+                    }
+                }));
+        }
+        public void WoodCallBack3(object status)
+        {
+            BeginInvoke(new wood_delegate3(
+                () =>
+                {
+                    foreach (Control x in this.Controls)
+                    {
+                        if ((string)x.Name == "sofa3")
+                        {
+                            if (player.Bounds.IntersectsWith(x.Bounds))
+                            {
+                                wood3_Hit=true;
+                                Bitmap background_image = Properties.Resources.IMG_0848;
+                                Rectangle rect = Rectangle.Intersect(x.Bounds, player.Bounds);
+                                Size image_size = new Size(rect.Width, rect.Height);
+
+                                Bitmap resized_image = new Bitmap(background_image, image_size);
+                                Bitmap final_image = new Bitmap(player.Width, player.Height);
+                                player.BackgroundImageLayout = ImageLayout.None;
+                                if (!x.Bounds.Contains(player.Bounds) && player.Top - x.Top <= 0 && player.Left - x.Left <= 0)
+                                {
+                                    int resized_y = 1;
+                                    int resized_x = 1;
+                                    for (int i = player.Height - 1; i >= 0; i--)
+                                    {
+                                        for (int j = player.Width - 1; j >= 0; j--)
+                                        {
+                                            if (resized_y >= resized_image.Height || resized_x >= resized_image.Width)
+                                            {
+                                                break;
+                                            }
+
+                                            final_image.SetPixel(j, i, resized_image.GetPixel(resized_x, resized_y));
+                                            resized_x++;
+                                        }
+                                        resized_y++;
+                                        resized_x = 0;
+                                    }
+                                    player.BackgroundImage = final_image;
+                                }
+                                else if (!x.Bounds.Contains(player.Bounds) && player.Top - x.Top <= 0)
+                                {
+                                    int resized_y = 1;
+                                    for (int i = player.Height - 1; i >= 0; i--)
+                                    {
+                                        for (int j = 0; j < player.Width; j++)
+                                        {
+                                            if (resized_y >= resized_image.Height || image_size.Width <= j)
+                                            {
+                                                break;
+                                            }
+
+                                            final_image.SetPixel(j, i, resized_image.GetPixel(j, resized_y));
+
+                                        }
+                                        resized_y++;
+                                    }
+                                    player.BackgroundImage = final_image;
+                                }
+                                else if (!x.Bounds.Contains(player.Bounds) && player.Left - x.Left <= 0)
+                                {
+                                    int resized_x = 1;
+                                    for (int i = player.Width - 1; i >= 0; i--)
+                                    {
+                                        for (int j = 0; j < player.Height; j++)
+                                        {
+                                            if (resized_x >= resized_image.Width || image_size.Height <= j)
+                                            {
+                                                break;
+                                            }
+                                            final_image.SetPixel(i, j, resized_image.GetPixel(resized_x, j));
+
+                                        }
+                                        resized_x++;
+                                    }
+                                    player.BackgroundImage = final_image;
+                                }
+                                else
+                                {
+                                    player.BackgroundImage = resized_image;
+                                }
+
+
+                                return;
+                            }
+                            else
+                            {
+                                wood3_Hit = false;
+                            }
+
+                        }
+
+
+                    }
+                }));
+        }
+        public void WoodCallBack4(object status)
+        {
+            BeginInvoke(new wood_delegate4(
+                () =>
+                {
+                    foreach (Control x in this.Controls)
+                    {
+                        if ((string)x.Name == "sofa4")
+                        {
+                            if (player.Bounds.IntersectsWith(x.Bounds))
+                            {
+                                wood4_Hit = true;
+                                Bitmap background_image = Properties.Resources.IMG_0848;
+                                Rectangle rect = Rectangle.Intersect(x.Bounds, player.Bounds);
+                                Size image_size = new Size(rect.Width, rect.Height);
+
+                                Bitmap resized_image = new Bitmap(background_image, image_size);
+                                Bitmap final_image = new Bitmap(player.Width, player.Height);
+                                player.BackgroundImageLayout = ImageLayout.None;
+                                if (!x.Bounds.Contains(player.Bounds) && player.Top - x.Top <= 0 && player.Left - x.Left <= 0)
+                                {
+                                    int resized_y = 1;
+                                    int resized_x = 1;
+                                    for (int i = player.Height - 1; i >= 0; i--)
+                                    {
+                                        for (int j = player.Width - 1; j >= 0; j--)
+                                        {
+                                            if (resized_y >= resized_image.Height || resized_x >= resized_image.Width)
+                                            {
+                                                break;
+                                            }
+
+                                            final_image.SetPixel(j, i, resized_image.GetPixel(resized_x, resized_y));
+                                            resized_x++;
+                                        }
+                                        resized_y++;
+                                        resized_x = 0;
+                                    }
+                                    player.BackgroundImage = final_image;
+                                }
+                                else if (!x.Bounds.Contains(player.Bounds) && player.Top - x.Top <= 0)
+                                {
+                                    int resized_y = 1;
+                                    for (int i = player.Height - 1; i >= 0; i--)
+                                    {
+                                        for (int j = 0; j < player.Width; j++)
+                                        {
+                                            if (resized_y >= resized_image.Height || image_size.Width <= j)
+                                            {
+                                                break;
+                                            }
+
+                                            final_image.SetPixel(j, i, resized_image.GetPixel(j, resized_y));
+
+                                        }
+                                        resized_y++;
+                                    }
+                                    player.BackgroundImage = final_image;
+                                }
+                                else if (!x.Bounds.Contains(player.Bounds) && player.Left - x.Left <= 0)
+                                {
+                                    int resized_x = 1;
+                                    for (int i = player.Width - 1; i >= 0; i--)
+                                    {
+                                        for (int j = 0; j < player.Height; j++)
+                                        {
+                                            if (resized_x >= resized_image.Width || image_size.Height <= j)
+                                            {
+                                                break;
+                                            }
+                                            final_image.SetPixel(i, j, resized_image.GetPixel(resized_x, j));
+
+                                        }
+                                        resized_x++;
+                                    }
+                                    player.BackgroundImage = final_image;
+                                }
+                                else
+                                {
+                                    player.BackgroundImage = resized_image;
+                                }
+
+
+                                return;
+                            }
+                            else
+                            {
+                                wood4_Hit = false;
+                            }
+     
+                        }
+
+
+                    }
+                }));
+        }
+        public void WoodCallBack5(object status)
+        {
+            BeginInvoke(new wood_delegate5(
+                () =>
+                {
+                    foreach (Control x in this.Controls)
+                    {
+                        if ((string)x.Name == "sofa5")
+                        {
+                            if (player.Bounds.IntersectsWith(x.Bounds))
+                            {
+                                wood5_Hit = true;
+                                Bitmap background_image = Properties.Resources.IMG_0848;
+                                Rectangle rect = Rectangle.Intersect(x.Bounds, player.Bounds);
+                                Size image_size = new Size(rect.Width, rect.Height);
+
+                                Bitmap resized_image = new Bitmap(background_image, image_size);
+                                Bitmap final_image = new Bitmap(player.Width, player.Height);
+                                player.BackgroundImageLayout = ImageLayout.None;
+                                if (!x.Bounds.Contains(player.Bounds) && player.Top - x.Top <= 0 && player.Left - x.Left <= 0)
+                                {
+                                    int resized_y = 1;
+                                    int resized_x = 1;
+                                    for (int i = player.Height - 1; i >= 0; i--)
+                                    {
+                                        for (int j = player.Width - 1; j >= 0; j--)
+                                        {
+                                            if (resized_y >= resized_image.Height || resized_x >= resized_image.Width)
+                                            {
+                                                break;
+                                            }
+
+                                            final_image.SetPixel(j, i, resized_image.GetPixel(resized_x, resized_y));
+                                            resized_x++;
+                                        }
+                                        resized_y++;
+                                        resized_x = 0;
+                                    }
+                                    player.BackgroundImage = final_image;
+                                }
+                                else if (!x.Bounds.Contains(player.Bounds) && player.Top - x.Top <= 0)
+                                {
+                                    int resized_y = 1;
+                                    for (int i = player.Height - 1; i >= 0; i--)
+                                    {
+                                        for (int j = 0; j < player.Width; j++)
+                                        {
+                                            if (resized_y >= resized_image.Height || image_size.Width <= j)
+                                            {
+                                                break;
+                                            }
+
+                                            final_image.SetPixel(j, i, resized_image.GetPixel(j, resized_y));
+
+                                        }
+                                        resized_y++;
+                                    }
+                                    player.BackgroundImage = final_image;
+                                }
+                                else if (!x.Bounds.Contains(player.Bounds) && player.Left - x.Left <= 0)
+                                {
+                                    int resized_x = 1;
+                                    for (int i = player.Width - 1; i >= 0; i--)
+                                    {
+                                        for (int j = 0; j < player.Height; j++)
+                                        {
+                                            if (resized_x >= resized_image.Width || image_size.Height <= j)
+                                            {
+                                                break;
+                                            }
+                                            final_image.SetPixel(i, j, resized_image.GetPixel(resized_x, j));
+
+                                        }
+                                        resized_x++;
+                                    }
+                                    player.BackgroundImage = final_image;
+                                }
+                                else
+                                {
+                                    player.BackgroundImage = resized_image;
+                                }
+
+
+                                return;
+                            }
+                            else
+                            {
+                                wood5_Hit = false;
+                            }
+                        }
+
+
+                    }
+                }));
+        }
+        public void WoodCallBack6(object status)
+        {
+            BeginInvoke(new wood_delegate6(
+                () =>
+                {
+                    foreach (Control x in this.Controls)
+                    {
+                        if ((string)x.Name == "sofa6")
+                        {
+                            if (player.Bounds.IntersectsWith(x.Bounds))
+                            {
+                                wood6_Hit = true;
+                                Bitmap background_image = Properties.Resources.IMG_0848;
+                                Rectangle rect = Rectangle.Intersect(x.Bounds, player.Bounds);
+                                Size image_size = new Size(rect.Width, rect.Height);
+
+                                Bitmap resized_image = new Bitmap(background_image, image_size);
+                                Bitmap final_image = new Bitmap(player.Width, player.Height);
+                                player.BackgroundImageLayout = ImageLayout.None;
+                                if (!x.Bounds.Contains(player.Bounds) && player.Top - x.Top <= 0 && player.Left - x.Left <= 0)
+                                {
+                                    int resized_y = 1;
+                                    int resized_x = 1;
+                                    for (int i = player.Height - 1; i >= 0; i--)
+                                    {
+                                        for (int j = player.Width - 1; j >= 0; j--)
+                                        {
+                                            if (resized_y >= resized_image.Height || resized_x >= resized_image.Width)
+                                            {
+                                                break;
+                                            }
+
+                                            final_image.SetPixel(j, i, resized_image.GetPixel(resized_x, resized_y));
+                                            resized_x++;
+                                        }
+                                        resized_y++;
+                                        resized_x = 0;
+                                    }
+                                    player.BackgroundImage = final_image;
+                                }
+                                else if (!x.Bounds.Contains(player.Bounds) && player.Top - x.Top <= 0)
+                                {
+                                    int resized_y = 1;
+                                    for (int i = player.Height - 1; i >= 0; i--)
+                                    {
+                                        for (int j = 0; j < player.Width; j++)
+                                        {
+                                            if (resized_y >= resized_image.Height || image_size.Width <= j)
+                                            {
+                                                break;
+                                            }
+
+                                            final_image.SetPixel(j, i, resized_image.GetPixel(j, resized_y));
+
+                                        }
+                                        resized_y++;
+                                    }
+                                    player.BackgroundImage = final_image;
+                                }
+                                else if (!x.Bounds.Contains(player.Bounds) && player.Left - x.Left <= 0)
+                                {
+                                    int resized_x = 1;
+                                    for (int i = player.Width - 1; i >= 0; i--)
+                                    {
+                                        for (int j = 0; j < player.Height; j++)
+                                        {
+                                            if (resized_x >= resized_image.Width || image_size.Height <= j)
+                                            {
+                                                break;
+                                            }
+                                            final_image.SetPixel(i, j, resized_image.GetPixel(resized_x, j));
+
+                                        }
+                                        resized_x++;
+                                    }
+                                    player.BackgroundImage = final_image;
+                                }
+                                else
+                                {
+                                    player.BackgroundImage = resized_image;
+                                }
+
+
+                                return;
+                            }
+                            else
+                            {
+                                wood6_Hit = false;
+                            }
+                        }
+
+
+                    }
+                }));
+        }
+        public void WoodCallBack7(object status)
+        {
+            BeginInvoke(new wood_delegate7(
+                () =>
+                {
+                    foreach (Control x in this.Controls)
+                    {
+                        if ((string)x.Name == "sofa7")
+                        {
+                            if (player.Bounds.IntersectsWith(x.Bounds))
+                            {
+                                wood7_Hit = true;
+                                Bitmap background_image = Properties.Resources.IMG_0848;
+                                Rectangle rect = Rectangle.Intersect(x.Bounds, player.Bounds);
+                                Size image_size = new Size(rect.Width, rect.Height);
+
+                                Bitmap resized_image = new Bitmap(background_image, image_size);
+                                Bitmap final_image = new Bitmap(player.Width, player.Height);
+                                player.BackgroundImageLayout = ImageLayout.None;
+                                if (!x.Bounds.Contains(player.Bounds) && player.Top - x.Top <= 0 && player.Left - x.Left <= 0)
+                                {
+                                    int resized_y = 1;
+                                    int resized_x = 1;
+                                    for (int i = player.Height - 1; i >= 0; i--)
+                                    {
+                                        for (int j = player.Width - 1; j >= 0; j--)
+                                        {
+                                            if (resized_y >= resized_image.Height || resized_x >= resized_image.Width)
+                                            {
+                                                break;
+                                            }
+
+                                            final_image.SetPixel(j, i, resized_image.GetPixel(resized_x, resized_y));
+                                            resized_x++;
+                                        }
+                                        resized_y++;
+                                        resized_x = 0;
+                                    }
+                                    player.BackgroundImage = final_image;
+                                }
+                                else if (!x.Bounds.Contains(player.Bounds) && player.Top - x.Top <= 0)
+                                {
+                                    int resized_y = 1;
+                                    for (int i = player.Height - 1; i >= 0; i--)
+                                    {
+                                        for (int j = 0; j < player.Width; j++)
+                                        {
+                                            if (resized_y >= resized_image.Height || image_size.Width <= j)
+                                            {
+                                                break;
+                                            }
+
+                                            final_image.SetPixel(j, i, resized_image.GetPixel(j, resized_y));
+
+                                        }
+                                        resized_y++;
+                                    }
+                                    player.BackgroundImage = final_image;
+                                }
+                                else if (!x.Bounds.Contains(player.Bounds) && player.Left - x.Left <= 0)
+                                {
+                                    int resized_x = 1;
+                                    for (int i = player.Width - 1; i >= 0; i--)
+                                    {
+                                        for (int j = 0; j < player.Height; j++)
+                                        {
+                                            if (resized_x >= resized_image.Width || image_size.Height <= j)
+                                            {
+                                                break;
+                                            }
+                                            final_image.SetPixel(i, j, resized_image.GetPixel(resized_x, j));
+
+                                        }
+                                        resized_x++;
+                                    }
+                                    player.BackgroundImage = final_image;
+                                }
+                                else
+                                {
+                                    player.BackgroundImage = resized_image;
+                                }
+
+
+                                return;
+                            }
+                            else
+                            {
+                                wood7_Hit = false;
+                            }
+                        }
+
+
+                    }
+                }));
+        }
+
     }
 }
