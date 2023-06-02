@@ -58,11 +58,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.Stair;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.up);
             this.Controls.Add(this.down);
             this.DoubleBuffered = true;
             this.Name = "StairChoice";
-            this.Size = new System.Drawing.Size(300, 220);
+            this.Size = new System.Drawing.Size(298, 218);
             this.ResumeLayout(false);
 
         }

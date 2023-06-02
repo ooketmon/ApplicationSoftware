@@ -623,6 +623,46 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap IMG_0858 {
+            get {
+                object obj = ResourceManager.GetObject("IMG_0858", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap IMG_0859 {
+            get {
+                object obj = ResourceManager.GetObject("IMG_0859", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap IMG_0860 {
+            get {
+                object obj = ResourceManager.GetObject("IMG_0860", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap IMG_0862 {
+            get {
+                object obj = ResourceManager.GetObject("IMG_0862", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap init_image {
             get {
                 object obj = ResourceManager.GetObject("init_image", resourceCulture);
@@ -826,6 +866,16 @@ namespace WindowsFormsApp2.Properties {
         internal static System.Drawing.Bitmap Stair {
             get {
                 object obj = ResourceManager.GetObject("Stair", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap temp_1685679902248_2036404291 {
+            get {
+                object obj = ResourceManager.GetObject("temp_1685679902248.2036404291", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -246,13 +246,14 @@
             // 
             // guardroom
             // 
+            this.guardroom.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0843;
             this.guardroom.Location = new System.Drawing.Point(1155, 215);
             this.guardroom.Name = "guardroom";
             this.guardroom.Size = new System.Drawing.Size(45, 65);
+            this.guardroom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guardroom.TabIndex = 120;
             this.guardroom.TabStop = false;
             this.guardroom.Tag = "";
-            this.guardroom.Visible = false;
             // 
             // pictureBox40
             // 
@@ -391,7 +392,7 @@
             // 
             this.player.BackColor = System.Drawing.Color.Silver;
             this.player.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player.Location = new System.Drawing.Point(1038, 485);
+            this.player.Location = new System.Drawing.Point(1040, 695);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(39, 45);
             this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
