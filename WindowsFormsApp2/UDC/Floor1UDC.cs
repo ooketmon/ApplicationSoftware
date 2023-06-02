@@ -884,9 +884,14 @@ namespace WindowsFormsApp2
                     }
                 }));
         }
+
+
         public void Chaser_Move_CallBack(object status)
         {
             BeginInvoke(new chase_delegate(
+                () =>
+                {
+                    if (chaser != null)
                     {
                         chaser.chaser_move();
                     }
