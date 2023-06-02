@@ -464,6 +464,10 @@
     <None Include="resources\Floor1\IMG_0867.PNG" />
     <None Include="resources\Floor1\IMG_0868.PNG" />
     <None Include="resources\Floor1\IMG_0869.PNG" />
+    <None Include="resources\Floor1\IMG_0870.PNG" />
+    <None Include="resources\Floor1\IMG_0871.PNG" />
+    <None Include="resources\Floor1\IMG_0872.PNG" />
+    <None Include="resources\Floor1\IMG_0874.PNG" />
     <Content Include="resources\Player\IMG_0809.PNG" />
     <Content Include="resources\Player\IMG_0811.PNG" />
     <Content Include="resources\Player\IMG_0812.PNG" />

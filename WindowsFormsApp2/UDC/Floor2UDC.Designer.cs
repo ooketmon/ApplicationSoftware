@@ -78,6 +78,7 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.meetingplace = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.board2_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
@@ -123,6 +124,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.meetingplace)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // timerFloor2
@@ -566,9 +568,9 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBox2.Location = new System.Drawing.Point(627, 0);
+            this.pictureBox2.Location = new System.Drawing.Point(635, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(133, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(120, 50);
             this.pictureBox2.TabIndex = 68;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Tag = "obstacle";
@@ -595,9 +597,9 @@
             // 
             // meetingplace
             // 
-            this.meetingplace.Location = new System.Drawing.Point(627, 27);
+            this.meetingplace.Location = new System.Drawing.Point(635, 27);
             this.meetingplace.Name = "meetingplace";
-            this.meetingplace.Size = new System.Drawing.Size(133, 43);
+            this.meetingplace.Size = new System.Drawing.Size(120, 43);
             this.meetingplace.TabIndex = 143;
             this.meetingplace.TabStop = false;
             this.meetingplace.Tag = "";
@@ -613,12 +615,22 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Tag = "obstacle";
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Location = new System.Drawing.Point(660, 505);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(20, 195);
+            this.pictureBox7.TabIndex = 150;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Visible = false;
+            // 
             // Floor2UDC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.IMG_0863;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.player);
             this.Controls.Add(this.room2_5);
             this.Controls.Add(this.pictureBox4);
@@ -721,6 +733,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.meetingplace)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -777,5 +790,6 @@
         private System.Windows.Forms.Button btnPrev;
         private System.Windows.Forms.Label contentConv;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }
