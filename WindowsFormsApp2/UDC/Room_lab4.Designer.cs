@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.clock_roma = new System.Windows.Forms.PictureBox();
+            this.clock_arabia = new System.Windows.Forms.PictureBox();
+            this.lock_case = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clock_roma)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clock_arabia)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lock_case)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -48,44 +48,44 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox2
+            // clock_roma
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(8, 8);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.clock_roma.Location = new System.Drawing.Point(309, 50);
+            this.clock_roma.Name = "clock_roma";
+            this.clock_roma.Size = new System.Drawing.Size(100, 50);
+            this.clock_roma.TabIndex = 1;
+            this.clock_roma.TabStop = false;
             // 
-            // pictureBox3
+            // clock_arabia
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(146, 76);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
+            this.clock_arabia.Location = new System.Drawing.Point(733, 50);
+            this.clock_arabia.Name = "clock_arabia";
+            this.clock_arabia.Size = new System.Drawing.Size(100, 50);
+            this.clock_arabia.TabIndex = 2;
+            this.clock_arabia.TabStop = false;
             // 
-            // pictureBox4
+            // lock_case
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(347, 191);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
+            this.lock_case.Location = new System.Drawing.Point(642, 327);
+            this.lock_case.Name = "lock_case";
+            this.lock_case.Size = new System.Drawing.Size(100, 50);
+            this.lock_case.TabIndex = 3;
+            this.lock_case.TabStop = false;
             // 
             // Room_lab4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.lock_case);
+            this.Controls.Add(this.clock_arabia);
+            this.Controls.Add(this.clock_roma);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Room_lab4";
             this.Size = new System.Drawing.Size(1200, 800);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clock_roma)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clock_arabia)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lock_case)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -93,8 +93,8 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox clock_roma;
+        private System.Windows.Forms.PictureBox clock_arabia;
+        private System.Windows.Forms.PictureBox lock_case;
     }
 }

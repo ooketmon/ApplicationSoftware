@@ -28,47 +28,51 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.papper_4 = new System.Windows.Forms.PictureBox();
+            this.room_office = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.papper_4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.room_office)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // papper_4
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1200, 800);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.papper_4.Image = global::WindowsFormsApp2.Properties.Resources._4_Papper;
+            this.papper_4.Location = new System.Drawing.Point(508, 166);
+            this.papper_4.Name = "papper_4";
+            this.papper_4.Size = new System.Drawing.Size(236, 255);
+            this.papper_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.papper_4.TabIndex = 1;
+            this.papper_4.TabStop = false;
+            this.papper_4.Click += new System.EventHandler(this.Key4_Click);
             // 
-            // pictureBox2
+            // room_office
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(470, 349);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.room_office.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.room_office.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.room_office.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.room_office.Location = new System.Drawing.Point(0, 0);
+            this.room_office.Name = "room_office";
+            this.room_office.Size = new System.Drawing.Size(1200, 800);
+            this.room_office.TabIndex = 0;
+            this.room_office.TabStop = false;
             // 
             // Room_department
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.papper_4);
+            this.Controls.Add(this.room_office);
             this.Name = "Room_department";
             this.Size = new System.Drawing.Size(1200, 800);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.papper_4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.room_office)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox room_office;
+        private System.Windows.Forms.PictureBox papper_4;
     }
 }

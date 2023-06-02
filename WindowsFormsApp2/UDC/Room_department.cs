@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using static WindowsFormsApp2.StaticItem;
+
 namespace WindowsFormsApp2.UDC
 {
     public partial class Room_department : UserControl
@@ -15,6 +17,36 @@ namespace WindowsFormsApp2.UDC
         public Room_department()
         {
             InitializeComponent();
+
+            papper_4.BackColor = Color.Transparent;
+            papper_4.Parent = room_office;
+
+            this.KeyDown += Inventory_KeyDown; // 이벤트 핸들러 등록
+        }
+
+        public void Key4_Click(object sender, EventArgs e)
+        {
+            // 단서 Papper3 함수 _ 클릭 이벤트 발생시
+            mKey4 = true;
+            inventory_set();
+            papper_4.Visible = false;
+        }
+
+        private void Inventory_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.I)
+            {
+                ShowInventory();
+            }
+        }
+
+        private void ShowInventory()
+        {
+            // 호출할 폼의 인스턴스 생성
+            Inventory inventory = new Inventory();
+
+            // 폼을 보여줌
+            inventory.ShowDialog();
         }
     }
 }

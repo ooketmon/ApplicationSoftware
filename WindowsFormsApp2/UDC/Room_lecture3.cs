@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using static WindowsFormsApp2.StaticItem;
+
 namespace WindowsFormsApp2.UDC
 {
     public partial class Room_lecture3 : UserControl
@@ -15,6 +17,32 @@ namespace WindowsFormsApp2.UDC
         public Room_lecture3()
         {
             InitializeComponent();
+            this.KeyDown += Inventory_KeyDown; // 이벤트 핸들러 등록
+        }
+
+        public void Poster3_Click(object sender, EventArgs e)
+        {
+            // 단서 Papper3 함수 _ 클릭 이벤트 발생시
+            mPoster3 = true;
+            inventory_set();
+            poster_3.Visible = false;
+        }
+
+        private void Inventory_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.I)
+            {
+                ShowInventory();
+            }
+        }
+
+        private void ShowInventory()
+        {
+            // 호출할 폼의 인스턴스 생성
+            Inventory inventory = new Inventory();
+
+            // 폼을 보여줌
+            inventory.ShowDialog();
         }
     }
 }
