@@ -16,5 +16,10 @@ namespace WindowsFormsApp2.Forms
         {
             InitializeComponent();
         }
+
+        private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

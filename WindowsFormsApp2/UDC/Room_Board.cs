@@ -15,14 +15,17 @@ namespace WindowsFormsApp2.UDC
     public partial class Room_Board : UserControl
     {
         bool posterClicked = false;
-        
+
 
 
         public Room_Board()
         {
             InitializeComponent();
             zoomPoster.Visible = false;
+            blackBack.Visible= false;
             //black_back.Visible = false; 
+
+
         }
 
         public void Poster_Press(object sender, EventArgs e)
@@ -53,8 +56,22 @@ namespace WindowsFormsApp2.UDC
 
         }
 
+        public void showBack()
+        {
+    
+            Panel blackBack = new Panel();
+            blackBack.Visible = true;
+            blackBack.BackColor = Color.FromArgb(128, Color.Black); // 투명도를 위해 Alpha 값 128 사용
+            blackBack.Dock = DockStyle.Fill; // 패널을 폼에 꽉 채우도록 설정
+            this.Controls.Add(blackBack);
+            blackBack.BringToFront();
+
+        }
+
         private void Poster_1_Click(object sender, EventArgs e)
         {
+
+            //showBack();
             posterClicked = true;
             Room_Board rb = new Room_Board();
 
@@ -67,7 +84,7 @@ namespace WindowsFormsApp2.UDC
             zoomPoster.SizeMode = PictureBoxSizeMode.StretchImage;
 
             zoomPoster.Location = new Point(rb.Width / 2 - zoomPoster.Width / 2, rb.Height/2 - zoomPoster.Height / 2);
-
+            zoomPoster.BringToFront() ; 
         }
 
         private void Poster_4_Click(object sender, EventArgs e)
@@ -84,7 +101,7 @@ namespace WindowsFormsApp2.UDC
             zoomPoster.SizeMode = PictureBoxSizeMode.StretchImage;
 
             zoomPoster.Location = new Point(rb.Width / 2 - zoomPoster.Width / 2, rb.Height / 2 - zoomPoster.Height / 2);
-
+            zoomPoster.BringToFront();
         }
 
         private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
@@ -95,6 +112,7 @@ namespace WindowsFormsApp2.UDC
             }
 
         }
+
     }
 
     
