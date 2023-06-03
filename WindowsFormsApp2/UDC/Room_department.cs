@@ -34,7 +34,7 @@ namespace WindowsFormsApp2.UDC
         public void Key4_Click(object sender, EventArgs e)
         {
             // 단서 Papper3 함수 _ 클릭 이벤트 발생시
-            mKey4 = true;
+            mPapper4 = true;
             inventory_set();
             papper_4.Visible = false;
             (this.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();

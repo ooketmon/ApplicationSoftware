@@ -28,42 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lab2 = new System.Windows.Forms.PictureBox();
-            this.labPC_2 = new System.Windows.Forms.PictureBox();
             this.Printer_2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.lab2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.labPC_2)).BeginInit();
+            this.labPC_2 = new System.Windows.Forms.PictureBox();
+            this.lab2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Printer_2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.labPC_2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lab2)).BeginInit();
             this.SuspendLayout();
+            // 
+            // Printer_2
+            // 
+            this.Printer_2.BackColor = System.Drawing.Color.Transparent;
+            this.Printer_2.Image = global::WindowsFormsApp2.Properties.Resources._8F_Printer1;
+            this.Printer_2.Location = new System.Drawing.Point(919, 403);
+            this.Printer_2.Name = "Printer_2";
+            this.Printer_2.Size = new System.Drawing.Size(244, 236);
+            this.Printer_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Printer_2.TabIndex = 2;
+            this.Printer_2.TabStop = false;
+            this.Printer_2.Click += new System.EventHandler(this.Printer2_Click);
+            // 
+            // labPC_2
+            // 
+            this.labPC_2.BackColor = System.Drawing.Color.Transparent;
+            this.labPC_2.Image = global::WindowsFormsApp2.Properties.Resources._8F_lab2PC;
+            this.labPC_2.Location = new System.Drawing.Point(176, 416);
+            this.labPC_2.Name = "labPC_2";
+            this.labPC_2.Size = new System.Drawing.Size(278, 252);
+            this.labPC_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.labPC_2.TabIndex = 1;
+            this.labPC_2.TabStop = false;
+            this.labPC_2.Click += new System.EventHandler(this.labPC2_Click);
             // 
             // lab2
             // 
             this.lab2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lab2.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.lab_2;
+            this.lab2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lab2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lab2.Location = new System.Drawing.Point(0, 0);
             this.lab2.Name = "lab2";
             this.lab2.Size = new System.Drawing.Size(1200, 800);
             this.lab2.TabIndex = 0;
             this.lab2.TabStop = false;
-            // 
-            // labPC_2
-            // 
-            this.labPC_2.Location = new System.Drawing.Point(299, 246);
-            this.labPC_2.Name = "labPC_2";
-            this.labPC_2.Size = new System.Drawing.Size(178, 89);
-            this.labPC_2.TabIndex = 1;
-            this.labPC_2.TabStop = false;
-            // 
-            // Printer_2
-            // 
-            this.Printer_2.BackColor = System.Drawing.Color.Transparent;
-            this.Printer_2.Image = global::WindowsFormsApp2.Properties.Resources._8F_Printer1;
-            this.Printer_2.Location = new System.Drawing.Point(696, 152);
-            this.Printer_2.Name = "Printer_2";
-            this.Printer_2.Size = new System.Drawing.Size(329, 385);
-            this.Printer_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Printer_2.TabIndex = 2;
-            this.Printer_2.TabStop = false;
             // 
             // Room_lab2
             // 
@@ -74,9 +81,9 @@
             this.Controls.Add(this.lab2);
             this.Name = "Room_lab2";
             this.Size = new System.Drawing.Size(1200, 800);
-            ((System.ComponentModel.ISupportInitialize)(this.lab2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.labPC_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Printer_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.labPC_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lab2)).EndInit();
             this.ResumeLayout(false);
 
         }

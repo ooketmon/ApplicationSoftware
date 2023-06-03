@@ -37,9 +37,9 @@
             // Printer_1
             // 
             this.Printer_1.Image = global::WindowsFormsApp2.Properties.Resources._8F_Printer1;
-            this.Printer_1.Location = new System.Drawing.Point(563, 157);
+            this.Printer_1.Location = new System.Drawing.Point(414, 317);
             this.Printer_1.Name = "Printer_1";
-            this.Printer_1.Size = new System.Drawing.Size(279, 341);
+            this.Printer_1.Size = new System.Drawing.Size(357, 341);
             this.Printer_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Printer_1.TabIndex = 1;
             this.Printer_1.TabStop = false;
@@ -48,6 +48,8 @@
             // lab1
             // 
             this.lab1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lab1.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.lab_1;
+            this.lab1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lab1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lab1.Location = new System.Drawing.Point(0, 0);
             this.lab1.Name = "lab1";

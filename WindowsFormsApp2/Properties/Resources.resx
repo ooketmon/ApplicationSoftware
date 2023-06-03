@@ -406,7 +406,37 @@
   <data name="lecture_room_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\lecture-room-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+<<<<<<< HEAD
   <data name="IMG_0874" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Floor1\IMG_0874.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+=======
+  <data name="department_office" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\lab,office\department_office.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMG_0874" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Floor1\IMG_0874.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lab_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\lab,office\lab_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lab_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\lab,office\lab_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lab_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\lab,office\lab_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lab_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\lab,office\lab_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_8F_bookcase" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clue\8F_bookcase.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_8F_lab2PC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clue\8F_lab2PC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_8F_locecase4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clue\8F_locecase4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+>>>>>>> 791256f5d9e92b193cb68c9c8ec92481883244fe
 </root>

@@ -24,6 +24,13 @@ namespace WindowsFormsApp2.UDC
             Printer_2.Parent = lab2;
             this.controller = controller;
 
+<<<<<<< HEAD
+=======
+            labPC_2.BackColor = Color.Transparent;
+            labPC_2.Parent = lab2;
+
+            this.KeyDown += Inventory_KeyDown; // 이벤트 핸들러 등록
+>>>>>>> 791256f5d9e92b193cb68c9c8ec92481883244fe
         }
         public void labPC2_Click(object sender, EventArgs e) 
         { 
