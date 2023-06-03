@@ -28,47 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.test_3 = new System.Windows.Forms.PictureBox();
+            this.room_lab_3 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.test_3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.room_lab_3)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // test_3
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1200, 800);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.test_3.Image = global::WindowsFormsApp2.Properties.Resources._8F_bookcase;
+            this.test_3.Location = new System.Drawing.Point(300, 184);
+            this.test_3.Name = "test_3";
+            this.test_3.Size = new System.Drawing.Size(107, 259);
+            this.test_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.test_3.TabIndex = 1;
+            this.test_3.TabStop = false;
+            this.test_3.Click += new System.EventHandler(this.Test3_Click);
             // 
-            // pictureBox2
+            // room_lab_3
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(462, 175);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.room_lab_3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.room_lab_3.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.lab_3;
+            this.room_lab_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.room_lab_3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.room_lab_3.Location = new System.Drawing.Point(0, 0);
+            this.room_lab_3.Name = "room_lab_3";
+            this.room_lab_3.Size = new System.Drawing.Size(1200, 800);
+            this.room_lab_3.TabIndex = 0;
+            this.room_lab_3.TabStop = false;
             // 
             // Room_lab3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.test_3);
+            this.Controls.Add(this.room_lab_3);
             this.Name = "Room_lab3";
             this.Size = new System.Drawing.Size(1200, 800);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.test_3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.room_lab_3)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox room_lab_3;
+        private System.Windows.Forms.PictureBox test_3;
     }
 }

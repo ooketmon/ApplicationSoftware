@@ -28,60 +28,65 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.npc_sleep = new System.Windows.Forms.PictureBox();
+            this.cardkey_3 = new System.Windows.Forms.PictureBox();
+            this.room_sofa = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.npc_sleep)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardkey_3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.room_sofa)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // npc_sleep
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1200, 800);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.npc_sleep.Location = new System.Drawing.Point(395, 323);
+            this.npc_sleep.Name = "npc_sleep";
+            this.npc_sleep.Size = new System.Drawing.Size(281, 74);
+            this.npc_sleep.TabIndex = 2;
+            this.npc_sleep.TabStop = false;
             // 
-            // pictureBox2
+            // cardkey_3
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(371, 357);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.cardkey_3.Image = global::WindowsFormsApp2.Properties.Resources._3_Cardkey;
+            this.cardkey_3.Location = new System.Drawing.Point(1086, 497);
+            this.cardkey_3.Name = "cardkey_3";
+            this.cardkey_3.Size = new System.Drawing.Size(66, 56);
+            this.cardkey_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cardkey_3.TabIndex = 1;
+            this.cardkey_3.TabStop = false;
+            this.cardkey_3.Click += new System.EventHandler(this.Cardkey3_Click);
             // 
-            // pictureBox3
+            // room_sofa
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(550, 375);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
+            this.room_sofa.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.room_sofa.BackgroundImage = global::WindowsFormsApp2.Properties.Resources._3F_meeting_room_2;
+            this.room_sofa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.room_sofa.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.room_sofa.Location = new System.Drawing.Point(0, 0);
+            this.room_sofa.Name = "room_sofa";
+            this.room_sofa.Size = new System.Drawing.Size(1200, 800);
+            this.room_sofa.TabIndex = 0;
+            this.room_sofa.TabStop = false;
             // 
             // Room_StartupClub3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.npc_sleep);
+            this.Controls.Add(this.cardkey_3);
+            this.Controls.Add(this.room_sofa);
             this.Name = "Room_StartupClub3";
             this.Size = new System.Drawing.Size(1200, 800);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.npc_sleep)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardkey_3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.room_sofa)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox room_sofa;
+        private System.Windows.Forms.PictureBox cardkey_3;
+        private System.Windows.Forms.PictureBox npc_sleep;
     }
 }

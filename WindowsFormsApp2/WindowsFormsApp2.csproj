@@ -381,6 +381,7 @@
     <None Include="resources\IMG_0793.PNG" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="resources\practice-room-2.png" />
     <None Include="resources\SmartSelectImage_2023-05-29-17-08-29 1.png" />
     <None Include="resources\SmartSelectImage_2023-05-29-16-52-30.png" />
     <None Include="resources\tri.png" />
@@ -416,6 +417,15 @@
     <None Include="resources\Elevator\IMG_0838.PNG" />
     <None Include="resources\Elevator\IMG_0839.PNG" />
     <None Include="resources\20230529_122153.jpg" />
+    <None Include="resources\clue\2F_PC2.png" />
+    <None Include="resources\codingRoom.png" />
+    <None Include="resources\3F-meeting-room-2.png" />
+    <None Include="resources\3F-meeting-room-2.png" />
+    <None Include="resources\codingRoom.png" />
+    <None Include="resources\3F-meeting-room-2.png" />
+    <None Include="resources\clue\8F_lab2PC.png" />
+    <None Include="resources\clue\8F_bookcase.png" />
+    <None Include="resources\clue\8F_locecase4.png" />
     <Content Include="resources\Floor1\IMG_0808.PNG" />
     <None Include="resources\ui\Button.png" />
     <None Include="resources\ui\ConvBack.png" />
@@ -468,6 +478,17 @@
     <None Include="resources\Floor1\IMG_0871.PNG" />
     <None Include="resources\Floor1\IMG_0872.PNG" />
     <None Include="resources\Floor1\IMG_0874.PNG" />
+    <None Include="resources\lecture-room-31.png" />
+    <None Include="resources\lecture-room.png" />
+    <None Include="resources\lecture-room-3.png" />
+    <None Include="resources\lecture-room-31.png" />
+    <None Include="resources\lecture-room.png" />
+    <None Include="resources\lecture-room-3.png" />
+    <None Include="resources\lab,office\department_office.png" />
+    <None Include="resources\lab,office\lab_1.png" />
+    <None Include="resources\lab,office\lab_2.png" />
+    <None Include="resources\lab,office\lab_3.png" />
+    <None Include="resources\lab,office\lab_4.png" />
     <Content Include="resources\Player\IMG_0809.PNG" />
     <Content Include="resources\Player\IMG_0811.PNG" />
     <Content Include="resources\Player\IMG_0812.PNG" />
