@@ -275,6 +275,13 @@ namespace WindowsFormsApp2
 
         }
 
+        public void SayNothing()
+        {
+            phase=1;
+            target.nameCharacter.Text=STUDENT_INFO.name;
+            target.text = "-";
+            target.timerReset();
+        }
         public void GuardRoom_JustEnter2()
         {
             phase++;

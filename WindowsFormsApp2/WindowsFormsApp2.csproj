@@ -85,12 +85,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="UDC\Place_Meeting.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UDC\Place_Meeting.Designer.cs">
-      <DependentUpon>Place_Meeting.cs</DependentUpon>
-    </Compile>
     <Compile Include="UDC\PosterZoomUDC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -297,9 +291,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UDC\inventory_item.resx">
       <DependentUpon>inventory_item.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UDC\Place_Meeting.resx">
-      <DependentUpon>Place_Meeting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UDC\PosterZoomUDC.resx">
       <DependentUpon>PosterZoomUDC.cs</DependentUpon>

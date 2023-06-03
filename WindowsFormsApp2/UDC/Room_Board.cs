@@ -15,14 +15,23 @@ namespace WindowsFormsApp2.UDC
     public partial class Room_Board : UserControl
     {
         bool posterClicked = false;
-
-
+        ControlConversationUDC controller = null;
 
         public Room_Board()
         {
             InitializeComponent();
             zoomPoster.Visible = false;
+            blackBack.Visible = false;
+            //black_back.Visible = false; 
+
+
+        }
+        public Room_Board(ControlConversationUDC controller)
+        {
+            InitializeComponent();
+            zoomPoster.Visible = false;
             blackBack.Visible= false;
+            this.controller=controller;
             //black_back.Visible = false; 
 
 
@@ -52,7 +61,8 @@ namespace WindowsFormsApp2.UDC
             Controls.Add(maximizedPoster);
 
             maximizedPoster.Dock = DockStyle.Fill;
-            //maximizedPoster.BringToFront;
+
+            //maximizedPoster.BringToFront();
 
         }
 
@@ -73,7 +83,7 @@ namespace WindowsFormsApp2.UDC
 
             //showBack();
             posterClicked = true;
-            Room_Board rb = new Room_Board();
+            //Room_Board rb = new Room_Board(controller);
 
             zoomPoster.Visible = true;
             zoomPoster.Image = Properties.Resources._2F_Poster1; 
@@ -83,14 +93,16 @@ namespace WindowsFormsApp2.UDC
 
             zoomPoster.SizeMode = PictureBoxSizeMode.StretchImage;
 
-            zoomPoster.Location = new Point(rb.Width / 2 - zoomPoster.Width / 2, rb.Height/2 - zoomPoster.Height / 2);
-            zoomPoster.BringToFront() ; 
+          //  zoomPoster.Location = new Point(this.Width / 2 - zoomPoster.Width / 2, this.Height/2 - zoomPoster.Height / 2);
+            zoomPoster.Top = zoomPoster.Height / 8;
+            zoomPoster.Left=this.Width / 2 - zoomPoster.Width/2;
+            controller.SecondFloorBoard1();
         }
 
         private void Poster_4_Click(object sender, EventArgs e)
         {
             posterClicked = true; 
-            Room_Board rb = new Room_Board();
+           // Room_Board rb = new Room_Board(controller);
 
             zoomPoster.Visible = true;
             zoomPoster.Image = Properties.Resources._2F_Poster4;
@@ -100,15 +112,18 @@ namespace WindowsFormsApp2.UDC
 
             zoomPoster.SizeMode = PictureBoxSizeMode.StretchImage;
 
-            zoomPoster.Location = new Point(rb.Width / 2 - zoomPoster.Width / 2, rb.Height / 2 - zoomPoster.Height / 2);
-            zoomPoster.BringToFront();
+            zoomPoster.Location = new Point(this.Width / 2 - zoomPoster.Width / 2, this.Height / 2 - zoomPoster.Height / 2);
+            //zoomPoster.Top = zoomPoster.Height / 8;
+            //zoomPoster.Left = this.Width / 2 - zoomPoster.Width / 2;
+            controller.FourthFloorBoard1();
         }
 
         private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
         {
-            if(posterClicked = true)
+            if(posterClicked)
             {
-                zoomPoster.Visible = false; 
+                zoomPoster.Visible = false;
+                controller.SayNothing();
             }
 
         }
