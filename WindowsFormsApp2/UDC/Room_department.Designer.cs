@@ -37,9 +37,9 @@
             // papper_4
             // 
             this.papper_4.Image = global::WindowsFormsApp2.Properties.Resources._4_Papper;
-            this.papper_4.Location = new System.Drawing.Point(508, 166);
+            this.papper_4.Location = new System.Drawing.Point(869, 681);
             this.papper_4.Name = "papper_4";
-            this.papper_4.Size = new System.Drawing.Size(236, 255);
+            this.papper_4.Size = new System.Drawing.Size(42, 42);
             this.papper_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.papper_4.TabIndex = 1;
             this.papper_4.TabStop = false;
@@ -48,6 +48,7 @@
             // room_office
             // 
             this.room_office.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.room_office.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.department_office;
             this.room_office.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.room_office.Dock = System.Windows.Forms.DockStyle.Fill;
             this.room_office.Location = new System.Drawing.Point(0, 0);

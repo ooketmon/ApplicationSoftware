@@ -22,27 +22,41 @@ namespace WindowsFormsApp2
             //배경 투명하게
             Papper_1.BackColor = Color.Transparent;
             Papper_1.Parent = box_papper_1;
-            Papper_1.Location = new Point(3, 10);
 
             Cardkey_3.BackColor = Color.Transparent;
             Cardkey_3.Parent = box_cardkey;
-            Cardkey_3.Location = new Point(6, 10);
 
             Papper_4.BackColor = Color.Transparent;
             Papper_4.Parent = box_papper_4;
-            Papper_4.Location = new Point(6, 10);
 
             Safecard_4.BackColor = Color.Transparent;
             Safecard_4.Parent = box_safecard;
-            Safecard_4.Location = new Point(6, 10);
 
             Key_4.BackColor = Color.Transparent;
             Key_4.Parent = box_key;
-            Key_4.Location = new Point(6, 10);
 
             Cardkey_5.BackColor = Color.Transparent;
             Cardkey_5.Parent = box_cardkey_2;
+           
+            Papper_1.Location = new Point(3, 10);
+            Cardkey_3.Location = new Point(6, 10);
+            Papper_4.Location = new Point(6, 10);
+            Safecard_4.Location = new Point(6, 10);
+            Key_4.Location = new Point(6, 10);
             Cardkey_5.Location = new Point(6, 10);
+
+            Papper_1.Size = new Size(60, 60);
+            Test_1.Size = new Size(50, 60);
+            Test_2.Size = new Size(50, 60);
+            Papper_3.Size = new Size(60, 60);
+            Cardkey_3.Size = new Size(75, 60);
+            Poster_3.Size = new Size(50, 60);
+            Test_3.Size = new Size(50, 60);
+            Papper_4.Size = new Size(60, 60);
+            Safecard_4.Size = new Size(75, 60);
+            Key_4.Size = new Size(75, 75);
+            Test_4.Size = new Size(50, 60);
+            Cardkey_5.Size = new Size(75, 60);
 
             //"Papper_1","Test_1","Test_2","Papper_3","Cardkey_3","Poster_3","Test_3","Papper_4","Safecard_4","Key_4","Test_4","Cardkey_5"
 
@@ -190,6 +204,7 @@ namespace WindowsFormsApp2
             else { Test_4.Visible = false; }
             if (inventory[11] == true) { Cardkey_5.Visible = true; }
             else { Cardkey_5.Visible = false; }
+            
         }
         private void Inventory_Load(object sender, EventArgs e)
         {
@@ -199,6 +214,11 @@ namespace WindowsFormsApp2
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void box_cardkey_Click(object sender, EventArgs e)
+        {
+
         }
     }
     

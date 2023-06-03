@@ -36,15 +36,20 @@
             // 
             // test_3
             // 
-            this.test_3.Location = new System.Drawing.Point(462, 175);
+            this.test_3.Image = global::WindowsFormsApp2.Properties.Resources._8F_bookcase;
+            this.test_3.Location = new System.Drawing.Point(300, 184);
             this.test_3.Name = "test_3";
-            this.test_3.Size = new System.Drawing.Size(100, 50);
+            this.test_3.Size = new System.Drawing.Size(107, 259);
+            this.test_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.test_3.TabIndex = 1;
             this.test_3.TabStop = false;
+            this.test_3.Click += new System.EventHandler(this.Test3_Click);
             // 
             // room_lab_3
             // 
             this.room_lab_3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.room_lab_3.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.lab_3;
+            this.room_lab_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.room_lab_3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.room_lab_3.Location = new System.Drawing.Point(0, 0);
             this.room_lab_3.Name = "room_lab_3";

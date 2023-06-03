@@ -28,19 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.clock_roma = new System.Windows.Forms.PictureBox();
-            this.clock_arabia = new System.Windows.Forms.PictureBox();
             this.lock_case = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clock_roma)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clock_arabia)).BeginInit();
+            this.clock_roma = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.lock_case)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clock_roma)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // lock_case
+            // 
+            this.lock_case.Image = global::WindowsFormsApp2.Properties.Resources._8F_locecase4;
+            this.lock_case.Location = new System.Drawing.Point(100, 284);
+            this.lock_case.Name = "lock_case";
+            this.lock_case.Size = new System.Drawing.Size(60, 139);
+            this.lock_case.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.lock_case.TabIndex = 3;
+            this.lock_case.TabStop = false;
+            // 
+            // clock_roma
+            // 
+            this.clock_roma.Location = new System.Drawing.Point(583, 82);
+            this.clock_roma.Name = "clock_roma";
+            this.clock_roma.Size = new System.Drawing.Size(137, 138);
+            this.clock_roma.TabIndex = 1;
+            this.clock_roma.TabStop = false;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pictureBox1.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.lab_4;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
@@ -48,44 +66,18 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // clock_roma
-            // 
-            this.clock_roma.Location = new System.Drawing.Point(309, 50);
-            this.clock_roma.Name = "clock_roma";
-            this.clock_roma.Size = new System.Drawing.Size(100, 50);
-            this.clock_roma.TabIndex = 1;
-            this.clock_roma.TabStop = false;
-            // 
-            // clock_arabia
-            // 
-            this.clock_arabia.Location = new System.Drawing.Point(733, 50);
-            this.clock_arabia.Name = "clock_arabia";
-            this.clock_arabia.Size = new System.Drawing.Size(100, 50);
-            this.clock_arabia.TabIndex = 2;
-            this.clock_arabia.TabStop = false;
-            // 
-            // lock_case
-            // 
-            this.lock_case.Location = new System.Drawing.Point(642, 327);
-            this.lock_case.Name = "lock_case";
-            this.lock_case.Size = new System.Drawing.Size(100, 50);
-            this.lock_case.TabIndex = 3;
-            this.lock_case.TabStop = false;
-            // 
             // Room_lab4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.lock_case);
-            this.Controls.Add(this.clock_arabia);
             this.Controls.Add(this.clock_roma);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Room_lab4";
             this.Size = new System.Drawing.Size(1200, 800);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clock_roma)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clock_arabia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lock_case)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clock_roma)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -94,7 +86,6 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox clock_roma;
-        private System.Windows.Forms.PictureBox clock_arabia;
         private System.Windows.Forms.PictureBox lock_case;
     }
 }
