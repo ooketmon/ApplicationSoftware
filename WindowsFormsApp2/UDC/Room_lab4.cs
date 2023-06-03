@@ -16,5 +16,11 @@ namespace WindowsFormsApp2.UDC
         {
             InitializeComponent();
         }
+        public void Lockcase_Click(object sender, EventArgs e)
+        {
+            //클릭할경우 그림과 함께 정답을 입력하는 udc가 뜸
+            //정답을 입력하면 시험지가 인벤토리에 생김
+        }
     }
+
 }

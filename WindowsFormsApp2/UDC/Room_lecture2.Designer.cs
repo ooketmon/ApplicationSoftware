@@ -28,60 +28,67 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.Papper_3 = new System.Windows.Forms.PictureBox();
+            this.PC_2 = new System.Windows.Forms.PictureBox();
+            this.lecture2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Papper_3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PC_2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lecture2)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // Papper_3
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1200, 800);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.Papper_3.Image = global::WindowsFormsApp2.Properties.Resources._3_Papper;
+            this.Papper_3.Location = new System.Drawing.Point(1129, 295);
+            this.Papper_3.Name = "Papper_3";
+            this.Papper_3.Size = new System.Drawing.Size(34, 35);
+            this.Papper_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Papper_3.TabIndex = 2;
+            this.Papper_3.TabStop = false;
+            this.Papper_3.Click += new System.EventHandler(this.Papper3_Click);
             // 
-            // pictureBox2
+            // PC_2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(749, 256);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(217, 172);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.PC_2.BackColor = System.Drawing.Color.Transparent;
+            this.PC_2.Image = global::WindowsFormsApp2.Properties.Resources._2F_PC2;
+            this.PC_2.Location = new System.Drawing.Point(9, 379);
+            this.PC_2.Name = "PC_2";
+            this.PC_2.Size = new System.Drawing.Size(147, 196);
+            this.PC_2.TabIndex = 1;
+            this.PC_2.TabStop = false;
             // 
-            // pictureBox3
+            // lecture2
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(209, 218);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(217, 172);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
+            this.lecture2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lecture2.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.lecture_room_3;
+            this.lecture2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.lecture2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lecture2.Location = new System.Drawing.Point(0, 0);
+            this.lecture2.Name = "lecture2";
+            this.lecture2.Size = new System.Drawing.Size(1200, 800);
+            this.lecture2.TabIndex = 0;
+            this.lecture2.TabStop = false;
             // 
             // Room_lecture2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.Papper_3);
+            this.Controls.Add(this.PC_2);
+            this.Controls.Add(this.lecture2);
             this.Name = "Room_lecture2";
             this.Size = new System.Drawing.Size(1200, 800);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Papper_3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PC_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lecture2)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox lecture2;
+        private System.Windows.Forms.PictureBox PC_2;
+        private System.Windows.Forms.PictureBox Papper_3;
     }
 }
