@@ -8,23 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp2
+namespace WindowsFormsApp2.UDC
 {
-    public partial class temp : Form
+    public partial class PosterZoomUDC : UserControl
     {
-        public temp()
+        public PosterZoomUDC()
         {
             InitializeComponent();
         }
 
-        private void room_lecture11_Load(object sender, EventArgs e)
+        public void setMainItem(Image resourceName)
         {
 
+            mainPoster.BackgroundImage = resourceName;
         }
 
-        private void temp_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
