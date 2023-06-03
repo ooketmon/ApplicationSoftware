@@ -55,42 +55,52 @@ namespace WindowsFormsApp2
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
             
             target.contentConv.Text= string.Format("이건 {0}층 게시판인 것 같다.", number_info[0]);
-            if (number_info[0] == "2")
-            {
-                Room_Board board_background = new Room_Board();
-                target.Controls.Add(board_background);
-                board_background.Dock = DockStyle.Fill;
-                board_background.SendToBack();
-                board_background.BackColor = Color.Transparent;
-                //target.BackgroundImage = Properties.Resources.s_1;
-                //target.imgCharacter.Image = Properties.Resources.player_anime_ver;
-                //target.imgCharacter.SizeMode = PictureBoxSizeMode.StretchImage;
-                target.imgCharacter.Visible = false;
-                target.imgCharBack.Visible = false;
-            }
-            else
-            {
-                target.BackgroundImage = Properties.Resources._2F_board;
-                target.imgCharacter.Image = Properties.Resources.player_anime_ver;
-                target.imgCharacter.SizeMode = PictureBoxSizeMode.StretchImage;
-            }
-        } 
 
-        public void FourthFloorBoard2()
-        {
-            phase++;
-            target.nameCharacter.Text = "게시판";
-            target.text = string.Format("실습실이 닫혀있다면 여기 말고\r\n경비실로 가시기 바랍니다.");
-            target.timerReset();
+            Room_Board board_background = new Room_Board(this);
+            var allControls = board_background.Controls;
+            if (number_info[0] == "2")//2층
+            {
+                foreach(Control c in allControls)
+                {
+                    if (c.Name == "Poster_4")
+                    {
+                        board_background.Controls.Remove(c);
+                        break;
+                    }
+                }
+            }
+            else//4층
+            {
+                foreach (Control c in allControls)
+                {
+                    if (c.Name == "Poster_1")
+                    {
+                        board_background.Controls.Remove(c);
+                        break;
+                    }
+                }
+            }
+            target.Controls.Add(board_background);
+            board_background.Dock = DockStyle.Fill;
+            board_background.SendToBack();
+            board_background.BackColor = Color.Transparent;
+            //target.BackgroundImage = Properties.Resources.s_1;
+            //target.imgCharacter.Image = Properties.Resources.player_anime_ver;
+            //target.imgCharacter.SizeMode = PictureBoxSizeMode.StretchImage;
+            target.imgCharacter.Visible = false;
+            target.imgCharBack.Visible = false;
+            
         }
 
-        public void FourthFloorBoard3()
+        public void FourthFloorBoard1()
         {
             phase++;
+            eventType += "/Poster4";
             target.nameCharacter.Text = STUDENT_INFO.name;
-            target.text = string.Format("경비 아저씨...주무시려나?");
+            target.text = string.Format("흠...경비 아저씨...주무시려나?");
             target.timerReset();
         }
+
 
 
 
@@ -221,6 +231,9 @@ namespace WindowsFormsApp2
             phase++;
             target.nameCharacter.Text = "System";
             target.text = "실습실 보안 카드를 획득했다.";
+            StaticItem.mSafekey4 = true;
+            StaticItem.inventory_set();
+            (target.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
             target.timerReset();
         }
 
@@ -243,19 +256,24 @@ namespace WindowsFormsApp2
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
             target.contentConv.Text= string.Format("여기는 {0}층 {1}호실인 것 같다.", number_info[0], number_info[1]);
             //여기 부분은 switch문이나 if문으로 서로 다른 강의실을 호출할 수도 있습니다.
-            int floor_info = Convert.ToInt32(number_info[0]);
+            int room_no_info = Convert.ToInt32(number_info[1]);
             Control room_background = null;
-            switch (floor_info)
+            switch (room_no_info)
             {
                 case 2:
                     room_background = new Room_lecture1(this);
                     break;
                 case 3:
-                    room_background=new Room_lecture2();
+                    room_background=new Room_lecture2(this);
                     break;
                 case 4:
-                    room_background=new Room_lecture3();
+                    room_background=new Room_lecture3(this);
                     break;
+                default:
+                    target.BackgroundImage = Properties.Resources.lecture_room;
+                    target.imgCharacter.Image = Properties.Resources.player_anime_ver;
+                    target.imgCharacter.SizeMode = PictureBoxSizeMode.StretchImage;
+                    return;
             }
             target.Controls.Add(room_background);
             room_background.Dock= DockStyle.Fill;
@@ -272,20 +290,30 @@ namespace WindowsFormsApp2
             target.text = string.Format("찢어진 조각을 발견했다.");
             target.timerReset();
         }
-        public void Poster1Get()
+        public void SecondFloorBoard1()
         {
             GetRidofEventSplit();
-            eventType += "/Poster1Get";
-            target.nameCharacter.Text = "System";
-            target.text = string.Format("2층 포스터를 발견했다.");
+            eventType += "/Poster1";
+            target.nameCharacter.Text = STUDENT_INFO.name;
+            target.text = string.Format("흠...누가 포스터를 찢은거야?");
             target.timerReset();
         }
 
-        public void Poster2Get()
+        public void Poster3Get1()
         {
-            eventType += "/Poster2Get";
+            eventType += "/Poster3Get";
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
-            target.text = string.Format("홍보 게시물이 여기 있네.\r\n숫자가 강조된 부분이 신경쓰이는 걸?");
+            target.text = string.Format("강의실에 포스터가 있네? 뭐지?");
+            target.timerReset();
+        }
+
+        public void Poster2Get2()
+        {
+            target.nameCharacter.Text = "System";
+            StaticItem.mPoster3 = true;
+            StaticItem.inventory_set();
+            (target.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
+            target.text = string.Format("연구실 홍보 포스터를 발견했다.");
             target.timerReset();
         }
         public void LectureComputer()
@@ -533,9 +561,10 @@ namespace WindowsFormsApp2
             }
             if (eventType.StartsWith("board"))
             {
+                string[] event_split = eventType.Split('/');
                 string number_only=eventType.Substring(5);
                 string[] number_info=number_only.Split('_');
-                if (number_info[0] == "2")
+                if (number_info[0] == "2")//2층
                 {
                     Floor2UDC tmp = new Floor2UDC();
                     Control player = null;
@@ -550,33 +579,26 @@ namespace WindowsFormsApp2
                     player.Left = board.Left + 50;
                     player.Top = board.Top;
                     (target.Parent as InitMenu).ConvComeback(tmp);
+
                 }
-                else
+                else//4층
                 {
-                    switch (phase)
-                    {
-                        case 1:
-                            FourthFloorBoard2();
-                            return;
-                        case 2:
-                            FourthFloorBoard3();
-                            return;
-                        default:
-                            Floor4UDC tmp = new Floor4UDC();
-                            Control player = null;
-                            Control board = null;
-                            foreach (Control c in tmp.Controls)
-                            {
-                                if (c.Name == "player")
-                                    player = c;
-                                if (c.Name == eventType)
-                                    board = c;
-                            }
-                            player.Left = board.Left;
-                            player.Top = board.Top - 50;
-                            (target.Parent as InitMenu).ConvComeback(tmp);
-                            return;
-                    }
+
+                        Floor4UDC tmp = new Floor4UDC();
+                        Control player = null;
+                        Control board = null;
+                        foreach (Control c in tmp.Controls)
+                        {
+                            if (c.Name == "player")
+                                player = c;
+                            if (c.Name == eventType)
+                                board = c;
+                        }
+                        player.Left = board.Left;
+                        player.Top = board.Top - 50;
+                        (target.Parent as InitMenu).ConvComeback(tmp);
+                        return;
+                    
                 }
             }
             if (eventType.StartsWith("guardroom"))
@@ -607,9 +629,6 @@ namespace WindowsFormsApp2
                             GuardRoom_GetPracticeRoomKey3();
                             return;
                         case 3:
-                            StaticItem.mSafekey4 = true;
-                            StaticItem.inventory_set();
-                            (target.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
                             GuardRoom_GetPracticeRoomKey4();
                             return;
                         default:

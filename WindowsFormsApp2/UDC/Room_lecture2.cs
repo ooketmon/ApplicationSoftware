@@ -14,14 +14,17 @@ namespace WindowsFormsApp2.UDC
 {
     public partial class Room_lecture2 : UserControl
     {
-        public Room_lecture2()
+
+        ControlConversationUDC controller = null;
+        public Room_lecture2(ControlConversationUDC controller)
         {
             InitializeComponent();
 
             PC_2.BackColor = Color.Transparent;
             PC_2.Parent = lecture2;
 
-            this.KeyDown += Inventory_KeyDown; // 이벤트 핸들러 등록
+            this.controller = controller;
+
         }
 
         public void Papper3_Click(object sender, EventArgs e)
@@ -30,6 +33,7 @@ namespace WindowsFormsApp2.UDC
             mPapper3 = true;
             inventory_set();
             Papper_3.Visible = false;
+            (this.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
         }
 
         public void PC2_Click(object sender, EventArgs e)
@@ -39,22 +43,9 @@ namespace WindowsFormsApp2.UDC
         }
 
 
-        private void Inventory_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.I)
-            {
-                ShowInventory();
-            }
-        }
 
-        private void ShowInventory()
-        {
-            // 호출할 폼의 인스턴스 생성
-            Inventory inventory = new Inventory();
 
-            // 폼을 보여줌
-            inventory.ShowDialog();
-        }
+
 
     }
 }

@@ -46,6 +46,7 @@
             this.Poster_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Poster_1.TabIndex = 2;
             this.Poster_1.TabStop = false;
+            this.Poster_1.Click += new System.EventHandler(this.Poster_1_Click);
             // 
             // Poster_4
             // 
@@ -56,6 +57,7 @@
             this.Poster_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Poster_4.TabIndex = 1;
             this.Poster_4.TabStop = false;
+            this.Poster_4.Click += new System.EventHandler(this.Poster_4_Click);
             // 
             // pictureBox1
             // 

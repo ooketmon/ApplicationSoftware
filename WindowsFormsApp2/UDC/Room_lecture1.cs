@@ -16,16 +16,6 @@ namespace WindowsFormsApp2
     {
         ControlConversationUDC controller=null;
 
-        public Room_lecture1()
-        {
-            InitializeComponent();
-
-            Papper_1.BackColor = Color.Transparent;
-            Papper_1.Parent = lecture1;
-
-            //this.KeyDown += Inventory_KeyDown; // 이벤트 핸들러 등록
-        }
-
         public Room_lecture1(ControlConversationUDC ctrl)
         {
             InitializeComponent();
@@ -41,33 +31,11 @@ namespace WindowsFormsApp2
             mPapper1 = true;
             inventory_set();
             Papper_1.Visible = false;
-            foreach (Form f in Application.OpenForms)
-            {
-                if (f.GetType() == typeof(Inventory))
-                {
-                    (f as Inventory).Inventory_ItemVisibility_Check();
-                }
-            }
+            (this.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
             controller.Papper1Get();
             
         }
 
-        private void Inventory_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.I)
-            {
-                ShowInventory();
-            }
-        }
-
-        private void ShowInventory()
-        {
-            // 호출할 폼의 인스턴스 생성
-            Inventory inventory = new Inventory();
-
-            // 폼을 보여줌
-            inventory.ShowDialog();
-        }
 
 
         private void Room_lecture1_Load(object sender, EventArgs e)

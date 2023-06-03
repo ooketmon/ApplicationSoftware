@@ -42,10 +42,10 @@
             this.pictureBox32 = new System.Windows.Forms.PictureBox();
             this.pictureBox24 = new System.Windows.Forms.PictureBox();
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
-            this.room3_4 = new System.Windows.Forms.PictureBox();
-            this.room3_1 = new System.Windows.Forms.PictureBox();
-            this.room3_2 = new System.Windows.Forms.PictureBox();
-            this.room3_3 = new System.Windows.Forms.PictureBox();
+            this.practice3_4 = new System.Windows.Forms.PictureBox();
+            this.practice3_1 = new System.Windows.Forms.PictureBox();
+            this.practice3_2 = new System.Windows.Forms.PictureBox();
+            this.practice3_3 = new System.Windows.Forms.PictureBox();
             this.pictureBox40 = new System.Windows.Forms.PictureBox();
             this.pictureBox39 = new System.Windows.Forms.PictureBox();
             this.elevator = new System.Windows.Forms.PictureBox();
@@ -88,10 +88,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.room3_4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.room3_1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.room3_2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.room3_3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.practice3_4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.practice3_1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.practice3_2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.practice3_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elevator)).BeginInit();
@@ -254,45 +254,45 @@
             this.pictureBox23.Tag = "lock";
             this.pictureBox23.Visible = false;
             // 
-            // room3_4
+            // practice3_4
             // 
-            this.room3_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.room3_4.Location = new System.Drawing.Point(285, 505);
-            this.room3_4.Name = "room3_4";
-            this.room3_4.Size = new System.Drawing.Size(60, 65);
-            this.room3_4.TabIndex = 140;
-            this.room3_4.TabStop = false;
-            this.room3_4.Visible = false;
+            this.practice3_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.practice3_4.Location = new System.Drawing.Point(285, 505);
+            this.practice3_4.Name = "practice3_4";
+            this.practice3_4.Size = new System.Drawing.Size(60, 65);
+            this.practice3_4.TabIndex = 140;
+            this.practice3_4.TabStop = false;
+            this.practice3_4.Visible = false;
             // 
-            // room3_1
+            // practice3_1
             // 
-            this.room3_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.room3_1.Location = new System.Drawing.Point(855, 505);
-            this.room3_1.Name = "room3_1";
-            this.room3_1.Size = new System.Drawing.Size(60, 65);
-            this.room3_1.TabIndex = 139;
-            this.room3_1.TabStop = false;
-            this.room3_1.Visible = false;
+            this.practice3_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.practice3_1.Location = new System.Drawing.Point(855, 505);
+            this.practice3_1.Name = "practice3_1";
+            this.practice3_1.Size = new System.Drawing.Size(60, 65);
+            this.practice3_1.TabIndex = 139;
+            this.practice3_1.TabStop = false;
+            this.practice3_1.Visible = false;
             // 
-            // room3_2
+            // practice3_2
             // 
-            this.room3_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.room3_2.Location = new System.Drawing.Point(615, 505);
-            this.room3_2.Name = "room3_2";
-            this.room3_2.Size = new System.Drawing.Size(60, 65);
-            this.room3_2.TabIndex = 138;
-            this.room3_2.TabStop = false;
-            this.room3_2.Visible = false;
+            this.practice3_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.practice3_2.Location = new System.Drawing.Point(615, 505);
+            this.practice3_2.Name = "practice3_2";
+            this.practice3_2.Size = new System.Drawing.Size(60, 65);
+            this.practice3_2.TabIndex = 138;
+            this.practice3_2.TabStop = false;
+            this.practice3_2.Visible = false;
             // 
-            // room3_3
+            // practice3_3
             // 
-            this.room3_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.room3_3.Location = new System.Drawing.Point(525, 505);
-            this.room3_3.Name = "room3_3";
-            this.room3_3.Size = new System.Drawing.Size(60, 65);
-            this.room3_3.TabIndex = 135;
-            this.room3_3.TabStop = false;
-            this.room3_3.Visible = false;
+            this.practice3_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.practice3_3.Location = new System.Drawing.Point(525, 505);
+            this.practice3_3.Name = "practice3_3";
+            this.practice3_3.Size = new System.Drawing.Size(60, 65);
+            this.practice3_3.TabIndex = 135;
+            this.practice3_3.TabStop = false;
+            this.practice3_3.Visible = false;
             // 
             // pictureBox40
             // 
@@ -608,10 +608,10 @@
             this.Controls.Add(this.pictureBox32);
             this.Controls.Add(this.pictureBox24);
             this.Controls.Add(this.pictureBox23);
-            this.Controls.Add(this.room3_4);
-            this.Controls.Add(this.room3_1);
-            this.Controls.Add(this.room3_2);
-            this.Controls.Add(this.room3_3);
+            this.Controls.Add(this.practice3_4);
+            this.Controls.Add(this.practice3_1);
+            this.Controls.Add(this.practice3_2);
+            this.Controls.Add(this.practice3_3);
             this.Controls.Add(this.pictureBox40);
             this.Controls.Add(this.pictureBox39);
             this.Controls.Add(this.elevator);
@@ -662,10 +662,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.room3_4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.room3_1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.room3_2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.room3_3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.practice3_4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.practice3_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.practice3_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.practice3_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elevator)).EndInit();
@@ -729,10 +729,10 @@
         private System.Windows.Forms.PictureBox elevator;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox room3_3;
-        private System.Windows.Forms.PictureBox room3_2;
-        private System.Windows.Forms.PictureBox room3_1;
-        private System.Windows.Forms.PictureBox room3_4;
+        private System.Windows.Forms.PictureBox practice3_3;
+        private System.Windows.Forms.PictureBox practice3_2;
+        private System.Windows.Forms.PictureBox practice3_1;
+        private System.Windows.Forms.PictureBox practice3_4;
         private System.Windows.Forms.PictureBox pictureBox23;
         private System.Windows.Forms.PictureBox pictureBox24;
         private System.Windows.Forms.PictureBox pictureBox32;

@@ -14,14 +14,15 @@ namespace WindowsFormsApp2.UDC
 {
     public partial class Room_practice4 : UserControl
     {
-        public Room_practice4()
+
+        ControlConversationUDC controller = null;
+        public Room_practice4(ControlConversationUDC controller)
         {
             InitializeComponent();
 
             key_4.BackColor = Color.Transparent;
             key_4.Parent = room_practice_4;
-
-            this.KeyDown += Inventory_KeyDown; // 이벤트 핸들러 등록
+            this.controller = controller;
         }
 
         public void Key4_Click(object sender, EventArgs e)
@@ -30,23 +31,8 @@ namespace WindowsFormsApp2.UDC
             mKey4 = true;
             inventory_set();
             key_4.Visible = false;
+            (this.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
         }
 
-        private void Inventory_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.I)
-            {
-                ShowInventory();
-            }
-        }
-
-        private void ShowInventory()
-        {
-            // 호출할 폼의 인스턴스 생성
-            Inventory inventory = new Inventory();
-
-            // 폼을 보여줌
-            inventory.ShowDialog();
-        }
     }
 }

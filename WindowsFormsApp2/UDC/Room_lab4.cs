@@ -12,9 +12,12 @@ namespace WindowsFormsApp2.UDC
 {
     public partial class Room_lab4 : UserControl
     {
-        public Room_lab4()
+
+        ControlConversationUDC controller = null;
+        public Room_lab4(ControlConversationUDC controller)
         {
             InitializeComponent();
+            this.controller = controller;
         }
         public void Lockcase_Click(object sender, EventArgs e)
         {

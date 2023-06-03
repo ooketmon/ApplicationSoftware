@@ -14,14 +14,16 @@ namespace WindowsFormsApp2.UDC
 {
     public partial class Room_lab2 : UserControl
     {
-        public Room_lab2()
+
+        ControlConversationUDC controller = null;
+        public Room_lab2(ControlConversationUDC controller)
         {
             InitializeComponent();
 
             Printer_2.BackColor = Color.Transparent;
             Printer_2.Parent = lab2;
+            this.controller = controller;
 
-            this.KeyDown += Inventory_KeyDown; // 이벤트 핸들러 등록
         }
         public void labPC2_Click(object sender, EventArgs e) 
         { 
@@ -37,23 +39,8 @@ namespace WindowsFormsApp2.UDC
             // PC에서 button을 클릭한 후에 실행이 되도록
             mTest1 = true;
             inventory_set();
+            (this.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
         }
 
-        private void Inventory_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.I)
-            {
-                ShowInventory();
-            }
-        }
-
-        private void ShowInventory()
-        {
-            // 호출할 폼의 인스턴스 생성
-            Inventory inventory = new Inventory();
-
-            // 폼을 보여줌
-            inventory.ShowDialog();
-        }
     }
 }

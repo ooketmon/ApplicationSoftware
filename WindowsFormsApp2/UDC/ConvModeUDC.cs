@@ -124,6 +124,8 @@ namespace WindowsFormsApp2.UDC
             {
                 controller.firstFloorNPC_Init(where_event_occur);
             }
+
+
             System.Drawing.Text.PrivateFontCollection privateFonts = new System.Drawing.Text.PrivateFontCollection();
             privateFonts.AddFontFile("./resources/Mabinogi_Classic_TTF.ttf"); // 마비노기 옛체 
             privateFonts.AddFontFile("./resources/NeoDunggeunmoPro-Regular.ttf"); // 둥근모
