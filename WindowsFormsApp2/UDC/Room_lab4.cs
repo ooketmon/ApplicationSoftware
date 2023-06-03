@@ -15,11 +15,25 @@ namespace WindowsFormsApp2.UDC
         public Room_lab4()
         {
             InitializeComponent();
+            pictureBox2.Visible = false; 
+                        lock_case.BringToFront();
         }
         public void Lockcase_Click(object sender, EventArgs e)
         {
             //클릭할경우 그림과 함께 정답을 입력하는 udc가 뜸
             //정답을 입력하면 시험지가 인벤토리에 생김
+        }
+
+        private void lock_case_Click(object sender, EventArgs e)
+        {
+            //클릭시 비밀번호가 적힌 컴퓨터 화면과 입력 창이 뜨도록
+            //정답을 맞출경우 코드가 적힌 화면이 등장함
+
+            DoorLockUDC dl = new DoorLockUDC();
+            dl.Dock = DockStyle.Fill;
+            this.Controls.Add(dl);
+
+            pictureBox2.Visible = true;
         }
     }
 

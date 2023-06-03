@@ -19,6 +19,11 @@ namespace WindowsFormsApp2
             Application.Run(new temp());
             //Application.Run(new InitMenu());
             
+
+            //Application.Run(new temp());
+            //Application.Run(new InitMenu());
+            Application.Run(new test());
+
         }
     }
 }

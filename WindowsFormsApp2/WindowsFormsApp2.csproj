@@ -79,6 +79,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="UDC\ComputerPasswordInput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UDC\ComputerPasswordInput.Designer.cs">
+      <DependentUpon>ComputerPasswordInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UDC\DoorLockUDC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UDC\DoorLockUDC.Designer.cs">
+      <DependentUpon>DoorLockUDC.cs</DependentUpon>
+    </Compile>
     <Compile Include="UDC\Place_Meeting.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -271,6 +283,9 @@
     <EmbeddedResource Include="UDC\ConvModeUDC.resx">
       <DependentUpon>ConvModeUDC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UDC\ComputerPasswordInput.resx">
+      <DependentUpon>ComputerPasswordInput.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UDC\ElevatorChoiceUDC.resx">
       <DependentUpon>ElevatorChoiceUDC.cs</DependentUpon>
     </EmbeddedResource>
@@ -282,6 +297,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UDC\inventory_item.resx">
       <DependentUpon>inventory_item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UDC\DoorLockUDC.resx">
+      <DependentUpon>DoorLockUDC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UDC\Place_Meeting.resx">
       <DependentUpon>Place_Meeting.cs</DependentUpon>
