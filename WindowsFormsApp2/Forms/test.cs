@@ -8,21 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp2
+namespace WindowsFormsApp2.Forms
 {
-    public partial class temp : Form
+    public partial class test : Form
     {
-        public temp()
+        public test()
         {
             InitializeComponent();
         }
 
-        private void room_lecture11_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void temp_Load(object sender, EventArgs e)
+        private void Panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

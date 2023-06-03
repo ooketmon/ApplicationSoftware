@@ -32,9 +32,12 @@
             this.Poster_1 = new System.Windows.Forms.PictureBox();
             this.Poster_4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.zoomPoster = new System.Windows.Forms.PictureBox();
+            this.blackBack = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.Poster_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Poster_4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomPoster)).BeginInit();
             this.SuspendLayout();
             // 
             // Poster_1
@@ -46,6 +49,7 @@
             this.Poster_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Poster_1.TabIndex = 2;
             this.Poster_1.TabStop = false;
+            this.Poster_1.Click += new System.EventHandler(this.Poster_1_Click);
             // 
             // Poster_4
             // 
@@ -56,6 +60,7 @@
             this.Poster_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Poster_4.TabIndex = 1;
             this.Poster_4.TabStop = false;
+            this.Poster_4.Click += new System.EventHandler(this.Poster_4_Click);
             // 
             // pictureBox1
             // 
@@ -68,11 +73,30 @@
             this.pictureBox1.Size = new System.Drawing.Size(1200, 800);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseClick);
+            // 
+            // zoomPoster
+            // 
+            this.zoomPoster.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.zoomPoster.Location = new System.Drawing.Point(0, 0);
+            this.zoomPoster.Name = "zoomPoster";
+            this.zoomPoster.Size = new System.Drawing.Size(100, 50);
+            this.zoomPoster.TabIndex = 4;
+            this.zoomPoster.TabStop = false;
+            // 
+            // blackBack
+            // 
+            this.blackBack.Location = new System.Drawing.Point(-19, -19);
+            this.blackBack.Name = "blackBack";
+            this.blackBack.Size = new System.Drawing.Size(200, 100);
+            this.blackBack.TabIndex = 5;
             // 
             // Room_Board
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.blackBack);
+            this.Controls.Add(this.zoomPoster);
             this.Controls.Add(this.Poster_1);
             this.Controls.Add(this.Poster_4);
             this.Controls.Add(this.pictureBox1);
@@ -81,6 +105,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Poster_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Poster_4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomPoster)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -90,5 +115,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox Poster_4;
         private System.Windows.Forms.PictureBox Poster_1;
+        private System.Windows.Forms.PictureBox zoomPoster;
+        private System.Windows.Forms.Panel blackBack;
     }
 }
