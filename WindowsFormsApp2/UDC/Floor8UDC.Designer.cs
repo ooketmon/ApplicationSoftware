@@ -57,23 +57,23 @@
             this.pictureBox53 = new System.Windows.Forms.PictureBox();
             this.pictureBox52 = new System.Windows.Forms.PictureBox();
             this.pictureBox50 = new System.Windows.Forms.PictureBox();
-            this.lab6 = new System.Windows.Forms.PictureBox();
+            this.pic1 = new System.Windows.Forms.PictureBox();
             this.pictureBox45 = new System.Windows.Forms.PictureBox();
-            this.lab5 = new System.Windows.Forms.PictureBox();
+            this.pic2 = new System.Windows.Forms.PictureBox();
             this.pictureBox46 = new System.Windows.Forms.PictureBox();
             this.pictureBox47 = new System.Windows.Forms.PictureBox();
-            this.lab4 = new System.Windows.Forms.PictureBox();
+            this.lab_4 = new System.Windows.Forms.PictureBox();
             this.pictureBox44 = new System.Windows.Forms.PictureBox();
             this.pictureBox43 = new System.Windows.Forms.PictureBox();
             this.pictureBox42 = new System.Windows.Forms.PictureBox();
             this.pictureBox41 = new System.Windows.Forms.PictureBox();
             this.pictureBox38 = new System.Windows.Forms.PictureBox();
-            this.lab3 = new System.Windows.Forms.PictureBox();
+            this.lab_3 = new System.Windows.Forms.PictureBox();
             this.pictureBox37 = new System.Windows.Forms.PictureBox();
-            this.lab2 = new System.Windows.Forms.PictureBox();
+            this.lab_2 = new System.Windows.Forms.PictureBox();
             this.pictureBox34 = new System.Windows.Forms.PictureBox();
             this.pictureBox33 = new System.Windows.Forms.PictureBox();
-            this.lab1 = new System.Windows.Forms.PictureBox();
+            this.lab_1 = new System.Windows.Forms.PictureBox();
             this.pictureBox40 = new System.Windows.Forms.PictureBox();
             this.pictureBox39 = new System.Windows.Forms.PictureBox();
             this.elevator = new System.Windows.Forms.PictureBox();
@@ -137,23 +137,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lab6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lab5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lab4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lab_4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lab3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lab_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lab2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lab_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lab1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lab_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elevator)).BeginInit();
@@ -465,15 +465,15 @@
             this.pictureBox50.TabStop = false;
             this.pictureBox50.Tag = "obstacle";
             // 
-            // lab6
+            // pic1
             // 
-            this.lab6.Location = new System.Drawing.Point(975, 290);
-            this.lab6.Name = "lab6";
-            this.lab6.Size = new System.Drawing.Size(60, 65);
-            this.lab6.TabIndex = 147;
-            this.lab6.TabStop = false;
-            this.lab6.Tag = "labenter";
-            this.lab6.Visible = false;
+            this.pic1.Location = new System.Drawing.Point(975, 290);
+            this.pic1.Name = "pic1";
+            this.pic1.Size = new System.Drawing.Size(60, 65);
+            this.pic1.TabIndex = 147;
+            this.pic1.TabStop = false;
+            this.pic1.Tag = "labenter";
+            this.pic1.Visible = false;
             // 
             // pictureBox45
             // 
@@ -485,15 +485,15 @@
             this.pictureBox45.TabStop = false;
             this.pictureBox45.Tag = "obstacle";
             // 
-            // lab5
+            // pic2
             // 
-            this.lab5.Location = new System.Drawing.Point(975, 185);
-            this.lab5.Name = "lab5";
-            this.lab5.Size = new System.Drawing.Size(60, 65);
-            this.lab5.TabIndex = 145;
-            this.lab5.TabStop = false;
-            this.lab5.Tag = "labenter";
-            this.lab5.Visible = false;
+            this.pic2.Location = new System.Drawing.Point(975, 185);
+            this.pic2.Name = "pic2";
+            this.pic2.Size = new System.Drawing.Size(60, 65);
+            this.pic2.TabIndex = 145;
+            this.pic2.TabStop = false;
+            this.pic2.Tag = "labenter";
+            this.pic2.Visible = false;
             // 
             // pictureBox46
             // 
@@ -515,15 +515,15 @@
             this.pictureBox47.TabStop = false;
             this.pictureBox47.Tag = "obstacle";
             // 
-            // lab4
+            // lab_4
             // 
-            this.lab4.Location = new System.Drawing.Point(975, 80);
-            this.lab4.Name = "lab4";
-            this.lab4.Size = new System.Drawing.Size(60, 65);
-            this.lab4.TabIndex = 142;
-            this.lab4.TabStop = false;
-            this.lab4.Tag = "labenter";
-            this.lab4.Visible = false;
+            this.lab_4.Location = new System.Drawing.Point(975, 80);
+            this.lab_4.Name = "lab_4";
+            this.lab_4.Size = new System.Drawing.Size(60, 65);
+            this.lab_4.TabIndex = 142;
+            this.lab_4.TabStop = false;
+            this.lab_4.Tag = "labenter";
+            this.lab_4.Visible = false;
             // 
             // pictureBox44
             // 
@@ -573,15 +573,15 @@
             this.pictureBox38.TabStop = false;
             this.pictureBox38.Visible = false;
             // 
-            // lab3
+            // lab_3
             // 
-            this.lab3.Location = new System.Drawing.Point(165, 290);
-            this.lab3.Name = "lab3";
-            this.lab3.Size = new System.Drawing.Size(60, 65);
-            this.lab3.TabIndex = 135;
-            this.lab3.TabStop = false;
-            this.lab3.Tag = "labenter";
-            this.lab3.Visible = false;
+            this.lab_3.Location = new System.Drawing.Point(165, 290);
+            this.lab_3.Name = "lab_3";
+            this.lab_3.Size = new System.Drawing.Size(60, 65);
+            this.lab_3.TabIndex = 135;
+            this.lab_3.TabStop = false;
+            this.lab_3.Tag = "labenter";
+            this.lab_3.Visible = false;
             // 
             // pictureBox37
             // 
@@ -593,15 +593,15 @@
             this.pictureBox37.TabStop = false;
             this.pictureBox37.Tag = "obstacle";
             // 
-            // lab2
+            // lab_2
             // 
-            this.lab2.Location = new System.Drawing.Point(165, 185);
-            this.lab2.Name = "lab2";
-            this.lab2.Size = new System.Drawing.Size(60, 65);
-            this.lab2.TabIndex = 133;
-            this.lab2.TabStop = false;
-            this.lab2.Tag = "labenter";
-            this.lab2.Visible = false;
+            this.lab_2.Location = new System.Drawing.Point(165, 185);
+            this.lab_2.Name = "lab_2";
+            this.lab_2.Size = new System.Drawing.Size(60, 65);
+            this.lab_2.TabIndex = 133;
+            this.lab_2.TabStop = false;
+            this.lab_2.Tag = "labenter";
+            this.lab_2.Visible = false;
             // 
             // pictureBox34
             // 
@@ -623,15 +623,15 @@
             this.pictureBox33.TabStop = false;
             this.pictureBox33.Tag = "obstacle";
             // 
-            // lab1
+            // lab_1
             // 
-            this.lab1.Location = new System.Drawing.Point(165, 80);
-            this.lab1.Name = "lab1";
-            this.lab1.Size = new System.Drawing.Size(60, 65);
-            this.lab1.TabIndex = 130;
-            this.lab1.TabStop = false;
-            this.lab1.Tag = "labenter";
-            this.lab1.Visible = false;
+            this.lab_1.Location = new System.Drawing.Point(165, 80);
+            this.lab_1.Name = "lab_1";
+            this.lab_1.Size = new System.Drawing.Size(60, 65);
+            this.lab_1.TabIndex = 130;
+            this.lab_1.TabStop = false;
+            this.lab_1.Tag = "labenter";
+            this.lab_1.Visible = false;
             // 
             // pictureBox40
             // 
@@ -1025,23 +1025,23 @@
             this.Controls.Add(this.pictureBox53);
             this.Controls.Add(this.pictureBox52);
             this.Controls.Add(this.pictureBox50);
-            this.Controls.Add(this.lab6);
+            this.Controls.Add(this.pic1);
             this.Controls.Add(this.pictureBox45);
-            this.Controls.Add(this.lab5);
+            this.Controls.Add(this.pic2);
             this.Controls.Add(this.pictureBox46);
             this.Controls.Add(this.pictureBox47);
-            this.Controls.Add(this.lab4);
+            this.Controls.Add(this.lab_4);
             this.Controls.Add(this.pictureBox44);
             this.Controls.Add(this.pictureBox43);
             this.Controls.Add(this.pictureBox42);
             this.Controls.Add(this.pictureBox41);
             this.Controls.Add(this.pictureBox38);
-            this.Controls.Add(this.lab3);
+            this.Controls.Add(this.lab_3);
             this.Controls.Add(this.pictureBox37);
-            this.Controls.Add(this.lab2);
+            this.Controls.Add(this.lab_2);
             this.Controls.Add(this.pictureBox34);
             this.Controls.Add(this.pictureBox33);
-            this.Controls.Add(this.lab1);
+            this.Controls.Add(this.lab_1);
             this.Controls.Add(this.pictureBox40);
             this.Controls.Add(this.pictureBox39);
             this.Controls.Add(this.elevator);
@@ -1112,23 +1112,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lab6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lab5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lab4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lab_4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lab3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lab_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lab2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lab_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lab1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lab_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elevator)).EndInit();
@@ -1205,11 +1205,11 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Timer timeFloor8;
-        private System.Windows.Forms.PictureBox lab1;
+        private System.Windows.Forms.PictureBox lab_1;
         private System.Windows.Forms.PictureBox pictureBox33;
         private System.Windows.Forms.PictureBox pictureBox34;
-        private System.Windows.Forms.PictureBox lab2;
-        private System.Windows.Forms.PictureBox lab3;
+        private System.Windows.Forms.PictureBox lab_2;
+        private System.Windows.Forms.PictureBox lab_3;
         private System.Windows.Forms.PictureBox pictureBox37;
         private System.Windows.Forms.PictureBox pictureBox38;
         private System.Windows.Forms.PictureBox pictureBox41;
@@ -1218,11 +1218,11 @@
         private System.Windows.Forms.PictureBox pictureBox44;
         private System.Windows.Forms.PictureBox pictureBox46;
         private System.Windows.Forms.PictureBox pictureBox47;
-        private System.Windows.Forms.PictureBox lab4;
+        private System.Windows.Forms.PictureBox lab_4;
         private System.Windows.Forms.PictureBox pictureBox45;
-        private System.Windows.Forms.PictureBox lab5;
+        private System.Windows.Forms.PictureBox pic2;
         private System.Windows.Forms.PictureBox pictureBox50;
-        private System.Windows.Forms.PictureBox lab6;
+        private System.Windows.Forms.PictureBox pic1;
         private System.Windows.Forms.PictureBox pictureBox52;
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.PictureBox pictureBox17;

@@ -37,8 +37,16 @@ namespace WindowsFormsApp2.UDC
             mPapper4 = true;
             inventory_set();
             papper_4.Visible = false;
-            (this.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
+            controller.Papper4Get();
+            (this.Parent.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
         }
 
+        private void Room_department_Load(object sender, EventArgs e)
+        {
+            if (mPapper4)
+            {
+                papper_4.Visible=false;
+            }
+        }
     }
 }

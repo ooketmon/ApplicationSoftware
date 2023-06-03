@@ -65,6 +65,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Room_lecture3";
             this.Size = new System.Drawing.Size(1200, 800);
+            this.Load += new System.EventHandler(this.Room_lecture3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.poster_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

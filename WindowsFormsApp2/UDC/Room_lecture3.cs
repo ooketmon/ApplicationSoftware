@@ -28,10 +28,16 @@ namespace WindowsFormsApp2.UDC
             mPoster3 = true;
             inventory_set();
             poster_3.Visible = false;
-            (this.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
+            (this.Parent.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
+            controller.Poster3Get1();
         }
 
-
-
+        private void Room_lecture3_Load(object sender, EventArgs e)
+        {
+            if (mPoster3)
+            {
+                poster_3.Visible = false;
+            }
+        }
     }
 }

@@ -32,13 +32,22 @@ namespace WindowsFormsApp2.UDC
             mCardkey3 = true;
             inventory_set();
             cardkey_3.Visible = false;
-            (this.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
+            (this.Parent.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
+            controller.SecondFloorCardKeyGet1();
         }
 
         public void Npc_Click(object sender, EventArgs e)
-        { 
+        {
             // npc 클릭할 경우 대사가 나오도록
+            controller.SecondFloorNPC1();
         }
 
+        private void Room_StartupClub3_Load(object sender, EventArgs e)
+        {
+            if (mCardkey3)
+            {
+                cardkey_3.Visible = false;
+            }
+        }
     }
 }

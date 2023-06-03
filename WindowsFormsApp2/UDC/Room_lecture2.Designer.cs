@@ -78,6 +78,7 @@
             this.Controls.Add(this.lecture2);
             this.Name = "Room_lecture2";
             this.Size = new System.Drawing.Size(1200, 800);
+            this.Load += new System.EventHandler(this.Room_lecture2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Papper_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PC_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lecture2)).EndInit();

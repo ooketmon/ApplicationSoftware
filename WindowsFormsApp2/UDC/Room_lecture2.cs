@@ -33,7 +33,8 @@ namespace WindowsFormsApp2.UDC
             mPapper3 = true;
             inventory_set();
             Papper_3.Visible = false;
-            (this.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
+            (this.Parent.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
+            controller.Papper3Get1();
         }
 
         public void PC2_Click(object sender, EventArgs e)
@@ -42,10 +43,17 @@ namespace WindowsFormsApp2.UDC
             //정답을 맞출경우 코드가 적힌 화면이 등장함
         }
 
+        private void lecture2_Click(object sender, EventArgs e)
+        {
 
+        }
 
-
-
-
+        private void Room_lecture2_Load(object sender, EventArgs e)
+        {
+            if (mPapper3)
+            {
+                Papper_3.Visible=false;
+            }
+        }
     }
 }

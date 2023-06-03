@@ -31,12 +31,10 @@ namespace WindowsFormsApp2
             mPapper1 = true;
             inventory_set();
             Papper_1.Visible = false;
-            (this.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
+            (this.Parent.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
             controller.Papper1Get();
             
         }
-
-
 
         private void Room_lecture1_Load(object sender, EventArgs e)
         {

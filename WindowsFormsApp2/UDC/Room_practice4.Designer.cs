@@ -65,6 +65,7 @@
             this.Controls.Add(this.room_practice_4);
             this.Name = "Room_practice4";
             this.Size = new System.Drawing.Size(1200, 800);
+            this.Load += new System.EventHandler(this.Room_practice4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.key_4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.room_practice_4)).EndInit();
             this.ResumeLayout(false);

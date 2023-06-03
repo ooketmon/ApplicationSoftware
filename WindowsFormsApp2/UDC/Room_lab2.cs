@@ -24,13 +24,6 @@ namespace WindowsFormsApp2.UDC
             Printer_2.Parent = lab2;
             this.controller = controller;
 
-<<<<<<< HEAD
-=======
-            labPC_2.BackColor = Color.Transparent;
-            labPC_2.Parent = lab2;
-
-            this.KeyDown += Inventory_KeyDown; // 이벤트 핸들러 등록
->>>>>>> 791256f5d9e92b193cb68c9c8ec92481883244fe
         }
         public void labPC2_Click(object sender, EventArgs e) 
         { 
@@ -44,9 +37,12 @@ namespace WindowsFormsApp2.UDC
         {
             // 단서 Printer2 함수 _ 클릭 이벤트 발생시
             // PC에서 button을 클릭한 후에 실행이 되도록
-            mTest1 = true;
-            inventory_set();
-            (this.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
+            if (!mTest2/*여기에 or 조건문 입력*/)
+            {
+                mTest2 = true;
+                inventory_set();
+                (this.Parent.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
+            }
         }
 
     }

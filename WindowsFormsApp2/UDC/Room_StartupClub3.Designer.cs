@@ -43,6 +43,7 @@
             this.npc_sleep.Size = new System.Drawing.Size(281, 74);
             this.npc_sleep.TabIndex = 2;
             this.npc_sleep.TabStop = false;
+            this.npc_sleep.Click += new System.EventHandler(this.Npc_Click);
             // 
             // cardkey_3
             // 
@@ -76,6 +77,7 @@
             this.Controls.Add(this.room_sofa);
             this.Name = "Room_StartupClub3";
             this.Size = new System.Drawing.Size(1200, 800);
+            this.Load += new System.EventHandler(this.Room_StartupClub3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.npc_sleep)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardkey_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.room_sofa)).EndInit();

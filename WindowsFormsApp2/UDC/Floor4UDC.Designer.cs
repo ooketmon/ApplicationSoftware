@@ -49,7 +49,7 @@
             this.pictureBox37 = new System.Windows.Forms.PictureBox();
             this.board4_1 = new System.Windows.Forms.PictureBox();
             this.pictureBox35 = new System.Windows.Forms.PictureBox();
-            this.room4_1 = new System.Windows.Forms.PictureBox();
+            this.department = new System.Windows.Forms.PictureBox();
             this.pictureBox32 = new System.Windows.Forms.PictureBox();
             this.pictureBox33 = new System.Windows.Forms.PictureBox();
             this.pictureBox30 = new System.Windows.Forms.PictureBox();
@@ -107,7 +107,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.board4_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.room4_1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.department)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
@@ -339,14 +339,14 @@
             this.pictureBox35.TabStop = false;
             this.pictureBox35.Tag = "obstacle";
             // 
-            // room4_1
+            // department
             // 
-            this.room4_1.Location = new System.Drawing.Point(355, 485);
-            this.room4_1.Name = "room4_1";
-            this.room4_1.Size = new System.Drawing.Size(60, 65);
-            this.room4_1.TabIndex = 138;
-            this.room4_1.TabStop = false;
-            this.room4_1.Visible = false;
+            this.department.Location = new System.Drawing.Point(355, 485);
+            this.department.Name = "department";
+            this.department.Size = new System.Drawing.Size(60, 65);
+            this.department.TabIndex = 138;
+            this.department.TabStop = false;
+            this.department.Visible = false;
             // 
             // pictureBox32
             // 
@@ -763,7 +763,7 @@
             this.Controls.Add(this.pictureBox37);
             this.Controls.Add(this.board4_1);
             this.Controls.Add(this.pictureBox35);
-            this.Controls.Add(this.room4_1);
+            this.Controls.Add(this.department);
             this.Controls.Add(this.pictureBox32);
             this.Controls.Add(this.pictureBox33);
             this.Controls.Add(this.pictureBox30);
@@ -829,7 +829,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.board4_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.room4_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.department)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
@@ -913,7 +913,7 @@
         private System.Windows.Forms.PictureBox pictureBox31;
         private System.Windows.Forms.PictureBox pictureBox32;
         private System.Windows.Forms.PictureBox pictureBox33;
-        private System.Windows.Forms.PictureBox room4_1;
+        private System.Windows.Forms.PictureBox department;
         private System.Windows.Forms.PictureBox pictureBox35;
         private System.Windows.Forms.PictureBox board4_1;
         private System.Windows.Forms.PictureBox pictureBox37;

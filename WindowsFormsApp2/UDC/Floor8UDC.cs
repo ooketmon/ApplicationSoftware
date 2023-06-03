@@ -144,7 +144,7 @@ namespace WindowsFormsApp2
                         return;
                     }
                 }
-                if (x is PictureBox && ((x.Name as string).StartsWith("room") || (x.Name as string).StartsWith("board")))
+                if (x is PictureBox && (x.Name as string).StartsWith("lab"))
                 {
                     if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest)
                     {

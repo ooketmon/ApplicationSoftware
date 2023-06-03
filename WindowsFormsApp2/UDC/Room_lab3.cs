@@ -25,8 +25,12 @@ namespace WindowsFormsApp2.UDC
         public void Test3_Click(object sender, EventArgs e)
         {
             // 단서 Printer1 함수 _ 클릭 이벤트 발생시
-            mTest3 = true;
-            inventory_set();
+            if (!mTest3)
+            {
+                mTest3 = true;
+                inventory_set();
+                (this.Parent.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
+            }
         }
     }
 }

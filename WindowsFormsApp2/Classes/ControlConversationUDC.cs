@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Drawing;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 using WindowsFormsApp2.UDC;
 
 namespace WindowsFormsApp2
@@ -43,12 +45,81 @@ namespace WindowsFormsApp2
             target.text = "그래! 시험지를 훔쳐버리자!";
             target.timerReset();
         }
-
-
+        public void Department_Init(string deptinfo)
+        {
+            eventType= deptinfo;
+            foreach (Control c in target.Controls)
+            {
+                if (c.Name == "btnSkip")
+                {
+                    c.Text = "나가기";
+                }
+            }
+            phase = 1;
+            target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
+            target.contentConv.Text = string.Format("여긴 4층 과사무실이다.");
+            Room_department dept= new Room_department(this);
+            target.Controls.Add(dept);
+            
+            dept.Top -= target.imgConvWindowBack.Height;
+            dept.SendToBack();
+            dept.BackColor = Color.Transparent;
+            target.imgCharacter.Visible = false;
+            target.imgCharBack.Visible = false;
+        }
+        public void Practice_Init(string practiceinfo)
+        {
+            eventType = practiceinfo;
+            string[] number_info = eventType.Substring(8).Split('_');
+            phase = 1;
+            target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
+            target.contentConv.Text = string.Format("여긴 {0}층 {1}실습실이다.", number_info[0], number_info[1]);
+            foreach (Control c in target.Controls)
+            {
+                if (c.Name == "btnSkip")
+                {
+                    c.Text = "나가기";
+                }
+            }
+            if (number_info[1] == "4")
+            {
+                Room_practice4 practice = new Room_practice4(this);
+                target.Controls.Add(practice);
+                practice.SendToBack();
+                practice.BackColor = Color.Transparent;
+                target.imgCharacter.Visible = false;
+                target.imgCharBack.Visible = false;
+            }
+            else
+            {
+                target.BackgroundImage = Properties.Resources.practice_room_2;
+                target.imgCharacter.Image = Properties.Resources.player_anime_ver;
+                target.imgCharacter.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+        }
+        public void MeetingPlaceInit(string placeinfo)
+        {
+            phase=1;
+            eventType = placeinfo;
+            target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
+            target.contentConv.Text = string.Format("이건 2층 만남의 장소다.");
+            Room_StartupClub3 meetingPlace = new Room_StartupClub3(this);
+            target.Controls.Add(meetingPlace);
+            meetingPlace.SendToBack();
+            meetingPlace.BackColor = Color.Transparent;
+            foreach (Control c in target.Controls)
+            {
+                if (c.Name == "btnSkip")
+                {
+                    c.Text = "나가기";
+                }
+            }
+            target.imgCharacter.Visible = false;
+            target.imgCharBack.Visible = false;
+        }
         public void BoardInit(string board_info)
         {
             eventType = board_info;
-            (target.Parent as InitMenu).havetoGoGuardRoom = true;
             phase++;
             string number_only = board_info.Substring(5);
             string[] number_info = number_only.Split('_');
@@ -95,6 +166,7 @@ namespace WindowsFormsApp2
         public void FourthFloorBoard1()
         {
             phase++;
+            (target.Parent as InitMenu).havetoGoGuardRoom = true;
             eventType += "/Poster4";
             target.nameCharacter.Text = STUDENT_INFO.name;
             target.text = string.Format("흠...경비 아저씨...주무시려나?");
@@ -110,9 +182,27 @@ namespace WindowsFormsApp2
             string number_only = lab_info.Substring(3);
             string[] number_info = number_only.Split('_');
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
-            target.contentConv.Text = string.Format("여기는 {0}층 {1}연구실인 것 같다.", number_info[0], number_info[1]);
+            target.contentConv.Text = string.Format("여기는 8층 {0}연구실인 것 같다.",  number_info[1]);
             phase++;
-
+            Control room = null;
+            switch (number_info[1])
+            {
+                case "1":
+                    room = new Room_lab1(this);
+                    break;
+                case "2":
+                    room = new Room_lab2(this);
+                    break;
+                case "3":
+                    room = new Room_lab3(this);
+                    break;
+                case "4":
+                    room = new Room_lab4(this);
+                    break;
+            }
+            target.Controls.Add(room);
+            room.SendToBack();
+            room.BackColor = Color.Transparent;
             target.imgCharacter.Visible = false;
             target.imgCharBack.Visible = false;
 
@@ -250,6 +340,7 @@ namespace WindowsFormsApp2
 
         public void RoomInit(string room_info)
         {
+            phase = 1;
             eventType = room_info;
             string number_only = room_info.Substring(4);
             string[] number_info = number_only.Split('_');
@@ -260,13 +351,13 @@ namespace WindowsFormsApp2
             Control room_background = null;
             switch (room_no_info)
             {
-                case 2:
+                case 1:
                     room_background = new Room_lecture1(this);
                     break;
-                case 3:
+                case 2:
                     room_background=new Room_lecture2(this);
                     break;
-                case 4:
+                case 3:
                     room_background=new Room_lecture3(this);
                     break;
                 default:
@@ -301,14 +392,16 @@ namespace WindowsFormsApp2
 
         public void Poster3Get1()
         {
-            eventType += "/Poster3Get";
+            phase++;
+            eventType += "/GetPoster3";
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
             target.text = string.Format("강의실에 포스터가 있네? 뭐지?");
             target.timerReset();
         }
 
-        public void Poster2Get2()
+        public void Poster3Get2()
         {
+            phase++;
             target.nameCharacter.Text = "System";
             StaticItem.mPoster3 = true;
             StaticItem.inventory_set();
@@ -325,25 +418,71 @@ namespace WindowsFormsApp2
             target.timerReset();
         }
 
-        public void SecondFloorCardKeyGet()
+        public void SecondFloorCardKeyGet1()
         {
+            foreach (Control c in target.Controls)
+            {
+                if (c.Name == "btnSkip")
+                {
+                    c.Text = "▶";
+                }
+            }
             GetRidofEventSplit();
+            phase = 2;
             eventType += "/GetSecondFloorCardKey";
             target.nameCharacter.Text = string.Format("{0}",STUDENT_INFO.name);
             target.text = string.Format("카드 키를 찾았다. 어디를 열 수 있는 걸까?");
             target.timerReset();
-        } 
+        }
 
-
-        public void SecondFloorNPC()
+        public void SecondFloorCardKeyGet2()
         {
-            GetRidofEventSplit();
-            eventType += "/GetSecondFloorCardKey";
-            target.nameCharacter.Text ="잠에 든 대학원생";
-            target.text = string.Format("…zzzZ..zZ.zZz…\r\n네 교수님, 실습실4, 연구실4 과사에 놓고 왔.. 습니 … zzZZZ.z..zZZZ…");
+            foreach (Control c in target.Controls)
+            {
+                if (c.Name == "btnSkip")
+                {
+                    c.Text = "나가기";
+                }
+            }
+            phase++;
+            target.nameCharacter.Text = "System";
+            target.text = string.Format("강의실 카드키를 얻었다.");
             target.timerReset();
         }
 
+
+
+        public void SecondFloorNPC1()
+        {
+            GetRidofEventSplit();
+            phase=2;
+            foreach (Control c in target.Controls)
+            {
+                if (c.Name == "btnSkip")
+                {
+                    c.Text = "▶";
+                }
+            }
+            eventType += "/SecondNPC";
+            target.nameCharacter.Text ="대학원생";
+            target.text = string.Format("…zzzZ..zZ.zZz…");
+            target.timerReset();
+        }
+
+        public void SecondFloorNPC2()
+        {
+            phase++;
+            foreach (Control c in target.Controls)
+            {
+                if (c.Name == "btnSkip")
+                {
+                    c.Text = "나가기";
+                }
+            }
+            target.nameCharacter.Text = "대학원생";
+            target.text = string.Format("네 교수님, 실습실4, 연구실4 과사에 놓고 왔.. 습니 …\r\nzzZZZ.z..zZZZ…");
+            target.timerReset();
+        }
 
         public void Papper3Get1()
         {
@@ -379,14 +518,7 @@ namespace WindowsFormsApp2
         {
             phase++;
             target.nameCharacter.Text = "System";
-            target.text = "쪽지를 얻었다.\r\n인벤토리에서 자세히 확인하자.";
-            foreach (Control c in target.Controls)
-            {
-                if (c.Name == "btnSkip")
-                {
-                    c.Text = "나가기";
-                }
-            }
+            target.text = "쪽지를 얻었다.\r\n인벤토리에서 확인 가능하다.";
             target.timerReset();
         }
 
@@ -478,24 +610,31 @@ namespace WindowsFormsApp2
                             case "GetPapper1":
                                 break;
                             case "GetPapper3":
-                                if (phase < 1)
+                                if (phase < 3)
                                 {
                                     Papper3Get2();
                                     return;
                                 }
-                                else { break; }
+
+                                break; 
+                                
+                            case "GetPoster3":
+                                if (phase < 3)
+                                {
+                                    Poster3Get2();
+                                    return;
+                                }
+                                break;
                                 
                         }
                     }
+                    GetRidofEventSplit();
                     string number_only = eventType.Substring(4,3);
                     string[] number_info = number_only.Split('_');
-                    int floor = Convert.ToInt32(number_info[0]);
                     Control player = null;
                     Control room = null;
-                    switch(floor)
-                    {
-                        case 2:
-                            Floor2UDC tmp1 = new Floor2UDC();
+
+                Floor2UDC tmp1 = new Floor2UDC();
                             foreach(Control c in tmp1.Controls)
                             {
                                 if (c.Name == "player")
@@ -524,38 +663,9 @@ namespace WindowsFormsApp2
                                     break;
                             }
                             (target.Parent as InitMenu).ConvComeback(tmp1);
-                            break;
-                        case 3:
-                            Floor3UDC tmp2 = new Floor3UDC();
-                            foreach (Control c in tmp2.Controls)
-                            {
-                                if (c.Name == "player")
-                                player = c;
-                                if (c.Name == eventType)
-                                room = c;
-                            }
-                            player.Left = room.Left;
-                            player.Top = room.Top-50;
-                            (target.Parent as InitMenu).ConvComeback(tmp2);
-                            break;
-                        case 4:
-                            Floor4UDC tmp3 = new Floor4UDC();
-                            foreach (Control c in tmp3.Controls)
-                            {
-                                if (c.Name == "player")
-                                     player = c;
-                                
-                                if (c.Name == eventType)
-                                    room = c;
-                            }
-                            player.Left = room.Left;
-                            player.Top = room.Top - 50;
-                            (target.Parent as InitMenu).ConvComeback(tmp3);
-                            break;
-                        case 8:
-                            break;
 
-                    }
+
+                    
                 
                 return;
             }
@@ -573,7 +683,7 @@ namespace WindowsFormsApp2
                     {
                         if (c.Name == "player")
                             player = c;
-                        if (c.Name == eventType)
+                        if (c.Name == event_split[0])
                             board = c;
                     }
                     player.Left = board.Left + 50;
@@ -591,7 +701,7 @@ namespace WindowsFormsApp2
                         {
                             if (c.Name == "player")
                                 player = c;
-                            if (c.Name == eventType)
+                            if (c.Name == event_split[0])
                                 board = c;
                         }
                         player.Left = board.Left;
@@ -682,6 +792,105 @@ namespace WindowsFormsApp2
                 player.Top = npc.Top;
                 (target.Parent as InitMenu).ConvComeback(tmp);
                 return;
+            }
+
+            if (eventType.StartsWith("meetingplace"))
+            {
+                string[] event_split = eventType.Split('/');
+                if(event_split.Length > 1 && event_split[1]== "SecondNPC"&& phase<3) {
+                    SecondFloorNPC2();
+                    return;   
+                }
+                if (event_split.Length > 1 && event_split[1] == "GetSecondFloorCardKey" && phase < 3)
+                {
+                    SecondFloorCardKeyGet2();
+                    return;
+                }
+                GetRidofEventSplit();   
+                Floor2UDC tmp = new Floor2UDC();
+                Control player = null;
+                Control place = null;
+                foreach (Control c in tmp.Controls)
+                {
+                    if (c.Name == "player")
+                        player = c;
+                    if (c.Name == eventType)
+                        place = c;
+                }
+                player.Left = place.Left;
+                player.Top = place.Top+60;
+                (target.Parent as InitMenu).ConvComeback(tmp);
+                return;
+            }
+
+            if (eventType.StartsWith("practice"))
+            {
+                GetRidofEventSplit();
+                Floor3UDC tmp = new Floor3UDC();
+                Control player = null;
+                Control room = null;
+                foreach (Control c in tmp.Controls)
+                {
+                    if (c.Name == "player")
+                        player = c;
+                    if (c.Name == eventType)
+                        room = c;
+                }
+                player.Left = room.Left;
+                player.Top = room.Top - 50;
+                (target.Parent as InitMenu).ConvComeback(tmp);
+            }
+
+            if (eventType == "department")
+            {
+                GetRidofEventSplit();
+                Floor4UDC tmp = new Floor4UDC();
+                Control player = null;
+                Control room = null;
+                foreach (Control c in tmp.Controls)
+                {
+                    if (c.Name == "player")
+                        player = c;
+
+                    if (c.Name == eventType)
+                        room = c;
+                }
+                player.Left = room.Left;
+                player.Top = room.Top - 50;
+                (target.Parent as InitMenu).ConvComeback(tmp);
+
+            }
+
+            if (eventType.StartsWith("lab"))
+            {
+                GetRidofEventSplit();
+                Floor8UDC tmp = new Floor8UDC();
+                Control player = null;
+                Control room = null;
+                foreach (Control c in tmp.Controls)
+                {
+                    if(c.Name=="player")
+                        player = c;
+                    if(c.Name==eventType)
+                        room = c;
+                }
+
+                if (room.Left <= 250 && room.Top <= 300)
+                {
+                    player.Left = room.Left + 70;
+                    player.Top = room.Top;
+                }
+                else if (room.Left >= 800 && room.Top <= 300)
+                {
+                    player.Left = room.Left - 70;
+                    player.Top = room.Top;
+                }
+                else if (room.Top > 300)
+                {
+                    player.Left = room.Left;
+                    player.Top = room.Top - 70;
+                }
+                (target.Parent as InitMenu).ConvComeback(tmp);
             }
         }
         

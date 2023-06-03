@@ -108,9 +108,15 @@ namespace WindowsFormsApp2
                         return;
                     }
                 }
-                if (x is PictureBox && ((x.Name as string).StartsWith("room") || (x.Name as string).StartsWith("board")))
+                if (x is PictureBox && ((x.Name as string).StartsWith("practice")))
                 {
-                    if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest)
+                    if (x.Name=="practice3_4" && player.Bounds.IntersectsWith(x.Bounds)&&!convHitTest && StaticItem.mSafekey4)
+                    {
+                            convHitTest = true;
+                            ((InitMenu)this.Parent).CallConvMode(x.Name.ToString());
+                            return;
+                    }
+                    else if (x.Name!="practice3_4"&&player.Bounds.IntersectsWith(x.Bounds) && !convHitTest)
                     {
                         convHitTest = true;
                         ((InitMenu)this.Parent).CallConvMode(x.Name.ToString());

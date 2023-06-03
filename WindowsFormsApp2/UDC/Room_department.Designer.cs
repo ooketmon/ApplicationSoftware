@@ -50,7 +50,6 @@
             this.room_office.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.room_office.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.department_office;
             this.room_office.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.room_office.Dock = System.Windows.Forms.DockStyle.Fill;
             this.room_office.Location = new System.Drawing.Point(0, 0);
             this.room_office.Name = "room_office";
             this.room_office.Size = new System.Drawing.Size(1200, 800);
@@ -65,6 +64,7 @@
             this.Controls.Add(this.room_office);
             this.Name = "Room_department";
             this.Size = new System.Drawing.Size(1200, 800);
+            this.Load += new System.EventHandler(this.Room_department_Load);
             ((System.ComponentModel.ISupportInitialize)(this.papper_4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.room_office)).EndInit();
             this.ResumeLayout(false);

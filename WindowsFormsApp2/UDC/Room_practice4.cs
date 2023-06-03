@@ -31,8 +31,16 @@ namespace WindowsFormsApp2.UDC
             mKey4 = true;
             inventory_set();
             key_4.Visible = false;
-            (this.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
+            (this.Parent.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
+            controller.GetKey();
         }
 
+        private void Room_practice4_Load(object sender, EventArgs e)
+        {
+            if (mKey4)
+            {
+                key_4.Visible = false;
+            }
+        }
     }
 }

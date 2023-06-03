@@ -169,7 +169,7 @@
             this.board2_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.board2_1.Location = new System.Drawing.Point(205, 381);
             this.board2_1.Name = "board2_1";
-            this.board2_1.Size = new System.Drawing.Size(15, 80);
+            this.board2_1.Size = new System.Drawing.Size(27, 80);
             this.board2_1.TabIndex = 142;
             this.board2_1.TabStop = false;
             this.board2_1.Tag = "";

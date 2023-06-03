@@ -49,6 +49,11 @@ namespace WindowsFormsApp2.UDC
 
             }
             counter = 0;
+            if (!timerLetter.Enabled)
+            {
+                timerLetter.Start();
+            }
+
             System.Drawing.Text.PrivateFontCollection privateFonts = new System.Drawing.Text.PrivateFontCollection();
             privateFonts.AddFontFile("./resources/Mabinogi_Classic_TTF.ttf"); // 마비노기 옛체 
             privateFonts.AddFontFile("./resources/NeoDunggeunmoPro-Regular.ttf"); // 둥근모
@@ -56,10 +61,6 @@ namespace WindowsFormsApp2.UDC
             Font content = new Font(privateFonts.Families[0], 26f);
             nameCharacter.Font = name;
             contentConv.Font = content;
-            if (!timerLetter.Enabled)
-            {
-                timerLetter.Start();
-            }
         }
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
@@ -123,6 +124,18 @@ namespace WindowsFormsApp2.UDC
             else if (where_event_occur == "hintNPC_1")
             {
                 controller.firstFloorNPC_Init(where_event_occur);
+            }else if (where_event_occur == "meetingplace")
+            {
+                controller.MeetingPlaceInit(where_event_occur);
+            }else if (where_event_occur.StartsWith("practice"))
+            {
+                controller.Practice_Init(where_event_occur);
+            }else if (where_event_occur == "department")
+            {
+                controller.Department_Init(where_event_occur);
+            }else if (where_event_occur.StartsWith("lab"))
+            {
+                controller.LabInit(where_event_occur);
             }
 
 
