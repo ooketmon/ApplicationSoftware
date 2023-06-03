@@ -49,6 +49,7 @@
             this.Controls.Add(this.character);
             this.Name = "Chaser";
             this.Size = new System.Drawing.Size(40, 45);
+            this.Load += new System.EventHandler(this.Chaser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.character)).EndInit();
             this.ResumeLayout(false);
 

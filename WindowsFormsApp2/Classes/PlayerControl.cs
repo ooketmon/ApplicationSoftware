@@ -11,8 +11,9 @@ namespace WindowsFormsApp2
     internal class PlayerControl
     {
         private PictureBox player;
-        int playerSpeed = 5;
+        int playerSpeed = 8;
         bool goLeft, goRight, goUp, goDown;
+        bool isOnWoodFloor = false;
 
         private Dictionary<Keys, Image[]> directionImages;
         private Keys currentDirection;
@@ -24,7 +25,6 @@ namespace WindowsFormsApp2
         public PlayerControl(PictureBox player)
         {
             this.player = player;
-
             directionImages = new Dictionary<Keys, Image[]>
             {
                 { Keys.Left, new Image[] { Properties.Resources.left1, Properties.Resources.left2, Properties.Resources.left3, Properties.Resources.left4 } },
@@ -35,6 +35,7 @@ namespace WindowsFormsApp2
             stopImages = new Image[] { Properties.Resources.front1, Properties.Resources.back1,  Properties.Resources.left1, Properties.Resources.right1 };
             // 초기 이미지 설정
             player.Image = stopImages[0];
+            player.BackColor = Color.Transparent;
             currentDirection = Keys.Left;
         }
         public void PlayerKeyDown(object sender, KeyEventArgs e)
@@ -52,11 +53,22 @@ namespace WindowsFormsApp2
             if (e.KeyCode == Keys.Up) { goUp = false; ResetPlayerImage(); }
             if (e.KeyCode == Keys.Down) { goDown = false; ResetPlayerImage(); }
         }
+
+        public void ForceToStop()
+        {
+            goLeft= false;
+            goRight= false;
+            goUp= false;
+            goDown= false;
+            player.Image = stopImages[currentImageIndex];
+        }
         private void ResetPlayerImage()
         {
             currentImageIndex = 0;
             player.Image = directionImages[currentDirection][currentImageIndex];
         }
+
+
         public void MovePlayer()
         {
             
@@ -67,12 +79,6 @@ namespace WindowsFormsApp2
             if (goRight && playerX < 1014) { playerX += playerSpeed; };
             if (goUp && playerY > 4) { playerY -= playerSpeed; };
             if (goDown && playerY < 604) { playerY += playerSpeed; };
-            
-            if (!goLeft && !goRight && !goUp && !goDown)
-            {
-                // 정지 이미지 표시
-                player.Image = stopImages[currentImageIndex];
-            }
             
 
             Rectangle playerBounds = new Rectangle(playerX, playerY, player.Width, player.Height);
@@ -87,6 +93,7 @@ namespace WindowsFormsApp2
                         break;
                     }
                 }
+
             }
             if (!isCollision)
             {
@@ -130,7 +137,10 @@ namespace WindowsFormsApp2
             //    }
             //}
         }
+        public void WoodFloor()
+        {
 
+        }
         public void MovePlayerWithoutBool(KeyEventArgs e)
         {
             int playerX = player.Left;

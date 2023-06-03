@@ -79,6 +79,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="UDC\Place_Meeting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UDC\Place_Meeting.Designer.cs">
+      <DependentUpon>Place_Meeting.cs</DependentUpon>
+    </Compile>
     <Compile Include="UDC\Room_Board.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -277,6 +283,9 @@
     <EmbeddedResource Include="UDC\inventory_item.resx">
       <DependentUpon>inventory_item.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UDC\Place_Meeting.resx">
+      <DependentUpon>Place_Meeting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UDC\Room_Board.resx">
       <DependentUpon>Room_Board.cs</DependentUpon>
     </EmbeddedResource>
@@ -406,6 +415,7 @@
     <None Include="resources\Elevator\IMG_0837.PNG" />
     <None Include="resources\Elevator\IMG_0838.PNG" />
     <None Include="resources\Elevator\IMG_0839.PNG" />
+    <None Include="resources\20230529_122153.jpg" />
     <Content Include="resources\Floor1\IMG_0808.PNG" />
     <None Include="resources\ui\Button.png" />
     <None Include="resources\ui\ConvBack.png" />
@@ -427,6 +437,37 @@
     <None Include="resources\Player\front4.PNG" />
     <None Include="resources\LibraryComputer 1.png" />
     <None Include="resources\lecture-room-4.png" />
+    <None Include="resources\guardmanroom.jpg" />
+    <None Include="resources\lobby-sofa2.png" />
+    <None Include="resources\lobby-2.png" />
+    <Content Include="resources\Floor1\IMG_0840.PNG" />
+    <None Include="resources\Floor1\IMG_0842.PNG" />
+    <None Include="resources\Floor1\IMG_0843.PNG" />
+    <None Include="resources\Floor1\IMG_0844.PNG" />
+    <None Include="resources\Floor1\IMG_0845.PNG" />
+    <None Include="resources\Floor1\IMG_0846.PNG" />
+    <None Include="resources\Floor1\IMG_0847.PNG" />
+    <None Include="resources\Floor1\IMG_0848.PNG" />
+    <None Include="resources\Floor1\IMG_0849.PNG" />
+    <None Include="resources\Floor1\IMG_0850.PNG" />
+    <None Include="resources\Floor2\IMG_0851.PNG" />
+    <None Include="resources\Floor2\IMG_0852.PNG" />
+    <None Include="resources\Floor2\IMG_0853.PNG" />
+    <None Include="resources\Floor2\IMG_0854.PNG" />
+    <None Include="resources\Floor2\IMG_0855.PNG" />
+    <None Include="resources\Floor2\IMG_0858.PNG" />
+    <None Include="resources\Floor2\temp_1685679902248.2036404291.jpeg" />
+    <None Include="resources\Floor2\IMG_0859.PNG" />
+    <None Include="resources\Floor2\IMG_0860.PNG" />
+    <None Include="resources\Floor2\IMG_0862.PNG" />
+    <None Include="resources\Floor2\IMG_0863.PNG" />
+    <None Include="resources\Floor1\IMG_0867.PNG" />
+    <None Include="resources\Floor1\IMG_0868.PNG" />
+    <None Include="resources\Floor1\IMG_0869.PNG" />
+    <None Include="resources\Floor1\IMG_0870.PNG" />
+    <None Include="resources\Floor1\IMG_0871.PNG" />
+    <None Include="resources\Floor1\IMG_0872.PNG" />
+    <None Include="resources\Floor1\IMG_0874.PNG" />
     <Content Include="resources\Player\IMG_0809.PNG" />
     <Content Include="resources\Player\IMG_0811.PNG" />
     <Content Include="resources\Player\IMG_0812.PNG" />

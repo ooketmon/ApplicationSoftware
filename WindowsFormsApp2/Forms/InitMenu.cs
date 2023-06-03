@@ -16,8 +16,11 @@ namespace WindowsFormsApp2
     {
         public bool floor8MissionComplete = false;
         public bool floor1MissionComplete = false;
-        public bool guardmanChasing = false;
+        public bool havetoGoGuardRoom = false;
+        public bool guardmanChasing = true;
         public bool assistantChasing = true;
+        public bool firstStart = true;
+        public Inventory inventory = new Inventory();
 
         public InitMenu()
         {
@@ -40,6 +43,26 @@ namespace WindowsFormsApp2
                 case 1:
 
                     tmp = new Floor1UDC();
+                    if (!firstStart)
+                    {
+                        Control player = null;
+                        Control elevator = null;
+                        foreach (Control c in tmp.Controls)
+                        {
+                            if (c.Name == "player")
+                            {
+                                player = c;
+                            }
+                            if (c.Name.Contains("elevator"))
+                            {
+                                elevator = c;
+                            }
+
+                        }
+
+                        player.Left = elevator.Left + 100;
+                        player.Top = elevator.Top;
+                    }
                     this.Controls.Add(tmp);
                     break;
                 case 2:
@@ -61,14 +84,15 @@ namespace WindowsFormsApp2
             }
             tmp.Focus();
         }
-        public void CallPrologue()
-        {
-            this.Controls.Clear();
-            this.Controls.Add(new ConvModeUDC());
-        }
+
+
+
         public void ElevatorCall(int floor)
         {
-            
+            if (firstStart)
+            {
+                firstStart = false;
+            }
             ElevatorChoiceUDC elevator = new ElevatorChoiceUDC(floor);
             
             Control main_floor = null;
@@ -158,6 +182,10 @@ namespace WindowsFormsApp2
         }
         public void StairCall(int floor)
         {
+            if (firstStart)
+            {
+                firstStart = false;
+            }
             StairChoice stair = new StairChoice(floor);
             Control main_floor = null;
             foreach(Control ctrl in this.Controls)
@@ -253,7 +281,9 @@ namespace WindowsFormsApp2
         public void CallConvMode(string place)
         {
             Controls.Clear();
-            Controls.Add(new ConvModeUDC(place));
+            ConvModeUDC tmp = new ConvModeUDC(place);
+            Controls.Add(tmp);
+            tmp.Focus();
         }
         private void InitMenu_Load(object sender, EventArgs e)
         {
@@ -266,5 +296,8 @@ namespace WindowsFormsApp2
 
         }
 
+        private void InitMenu_KeyDown(object sender, KeyEventArgs e)
+        {
+        }
     }
 }

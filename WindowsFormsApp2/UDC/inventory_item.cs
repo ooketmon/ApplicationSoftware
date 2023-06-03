@@ -22,7 +22,7 @@ namespace WindowsFormsApp2
             (this.Parent as Inventory).CancelMaximize();
         }
 
-        public void setMainItem(Bitmap resourceName)
+        public void setMainItem(Image resourceName)
         {
            
             pic_Item.BackgroundImage = resourceName;

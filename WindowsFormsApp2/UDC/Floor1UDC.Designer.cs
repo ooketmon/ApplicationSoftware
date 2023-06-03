@@ -38,6 +38,7 @@
             this.pictureBox43 = new System.Windows.Forms.PictureBox();
             this.pictureBox42 = new System.Windows.Forms.PictureBox();
             this.pictureBox41 = new System.Windows.Forms.PictureBox();
+            this.picturebox = new System.Windows.Forms.PictureBox();
             this.pictureBox40 = new System.Windows.Forms.PictureBox();
             this.pictureBox39 = new System.Windows.Forms.PictureBox();
             this.elevator = new System.Windows.Forms.PictureBox();
@@ -48,7 +49,7 @@
             this.pictureBox33 = new System.Windows.Forms.PictureBox();
             this.pictureBox32 = new System.Windows.Forms.PictureBox();
             this.pictureBox31 = new System.Windows.Forms.PictureBox();
-            this.pictureBox30 = new System.Windows.Forms.PictureBox();
+            this.scarepoint = new System.Windows.Forms.PictureBox();
             this.pictureBox29 = new System.Windows.Forms.PictureBox();
             this.pictureBox28 = new System.Windows.Forms.PictureBox();
             this.player = new System.Windows.Forms.PictureBox();
@@ -63,8 +64,6 @@
             this.pictureBox22 = new System.Windows.Forms.PictureBox();
             this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
@@ -73,13 +72,27 @@
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.pictureBox49 = new System.Windows.Forms.PictureBox();
+            this.pictureBox50 = new System.Windows.Forms.PictureBox();
+            this.sofa6 = new System.Windows.Forms.PictureBox();
+            this.sofa7 = new System.Windows.Forms.PictureBox();
+            this.sofa5 = new System.Windows.Forms.PictureBox();
+            this.sofa3 = new System.Windows.Forms.PictureBox();
+            this.sofa2 = new System.Windows.Forms.PictureBox();
+            this.sofa4 = new System.Windows.Forms.PictureBox();
+            this.sofa1 = new System.Windows.Forms.PictureBox();
+            this.hintNPC_1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox38 = new System.Windows.Forms.PictureBox();
+            this.guardroom = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).BeginInit();
@@ -88,6 +101,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picturebox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elevator)).BeginInit();
@@ -98,7 +112,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scarepoint)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
@@ -113,8 +127,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
@@ -123,13 +135,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sofa6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sofa7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sofa5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sofa3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sofa2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sofa4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sofa1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hintNPC_1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guardroom)).BeginInit();
             this.SuspendLayout();
             // 
             // timerFloor1
@@ -180,13 +206,13 @@
             // 
             // pictureBox44
             // 
+            this.pictureBox44.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0843;
             this.pictureBox44.Location = new System.Drawing.Point(1155, 415);
             this.pictureBox44.Name = "pictureBox44";
             this.pictureBox44.Size = new System.Drawing.Size(45, 65);
             this.pictureBox44.TabIndex = 123;
             this.pictureBox44.TabStop = false;
             this.pictureBox44.Tag = "LockedDoor";
-            this.pictureBox44.Visible = false;
             // 
             // pictureBox43
             // 
@@ -201,22 +227,33 @@
             // pictureBox42
             // 
             this.pictureBox42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pictureBox42.Location = new System.Drawing.Point(1155, 200);
+            this.pictureBox42.Location = new System.Drawing.Point(1155, 135);
             this.pictureBox42.Name = "pictureBox42";
-            this.pictureBox42.Size = new System.Drawing.Size(15, 15);
+            this.pictureBox42.Size = new System.Drawing.Size(15, 80);
             this.pictureBox42.TabIndex = 121;
             this.pictureBox42.TabStop = false;
             this.pictureBox42.Tag = "obstacle";
             // 
             // pictureBox41
             // 
+            this.pictureBox41.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0843;
             this.pictureBox41.Location = new System.Drawing.Point(1155, 215);
             this.pictureBox41.Name = "pictureBox41";
             this.pictureBox41.Size = new System.Drawing.Size(45, 65);
             this.pictureBox41.TabIndex = 120;
             this.pictureBox41.TabStop = false;
             this.pictureBox41.Tag = "LockedDoor";
-            this.pictureBox41.Visible = false;
+            // 
+            // picturebox
+            // 
+            this.picturebox.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0843;
+            this.picturebox.Location = new System.Drawing.Point(1155, 215);
+            this.picturebox.Name = "picturebox";
+            this.picturebox.Size = new System.Drawing.Size(45, 65);
+            this.picturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picturebox.TabIndex = 120;
+            this.picturebox.TabStop = false;
+            this.picturebox.Tag = "";
             // 
             // pictureBox40
             // 
@@ -320,22 +357,23 @@
             this.pictureBox31.TabStop = false;
             this.pictureBox31.Tag = "obstacle";
             // 
-            // pictureBox30
+            // scarepoint
             // 
-            this.pictureBox30.Location = new System.Drawing.Point(530, 135);
-            this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(60, 65);
-            this.pictureBox30.TabIndex = 109;
-            this.pictureBox30.TabStop = false;
-            this.pictureBox30.Tag = "LockedDoor";
-            this.pictureBox30.Visible = false;
+            this.scarepoint.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0842;
+            this.scarepoint.Location = new System.Drawing.Point(530, 150);
+            this.scarepoint.Name = "scarepoint";
+            this.scarepoint.Size = new System.Drawing.Size(60, 50);
+            this.scarepoint.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.scarepoint.TabIndex = 109;
+            this.scarepoint.TabStop = false;
+            this.scarepoint.Tag = "LockedDoor";
             // 
             // pictureBox29
             // 
             this.pictureBox29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pictureBox29.Location = new System.Drawing.Point(1085, 50);
+            this.pictureBox29.Location = new System.Drawing.Point(1085, 0);
             this.pictureBox29.Name = "pictureBox29";
-            this.pictureBox29.Size = new System.Drawing.Size(15, 15);
+            this.pictureBox29.Size = new System.Drawing.Size(15, 65);
             this.pictureBox29.TabIndex = 108;
             this.pictureBox29.TabStop = false;
             this.pictureBox29.Tag = "obstacle";
@@ -354,7 +392,7 @@
             // 
             this.player.BackColor = System.Drawing.Color.Silver;
             this.player.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player.Location = new System.Drawing.Point(1038, 485);
+            this.player.Location = new System.Drawing.Point(1040, 695);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(39, 45);
             this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -410,7 +448,7 @@
             // 
             this.pictureBox24.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.pictureBox24.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0793;
-            this.pictureBox24.Location = new System.Drawing.Point(750, 635);
+            this.pictureBox24.Location = new System.Drawing.Point(748, 635);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(110, 50);
             this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -444,7 +482,7 @@
             // 
             // pictureBox23
             // 
-            this.pictureBox23.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBox23.BackColor = System.Drawing.Color.Black;
             this.pictureBox23.Location = new System.Drawing.Point(1170, 0);
             this.pictureBox23.Name = "pictureBox23";
             this.pictureBox23.Size = new System.Drawing.Size(30, 280);
@@ -454,7 +492,7 @@
             // 
             // pictureBox22
             // 
-            this.pictureBox22.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBox22.BackColor = System.Drawing.Color.Black;
             this.pictureBox22.Location = new System.Drawing.Point(1170, 280);
             this.pictureBox22.Name = "pictureBox22";
             this.pictureBox22.Size = new System.Drawing.Size(30, 365);
@@ -482,31 +520,9 @@
             this.pictureBox15.TabStop = false;
             this.pictureBox15.Tag = "obstacle";
             // 
-            // pictureBox19
-            // 
-            this.pictureBox19.BackColor = System.Drawing.Color.Tan;
-            this.pictureBox19.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0808;
-            this.pictureBox19.Location = new System.Drawing.Point(530, 370);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(205, 200);
-            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox19.TabIndex = 95;
-            this.pictureBox19.TabStop = false;
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.BackColor = System.Drawing.Color.Tan;
-            this.pictureBox18.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0808;
-            this.pictureBox18.Location = new System.Drawing.Point(750, 370);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(205, 200);
-            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox18.TabIndex = 94;
-            this.pictureBox18.TabStop = false;
-            // 
             // pictureBox16
             // 
-            this.pictureBox16.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox16.BackColor = System.Drawing.Color.Black;
             this.pictureBox16.Location = new System.Drawing.Point(245, 430);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(110, 100);
@@ -516,7 +532,7 @@
             // 
             // pictureBox14
             // 
-            this.pictureBox14.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox14.BackColor = System.Drawing.Color.Black;
             this.pictureBox14.Location = new System.Drawing.Point(245, 530);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(195, 270);
@@ -536,7 +552,7 @@
             // 
             // pictureBox12
             // 
-            this.pictureBox12.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox12.BackColor = System.Drawing.Color.Black;
             this.pictureBox12.Location = new System.Drawing.Point(0, 315);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(245, 485);
@@ -546,7 +562,7 @@
             // 
             // pictureBox11
             // 
-            this.pictureBox11.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox11.BackColor = System.Drawing.Color.Black;
             this.pictureBox11.Location = new System.Drawing.Point(0, 0);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(245, 280);
@@ -559,14 +575,14 @@
             this.pictureBox9.BackColor = System.Drawing.Color.Black;
             this.pictureBox9.Location = new System.Drawing.Point(245, 0);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(345, 135);
+            this.pictureBox9.Size = new System.Drawing.Size(345, 150);
             this.pictureBox9.TabIndex = 88;
             this.pictureBox9.TabStop = false;
             this.pictureBox9.Tag = "obstacle";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBox1.BackColor = System.Drawing.Color.Gray;
             this.pictureBox1.Location = new System.Drawing.Point(745, 65);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(135, 70);
@@ -586,15 +602,205 @@
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Tag = "obstacle";
             // 
-            // pictureBox2
+            // pictureBox5
             // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBox2.Location = new System.Drawing.Point(746, -80);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(60, 90);
-            this.pictureBox2.TabIndex = 85;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Tag = "obstacle";
+            this.pictureBox5.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBox5.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0846;
+            this.pictureBox5.Location = new System.Drawing.Point(1100, 50);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(71, 150);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 83;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Tag = "obstacle";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Gray;
+            this.pictureBox4.Location = new System.Drawing.Point(1100, -80);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(71, 130);
+            this.pictureBox4.TabIndex = 82;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Tag = "obstacle";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBox7.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0850;
+            this.pictureBox7.Location = new System.Drawing.Point(880, 60);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(70, 75);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 80;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Tag = "obstacle";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Gray;
+            this.pictureBox6.Location = new System.Drawing.Point(880, -80);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(70, 140);
+            this.pictureBox6.TabIndex = 79;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Tag = "obstacle";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBox8.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0849;
+            this.pictureBox8.Location = new System.Drawing.Point(832, 398);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(45, 60);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 146;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Tag = "obstacle";
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBox18.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0849;
+            this.pictureBox18.Location = new System.Drawing.Point(832, 492);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(45, 60);
+            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox18.TabIndex = 147;
+            this.pictureBox18.TabStop = false;
+            this.pictureBox18.Tag = "obstacle";
+            // 
+            // pictureBox19
+            // 
+            this.pictureBox19.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBox19.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0867;
+            this.pictureBox19.Location = new System.Drawing.Point(605, 398);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(45, 60);
+            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox19.TabIndex = 148;
+            this.pictureBox19.TabStop = false;
+            this.pictureBox19.Tag = "obstacle";
+            // 
+            // pictureBox49
+            // 
+            this.pictureBox49.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBox49.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0849;
+            this.pictureBox49.Location = new System.Drawing.Point(605, 491);
+            this.pictureBox49.Name = "pictureBox49";
+            this.pictureBox49.Size = new System.Drawing.Size(45, 60);
+            this.pictureBox49.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox49.TabIndex = 149;
+            this.pictureBox49.TabStop = false;
+            this.pictureBox49.Tag = "obstacle";
+            // 
+            // pictureBox50
+            // 
+            this.pictureBox50.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBox50.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0847;
+            this.pictureBox50.Location = new System.Drawing.Point(559, 408);
+            this.pictureBox50.Name = "pictureBox50";
+            this.pictureBox50.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox50.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox50.TabIndex = 150;
+            this.pictureBox50.TabStop = false;
+            this.pictureBox50.Tag = "";
+            // 
+            // sofa6
+            // 
+            this.sofa6.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.sofa6.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0848;
+            this.sofa6.Location = new System.Drawing.Point(656, 408);
+            this.sofa6.Name = "sofa6";
+            this.sofa6.Size = new System.Drawing.Size(40, 40);
+            this.sofa6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.sofa6.TabIndex = 151;
+            this.sofa6.TabStop = false;
+            this.sofa6.Tag = "sofa";
+            // 
+            // sofa7
+            // 
+            this.sofa7.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.sofa7.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0847;
+            this.sofa7.Location = new System.Drawing.Point(559, 502);
+            this.sofa7.Name = "sofa7";
+            this.sofa7.Size = new System.Drawing.Size(40, 40);
+            this.sofa7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.sofa7.TabIndex = 152;
+            this.sofa7.TabStop = false;
+            this.sofa7.Tag = "sofa";
+            // 
+            // sofa5
+            // 
+            this.sofa5.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.sofa5.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0848;
+            this.sofa5.Location = new System.Drawing.Point(656, 502);
+            this.sofa5.Name = "sofa5";
+            this.sofa5.Size = new System.Drawing.Size(40, 40);
+            this.sofa5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.sofa5.TabIndex = 153;
+            this.sofa5.TabStop = false;
+            this.sofa5.Tag = "sofa";
+            // 
+            // sofa3
+            // 
+            this.sofa3.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.sofa3.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0847;
+            this.sofa3.Location = new System.Drawing.Point(786, 409);
+            this.sofa3.Name = "sofa3";
+            this.sofa3.Size = new System.Drawing.Size(40, 40);
+            this.sofa3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.sofa3.TabIndex = 154;
+            this.sofa3.TabStop = false;
+            this.sofa3.Tag = "sofa";
+            // 
+            // sofa2
+            // 
+            this.sofa2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.sofa2.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0848;
+            this.sofa2.Location = new System.Drawing.Point(883, 409);
+            this.sofa2.Name = "sofa2";
+            this.sofa2.Size = new System.Drawing.Size(40, 40);
+            this.sofa2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.sofa2.TabIndex = 155;
+            this.sofa2.TabStop = false;
+            this.sofa2.Tag = "sofa2";
+            // 
+            // sofa4
+            // 
+            this.sofa4.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.sofa4.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0847;
+            this.sofa4.Location = new System.Drawing.Point(786, 503);
+            this.sofa4.Name = "sofa4";
+            this.sofa4.Size = new System.Drawing.Size(40, 40);
+            this.sofa4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.sofa4.TabIndex = 156;
+            this.sofa4.TabStop = false;
+            this.sofa4.Tag = "sofa";
+            // 
+            // sofa1
+            // 
+            this.sofa1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.sofa1.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0848;
+            this.sofa1.Location = new System.Drawing.Point(883, 503);
+            this.sofa1.Name = "sofa1";
+            this.sofa1.Size = new System.Drawing.Size(40, 40);
+            this.sofa1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.sofa1.TabIndex = 157;
+            this.sofa1.TabStop = false;
+            this.sofa1.Tag = "";
+            // 
+            // hintNPC_1
+            // 
+            this.hintNPC_1.BackColor = System.Drawing.Color.Transparent;
+            this.hintNPC_1.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0874;
+            this.hintNPC_1.Location = new System.Drawing.Point(571, 396);
+            this.hintNPC_1.Name = "hintNPC_1";
+            this.hintNPC_1.Size = new System.Drawing.Size(30, 39);
+            this.hintNPC_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.hintNPC_1.TabIndex = 146;
+            this.hintNPC_1.TabStop = false;
+            this.hintNPC_1.Tag = "";
             // 
             // pictureBox10
             // 
@@ -606,45 +812,15 @@
             this.pictureBox10.TabStop = false;
             this.pictureBox10.Tag = "obstacle";
             // 
-            // pictureBox5
+            // pictureBox2
             // 
-            this.pictureBox5.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBox5.Location = new System.Drawing.Point(1100, 50);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(70, 150);
-            this.pictureBox5.TabIndex = 83;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Tag = "obstacle";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBox4.Location = new System.Drawing.Point(1085, -80);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(85, 130);
-            this.pictureBox4.TabIndex = 82;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Tag = "obstacle";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBox7.Location = new System.Drawing.Point(880, 60);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(70, 75);
-            this.pictureBox7.TabIndex = 80;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Tag = "obstacle";
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBox6.Location = new System.Drawing.Point(880, -80);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(70, 140);
-            this.pictureBox6.TabIndex = 79;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Tag = "obstacle";
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBox2.Location = new System.Drawing.Point(746, -80);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(60, 90);
+            this.pictureBox2.TabIndex = 85;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Tag = "obstacle";
             // 
             // pictureBox38
             // 
@@ -656,13 +832,40 @@
             this.pictureBox38.Tag = "elevator";
             this.pictureBox38.Visible = false;
             // 
+            // guardroom
+            // 
+            this.guardroom.Location = new System.Drawing.Point(1110, 549);
+            this.guardroom.Name = "guardroom";
+            this.guardroom.Size = new System.Drawing.Size(60, 65);
+            this.guardroom.TabIndex = 158;
+            this.guardroom.TabStop = false;
+            this.guardroom.Tag = "elevator";
+            this.guardroom.Visible = false;
+            // 
             // Floor1UDC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.IMG_0827;
+            this.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.IMG_0872;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.guardroom);
+            this.Controls.Add(this.hintNPC_1);
             this.Controls.Add(this.player);
+            this.Controls.Add(this.sofa1);
+            this.Controls.Add(this.sofa4);
+            this.Controls.Add(this.sofa2);
+            this.Controls.Add(this.sofa3);
+            this.Controls.Add(this.sofa5);
+            this.Controls.Add(this.sofa7);
+            this.Controls.Add(this.sofa6);
+            this.Controls.Add(this.pictureBox50);
+            this.Controls.Add(this.pictureBox49);
+            this.Controls.Add(this.pictureBox19);
+            this.Controls.Add(this.pictureBox18);
+            this.Controls.Add(this.pictureBox8);
+            this.Controls.Add(this.pictureBox32);
+            this.Controls.Add(this.scarepoint);
+            this.Controls.Add(this.pictureBox15);
             this.Controls.Add(this.pictureBox46);
             this.Controls.Add(this.pictureBox35);
             this.Controls.Add(this.pictureBox48);
@@ -671,19 +874,16 @@
             this.Controls.Add(this.pictureBox44);
             this.Controls.Add(this.pictureBox43);
             this.Controls.Add(this.pictureBox42);
-            this.Controls.Add(this.pictureBox41);
+            this.Controls.Add(this.picturebox);
             this.Controls.Add(this.pictureBox40);
             this.Controls.Add(this.pictureBox39);
-            this.Controls.Add(this.elevator);
             this.Controls.Add(this.pictureBox37);
             this.Controls.Add(this.pictureBox36);
             this.Controls.Add(this.pictureBox34);
             this.Controls.Add(this.pictureBox33);
-            this.Controls.Add(this.pictureBox32);
             this.Controls.Add(this.pictureBox31);
             this.Controls.Add(this.pictureBox29);
             this.Controls.Add(this.pictureBox28);
-            this.Controls.Add(this.stair);
             this.Controls.Add(this.pictureBox26);
             this.Controls.Add(this.pictureBox25);
             this.Controls.Add(this.pictureBox27);
@@ -693,9 +893,6 @@
             this.Controls.Add(this.pictureBox23);
             this.Controls.Add(this.pictureBox22);
             this.Controls.Add(this.pictureBox21);
-            this.Controls.Add(this.pictureBox15);
-            this.Controls.Add(this.pictureBox19);
-            this.Controls.Add(this.pictureBox18);
             this.Controls.Add(this.pictureBox16);
             this.Controls.Add(this.pictureBox14);
             this.Controls.Add(this.pictureBox13);
@@ -711,9 +908,11 @@
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox38);
-            this.Controls.Add(this.pictureBox30);
+            this.Controls.Add(this.stair);
+            this.Controls.Add(this.elevator);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(0);
             this.MaximumSize = new System.Drawing.Size(1200, 800);
             this.MinimumSize = new System.Drawing.Size(1200, 800);
             this.Name = "Floor1UDC";
@@ -729,6 +928,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picturebox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elevator)).EndInit();
@@ -739,7 +939,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scarepoint)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
@@ -754,8 +954,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
@@ -764,13 +962,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox49)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox50)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sofa6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sofa7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sofa5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sofa3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sofa2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sofa4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sofa1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hintNPC_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guardroom)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -786,6 +998,7 @@
         private System.Windows.Forms.PictureBox pictureBox43;
         private System.Windows.Forms.PictureBox pictureBox42;
         private System.Windows.Forms.PictureBox pictureBox41;
+        private System.Windows.Forms.PictureBox picturebox;
         private System.Windows.Forms.PictureBox pictureBox40;
         private System.Windows.Forms.PictureBox pictureBox39;
         private System.Windows.Forms.PictureBox elevator;
@@ -796,7 +1009,7 @@
         private System.Windows.Forms.PictureBox pictureBox33;
         private System.Windows.Forms.PictureBox pictureBox32;
         private System.Windows.Forms.PictureBox pictureBox31;
-        private System.Windows.Forms.PictureBox pictureBox30;
+        private System.Windows.Forms.PictureBox scarepoint;
         private System.Windows.Forms.PictureBox pictureBox29;
         private System.Windows.Forms.PictureBox pictureBox28;
         private System.Windows.Forms.PictureBox player;
@@ -811,8 +1024,6 @@
         private System.Windows.Forms.PictureBox pictureBox22;
         private System.Windows.Forms.PictureBox pictureBox21;
         private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.PictureBox pictureBox19;
-        private System.Windows.Forms.PictureBox pictureBox18;
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.PictureBox pictureBox13;
@@ -821,13 +1032,27 @@
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Timer timerFloor1;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pictureBox18;
+        private System.Windows.Forms.PictureBox pictureBox19;
+        private System.Windows.Forms.PictureBox pictureBox49;
+        private System.Windows.Forms.PictureBox pictureBox50;
+        private System.Windows.Forms.PictureBox sofa6;
+        private System.Windows.Forms.PictureBox sofa7;
+        private System.Windows.Forms.PictureBox sofa5;
+        private System.Windows.Forms.PictureBox sofa3;
+        private System.Windows.Forms.PictureBox sofa2;
+        private System.Windows.Forms.PictureBox sofa4;
+        private System.Windows.Forms.PictureBox sofa1;
+        private System.Windows.Forms.PictureBox hintNPC_1;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox38;
+        private System.Windows.Forms.PictureBox guardroom;
     }
 }

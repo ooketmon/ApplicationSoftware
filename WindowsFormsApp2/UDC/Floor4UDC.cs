@@ -21,14 +21,43 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
         }
+        private void Inventory_KeyDown(object sender, KeyEventArgs e)
+        {
+            playerMove.ForceToStop();
+            if (e.KeyCode == Keys.I)
+            {
+                if ((this.Parent as InitMenu).inventory.Visible)
+                {
+                    (this.Parent as InitMenu).inventory.Hide();
+                }
+                else
+                {
+                    (this.Parent as InitMenu).inventory.Show();
+                }
+            }
+
+        }
+
+        private void ShowInventory()
+        {
+            // 호출할 폼의 인스턴스 생성
+            Inventory inventory = new Inventory();
+            // 폼을 보여줌
+            inventory.Show();
+
+        }
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
             if ((keyData == Keys.Right) || (keyData == Keys.Left) ||
                 (keyData == Keys.Up) || (keyData == Keys.Down))
             {
 
-                playerMove.PlayerKeyDown(new object[] { }, new KeyEventArgs(keyData));
+                Floor4_KeyDown(new object[] { }, new KeyEventArgs(keyData));
 
+                return true;
+            }else if (keyData == Keys.I)
+            {
+                Inventory_KeyDown(new object[] {},new KeyEventArgs(keyData));
                 return true;
             }
             else
@@ -50,12 +79,13 @@ namespace WindowsFormsApp2
 
         private void Floor4_KeyDown(object sender, KeyEventArgs e)
         {
-            playerMove.PlayerKeyDown(sender, e);
+            //playerMove.PlayerKeyDown(sender, e);
+            playerMove.MovePlayerWithoutBool(e);
         }
 
         private void timerFloor4_Tick(object sender, EventArgs e)
         {
-            playerMove.MovePlayer();
+           // playerMove.MovePlayer();
 
             foreach (Control x in this.Controls)
             {

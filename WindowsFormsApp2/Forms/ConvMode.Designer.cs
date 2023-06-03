@@ -61,7 +61,7 @@
             // 
             this.nameCharacter.AutoSize = true;
             this.nameCharacter.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.nameCharacter.Font = new System.Drawing.Font("굴림", 20F);
+            this.nameCharacter.Font = new System.Drawing.Font("굴림", 15F);
             this.nameCharacter.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.nameCharacter.Location = new System.Drawing.Point(30, 648);
             this.nameCharacter.MaximumSize = new System.Drawing.Size(210, 34);

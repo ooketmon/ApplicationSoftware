@@ -20,6 +20,7 @@ namespace WindowsFormsApp2
         public Floor3UDC()
         {
             InitializeComponent();
+            this.KeyDown += Inventory_KeyDown;
         }
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
@@ -27,8 +28,12 @@ namespace WindowsFormsApp2
                 (keyData == Keys.Up) || (keyData == Keys.Down))
             {
 
-                playerMove.PlayerKeyDown(new object[] { }, new KeyEventArgs(keyData));
+                UserControl3_KeyDown(new object[] { }, new KeyEventArgs(keyData));
 
+                return true;
+            }else if (keyData == Keys.I)
+            {
+                Inventory_KeyDown(new object[] {}, new KeyEventArgs(keyData));
                 return true;
             }
             else
@@ -36,7 +41,32 @@ namespace WindowsFormsApp2
                 return base.ProcessCmdKey(ref msg, keyData);
             }
         }
+        private void Inventory_KeyDown(object sender, KeyEventArgs e)
+        {
+            playerMove.ForceToStop();
+            Form target = new Inventory(); ;
+            if (e.KeyCode == Keys.I)
+            {
+                if ((this.Parent as InitMenu).inventory.Visible)
+                {
+                    (this.Parent as InitMenu).inventory.Hide();
+                }
+                else
+                {
+                    (this.Parent as InitMenu).inventory.Show();
+                }
+            }
 
+        }
+
+        private void ShowInventory()
+        {
+            // 호출할 폼의 인스턴스 생성
+            Inventory inventory = new Inventory();
+            // 폼을 보여줌
+            inventory.Show();
+
+        }
         private void UserControl3_Load(object sender, EventArgs e)
         {
             playerisOnStair = false;
@@ -50,12 +80,13 @@ namespace WindowsFormsApp2
 
         private void UserControl3_KeyDown(object sender, KeyEventArgs e)
         {
-            playerMove.PlayerKeyDown(sender, e);
+            // playerMove.PlayerKeyDown(sender, e);
+            playerMove.MovePlayerWithoutBool(e);
         }
 
         private void timerFloor3_Tick(object sender, EventArgs e)
         {
-            playerMove.MovePlayer();
+            //playerMove.MovePlayer();
 
             foreach (Control x in this.Controls)
             {

@@ -25,14 +25,38 @@ namespace WindowsFormsApp2
         Chaser chaser = null;
 
         System.Threading.Timer chaser_timer;
-        System.Threading.Timer conv_timer;
 
-        public delegate void conv_delegate();
         public delegate void chase_delegate();
 
         public Floor8UDC()
         {
             InitializeComponent();
+
+        }
+        private void Inventory_KeyDown(object sender, KeyEventArgs e)
+        {
+            playerMove.ForceToStop();
+            if (e.KeyCode == Keys.I)
+            {
+                if ((this.Parent as InitMenu).inventory.Visible)
+                {
+                    (this.Parent as InitMenu).inventory.Hide();
+                }
+                else
+                {
+                    (this.Parent as InitMenu).inventory.Show();
+                }
+            }
+
+        }
+
+        private void ShowInventory()
+        {
+            // 호출할 폼의 인스턴스 생성
+            Inventory inventory = new Inventory();
+            // 폼을 보여줌
+            inventory.Show();
+
         }
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
@@ -42,6 +66,10 @@ namespace WindowsFormsApp2
 
                 // playerMove.PlayerKeyDown(new object[] { }, new KeyEventArgs(keyData));
                 Floor8_KeyDown(new object[] { }, new KeyEventArgs(keyData));
+                return true;
+            }else if (keyData == Keys.I)
+            {
+                Inventory_KeyDown(new object[] {},new KeyEventArgs(keyData));
                 return true;
             }
             else

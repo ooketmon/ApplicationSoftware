@@ -78,7 +78,7 @@ namespace WindowsFormsApp2
         {
             if (e.KeyCode == Keys.I)
             {
-                this.Close();
+                this.Hide();
             }
         }
 
@@ -94,77 +94,78 @@ namespace WindowsFormsApp2
                 }
             }
             Controls.Remove(target);
+            this.Focus();
         }
         public void Item_Press(object sender, EventArgs e)
         {
             string itemName = (sender as Control).Name;
             inventory_item maximizedItem=new inventory_item();
+            
             Bitmap resourceName = null;
-            if (itemName == items[0])
+            if (itemName == items[0] && inventory[0])
             {
                 resourceName = Properties.Resources._1_Papper;
             }
-            if (itemName == items[1])
+            else if (itemName == items[1] && inventory[1])
             {
                 resourceName = Properties.Resources._1_Test;
             }
-            if (itemName == items[2])
+            else if (itemName == items[2] && inventory[2])
             {
                 resourceName = Properties.Resources._2_Test;
             }
-            if (itemName == items[3])
+            else if (itemName == items[3] && inventory[3])
             {
                 resourceName = Properties.Resources._3_Papper;
             }
-            if (itemName == items[4])
+            else if (itemName == items[4] && inventory[4])
             {
                 resourceName = Properties.Resources._3_Cardkey;
             }
-            if (itemName == items[5])
+            else if (itemName == items[5] && inventory[5])
             {
                 resourceName = Properties.Resources._3_Poster;
             }
-            if (itemName == items[6])
+            else if (itemName == items[6] && inventory[6])
             {
                 resourceName = Properties.Resources._3_Test;
             }
-            if (itemName == items[7])
+            else if (itemName == items[7] && inventory[7])
             {
                 resourceName = Properties.Resources._4_Papper;
             }
-            if (itemName == items[8])
+            else if (itemName == items[8] && inventory[8])
             {
                 resourceName = Properties.Resources._4_Safecard;
             }
-            if (itemName == items[9])
+            else if (itemName == items[9] && inventory[9])
             {
                 resourceName = Properties.Resources._4_Key;
             }
-            if (itemName == items[10])
+            else if (itemName == items[10] && inventory[10])
             {
                 resourceName = Properties.Resources._4_Test;
             }
-            if (itemName == items[11])
+            else if (itemName == items[11] && inventory[11])
             {
                 resourceName = Properties.Resources._5_Cardkey_;
             }
+            else
+            {
+                return;
+            }
+            
             maximizedItem.setMainItem(resourceName);
             Controls.Add(maximizedItem);
 
-            maximizedItem.Left = (this.Width - maximizedItem.Width) / 2;
-
-            maximizedItem.Top = (this.Height - maximizedItem.Height) / 2;
             maximizedItem.Dock = DockStyle.Fill;
             maximizedItem.BringToFront();
 
 
         }
-        private void Inventory_Load(object sender, EventArgs e)
+
+        public void Inventory_ItemVisibility_Check()
         {
-            for(int i=0;i<inventory.Length;i++)
-            {
-                inventory[i] = true;
-            }
             if (inventory[0] == true) { Papper_1.Visible = true; }
             else { Papper_1.Visible = false; }
             if (inventory[1] == true) { Test_1.Visible = true; }
@@ -189,6 +190,15 @@ namespace WindowsFormsApp2
             else { Test_4.Visible = false; }
             if (inventory[11] == true) { Cardkey_5.Visible = true; }
             else { Cardkey_5.Visible = false; }
+        }
+        private void Inventory_Load(object sender, EventArgs e)
+        {
+            Inventory_ItemVisibility_Check();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
     
