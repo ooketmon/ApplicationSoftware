@@ -56,6 +56,7 @@
             this.PC_2.Size = new System.Drawing.Size(147, 196);
             this.PC_2.TabIndex = 1;
             this.PC_2.TabStop = false;
+            this.PC_2.Click += new System.EventHandler(this.PC2_Click);
             // 
             // lecture2
             // 

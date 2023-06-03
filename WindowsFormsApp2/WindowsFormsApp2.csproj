@@ -498,6 +498,7 @@
     <None Include="resources\lab,office\lab_2.png" />
     <None Include="resources\lab,office\lab_3.png" />
     <None Include="resources\lab,office\lab_4.png" />
+    <None Include="resources\pc2pwd.jpg" />
     <Content Include="resources\Player\IMG_0809.PNG" />
     <Content Include="resources\Player\IMG_0811.PNG" />
     <Content Include="resources\Player\IMG_0812.PNG" />

@@ -14,12 +14,15 @@ namespace WindowsFormsApp2
 {
     public partial class InitMenu : Form
     {
-        public bool floor8MissionComplete = false;
-        public bool floor1MissionComplete = false;
         public bool havetoGoGuardRoom = false;
         public bool guardmanChasing = true;
         public bool assistantChasing = true;
         public bool firstStart = true;
+        public bool knowLab1PW=false;
+        public bool knowLab2PW = false;
+        public bool knowLab3PW = false;
+        public bool knowLab4PW = false;
+
         public Inventory inventory = new Inventory();
 
         public InitMenu()

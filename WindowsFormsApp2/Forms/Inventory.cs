@@ -220,6 +220,11 @@ namespace WindowsFormsApp2
         {
 
         }
+
+        private void box_test_2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }
