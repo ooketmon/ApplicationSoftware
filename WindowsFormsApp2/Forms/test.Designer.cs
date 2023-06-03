@@ -1,6 +1,6 @@
-﻿namespace WindowsFormsApp2
+﻿namespace WindowsFormsApp2.Forms
 {
-    partial class temp
+    partial class test
     {
         /// <summary>
         /// Required designer variable.
@@ -28,31 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.room_lecture11 = new WindowsFormsApp2.Room_lecture1();
+            this.room_Board1 = new WindowsFormsApp2.UDC.Room_Board();
             this.SuspendLayout();
             // 
-            // room_lecture11
+            // room_Board1
             // 
-            this.room_lecture11.Location = new System.Drawing.Point(0,0);
-            this.room_lecture11.Name = "room_lecture11";
-            this.room_lecture11.Size = new System.Drawing.Size(1200, 800);
-            this.room_lecture11.TabIndex = 0;
-            this.room_lecture11.Load += new System.EventHandler(this.room_lecture11_Load);
+            this.room_Board1.Location = new System.Drawing.Point(0, -4);
+            this.room_Board1.Name = "room_Board1";
+            this.room_Board1.Size = new System.Drawing.Size(1200, 800);
+            this.room_Board1.TabIndex = 0;
             // 
-            // temp
+            // test
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 800);
-            this.Controls.Add(this.room_lecture11);
-            this.Name = "temp";
-            this.Text = "temp";
+            this.ClientSize = new System.Drawing.Size(1182, 753);
+            this.Controls.Add(this.room_Board1);
+            this.Name = "test";
+            this.Text = "test";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Room_lecture1 room_lecture11;
+        private UDC.Room_Board room_Board1;
     }
 }
