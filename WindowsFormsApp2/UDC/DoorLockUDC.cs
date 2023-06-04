@@ -92,5 +92,10 @@ namespace WindowsFormsApp2.UDC
                 inputPassword.Clear();
             }
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Visible= false;
+        }
     }
 }

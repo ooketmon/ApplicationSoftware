@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp2.UDC
 {
-    partial class PasswordInptUDC
+    partial class ComputerPasswordInput
     {
         /// <summary> 
         /// 필수 디자이너 변수입니다.
@@ -42,6 +42,7 @@
             this.button0 = new System.Windows.Forms.Button();
             this.buttonClear = new System.Windows.Forms.Button();
             this.buttonEnter = new System.Windows.Forms.Button();
+            this.close = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureHint)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,7 +57,7 @@
             // inputPassword
             // 
             this.inputPassword.Font = new System.Drawing.Font("굴림", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.inputPassword.Location = new System.Drawing.Point(70, 396);
+            this.inputPassword.Location = new System.Drawing.Point(49, 392);
             this.inputPassword.Multiline = true;
             this.inputPassword.Name = "inputPassword";
             this.inputPassword.Size = new System.Drawing.Size(948, 55);
@@ -65,9 +66,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(22, 498);
+            this.button1.Location = new System.Drawing.Point(128, 488);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 100);
+            this.button1.Size = new System.Drawing.Size(76, 79);
             this.button1.TabIndex = 2;
             this.button1.Text = "1";
             this.button1.UseVisualStyleBackColor = true;
@@ -75,9 +76,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(128, 498);
+            this.button2.Location = new System.Drawing.Point(210, 488);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 100);
+            this.button2.Size = new System.Drawing.Size(76, 79);
             this.button2.TabIndex = 2;
             this.button2.Text = "2";
             this.button2.UseVisualStyleBackColor = true;
@@ -85,9 +86,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(234, 498);
+            this.button3.Location = new System.Drawing.Point(301, 488);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 100);
+            this.button3.Size = new System.Drawing.Size(76, 79);
             this.button3.TabIndex = 2;
             this.button3.Text = "3";
             this.button3.UseVisualStyleBackColor = true;
@@ -95,9 +96,9 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(340, 498);
+            this.button4.Location = new System.Drawing.Point(383, 488);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(100, 100);
+            this.button4.Size = new System.Drawing.Size(76, 79);
             this.button4.TabIndex = 2;
             this.button4.Text = "4";
             this.button4.UseVisualStyleBackColor = true;
@@ -105,9 +106,9 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(446, 498);
+            this.button5.Location = new System.Drawing.Point(465, 488);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(100, 100);
+            this.button5.Size = new System.Drawing.Size(76, 79);
             this.button5.TabIndex = 2;
             this.button5.Text = "5";
             this.button5.UseVisualStyleBackColor = true;
@@ -115,9 +116,9 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(552, 498);
+            this.button6.Location = new System.Drawing.Point(547, 488);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(100, 100);
+            this.button6.Size = new System.Drawing.Size(76, 79);
             this.button6.TabIndex = 2;
             this.button6.Text = "6";
             this.button6.UseVisualStyleBackColor = true;
@@ -125,9 +126,9 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(658, 498);
+            this.button7.Location = new System.Drawing.Point(629, 488);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(100, 100);
+            this.button7.Size = new System.Drawing.Size(76, 79);
             this.button7.TabIndex = 2;
             this.button7.Text = "7";
             this.button7.UseVisualStyleBackColor = true;
@@ -135,9 +136,9 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(764, 498);
+            this.button8.Location = new System.Drawing.Point(711, 488);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(100, 100);
+            this.button8.Size = new System.Drawing.Size(76, 79);
             this.button8.TabIndex = 2;
             this.button8.Text = "8";
             this.button8.UseVisualStyleBackColor = true;
@@ -145,9 +146,9 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(870, 498);
+            this.button9.Location = new System.Drawing.Point(793, 488);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(100, 100);
+            this.button9.Size = new System.Drawing.Size(76, 79);
             this.button9.TabIndex = 2;
             this.button9.Text = "9";
             this.button9.UseVisualStyleBackColor = true;
@@ -155,9 +156,9 @@
             // 
             // button0
             // 
-            this.button0.Location = new System.Drawing.Point(976, 498);
+            this.button0.Location = new System.Drawing.Point(875, 488);
             this.button0.Name = "button0";
-            this.button0.Size = new System.Drawing.Size(100, 100);
+            this.button0.Size = new System.Drawing.Size(76, 79);
             this.button0.TabIndex = 2;
             this.button0.Text = "0";
             this.button0.UseVisualStyleBackColor = true;
@@ -165,9 +166,9 @@
             // 
             // buttonClear
             // 
-            this.buttonClear.Location = new System.Drawing.Point(1082, 498);
+            this.buttonClear.Location = new System.Drawing.Point(957, 488);
             this.buttonClear.Name = "buttonClear";
-            this.buttonClear.Size = new System.Drawing.Size(100, 100);
+            this.buttonClear.Size = new System.Drawing.Size(76, 79);
             this.buttonClear.TabIndex = 2;
             this.buttonClear.Text = "Clear All";
             this.buttonClear.UseVisualStyleBackColor = true;
@@ -175,7 +176,7 @@
             // 
             // buttonEnter
             // 
-            this.buttonEnter.Location = new System.Drawing.Point(1044, 392);
+            this.buttonEnter.Location = new System.Drawing.Point(1013, 392);
             this.buttonEnter.Name = "buttonEnter";
             this.buttonEnter.Size = new System.Drawing.Size(138, 64);
             this.buttonEnter.TabIndex = 2;
@@ -183,11 +184,22 @@
             this.buttonEnter.UseVisualStyleBackColor = true;
             this.buttonEnter.Click += new System.EventHandler(this.buttonEnter_Click);
             // 
-            // PasswordInptUDC
+            // close
+            // 
+            this.close.Location = new System.Drawing.Point(1052, 18);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(75, 23);
+            this.close.TabIndex = 3;
+            this.close.Text = "닫기";
+            this.close.UseVisualStyleBackColor = true;
+            this.close.Click += new System.EventHandler(this.close_Click);
+            // 
+            // ComputerPasswordInput
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.Controls.Add(this.close);
             this.Controls.Add(this.buttonEnter);
             this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.button3);
@@ -202,7 +214,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.inputPassword);
             this.Controls.Add(this.pictureHint);
-            this.Name = "PasswordInptUDC";
+            this.Name = "ComputerPasswordInput";
             this.Size = new System.Drawing.Size(1200, 800);
             ((System.ComponentModel.ISupportInitialize)(this.pictureHint)).EndInit();
             this.ResumeLayout(false);
@@ -226,5 +238,6 @@
         private System.Windows.Forms.Button button0;
         private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.Button buttonEnter;
+        private System.Windows.Forms.Button close;
     }
 }

@@ -24,10 +24,13 @@ namespace WindowsFormsApp2.UDC
             labPC_2.BackColor = Color.Transparent;
             labPC_2.Parent = lab2;
 
+
             this.KeyDown += Inventory_KeyDown; // 이벤트 핸들러 등록
         }
         public void labPC2_Click(object sender, EventArgs e) 
-        { 
+        {
+            computerPasswordInput1.Location = new Point(-2, -2);
+            computerPasswordInput1.Visible= true;
             //클릭 시 힌트화면과 입력화면이 보이는 PC UDC화면이 나옴
             //정답을 입력할 경우 '출력' button이 있는 화면 등장
             //출력을 클릭한 후 프린터기를 클릭하면 시험지가 인벤토리에 저장
@@ -40,6 +43,7 @@ namespace WindowsFormsApp2.UDC
             // PC에서 button을 클릭한 후에 실행이 되도록
             mTest1 = true;
             inventory_set();
+
         }
 
         private void Inventory_KeyDown(object sender, KeyEventArgs e)

@@ -30,22 +30,22 @@
         {
             this.components = new System.ComponentModel.Container();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
-            this.room_Board1 = new WindowsFormsApp2.UDC.Room_Board();
+            this.room_lab41 = new WindowsFormsApp2.UDC.Room_lab4();
             this.SuspendLayout();
             // 
-            // room_Board1
+            // room_lab41
             // 
-            this.room_Board1.Location = new System.Drawing.Point(-1, -1);
-            this.room_Board1.Name = "room_Board1";
-            this.room_Board1.Size = new System.Drawing.Size(1200, 800);
-            this.room_Board1.TabIndex = 0;
+            this.room_lab41.Location = new System.Drawing.Point(3, -2);
+            this.room_lab41.Name = "room_lab41";
+            this.room_lab41.Size = new System.Drawing.Size(1200, 800);
+            this.room_lab41.TabIndex = 0;
             // 
             // test
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 753);
-            this.Controls.Add(this.room_Board1);
+            this.Controls.Add(this.room_lab41);
             this.Name = "test";
             this.Text = "test";
             this.ResumeLayout(false);
@@ -55,6 +55,6 @@
         #endregion
 
         private System.IO.Ports.SerialPort serialPort1;
-        private UDC.Room_Board room_Board1;
+        private UDC.Room_lab4 room_lab41;
     }
 }
