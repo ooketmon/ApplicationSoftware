@@ -619,22 +619,27 @@ namespace WindowsFormsApp2
             eventType += "/Room2-2Puzzle";
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
             target.text = string.Format("이게 뭐지? 비밀번호인가?");
+            
             foreach (Control c in target.Controls)
             {
                 if (c.Name == "btnSkip")
                 {
                     c.Text = "";
                 }
+                /*
                 if ((c.GetType().ToString()).Contains("Room_lecture2"))
                 {
                     c.Enabled = false;
                 }
+                */
             }
+            /*
             puzzle p=new puzzle("PC_2",this);
             target.Controls.Add(p);
             p.Top = target.Height/2-p.Height/2;
             p.Left = target.Width / 2 - p.Width / 2;
             p.BringToFront();
+            */
             target.timerReset();
 
         }
@@ -644,13 +649,14 @@ namespace WindowsFormsApp2
             GetRidofEventSplit();
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
             target.text = string.Format("비밀번호인 것 같은데?");
-            Control to_delete = null;
+            //Control to_delete = null;
             foreach (Control c in target.Controls)
             {
                 if (c.Name == "btnSkip")
                 {
                     c.Text = "나가기";
                 }
+                /*
                 if (c.GetType() == typeof(puzzle))
                 {
                     to_delete = c;
@@ -659,11 +665,13 @@ namespace WindowsFormsApp2
                 {
                     c.Enabled = false;
                 }
+                */
             }
             if(!(this.target.Parent as InitMenu).knowLab2PW)
             {
                 (this.target.Parent as InitMenu).knowLab2PW = true;
             }
+            /*
             if (to_delete != null)
             {
                 target.Controls.Remove(to_delete);
@@ -673,6 +681,7 @@ namespace WindowsFormsApp2
             pw.Left = target.Width / 2 - pw.Width / 2;
             target.Controls.Add(pw);
             pw.BringToFront();
+            */
             target.timerReset();
         }
 
@@ -695,6 +704,7 @@ namespace WindowsFormsApp2
                 {
                     c.Text = "나가기";
                 }
+                /*
                 if (c.GetType() == typeof(puzzle))
                 {
                     to_delete = c;
@@ -703,8 +713,9 @@ namespace WindowsFormsApp2
                 {
                     c.Enabled= true;
                 }
+                */
             }
-            target.Controls.Remove(to_delete);
+            //target.Controls.Remove(to_delete);
             target.timerReset();
         }
         public void SkipConversation()

@@ -36,6 +36,7 @@ namespace WindowsFormsApp2
         }
         private void btn_input_Click(object sender, EventArgs e)
         {
+            /*
             if (info == "PC_2")
             {
                 if (textBox1.Text == pc2_answer.ToString())
@@ -46,7 +47,7 @@ namespace WindowsFormsApp2
                 {
                     controller.Room2_2PuzzleWrong();
                 }
-            }else if (info == "lecture2_1_enter")
+            }else */if (info == "lecture2_1_enter")
             {
                 if (textBox1.Text=="201")
                 {
@@ -92,10 +93,11 @@ namespace WindowsFormsApp2
 
         private void btn_quit_Click(object sender, EventArgs e)
         {
+            /*
             if (info == "PC_2")
             {
                 controller.Room2_2PuzzleQuit();
-            }else if (info=="lecture2_1_enter")
+            }else*/ if (info=="lecture2_1_enter")
             {
                 (this.Parent as Floor2UDC).puzzleOn = false;
                 (this.Parent.Parent as InitMenu).GetRidofPuzzleInFloor();
@@ -126,6 +128,7 @@ namespace WindowsFormsApp2
         }
         private void puzzle_Load(object sender, EventArgs e)
             {
+            /*
             if (info == "PC_2")
             {
                 pc2_problem = new Label();
@@ -143,7 +146,7 @@ namespace WindowsFormsApp2
                 pc2_problem.BackColor = Color.Transparent;
                 pc2_problem.BringToFront();
 
-            }else if (info == "lecture2_1_enter")
+            }else*/ if (info == "lecture2_1_enter")
             {
                 pictureBox1.BackgroundImage = Properties.Resources.pwdpad;
                 pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
