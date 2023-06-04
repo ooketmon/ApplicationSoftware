@@ -74,6 +74,12 @@
     <Compile Include="Forms\ConvMode.Designer.cs">
       <DependentUpon>ConvMode.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -276,6 +282,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ConvMode.resx">
       <DependentUpon>ConvMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\test.resx">
+      <DependentUpon>test.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UDC\Chaser.resx">
       <DependentUpon>Chaser.cs</DependentUpon>
