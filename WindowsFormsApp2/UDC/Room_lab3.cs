@@ -30,6 +30,7 @@ namespace WindowsFormsApp2.UDC
                 mTest3 = true;
                 inventory_set();
                 (this.Parent.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
+                controller.Test3Get1();
             }
         }
     }

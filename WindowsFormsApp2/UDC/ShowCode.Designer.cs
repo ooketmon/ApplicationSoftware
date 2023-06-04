@@ -40,7 +40,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(161, 60);
             this.label1.TabIndex = 0;
-            this.label1.Text = "1234";
+            this.label1.Text = "5678";
             // 
             // button1
             // 

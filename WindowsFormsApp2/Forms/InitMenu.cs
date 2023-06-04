@@ -22,6 +22,7 @@ namespace WindowsFormsApp2
         public bool knowLab2PW = false;
         public bool knowLab3PW = false;
         //public bool knowLab4PW = false;
+        public bool openLecture2_1 = false;
         public bool openLab1 = false;
         public bool openLab2 = false;
         public bool openLab3 = false;
@@ -319,7 +320,7 @@ namespace WindowsFormsApp2
         {
             foreach (Control c in this.Controls)
             {
-                if (c.GetType() == typeof(Floor8UDC))
+                if (c.GetType() == typeof(Floor8UDC) || c.GetType()==typeof(Floor2UDC))
                 {
                     var allControls = c.Controls;
                     foreach(Control c2 in allControls)

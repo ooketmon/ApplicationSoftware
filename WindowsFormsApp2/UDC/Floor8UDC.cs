@@ -154,7 +154,7 @@ namespace WindowsFormsApp2
                 }
                 if (x is PictureBox && (x.Name as string)=="lab_1")
                 {
-                    if(player.Bounds.IntersectsWith(x.Bounds)&&!convHitTest&&!(this.Parent as InitMenu).knowLab1PW)
+                    if(player.Bounds.IntersectsWith(x.Bounds)&&!convHitTest&&!StaticItem.mPapper1)
                     {
                         convHitTest = true;
                         player.Left += 70;
@@ -162,14 +162,14 @@ namespace WindowsFormsApp2
                         convHitTest = false;
                         break;
                     }
-                    else if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest && (this.Parent as InitMenu).knowLab1PW && !(this.Parent as InitMenu).openLab1)
+                    else if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest && StaticItem.mPapper1 && !(this.Parent as InitMenu).openLab1)
                     {
                         //퀴즈UDC 호출
                         convHitTest = true;
                         player.Left += 70;
                         puzzle p = new puzzle("lab1_enter");
                         p.Left = this.Width / 2 - p.Width / 2;
-                        p.Top=this.Height/2-p.Height/2;
+                        p.Top = this.Height / 2 - p.Height / 2;
                         Controls.Add(p);
                         p.BringToFront();
                         convHitTest = false;
@@ -197,6 +197,16 @@ namespace WindowsFormsApp2
                     else if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest && (this.Parent as InitMenu).knowLab2PW && !(this.Parent as InitMenu).openLab2)
                     {
                         //퀴즈UDC 호출
+                        convHitTest = true;
+                        player.Left += 70;
+                        puzzle p = new puzzle("lab2_enter");
+                        p.Left = this.Width / 2 - p.Width / 2;
+                        p.Top = this.Height / 2 - p.Height / 2;
+                        Controls.Add(p);
+                        p.BringToFront();
+                        convHitTest = false;
+                        puzzleOn = true;
+                        break;
 
                     }
                     else if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest && (this.Parent as InitMenu).openLab2)
@@ -208,7 +218,7 @@ namespace WindowsFormsApp2
                 }
                 if (x is PictureBox && (x.Name as string) == "lab_3")
                 {
-                    if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest && !(this.Parent as InitMenu).knowLab3PW)
+                    if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest && !StaticItem.mPoster3)
                     {
                         convHitTest = true;
                         player.Left += 70;
@@ -216,10 +226,19 @@ namespace WindowsFormsApp2
                         convHitTest = false;
                         break;
                     }
-                    else if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest && (this.Parent as InitMenu).knowLab3PW && !(this.Parent as InitMenu).openLab3)
+                    else if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest && StaticItem.mPoster3 && !(this.Parent as InitMenu).openLab3)
                     {
                         //퀴즈UDC 호출
-
+                        convHitTest = true;
+                        player.Left += 70;
+                        puzzle p = new puzzle("lab3_enter");
+                        p.Left = this.Width / 2 - p.Width / 2;
+                        p.Top = this.Height / 2 - p.Height / 2;
+                        Controls.Add(p);
+                        p.BringToFront();
+                        convHitTest = false;
+                        puzzleOn = true;
+                        break;
                     }
                     else if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest && (this.Parent as InitMenu).openLab3)
                     {

@@ -39,7 +39,7 @@ namespace WindowsFormsApp2.UDC
 
         public void PC2_Click(object sender, EventArgs e)
         {
-            if(!(this.Parent.Parent as InitMenu).knowLab1PW){//풀지 않은 경우
+            if(!(this.Parent.Parent as InitMenu).knowLab2PW){//풀지 않은 경우
                 controller.Room2_2Puzzle();
             }
             else//한 번 푼 경우

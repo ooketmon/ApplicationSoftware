@@ -249,7 +249,7 @@ namespace WindowsFormsApp2
         public void Test3Get1()
         {
             GetRidofEventSplit();
-            eventType += "/GetTest2";
+            eventType += "/GetTest3";
             phase++;
             target.nameCharacter.Text = STUDENT_INFO.name;
             target.text = string.Format("책꽂이의 서류뭉치...수상하군..좋아!");
@@ -420,6 +420,13 @@ namespace WindowsFormsApp2
         {
             phase++;
             eventType += "/GetPoster3";
+            foreach(Control c in target.Controls)
+            {
+                if (c.Name == "btnSkip")
+                {
+                    c.Text = "▶";
+                }
+            }
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
             target.text = string.Format("강의실에 포스터가 있네? 뭐지?");
             target.timerReset();
@@ -427,6 +434,13 @@ namespace WindowsFormsApp2
 
         public void Poster3Get2()
         {
+            foreach (Control c in target.Controls)
+            {
+                if (c.Name == "btnSkip")
+                {
+                    c.Text = "나가기";
+                }
+            }
             phase++;
             target.nameCharacter.Text = "System";
             StaticItem.mPoster3 = true;
@@ -646,9 +660,9 @@ namespace WindowsFormsApp2
                     c.Enabled = false;
                 }
             }
-            if(!(this.target.Parent as InitMenu).knowLab1PW)
+            if(!(this.target.Parent as InitMenu).knowLab2PW)
             {
-                (this.target.Parent as InitMenu).knowLab1PW = true;
+                (this.target.Parent as InitMenu).knowLab2PW = true;
             }
             if (to_delete != null)
             {
@@ -979,6 +993,17 @@ namespace WindowsFormsApp2
 
             if (eventType.StartsWith("lab"))
             {
+                string[] event_split = eventType.Split('/');
+                if (event_split.Length > 1 && event_split[1] == "GetTest1" && phase==2)
+                {
+                    Test1Get2();
+                    return;
+                }
+                if (event_split.Length > 1 && event_split[1] == "GetTest3" && phase == 2)
+                {
+                    Test3Get2();
+                    return;
+                }
                 GetRidofEventSplit();
                 Floor8UDC tmp = new Floor8UDC();
                 Control player = null;

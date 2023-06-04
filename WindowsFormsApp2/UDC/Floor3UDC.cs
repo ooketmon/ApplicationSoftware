@@ -119,7 +119,7 @@ namespace WindowsFormsApp2
                     {
                         convHitTest = true;
                         player.Top -= 50;
-                        MessageBox.Show("이 실습실만 잠겨있다.");
+                        MessageBox.Show("실습실은 이 실습실만 잠겨있다.");
                         convHitTest = false;
                         break;
                     }
@@ -128,6 +128,17 @@ namespace WindowsFormsApp2
                         convHitTest = true;
                         ((InitMenu)this.Parent).CallConvMode(x.Name.ToString());
                         return;
+                    }
+                }
+                if(x is PictureBox && (string)x.Tag == "lock")
+                {
+                    if(player.Bounds.IntersectsWith(x.Bounds)&&!convHitTest) {
+                        convHitTest = true;
+                        player.Top += 50;
+                        MessageBox.Show("이 방은 잠겨있다.");
+                        convHitTest = false;
+                        break;
+                    
                     }
                 }
             }

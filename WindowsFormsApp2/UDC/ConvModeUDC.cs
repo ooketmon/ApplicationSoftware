@@ -19,6 +19,9 @@ namespace WindowsFormsApp2.UDC
         string where_event_occur;
         ControlConversationUDC controller = null;
 
+        System.Threading.Timer timer = null;
+        public delegate void timer_delegate();
+
         public ConvModeUDC()
         {
             InitializeComponent();
@@ -49,10 +52,12 @@ namespace WindowsFormsApp2.UDC
 
             }
             counter = 0;
+            /*
             if (!timerLetter.Enabled)
             {
                 timerLetter.Start();
             }
+            */
 
             System.Drawing.Text.PrivateFontCollection privateFonts = new System.Drawing.Text.PrivateFontCollection();
             privateFonts.AddFontFile("./resources/Mabinogi_Classic_TTF.ttf"); // 마비노기 옛체 
@@ -159,8 +164,9 @@ namespace WindowsFormsApp2.UDC
             len = text.Length;
 
             contentConv.Text = "";
-            timerLetter.Start();
-
+            //timerLetter.Start();
+            timer = new System.Threading.Timer(TimerCallBack);
+            timer.Change(0, 30);
 
             //nameCharacter.Parent = imgConvWindowBack;
             //nameCharacter.BackColor = Color.Transparent;
@@ -169,6 +175,20 @@ namespace WindowsFormsApp2.UDC
             //contentConv.BackColor = Color.Transparent;
         }
 
+        private void TimerCallBack(object status)
+        {
+            BeginInvoke(new timer_delegate(() =>
+            {
+                counter++;
+                if(!(String.IsNullOrEmpty(text))&&text.Length >= counter)
+                {
+                    contentConv.Text = text.Substring(0, counter);
+                }else if (counter > text.Length)
+                {
+                    counter--;
+                }
+            }));
+        }
         private void timerLetter_Tick_1(object sender, EventArgs e)
         {
             counter++;

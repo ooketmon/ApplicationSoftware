@@ -46,24 +46,45 @@ namespace WindowsFormsApp2
                 {
                     controller.Room2_2PuzzleWrong();
                 }
-            } else if (info == "lab1_enter")
+            }else if (info == "lecture2_1_enter")
             {
-                if (lab1_pw.ToString()==textBox1.Text)
+                if (textBox1.Text=="201")
+                {
+                    (this.Parent.Parent as InitMenu).openLecture2_1= true;
+                    (this.Parent.Parent as InitMenu).CallConvMode("room2_1");
+                }
+
+            }
+            else if (info == "lab1_enter")
+            {
+                if (lab1_pw.ToString() == textBox1.Text)
                 {
                     (this.Parent.Parent as InitMenu).openLab1 = true;
                     (this.Parent.Parent as InitMenu).CallConvMode("lab_1");
                 }
-            } else if (info == "lab2_enter")
+            }
+            else if (info == "lab2_enter")
+            {
+                if (lab2_pw.ToString() == textBox1.Text)
+                {
+                    (this.Parent.Parent as InitMenu).openLab2 = true;
+                    (this.Parent.Parent as InitMenu).CallConvMode("lab_2");
+                }
+            }
+            else if (info == "lab2_PC")
             {
 
-            } else if (info=="lab2_PC")
+
+            }
+            else if (info == "lab3_enter")
             {
-
-
-            } else if (info == "lab3_enter")
-            {
-
-            }else if (info == "lab4_LockCase")
+                if (lab3_pw.ToString() == textBox1.Text)
+                {
+                    (this.Parent.Parent as InitMenu).openLab3 = true;
+                    (this.Parent.Parent as InitMenu).CallConvMode("lab_3");
+                }
+            }
+            else if (info == "lab4_LockCase")
             {
 
             }
@@ -74,6 +95,10 @@ namespace WindowsFormsApp2
             if (info == "PC_2")
             {
                 controller.Room2_2PuzzleQuit();
+            }else if (info=="lecture2_1_enter")
+            {
+                (this.Parent as Floor2UDC).puzzleOn = false;
+                (this.Parent.Parent as InitMenu).GetRidofPuzzleInFloor();
             }
             else if (info == "lab1_enter")
             {
@@ -82,23 +107,24 @@ namespace WindowsFormsApp2
             }
             else if (info == "lab2_enter")
             {
-
+                (this.Parent as Floor8UDC).puzzleOn = false;
+                (this.Parent.Parent as InitMenu).GetRidofPuzzleInFloor();
             }
             else if (info == "lab2_PC")
             {
 
-
             }
             else if (info == "lab3_enter")
             {
-
+                (this.Parent as Floor8UDC).puzzleOn = false;
+                (this.Parent.Parent as InitMenu).GetRidofPuzzleInFloor();
             }
             else if (info == "lab4_LockCase")
             {
 
             }
         }
-            private void puzzle_Load(object sender, EventArgs e)
+        private void puzzle_Load(object sender, EventArgs e)
             {
             if (info == "PC_2")
             {
@@ -117,6 +143,21 @@ namespace WindowsFormsApp2
                 pc2_problem.BackColor = Color.Transparent;
                 pc2_problem.BringToFront();
 
+            }else if (info == "lecture2_1_enter")
+            {
+                pictureBox1.BackgroundImage = Properties.Resources.pwdpad;
+                pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+                Label intro = new Label();
+                intro.AutoSize = true;
+                intro.Font = new Font("Gulim", 15, FontStyle.Bold);
+                intro.ForeColor = Color.White;
+                intro.Text = "1강의실 비밀번호를 아래 입력창에 입력";
+                intro.Top = pictureBox1.Bottom - intro.Height - 15;
+                intro.Left = pictureBox1.Left - 15;
+                this.Controls.Add(intro);
+                intro.Parent = pictureBox1;
+                intro.BackColor = Color.Transparent;
+                intro.BringToFront();
             }
             else if (info == "lab1_enter")
             {
@@ -124,13 +165,13 @@ namespace WindowsFormsApp2
                 pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
                 Label intro = new Label();
                 intro.AutoSize = true;
-                intro.Font = new Font("Gulim", 15,FontStyle.Bold);
+                intro.Font = new Font("Gulim", 15, FontStyle.Bold);
                 intro.ForeColor = Color.White;
-                intro.Text = "1연구실 비밀번호를 아래 입력창에 입력";
-                intro.Top = pictureBox1.Bottom-intro.Height-15;
-                intro.Left = pictureBox1.Left-15;
+                intro.Text = "1연구실 비밀번호를 1234 입력";
+                intro.Top = pictureBox1.Bottom - intro.Height - 15;
+                intro.Left = pictureBox1.Left - 15;
                 this.Controls.Add(intro);
-                intro.Parent= pictureBox1;
+                intro.Parent = pictureBox1;
                 intro.BackColor = Color.Transparent;
                 intro.BringToFront();
                 lab1_pw = (this.Parent.Parent as InitMenu).Lab1PW;
@@ -139,6 +180,18 @@ namespace WindowsFormsApp2
             {
                 pictureBox1.BackgroundImage = Properties.Resources.pwdpad;
                 pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+                Label intro = new Label();
+                intro.AutoSize = true;
+                intro.Font = new Font("Gulim", 15, FontStyle.Bold);
+                intro.ForeColor = Color.White;
+                intro.Text = "2연구실 비밀번호를 5678 입력";
+                intro.Top = pictureBox1.Bottom - intro.Height - 15;
+                intro.Left = pictureBox1.Left - 15;
+                this.Controls.Add(intro);
+                intro.Parent = pictureBox1;
+                intro.BackColor = Color.Transparent;
+                intro.BringToFront();
+                lab2_pw = (this.Parent.Parent as InitMenu).Lab2PW;
             }
             else if (info == "lab2_PC")
             {
@@ -150,6 +203,18 @@ namespace WindowsFormsApp2
             {
                 pictureBox1.BackgroundImage = Properties.Resources.pwdpad;
                 pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+                Label intro = new Label();
+                intro.AutoSize = true;
+                intro.Font = new Font("Gulim", 15, FontStyle.Bold);
+                intro.ForeColor = Color.White;
+                intro.Text = "3연구실 비밀번호 9876 입력";
+                intro.Top = pictureBox1.Bottom - intro.Height - 15;
+                intro.Left = pictureBox1.Left - 15;
+                this.Controls.Add(intro);
+                intro.Parent = pictureBox1;
+                intro.BackColor = Color.Transparent;
+                intro.BringToFront();
+                lab3_pw = (this.Parent.Parent as InitMenu).Lab3PW;
             }
             else if (info == "lab4_LockCase")
             {

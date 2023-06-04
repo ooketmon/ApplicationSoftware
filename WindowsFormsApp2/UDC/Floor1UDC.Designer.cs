@@ -193,6 +193,7 @@
             this.pictureBox46.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox46.TabIndex = 125;
             this.pictureBox46.TabStop = false;
+            this.pictureBox46.Tag = "lock2";
             // 
             // pictureBox45
             // 
@@ -314,6 +315,7 @@
             this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox35.TabIndex = 114;
             this.pictureBox35.TabStop = false;
+            this.pictureBox35.Tag = "lock2";
             // 
             // pictureBox34
             // 
@@ -334,6 +336,7 @@
             this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox33.TabIndex = 112;
             this.pictureBox33.TabStop = false;
+            this.pictureBox33.Tag = "lock2";
             // 
             // pictureBox32
             // 
