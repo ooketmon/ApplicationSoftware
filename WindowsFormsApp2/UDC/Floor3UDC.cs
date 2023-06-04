@@ -115,6 +115,13 @@ namespace WindowsFormsApp2
                             convHitTest = true;
                             ((InitMenu)this.Parent).CallConvMode(x.Name.ToString());
                             return;
+                    }else if(x.Name=="practice3_4"&&player.Bounds.IntersectsWith(x.Bounds)&&!convHitTest && !StaticItem.mSafekey4)
+                    {
+                        convHitTest = true;
+                        player.Top -= 50;
+                        MessageBox.Show("이 실습실만 잠겨있다.");
+                        convHitTest = false;
+                        break;
                     }
                     else if (x.Name!="practice3_4"&&player.Bounds.IntersectsWith(x.Bounds) && !convHitTest)
                     {

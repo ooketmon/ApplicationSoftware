@@ -15,14 +15,24 @@ namespace WindowsFormsApp2
     public partial class InitMenu : Form
     {
         public bool havetoGoGuardRoom = false;
-        public bool guardmanChasing = true;
-        public bool assistantChasing = true;
+        public bool guardmanChasing = false;
+        public bool assistantChasing = false;
         public bool firstStart = true;
         public bool knowLab1PW=false;
         public bool knowLab2PW = false;
         public bool knowLab3PW = false;
-        public bool knowLab4PW = false;
+        //public bool knowLab4PW = false;
+        public bool openLab1 = false;
+        public bool openLab2 = false;
+        public bool openLab3 = false;
+        //public bool openLab4 = false;
 
+        public int Lab1PW = 1234;
+        public int Lab2PW = 5678;
+        public int Lab3PW = 9876;
+
+        public int lecture2_answer = -1;
+        public string lecture2_problem = "";
         public Inventory inventory = new Inventory();
 
         public InitMenu()
@@ -290,13 +300,39 @@ namespace WindowsFormsApp2
         }
         private void InitMenu_Load(object sender, EventArgs e)
         {
-            CallMainMenu(); 
+            CallMainMenu();
+            Random random = new Random();
+            lecture2_answer = random.Next(128);
+            for (int i = 7; i >= 0; i--)
+            {
+                lecture2_problem += ((lecture2_answer >> i) & 1).ToString();
+            }
         }
         public void GoToLogin()
         {
             this.Controls.Clear();
             this.Controls.Add(new LoginStartUDC());
 
+        }
+
+        public void GetRidofPuzzleInFloor()
+        {
+            foreach (Control c in this.Controls)
+            {
+                if (c.GetType() == typeof(Floor8UDC))
+                {
+                    var allControls = c.Controls;
+                    foreach(Control c2 in allControls)
+                    {
+                        if (c2.GetType() == typeof(puzzle))
+                        {
+                            c.Controls.Remove(c2);
+                            break;
+                        }
+                    }
+                    break;
+                }
+            }
         }
 
         private void InitMenu_KeyDown(object sender, KeyEventArgs e)

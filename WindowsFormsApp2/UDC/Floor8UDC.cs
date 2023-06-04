@@ -19,6 +19,7 @@ namespace WindowsFormsApp2
         bool playerisOnStair = false;
         bool playerisOnElevator = false;
         bool convHitTest = false;
+        public bool puzzleOn = false;
 
         List<Control> jumpscarePoint = new List<Control>();
 
@@ -122,12 +123,19 @@ namespace WindowsFormsApp2
         }
         private void Floor8_KeyUp(object sender, KeyEventArgs e)
         {
-            playerMove.PlayerKeyUp(sender, e);
+            if (!puzzleOn)
+            {
+                playerMove.PlayerKeyUp(sender, e);
+            }
         }
 
         private void Floor8_KeyDown(object sender, KeyEventArgs e)
         {
-            playerMove.MovePlayerWithoutBool(e);
+            if (!puzzleOn)
+            {
+                playerMove.MovePlayerWithoutBool(e);
+            }
+
         }
 
         private void timerFloor8_Tick(object sender, EventArgs e)
@@ -144,13 +152,111 @@ namespace WindowsFormsApp2
                         return;
                     }
                 }
-                if (x is PictureBox && (x.Name as string).StartsWith("lab"))
+                if (x is PictureBox && (x.Name as string)=="lab_1")
                 {
-                    if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest)
+                    if(player.Bounds.IntersectsWith(x.Bounds)&&!convHitTest&&!(this.Parent as InitMenu).knowLab1PW)
+                    {
+                        convHitTest = true;
+                        player.Left += 70;
+                        MessageBox.Show("1연구실 비밀번호를 알아와야 한다.");
+                        convHitTest = false;
+                        break;
+                    }
+                    else if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest && (this.Parent as InitMenu).knowLab1PW && !(this.Parent as InitMenu).openLab1)
+                    {
+                        //퀴즈UDC 호출
+                        convHitTest = true;
+                        player.Left += 70;
+                        puzzle p = new puzzle("lab1_enter");
+                        p.Left = this.Width / 2 - p.Width / 2;
+                        p.Top=this.Height/2-p.Height/2;
+                        Controls.Add(p);
+                        p.BringToFront();
+                        convHitTest = false;
+                        puzzleOn = true;
+                        break;
+
+                    }
+                    else if(player.Bounds.IntersectsWith(x.Bounds)&&!convHitTest &&(this.Parent as InitMenu).openLab1)
                     {
                         convHitTest = true;
                         ((InitMenu)this.Parent).CallConvMode(x.Name.ToString());
                         return;
+                    }
+                }
+                if (x is PictureBox && (x.Name as string) == "lab_2")
+                {
+                    if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest && !(this.Parent as InitMenu).knowLab2PW)
+                    {
+                        convHitTest = true;
+                        player.Left += 70;
+                        MessageBox.Show("2연구실 비밀번호를 알아와야 한다.");
+                        convHitTest = false;
+                        break;
+                    }
+                    else if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest && (this.Parent as InitMenu).knowLab2PW && !(this.Parent as InitMenu).openLab2)
+                    {
+                        //퀴즈UDC 호출
+
+                    }
+                    else if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest && (this.Parent as InitMenu).openLab2)
+                    {
+                        convHitTest = true;
+                        ((InitMenu)this.Parent).CallConvMode(x.Name.ToString());
+                        return;
+                    }
+                }
+                if (x is PictureBox && (x.Name as string) == "lab_3")
+                {
+                    if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest && !(this.Parent as InitMenu).knowLab3PW)
+                    {
+                        convHitTest = true;
+                        player.Left += 70;
+                        MessageBox.Show("3연구실 비밀번호를 알아와야 한다.");
+                        convHitTest = false;
+                        break;
+                    }
+                    else if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest && (this.Parent as InitMenu).knowLab3PW && !(this.Parent as InitMenu).openLab3)
+                    {
+                        //퀴즈UDC 호출
+
+                    }
+                    else if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest && (this.Parent as InitMenu).openLab3)
+                    {
+                        convHitTest = true;
+                        ((InitMenu)this.Parent).CallConvMode(x.Name.ToString());
+                        return;
+                    }
+                }
+                if (x is PictureBox && (x.Name as string) == "lab_4")
+                {
+
+                    if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest )
+                    {
+                        convHitTest = true;
+                        ((InitMenu)this.Parent).CallConvMode(x.Name.ToString());
+                        return;
+                    }
+                }
+                if(x is PictureBox && !x.Name.StartsWith("lab") && (string)x.Tag=="labenter")
+                {
+                    if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest)
+                    {
+                        convHitTest = true;
+                        if (x.Left <= 250 && x.Top <= 300)
+                        {
+                            player.Left += 50;
+                        }
+                        else if (x.Left >= 800 && x.Top <= 300)
+                        {
+                            player.Left -= 50;
+                        }
+                        else if (x.Top > 300)
+                        {
+                            player.Top -=50;
+                        }
+                        MessageBox.Show("이 연구실에는 볼 일이 없을 듯 하다.");
+                        convHitTest = false;
                     }
                 }
             }

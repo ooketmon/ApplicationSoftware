@@ -983,6 +983,16 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap painter {
+            get {
+                object obj = ResourceManager.GetObject("painter", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap pc2pwd {
             get {
                 object obj = ResourceManager.GetObject("pc2pwd", resourceCulture);
@@ -1006,6 +1016,16 @@ namespace WindowsFormsApp2.Properties {
         internal static System.Drawing.Bitmap practice_room_2 {
             get {
                 object obj = ResourceManager.GetObject("practice_room_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap pwdpad {
+            get {
+                object obj = ResourceManager.GetObject("pwdpad", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

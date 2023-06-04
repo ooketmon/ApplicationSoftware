@@ -253,6 +253,12 @@
     <Compile Include="Forms\temp.Designer.cs">
       <DependentUpon>temp.cs</DependentUpon>
     </Compile>
+    <Compile Include="UDC\ShowCode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UDC\ShowCode.Designer.cs">
+      <DependentUpon>ShowCode.cs</DependentUpon>
+    </Compile>
     <Compile Include="UDC\StairChoice.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -351,6 +357,9 @@
     <EmbeddedResource Include="Forms\temp.resx">
       <DependentUpon>temp.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UDC\ShowCode.resx">
+      <DependentUpon>ShowCode.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UDC\StairChoice.resx">
       <DependentUpon>StairChoice.cs</DependentUpon>
     </EmbeddedResource>
@@ -390,6 +399,8 @@
     <None Include="resources\IMG_0793.PNG" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="resources\pwdpad.jpg" />
+    <None Include="resources\킹림판.png" />
     <None Include="resources\practice-room-2.png" />
     <None Include="resources\SmartSelectImage_2023-05-29-17-08-29 1.png" />
     <None Include="resources\SmartSelectImage_2023-05-29-16-52-30.png" />

@@ -115,6 +115,17 @@ namespace WindowsFormsApp2
                         return;
                     }
                 }
+                if(x is PictureBox && (string)x.Tag == "lock")
+                {
+                    if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest)
+                    {
+                        convHitTest= true;
+                        player.Top -= 50;
+                        MessageBox.Show("잠겨있어서 들어갈 수 없다.");
+                        convHitTest = false;
+                        break;
+                    }
+                }
             }
         }
 

@@ -16,11 +16,23 @@ namespace WindowsFormsApp2
         ControlConversationUDC controller=null;
         Label pc2_problem = null;
         int pc2_answer = -1;
+        int lab1_pw = -1;
+        int lab2_pw= -1;
+        int lab3_pw = -1;
+        int lab2_pc_answer = -1;
+        int lab4_lockcase_answer = -1;
+
         public puzzle(string info,ControlConversationUDC controller)
         {
             InitializeComponent();
             this.info = info;
             this.controller = controller;
+        }
+
+        public puzzle(string info)
+        {
+            InitializeComponent();
+            this.info = info;
         }
         private void btn_input_Click(object sender, EventArgs e)
         {
@@ -34,6 +46,26 @@ namespace WindowsFormsApp2
                 {
                     controller.Room2_2PuzzleWrong();
                 }
+            } else if (info == "lab1_enter")
+            {
+                if (lab1_pw.ToString()==textBox1.Text)
+                {
+                    (this.Parent.Parent as InitMenu).openLab1 = true;
+                    (this.Parent.Parent as InitMenu).CallConvMode("lab_1");
+                }
+            } else if (info == "lab2_enter")
+            {
+
+            } else if (info=="lab2_PC")
+            {
+
+
+            } else if (info == "lab3_enter")
+            {
+
+            }else if (info == "lab4_LockCase")
+            {
+
             }
         }
 
@@ -43,10 +75,31 @@ namespace WindowsFormsApp2
             {
                 controller.Room2_2PuzzleQuit();
             }
-        }
+            else if (info == "lab1_enter")
+            {
+                (this.Parent as Floor8UDC).puzzleOn = false;
+                (this.Parent.Parent as InitMenu).GetRidofPuzzleInFloor();
+            }
+            else if (info == "lab2_enter")
+            {
 
-        private void puzzle_Load(object sender, EventArgs e)
-        {
+            }
+            else if (info == "lab2_PC")
+            {
+
+
+            }
+            else if (info == "lab3_enter")
+            {
+
+            }
+            else if (info == "lab4_LockCase")
+            {
+
+            }
+        }
+            private void puzzle_Load(object sender, EventArgs e)
+            {
             if (info == "PC_2")
             {
                 pc2_problem = new Label();
@@ -58,19 +111,50 @@ namespace WindowsFormsApp2
                 pc2_problem.Left = this.Width / 5;
                 this.Controls.Add(pc2_problem);
                 pc2_problem.ForeColor = Color.White;
-                string problem="";
-                Random random = new Random();
-                pc2_answer = random.Next(128);
-                for(int i = 7; i >= 0; i--)
-                {
-                    problem += ((pc2_answer>>i) & 1).ToString();
-                }
-                pc2_problem.Text= problem;
-
+                pc2_problem.Text= (this.Parent.Parent as InitMenu).lecture2_problem;
+                pc2_answer = (this.Parent.Parent as InitMenu).lecture2_answer;
                 pc2_problem.Parent = pictureBox1;
                 pc2_problem.BackColor = Color.Transparent;
                 pc2_problem.BringToFront();
-                
+
+            }
+            else if (info == "lab1_enter")
+            {
+                pictureBox1.BackgroundImage = Properties.Resources.pwdpad;
+                pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+                Label intro = new Label();
+                intro.AutoSize = true;
+                intro.Font = new Font("Gulim", 15,FontStyle.Bold);
+                intro.ForeColor = Color.White;
+                intro.Text = "1연구실 비밀번호를 아래 입력창에 입력";
+                intro.Top = pictureBox1.Bottom-intro.Height-15;
+                intro.Left = pictureBox1.Left-15;
+                this.Controls.Add(intro);
+                intro.Parent= pictureBox1;
+                intro.BackColor = Color.Transparent;
+                intro.BringToFront();
+                lab1_pw = (this.Parent.Parent as InitMenu).Lab1PW;
+            }
+            else if (info == "lab2_enter")
+            {
+                pictureBox1.BackgroundImage = Properties.Resources.pwdpad;
+                pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            }
+            else if (info == "lab2_PC")
+            {
+                pictureBox1.BackgroundImage = Properties.Resources._8F_lab2PC;
+                pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+
+            }
+            else if (info == "lab3_enter")
+            {
+                pictureBox1.BackgroundImage = Properties.Resources.pwdpad;
+                pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            }
+            else if (info == "lab4_LockCase")
+            {
+                pictureBox1.BackgroundImage = Properties.Resources._8F_locecase4;
+                pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
             }
         }
 

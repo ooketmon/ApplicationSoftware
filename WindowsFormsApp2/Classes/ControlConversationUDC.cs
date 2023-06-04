@@ -283,6 +283,24 @@ namespace WindowsFormsApp2
             target.text = "-";
             target.timerReset();
         }
+
+        public void SecondFloorCodeOff()
+        {
+            Control to_delete = null;
+            foreach(Control c in target.Controls)
+            {
+                if (c.GetType() == typeof(ShowCode))
+                {
+                    to_delete = c;
+                }
+                if (c.GetType() == typeof(Room_lecture2))
+                {
+                    c.Enabled = true;
+                }
+            }
+            target.Controls.Remove(to_delete);
+            SayNothing();
+        }
         public void GuardRoom_JustEnter2()
         {
             phase++;
@@ -595,16 +613,7 @@ namespace WindowsFormsApp2
                 }
                 if ((c.GetType().ToString()).Contains("Room_lecture2"))
                 {
-                    foreach(Control control in c.Controls)
-                    {
-                        if (control.Name == "lecture2")
-                        {
-                            foreach(Control c2 in control.Controls)
-                            {
-                                c2.Enabled = false;
-                            }
-                        }
-                    }
+                    c.Enabled = false;
                 }
             }
             puzzle p=new puzzle("PC_2",this);
@@ -634,16 +643,7 @@ namespace WindowsFormsApp2
                 }
                 if (c.GetType() == typeof(Room_lecture2))
                 {
-                    foreach (Control control in c.Controls)
-                    {
-                        if (control.Name == "lecture2")
-                        {
-                            foreach (Control c2 in control.Controls)
-                            {
-                                c2.Enabled = true;
-                            }
-                        }
-                    }
+                    c.Enabled = false;
                 }
             }
             if(!(this.target.Parent as InitMenu).knowLab1PW)
@@ -654,6 +654,11 @@ namespace WindowsFormsApp2
             {
                 target.Controls.Remove(to_delete);
             }
+            ShowCode pw = new ShowCode(this);
+            pw.Top = target.Height / 2 - pw.Height / 2;
+            pw.Left = target.Width / 2 - pw.Width / 2;
+            target.Controls.Add(pw);
+            pw.BringToFront();
             target.timerReset();
         }
 
@@ -682,16 +687,7 @@ namespace WindowsFormsApp2
                 }
                 if (c.GetType() == typeof(Room_lecture2))
                 {
-                    foreach (Control control in c.Controls)
-                    {
-                        if (control.Name == "lecture2")
-                        {
-                            foreach (Control c2 in control.Controls)
-                            {
-                                c2.Enabled = true;
-                            }
-                        }
-                    }
+                    c.Enabled= true;
                 }
             }
             target.Controls.Remove(to_delete);
