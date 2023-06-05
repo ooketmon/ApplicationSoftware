@@ -34,6 +34,7 @@ namespace WindowsFormsApp2.UDC
             inventory_set();
             Papper_3.Visible = false;
             (this.Parent.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
+            (this.Parent.Parent as InitMenu).CheckTestComplete();
             controller.Papper3Get1();
         }
 

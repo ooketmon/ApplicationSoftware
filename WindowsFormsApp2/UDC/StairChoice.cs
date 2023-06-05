@@ -32,7 +32,17 @@ namespace WindowsFormsApp2.UDC
             switch (currentFloor)
             {
                 case 1: break;
-                case 2: (this.Parent as InitMenu).FloorChange(1); break;
+                case 2:
+                    if ((this.Parent as InitMenu).guardmanChasing)
+                    {
+                        //경비아저씨 추적 이벤트
+                        (this.Parent as InitMenu).CallConvMode("guardmanEvent");
+                    }
+                    else
+                    {
+                        (this.Parent as InitMenu).FloorChange(1);
+                    }
+                    break;
                 case 3: (this.Parent as InitMenu).FloorChange(2); break;
                 case 4: (this.Parent as InitMenu).FloorChange(3); break;
             }

@@ -39,6 +39,7 @@ namespace WindowsFormsApp2.UDC
             papper_4.Visible = false;
             controller.Papper4Get();
             (this.Parent.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
+            (this.Parent.Parent as InitMenu).CheckTestComplete();
         }
 
         private void Room_department_Load(object sender, EventArgs e)

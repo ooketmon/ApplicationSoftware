@@ -250,7 +250,15 @@ namespace WindowsFormsApp2
                 if (x is PictureBox && (x.Name as string) == "lab_4")
                 {
 
-                    if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest )
+                    if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest && !StaticItem.mKey4 )
+                    {
+                        convHitTest = true;
+                        player.Left += 70;
+                        MessageBox.Show("4연구실은 열쇠가 필요해보인다.");
+                        convHitTest = false;
+                        break;
+                    }
+                    else if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest && StaticItem.mKey4)
                     {
                         convHitTest = true;
                         ((InitMenu)this.Parent).CallConvMode(x.Name.ToString());

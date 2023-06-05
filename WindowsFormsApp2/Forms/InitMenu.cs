@@ -17,6 +17,7 @@ namespace WindowsFormsApp2
         public bool havetoGoGuardRoom = false;
         public bool guardmanChasing = false;
         public bool assistantChasing = false;
+        public bool assistantEvent = false;
         public bool firstStart = true;
         public bool knowLab1PW=false;
         public bool knowLab2PW = false;
@@ -27,10 +28,16 @@ namespace WindowsFormsApp2
         public bool openLab2 = false;
         public bool openLab3 = false;
         //public bool openLab4 = false;
+        
+        public bool Lab2PcSolved=false;
+        public bool Lab4LockCaseSolve = false;
+
 
         public int Lab1PW = 1234;
         public int Lab2PW = 5678;
         public int Lab3PW = 9876;
+        public int Lab2PCPW = 8721;
+        public int Lab4LockCasePW = 40;
 
         public int lecture2_answer = -1;
         public string lecture2_problem = "";
@@ -336,6 +343,14 @@ namespace WindowsFormsApp2
             }
         }
 
+        public void CheckTestComplete()
+        {
+            if(StaticItem.mTest1 && StaticItem.mTest2 && StaticItem.mTest3 && StaticItem.mTest4 && !assistantChasing && !guardmanChasing)
+            {
+                assistantChasing = true;
+                guardmanChasing = true;
+            }
+        }
         private void InitMenu_KeyDown(object sender, KeyEventArgs e)
         {
         }

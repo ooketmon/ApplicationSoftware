@@ -32,6 +32,7 @@ namespace WindowsFormsApp2.UDC
             inventory_set();
             key_4.Visible = false;
             (this.Parent.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
+            (this.Parent.Parent as InitMenu).CheckTestComplete();
             controller.GetKey();
         }
 

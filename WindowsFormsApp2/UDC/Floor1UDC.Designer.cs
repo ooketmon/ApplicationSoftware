@@ -213,7 +213,7 @@
             this.pictureBox44.Size = new System.Drawing.Size(45, 65);
             this.pictureBox44.TabIndex = 123;
             this.pictureBox44.TabStop = false;
-            this.pictureBox44.Tag = "LockedDoor";
+            this.pictureBox44.Tag = "entrance";
             // 
             // pictureBox43
             // 
@@ -254,7 +254,7 @@
             this.picturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picturebox.TabIndex = 120;
             this.picturebox.TabStop = false;
-            this.picturebox.Tag = "";
+            this.picturebox.Tag = "entrance";
             // 
             // pictureBox40
             // 

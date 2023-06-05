@@ -45,6 +45,7 @@
             this.lock_case.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.lock_case.TabIndex = 3;
             this.lock_case.TabStop = false;
+            this.lock_case.Click += new System.EventHandler(this.lock_case_Click);
             // 
             // clock_roma
             // 

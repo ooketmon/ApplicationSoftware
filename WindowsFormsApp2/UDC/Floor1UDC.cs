@@ -139,10 +139,17 @@ namespace WindowsFormsApp2
                 //계단 이벤트
                 if (x is PictureBox && (string)x.Name == "stair")
                 {
-                    if (player.Bounds.IntersectsWith(x.Bounds) && !playerisOnStair)
+                    if (player.Bounds.IntersectsWith(x.Bounds) && !playerisOnStair && !(this.Parent as InitMenu).guardmanChasing)
                     {
                         playerisOnStair = true;
                         ((InitMenu)this.Parent).StairCall(1);
+                        return;
+                    }else if (player.Bounds.IntersectsWith(x.Bounds) && !playerisOnStair && (this.Parent as InitMenu).guardmanChasing)
+                    {
+                        playerisOnStair = true;
+                        MessageBox.Show("빨리 나가야해!");
+                        player.Left -= 50;
+                        playerisOnStair = false;
                         return;
                     }
                 }
@@ -150,10 +157,18 @@ namespace WindowsFormsApp2
                 //엘레베이터 이벤트
                 if (x is PictureBox && (string)x.Name == "elevator")
                 {
-                    if (player.Bounds.IntersectsWith(x.Bounds) && !playerisOnElevator)
+                    if (player.Bounds.IntersectsWith(x.Bounds) && !playerisOnElevator && !(this.Parent as InitMenu).guardmanChasing)
                     {
                         playerisOnElevator = true;
                         ((InitMenu)this.Parent).ElevatorCall(1);
+                        return;
+                    }
+                    else if (player.Bounds.IntersectsWith(x.Bounds) && !playerisOnElevator && (this.Parent as InitMenu).guardmanChasing)
+                    {
+                        playerisOnElevator = true;
+                        MessageBox.Show("빨리 나가야해!");
+                        player.Left += 50;
+                        playerisOnElevator = false;
                         return;
                     }
                 }
@@ -174,7 +189,7 @@ namespace WindowsFormsApp2
                     if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest)
                     {
                         convHitTest = true;
-                        player.Top += 70;
+                        player.Top += 50;
                         MessageBox.Show("여기는 잠겨있다.");
                         convHitTest = false;
                         return;
@@ -186,13 +201,27 @@ namespace WindowsFormsApp2
                     if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest)
                     {
                         convHitTest = true;
-                        player.Left += 70;
+                        player.Left += 50;
                         MessageBox.Show("여기는 잠겨있다.");
                         convHitTest = false;
                         return;
                     }
                 }
-
+                if(x is PictureBox && (string)x.Tag == "entrance")
+                {
+                    if(player.Bounds.IntersectsWith(x.Bounds) && !convHitTest && !(this.Parent as InitMenu).guardmanChasing)
+                    {
+                        convHitTest = true;
+                        player.Left -= 50;
+                        MessageBox.Show("이대로 돌아갈 순 없어!");
+                        convHitTest = false;
+                        return;
+                    }else if(player.Bounds.IntersectsWith(x.Bounds) && !convHitTest && (this.Parent as InitMenu).guardmanChasing)
+                    {
+                        convHitTest = true;
+                        //엔딩화면으로 넘어가는 코드
+                    }
+                }
 
             }
         }
