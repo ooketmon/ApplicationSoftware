@@ -33,6 +33,10 @@ namespace WindowsFormsApp2
             Papper_1.Visible = false;
             (this.Parent.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
             (this.Parent.Parent as InitMenu).CheckTestComplete();
+            if((this.Parent.Parent as InitMenu).haveSeenSecondBoard)
+            {
+                (this.Parent.Parent as InitMenu).knowLab1PW=true;
+            }
             controller.Papper1Get();
             
         }

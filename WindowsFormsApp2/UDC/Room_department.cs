@@ -40,6 +40,10 @@ namespace WindowsFormsApp2.UDC
             controller.Papper4Get();
             (this.Parent.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
             (this.Parent.Parent as InitMenu).CheckTestComplete();
+            if((this.Parent.Parent as InitMenu).haveSeenFourthBoard)
+            {
+                (this.Parent.Parent as InitMenu).havetoGoGuardRoom = true;
+            }
         }
 
         private void Room_department_Load(object sender, EventArgs e)

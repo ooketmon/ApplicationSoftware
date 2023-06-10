@@ -54,7 +54,8 @@ namespace WindowsFormsApp2
         System.Threading.Timer chaser_timer;
         public delegate void chase_delegate();
 
-
+        
+        
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
             if ((keyData == Keys.Right) || (keyData == Keys.Left) ||
@@ -83,11 +84,14 @@ namespace WindowsFormsApp2
                 return base.ProcessCmdKey(ref msg, keyData);
             }
         }
+        
         public Floor1UDC()
         {
             InitializeComponent();
             //this.KeyPreview = true; // KeyPreview 속성을 true로 설정
             //this.KeyDown += Inventory_KeyDown; // 이벤트 핸들러 등록
+
+
         }
 
         private void UserControl1_Load(object sender, EventArgs e)
@@ -109,10 +113,9 @@ namespace WindowsFormsApp2
             wood_timer6.Change(0, 10);
             wood_timer7 = new System.Threading.Timer(WoodCallBack7);
             wood_timer7.Change(0, 10);
-
             if ((this.Parent as InitMenu).guardmanChasing)
             {
-                chaser = new Chaser();
+                chaser = new Chaser("guardman");
                 chaser.Left = scarepoint.Left;
                 chaser.Top=scarepoint.Top+60;
                 Controls.Add(chaser);
@@ -124,12 +127,17 @@ namespace WindowsFormsApp2
 
         }
 
-        private void UserControl1_KeyUp(object sender, KeyEventArgs e) { playerMove.PlayerKeyUp(sender, e); }
-        private void UserControl1_KeyDown(object sender, KeyEventArgs e) { playerMove.MovePlayerWithoutBool(e); }
+        private void UserControl1_KeyUp(object sender, KeyEventArgs e) { 
+            playerMove.PlayerKeyUp(sender, e); 
+        }
+        private void UserControl1_KeyDown(object sender, KeyEventArgs e) {
+            playerMove.MovePlayerWithoutBool(e); 
+           //playerMove.PlayerKeyUp(sender, e);
+        }
 
         private void timerFloor1_Tick(object sender, EventArgs e)
         {
-          //  playerMove.MovePlayer();
+           // playerMove.MovePlayer();
             if (!(wood1_Hit || wood2_Hit || wood3_Hit || wood4_Hit || wood5_Hit || wood6_Hit || wood7_Hit))
             {
                 player.BackgroundImage = null;

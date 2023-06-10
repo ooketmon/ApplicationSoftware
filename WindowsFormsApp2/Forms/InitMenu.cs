@@ -14,12 +14,20 @@ namespace WindowsFormsApp2
 {
     public partial class InitMenu : Form
     {
+
+        public bool haveSeenFourthBoard = false;
         public bool havetoGoGuardRoom = false;
+
+
         public bool guardmanChasing = false;
         public bool assistantChasing = false;
         public bool assistantEvent = false;
         public bool firstStart = true;
+
+        public bool haveSeenSecondBoard = false;
         public bool knowLab1PW=false;
+
+
         public bool knowLab2PW = false;
         public bool knowLab3PW = false;
         //public bool knowLab4PW = false;
@@ -104,6 +112,7 @@ namespace WindowsFormsApp2
                     break;
             }
             tmp.Focus();
+
         }
 
 
@@ -351,8 +360,6 @@ namespace WindowsFormsApp2
                 guardmanChasing = true;
             }
         }
-        private void InitMenu_KeyDown(object sender, KeyEventArgs e)
-        {
-        }
+
     }
 }

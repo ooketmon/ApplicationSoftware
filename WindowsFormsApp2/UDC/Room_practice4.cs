@@ -33,7 +33,7 @@ namespace WindowsFormsApp2.UDC
             key_4.Visible = false;
             (this.Parent.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
             (this.Parent.Parent as InitMenu).CheckTestComplete();
-            controller.GetKey();
+            controller.GetKey1();
         }
 
         private void Room_practice4_Load(object sender, EventArgs e)

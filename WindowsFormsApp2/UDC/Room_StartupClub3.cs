@@ -45,7 +45,7 @@ namespace WindowsFormsApp2.UDC
 
         private void Room_StartupClub3_Load(object sender, EventArgs e)
         {
-            if (mCardkey3)
+            if (mCardkey3 || !StaticItem.mPapper3)
             {
                 cardkey_3.Visible = false;
             }

@@ -37,13 +37,13 @@ namespace WindowsFormsApp2
         public void Prologue2()
         {
             phase++;
-            target.contentConv.Text = "보아하니 이번 시험도 범위도 못 훑고 가게 생겼어.";
+            target.text = "보아하니 이번 시험도 범위도 못 훑고 가게 생겼어.";
             target.timerReset();
         }
         public void Prologue3()
         {
             phase++;
-            target.contentConv.Text = "그래! 시험지를 훔쳐버리자!";
+            target.text = "그래! 시험지를 훔쳐버리자!";
             target.timerReset();
         }
         public void Department_Init(string deptinfo)
@@ -115,8 +115,10 @@ namespace WindowsFormsApp2
                     c.Text = "나가기";
                 }
             }
-            target.imgCharacter.Visible = false;
-            target.imgCharBack.Visible = false;
+            //target.imgCharacter.Parent = meetingPlace;
+            target.imgCharacter.BackgroundImage = Properties.Resources.player_anime_ver;
+            target.imgCharacter.SizeMode = PictureBoxSizeMode.StretchImage;
+            target.imgCharacter.Parent = meetingPlace;
         }
         public void BoardInit(string board_info)
         {
@@ -170,7 +172,7 @@ namespace WindowsFormsApp2
             (target.Parent as InitMenu).havetoGoGuardRoom = true;
             eventType += "/Poster4";
             target.nameCharacter.Text = STUDENT_INFO.name;
-            target.contentConv.Text = string.Format("흠...경비 아저씨...주무시려나?");
+            target.text = string.Format("경비실에도 열쇠같은 게 있나..?");
             target.timerReset();
         }
 
@@ -215,7 +217,7 @@ namespace WindowsFormsApp2
             eventType += "/GetTest1";
             phase++;
             target.nameCharacter.Text = STUDENT_INFO.name;
-            target.contentConv.Text = string.Format("저기 복사기 위의 종이...혹시?");
+            target.text = string.Format("저기 복사기 위의 종이...혹시?");
             target.timerReset();
 
         }
@@ -223,7 +225,7 @@ namespace WindowsFormsApp2
         {
             phase++;
             target.nameCharacter.Text = "System";
-            target.contentConv.Text = string.Format("{0} 시험지를 발견했다.", STUDENT_INFO.low_grade_courses[0]);
+            target.text = string.Format("{0} 시험지를 발견했다.", STUDENT_INFO.low_grade_courses[0]);
             target.timerReset();
         }
 
@@ -233,7 +235,7 @@ namespace WindowsFormsApp2
             eventType += "/GetTest2";
             phase++;
             target.nameCharacter.Text = STUDENT_INFO.name;
-            target.contentConv.Text = string.Format("잘 출력됐구만!");
+            target.text = string.Format("잘 출력됐구만!");
             foreach (Control c in target.Controls)
             {
                 if (c.Name == "btnSkip")
@@ -249,7 +251,7 @@ namespace WindowsFormsApp2
         {
             phase++;
             target.nameCharacter.Text = "System";
-            target.contentConv.Text = string.Format("{0} 시험지를 뽑아 가져갔다.", STUDENT_INFO.low_grade_courses[1]);
+            target.text = string.Format("{0} 시험지를 뽑아 가져갔다.", STUDENT_INFO.low_grade_courses[1]);
             foreach (Control c in target.Controls)
             {
                 if (c.Name == "btnSkip")
@@ -266,7 +268,7 @@ namespace WindowsFormsApp2
             eventType += "/GetTest3";
             phase++;
             target.nameCharacter.Text = STUDENT_INFO.name;
-            target.contentConv.Text = string.Format("책꽂이의 서류뭉치...수상하군..좋아!");
+            target.text = string.Format("책꽂이의 서류뭉치...수상하군..좋아!");
             foreach (Control c in target.Controls)
             {
                 if (c.Name == "btnSkip")
@@ -281,7 +283,7 @@ namespace WindowsFormsApp2
         {
             phase++;
             target.nameCharacter.Text = "System";
-            target.contentConv.Text = string.Format("서류뭉치에서 {0} 시험지를 발견했다.", STUDENT_INFO.low_grade_courses[2]);
+            target.text = string.Format("서류뭉치에서 {0} 시험지를 발견했다.", STUDENT_INFO.low_grade_courses[2]);
             foreach (Control c in target.Controls)
             {
                 if (c.Name == "btnSkip")
@@ -309,7 +311,7 @@ namespace WindowsFormsApp2
         {
             phase=1;
             target.nameCharacter.Text=STUDENT_INFO.name;
-            target.contentConv.Text = "-";
+            target.text = "-";
             target.timerReset();
         }
 
@@ -334,7 +336,7 @@ namespace WindowsFormsApp2
         {
             phase++;
             target.nameCharacter.Text = "경비아저씨";
-            target.contentConv.Text = "Zzz.z.z.z..zzZZZ..z.ZZ";
+            target.text = "Zzz.z.z.z..zzZZZ..z.ZZ";
             target.timerReset();
         }
 
@@ -342,7 +344,7 @@ namespace WindowsFormsApp2
         {
             phase++;
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
-            target.contentConv.Text = "좋아! 경비아저씨는 주무시고 계시는군.\r\n경비아저씨께 들키면 안되겠어.";
+            target.text = "좋아! 경비아저씨는 주무시고 계시는군.\r\n경비아저씨께 들키면 안되겠어.";
             target.timerReset();
         }
 
@@ -360,7 +362,7 @@ namespace WindowsFormsApp2
         {
             phase++;
             target.nameCharacter.Text = "경비 아저씨";
-            target.contentConv.Text = "Zzz.z.z.z..zzZZZ..z.ZZ";
+            target.text = "Zzz.z.z.z..zzZZZ..z.ZZ";
             target.timerReset();
         }
         
@@ -368,14 +370,14 @@ namespace WindowsFormsApp2
         {
             phase++;
             target.nameCharacter.Text =STUDENT_INFO.name;
-            target.contentConv.Text = "좋아..가져가겠습니다..";
+            target.text = "좋아..가져가겠습니다..";
             target.timerReset();
         }
         public void GuardRoom_GetPracticeRoomKey4()
         {
             phase++;
             target.nameCharacter.Text = "System";
-            target.contentConv.Text = "실습실 보안 카드를 획득했다.";
+            target.text = "실습실 보안 카드를 획득했다.";
             StaticItem.mSafekey4 = true;
             StaticItem.inventory_set();
             (target.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
@@ -434,7 +436,7 @@ namespace WindowsFormsApp2
         {
             eventType += "/GetPapper1";
             target.nameCharacter.Text = "System";
-            target.contentConv.Text = string.Format("찢어진 조각을 발견했다.");
+            target.text = string.Format("찢어진 조각을 발견했다.");
             target.timerReset();
         }
         public void SecondFloorBoard1()
@@ -442,7 +444,7 @@ namespace WindowsFormsApp2
             GetRidofEventSplit();
             eventType += "/Poster1";
             target.nameCharacter.Text = STUDENT_INFO.name;
-            target.contentConv.Text = string.Format("흠...누가 포스터를 찢은거야?");
+            target.text = string.Format("흠...누가 포스터를 찢은거야?");
             target.timerReset();
         }
 
@@ -458,7 +460,7 @@ namespace WindowsFormsApp2
                 }
             }
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
-            target.contentConv.Text = string.Format("강의실에 포스터가 있네? 뭐지?");
+            target.text = string.Format("강의실에 포스터가 있네? 뭐지?");
             target.timerReset();
         }
 
@@ -477,7 +479,7 @@ namespace WindowsFormsApp2
             StaticItem.inventory_set();
             (target.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
             (target.Parent as InitMenu).CheckTestComplete();
-            target.contentConv.Text = string.Format("연구실 홍보 포스터를 발견했다.");
+            target.text = string.Format("연구실 홍보 포스터를 발견했다.");
             target.timerReset();
         }
 
@@ -494,7 +496,7 @@ namespace WindowsFormsApp2
             phase = 2;
             eventType += "/GetSecondFloorCardKey";
             target.nameCharacter.Text = string.Format("{0}",STUDENT_INFO.name);
-            target.contentConv.Text = string.Format("카드 키를 찾았다. 어디를 열 수 있는 걸까?");
+            target.text = string.Format("카드 키를 찾았다. 어디를 열 수 있는 걸까?");
             target.timerReset();
         }
 
@@ -509,7 +511,7 @@ namespace WindowsFormsApp2
             }
             phase++;
             target.nameCharacter.Text = "System";
-            target.contentConv.Text = string.Format("강의실 카드키를 얻었다.");
+            target.text = string.Format("강의실 카드키를 얻었다.");
             target.timerReset();
         }
 
@@ -528,7 +530,7 @@ namespace WindowsFormsApp2
             }
             eventType += "/SecondNPC";
             target.nameCharacter.Text ="대학원생";
-            target.contentConv.Text = string.Format("…zzzZ..zZ.zZz…");
+            target.text = string.Format("…zzzZ..zZ.zZz…");
             target.timerReset();
         }
 
@@ -543,7 +545,7 @@ namespace WindowsFormsApp2
                 }
             }
             target.nameCharacter.Text = "대학원생";
-            target.contentConv.Text = string.Format("네 교수님, 실습실4, 연구실4 과사에 놓고 왔.. 습니 …\r\nzzZZZ.z..zZZZ…");
+            target.text = string.Format("네 교수님, 4실습실이랑 4연구실 열쇠 과사에..있.. …\r\nzzZZZ.z..zZZZ…");
             target.timerReset();
         }
 
@@ -552,7 +554,7 @@ namespace WindowsFormsApp2
             eventType += "/GetPapper3";
             phase++;
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
-            target.contentConv.Text = string.Format("이게..뭐라는거지?");
+            target.text = string.Format("이게..뭐라는거지?");
             foreach (Control c in target.Controls)
             {
                 if (c.Name == "btnSkip")
@@ -566,7 +568,7 @@ namespace WindowsFormsApp2
         {
             phase++;
             target.nameCharacter.Text = "System";
-            target.contentConv.Text = "애너그램을 얻었다.";
+            target.text = "애너그램을 얻었다.";
             foreach (Control c in target.Controls)
             {
                 if (c.Name == "btnSkip")
@@ -581,16 +583,30 @@ namespace WindowsFormsApp2
         {
             phase++;
             target.nameCharacter.Text = "System";
-            target.contentConv.Text = "쪽지를 얻었다.\r\n인벤토리에서 확인 가능하다.";
+            target.text = "쪽지를 얻었다.\r\n인벤토리에서 확인 가능하다.";
             target.timerReset();
         }
 
-        public void GetKey()
+        public void GetKey1()
         {
             eventType += "/GetKey";
-            phase++;
+            phase=2;
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
-            target.contentConv.Text = string.Format("연구실 열쇠다!");
+            target.text = string.Format("연구실 열쇠다!");
+            foreach (Control c in target.Controls)
+            {
+                if (c.Name == "btnSkip")
+                {
+                    c.Text = "▶";
+                }
+            }
+            target.timerReset();
+        }
+        public void GetKey2()
+        {
+            phase = 3;
+            target.nameCharacter.Text = string.Format("{0}", "시스템");
+            target.text = string.Format("연구실 열쇠를 획득했다.");
             foreach (Control c in target.Controls)
             {
                 if (c.Name == "btnSkip")
@@ -615,7 +631,7 @@ namespace WindowsFormsApp2
         {
             phase++;
             target.nameCharacter.Text = "조교님";
-            target.contentConv.Text = "하..할 일 참 많네...전화가 왔네? 또 뭐야?";
+            target.text = "하..할 일 참 많네...전화가 왔네? 또 뭐야?";
             target.timerReset();
         }
 
@@ -623,7 +639,7 @@ namespace WindowsFormsApp2
         {
             phase++;
             target.nameCharacter.Text = "조교님";
-            target.contentConv.Text = "여보세요? 거기 강의실 비번?\r\n거기 강의실 번호라고 알려줬었잖아!그래..고생해라..";
+            target.text = "여보세요? 거기 강의실 비번?\r\n거기 강의실 번호라고 알려줬었잖아!그래..고생해라..";
             target.timerReset();
         }
 
@@ -631,7 +647,7 @@ namespace WindowsFormsApp2
         {
             phase++;
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
-            target.contentConv.Text = "조교님도 조심해야겠군.";
+            target.text = "조교님도 조심해야겠군.";
             target.timerReset();
         }
 
@@ -649,7 +665,7 @@ namespace WindowsFormsApp2
             GetRidofEventSplit();
             eventType += "/Room2-2Puzzle";
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
-            target.contentConv.Text = string.Format("이게 뭐지? 비밀번호인가?");
+            target.text = string.Format("이게 뭐지? 비밀번호인가?");
             
             foreach (Control c in target.Controls)
             {
@@ -679,7 +695,7 @@ namespace WindowsFormsApp2
         {
             GetRidofEventSplit();
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
-            target.contentConv.Text = string.Format("비밀번호인 것 같은데?");
+            target.text = string.Format("비밀번호인 것 같은데?");
             Control to_delete = null;
             foreach (Control c in target.Controls)
             {
@@ -719,7 +735,7 @@ namespace WindowsFormsApp2
         public void Room2_2PuzzleWrong()
         {
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
-            target.contentConv.Text = string.Format("아닌 모양이야.");
+            target.text = string.Format("아닌 모양이야.");
             target.timerReset();
         }
 
@@ -727,7 +743,7 @@ namespace WindowsFormsApp2
         {
             GetRidofEventSplit();
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
-            target.contentConv.Text = string.Format("나중에 다시 풀자.");
+            target.text = string.Format("나중에 다시 풀자.");
             Control to_delete = null;
             foreach (Control c in target.Controls)
             {
@@ -755,7 +771,7 @@ namespace WindowsFormsApp2
             GetRidofEventSplit();
             eventType += "/Lab2PCPuzzle";
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
-            target.contentConv.Text = string.Format("이게 비밀번호 힌트인가?");
+            target.text = string.Format("이게 비밀번호 힌트인가?");
 
             foreach (Control c in target.Controls)
             {
@@ -784,7 +800,7 @@ namespace WindowsFormsApp2
         {
             GetRidofEventSplit();
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
-            target.contentConv.Text = string.Format("풀었다..시험지..출력..좋아!\r\n프린터기로 가자!");
+            target.text = string.Format("풀었다..시험지..출력..좋아!\r\n프린터기로 가자!");
             Control to_delete = null;
             foreach (Control c in target.Controls)
             {
@@ -815,14 +831,14 @@ namespace WindowsFormsApp2
         public void Lab2_PcPuzzleAfterSolve()
         {
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
-            target.contentConv.Text = string.Format("빨리 할 거 하고 나가자!");
+            target.text = string.Format("빨리 할 거 하고 나가자!");
             target.timerReset();
         }
 
         public void Lab2_PcPuzzleWrong()
         {
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
-            target.contentConv.Text = string.Format("아닌 모양이야.");
+            target.text = string.Format("아닌 모양이야.");
             target.timerReset();
         }
 
@@ -830,7 +846,7 @@ namespace WindowsFormsApp2
         {
             GetRidofEventSplit();
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
-            target.contentConv.Text = string.Format("나중에 다시 풀자.");
+            target.text = string.Format("나중에 다시 풀자.");
             Control to_delete = null;
             foreach (Control c in target.Controls)
             {
@@ -858,7 +874,7 @@ namespace WindowsFormsApp2
             GetRidofEventSplit();
             eventType += "/Lab4LockCasePuzzle";
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
-            target.contentConv.Text = string.Format("이게 무슨 소리람?");
+            target.text = string.Format("이게 무슨 소리람?");
 
             foreach (Control c in target.Controls)
             {
@@ -887,7 +903,7 @@ namespace WindowsFormsApp2
         {
             GetRidofEventSplit();
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
-            target.contentConv.Text = string.Format("이런 곳에 {0} 시험지가...좋아!", STUDENT_INFO.low_grade_courses[3]);
+            target.text = string.Format("이런 곳에 {0} 시험지가...좋아!", STUDENT_INFO.low_grade_courses[3]);
             Control to_delete = null;
             StaticItem.mTest4 = true;
             (target.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
@@ -921,14 +937,14 @@ namespace WindowsFormsApp2
         public void Lab4_LockCasePuzzleAfterSolve()
         {
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
-            target.contentConv.Text = string.Format("빨리 할 거 하고 나가자!");
+            target.text = string.Format("빨리 할 거 하고 나가자!");
             target.timerReset();
         }
 
         public void Lab4_LockCasePuzzleWrong()
         {
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
-            target.contentConv.Text = string.Format("아닌 모양이야.");
+            target.text = string.Format("아닌 모양이야.");
             target.timerReset();
         }
 
@@ -936,7 +952,7 @@ namespace WindowsFormsApp2
         {
             GetRidofEventSplit();
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
-            target.contentConv.Text = string.Format("나중에 다시 풀자.");
+            target.text = string.Format("나중에 다시 풀자.");
             Control to_delete = null;
             foreach (Control c in target.Controls)
             {
@@ -975,14 +991,14 @@ namespace WindowsFormsApp2
         {
             phase = 3;
             target.nameCharacter.Text = string.Format("{0}", "행정조교");
-            target.contentConv.Text = "(벌컥)\r\n교수님들도 참...응?";
+            target.text = "(벌컥)\r\n교수님들도 참...응?";
             target.timerReset();
         }
         public void Assistant_Appear3()
         {
             phase = 4;
             target.nameCharacter.Text = string.Format("{0}", "행정조교");
-            target.contentConv.Text = "거기 그 종이..뭡니까?";
+            target.text = "거기 그 종이..뭡니까?";
             target.timerReset();
         }
 
@@ -990,7 +1006,7 @@ namespace WindowsFormsApp2
         {
             phase = 5;
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
-            target.contentConv.Text = "도망가자..!";
+            target.text = "도망가자..!";
             target.timerReset();
         }
 
@@ -1009,14 +1025,14 @@ namespace WindowsFormsApp2
         {
             phase = 3;
             target.nameCharacter.Text = string.Format("{0}", "경비아저씨");
-            target.contentConv.Text = "(벌컥)\r\n 아이고 졸려라...응?";
+            target.text = "(벌컥)\r\n 아이고 졸려라...응?";
             target.timerReset();
         }
         public void GuardMan_Appear3()
         {
             phase = 4;
             target.nameCharacter.Text = string.Format("{0}", "경비아저씨");
-            target.contentConv.Text = "학생 그거...시험지 아닌가?";
+            target.text = "학생 그거...시험지 아닌가?";
             target.timerReset();
         }
 
@@ -1024,7 +1040,7 @@ namespace WindowsFormsApp2
         {
             phase = 5;
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
-            target.contentConv.Text = "빨리 나가자!";
+            target.text = "빨리 나가자!";
             target.timerReset();
         }
         
@@ -1276,6 +1292,18 @@ namespace WindowsFormsApp2
 
             if (eventType.StartsWith("practice"))
             {
+                string[] event_split = eventType.Split('/');
+                if (event_split.Length > 1)
+                {
+                    switch (phase)
+                    {
+                        case 2:
+                            GetKey2();
+                            return;
+                        default:
+                            break;
+                    }
+                }
                 GetRidofEventSplit();
                 Floor3UDC tmp = new Floor3UDC();
                 Control player = null;

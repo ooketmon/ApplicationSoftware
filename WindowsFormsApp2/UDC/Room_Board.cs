@@ -96,6 +96,10 @@ namespace WindowsFormsApp2.UDC
           //  zoomPoster.Location = new Point(this.Width / 2 - zoomPoster.Width / 2, this.Height/2 - zoomPoster.Height / 2);
             zoomPoster.Top = zoomPoster.Height / 8;
             zoomPoster.Left=this.Width / 2 - zoomPoster.Width/2;
+            if (StaticItem.mPapper1)
+            {
+                (this.Parent.Parent as InitMenu).knowLab1PW = true;
+            }
             controller.SecondFloorBoard1();
         }
 
@@ -115,6 +119,10 @@ namespace WindowsFormsApp2.UDC
             zoomPoster.Location = new Point(this.Width / 2 - zoomPoster.Width / 2, this.Height / 2 - zoomPoster.Height / 2);
             //zoomPoster.Top = zoomPoster.Height / 8;
             //zoomPoster.Left = this.Width / 2 - zoomPoster.Width / 2;
+            if (StaticItem.mPapper4)
+            {
+                (this.Parent.Parent as InitMenu).havetoGoGuardRoom = true;
+            }
             controller.FourthFloorBoard1();
         }
 

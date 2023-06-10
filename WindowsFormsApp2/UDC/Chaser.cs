@@ -16,11 +16,17 @@ namespace WindowsFormsApp2
         Control player = null;
         Control chaser1 = null;
 
+        string WhoAmI = "";
         public Chaser()
         {
             InitializeComponent();
         }
 
+        public Chaser(string info)
+        {
+            InitializeComponent();
+            WhoAmI =info;
+        }
         
         public void chaser_move()
         {
@@ -170,6 +176,21 @@ namespace WindowsFormsApp2
                         }
                     }
 
+                }
+                if(x is PictureBox && (string)x.Name == "player")
+                {
+                    if (x.Bounds.IntersectsWith(this.Bounds))
+                    {
+                        switch (WhoAmI)
+                        {
+                            case "guardman":
+                                //경비원 붙잡힐 때 엔딩
+                                break;
+                            case "assistant":
+                                //행정조교 붙잡힐 때 엔딩
+                                break;
+                        }
+                    }
                 }
 
             }

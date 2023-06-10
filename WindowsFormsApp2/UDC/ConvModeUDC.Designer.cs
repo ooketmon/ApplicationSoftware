@@ -74,7 +74,7 @@
             // timerLetter
             // 
             this.timerLetter.Interval = 30;
-            //this.timerLetter.Tick += new System.EventHandler(this.timerLetter_Tick_1);
+          
             // 
             // imgCharacter
             // 
