@@ -79,13 +79,13 @@ namespace WindowsFormsApp2
 
         private void Floor4_KeyDown(object sender, KeyEventArgs e)
         {
-            playerMove.PlayerKeyDown(sender, e);
-            //playerMove.MovePlayerWithoutBool(e);
+            //playerMove.PlayerKeyDown(sender, e);
+            playerMove.MovePlayerWithoutBool(e);
         }
 
         private void timerFloor4_Tick(object sender, EventArgs e)
         {
-            playerMove.MovePlayer();
+            //playerMove.MovePlayer();
 
             foreach (Control x in this.Controls)
             {

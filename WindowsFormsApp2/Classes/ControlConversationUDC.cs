@@ -130,30 +130,31 @@ namespace WindowsFormsApp2
             
             target.contentConv.Text= string.Format("이건 {0}층 게시판인 것 같다.", number_info[0]);
 
-            Room_Board board_background = new Room_Board(this);
-            var allControls = board_background.Controls;
+            Room_Board board_background = new Room_Board(this, number_info[0]);
+            Control to_delete = null;
             if (number_info[0] == "2")//2층
             {
-                foreach(Control c in allControls)
+                foreach(Control c in board_background.Controls)
                 {
-                    if (c.Name == "Poster_4")
+                    if (c.Name == "Poster_2")
                     {
-                        board_background.Controls.Remove(c);
+                        to_delete = c;
                         break;
                     }
                 }
             }
             else//4층
             {
-                foreach (Control c in allControls)
+                foreach (Control c in board_background.Controls)
                 {
                     if (c.Name == "Poster_1")
                     {
-                        board_background.Controls.Remove(c);
+                        to_delete = c;
                         break;
                     }
                 }
             }
+            board_background.Controls.Remove(to_delete);
             target.Controls.Add(board_background);
             board_background.Dock = DockStyle.Fill;
             board_background.SendToBack();
@@ -674,7 +675,7 @@ namespace WindowsFormsApp2
                 
             }
             
-            puzzle p=new puzzle("PC_2",this);
+            Pc_lock p = new Pc_lock("lecture2_2",this);
             target.Controls.Add(p);
             p.Top = target.Height/2-p.Height/2;
             p.Left = target.Width / 2 - p.Width / 2;
@@ -697,7 +698,7 @@ namespace WindowsFormsApp2
                     c.Text = "나가기";
                 }
                 
-                if (c.GetType() == typeof(puzzle))
+                if (c.GetType() == typeof(Pc_lock))
                 {
                     to_delete = c;
                 }
@@ -745,7 +746,7 @@ namespace WindowsFormsApp2
                     c.Text = "나가기";
                 }
                 
-                if (c.GetType() == typeof(puzzle))
+                if (c.GetType() == typeof(Pc_lock))
                 {
                     to_delete = c;
                 }
@@ -780,7 +781,7 @@ namespace WindowsFormsApp2
 
             }
 
-            puzzle p = new puzzle("lab2_PC", this);
+            Pc_lock p = new Pc_lock("lab_2", this);
             target.Controls.Add(p);
             p.Top = target.Height / 2 - p.Height / 2;
             p.Left = target.Width / 2 - p.Width / 2;
@@ -802,7 +803,7 @@ namespace WindowsFormsApp2
                     c.Text = "나가기";
                 }
 
-                if (c.GetType() == typeof(puzzle))
+                if (c.GetType() == typeof(Pc_lock))
                 {
                     to_delete = c;
                 }
@@ -817,7 +818,10 @@ namespace WindowsFormsApp2
             {
                 target.Controls.Remove(to_delete);
             }
-
+            if (!(this.target.Parent as InitMenu).Lab2PcSolved)
+            {
+                (this.target.Parent as InitMenu).Lab2PcSolved = true;
+            }
             target.timerReset();
         }
 
@@ -848,7 +852,7 @@ namespace WindowsFormsApp2
                     c.Text = "나가기";
                 }
 
-                if (c.GetType() == typeof(puzzle))
+                if (c.GetType() == typeof(Pc_lock))
                 {
                     to_delete = c;
                 }

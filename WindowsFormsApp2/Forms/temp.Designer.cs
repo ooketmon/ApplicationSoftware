@@ -28,28 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.endingSucceed1 = new WindowsFormsApp2.UDC.EndingSucceed();
+            this.room_Board1 = new WindowsFormsApp2.UDC.Room_Board();
             this.SuspendLayout();
             // 
-            // endingSucceed1
+            // room_Board1
             // 
-            this.endingSucceed1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.endingSucceed1.Font = new System.Drawing.Font("굴림", 15F);
-            this.endingSucceed1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.endingSucceed1.Location = new System.Drawing.Point(-28, -57);
-            this.endingSucceed1.Margin = new System.Windows.Forms.Padding(5);
-            this.endingSucceed1.Name = "endingSucceed1";
-            this.endingSucceed1.Size = new System.Drawing.Size(2100, 1333);
-            this.endingSucceed1.TabIndex = 0;
+            this.room_Board1.Location = new System.Drawing.Point(1, -1);
+            this.room_Board1.Name = "room_Board1";
+            this.room_Board1.Size = new System.Drawing.Size(1200, 800);
+            this.room_Board1.TabIndex = 1;
             // 
             // temp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 800);
-            this.Controls.Add(this.endingSucceed1);
+            this.Controls.Add(this.room_Board1);
             this.Name = "temp";
             this.Text = "temp";
             this.ResumeLayout(false);
@@ -57,7 +51,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Timer timer1;
-        private UDC.EndingSucceed endingSucceed1;
+
+        private UDC.Room_Board room_Board1;
     }
 }

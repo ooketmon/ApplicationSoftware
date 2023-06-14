@@ -35,15 +35,15 @@ namespace WindowsFormsApp2
             Key_4.BackColor = Color.Transparent;
             Key_4.Parent = box_key;
 
-            Cardkey_5.BackColor = Color.Transparent;
-            Cardkey_5.Parent = box_cardkey_2;
+            //Cardkey_5.BackColor = Color.Transparent;
+            //Cardkey_5.Parent = box_cardkey_2;
            
             Papper_1.Location = new Point(3, 10);
             Cardkey_3.Location = new Point(6, 10);
             Papper_4.Location = new Point(6, 10);
             Safecard_4.Location = new Point(6, 10);
             Key_4.Location = new Point(6, 10);
-            Cardkey_5.Location = new Point(6, 10);
+            //Cardkey_5.Location = new Point(6, 10);
 
             Papper_1.Size = new Size(60, 60);
             Test_1.Size = new Size(50, 60);
@@ -56,7 +56,7 @@ namespace WindowsFormsApp2
             Safecard_4.Size = new Size(75, 60);
             Key_4.Size = new Size(75, 75);
             Test_4.Size = new Size(50, 60);
-            Cardkey_5.Size = new Size(75, 60);
+            //Cardkey_5.Size = new Size(75, 60);
 
             //"Papper_1","Test_1","Test_2","Papper_3","Cardkey_3","Poster_3","Test_3","Papper_4","Safecard_4","Key_4","Test_4","Cardkey_5"
 
@@ -116,60 +116,67 @@ namespace WindowsFormsApp2
             inventory_item maximizedItem=new inventory_item();
             
             Bitmap resourceName = null;
+            string description = "";
             if (itemName == items[0] && inventory[0])
             {
                 resourceName = Properties.Resources._1_Papper;
-            }
-            else if (itemName == items[1] && inventory[1])
+                description = "찢어진 포스터 조각이다.";
+            } else if (itemName == items[1] && inventory[1])
             {
-                resourceName = Properties.Resources._1_Test;
+                MessageBox.Show(string.Format("{0} 시험지다."), STUDENT_INFO.low_grade_courses[0]);
+                return;
             }
             else if (itemName == items[2] && inventory[2])
             {
-                resourceName = Properties.Resources._2_Test;
+                MessageBox.Show(string.Format("{0} 시험지다."), STUDENT_INFO.low_grade_courses[1]);
+                return;
             }
             else if (itemName == items[3] && inventory[3])
             {
                 resourceName = Properties.Resources._3_Papper;
-            }
-            else if (itemName == items[4] && inventory[4])
+                description = "알 수 없는 글이다. 이리저리 조합해보자.";
+
+            } else if (itemName == items[4] && inventory[4])
             {
-                resourceName = Properties.Resources._3_Cardkey;
+                MessageBox.Show(string.Format("강의실에 쓰는 키인 듯 하다."));
+                return;
             }
             else if (itemName == items[5] && inventory[5])
             {
                 resourceName = Properties.Resources._3_Poster;
-            }
-            else if (itemName == items[6] && inventory[6])
+                description = "연구실 홍보 포스터다.";
+            } else if (itemName == items[6] && inventory[6])
             {
-                resourceName = Properties.Resources._3_Test;
+                MessageBox.Show(string.Format("{0} 시험지다."), STUDENT_INFO.low_grade_courses[2]);
+                return;
             }
             else if (itemName == items[7] && inventory[7])
             {
-                resourceName = Properties.Resources._4_Papper;
+                resourceName = Properties.Resources._4_Papper_open;
+                description = "조교님이 쓰신 쪽지다.";
             }
             else if (itemName == items[8] && inventory[8])
             {
                 resourceName = Properties.Resources._4_Safecard;
-            }
-            else if (itemName == items[9] && inventory[9])
+            } else if (itemName == items[9] && inventory[9]) {
+                MessageBox.Show(string.Format("연구실에 쓰는 열쇠인 거 같다."));
+                return;
+            } else if (itemName == items[10] && inventory[10])
             {
-                resourceName = Properties.Resources._4_Key;
+                MessageBox.Show(string.Format("{0} 시험지다."), STUDENT_INFO.low_grade_courses[3]);
+                return;
             }
-            else if (itemName == items[10] && inventory[10])
-            {
-                resourceName = Properties.Resources._4_Test;
-            }
+            /*
             else if (itemName == items[11] && inventory[11])
             {
                 resourceName = Properties.Resources._5_Cardkey_;
-            }
+            }*/
             else
             {
                 return;
             }
             
-            maximizedItem.setMainItem(resourceName);
+            maximizedItem.setMainItem(resourceName,description);
             Controls.Add(maximizedItem);
 
             maximizedItem.Dock = DockStyle.Fill;
@@ -180,6 +187,7 @@ namespace WindowsFormsApp2
 
         public void Inventory_ItemVisibility_Check()
         {
+            inventory_set();
             if (inventory[0] == true) { Papper_1.Visible = true; }
             else { Papper_1.Visible = false; }
             if (inventory[1] == true) { Test_1.Visible = true; }
@@ -202,8 +210,9 @@ namespace WindowsFormsApp2
             else { Key_4.Visible = false; }
             if (inventory[10] == true) { Test_4.Visible = true; }
             else { Test_4.Visible = false; }
+            /*
             if (inventory[11] == true) { Cardkey_5.Visible = true; }
-            else { Cardkey_5.Visible = false; }
+            else { Cardkey_5.Visible = false; }*/
             
         }
         private void Inventory_Load(object sender, EventArgs e)
