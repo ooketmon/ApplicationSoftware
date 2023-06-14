@@ -31,11 +31,9 @@
             this.Papper_3 = new System.Windows.Forms.PictureBox();
             this.PC_2 = new System.Windows.Forms.PictureBox();
             this.lecture2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Papper_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PC_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lecture2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Papper_3
@@ -58,7 +56,6 @@
             this.PC_2.Size = new System.Drawing.Size(147, 196);
             this.PC_2.TabIndex = 1;
             this.PC_2.TabStop = false;
-            this.PC_2.Click += new System.EventHandler(this.PC_2_Click);
             // 
             // lecture2
             // 
@@ -72,19 +69,10 @@
             this.lecture2.TabIndex = 0;
             this.lecture2.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(-19, -19);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
             // Room_lecture2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Papper_3);
             this.Controls.Add(this.PC_2);
             this.Controls.Add(this.lecture2);
@@ -93,7 +81,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Papper_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PC_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lecture2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -103,6 +90,5 @@
         private System.Windows.Forms.PictureBox lecture2;
         private System.Windows.Forms.PictureBox PC_2;
         private System.Windows.Forms.PictureBox Papper_3;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
