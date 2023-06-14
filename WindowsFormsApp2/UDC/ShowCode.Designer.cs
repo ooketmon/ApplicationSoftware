@@ -33,14 +33,12 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.IndianRed;
-            this.button1.ForeColor = System.Drawing.SystemColors.Window;
-            this.button1.Location = new System.Drawing.Point(656, 3);
+            this.button1.Location = new System.Drawing.Point(284, 438);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(33, 32);
+            this.button1.Size = new System.Drawing.Size(133, 37);
             this.button1.TabIndex = 1;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Text = "그만보기";
+            this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ShowCode
@@ -50,7 +48,6 @@
             this.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.labpw1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.button1);
-            this.DoubleBuffered = true;
             this.Name = "ShowCode";
             this.Size = new System.Drawing.Size(702, 519);
             this.ResumeLayout(false);

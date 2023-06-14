@@ -25,19 +25,13 @@ namespace WindowsFormsApp2.UDC
             blackBack.Visible = false;
             //black_back.Visible = false; 
 
+
         }
         public Room_Board(ControlConversationUDC controller)
         {
             InitializeComponent();
             zoomPoster.Visible = false;
             blackBack.Visible= false;
-
-            Poster_1.BackColor = Color.Transparent;
-            Poster_1.Parent = board_2f;
-
-            Poster_4.BackColor = Color.Transparent;
-            Poster_4.Parent = board_2f;
-
             this.controller=controller;
             //black_back.Visible = false; 
 
@@ -104,12 +98,12 @@ namespace WindowsFormsApp2.UDC
             zoomPoster.Top = zoomPoster.Height / 8;
             zoomPoster.Left=this.Width / 2 - zoomPoster.Width/2;
 
-            //info.AutoSize = true;
-            //info.Font = new Font("Gulim", 15);
-            //info.ForeColor = Color.Black;
-            //info.Text = "실습실이 잠겨있다면\r\n 경비실에 방문바랍니다.";
-            //info.Location = new Point(zoomPoster.Right-info.Width, zoomPoster.Bottom-info.Height);
-            //info.Visible = true;
+            info.AutoSize = true;
+            info.Font = new Font("Gulim", 15);
+            info.ForeColor = Color.Black;
+            info.Text = "1연구실 전화번호: 02-6462-36";
+            info.Location = new Point(zoomPoster.Right-info.Width, zoomPoster.Bottom-info.Height);
+            info.Visible = true;
             info.BringToFront();
             if (StaticItem.mPapper1)
             {
@@ -133,13 +127,13 @@ namespace WindowsFormsApp2.UDC
 
             zoomPoster.Location = new Point(this.Width / 2 - zoomPoster.Width / 2, this.Height / 2 - zoomPoster.Height / 2);
             info.Location = new Point(zoomPoster.Left+zoomPoster.Width/8, zoomPoster.Top+zoomPoster.Height/3);
-            //info.AutoSize = true;
-            //info.Font= new Font("Gulim", 15);
-            //info.ForeColor = Color.Black;
-            //info.Text = "실습실이 잠겨있다면\r\n 경비실에 방문바랍니다.";
-            //info.Visible = true;
+            info.AutoSize = true;
+            info.Font= new Font("Gulim", 15);
+            info.ForeColor = Color.Black;
+            info.Text = "실습실이 잠겨있다면\r\n 경비실에 방문바랍니다.";
+            info.Visible = true;
             info.Image = new Bitmap(Properties.Resources._2F_Poster4,info.Size);
-            //info.BackColor = Color.Transparent;
+            info.BackColor = Color.Transparent;
             info.BringToFront();
             //zoomPoster.Top = zoomPoster.Height / 8;
             //zoomPoster.Left = this.Width / 2 - zoomPoster.Width / 2;

@@ -38,7 +38,7 @@
             this.character.Dock = System.Windows.Forms.DockStyle.Fill;
             this.character.Location = new System.Drawing.Point(0, 0);
             this.character.Name = "character";
-            this.character.Size = new System.Drawing.Size(49, 55);
+            this.character.Size = new System.Drawing.Size(40, 45);
             this.character.TabIndex = 179;
             this.character.TabStop = false;
             // 
@@ -46,10 +46,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.character);
             this.Name = "Chaser";
-            this.Size = new System.Drawing.Size(49, 55);
+            this.Size = new System.Drawing.Size(40, 45);
             this.Load += new System.EventHandler(this.Chaser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.character)).EndInit();
             this.ResumeLayout(false);

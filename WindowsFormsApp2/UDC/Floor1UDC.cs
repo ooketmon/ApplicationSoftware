@@ -162,7 +162,7 @@ namespace WindowsFormsApp2
                 chaser.BackColor = Color.Transparent;
                 chaser.BringToFront();
                 chaser_timer = new System.Threading.Timer(Chaser_Move_CallBack);
-                chaser_timer.Change(0, 100);
+                chaser_timer.Change(0, 30);
 
                 chaser_wood_timer1 = new System.Threading.Timer(ChaserWoodCallBack1);
                 chaser_wood_timer1.Change(0, 10);
