@@ -38,7 +38,8 @@
             // 
             // npc_sleep
             // 
-            this.npc_sleep.Location = new System.Drawing.Point(395, 323);
+            this.npc_sleep.BackColor = System.Drawing.Color.Transparent;
+            this.npc_sleep.Location = new System.Drawing.Point(416, 354);
             this.npc_sleep.Name = "npc_sleep";
             this.npc_sleep.Size = new System.Drawing.Size(281, 74);
             this.npc_sleep.TabIndex = 2;
@@ -59,12 +60,13 @@
             // room_sofa
             // 
             this.room_sofa.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.room_sofa.BackgroundImage = global::WindowsFormsApp2.Properties.Resources._3F_meeting_room_2;
+            this.room_sofa.BackgroundImage = global::WindowsFormsApp2.Properties.Resources._3F_meeting_room_2_1;
             this.room_sofa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.room_sofa.Dock = System.Windows.Forms.DockStyle.Fill;
             this.room_sofa.Location = new System.Drawing.Point(0, 0);
             this.room_sofa.Name = "room_sofa";
             this.room_sofa.Size = new System.Drawing.Size(1200, 800);
+            this.room_sofa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.room_sofa.TabIndex = 0;
             this.room_sofa.TabStop = false;
             // 

@@ -183,6 +183,16 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap _3F_meeting_room_2_1 {
+            get {
+                object obj = ResourceManager.GetObject("3F-meeting-room-2 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap _4_Key {
             get {
                 object obj = ResourceManager.GetObject("_4_Key", resourceCulture);
