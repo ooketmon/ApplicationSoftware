@@ -8,7 +8,9 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp2.UDC;
 using static WindowsFormsApp2.Floor8UDC;
+using static WindowsFormsApp2.StaticItem;
 
 namespace WindowsFormsApp2
 {
@@ -120,6 +122,8 @@ namespace WindowsFormsApp2
         {
             playerisOnStair = false;
             playerisOnElevator = false;
+
+            gameOverExit.Visible = false;
 
             playerMove = new PlayerControl(player);
 
@@ -288,7 +292,24 @@ namespace WindowsFormsApp2
                     {
                         convHitTest = true;
                         //엔딩화면으로 넘어가는 코드
+                        // 엔딩도움
+                        //UDC > EndingFail 연결
                     }
+                }
+
+                if (mTest1 == true && mTest2 == true && mTest3 == true && mTest4 == true)
+                {
+                   
+                    if (x is PictureBox && (x.Name as string) == "gameOverExit")
+                    {
+                        // 엔딩도움
+                        // convHitTest = true;
+                        //((InitMenu)this.Parent).     .(x.Name.ToString());
+                        //return;
+                        //UDC > EndingSucceed 연결되도록 
+
+                    }
+
                 }
 
             }
@@ -1699,6 +1720,11 @@ namespace WindowsFormsApp2
                         chaser.chaser_move();
                     }
                 }));
+        }
+
+        public void Move2Exit()
+        {
+           
         }
 
     }
