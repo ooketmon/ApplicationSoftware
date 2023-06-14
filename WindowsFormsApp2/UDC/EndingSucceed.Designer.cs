@@ -36,7 +36,7 @@
             // lblEndingSucceed
             // 
             this.lblEndingSucceed.AutoSize = true;
-            this.lblEndingSucceed.Location = new System.Drawing.Point(98, 75);
+            this.lblEndingSucceed.Location = new System.Drawing.Point(75, 88);
             this.lblEndingSucceed.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblEndingSucceed.Name = "lblEndingSucceed";
             this.lblEndingSucceed.Size = new System.Drawing.Size(77, 25);
@@ -54,8 +54,8 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Controls.Add(this.lblEndingSucceed);
             this.Font = new System.Drawing.Font("굴림", 15F);
-            this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Margin = new System.Windows.Forms.Padding(5);
+            this.ForeColor = System.Drawing.SystemColors.Control;
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "EndingSucceed";
             this.Size = new System.Drawing.Size(1200, 800);
             this.Load += new System.EventHandler(this.EndingSucceed_Load);

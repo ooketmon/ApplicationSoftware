@@ -14,22 +14,22 @@ namespace WindowsFormsApp2
 
         //1. 게시판 - 강의실1 - 연구실1 관련 item
         public static bool mPapper1 = false;
-        public static bool mTest1 = false;
+        public static bool mTest1 = true;
 
         //2. 강의실2 - 연구실2 관련 item
-        public static bool mTest2 = false;
+        public static bool mTest2 = true;
 
         //3. 창업동아리 - 강의실3 - 연구실3 관련 item
         public static bool mPapper3 = false;
         public static bool mCardkey3 = false;
         public static bool mPoster3 = false;
-        public static bool mTest3 = false;
+        public static bool mTest3 = true;
 
         //4. 과사 - 경비실 - 실습실 - 연구실4 관련 item
         public static bool mPapper4 = false;
         public static bool mSafekey4 = false;
         public static bool mKey4 = false;
-        public static bool mTest4 = false;
+        public static bool mTest4 = true;
 
         //5. 대학원 강의실 관련 item
         public static bool mCardkey5 = false;

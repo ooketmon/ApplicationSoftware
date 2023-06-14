@@ -91,6 +91,18 @@
     <Compile Include="UDC\Doorlock.Designer.cs">
       <DependentUpon>Doorlock.cs</DependentUpon>
     </Compile>
+    <Compile Include="UDC\EndingFail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UDC\EndingFail.Designer.cs">
+      <DependentUpon>EndingFail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UDC\EndingSucceed.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UDC\EndingSucceed.Designer.cs">
+      <DependentUpon>EndingSucceed.cs</DependentUpon>
+    </Compile>
     <Compile Include="UDC\Pc_lock.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -306,6 +318,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\InitMenu.resx">
       <DependentUpon>InitMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UDC\EndingFail.resx">
+      <DependentUpon>EndingFail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UDC\EndingSucceed.resx">
+      <DependentUpon>EndingSucceed.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UDC\InitWindow.resx">
       <DependentUpon>InitWindow.cs</DependentUpon>

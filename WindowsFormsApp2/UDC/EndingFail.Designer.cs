@@ -29,31 +29,19 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
             this.lblEndingFail = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
-            // 
             // lblEndingFail
             // 
             this.lblEndingFail.AutoSize = true;
-            this.lblEndingFail.Font = new System.Drawing.Font("굴림", 15F);
             this.lblEndingFail.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblEndingFail.Location = new System.Drawing.Point(49, 30);
+            this.lblEndingFail.Location = new System.Drawing.Point(126, 95);
             this.lblEndingFail.Name = "lblEndingFail";
-            this.lblEndingFail.Size = new System.Drawing.Size(77, 25);
-            this.lblEndingFail.TabIndex = 1;
-            this.lblEndingFail.Text = "label2";
-            this.lblEndingFail.Click += new System.EventHandler(this.lblEndingFail_Click);
+            this.lblEndingFail.Size = new System.Drawing.Size(45, 15);
+            this.lblEndingFail.TabIndex = 0;
+            this.lblEndingFail.Text = "label1";
             // 
             // timer1
             // 
@@ -65,7 +53,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Controls.Add(this.lblEndingFail);
-            this.Controls.Add(this.label1);
             this.Name = "EndingFail";
             this.Size = new System.Drawing.Size(1200, 800);
             this.Load += new System.EventHandler(this.EndingFail_Load);
@@ -76,7 +63,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblEndingFail;
         private System.Windows.Forms.Timer timer1;
     }
