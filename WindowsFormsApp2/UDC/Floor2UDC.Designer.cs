@@ -751,7 +751,6 @@
             this.board2_1.TabIndex = 150;
             this.board2_1.TabStop = false;
             this.board2_1.Tag = "";
-            this.board2_1.Visible = false;
             // 
             // pictureBox42
             // 

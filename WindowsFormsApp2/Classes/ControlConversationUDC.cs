@@ -623,7 +623,7 @@ namespace WindowsFormsApp2
         public void firstFloorNPC2()
         {
             phase++;
-            target.nameCharacter.Text = "조교님";
+            target.nameCharacter.Text = "학생1";
             target.text = "하..할 일 참 많네...전화가 왔네? 또 뭐야?";
             target.timerReset();
         }

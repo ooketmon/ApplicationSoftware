@@ -556,9 +556,9 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.SystemColors.ControlDark;
             this.pictureBox5.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0846;
-            this.pictureBox5.Location = new System.Drawing.Point(1100, 59);
+            this.pictureBox5.Location = new System.Drawing.Point(1100, 63);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(71, 141);
+            this.pictureBox5.Size = new System.Drawing.Size(71, 131);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 83;
             this.pictureBox5.TabStop = false;
@@ -747,7 +747,7 @@
             this.guardroom.Size = new System.Drawing.Size(60, 65);
             this.guardroom.TabIndex = 158;
             this.guardroom.TabStop = false;
-            this.guardroom.Tag = "elevator";
+            this.guardroom.Tag = "";
             this.guardroom.Visible = false;
             // 
             // pictureBox30
@@ -871,9 +871,9 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pictureBox4.Location = new System.Drawing.Point(1085, 59);
+            this.pictureBox4.Location = new System.Drawing.Point(1085, 63);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(15, 76);
+            this.pictureBox4.Size = new System.Drawing.Size(15, 72);
             this.pictureBox4.TabIndex = 183;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Tag = "obstacle";
