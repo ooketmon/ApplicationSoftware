@@ -55,9 +55,9 @@
             this.Controls.Add(this.lblEndingSucceed);
             this.Font = new System.Drawing.Font("굴림", 15F);
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Margin = new System.Windows.Forms.Padding(5);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "EndingSucceed";
-            this.Size = new System.Drawing.Size(1200, 800);
+            this.Size = new System.Drawing.Size(2100, 1333);
             this.Load += new System.EventHandler(this.EndingSucceed_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

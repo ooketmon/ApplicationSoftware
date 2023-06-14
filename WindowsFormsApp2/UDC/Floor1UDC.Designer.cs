@@ -348,7 +348,7 @@
             // 
             this.player.BackColor = System.Drawing.Color.Silver;
             this.player.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player.Location = new System.Drawing.Point(1045, 635);
+            this.player.Location = new System.Drawing.Point(1040, 695);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(39, 45);
             this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -876,6 +876,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.IMG_0872;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.gameOverExit);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox42);
             this.Controls.Add(this.pictureBox7);

@@ -324,7 +324,7 @@ namespace WindowsFormsApp2
             {
                 lecture2_problem += ((lecture2_answer >> i) & 1).ToString();
             }
-        }   
+        }
         public void GoToLogin()
         {
             this.Controls.Clear();
@@ -361,16 +361,5 @@ namespace WindowsFormsApp2
             }
         }
 
-        public void CallEndingFail()
-        {
-            this.Controls.Clear();
-            this.Controls.Add(new EndingFail());
-        }
-
-        public void CallEndingSucceed()
-        {
-            this.Controls.Clear();
-            this.Controls.Add(new EndingSucceed());
-        }
     }
 }
