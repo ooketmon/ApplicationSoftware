@@ -1063,7 +1063,7 @@ namespace WindowsFormsApp2
                                     {
                                         for (int j = 0; j < chaser.Height; j++)
                                         {
-                                            if (resized_x > resized_image.Width || image_size.Height < j)
+                                            if (resized_x >= resized_image.Width || image_size.Height <= j)
                                             {
                                                 break;
                                             }
@@ -1346,9 +1346,9 @@ namespace WindowsFormsApp2
                                 else if (!x.Bounds.Contains(chaser.Bounds) && chaser.Left - x.Left <= 0)
                                 {
                                     int resized_x = 1;
-                                    for (int i = player.Width - 1; i > 0; i--)
+                                    for (int i = chaser.Width - 1; i > 0; i--)
                                     {
-                                        for (int j = 0; j < chaser.Height; j++)
+                                        for (int j = 1; j < chaser.Height; j++)
                                         {
                                             if (resized_x >= resized_image.Width || resized_image.Height <= j)
                                             {
