@@ -496,4 +496,22 @@
   <data name="3F-meeting-room-2 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\3F-meeting-room-2 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="lecuture_Door" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clue\lecuture_Door.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_2_computer_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clue\2_computer_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_2_test_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clue\2_test_lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_4_Papper_open" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clue\4_Papper_open.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_8F_clock4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clue\8F_clock4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_8F_world4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clue\8F_world4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
