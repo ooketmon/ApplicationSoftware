@@ -674,7 +674,7 @@ namespace WindowsFormsApp2
                 
             }
             
-            puzzle p = new puzzle("PC_2",this);
+            puzzle p=new puzzle("PC_2",this);
             target.Controls.Add(p);
             p.Top = target.Height/2-p.Height/2;
             p.Left = target.Width / 2 - p.Width / 2;

@@ -16,7 +16,13 @@ namespace WindowsFormsApp2
         Control player = null;
         Control chaser1 = null;
         private int currentImageIndex = 0;
-        Dictionary<Keys, Image[]> directionImages = new Dictionary<Keys, Image[]>();
+        Dictionary<Keys,Image[]>directionImages = new Dictionary<Keys, Image[]>
+            {
+                { Keys.Left, new Image[] { Properties.Resources.left1, Properties.Resources.left2, Properties.Resources.left3, Properties.Resources.left4 } },
+                { Keys.Right, new Image[] { Properties.Resources.right1, Properties.Resources.right2, Properties.Resources.right3, Properties.Resources.right4 } },
+                { Keys.Up, new Image[] { Properties.Resources.back1, Properties.Resources.back2, Properties.Resources.back3, Properties.Resources.back4 } },
+                { Keys.Down, new Image[] { Properties.Resources.front1, Properties.Resources.front2, Properties.Resources.front3, Properties.Resources.front4 } }
+            };
         string WhoAmI = "";
         public Chaser()
         {
@@ -236,24 +242,6 @@ namespace WindowsFormsApp2
                 {
                     chaser1 = c;
                 }
-            }
-            if (WhoAmI == "guardman")
-            {
-                directionImages = new Dictionary<Keys, Image[]>()             {
-                { Keys.Left, new Image[] { Properties.Resources.guard_left1, Properties.Resources.guard_left1, Properties.Resources.guard_left1, Properties.Resources.guard_left2, Properties.Resources.guard_left2, Properties.Resources.guard_left2, Properties.Resources.guard_left3, Properties.Resources.guard_left3, Properties.Resources.guard_left3, Properties.Resources.guard_left4, Properties.Resources.guard_left4, Properties.Resources.guard_left4 } },
-                { Keys.Right, new Image[] { Properties.Resources.guard_right1, Properties.Resources.guard_right1, Properties.Resources.guard_right1, Properties.Resources.guard_right2, Properties.Resources.guard_right2, Properties.Resources.guard_right2, Properties.Resources.guard_right3, Properties.Resources.guard_right3, Properties.Resources.guard_right3, Properties.Resources.guard_right4, Properties.Resources.guard_right4, Properties.Resources.guard_right4 } },
-                { Keys.Up, new Image[] { Properties.Resources.guard_back1, Properties.Resources.guard_back1, Properties.Resources.guard_back1, Properties.Resources.guard_back2, Properties.Resources.guard_back2, Properties.Resources.guard_back2, Properties.Resources.guard_back3, Properties.Resources.guard_back3, Properties.Resources.guard_back3, Properties.Resources.guard_back4, Properties.Resources.guard_back4, Properties.Resources.guard_back4 } },
-                { Keys.Down, new Image[] { Properties.Resources.guard_front1, Properties.Resources.guard_front1, Properties.Resources.guard_front1, Properties.Resources.guard_front2, Properties.Resources.guard_front2, Properties.Resources.guard_front2, Properties.Resources.guard_front3, Properties.Resources.guard_front3, Properties.Resources.guard_front3, Properties.Resources.guard_front4, Properties.Resources.guard_front4, Properties.Resources.guard_front4 } }
-                 };
-            }
-            else
-            {
-                directionImages = new Dictionary<Keys, Image[]>()             {
-                { Keys.Left, new Image[] { Properties.Resources.assistant_left1, Properties.Resources.assistant_left1, Properties.Resources.assistant_left1, Properties.Resources.assistant_left2, Properties.Resources.assistant_left2, Properties.Resources.assistant_left2, Properties.Resources.assistant_left3, Properties.Resources.assistant_left3, Properties.Resources.assistant_left3, Properties.Resources.assistant_left4, Properties.Resources.assistant_left4, Properties.Resources.assistant_left4 } },
-                { Keys.Right, new Image[] { Properties.Resources.assistant_right1, Properties.Resources.assistant_right1, Properties.Resources.assistant_right1, Properties.Resources.assistant_right2, Properties.Resources.assistant_right2, Properties.Resources.assistant_right2, Properties.Resources.assistant_right3, Properties.Resources.assistant_right3, Properties.Resources.assistant_right3, Properties.Resources.assistant_right4, Properties.Resources.assistant_right4, Properties.Resources.assistant_right4 } },
-                { Keys.Up, new Image[] { Properties.Resources.assistant_back1, Properties.Resources.assistant_back1, Properties.Resources.assistant_back1, Properties.Resources.assistant_back2, Properties.Resources.assistant_back2, Properties.Resources.assistant_back2, Properties.Resources.assistant_back3, Properties.Resources.assistant_back3, Properties.Resources.assistant_back3, Properties.Resources.assistant_back4, Properties.Resources.assistant_back4, Properties.Resources.assistant_back4 } },
-                { Keys.Down, new Image[] { Properties.Resources.assistant_front1, Properties.Resources.assistant_front1, Properties.Resources.assistant_front1, Properties.Resources.assistant_front2, Properties.Resources.assistant_front2, Properties.Resources.assistant_front2, Properties.Resources.assistant_front3, Properties.Resources.assistant_front3, Properties.Resources.assistant_front3, Properties.Resources.assistant_front4, Properties.Resources.assistant_front4, Properties.Resources.assistant_front4 } }
-                 };
             }
         }
     }
