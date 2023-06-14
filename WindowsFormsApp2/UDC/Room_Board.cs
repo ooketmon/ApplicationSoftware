@@ -16,6 +16,7 @@ namespace WindowsFormsApp2.UDC
     {
         bool posterClicked = false;
         ControlConversationUDC controller = null;
+        Label info = null;
 
         public Room_Board()
         {
@@ -117,6 +118,15 @@ namespace WindowsFormsApp2.UDC
             zoomPoster.SizeMode = PictureBoxSizeMode.StretchImage;
 
             zoomPoster.Location = new Point(this.Width / 2 - zoomPoster.Width / 2, this.Height / 2 - zoomPoster.Height / 2);
+            info.Location = new Point(zoomPoster.Left+zoomPoster.Width/8, zoomPoster.Top+zoomPoster.Height/3);
+            info.AutoSize = true;
+            info.Font= new Font("Gulim", 15);
+            info.ForeColor = Color.Black;
+            info.Text = "실습실이 잠겨있다면\r\n 경비실에 방문바랍니다.";
+            info.Visible = true;
+            info.Image = new Bitmap(Properties.Resources._2F_Poster4,info.Size);
+            info.BackColor = Color.Transparent;
+            info.BringToFront();
             //zoomPoster.Top = zoomPoster.Height / 8;
             //zoomPoster.Left = this.Width / 2 - zoomPoster.Width / 2;
             if (StaticItem.mPapper4)
@@ -131,11 +141,18 @@ namespace WindowsFormsApp2.UDC
             if(posterClicked)
             {
                 zoomPoster.Visible = false;
+                info.Visible= false;
                 controller.SayNothing();
             }
 
         }
 
+        private void Room_Board_Load(object sender, EventArgs e)
+        {
+            info = new Label();
+            Controls.Add(info);
+            info.Visible = false;
+        }
     }
 
     

@@ -444,7 +444,7 @@ namespace WindowsFormsApp2
             GetRidofEventSplit();
             eventType += "/Poster1";
             target.nameCharacter.Text = STUDENT_INFO.name;
-            target.text = string.Format("흠...누가 포스터를 찢은거야?");
+            target.text = string.Format("흠...누가 1연구실 홍보 포스터를 찢은거야?");
             target.timerReset();
         }
 
@@ -479,7 +479,7 @@ namespace WindowsFormsApp2
             StaticItem.inventory_set();
             (target.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
             (target.Parent as InitMenu).CheckTestComplete();
-            target.text = string.Format("연구실 홍보 포스터를 발견했다.");
+            target.text = string.Format("3연구실 홍보 포스터를 발견했다.");
             target.timerReset();
         }
 
