@@ -31,11 +31,9 @@
             this.lock_case = new System.Windows.Forms.PictureBox();
             this.clock_roma = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.lock_case)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clock_roma)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // lock_case
@@ -47,7 +45,6 @@
             this.lock_case.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.lock_case.TabIndex = 3;
             this.lock_case.TabStop = false;
-            this.lock_case.Click += new System.EventHandler(this.lock_case_Click);
             // 
             // clock_roma
             // 
@@ -69,19 +66,10 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(-19, -19);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
-            // 
             // Room_lab4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lock_case);
             this.Controls.Add(this.clock_roma);
             this.Controls.Add(this.pictureBox1);
@@ -90,7 +78,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.lock_case)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clock_roma)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -100,6 +87,5 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox clock_roma;
         private System.Windows.Forms.PictureBox lock_case;
-        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

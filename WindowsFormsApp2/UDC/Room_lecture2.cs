@@ -20,7 +20,6 @@ namespace WindowsFormsApp2.UDC
 
             PC_2.BackColor = Color.Transparent;
             PC_2.Parent = lecture2;
-            pictureBox1.Visible= false; 
 
             this.KeyDown += Inventory_KeyDown; // 이벤트 핸들러 등록
         }
@@ -31,6 +30,12 @@ namespace WindowsFormsApp2.UDC
             mPapper3 = true;
             inventory_set();
             Papper_3.Visible = false;
+        }
+
+        public void PC2_Click(object sender, EventArgs e)
+        {
+            //클릭시 비밀번호가 적힌 컴퓨터 화면과 입력 창이 뜨도록
+            //정답을 맞출경우 코드가 적힌 화면이 등장함
         }
 
 
@@ -51,13 +56,5 @@ namespace WindowsFormsApp2.UDC
             inventory.ShowDialog();
         }
 
-        private void PC_2_Click(object sender, EventArgs e)
-        {
-            //클릭시 비밀번호가 적힌 컴퓨터 화면과 입력 창이 뜨도록
-            //정답을 맞출경우 코드가 적힌 화면이 등장함
-            pictureBox1.Visible = true;
-            DoorLockUDC DoorLockUDC = new DoorLockUDC();
-            DoorLockUDC.Show();
-        }
     }
 }
