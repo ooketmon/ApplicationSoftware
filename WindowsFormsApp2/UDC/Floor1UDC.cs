@@ -123,17 +123,6 @@ namespace WindowsFormsApp2
 
             playerMove = new PlayerControl(player);
 
-            if ((this.Parent as InitMenu).guardmanChasing)
-            {
-                chaser = new Chaser();
-                chaser.Left = scarepoint.Left;
-                chaser.Top=scarepoint.Top+60;
-                Controls.Add(chaser);
-
-                chaser_timer = new System.Threading.Timer(Chaser_Move_CallBack);
-                chaser_timer.Change(0, 30);
-
-            }
 
             wood_timer1 = new System.Threading.Timer(WoodCallBack1);
             wood_timer1.Change(0, 10);
@@ -158,7 +147,7 @@ namespace WindowsFormsApp2
                 chaser.BackColor = Color.Transparent;
                 chaser.BringToFront();
                 chaser_timer = new System.Threading.Timer(Chaser_Move_CallBack);
-                chaser_timer.Change(0, 100);
+                chaser_timer.Change(0, 50);
 
                 chaser_wood_timer1 = new System.Threading.Timer(ChaserWoodCallBack1);
                 chaser_wood_timer1.Change(0, 10);

@@ -61,6 +61,7 @@
             this.btn_enter.TabIndex = 2;
             this.btn_enter.Text = "▶";
             this.btn_enter.UseVisualStyleBackColor = false;
+            this.btn_enter.Click += new System.EventHandler(this.btn_enter_Click);
             // 
             // btn_x
             // 
@@ -73,6 +74,7 @@
             this.btn_x.Text = "X";
             this.btn_x.UseVisualStyleBackColor = false;
             this.btn_x.UseWaitCursor = true;
+            this.btn_x.Click += new System.EventHandler(this.btn_x_Click);
             // 
             // Pc_lock
             // 
@@ -84,6 +86,7 @@
             this.Controls.Add(this.img_lock);
             this.Name = "Pc_lock";
             this.Size = new System.Drawing.Size(849, 573);
+            this.Load += new System.EventHandler(this.Pc_lock_Load);
             ((System.ComponentModel.ISupportInitialize)(this.img_lock)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

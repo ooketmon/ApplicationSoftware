@@ -30,6 +30,7 @@
         {
             this.btn_iclose = new System.Windows.Forms.Button();
             this.pic_Item = new System.Windows.Forms.PictureBox();
+            this.desc = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Item)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,20 +50,32 @@
             this.pic_Item.Cursor = System.Windows.Forms.Cursors.Default;
             this.pic_Item.Location = new System.Drawing.Point(23, 11);
             this.pic_Item.Name = "pic_Item";
-            this.pic_Item.Size = new System.Drawing.Size(375, 437);
+            this.pic_Item.Size = new System.Drawing.Size(375, 398);
             this.pic_Item.TabIndex = 1;
             this.pic_Item.TabStop = false;
+            // 
+            // desc
+            // 
+            this.desc.AutoSize = true;
+            this.desc.Font = new System.Drawing.Font("굴림", 12F);
+            this.desc.Location = new System.Drawing.Point(31, 424);
+            this.desc.Name = "desc";
+            this.desc.Size = new System.Drawing.Size(0, 20);
+            this.desc.TabIndex = 2;
+            this.desc.Click += new System.EventHandler(this.label1_Click);
             // 
             // inventory_item
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.desc);
             this.Controls.Add(this.pic_Item);
             this.Controls.Add(this.btn_iclose);
             this.Name = "inventory_item";
             this.Size = new System.Drawing.Size(375, 495);
             ((System.ComponentModel.ISupportInitialize)(this.pic_Item)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -70,5 +83,6 @@
 
         private System.Windows.Forms.Button btn_iclose;
         private System.Windows.Forms.PictureBox pic_Item;
+        private System.Windows.Forms.Label desc;
     }
 }

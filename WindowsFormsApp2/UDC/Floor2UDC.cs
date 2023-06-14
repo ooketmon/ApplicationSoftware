@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp2.UDC;
 
 namespace WindowsFormsApp2
 {
@@ -127,7 +128,7 @@ namespace WindowsFormsApp2
                     {
                         convHitTest = true;
                         player.Left -= 50;
-                        puzzle p = new puzzle("lecture2_1_enter");
+                        Doorlock p = new Doorlock("lecture2_1");
                         p.Left = this.Width / 2 - p.Width / 2;
                         p.Top = this.Height / 2 - p.Height / 2;
                         Controls.Add(p);

@@ -22,11 +22,16 @@ namespace WindowsFormsApp2
             (this.Parent as Inventory).CancelMaximize();
         }
 
-        public void setMainItem(Image resourceName)
+        public void setMainItem(Image resourceName,string text)
         {
            
             pic_Item.BackgroundImage = resourceName;
+            desc.Text = text;
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -17,7 +17,8 @@ namespace WindowsFormsApp2.UDC
         bool posterClicked = false;
         ControlConversationUDC controller = null;
         Label info = null;
-
+        string floor = "";
+        
         public Room_Board()
         {
             InitializeComponent();
@@ -40,6 +41,25 @@ namespace WindowsFormsApp2.UDC
 
             this.controller=controller;
             //black_back.Visible = false; 
+
+
+        }
+
+        public Room_Board(ControlConversationUDC controller,string floor)
+        {
+            InitializeComponent();
+            zoomPoster.Visible = false;
+            blackBack.Visible = false;
+
+            Poster_1.BackColor = Color.Transparent;
+            Poster_1.Parent = board_2f;
+
+            Poster_4.BackColor = Color.Transparent;
+            Poster_4.Parent = board_2f;
+
+            this.controller = controller;
+            //black_back.Visible = false; 
+            this.floor = floor;
 
 
         }
@@ -166,6 +186,13 @@ namespace WindowsFormsApp2.UDC
             info = new Label();
             Controls.Add(info);
             info.Visible = false;
+            if (floor == "2")
+            {
+               Poster_4.Visible = false;
+            }
+            else {
+               Poster_1.Visible = false;
+            }
         }
     }
 

@@ -32,6 +32,7 @@
             this.txt_password = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_x = new System.Windows.Forms.Button();
+            this.room_number = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,6 +45,7 @@
             this.btn_enter.TabIndex = 4;
             this.btn_enter.Text = "▶";
             this.btn_enter.UseVisualStyleBackColor = false;
+            this.btn_enter.Click += new System.EventHandler(this.btn_enter_Click);
             // 
             // txt_password
             // 
@@ -74,17 +76,32 @@
             this.btn_x.Text = "X";
             this.btn_x.UseVisualStyleBackColor = false;
             this.btn_x.UseWaitCursor = true;
+            this.btn_x.Click += new System.EventHandler(this.btn_x_Click);
+            // 
+            // room_number
+            // 
+            this.room_number.AutoSize = true;
+            this.room_number.BackColor = System.Drawing.Color.Transparent;
+            this.room_number.Font = new System.Drawing.Font("굴림", 20F);
+            this.room_number.ForeColor = System.Drawing.Color.White;
+            this.room_number.Location = new System.Drawing.Point(92, 42);
+            this.room_number.Name = "room_number";
+            this.room_number.Size = new System.Drawing.Size(110, 34);
+            this.room_number.TabIndex = 7;
+            this.room_number.Text = "label1";
             // 
             // Doorlock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.room_number);
             this.Controls.Add(this.btn_x);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_enter);
             this.Controls.Add(this.txt_password);
             this.Name = "Doorlock";
             this.Size = new System.Drawing.Size(292, 435);
+            this.Load += new System.EventHandler(this.Doorlock_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -97,5 +114,6 @@
         private System.Windows.Forms.TextBox txt_password;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_x;
+        private System.Windows.Forms.Label room_number;
     }
 }

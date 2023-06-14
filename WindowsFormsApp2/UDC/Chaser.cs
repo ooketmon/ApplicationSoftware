@@ -12,7 +12,7 @@ namespace WindowsFormsApp2
 {
     public partial class Chaser : UserControl
     {
-        int chaser_speed = 3;
+        int chaser_speed = 8;
         Control player = null;
         Control chaser1 = null;
         private int currentImageIndex = 0;
@@ -27,8 +27,6 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
             WhoAmI =info;
-            character.Image = Properties.Resources.left1;
-            character.SizeMode = PictureBoxSizeMode.StretchImage;
         }
         
         public void chaser_move()

@@ -36,7 +36,12 @@ namespace WindowsFormsApp2
         public bool openLab2 = false;
         public bool openLab3 = false;
         //public bool openLab4 = false;
-        
+
+        public bool openPractice1 = false;
+        public bool openPractice2 = false;
+        public bool openPractice3 = false;
+        public bool openPractice4 = false;
+
         public bool Lab2PcSolved=false;
         public bool Lab4LockCaseSolve = false;
 
@@ -109,6 +114,7 @@ namespace WindowsFormsApp2
                 case 8:
                     tmp = new Floor8UDC();
                     this.Controls.Add(tmp);
+
                     break;
             }
             tmp.Focus();
@@ -203,6 +209,7 @@ namespace WindowsFormsApp2
                     }
                     elevator.Left = character8.Left - 100;
                     elevator.Top = character8.Top;
+                    
                     break;
             }
             this.Controls.Add(elevator);
@@ -336,12 +343,12 @@ namespace WindowsFormsApp2
         {
             foreach (Control c in this.Controls)
             {
-                if (c.GetType() == typeof(Floor8UDC) || c.GetType()==typeof(Floor2UDC))
+                if (c.GetType() == typeof(Floor8UDC) || c.GetType()==typeof(Floor2UDC) || c.GetType()==typeof(Floor3UDC))
                 {
                     var allControls = c.Controls;
                     foreach(Control c2 in allControls)
                     {
-                        if (c2.GetType() == typeof(puzzle))
+                        if (c2.GetType() == typeof(Doorlock))
                         {
                             c.Controls.Remove(c2);
                             break;

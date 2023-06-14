@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp2.UDC;
 
 namespace WindowsFormsApp2
 {
@@ -86,6 +87,7 @@ namespace WindowsFormsApp2
             if ((this.Parent as InitMenu).assistantChasing)
             {
                 chaser = new Chaser("assistant");
+                chaser.BackColor = Color.Transparent;
                 foreach (Control c in this.Controls)
                 {
                     if ((string)c.Tag == "labenter")
@@ -125,7 +127,7 @@ namespace WindowsFormsApp2
                 Controls.Add(chaser);
 
                 chaser_timer = new System.Threading.Timer(Chaser_Move_CallBack);
-                chaser_timer.Change(0, 30);
+                chaser_timer.Change(0, 70);
 
             }
 
@@ -176,7 +178,7 @@ namespace WindowsFormsApp2
                         //퀴즈UDC 호출
                         convHitTest = true;
                         player.Left += 70;
-                        puzzle p = new puzzle("lab1_enter");
+                        Doorlock p = new Doorlock("lab_1");
                         p.Left = this.Width / 2 - p.Width / 2;
                         p.Top = this.Height / 2 - p.Height / 2;
                         Controls.Add(p);
@@ -208,7 +210,7 @@ namespace WindowsFormsApp2
                         //퀴즈UDC 호출
                         convHitTest = true;
                         player.Left += 70;
-                        puzzle p = new puzzle("lab2_enter");
+                        Doorlock p = new Doorlock("lab_2");
                         p.Left = this.Width / 2 - p.Width / 2;
                         p.Top = this.Height / 2 - p.Height / 2;
                         Controls.Add(p);
@@ -230,7 +232,7 @@ namespace WindowsFormsApp2
                     if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest && !StaticItem.mPoster3)
                     {
                         convHitTest = true;
-                        player.Left += 70;
+                        player.Left -= 70;
                         MessageBox.Show("3연구실 비밀번호를 알아와야 한다.");
                         convHitTest = false;
                         break;
@@ -239,8 +241,8 @@ namespace WindowsFormsApp2
                     {
                         //퀴즈UDC 호출
                         convHitTest = true;
-                        player.Left += 70;
-                        puzzle p = new puzzle("lab3_enter");
+                        player.Left -= 70;
+                        Doorlock p = new Doorlock("lab_3");
                         p.Left = this.Width / 2 - p.Width / 2;
                         p.Top = this.Height / 2 - p.Height / 2;
                         Controls.Add(p);
@@ -274,7 +276,7 @@ namespace WindowsFormsApp2
                         return;
                     }
                 }
-                if(x is PictureBox && !x.Name.StartsWith("lab") && (string)x.Tag=="labenter")
+                if(x is PictureBox && x.Name.StartsWith("pic") && (string)x.Tag=="labenter")
                 {
                     if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest)
                     {

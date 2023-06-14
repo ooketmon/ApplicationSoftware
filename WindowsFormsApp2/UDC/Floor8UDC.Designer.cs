@@ -42,10 +42,10 @@
             this.pictureBox57 = new System.Windows.Forms.PictureBox();
             this.pictureBox58 = new System.Windows.Forms.PictureBox();
             this.pictureBox45 = new System.Windows.Forms.PictureBox();
-            this.pic2 = new System.Windows.Forms.PictureBox();
+            this.lab_4 = new System.Windows.Forms.PictureBox();
             this.pictureBox46 = new System.Windows.Forms.PictureBox();
             this.pictureBox47 = new System.Windows.Forms.PictureBox();
-            this.lab_4 = new System.Windows.Forms.PictureBox();
+            this.lab_3 = new System.Windows.Forms.PictureBox();
             this.pictureBox37 = new System.Windows.Forms.PictureBox();
             this.lab_2 = new System.Windows.Forms.PictureBox();
             this.pictureBox34 = new System.Windows.Forms.PictureBox();
@@ -101,10 +101,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox57)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox58)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lab_4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lab_4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lab_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lab_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
@@ -283,16 +283,16 @@
             this.pictureBox45.TabStop = false;
             this.pictureBox45.Tag = "obstacle";
             // 
-            // pic2
+            // lab_4
             // 
-            this.pic2.Image = global::WindowsFormsApp2.Properties.Resources.IMG_09093;
-            this.pic2.Location = new System.Drawing.Point(975, 230);
-            this.pic2.Name = "pic2";
-            this.pic2.Size = new System.Drawing.Size(60, 65);
-            this.pic2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic2.TabIndex = 145;
-            this.pic2.TabStop = false;
-            this.pic2.Tag = "labenter";
+            this.lab_4.Image = global::WindowsFormsApp2.Properties.Resources.IMG_09093;
+            this.lab_4.Location = new System.Drawing.Point(975, 230);
+            this.lab_4.Name = "lab_4";
+            this.lab_4.Size = new System.Drawing.Size(60, 65);
+            this.lab_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.lab_4.TabIndex = 145;
+            this.lab_4.TabStop = false;
+            this.lab_4.Tag = "labenter";
             // 
             // pictureBox46
             // 
@@ -314,16 +314,16 @@
             this.pictureBox47.TabStop = false;
             this.pictureBox47.Tag = "obstacle";
             // 
-            // lab_4
+            // lab_3
             // 
-            this.lab_4.Image = global::WindowsFormsApp2.Properties.Resources.IMG_09093;
-            this.lab_4.Location = new System.Drawing.Point(975, 120);
-            this.lab_4.Name = "lab_4";
-            this.lab_4.Size = new System.Drawing.Size(60, 65);
-            this.lab_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.lab_4.TabIndex = 142;
-            this.lab_4.TabStop = false;
-            this.lab_4.Tag = "labenter";
+            this.lab_3.Image = global::WindowsFormsApp2.Properties.Resources.IMG_09093;
+            this.lab_3.Location = new System.Drawing.Point(975, 120);
+            this.lab_3.Name = "lab_3";
+            this.lab_3.Size = new System.Drawing.Size(60, 65);
+            this.lab_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.lab_3.TabIndex = 142;
+            this.lab_3.TabStop = false;
+            this.lab_3.Tag = "labenter";
             // 
             // pictureBox37
             // 
@@ -828,10 +828,10 @@
             this.Controls.Add(this.pictureBox57);
             this.Controls.Add(this.pictureBox58);
             this.Controls.Add(this.pictureBox45);
-            this.Controls.Add(this.pic2);
+            this.Controls.Add(this.lab_4);
             this.Controls.Add(this.pictureBox46);
             this.Controls.Add(this.pictureBox47);
-            this.Controls.Add(this.lab_4);
+            this.Controls.Add(this.lab_3);
             this.Controls.Add(this.pictureBox37);
             this.Controls.Add(this.lab_2);
             this.Controls.Add(this.pictureBox34);
@@ -867,10 +867,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox57)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox58)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox45)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lab_4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lab_4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lab_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lab_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
@@ -936,9 +936,9 @@
         private System.Windows.Forms.PictureBox pictureBox37;
         private System.Windows.Forms.PictureBox pictureBox46;
         private System.Windows.Forms.PictureBox pictureBox47;
-        private System.Windows.Forms.PictureBox lab_4;
+        private System.Windows.Forms.PictureBox lab_3;
         private System.Windows.Forms.PictureBox pictureBox45;
-        private System.Windows.Forms.PictureBox pic2;
+        private System.Windows.Forms.PictureBox lab_4;
         private System.Windows.Forms.PictureBox pictureBox57;
         private System.Windows.Forms.PictureBox pictureBox58;
         private System.Windows.Forms.PictureBox pictureBox59;
