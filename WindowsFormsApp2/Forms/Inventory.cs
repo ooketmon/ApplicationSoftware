@@ -35,15 +35,15 @@ namespace WindowsFormsApp2
             Key_4.BackColor = Color.Transparent;
             Key_4.Parent = box_key;
 
-            Cardkey_5.BackColor = Color.Transparent;
-            Cardkey_5.Parent = box_cardkey_2;
+            //Cardkey_5.BackColor = Color.Transparent;
+            //Cardkey_5.Parent = box_cardkey_2;
            
             Papper_1.Location = new Point(3, 10);
             Cardkey_3.Location = new Point(6, 10);
             Papper_4.Location = new Point(6, 10);
             Safecard_4.Location = new Point(6, 10);
             Key_4.Location = new Point(6, 10);
-            Cardkey_5.Location = new Point(6, 10);
+            //Cardkey_5.Location = new Point(6, 10);
 
             Papper_1.Size = new Size(60, 60);
             Test_1.Size = new Size(50, 60);
@@ -56,7 +56,7 @@ namespace WindowsFormsApp2
             Safecard_4.Size = new Size(75, 60);
             Key_4.Size = new Size(75, 75);
             Test_4.Size = new Size(50, 60);
-            Cardkey_5.Size = new Size(75, 60);
+            //Cardkey_5.Size = new Size(75, 60);
 
             //"Papper_1","Test_1","Test_2","Papper_3","Cardkey_3","Poster_3","Test_3","Papper_4","Safecard_4","Key_4","Test_4","Cardkey_5"
 
@@ -160,10 +160,11 @@ namespace WindowsFormsApp2
             {
                 resourceName = Properties.Resources._4_Test;
             }
+            /*
             else if (itemName == items[11] && inventory[11])
             {
                 resourceName = Properties.Resources._5_Cardkey_;
-            }
+            }*/
             else
             {
                 return;
@@ -202,8 +203,9 @@ namespace WindowsFormsApp2
             else { Key_4.Visible = false; }
             if (inventory[10] == true) { Test_4.Visible = true; }
             else { Test_4.Visible = false; }
+            /*
             if (inventory[11] == true) { Cardkey_5.Visible = true; }
-            else { Cardkey_5.Visible = false; }
+            else { Cardkey_5.Visible = false; }*/
             
         }
         private void Inventory_Load(object sender, EventArgs e)
