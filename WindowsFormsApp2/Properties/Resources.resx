@@ -214,12 +214,9 @@
   <data name="_3F_meeting_room_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\3F-meeting-room-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-<<<<<<< HEAD
   <data name="front3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Player\front3.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-=======
->>>>>>> parent of 491e6eb (Merge pull request #33 from ooketmon/jiu)
   <data name="IMG_0829" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Floor1\IMG_0829.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -298,13 +295,12 @@
   <data name="IMG_0904" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Floor2-8\IMG_0904.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-<<<<<<< HEAD
   <data name="_4_Safecard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\clue\4_Safecard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="right2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Player\right2.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-=======
+  </data>
   <data name="IMG_0869" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Floor1\IMG_0869.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -313,7 +309,6 @@
   </data>
   <data name="IMG_0897" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Floor2-8\IMG_0897.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
->>>>>>> parent of 491e6eb (Merge pull request #33 from ooketmon/jiu)
   </data>
   <data name="IMG_0838" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Elevator\IMG_0838.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -384,13 +379,11 @@
   <data name="IMG_0874" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Floor1\IMG_0874.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-<<<<<<< HEAD
   <data name="IMG_0869" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Floor1\IMG_0869.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-=======
+  </data>
   <data name="lobby_sofa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\lobby-sofa2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
->>>>>>> parent of 491e6eb (Merge pull request #33 from ooketmon/jiu)
   </data>
   <data name="IMG_0837" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Elevator\IMG_0837.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -419,12 +412,9 @@
   <data name="back2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Player\back2.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-<<<<<<< HEAD
-=======
   <data name="IMG_0893" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Floor2-8\IMG_0893.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
->>>>>>> parent of 491e6eb (Merge pull request #33 from ooketmon/jiu)
   <data name="IMG_0827" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Floor1\IMG_0827.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -443,14 +433,12 @@
   <data name="IMG_0867" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Floor1\IMG_0867.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-<<<<<<< HEAD
   <data name="IMG_0864" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Floor2-8\IMG_0864.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_2F_PC2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\clue\2F_PC2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-=======
   <data name="painter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\킹림판.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -478,12 +466,9 @@
   </data>
   <data name="_4_Key" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\clue\4_Key.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-<<<<<<< HEAD
-=======
   </data>
   <data name="IMG_0909" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Floor2-8\IMG_0909.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
->>>>>>> parent of 491e6eb (Merge pull request #33 from ooketmon/jiu)
   </data>
   <data name="lab_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\lab,office\lab_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -512,12 +497,9 @@
   <data name="IMG_0905" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Floor2-8\IMG_0905.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-<<<<<<< HEAD
   <data name="IMG_0897" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Floor2-8\IMG_0897.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-=======
->>>>>>> parent of 491e6eb (Merge pull request #33 from ooketmon/jiu)
   <data name="2F_Poster4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\clue\2F_Poster4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -545,13 +527,11 @@
   <data name="8F_Printer1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\clue\8F_Printer1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-<<<<<<< HEAD
   <data name="3F-meeting-room-2 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\3F-meeting-room-2 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-=======
+  </data>
   <data name="IMG_0910" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Floor2-8\IMG_0910.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
->>>>>>> parent of 491e6eb (Merge pull request #33 from ooketmon/jiu)
   </data>
   <data name="lecuture_Door" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\clue\lecuture_Door.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -570,8 +550,6 @@
   </data>
   <data name="_8F_world4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\clue\8F_world4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-<<<<<<< HEAD
-=======
   </data>
   <data name="assistant_back1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Assistant\assistant_back1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -668,6 +646,5 @@
   </data>
   <data name="guard_right4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\GuardMan\guard_right4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
->>>>>>> parent of 491e6eb (Merge pull request #33 from ooketmon/jiu)
   </data>
 </root>

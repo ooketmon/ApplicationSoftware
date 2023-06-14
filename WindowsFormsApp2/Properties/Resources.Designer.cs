@@ -323,6 +323,16 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap _8F_world4 {
+            get {
+                object obj = ResourceManager.GetObject("_8F_world4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap assistant_back1 {
             get {
                 object obj = ResourceManager.GetObject("assistant_back1", resourceCulture);
@@ -476,16 +486,6 @@ namespace WindowsFormsApp2.Properties {
         internal static System.Drawing.Bitmap assistant_right4 {
             get {
                 object obj = ResourceManager.GetObject("assistant_right4", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap _8F_world4 {
-            get {
-                object obj = ResourceManager.GetObject("_8F_world4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
