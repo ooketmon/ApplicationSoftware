@@ -287,17 +287,14 @@ namespace WindowsFormsApp2
         }
         private void InitMenu_Load(object sender, EventArgs e)
         {
-            CallMainMenu(); 
+            FloorChange(3);
+            //CallMainMenu();
         }
         public void GoToLogin()
         {
             this.Controls.Clear();
             this.Controls.Add(new LoginStartUDC());
 
-        }
-
-        private void InitMenu_KeyDown(object sender, KeyEventArgs e)
-        {
         }
     }
 }

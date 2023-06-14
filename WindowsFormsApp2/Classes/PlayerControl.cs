@@ -11,9 +11,8 @@ namespace WindowsFormsApp2
     internal class PlayerControl
     {
         private PictureBox player;
-        int playerSpeed = 8;
+        int playerSpeed = 5;
         bool goLeft, goRight, goUp, goDown;
-        bool isOnWoodFloor = false;
 
         private Dictionary<Keys, Image[]> directionImages;
         private Keys currentDirection;
@@ -45,6 +44,8 @@ namespace WindowsFormsApp2
             if (e.KeyCode == Keys.Right) { goRight = true; currentDirection = Keys.Right; }
             if (e.KeyCode == Keys.Up) { goUp = true; currentDirection = Keys.Up; }
             if (e.KeyCode == Keys.Down) { goDown = true; currentDirection = Keys.Down; }
+
+            MovePlayer();
         }
         public void PlayerKeyUp(object sender, KeyEventArgs e)
         {
@@ -52,6 +53,8 @@ namespace WindowsFormsApp2
             if (e.KeyCode == Keys.Right) {goRight = false; ResetPlayerImage(); }
             if (e.KeyCode == Keys.Up) { goUp = false; ResetPlayerImage(); }
             if (e.KeyCode == Keys.Down) { goDown = false; ResetPlayerImage(); }
+
+            MovePlayer();
         }
 
         public void ForceToStop()
@@ -137,10 +140,7 @@ namespace WindowsFormsApp2
             //    }
             //}
         }
-        public void WoodFloor()
-        {
-
-        }
+        /*
         public void MovePlayerWithoutBool(KeyEventArgs e)
         {
             int playerX = player.Left;
@@ -197,7 +197,7 @@ namespace WindowsFormsApp2
                 }
             }
         }
-
+        */
 
     }
 }

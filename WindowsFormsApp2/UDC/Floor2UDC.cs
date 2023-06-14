@@ -55,13 +55,14 @@ namespace WindowsFormsApp2
 
         private void UserControl2_KeyDown(object sender, KeyEventArgs e)
         {
-            playerMove.MovePlayerWithoutBool(e);
+            playerMove.PlayerKeyDown(sender, e);
+            //playerMove.MovePlayerWithoutBool(e);
         }
 
         private void Inventory_KeyDown(object sender, KeyEventArgs e)
         {
             playerMove.ForceToStop();
-            Form target = null;
+            //Form target = null;
             if (e.KeyCode == Keys.I)
             {
                 if ((this.Parent as InitMenu).inventory.Visible)
@@ -85,7 +86,8 @@ namespace WindowsFormsApp2
         }
         private void timerFloor2_Tick(object sender, EventArgs e)
         {
-            //playerMove.MovePlayer();
+            playerMove.MovePlayer();
+
             foreach (Control x in this.Controls)
             {
                 if (x is PictureBox && (string)x.Name == "stair")

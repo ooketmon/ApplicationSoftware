@@ -80,13 +80,13 @@ namespace WindowsFormsApp2
 
         private void UserControl3_KeyDown(object sender, KeyEventArgs e)
         {
-            // playerMove.PlayerKeyDown(sender, e);
-            playerMove.MovePlayerWithoutBool(e);
+            playerMove.PlayerKeyDown(sender, e);
+            //playerMove.MovePlayerWithoutBool(e);
         }
 
         private void timerFloor3_Tick(object sender, EventArgs e)
         {
-            //playerMove.MovePlayer();
+            playerMove.MovePlayer();
 
             foreach (Control x in this.Controls)
             {
@@ -99,7 +99,7 @@ namespace WindowsFormsApp2
                         return;
                     }
                 }
-                if (x is PictureBox && (string)x.Name == "elevator")
+                if (x is PictureBox && (string)x.Tag == "elevator")
                 {
                     if (player.Bounds.IntersectsWith(x.Bounds) && !playerisOnElevator)
                     {
