@@ -159,7 +159,7 @@ namespace WindowsFormsApp2
                 pc2_problem.Text= (this.Parent.Parent as InitMenu).lecture2_problem;
                 pc2_answer = (this.Parent.Parent as InitMenu).lecture2_answer;
                 pc2_problem.Parent = pictureBox1;
-                pc2_problem.BackColor = Color.Transparent;
+                pc2_problem.BackColor = Color.Black;
                 pc2_problem.BringToFront();
 
             }else if (info == "lecture2_1_enter")
@@ -175,7 +175,7 @@ namespace WindowsFormsApp2
                 intro.Left = pictureBox1.Left - 15;
                 this.Controls.Add(intro);
                 intro.Parent = pictureBox1;
-                intro.BackColor = Color.Transparent;
+                intro.BackColor = Color.Black;
                 intro.BringToFront();
             }
             else if (info == "lab1_enter")
@@ -191,7 +191,7 @@ namespace WindowsFormsApp2
                 intro.Left = pictureBox1.Left - 15;
                 this.Controls.Add(intro);
                 intro.Parent = pictureBox1;
-                intro.BackColor = Color.Transparent;
+                intro.BackColor = Color.Black;
                 intro.BringToFront();
                 lab1_pw = (this.Parent.Parent as InitMenu).Lab1PW;
             }
@@ -203,12 +203,12 @@ namespace WindowsFormsApp2
                 intro.AutoSize = true;
                 intro.Font = new Font("Gulim", 15, FontStyle.Bold);
                 intro.ForeColor = Color.White;
-                intro.Text = "2연구실 비밀번호를 5678 입력";
+                intro.Text = "2연구실 비밀번호 입력";
                 intro.Top = pictureBox1.Bottom - intro.Height - 15;
                 intro.Left = pictureBox1.Left - 15;
                 this.Controls.Add(intro);
                 intro.Parent = pictureBox1;
-                intro.BackColor = Color.Transparent;
+                intro.BackColor = Color.Black;
                 intro.BringToFront();
                 lab2_pw = (this.Parent.Parent as InitMenu).Lab2PW;
             }
@@ -226,7 +226,7 @@ namespace WindowsFormsApp2
                 pc2_problem.Text = "06 68 88 ?? 98\r\n?? 91 11 90 10";
                 lab2_pc_answer = (this.Parent.Parent as InitMenu).Lab2PCPW;
                 pc2_problem.Parent = pictureBox1;
-                pc2_problem.BackColor = Color.Transparent;
+                pc2_problem.BackColor = Color.Black;
                 pc2_problem.BringToFront();
 
             }
@@ -243,7 +243,7 @@ namespace WindowsFormsApp2
                 intro.Left = pictureBox1.Left - 15;
                 this.Controls.Add(intro);
                 intro.Parent = pictureBox1;
-                intro.BackColor = Color.Transparent;
+                intro.BackColor = Color.Black;
                 intro.BringToFront();
                 lab3_pw = (this.Parent.Parent as InitMenu).Lab3PW;
             }

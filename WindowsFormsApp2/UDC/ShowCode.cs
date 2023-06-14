@@ -16,7 +16,6 @@ namespace WindowsFormsApp2.UDC
         public ShowCode(ControlConversationUDC c)
         {
             InitializeComponent();
-            label1.BackColor = Color.Transparent;
             controller = c;
         }
 

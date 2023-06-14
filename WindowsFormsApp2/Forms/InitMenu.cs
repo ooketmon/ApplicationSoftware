@@ -42,10 +42,10 @@ namespace WindowsFormsApp2
 
 
         public int Lab1PW = 1234;
-        public int Lab2PW = 5678;
+        public int Lab2PW = 1366;//코드 비번
         public int Lab3PW = 9876;
-        public int Lab2PCPW = 8721;
-        public int Lab4LockCasePW = 40;
+        public int Lab2PCPW = 8721;//
+        public int Lab4LockCasePW = 2319;//시계 이미지 추가
 
         public int lecture2_answer = -1;
         public string lecture2_problem = "";

@@ -97,6 +97,14 @@ namespace WindowsFormsApp2.UDC
           //  zoomPoster.Location = new Point(this.Width / 2 - zoomPoster.Width / 2, this.Height/2 - zoomPoster.Height / 2);
             zoomPoster.Top = zoomPoster.Height / 8;
             zoomPoster.Left=this.Width / 2 - zoomPoster.Width/2;
+
+            info.AutoSize = true;
+            info.Font = new Font("Gulim", 15);
+            info.ForeColor = Color.Black;
+            info.Text = "1연구실 전화번호: 02-6462-36";
+            info.Location = new Point(zoomPoster.Right-info.Width, zoomPoster.Bottom-info.Height);
+            info.Visible = true;
+            info.BringToFront();
             if (StaticItem.mPapper1)
             {
                 (this.Parent.Parent as InitMenu).knowLab1PW = true;

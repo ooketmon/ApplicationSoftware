@@ -36,6 +36,12 @@ namespace WindowsFormsApp2.UDC
                 controller.Lab4_LockCasePuzzleAfterSolve();
             }
         }
+
+        private void Room_lab4_Load(object sender, EventArgs e)
+        {
+            clock_roma.Parent = pictureBox1;
+            clock_roma.BackColor = Color.Transparent;
+        }
     }
 
 }
