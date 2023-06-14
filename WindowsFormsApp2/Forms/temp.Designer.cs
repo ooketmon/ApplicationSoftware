@@ -28,22 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.room_department1 = new WindowsFormsApp2.UDC.Room_department();
+            this.components = new System.ComponentModel.Container();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.endingSucceed1 = new WindowsFormsApp2.UDC.EndingSucceed();
             this.SuspendLayout();
             // 
-            // room_department1
-
-            this.room_department1.Location = new System.Drawing.Point(0, 0);
-            this.room_department1.Name = "room_department1";
-            this.room_department1.Size = new System.Drawing.Size(1200, 800);
-            this.room_department1.TabIndex = 0;
+            // endingSucceed1
+            // 
+            this.endingSucceed1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.endingSucceed1.Font = new System.Drawing.Font("굴림", 15F);
+            this.endingSucceed1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.endingSucceed1.Location = new System.Drawing.Point(-28, -57);
+            this.endingSucceed1.Margin = new System.Windows.Forms.Padding(5);
+            this.endingSucceed1.Name = "endingSucceed1";
+            this.endingSucceed1.Size = new System.Drawing.Size(2100, 1333);
+            this.endingSucceed1.TabIndex = 0;
             // 
             // temp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 800);
-            this.Controls.Add(this.room_department1);
+            this.Controls.Add(this.endingSucceed1);
             this.Name = "temp";
             this.Text = "temp";
             this.ResumeLayout(false);
@@ -51,7 +57,7 @@
         }
 
         #endregion
-
-        private UDC.Room_department room_department1;
+        private System.Windows.Forms.Timer timer1;
+        private UDC.EndingSucceed endingSucceed1;
     }
 }
