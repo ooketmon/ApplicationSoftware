@@ -331,6 +331,7 @@ namespace WindowsFormsApp2
 
         }
 
+        /*
         public void Chaser_Move_CallBack(object status)
         {
             BeginInvoke(new chase_delegate(
@@ -342,7 +343,7 @@ namespace WindowsFormsApp2
                     }
                 }));
         }
-
+        */
 
         /*
          아래는 쇼파 움직임 표현 코드

@@ -87,7 +87,6 @@
             this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.pictureBox31 = new System.Windows.Forms.PictureBox();
             this.pictureBox40 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.board2_1)).BeginInit();
             this.board2_1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pica)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
@@ -184,13 +183,6 @@
             // 
             // pica
             // 
-            this.board2_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.board2_1.Location = new System.Drawing.Point(205, 390);
-            this.board2_1.Name = "board2_1";
-            this.board2_1.Size = new System.Drawing.Size(15, 71);
-            this.board2_1.TabIndex = 142;
-            this.board2_1.TabStop = false;
-            this.board2_1.Tag = "";
             this.pica.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.pica.Location = new System.Drawing.Point(205, 381);
             this.pica.Name = "pica";
@@ -510,7 +502,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBox2.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0907;
+            this.pictureBox2.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0908;
             this.pictureBox2.Location = new System.Drawing.Point(634, 0);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(121, 65);
@@ -539,14 +531,13 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Tag = "obstacle";
             // 
-            // board2_1
+            // pictureBox7
             // 
-            this.board2_1.Location = new System.Drawing.Point(660, 505);
-            this.board2_1.Name = "board2_1";
-            this.board2_1.Size = new System.Drawing.Size(20, 195);
-            this.board2_1.TabIndex = 150;
-            this.board2_1.TabStop = false;
-            this.board2_1.Visible = false;
+            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox7.TabIndex = 196;
+            this.pictureBox7.TabStop = false;
             // 
             // pictureBox28
             // 
@@ -739,6 +730,17 @@
             this.pictureBox40.TabIndex = 195;
             this.pictureBox40.TabStop = false;
             this.pictureBox40.Tag = "obstacle";
+            // 
+            // board2_1
+            // 
+            this.board2_1.BackColor = System.Drawing.Color.Gray;
+            this.board2_1.Location = new System.Drawing.Point(660, 505);
+            this.board2_1.Name = "board2_1";
+            this.board2_1.Size = new System.Drawing.Size(20, 195);
+            this.board2_1.TabIndex = 150;
+            this.board2_1.TabStop = false;
+            this.board2_1.Tag = "";
+            this.board2_1.Visible = false;
             // 
             // Floor2UDC
             // 

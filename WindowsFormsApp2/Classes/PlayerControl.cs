@@ -140,7 +140,7 @@ namespace WindowsFormsApp2
             //    }
             //}
         }
-        /*
+        
         public void MovePlayerWithoutBool(KeyEventArgs e)
         {
             int playerX = player.Left;
@@ -197,7 +197,7 @@ namespace WindowsFormsApp2
                 }
             }
         }
-        */
+        
 
     }
 }
