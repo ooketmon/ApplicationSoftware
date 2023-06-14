@@ -91,11 +91,7 @@ namespace WindowsFormsApp2
         }
         private void timerFloor2_Tick(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             //playerMove.MovePlayer();
-=======
-            //mplayerMove.MovePlayer();
->>>>>>> 5ecc25fcdaa67e24ba1b5b2d1e8ce29dcf7d7a04
 
             foreach (Control x in this.Controls)
             {
