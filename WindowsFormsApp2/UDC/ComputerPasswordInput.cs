@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2.UDC
 {
-    public partial class ComputerPasswordInput : UserControl
+    public partial class PasswordInptUDC : UserControl
     {
-        public ComputerPasswordInput()
+        public PasswordInptUDC()
         {
             InitializeComponent();
         }
@@ -99,11 +99,6 @@ namespace WindowsFormsApp2.UDC
                 inputPassword.Clear();
             }
 
-        }
-
-        private void close_Click(object sender, EventArgs e)
-        {
-            this.Visible= false;
         }
     }
 }

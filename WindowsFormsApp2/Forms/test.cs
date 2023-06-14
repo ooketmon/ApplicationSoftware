@@ -16,15 +16,5 @@ namespace WindowsFormsApp2.Forms
         {
             InitializeComponent();
         }
-
-        private void room_lab41_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void room_lab21_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

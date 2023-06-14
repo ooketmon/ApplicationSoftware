@@ -11,15 +11,12 @@ using System.Windows.Forms;
 namespace WindowsFormsApp2.UDC
 {
     public partial class Room_lab4 : UserControl
-    { 
-
+    {
         public Room_lab4()
         {
             InitializeComponent();
-            pictureBox2.Visible = false;
-            //dl.Visible = false;
-
-            //lock_case.BringToFront();
+            pictureBox2.Visible = false; 
+                        lock_case.BringToFront();
         }
         public void Lockcase_Click(object sender, EventArgs e)
         {
@@ -31,13 +28,12 @@ namespace WindowsFormsApp2.UDC
         {
             //클릭시 비밀번호가 적힌 컴퓨터 화면과 입력 창이 뜨도록
             //정답을 맞출경우 코드가 적힌 화면이 등장함
-            doorLockUDC1.Location = new Point(0, 0);
-            doorLockUDC1.Visible = true;
-        }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
+            DoorLockUDC dl = new DoorLockUDC();
+            dl.Dock = DockStyle.Fill;
+            this.Controls.Add(dl);
 
+            pictureBox2.Visible = true;
         }
     }
 

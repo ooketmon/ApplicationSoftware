@@ -31,12 +31,9 @@
             this.Printer_2 = new System.Windows.Forms.PictureBox();
             this.labPC_2 = new System.Windows.Forms.PictureBox();
             this.lab2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.computerPasswordInput1 = new WindowsFormsApp2.UDC.ComputerPasswordInput();
             ((System.ComponentModel.ISupportInitialize)(this.Printer_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.labPC_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lab2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Printer_2
@@ -75,29 +72,10 @@
             this.lab2.TabIndex = 0;
             this.lab2.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
-            // computerPasswordInput1
-            // 
-            this.computerPasswordInput1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.computerPasswordInput1.Location = new System.Drawing.Point(862, 686);
-            this.computerPasswordInput1.Name = "computerPasswordInput1";
-            this.computerPasswordInput1.Size = new System.Drawing.Size(1200, 800);
-            this.computerPasswordInput1.TabIndex = 5;
-            this.computerPasswordInput1.Visible = false;
-            // 
             // Room_lab2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.computerPasswordInput1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Printer_2);
             this.Controls.Add(this.labPC_2);
             this.Controls.Add(this.lab2);
@@ -106,7 +84,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Printer_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.labPC_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lab2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -116,7 +93,5 @@
         private System.Windows.Forms.PictureBox lab2;
         private System.Windows.Forms.PictureBox labPC_2;
         private System.Windows.Forms.PictureBox Printer_2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private ComputerPasswordInput computerPasswordInput1;
     }
 }

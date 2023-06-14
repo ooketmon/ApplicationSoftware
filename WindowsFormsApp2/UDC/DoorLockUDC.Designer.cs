@@ -43,7 +43,6 @@
             this.buttonStar = new System.Windows.Forms.Button();
             this.buttonSharp = new System.Windows.Forms.Button();
             this.buttonClear = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureHint)).BeginInit();
             this.SuspendLayout();
             // 
@@ -195,23 +194,11 @@
             this.buttonClear.UseVisualStyleBackColor = true;
             this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
-            // btnClose
-            // 
-            this.btnClose.Location = new System.Drawing.Point(978, 14);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 23);
-            this.btnClose.TabIndex = 3;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // DoorLockUDC
+            // PasswordInptUDC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -227,7 +214,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.inputPassword);
             this.Controls.Add(this.pictureHint);
-            this.Name = "DoorLockUDC";
+            this.Name = "PasswordInptUDC";
             this.Size = new System.Drawing.Size(1200, 800);
             ((System.ComponentModel.ISupportInitialize)(this.pictureHint)).EndInit();
             this.ResumeLayout(false);
@@ -252,6 +239,5 @@
         private System.Windows.Forms.Button buttonStar;
         private System.Windows.Forms.Button buttonSharp;
         private System.Windows.Forms.Button buttonClear;
-        private System.Windows.Forms.Button btnClose;
     }
 }

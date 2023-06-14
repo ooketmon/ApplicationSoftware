@@ -32,7 +32,6 @@
             this.clock_roma = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.doorLockUDC1 = new WindowsFormsApp2.UDC.DoorLockUDC();
             ((System.ComponentModel.ISupportInitialize)(this.lock_case)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clock_roma)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -69,7 +68,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(1200, 800);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -79,21 +77,10 @@
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
-            // doorLockUDC1
-            // 
-            this.doorLockUDC1.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.doorLockUDC1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.doorLockUDC1.Location = new System.Drawing.Point(881, 633);
-            this.doorLockUDC1.Name = "doorLockUDC1";
-            this.doorLockUDC1.Size = new System.Drawing.Size(1200, 800);
-            this.doorLockUDC1.TabIndex = 5;
-            this.doorLockUDC1.Visible = false;
-            // 
             // Room_lab4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.doorLockUDC1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lock_case);
             this.Controls.Add(this.clock_roma);
@@ -114,6 +101,5 @@
         private System.Windows.Forms.PictureBox clock_roma;
         private System.Windows.Forms.PictureBox lock_case;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private DoorLockUDC doorLockUDC1;
     }
 }
