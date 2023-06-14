@@ -110,17 +110,29 @@ namespace WindowsFormsApp2
                 }
                 if (x is PictureBox && ((x.Name as string).StartsWith("practice")))
                 {
-                    if (x.Name=="practice3_4" && player.Bounds.IntersectsWith(x.Bounds)&&!convHitTest && StaticItem.mSafekey4)
+                    if ( player.Bounds.IntersectsWith(x.Bounds)&&!convHitTest && StaticItem.mSafekey4)
                     {
                             convHitTest = true;
                             ((InitMenu)this.Parent).CallConvMode(x.Name.ToString());
                             return;
-                    }
-                    else if (x.Name!="practice3_4"&&player.Bounds.IntersectsWith(x.Bounds) && !convHitTest)
+                    }else if(player.Bounds.IntersectsWith(x.Bounds)&&!convHitTest && !StaticItem.mSafekey4)
                     {
                         convHitTest = true;
-                        ((InitMenu)this.Parent).CallConvMode(x.Name.ToString());
-                        return;
+                        player.Top -= 50;
+                        MessageBox.Show("카드키로 잠겨있다.");
+                        convHitTest = false;
+                        break;
+                    }
+                }
+                if(x is PictureBox && (string)x.Tag == "lock")
+                {
+                    if(player.Bounds.IntersectsWith(x.Bounds)&&!convHitTest) {
+                        convHitTest = true;
+                        player.Top += 50;
+                        MessageBox.Show("이 방은 잠겨있다.");
+                        convHitTest = false;
+                        break;
+                    
                     }
                 }
             }

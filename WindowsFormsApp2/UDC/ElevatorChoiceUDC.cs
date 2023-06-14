@@ -334,7 +334,15 @@ namespace WindowsFormsApp2
             switch (buttonText)
             {
                 case "button1":
-                    (this.Parent as InitMenu).FloorChange(1);
+                    if ((this.Parent as InitMenu).guardmanChasing)
+                    {
+                        //경비아저씨 추적 이벤트
+                        (this.Parent as InitMenu).CallConvMode("guardmanEvent");
+                    }
+                    else
+                    {
+                        (this.Parent as InitMenu).FloorChange(1);
+                    }
                     break;
                 case "button2":
 
@@ -350,8 +358,15 @@ namespace WindowsFormsApp2
 
                     break;
                 case "button5":
+                    if ((this.Parent as InitMenu).assistantChasing)
+                    {
+                        MessageBox.Show("빨리 나가야된다고..!");
+                    }
+                    else
+                    {
+                        (this.Parent as InitMenu).FloorChange(8);
+                    }
 
-                    (this.Parent as InitMenu).FloorChange(8);
 
                     break;
 

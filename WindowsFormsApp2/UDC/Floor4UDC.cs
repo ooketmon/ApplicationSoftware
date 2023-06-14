@@ -116,6 +116,39 @@ namespace WindowsFormsApp2
                         return;
                     }
                 }
+                if (x is PictureBox && (string)x.Tag == "lock1")
+                {
+                    if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest)
+                    {
+                        convHitTest = true;
+                        player.Top -= 50;
+                        MessageBox.Show("이쪽 입구는 잠겨있다.");
+                        convHitTest = false;
+                        break;
+                    }
+                }
+                if (x is PictureBox && (string)x.Tag == "lock2")
+                {
+                    if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest)
+                    {
+                        convHitTest = true;
+                        player.Left -= 50;
+                        MessageBox.Show("이 문은 잠겨있다.");
+                        convHitTest = false;
+                        break;
+                    }
+                }
+                if (x is PictureBox && (string)x.Tag == "lock3")
+                {
+                    if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest)
+                    {
+                        convHitTest = true;
+                        player.Left += 50;
+                        MessageBox.Show("이 문은 잠겨있다.");
+                        convHitTest = false;
+                        break;
+                    }
+                }
             }
         }
 

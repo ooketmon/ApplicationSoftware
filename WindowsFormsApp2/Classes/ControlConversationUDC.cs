@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Runtime.InteropServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 using WindowsFormsApp2.UDC;
@@ -102,7 +103,7 @@ namespace WindowsFormsApp2
             phase=1;
             eventType = placeinfo;
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
-            target.contentConv.Text = string.Format("이건 2층 만남의 장소다.");
+            target.contentConv.Text = string.Format("이건 2층 상상공간이다.");
             Room_StartupClub3 meetingPlace = new Room_StartupClub3(this);
             target.Controls.Add(meetingPlace);
             meetingPlace.SendToBack();
@@ -114,8 +115,10 @@ namespace WindowsFormsApp2
                     c.Text = "나가기";
                 }
             }
-            target.imgCharacter.Visible = false;
-            target.imgCharBack.Visible = false;
+            //target.imgCharacter.Parent = meetingPlace;
+            target.imgCharacter.BackgroundImage = Properties.Resources.player_anime_ver;
+            target.imgCharacter.SizeMode = PictureBoxSizeMode.StretchImage;
+            target.imgCharacter.Parent = meetingPlace;
         }
         public void BoardInit(string board_info)
         {
@@ -169,7 +172,7 @@ namespace WindowsFormsApp2
             (target.Parent as InitMenu).havetoGoGuardRoom = true;
             eventType += "/Poster4";
             target.nameCharacter.Text = STUDENT_INFO.name;
-            target.text = string.Format("흠...경비 아저씨...주무시려나?");
+            target.text = string.Format("경비실에도 열쇠같은 게 있나..?");
             target.timerReset();
         }
 
@@ -222,7 +225,7 @@ namespace WindowsFormsApp2
         {
             phase++;
             target.nameCharacter.Text = "System";
-            target.text = string.Format("시험지를 발견했다.");
+            target.text = string.Format("{0} 시험지를 발견했다.", STUDENT_INFO.low_grade_courses[0]);
             target.timerReset();
         }
 
@@ -232,7 +235,14 @@ namespace WindowsFormsApp2
             eventType += "/GetTest2";
             phase++;
             target.nameCharacter.Text = STUDENT_INFO.name;
-            target.text = string.Format("교수님 컴퓨터가 켜져있군..좋아!");
+            target.text = string.Format("잘 출력됐구만!");
+            foreach (Control c in target.Controls)
+            {
+                if (c.Name == "btnSkip")
+                {
+                    c.Text = "▶";
+                }
+            }
             target.timerReset();
 
         }
@@ -241,17 +251,31 @@ namespace WindowsFormsApp2
         {
             phase++;
             target.nameCharacter.Text = "System";
-            target.text = string.Format("시험지를 뽑아 가져갔다.");
+            target.text = string.Format("{0} 시험지를 뽑아 가져갔다.", STUDENT_INFO.low_grade_courses[1]);
+            foreach (Control c in target.Controls)
+            {
+                if (c.Name == "btnSkip")
+                {
+                    c.Text = "나가기";
+                }
+            }
             target.timerReset();
 
         }
         public void Test3Get1()
         {
             GetRidofEventSplit();
-            eventType += "/GetTest2";
+            eventType += "/GetTest3";
             phase++;
             target.nameCharacter.Text = STUDENT_INFO.name;
             target.text = string.Format("책꽂이의 서류뭉치...수상하군..좋아!");
+            foreach (Control c in target.Controls)
+            {
+                if (c.Name == "btnSkip")
+                {
+                    c.Text = "▶";
+                }
+            }
             target.timerReset();
         }
 
@@ -259,10 +283,18 @@ namespace WindowsFormsApp2
         {
             phase++;
             target.nameCharacter.Text = "System";
-            target.text = string.Format("서류뭉치에서 시험지를 발견했다.");
+            target.text = string.Format("서류뭉치에서 {0} 시험지를 발견했다.", STUDENT_INFO.low_grade_courses[2]);
+            foreach (Control c in target.Controls)
+            {
+                if (c.Name == "btnSkip")
+                {
+                    c.Text = "나가기";
+                }
+            }
             target.timerReset();
 
         }
+
         public void GuardRoom_JustEnter_Init(string guard_info)
         {
             eventType=guard_info+"/JustEnter";
@@ -281,6 +313,24 @@ namespace WindowsFormsApp2
             target.nameCharacter.Text=STUDENT_INFO.name;
             target.text = "-";
             target.timerReset();
+        }
+
+        public void SecondFloorCodeOff()
+        {
+            Control to_delete = null;
+            foreach(Control c in target.Controls)
+            {
+                if (c.GetType() == typeof(ShowCode))
+                {
+                    to_delete = c;
+                }
+                if (c.GetType() == typeof(Room_lecture2))
+                {
+                    c.Enabled = true;
+                }
+            }
+            target.Controls.Remove(to_delete);
+            SayNothing();
         }
         public void GuardRoom_JustEnter2()
         {
@@ -331,6 +381,7 @@ namespace WindowsFormsApp2
             StaticItem.mSafekey4 = true;
             StaticItem.inventory_set();
             (target.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
+            (target.Parent as InitMenu).CheckTestComplete();
             target.timerReset();
         }
 
@@ -393,7 +444,7 @@ namespace WindowsFormsApp2
             GetRidofEventSplit();
             eventType += "/Poster1";
             target.nameCharacter.Text = STUDENT_INFO.name;
-            target.text = string.Format("흠...누가 포스터를 찢은거야?");
+            target.text = string.Format("흠...누가 1연구실 홍보 포스터를 찢은거야?");
             target.timerReset();
         }
 
@@ -401,6 +452,13 @@ namespace WindowsFormsApp2
         {
             phase++;
             eventType += "/GetPoster3";
+            foreach(Control c in target.Controls)
+            {
+                if (c.Name == "btnSkip")
+                {
+                    c.Text = "▶";
+                }
+            }
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
             target.text = string.Format("강의실에 포스터가 있네? 뭐지?");
             target.timerReset();
@@ -408,20 +466,20 @@ namespace WindowsFormsApp2
 
         public void Poster3Get2()
         {
+            foreach (Control c in target.Controls)
+            {
+                if (c.Name == "btnSkip")
+                {
+                    c.Text = "나가기";
+                }
+            }
             phase++;
             target.nameCharacter.Text = "System";
             StaticItem.mPoster3 = true;
             StaticItem.inventory_set();
             (target.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
-            target.text = string.Format("연구실 홍보 포스터를 발견했다.");
-            target.timerReset();
-        }
-        public void LectureComputer()
-        {
-            GetRidofEventSplit();
-            eventType += "/LectureComputer";
-            target.nameCharacter.Text = "System";
-            target.text = string.Format("해석을 할 수 있을 것 같다.");
+            (target.Parent as InitMenu).CheckTestComplete();
+            target.text = string.Format("3연구실 홍보 포스터를 발견했다.");
             target.timerReset();
         }
 
@@ -478,16 +536,9 @@ namespace WindowsFormsApp2
 
         public void SecondFloorNPC2()
         {
-            phase++;
-            foreach (Control c in target.Controls)
-            {
-                if (c.Name == "btnSkip")
-                {
-                    c.Text = "나가기";
-                }
-            }
+            phase++ ;
             target.nameCharacter.Text = "대학원생";
-            target.text = string.Format("네 교수님, 실습실4, 연구실4 과사에 놓고 왔.. 습니 …\r\nzzZZZ.z..zZZZ…");
+            target.text = string.Format("네 민수빈 교수님, 4실습실이랑 4연구실 열쇠 과사에..있.. …\r\nzzZZZ.z..zZZZ…");
             target.timerReset();
         }
 
@@ -529,12 +580,26 @@ namespace WindowsFormsApp2
             target.timerReset();
         }
 
-        public void GetKey()
+        public void GetKey1()
         {
             eventType += "/GetKey";
-            phase++;
+            phase=2;
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
             target.text = string.Format("연구실 열쇠다!");
+            foreach (Control c in target.Controls)
+            {
+                if (c.Name == "btnSkip")
+                {
+                    c.Text = "▶";
+                }
+            }
+            target.timerReset();
+        }
+        public void GetKey2()
+        {
+            phase = 3;
+            target.nameCharacter.Text = string.Format("{0}", "시스템");
+            target.text = string.Format("연구실 열쇠를 획득했다.");
             foreach (Control c in target.Controls)
             {
                 if (c.Name == "btnSkip")
@@ -587,6 +652,391 @@ namespace WindowsFormsApp2
             target.imgCharacter.Image = Properties.Resources.player_anime_ver;
             target.imgCharacter.SizeMode = PictureBoxSizeMode.StretchImage;
         }
+
+        public void Room2_2Puzzle()
+        {
+            GetRidofEventSplit();
+            eventType += "/Room2-2Puzzle";
+            target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
+            target.text = string.Format("이게 뭐지? 비밀번호인가?");
+            
+            foreach (Control c in target.Controls)
+            {
+                if (c.Name == "btnSkip")
+                {
+                    c.Text = "";
+                }
+                
+                if ((c.GetType().ToString()).Contains("Room_lecture2"))
+                {
+                    c.Enabled = false;
+                }
+                
+            }
+            
+            puzzle p=new puzzle("PC_2",this);
+            target.Controls.Add(p);
+            p.Top = target.Height/2-p.Height/2;
+            p.Left = target.Width / 2 - p.Width / 2;
+            p.BringToFront();
+            
+            target.timerReset();
+
+        }
+
+        public void Room2_2PuzzleSolved()
+        {
+            GetRidofEventSplit();
+            target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
+            target.text = string.Format("비밀번호인 것 같은데?");
+            Control to_delete = null;
+            foreach (Control c in target.Controls)
+            {
+                if (c.Name == "btnSkip")
+                {
+                    c.Text = "나가기";
+                }
+                
+                if (c.GetType() == typeof(puzzle))
+                {
+                    to_delete = c;
+                }
+                if (c.GetType() == typeof(Room_lecture2))
+                {
+                    c.Enabled = false;
+                }
+                
+            }
+            if(!(this.target.Parent as InitMenu).knowLab2PW)
+            {
+                (this.target.Parent as InitMenu).knowLab2PW = true;
+            }
+            
+            if (to_delete != null)
+            {
+                target.Controls.Remove(to_delete);
+            }
+            ShowCode pw = new ShowCode(this);
+            pw.Top = target.Height / 2 - pw.Height / 2;
+            pw.Left = target.Width / 2 - pw.Width / 2;
+            target.Controls.Add(pw);
+            pw.BringToFront();
+            
+            target.timerReset();
+        }
+
+        public void Room2_2PuzzleWrong()
+        {
+            target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
+            target.text = string.Format("아닌 모양이야.");
+            target.timerReset();
+        }
+
+        public void Room2_2PuzzleQuit()
+        {
+            GetRidofEventSplit();
+            target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
+            target.text = string.Format("나중에 다시 풀자.");
+            Control to_delete = null;
+            foreach (Control c in target.Controls)
+            {
+                if (c.Name == "btnSkip")
+                {
+                    c.Text = "나가기";
+                }
+                
+                if (c.GetType() == typeof(puzzle))
+                {
+                    to_delete = c;
+                }
+                if (c.GetType() == typeof(Room_lecture2))
+                {
+                    c.Enabled= true;
+                }
+                
+            }
+            target.Controls.Remove(to_delete);
+            target.timerReset();
+        }
+
+        public void Lab2_PcPuzzle()
+        {
+            GetRidofEventSplit();
+            eventType += "/Lab2PCPuzzle";
+            target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
+            target.text = string.Format("이게 비밀번호 힌트인가?");
+
+            foreach (Control c in target.Controls)
+            {
+                if (c.Name == "btnSkip")
+                {
+                    c.Text = "";
+                }
+
+                if ((c.GetType().ToString()).Contains("Room_lab2"))
+                {
+                    c.Enabled = false;
+                }
+
+            }
+
+            puzzle p = new puzzle("lab2_PC", this);
+            target.Controls.Add(p);
+            p.Top = target.Height / 2 - p.Height / 2;
+            p.Left = target.Width / 2 - p.Width / 2;
+            p.BringToFront();
+
+            target.timerReset();
+        }
+
+        public void Lab2_PcPuzzleSolve()
+        {
+            GetRidofEventSplit();
+            target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
+            target.text = string.Format("풀었다..시험지..출력..좋아!\r\n프린터기로 가자!");
+            Control to_delete = null;
+            foreach (Control c in target.Controls)
+            {
+                if (c.Name == "btnSkip")
+                {
+                    c.Text = "나가기";
+                }
+
+                if (c.GetType() == typeof(puzzle))
+                {
+                    to_delete = c;
+                }
+                if (c.GetType() == typeof(Room_lab2))
+                {
+                    c.Enabled = true;
+                }
+
+            }
+
+            if (to_delete != null)
+            {
+                target.Controls.Remove(to_delete);
+            }
+
+            target.timerReset();
+        }
+
+        public void Lab2_PcPuzzleAfterSolve()
+        {
+            target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
+            target.text = string.Format("빨리 할 거 하고 나가자!");
+            target.timerReset();
+        }
+
+        public void Lab2_PcPuzzleWrong()
+        {
+            target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
+            target.text = string.Format("아닌 모양이야.");
+            target.timerReset();
+        }
+
+        public void Lab2_PcPuzzleQuit()
+        {
+            GetRidofEventSplit();
+            target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
+            target.text = string.Format("나중에 다시 풀자.");
+            Control to_delete = null;
+            foreach (Control c in target.Controls)
+            {
+                if (c.Name == "btnSkip")
+                {
+                    c.Text = "나가기";
+                }
+
+                if (c.GetType() == typeof(puzzle))
+                {
+                    to_delete = c;
+                }
+                if (c.GetType() == typeof(Room_lab2))
+                {
+                    c.Enabled = true;
+                }
+
+            }
+            target.Controls.Remove(to_delete);
+            target.timerReset();
+        }
+
+        public void Lab4_LockCasePuzzle()
+        {
+            GetRidofEventSplit();
+            eventType += "/Lab4LockCasePuzzle";
+            target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
+            target.text = string.Format("이게 무슨 소리람?");
+
+            foreach (Control c in target.Controls)
+            {
+                if (c.Name == "btnSkip")
+                {
+                    c.Text = "";
+                }
+
+                if ((c.GetType().ToString()).Contains("Room_lab4"))
+                {
+                    c.Enabled = false;
+                }
+
+            }
+
+            puzzle p = new puzzle("lab4_LockCase", this);
+            target.Controls.Add(p);
+            p.Top = target.Height / 2 - p.Height / 2;
+            p.Left = target.Width / 2 - p.Width / 2;
+            p.BringToFront();
+
+            target.timerReset();
+        }
+
+        public void Lab4_LockCasePuzzleSolve()
+        {
+            GetRidofEventSplit();
+            target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
+            target.text = string.Format("이런 곳에 {0} 시험지가...좋아!", STUDENT_INFO.low_grade_courses[3]);
+            Control to_delete = null;
+            StaticItem.mTest4 = true;
+            (target.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
+            (target.Parent as InitMenu).CheckTestComplete();
+            foreach (Control c in target.Controls)
+            {
+                if (c.Name == "btnSkip")
+                {
+                    c.Text = "나가기";
+                }
+
+                if (c.GetType() == typeof(puzzle))
+                {
+                    to_delete = c;
+                }
+                if (c.GetType() == typeof(Room_lab4))
+                {
+                    c.Enabled = true;
+                }
+
+            }
+
+            if (to_delete != null)
+            {
+                target.Controls.Remove(to_delete);
+            }
+
+            target.timerReset();
+        }
+
+        public void Lab4_LockCasePuzzleAfterSolve()
+        {
+            target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
+            target.text = string.Format("빨리 할 거 하고 나가자!");
+            target.timerReset();
+        }
+
+        public void Lab4_LockCasePuzzleWrong()
+        {
+            target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
+            target.text = string.Format("아닌 모양이야.");
+            target.timerReset();
+        }
+
+        public void Lab4_LockCasePuzzleQuit()
+        {
+            GetRidofEventSplit();
+            target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
+            target.text = string.Format("나중에 다시 풀자.");
+            Control to_delete = null;
+            foreach (Control c in target.Controls)
+            {
+                if (c.Name == "btnSkip")
+                {
+                    c.Text = "나가기";
+                }
+
+                if (c.GetType() == typeof(puzzle))
+                {
+                    to_delete = c;
+                }
+                if (c.GetType() == typeof(Room_lab4))
+                {
+                    c.Enabled = true;
+                }
+
+            }
+            target.Controls.Remove(to_delete);
+            target.timerReset();
+        }
+
+        
+        public void Assistant_Appear1(string info)
+        {
+            phase = 2;
+            eventType = info;
+            target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
+            target.contentConv.Text = "이제 슬슬 발을 빼볼까..?";
+            target.BackgroundImage = Properties.Resources.back_elevator;
+            target.imgCharacter.Image = Properties.Resources.player_anime_ver;
+            target.imgCharacter.SizeMode = PictureBoxSizeMode.StretchImage;
+        }
+
+        public void Assistant_Appear2()
+        {
+            phase = 3;
+            target.nameCharacter.Text = string.Format("{0}", "행정조교");
+            target.text = "(벌컥)\r\n교수님들도 참...응?";
+            target.timerReset();
+        }
+        public void Assistant_Appear3()
+        {
+            phase = 4;
+            target.nameCharacter.Text = string.Format("{0}", "행정조교");
+            target.text = "거기 그 종이..뭡니까?";
+            target.timerReset();
+        }
+
+        public void Assistant_Appear4()
+        {
+            phase = 5;
+            target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
+            target.text = "도망가자..!";
+            target.timerReset();
+        }
+
+        public void GuardMan_Appear1(string info)
+        {
+            phase = 2;
+            eventType = info;
+            target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
+            target.contentConv.Text = "빨리 나가야겠어..!";
+            target.BackgroundImage = Properties.Resources.guardmanroom;
+            target.imgCharacter.Image = Properties.Resources.player_anime_ver;
+            target.imgCharacter.SizeMode = PictureBoxSizeMode.StretchImage;
+        }
+
+        public void GuardMan_Appear2()
+        {
+            phase = 3;
+            target.nameCharacter.Text = string.Format("{0}", "경비아저씨");
+            target.text = "(벌컥)\r\n 아이고 졸려라...응?";
+            target.timerReset();
+        }
+        public void GuardMan_Appear3()
+        {
+            phase = 4;
+            target.nameCharacter.Text = string.Format("{0}", "경비아저씨");
+            target.text = "학생 그거...시험지 아닌가?";
+            target.timerReset();
+        }
+
+        public void GuardMan_Appear4()
+        {
+            phase = 5;
+            target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
+            target.text = "빨리 나가자!";
+            target.timerReset();
+        }
+        
         public void SkipConversation()
         {
             if (eventType == "prologue")
@@ -632,7 +1082,9 @@ namespace WindowsFormsApp2
                                     return;
                                 }
                                 break;
-                                
+                            case "Room2-2Puzzle":
+                                return;
+
                         }
                     }
                     GetRidofEventSplit();
@@ -676,6 +1128,7 @@ namespace WindowsFormsApp2
                 
                 return;
             }
+
             if (eventType.StartsWith("board"))
             {
                 string[] event_split = eventType.Split('/');
@@ -807,6 +1260,17 @@ namespace WindowsFormsApp2
                 if(event_split.Length > 1 && event_split[1]== "SecondNPC"&& phase<3) {
                     SecondFloorNPC2();
                     return;   
+                }else if (event_split.Length > 1 && event_split[1] == "SecondNPC" && phase == 3)
+                {
+                    foreach (Control c in target.Controls)
+                    {
+                        if (c.Name == "btnSkip")
+                        {
+                            c.Text = "나가기";
+                        }
+                    }
+                    MeetingPlaceInit("meetingplace");
+                    return;
                 }
                 if (event_split.Length > 1 && event_split[1] == "GetSecondFloorCardKey" && phase < 3)
                 {
@@ -832,6 +1296,18 @@ namespace WindowsFormsApp2
 
             if (eventType.StartsWith("practice"))
             {
+                string[] event_split = eventType.Split('/');
+                if (event_split.Length > 1)
+                {
+                    switch (phase)
+                    {
+                        case 2:
+                            GetKey2();
+                            return;
+                        default:
+                            break;
+                    }
+                }
                 GetRidofEventSplit();
                 Floor3UDC tmp = new Floor3UDC();
                 Control player = null;
@@ -870,7 +1346,46 @@ namespace WindowsFormsApp2
 
             if (eventType.StartsWith("lab"))
             {
+                string[] event_split = eventType.Split('/');
+                if (event_split.Length > 1 && event_split[1] == "GetTest1" && phase==2)
+                {
+                    Test1Get2();
+                    return;
+                }
+                if(event_split.Length>1 && event_split[1]=="GetTest2" && phase == 2)
+                {
+                    Test2Get2();
+                    return;
+                }
+                if (event_split.Length > 1 && event_split[1] == "GetTest3" && phase == 2)
+                {
+                    Test3Get2();
+                    return;
+                }
+                if(event_split.Length>1 && event_split[1] == "AssistantAppear")
+                {
+                    switch (phase)
+                    {
+                        case 2:
+                            Assistant_Appear2();
+                            return;
+                        case 3:
+                            Assistant_Appear3();
+                            return;
+                        case 4:
+                            Assistant_Appear4();
+                            return;
+                        case 5:
+                            break;
+                    }
+                }
                 GetRidofEventSplit();
+                if(StaticItem.mTest1 && StaticItem.mTest2 && StaticItem.mTest3 && StaticItem.mTest4 && !(target.Parent as InitMenu).assistantEvent)
+                {
+                    (target.Parent as InitMenu).assistantEvent = true;
+                    (target.Parent as InitMenu).CallConvMode(eventType+"/AssistantAppear");
+                    return;
+                }
                 Floor8UDC tmp = new Floor8UDC();
                 Control player = null;
                 Control room = null;
@@ -898,6 +1413,25 @@ namespace WindowsFormsApp2
                     player.Top = room.Top - 70;
                 }
                 (target.Parent as InitMenu).ConvComeback(tmp);
+            }
+            if (eventType == "guardmanEvent")
+            {
+                switch (phase)
+                {
+                    case 2:
+                        GuardMan_Appear2();
+                        return;
+                    case 3:
+                        GuardMan_Appear3();
+                        return;
+                    case 4:
+                        GuardMan_Appear4();
+                        return;
+                    case 5:
+                        break;
+                }
+                (target.Parent as InitMenu).FloorChange(1);
+            
             }
         }
         

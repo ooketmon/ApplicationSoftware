@@ -102,6 +102,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Room_Board";
             this.Size = new System.Drawing.Size(1200, 800);
+            this.Load += new System.EventHandler(this.Room_Board_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Poster_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Poster_4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

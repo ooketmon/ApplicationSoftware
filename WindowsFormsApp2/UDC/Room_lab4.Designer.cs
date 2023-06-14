@@ -45,12 +45,17 @@
             this.lock_case.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.lock_case.TabIndex = 3;
             this.lock_case.TabStop = false;
+            this.lock_case.Click += new System.EventHandler(this.lock_case_Click);
             // 
             // clock_roma
             // 
+            this.clock_roma.BackColor = System.Drawing.Color.Transparent;
+            this.clock_roma.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.clock_roma.Image = global::WindowsFormsApp2.Properties.Resources.rome_clock;
             this.clock_roma.Location = new System.Drawing.Point(583, 82);
             this.clock_roma.Name = "clock_roma";
             this.clock_roma.Size = new System.Drawing.Size(137, 138);
+            this.clock_roma.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.clock_roma.TabIndex = 1;
             this.clock_roma.TabStop = false;
             // 
@@ -75,6 +80,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Room_lab4";
             this.Size = new System.Drawing.Size(1200, 800);
+            this.Load += new System.EventHandler(this.Room_lab4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.lock_case)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clock_roma)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

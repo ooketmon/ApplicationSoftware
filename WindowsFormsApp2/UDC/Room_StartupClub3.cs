@@ -33,6 +33,7 @@ namespace WindowsFormsApp2.UDC
             inventory_set();
             cardkey_3.Visible = false;
             (this.Parent.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
+            (this.Parent.Parent as InitMenu).CheckTestComplete();
             controller.SecondFloorCardKeyGet1();
         }
 
@@ -44,7 +45,7 @@ namespace WindowsFormsApp2.UDC
 
         private void Room_StartupClub3_Load(object sender, EventArgs e)
         {
-            if (mCardkey3)
+            if (mCardkey3 || !StaticItem.mPapper3)
             {
                 cardkey_3.Visible = false;
             }

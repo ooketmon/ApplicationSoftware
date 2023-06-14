@@ -88,7 +88,7 @@
             this.Cardkey_5.Image = global::WindowsFormsApp2.Properties.Resources._5_Cardkey_;
             this.Cardkey_5.Location = new System.Drawing.Point(12, 369);
             this.Cardkey_5.Name = "Cardkey_5";
-            this.Cardkey_5.Size = new System.Drawing.Size(75, 2);
+            this.Cardkey_5.Size = new System.Drawing.Size(75, 0);
             this.Cardkey_5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Cardkey_5.TabIndex = 23;
             this.Cardkey_5.TabStop = false;
@@ -104,7 +104,7 @@
             this.Test_4.Image = global::WindowsFormsApp2.Properties.Resources._4_Test;
             this.Test_4.Location = new System.Drawing.Point(284, 281);
             this.Test_4.Name = "Test_4";
-            this.Test_4.Size = new System.Drawing.Size(51, 2);
+            this.Test_4.Size = new System.Drawing.Size(51, 0);
             this.Test_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Test_4.TabIndex = 22;
             this.Test_4.TabStop = false;
@@ -120,7 +120,7 @@
             this.Key_4.Image = global::WindowsFormsApp2.Properties.Resources._4_Key;
             this.Key_4.Location = new System.Drawing.Point(186, 273);
             this.Key_4.Name = "Key_4";
-            this.Key_4.Size = new System.Drawing.Size(75, 17);
+            this.Key_4.Size = new System.Drawing.Size(75, 0);
             this.Key_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Key_4.TabIndex = 21;
             this.Key_4.TabStop = false;
@@ -136,7 +136,7 @@
             this.Safecard_4.Image = global::WindowsFormsApp2.Properties.Resources._4_Safecard;
             this.Safecard_4.Location = new System.Drawing.Point(99, 281);
             this.Safecard_4.Name = "Safecard_4";
-            this.Safecard_4.Size = new System.Drawing.Size(75, 2);
+            this.Safecard_4.Size = new System.Drawing.Size(75, 0);
             this.Safecard_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Safecard_4.TabIndex = 20;
             this.Safecard_4.TabStop = false;
@@ -152,7 +152,7 @@
             this.Papper_4.Image = global::WindowsFormsApp2.Properties.Resources._4_Papper;
             this.Papper_4.Location = new System.Drawing.Point(19, 282);
             this.Papper_4.Name = "Papper_4";
-            this.Papper_4.Size = new System.Drawing.Size(60, 2);
+            this.Papper_4.Size = new System.Drawing.Size(60, 0);
             this.Papper_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Papper_4.TabIndex = 19;
             this.Papper_4.TabStop = false;
@@ -168,7 +168,7 @@
             this.Test_3.Image = global::WindowsFormsApp2.Properties.Resources._3_Test;
             this.Test_3.Location = new System.Drawing.Point(285, 195);
             this.Test_3.Name = "Test_3";
-            this.Test_3.Size = new System.Drawing.Size(51, 2);
+            this.Test_3.Size = new System.Drawing.Size(51, 0);
             this.Test_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Test_3.TabIndex = 18;
             this.Test_3.TabStop = false;
@@ -184,7 +184,7 @@
             this.Poster_3.Image = global::WindowsFormsApp2.Properties.Resources._3_Poster;
             this.Poster_3.Location = new System.Drawing.Point(198, 194);
             this.Poster_3.Name = "Poster_3";
-            this.Poster_3.Size = new System.Drawing.Size(51, 2);
+            this.Poster_3.Size = new System.Drawing.Size(51, 0);
             this.Poster_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Poster_3.TabIndex = 17;
             this.Poster_3.TabStop = false;
@@ -200,7 +200,7 @@
             this.Cardkey_3.Image = global::WindowsFormsApp2.Properties.Resources._3_Cardkey;
             this.Cardkey_3.Location = new System.Drawing.Point(99, 195);
             this.Cardkey_3.Name = "Cardkey_3";
-            this.Cardkey_3.Size = new System.Drawing.Size(75, 2);
+            this.Cardkey_3.Size = new System.Drawing.Size(75, 0);
             this.Cardkey_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Cardkey_3.TabIndex = 16;
             this.Cardkey_3.TabStop = false;
@@ -216,7 +216,7 @@
             this.Papper_3.Image = global::WindowsFormsApp2.Properties.Resources._3_Papper;
             this.Papper_3.Location = new System.Drawing.Point(20, 193);
             this.Papper_3.Name = "Papper_3";
-            this.Papper_3.Size = new System.Drawing.Size(60, 2);
+            this.Papper_3.Size = new System.Drawing.Size(60, 0);
             this.Papper_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Papper_3.TabIndex = 15;
             this.Papper_3.TabStop = false;
@@ -232,7 +232,7 @@
             this.Test_2.Image = global::WindowsFormsApp2.Properties.Resources._2_Test;
             this.Test_2.Location = new System.Drawing.Point(24, 106);
             this.Test_2.Name = "Test_2";
-            this.Test_2.Size = new System.Drawing.Size(51, 2);
+            this.Test_2.Size = new System.Drawing.Size(51, 0);
             this.Test_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Test_2.TabIndex = 14;
             this.Test_2.TabStop = false;
@@ -317,6 +317,7 @@
             this.box_test_2.Size = new System.Drawing.Size(75, 75);
             this.box_test_2.TabIndex = 6;
             this.box_test_2.TabStop = false;
+            this.box_test_2.Click += new System.EventHandler(this.box_test_2_Click);
             // 
             // box_test_1
             // 

@@ -199,6 +199,7 @@
             this.pictureBox46.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox46.TabIndex = 125;
             this.pictureBox46.TabStop = false;
+            this.pictureBox46.Tag = "lock2";
             // 
             // pictureBox45
             // 
@@ -218,7 +219,7 @@
             this.pictureBox44.Size = new System.Drawing.Size(45, 65);
             this.pictureBox44.TabIndex = 123;
             this.pictureBox44.TabStop = false;
-            this.pictureBox44.Tag = "LockedDoor";
+            this.pictureBox44.Tag = "entrance";
             // 
             // pictureBox43
             // 
@@ -259,7 +260,7 @@
             this.picturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picturebox.TabIndex = 120;
             this.picturebox.TabStop = false;
-            this.picturebox.Tag = "";
+            this.picturebox.Tag = "entrance";
             // 
             // pictureBox37
             // 
@@ -290,6 +291,7 @@
             this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox35.TabIndex = 114;
             this.pictureBox35.TabStop = false;
+            this.pictureBox35.Tag = "lock2";
             // 
             // pictureBox34
             // 
@@ -310,6 +312,7 @@
             this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox33.TabIndex = 112;
             this.pictureBox33.TabStop = false;
+            this.pictureBox33.Tag = "lock2";
             // 
             // pictureBox32
             // 

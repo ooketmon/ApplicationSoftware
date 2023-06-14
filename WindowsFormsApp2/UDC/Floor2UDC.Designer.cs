@@ -34,7 +34,7 @@
             this.btnNext = new System.Windows.Forms.Button();
             this.btnPrev = new System.Windows.Forms.Button();
             this.contentConv = new System.Windows.Forms.Label();
-            this.board2_1 = new System.Windows.Forms.PictureBox();
+            this.pica = new System.Windows.Forms.PictureBox();
             this.pictureBox41 = new System.Windows.Forms.PictureBox();
             this.pictureBox38 = new System.Windows.Forms.PictureBox();
             this.pictureBox37 = new System.Windows.Forms.PictureBox();
@@ -88,6 +88,8 @@
             this.pictureBox31 = new System.Windows.Forms.PictureBox();
             this.pictureBox40 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.board2_1)).BeginInit();
+            this.board2_1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pica)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
@@ -140,6 +142,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.board2_1)).BeginInit();
             this.SuspendLayout();
             // 
             // timerFloor2
@@ -179,7 +182,7 @@
             this.contentConv.TabIndex = 145;
             this.contentConv.Text = "contentConv";
             // 
-            // board2_1
+            // pica
             // 
             this.board2_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.board2_1.Location = new System.Drawing.Point(205, 390);
@@ -188,6 +191,13 @@
             this.board2_1.TabIndex = 142;
             this.board2_1.TabStop = false;
             this.board2_1.Tag = "";
+            this.pica.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pica.Location = new System.Drawing.Point(205, 381);
+            this.pica.Name = "pica";
+            this.pica.Size = new System.Drawing.Size(15, 80);
+            this.pica.TabIndex = 142;
+            this.pica.TabStop = false;
+            this.pica.Tag = "";
             // 
             // pictureBox41
             // 
@@ -288,6 +298,7 @@
             this.any.Size = new System.Drawing.Size(60, 65);
             this.any.TabIndex = 132;
             this.any.TabStop = false;
+            this.any.Tag = "lock";
             this.any.Visible = false;
             // 
             // pictureBox27
@@ -528,14 +539,14 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Tag = "obstacle";
             // 
-            // pictureBox7
+            // board2_1
             // 
-            this.pictureBox7.Location = new System.Drawing.Point(660, 505);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(20, 195);
-            this.pictureBox7.TabIndex = 150;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Visible = false;
+            this.board2_1.Location = new System.Drawing.Point(660, 505);
+            this.board2_1.Name = "board2_1";
+            this.board2_1.Size = new System.Drawing.Size(20, 195);
+            this.board2_1.TabIndex = 150;
+            this.board2_1.TabStop = false;
+            this.board2_1.Visible = false;
             // 
             // pictureBox28
             // 
@@ -757,12 +768,13 @@
             this.Controls.Add(this.pictureBox32);
             this.Controls.Add(this.pictureBox28);
             this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.board2_1);
             this.Controls.Add(this.player);
             this.Controls.Add(this.room2_5);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnPrev);
             this.Controls.Add(this.contentConv);
-            this.Controls.Add(this.board2_1);
+            this.Controls.Add(this.pica);
             this.Controls.Add(this.pictureBox41);
             this.Controls.Add(this.pictureBox38);
             this.Controls.Add(this.pictureBox37);
@@ -800,7 +812,7 @@
             this.Load += new System.EventHandler(this.UserControl2_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.UserControl2_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.UserControl2_KeyUp);
-            ((System.ComponentModel.ISupportInitialize)(this.board2_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pica)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
@@ -853,6 +865,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.board2_1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -891,7 +904,7 @@
         private System.Windows.Forms.PictureBox pictureBox37;
         private System.Windows.Forms.PictureBox pictureBox38;
         private System.Windows.Forms.PictureBox pictureBox41;
-        private System.Windows.Forms.PictureBox board2_1;
+        private System.Windows.Forms.PictureBox pica;
         private System.Windows.Forms.PictureBox meetingplace;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnPrev;
@@ -916,5 +929,6 @@
         private System.Windows.Forms.PictureBox pictureBox21;
         private System.Windows.Forms.PictureBox pictureBox31;
         private System.Windows.Forms.PictureBox pictureBox40;
+        private System.Windows.Forms.PictureBox board2_1;
     }
 }

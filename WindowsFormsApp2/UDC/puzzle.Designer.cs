@@ -31,6 +31,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btn_input = new System.Windows.Forms.Button();
+            this.btn_quit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,22 +53,35 @@
             // 
             // btn_input
             // 
-            this.btn_input.Location = new System.Drawing.Point(312, 466);
+            this.btn_input.Location = new System.Drawing.Point(310, 466);
             this.btn_input.Name = "btn_input";
-            this.btn_input.Size = new System.Drawing.Size(163, 25);
+            this.btn_input.Size = new System.Drawing.Size(90, 25);
             this.btn_input.TabIndex = 2;
             this.btn_input.Text = "입력";
             this.btn_input.UseVisualStyleBackColor = true;
+            this.btn_input.Click += new System.EventHandler(this.btn_input_Click);
+            // 
+            // btn_quit
+            // 
+            this.btn_quit.Location = new System.Drawing.Point(407, 466);
+            this.btn_quit.Name = "btn_quit";
+            this.btn_quit.Size = new System.Drawing.Size(90, 25);
+            this.btn_quit.TabIndex = 2;
+            this.btn_quit.Text = "그만두기";
+            this.btn_quit.UseVisualStyleBackColor = true;
+            this.btn_quit.Click += new System.EventHandler(this.btn_quit_Click);
             // 
             // puzzle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btn_quit);
             this.Controls.Add(this.btn_input);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "puzzle";
             this.Size = new System.Drawing.Size(500, 500);
+            this.Load += new System.EventHandler(this.puzzle_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -79,5 +93,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btn_input;
+        private System.Windows.Forms.Button btn_quit;
     }
 }

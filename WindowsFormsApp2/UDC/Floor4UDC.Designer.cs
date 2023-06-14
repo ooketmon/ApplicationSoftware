@@ -141,7 +141,7 @@
             this.pictureBox42.Size = new System.Drawing.Size(60, 65);
             this.pictureBox42.TabIndex = 144;
             this.pictureBox42.TabStop = false;
-            this.pictureBox42.Tag = "lock";
+            this.pictureBox42.Tag = "lock2";
             this.pictureBox42.Visible = false;
             // 
             // pictureBox41
@@ -151,7 +151,7 @@
             this.pictureBox41.Size = new System.Drawing.Size(65, 60);
             this.pictureBox41.TabIndex = 143;
             this.pictureBox41.TabStop = false;
-            this.pictureBox41.Tag = "lock";
+            this.pictureBox41.Tag = "lock1";
             this.pictureBox41.Visible = false;
             // 
             // pictureBox38
@@ -210,7 +210,7 @@
             this.pictureBox32.Size = new System.Drawing.Size(60, 65);
             this.pictureBox32.TabIndex = 137;
             this.pictureBox32.TabStop = false;
-            this.pictureBox32.Tag = "lock";
+            this.pictureBox32.Tag = "lock3";
             this.pictureBox32.Visible = false;
             // 
             // pictureBox33
@@ -230,7 +230,7 @@
             this.pictureBox30.Size = new System.Drawing.Size(60, 65);
             this.pictureBox30.TabIndex = 135;
             this.pictureBox30.TabStop = false;
-            this.pictureBox30.Tag = "lock";
+            this.pictureBox30.Tag = "lock3";
             this.pictureBox30.Visible = false;
             // 
             // pictureBox31
@@ -250,7 +250,7 @@
             this.pictureBox26.Size = new System.Drawing.Size(60, 65);
             this.pictureBox26.TabIndex = 133;
             this.pictureBox26.TabStop = false;
-            this.pictureBox26.Tag = "lock";
+            this.pictureBox26.Tag = "lock3";
             this.pictureBox26.Visible = false;
             // 
             // pictureBox27
@@ -270,7 +270,7 @@
             this.pictureBox25.Size = new System.Drawing.Size(60, 65);
             this.pictureBox25.TabIndex = 131;
             this.pictureBox25.TabStop = false;
-            this.pictureBox25.Tag = "lock";
+            this.pictureBox25.Tag = "lock3";
             this.pictureBox25.Visible = false;
             // 
             // pictureBox21

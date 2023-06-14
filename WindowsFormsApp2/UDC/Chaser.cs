@@ -15,12 +15,27 @@ namespace WindowsFormsApp2
         int chaser_speed = 3;
         Control player = null;
         Control chaser1 = null;
-
+        private int currentImageIndex = 0;
+        Dictionary<Keys,Image[]>directionImages = new Dictionary<Keys, Image[]>
+            {
+                { Keys.Left, new Image[] { Properties.Resources.left1, Properties.Resources.left2, Properties.Resources.left3, Properties.Resources.left4 } },
+                { Keys.Right, new Image[] { Properties.Resources.right1, Properties.Resources.right2, Properties.Resources.right3, Properties.Resources.right4 } },
+                { Keys.Up, new Image[] { Properties.Resources.back1, Properties.Resources.back2, Properties.Resources.back3, Properties.Resources.back4 } },
+                { Keys.Down, new Image[] { Properties.Resources.front1, Properties.Resources.front2, Properties.Resources.front3, Properties.Resources.front4 } }
+            };
+        string WhoAmI = "";
         public Chaser()
         {
             InitializeComponent();
         }
 
+        public Chaser(string info)
+        {
+            InitializeComponent();
+            WhoAmI =info;
+            character.Image = Properties.Resources.left1;
+            character.SizeMode = PictureBoxSizeMode.StretchImage;
+        }
         
         public void chaser_move()
         {
@@ -38,16 +53,19 @@ namespace WindowsFormsApp2
             int diff_y = chaser_y - player_y;
 
 
+
+
+
             if (Math.Abs(diff_x) > Math.Abs(diff_y))
             {
                 if (diff_x > 0)
                 {
-                    chaser1.Left -= chaser_speed;
+                    chaser_x -= chaser_speed;
                     chaser_go_left = true;
                 }
                 else
                 {
-                    chaser1.Left += chaser_speed;
+                    chaser_x += chaser_speed;
                     chaser_go_right = true;
                 }
             }
@@ -55,90 +73,80 @@ namespace WindowsFormsApp2
             {
                 if (diff_y > 0)
                 {
-                    chaser1.Top -= chaser_speed;
-                    chaser_go_bottom = true;
+                    chaser_y -= chaser_speed;
+                    chaser_go_top = true;
                 }
                 else
                 {
-                    chaser1.Top += chaser_speed;
-                    chaser_go_top = true;
+                    chaser_y += chaser_speed;
+                    chaser_go_bottom = true;
                 }
             }
 
+            Rectangle chaserBounds = new Rectangle(chaser_x, chaser_y, chaser1.Width, chaser1.Height);
+            bool isCollision = false;
             foreach (Control x in this.Parent.Controls)
             {
-                if (x is PictureBox && (string)x.Tag == "obstacle")
+                if (x is PictureBox && ((string)x.Tag == "obstacle"||x.Name.Contains("NPC")))
                 {
-                    if (chaser1.Bounds.IntersectsWith(x.Bounds))
+                    if (chaserBounds.IntersectsWith(x.Bounds))
                     {
                         if (chaser_go_left)
                         {
                             if (diff_y > 0)
                             {
-                                /*
                                 chaser_go_left = false;
-                                chaser_go_right = true;
                                 chaser_go_bottom = true;
-                                */
-                                chaser1.Top -= chaser_speed;
-                                chaser1.Left += chaser_speed;
+                                
+                                chaser_y -= chaser_speed;
                             }
                             else
                             {
-                                /*
+                                
                                 chaser_go_left = false;
-                                chaser_go_right = true;
                                 chaser_go_top = true;
-                                */
-                                chaser1.Top += chaser_speed;
-                                chaser1.Left += chaser_speed;
+                                
+                                chaser_y += chaser_speed;
                             }
                         }
                         else if (chaser_go_right)
                         {
                             if (diff_y > 0)
                             {
-                                /*
+                                
                                 chaser_go_right = false;
-                                chaser_go_left = true;
-                                chaser_go_bottom = true;
-                                */
-                                chaser1.Top -= chaser_speed;
-                                chaser1.Left -= chaser_speed;
+                                chaser_go_top = true;
+                                
+                                chaser_y -= chaser_speed;
 
                             }
                             else
                             {
-                                /*
+                                
                                 chaser_go_right = false;
-                                chaser_go_left = true;
-                                chaser_go_top = true;
-                                */
-                                chaser1.Top += chaser_speed;
-                                chaser1.Left -= chaser_speed;
+                                chaser_go_bottom = true;
+                                
+                                chaser_y += chaser_speed;
                             }
                         }
                         else if (chaser_go_top)
                         {
                             if (diff_x > 0)
                             {
-                                /*
+                                
                                 chaser_go_top = false;
-                                chaser_go_bottom = true;
                                 chaser_go_left = true;
-                                */
-                                chaser1.Top -= chaser_speed;
-                                chaser1.Left -= chaser_speed;
+                                
+                                chaser_x -= chaser_speed;
+
                             }
                             else
                             {
-                                /*
+                                
                                 chaser_go_top = false;
-                                chaser_go_bottom = true;
                                 chaser_go_right = true;
-                                */
-                                chaser1.Top -= chaser_speed;
-                                chaser1.Left += chaser_speed;
+                                
+                                chaser_x += chaser_speed;
                      
 
                             }
@@ -147,31 +155,78 @@ namespace WindowsFormsApp2
                         {
                             if (diff_x > 0)
                             {
-                                /*
+                                
                                 chaser_go_bottom = false;
-                                chaser_go_top = true;
                                 chaser_go_left = true;
-                                */
-                                chaser1.Top += chaser_speed;
-                                chaser1.Left -= chaser_speed;
+                                
+                                chaser_x -= chaser_speed;
                      
                             }
                             else
                             {
-                                /*
+                                
                                 chaser_go_bottom = false;
-                                chaser_go_top = true;
                                 chaser_go_right = true;
-                                */
-                                chaser1.Top += chaser_speed;
-                                chaser1.Left += chaser_speed;
+                                
+                                chaser_x += chaser_speed;
                             
                             }
                         }
+                        isCollision = true;
+                        break;
                     }
-
+                }
+                if(x is PictureBox && (string)x.Name == "player")
+                {
+                    if (x.Bounds.IntersectsWith(this.Bounds))
+                    {
+                        switch (WhoAmI)
+                        {
+                            case "guardman":
+                                //경비원 붙잡힐 때 엔딩
+                                break;
+                            case "assistant":
+                                //행정조교 붙잡힐 때 엔딩
+                                break;
+                        }
+                    }
                 }
 
+            }
+            Keys currentDirection = new Keys();
+            if (chaser_go_left)
+            {
+                currentDirection = Keys.Left;
+            }
+            else if (chaser_go_right)
+            {
+                currentDirection = Keys.Right;
+            }
+            else if (chaser_go_bottom)
+            {
+                currentDirection = Keys.Down;
+            }
+            else if (chaser_go_top)
+            {
+                currentDirection = Keys.Up;
+            }
+            currentImageIndex = (currentImageIndex + 1) % directionImages[currentDirection].Length;
+            character.Image = directionImages[currentDirection][currentImageIndex];
+            if (isCollision)
+            {
+                if (!(chaser_go_bottom || chaser_go_top))
+                {
+                    chaser1.Left = chaser_x;
+                }
+                else if (!(chaser_go_left || chaser_go_right))
+                {
+                    chaser1.Top = chaser_y;
+                }
+            }
+            else
+            {
+                chaser1.Top = chaser_y;
+                chaser1.Left = chaser_x;
             }
         }
 

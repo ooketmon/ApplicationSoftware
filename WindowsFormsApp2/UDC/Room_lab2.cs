@@ -30,6 +30,14 @@ namespace WindowsFormsApp2.UDC
             //클릭 시 힌트화면과 입력화면이 보이는 PC UDC화면이 나옴
             //정답을 입력할 경우 '출력' button이 있는 화면 등장
             //출력을 클릭한 후 프린터기를 클릭하면 시험지가 인벤토리에 저장
+            if(!(this.Parent.Parent as InitMenu).Lab2PcSolved)
+            {
+                controller.Lab2_PcPuzzle();
+            }
+            else
+            {
+                controller.Lab2_PcPuzzleAfterSolve();
+            }
         }
 
 
@@ -37,11 +45,13 @@ namespace WindowsFormsApp2.UDC
         {
             // 단서 Printer2 함수 _ 클릭 이벤트 발생시
             // PC에서 button을 클릭한 후에 실행이 되도록
-            if (!mTest2/*여기에 or 조건문 입력*/)
+            if (!mTest2 && (this.Parent.Parent as InitMenu).Lab2PcSolved)
             {
                 mTest2 = true;
                 inventory_set();
                 (this.Parent.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
+                (this.Parent.Parent as InitMenu).CheckTestComplete();
+                controller.Test2Get1();
             }
         }
 

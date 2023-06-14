@@ -34,11 +34,19 @@ namespace WindowsFormsApp2.UDC
             inventory_set();
             Papper_3.Visible = false;
             (this.Parent.Parent as InitMenu).inventory.Inventory_ItemVisibility_Check();
+            (this.Parent.Parent as InitMenu).CheckTestComplete();
             controller.Papper3Get1();
         }
 
         public void PC2_Click(object sender, EventArgs e)
         {
+            if(!(this.Parent.Parent as InitMenu).knowLab2PW){//풀지 않은 경우
+                controller.Room2_2Puzzle();
+            }
+            else//한 번 푼 경우
+            {
+                controller.Room2_2PuzzleSolved();
+            }
             //클릭시 비밀번호가 적힌 컴퓨터 화면과 입력 창이 뜨도록
             //정답을 맞출경우 코드가 적힌 화면이 등장함
         }

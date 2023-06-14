@@ -16,6 +16,7 @@ namespace WindowsFormsApp2
         bool playerisOnStair = false;
         bool playerisOnElevator = false;
         bool convHitTest=false;
+        public bool puzzleOn = false;
         public Floor2UDC()
         {
             InitializeComponent();
@@ -50,19 +51,23 @@ namespace WindowsFormsApp2
         }
         private void UserControl2_KeyUp(object sender, KeyEventArgs e)
         {
-            playerMove.PlayerKeyUp(sender, e);
+            if (!puzzleOn)
+            {
+                playerMove.PlayerKeyUp(sender, e);
+            }
         }
 
         private void UserControl2_KeyDown(object sender, KeyEventArgs e)
         {
-            playerMove.PlayerKeyDown(sender, e);
-            //playerMove.MovePlayerWithoutBool(e);
+            if (!puzzleOn)
+            {
+                playerMove.MovePlayerWithoutBool(e);
+            }
         }
 
         private void Inventory_KeyDown(object sender, KeyEventArgs e)
         {
             playerMove.ForceToStop();
-            //Form target = null;
             if (e.KeyCode == Keys.I)
             {
                 if ((this.Parent as InitMenu).inventory.Visible)
@@ -110,11 +115,43 @@ namespace WindowsFormsApp2
                 }
                 if (x is PictureBox && ((x.Name as string).StartsWith("board")|| (x.Name as string)=="meetingplace" || (x.Name as string).StartsWith("room")))
                 {
+                    if(x.Name=="room2_3" && player.Bounds.IntersectsWith(x.Bounds) && !convHitTest && !StaticItem.mCardkey3)
+                    {
+                        convHitTest = true;
+                        player.Left -= 50;
+                        MessageBox.Show("카드키로 잠겨있다.");
+                        convHitTest = false;
+                        return;
+                    }
+                    if(x.Name=="room2_1" && player.Bounds.IntersectsWith(x.Bounds)&&!convHitTest&&!(this.Parent as InitMenu).openLecture2_1)
+                    {
+                        convHitTest = true;
+                        player.Left -= 50;
+                        puzzle p = new puzzle("lecture2_1_enter");
+                        p.Left = this.Width / 2 - p.Width / 2;
+                        p.Top = this.Height / 2 - p.Height / 2;
+                        Controls.Add(p);
+                        p.BringToFront();
+                        convHitTest = false;
+                        puzzleOn = true;
+                        return;
+                    }
                     if (player.Bounds.IntersectsWith(x.Bounds)&&!convHitTest)
                     {
                         convHitTest = true;
                         ((InitMenu)this.Parent).CallConvMode(x.Name.ToString());
                         return;
+                    }
+                }
+                if(x is PictureBox && (string)x.Tag == "lock")
+                {
+                    if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest)
+                    {
+                        convHitTest= true;
+                        player.Top -= 50;
+                        MessageBox.Show("잠겨있어서 들어갈 수 없다.");
+                        convHitTest = false;
+                        break;
                     }
                 }
             }
