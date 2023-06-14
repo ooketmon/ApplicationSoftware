@@ -27,7 +27,15 @@ namespace WindowsFormsApp2
         bool wood5_Hit = false;
         bool wood6_Hit = false;
         bool wood7_Hit = false;
-   
+
+        bool chaser_wood1_Hit = false;
+        bool chaser_wood2_Hit = false;
+        bool chaser_wood3_Hit = false;
+        bool chaser_wood4_Hit = false;
+        bool chaser_wood5_Hit = false;
+        bool chaser_wood6_Hit = false;
+        bool chaser_wood7_Hit = false;
+
         System.Threading.Timer wood_timer1;
         public delegate void wood_delegate1();
 
@@ -49,6 +57,26 @@ namespace WindowsFormsApp2
         System.Threading.Timer wood_timer7;
         public delegate void wood_delegate7();
 
+        System.Threading.Timer chaser_wood_timer1;
+        public delegate void chaser_wood_delegate1();
+
+        System.Threading.Timer chaser_wood_timer2;
+        public delegate void chaser_wood_delegate2();
+
+        System.Threading.Timer chaser_wood_timer3;
+        public delegate void chaser_wood_delegate3();
+
+        System.Threading.Timer chaser_wood_timer4;
+        public delegate void chaser_wood_delegate4();
+
+        System.Threading.Timer chaser_wood_timer5;
+        public delegate void chaser_wood_delegate5();
+
+        System.Threading.Timer chaser_wood_timer6;
+        public delegate void chaser_wood_delegate6();
+
+        System.Threading.Timer chaser_wood_timer7;
+        public delegate void chaser_wood_delegate7();
 
         Chaser chaser = null;
         System.Threading.Timer chaser_timer;
@@ -119,9 +147,32 @@ namespace WindowsFormsApp2
                 chaser.Left = scarepoint.Left;
                 chaser.Top=scarepoint.Top+60;
                 Controls.Add(chaser);
-
+                chaser.BackColor = Color.Transparent;
+                chaser.BringToFront();
                 chaser_timer = new System.Threading.Timer(Chaser_Move_CallBack);
                 chaser_timer.Change(0, 30);
+
+                chaser_wood_timer1 = new System.Threading.Timer(ChaserWoodCallBack1);
+                chaser_wood_timer1.Change(0, 10);
+
+                chaser_wood_timer2 = new System.Threading.Timer(ChaserWoodCallBack2);
+                chaser_wood_timer2.Change(0, 10);
+
+                chaser_wood_timer3 = new System.Threading.Timer(ChaserWoodCallBack3);
+                chaser_wood_timer3.Change(0, 10);
+
+                chaser_wood_timer4 = new System.Threading.Timer(ChaserWoodCallBack4);
+                chaser_wood_timer4.Change(0, 10);
+
+                chaser_wood_timer5 = new System.Threading.Timer(ChaserWoodCallBack5);
+                chaser_wood_timer5.Change(0, 10);
+
+                chaser_wood_timer6 = new System.Threading.Timer(ChaserWoodCallBack6);
+                chaser_wood_timer6.Change(0, 10);
+
+                chaser_wood_timer7 = new System.Threading.Timer(ChaserWoodCallBack7);
+                chaser_wood_timer7.Change(0, 10);
+
 
             }
 
@@ -142,6 +193,7 @@ namespace WindowsFormsApp2
             {
                 player.BackgroundImage = null;
             }
+
             foreach (Control x in this.Controls)
             {
                 //계단 이벤트
@@ -945,6 +997,674 @@ namespace WindowsFormsApp2
                 }));
         }
 
+        public void ChaserWoodCallBack1(object status)
+        {
+            BeginInvoke(new chaser_wood_delegate1(
+                () =>
+                {
+                    foreach (Control x in this.Controls)
+                    {
+                        if ((string)x.Name == "sofa1")
+                        {
+                            if (chaser!=null && chaser.Bounds.IntersectsWith(x.Bounds))
+                            {
+                                chaser_wood1_Hit = true;
+                                Bitmap background_image = Properties.Resources.IMG_0848;
+                                Rectangle rect = Rectangle.Intersect(x.Bounds, chaser.Bounds);
+                                Size image_size = new Size(rect.Width, rect.Height);
+
+                                Bitmap resized_image = new Bitmap(background_image, image_size);
+                                Bitmap final_image = new Bitmap(chaser.Width, chaser.Height);
+                                chaser.BackgroundImageLayout = ImageLayout.None;
+                                if (!x.Bounds.Contains(chaser.Bounds) && chaser.Top - x.Top <= 0 && chaser.Left - x.Left <= 0)
+                                {
+                                    int resized_y = 1;
+                                    int resized_x = 1;
+                                    for (int i = chaser.Height - 1; i > 0; i--)
+                                    {
+                                        for (int j = chaser.Width - 1; j > 0; j--)
+                                        {
+                                            if (resized_y >= resized_image.Height || resized_x >= resized_image.Width)
+                                            {
+                                                break;
+                                            }
+
+                                            final_image.SetPixel(j, i, resized_image.GetPixel(resized_x, resized_y));
+                                            resized_x++;
+                                        }
+                                        resized_y++;
+                                        resized_x = 0;
+                                    }
+                                    chaser.BackgroundImage = final_image;
+                                }
+                                else if (!x.Bounds.Contains(chaser.Bounds) && chaser.Top - x.Top <= 0)
+                                {
+                                    int resized_y = 1;
+                                    for (int i = chaser.Height - 1; i > 0; i--)
+                                    {
+                                        for (int j = 0; j < player.Width; j++)
+                                        {
+                                            if (resized_y >= resized_image.Height || resized_image.Width <= j)
+                                            {
+                                                break;
+                                            }
+
+                                            final_image.SetPixel(j, i, resized_image.GetPixel(j, resized_y));
+
+                                        }
+                                        resized_y++;
+                                    }
+                                    chaser.BackgroundImage = final_image;
+                                }
+                                else if (!x.Bounds.Contains(chaser.Bounds) && chaser.Left - x.Left <= 0)
+                                {
+                                    int resized_x = 1;
+                                    for (int i = chaser.Width - 1; i > 0; i--)
+                                    {
+                                        for (int j = 0; j < chaser.Height; j++)
+                                        {
+                                            if (resized_x > resized_image.Width || image_size.Height < j)
+                                            {
+                                                break;
+                                            }
+                                            final_image.SetPixel(i, j, resized_image.GetPixel(resized_x, j));
+
+                                        }
+                                        resized_x++;
+                                    }
+                                    chaser.BackgroundImage = final_image;
+                                }
+                                else
+                                {
+                                    chaser.BackgroundImage = resized_image;
+                                }
+
+
+                                return;
+                            }
+                            else
+                            {
+                                chaser_wood1_Hit = false;
+                            }
+                        }
+
+
+                    }
+                }));
+        }
+        public void ChaserWoodCallBack2(object status)
+        {
+            BeginInvoke(new chaser_wood_delegate2(
+                () =>
+                {
+                    foreach (Control x in this.Controls)
+                    {
+                        if ((string)x.Name == "sofa2")
+                        {
+                            if (chaser!=null && chaser.Bounds.IntersectsWith(x.Bounds))
+                            {
+                                chaser_wood2_Hit = true;
+                                Bitmap background_image = Properties.Resources.IMG_0848;
+                                Rectangle rect = Rectangle.Intersect(x.Bounds, chaser.Bounds);
+                                Size image_size = new Size(rect.Width, rect.Height);
+
+                                Bitmap resized_image = new Bitmap(background_image, image_size);
+                                Bitmap final_image = new Bitmap(chaser.Width, chaser.Height);
+                                chaser.BackgroundImageLayout = ImageLayout.None;
+                                if (!x.Bounds.Contains(chaser.Bounds) && chaser.Top - x.Top <= 0 && chaser.Left - x.Left <= 0)
+                                {
+                                    int resized_y = 1;
+                                    int resized_x = 1;
+                                    for (int i = chaser.Height - 1; i > 0; i--)
+                                    {
+                                        for (int j = chaser.Width - 1; j > 0; j--)
+                                        {
+                                            if (resized_y >= resized_image.Height || resized_x >= resized_image.Width)
+                                            {
+                                                break;
+                                            }
+
+                                            final_image.SetPixel(j, i, resized_image.GetPixel(resized_x, resized_y));
+                                            resized_x++;
+                                        }
+                                        resized_y++;
+                                        resized_x = 0;
+                                    }
+                                    chaser.BackgroundImage = final_image;
+                                }
+                                else if (!x.Bounds.Contains(chaser.Bounds) && chaser.Top - x.Top <= 0)
+                                {
+                                    int resized_y = 1;
+                                    for (int i = chaser.Height - 1; i > 0; i--)
+                                    {
+                                        for (int j = 0; j < chaser.Width; j++)
+                                        {
+                                            if (resized_y >= resized_image.Height || resized_image.Width <= j)
+                                            {
+                                                break;
+                                            }
+
+                                            final_image.SetPixel(j, i, resized_image.GetPixel(j, resized_y));
+
+                                        }
+                                        resized_y++;
+                                    }
+                                    chaser.BackgroundImage = final_image;
+                                }
+                                else if (!x.Bounds.Contains(chaser.Bounds) && chaser.Left - x.Left <= 0)
+                                {
+                                    int resized_x = 1;
+                                    for (int i = chaser.Width - 1; i > 0; i--)
+                                    {
+                                        for (int j = 0; j < chaser.Height; j++)
+                                        {
+                                            if (resized_x >= resized_image.Width || resized_image.Height <= j)
+                                            {
+                                                break;
+                                            }
+                                            final_image.SetPixel(i, j, resized_image.GetPixel(resized_x, j));
+
+                                        }
+                                        resized_x++;
+                                    }
+                                    chaser.BackgroundImage = final_image;
+                                }
+                                else
+                                {
+                                    chaser.BackgroundImage = resized_image;
+                                }
+
+
+                                return;
+                            }
+                            else
+                            {
+                                chaser_wood2_Hit = false;
+                            }
+
+                        }
+
+
+                    }
+                }));
+        }
+        public void ChaserWoodCallBack3(object status)
+        {
+            BeginInvoke(new chaser_wood_delegate3(
+                () =>
+                {
+                    foreach (Control x in this.Controls)
+                    {
+                        if ((string)x.Name == "sofa3")
+                        {
+                            if (chaser!=null&& chaser.Bounds.IntersectsWith(x.Bounds))
+                            {
+                                chaser_wood3_Hit = true;
+                                Bitmap background_image = Properties.Resources.IMG_0848;
+                                Rectangle rect = Rectangle.Intersect(x.Bounds, chaser.Bounds);
+                                Size image_size = new Size(rect.Width, rect.Height);
+
+                                Bitmap resized_image = new Bitmap(background_image, image_size);
+                                Bitmap final_image = new Bitmap(chaser.Width, chaser.Height);
+                                chaser.BackgroundImageLayout = ImageLayout.None;
+                                if (!x.Bounds.Contains(chaser.Bounds) && chaser.Top - x.Top <= 0 && chaser.Left - x.Left <= 0)
+                                {
+                                    int resized_y = 1;
+                                    int resized_x = 1;
+                                    for (int i = chaser.Height - 1; i > 0; i--)
+                                    {
+                                        for (int j = chaser.Width - 1; j > 0; j--)
+                                        {
+                                            if (resized_y >= resized_image.Height || resized_x >= resized_image.Width)
+                                            {
+                                                break;
+                                            }
+
+                                            final_image.SetPixel(j, i, resized_image.GetPixel(resized_x, resized_y));
+                                            resized_x++;
+                                        }
+                                        resized_y++;
+                                        resized_x = 0;
+                                    }
+                                    chaser.BackgroundImage = final_image;
+                                }
+                                else if (!x.Bounds.Contains(chaser.Bounds) && chaser.Top - x.Top <= 0)
+                                {
+                                    int resized_y = 1;
+                                    for (int i = chaser.Height - 1; i > 0; i--)
+                                    {
+                                        for (int j = 0; j < chaser.Width; j++)
+                                        {
+                                            if (resized_y >= resized_image.Height || resized_image.Width <= j)
+                                            {
+                                                break;
+                                            }
+
+                                            final_image.SetPixel(j, i, resized_image.GetPixel(j, resized_y));
+
+                                        }
+                                        resized_y++;
+                                    }
+                                    chaser.BackgroundImage = final_image;
+                                }
+                                else if (!x.Bounds.Contains(chaser.Bounds) && chaser.Left - x.Left <= 0)
+                                {
+                                    int resized_x = 1;
+                                    for (int i = chaser.Width - 1; i > 0; i--)
+                                    {
+                                        for (int j = 0; j < chaser.Height; j++)
+                                        {
+                                            if (resized_x >= resized_image.Width || resized_image.Height <= j)
+                                            {
+                                                break;
+                                            }
+                                            final_image.SetPixel(i, j, resized_image.GetPixel(resized_x, j));
+
+                                        }
+                                        resized_x++;
+                                    }
+                                    chaser.BackgroundImage = final_image;
+                                }
+                                else
+                                {
+                                    chaser.BackgroundImage = resized_image;
+                                }
+
+
+                                return;
+                            }
+                            else
+                            {
+                                chaser_wood3_Hit = false;
+                            }
+
+                        }
+
+
+                    }
+                }));
+        }
+        public void ChaserWoodCallBack4(object status)
+        {
+            BeginInvoke(new chaser_wood_delegate4(
+                () =>
+                {
+                    foreach (Control x in this.Controls)
+                    {
+                        if ((string)x.Name == "sofa4")
+                        {
+                            if (chaser.Bounds.IntersectsWith(x.Bounds))
+                            {
+                                chaser_wood4_Hit = true;
+                                Bitmap background_image = Properties.Resources.IMG_0848;
+                                Rectangle rect = Rectangle.Intersect(x.Bounds, chaser.Bounds);
+                                Size image_size = new Size(rect.Width, rect.Height);
+
+                                Bitmap resized_image = new Bitmap(background_image, image_size);
+                                Bitmap final_image = new Bitmap(chaser.Width, chaser.Height);
+                                chaser.BackgroundImageLayout = ImageLayout.None;
+                                if (!x.Bounds.Contains(chaser.Bounds) && chaser.Top - x.Top <= 0 && chaser.Left - x.Left <= 0)
+                                {
+                                    int resized_y = 1;
+                                    int resized_x = 1;
+                                    for (int i = chaser.Height - 1; i >= 0; i--)
+                                    {
+                                        for (int j = chaser.Width - 1; j >= 0; j--)
+                                        {
+                                            if (resized_y >= resized_image.Height || resized_x >= resized_image.Width)
+                                            {
+                                                break;
+                                            }
+
+                                            final_image.SetPixel(j, i, resized_image.GetPixel(resized_x, resized_y));
+                                            resized_x++;
+                                        }
+                                        resized_y++;
+                                        resized_x = 0;
+                                    }
+                                    chaser.BackgroundImage = final_image;
+                                }
+                                else if (!x.Bounds.Contains(chaser.Bounds) && chaser.Top - x.Top <= 0)
+                                {
+                                    int resized_y = 1;
+                                    for (int i = chaser.Height - 1; i > 0; i--)
+                                    {
+                                        for (int j = 0; j < chaser.Width; j++)
+                                        {
+                                            if (resized_y >= resized_image.Height || resized_image.Width <= j)
+                                            {
+                                                break;
+                                            }
+
+                                            final_image.SetPixel(j, i, resized_image.GetPixel(j, resized_y));
+
+                                        }
+                                        resized_y++;
+                                    }
+                                    chaser.BackgroundImage = final_image;
+                                }
+                                else if (!x.Bounds.Contains(chaser.Bounds) && chaser.Left - x.Left <= 0)
+                                {
+                                    int resized_x = 1;
+                                    for (int i = player.Width - 1; i > 0; i--)
+                                    {
+                                        for (int j = 0; j < chaser.Height; j++)
+                                        {
+                                            if (resized_x >= resized_image.Width || resized_image.Height <= j)
+                                            {
+                                                break;
+                                            }
+                                            final_image.SetPixel(i, j, resized_image.GetPixel(resized_x, j));
+
+                                        }
+                                        resized_x++;
+                                    }
+                                    chaser.BackgroundImage = final_image;
+                                }
+                                else
+                                {
+                                    chaser.BackgroundImage = resized_image;
+                                }
+
+
+                                return;
+                            }
+                            else
+                            {
+                                chaser_wood4_Hit = false;
+                            }
+
+                        }
+
+
+                    }
+                }));
+        }
+        public void ChaserWoodCallBack5(object status)
+        {
+            BeginInvoke(new chaser_wood_delegate5(
+                () =>
+                {
+                    foreach (Control x in this.Controls)
+                    {
+                        if ((string)x.Name == "sofa5")
+                        {
+                            if (chaser!=null&&chaser.Bounds.IntersectsWith(x.Bounds))
+                            {
+                                chaser_wood5_Hit = true;
+                                Bitmap background_image = Properties.Resources.IMG_0848;
+                                Rectangle rect = Rectangle.Intersect(x.Bounds, chaser.Bounds);
+                                Size image_size = new Size(rect.Width, rect.Height);
+
+                                Bitmap resized_image = new Bitmap(background_image, image_size);
+                                Bitmap final_image = new Bitmap(chaser.Width, chaser.Height);
+                                chaser.BackgroundImageLayout = ImageLayout.None;
+                                if (!x.Bounds.Contains(chaser.Bounds) && chaser.Top - x.Top <= 0 && chaser.Left - x.Left <= 0)
+                                {
+                                    int resized_y = 1;
+                                    int resized_x = 1;
+                                    for (int i = chaser.Height - 1; i > 0; i--)
+                                    {
+                                        for (int j = chaser.Width - 1; j > 0; j--)
+                                        {
+                                            if (resized_y >= resized_image.Height || resized_x >= resized_image.Width)
+                                            {
+                                                break;
+                                            }
+
+                                            final_image.SetPixel(j, i, resized_image.GetPixel(resized_x, resized_y));
+                                            resized_x++;
+                                        }
+                                        resized_y++;
+                                        resized_x = 0;
+                                    }
+                                    chaser.BackgroundImage = final_image;
+                                }
+                                else if (!x.Bounds.Contains(chaser.Bounds) && chaser.Top - x.Top <= 0)
+                                {
+                                    int resized_y = 1;
+                                    for (int i = chaser.Height - 1; i > 0; i--)
+                                    {
+                                        for (int j = 0; j < chaser.Width; j++)
+                                        {
+                                            if (resized_y >= resized_image.Height || resized_image.Width <= j)
+                                            {
+                                                break;
+                                            }
+
+                                            final_image.SetPixel(j, i, resized_image.GetPixel(j, resized_y));
+
+                                        }
+                                        resized_y++;
+                                    }
+                                    chaser.BackgroundImage = final_image;
+                                }
+                                else if (!x.Bounds.Contains(chaser.Bounds) && chaser.Left - x.Left <= 0)
+                                {
+                                    int resized_x = 1;
+                                    for (int i = chaser.Width - 1; i > 0; i--)
+                                    {
+                                        for (int j = 0; j < chaser.Height; j++)
+                                        {
+                                            if (resized_x >= resized_image.Width || resized_image.Height <= j)
+                                            {
+                                                break;
+                                            }
+                                            final_image.SetPixel(i, j, resized_image.GetPixel(resized_x, j));
+
+                                        }
+                                        resized_x++;
+                                    }
+                                    chaser.BackgroundImage = final_image;
+                                }
+                                else
+                                {
+                                    chaser.BackgroundImage = resized_image;
+                                }
+
+
+                                return;
+                            }
+                            else
+                            {
+                                chaser_wood5_Hit = false;
+                            }
+                        }
+
+
+                    }
+                }));
+        }
+        public void ChaserWoodCallBack6(object status)
+        {
+            BeginInvoke(new chaser_wood_delegate6(
+                () =>
+                {
+                    foreach (Control x in this.Controls)
+                    {
+                        if ((string)x.Name == "sofa6")
+                        {
+                            if (chaser!=null&& chaser.Bounds.IntersectsWith(x.Bounds))
+                            {
+                                chaser_wood6_Hit = true;
+                                Bitmap background_image = Properties.Resources.IMG_0848;
+                                Rectangle rect = Rectangle.Intersect(x.Bounds, chaser.Bounds);
+                                Size image_size = new Size(rect.Width, rect.Height);
+
+                                Bitmap resized_image = new Bitmap(background_image, image_size);
+                                Bitmap final_image = new Bitmap(chaser.Width, chaser.Height);
+                                chaser.BackgroundImageLayout = ImageLayout.None;
+                                if (!x.Bounds.Contains(chaser.Bounds) && chaser.Top - x.Top <= 0 && chaser.Left - x.Left <= 0)
+                                {
+                                    int resized_y = 1;
+                                    int resized_x = 1;
+                                    for (int i = chaser.Height - 1; i > 0; i--)
+                                    {
+                                        for (int j = chaser.Width - 1; j > 0; j--)
+                                        {
+                                            if (resized_y >= resized_image.Height || resized_x >= resized_image.Width)
+                                            {
+                                                break;
+                                            }
+
+                                            final_image.SetPixel(j, i, resized_image.GetPixel(resized_x, resized_y));
+                                            resized_x++;
+                                        }
+                                        resized_y++;
+                                        resized_x = 0;
+                                    }
+                                    chaser.BackgroundImage = final_image;
+                                }
+                                else if (!x.Bounds.Contains(chaser.Bounds) && chaser.Top - x.Top <= 0)
+                                {
+                                    int resized_y = 1;
+                                    for (int i = chaser.Height - 1; i > 0; i--)
+                                    {
+                                        for (int j = 0; j < chaser.Width; j++)
+                                        {
+                                            if (resized_y >= resized_image.Height || resized_image.Width <= j)
+                                            {
+                                                break;
+                                            }
+
+                                            final_image.SetPixel(j, i, resized_image.GetPixel(j, resized_y));
+
+                                        }
+                                        resized_y++;
+                                    }
+                                    chaser.BackgroundImage = final_image;
+                                }
+                                else if (!x.Bounds.Contains(chaser.Bounds) && chaser.Left - x.Left <= 0)
+                                {
+                                    int resized_x = 1;
+                                    for (int i = chaser.Width - 1; i > 0; i--)
+                                    {
+                                        for (int j = 0; j < chaser.Height; j++)
+                                        {
+                                            if (resized_x >= resized_image.Width || resized_image.Height <= j)
+                                            {
+                                                break;
+                                            }
+                                            final_image.SetPixel(i, j, resized_image.GetPixel(resized_x, j));
+
+                                        }
+                                        resized_x++;
+                                    }
+                                    chaser.BackgroundImage = final_image;
+                                }
+                                else
+                                {
+                                    chaser.BackgroundImage = resized_image;
+                                }
+
+
+                                return;
+                            }
+                            else
+                            {
+                                chaser_wood6_Hit = false;
+                            }
+                        }
+
+
+                    }
+                }));
+        }
+        public void ChaserWoodCallBack7(object status)
+        {
+            BeginInvoke(new chaser_wood_delegate7(
+                () =>
+                {
+                    foreach (Control x in this.Controls)
+                    {
+                        if ((string)x.Name == "sofa7")
+                        {
+                            if (chaser!=null&& chaser.Bounds.IntersectsWith(x.Bounds))
+                            {
+                                chaser_wood7_Hit = true;
+                                Bitmap background_image = Properties.Resources.IMG_0848;
+                                Rectangle rect = Rectangle.Intersect(x.Bounds, chaser.Bounds);
+                                Size image_size = new Size(rect.Width, rect.Height);
+
+                                Bitmap resized_image = new Bitmap(background_image, image_size);
+                                Bitmap final_image = new Bitmap(chaser.Width, chaser.Height);
+                                chaser.BackgroundImageLayout = ImageLayout.None;
+                                if (!x.Bounds.Contains(chaser.Bounds) && chaser.Top - x.Top <= 0 && chaser.Left - x.Left <= 0)
+                                {
+                                    int resized_y = 1;
+                                    int resized_x = 1;
+                                    for (int i = chaser.Height - 1; i > 0; i--)
+                                    {
+                                        for (int j = chaser.Width - 1; j > 0; j--)
+                                        {
+                                            if (resized_y >= resized_image.Height || resized_x >= resized_image.Width)
+                                            {
+                                                break;
+                                            }
+
+                                            final_image.SetPixel(j, i, resized_image.GetPixel(resized_x, resized_y));
+                                            resized_x++;
+                                        }
+                                        resized_y++;
+                                        resized_x = 0;
+                                    }
+                                    chaser.BackgroundImage = final_image;
+                                }
+                                else if (!x.Bounds.Contains(chaser.Bounds) && chaser.Top - x.Top <= 0)
+                                {
+                                    int resized_y = 1;
+                                    for (int i = chaser.Height - 1; i > 0; i--)
+                                    {
+                                        for (int j = 0; j < chaser.Width; j++)
+                                        {
+                                            if (resized_y >= resized_image.Height || resized_image.Width <= j)
+                                            {
+                                                break;
+                                            }
+
+                                            final_image.SetPixel(j, i, resized_image.GetPixel(j, resized_y));
+
+                                        }
+                                        resized_y++;
+                                    }
+                                    chaser.BackgroundImage = final_image;
+                                }
+                                else if (!x.Bounds.Contains(chaser.Bounds) && chaser.Left - x.Left <= 0)
+                                {
+                                    int resized_x = 1;
+                                    for (int i = chaser.Width - 1; i > 0; i--)
+                                    {
+                                        for (int j = 0; j < chaser.Height; j++)
+                                        {
+                                            if (resized_x >= resized_image.Width || resized_image.Height <= j)
+                                            {
+                                                break;
+                                            }
+                                            final_image.SetPixel(i, j, resized_image.GetPixel(resized_x, j));
+
+                                        }
+                                        resized_x++;
+                                    }
+                                    chaser.BackgroundImage = final_image;
+                                }
+                                else
+                                {
+                                    chaser.BackgroundImage = resized_image;
+                                }
+
+
+                                return;
+                            }
+                            else
+                            {
+                                chaser_wood7_Hit = false;
+                            }
+                        }
+
+
+                    }
+                }));
+        }
 
         public void Chaser_Move_CallBack(object status)
         {
@@ -953,6 +1673,10 @@ namespace WindowsFormsApp2
                 {
                     if (chaser != null)
                     {
+                        if (!(chaser_wood1_Hit || chaser_wood2_Hit || chaser_wood3_Hit || chaser_wood4_Hit || chaser_wood5_Hit || chaser_wood6_Hit || chaser_wood7_Hit))
+                        {
+                            chaser.BackgroundImage=null;
+                        }
                         chaser.chaser_move();
                     }
                 }));

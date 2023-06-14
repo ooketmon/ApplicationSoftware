@@ -34,7 +34,7 @@
             // 
             // character
             // 
-            this.character.BackColor = System.Drawing.Color.Blue;
+            this.character.BackColor = System.Drawing.Color.Transparent;
             this.character.Dock = System.Windows.Forms.DockStyle.Fill;
             this.character.Location = new System.Drawing.Point(0, 0);
             this.character.Name = "character";
