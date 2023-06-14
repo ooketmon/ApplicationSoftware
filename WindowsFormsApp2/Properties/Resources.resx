@@ -493,4 +493,100 @@
   <data name="IMG_0908" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Floor2-8\IMG_0908.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="assistant_back1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Assistant\assistant_back1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="assistant_back2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Assistant\assistant_back2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="assistant_back3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Assistant\assistant_back3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="assistant_back4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Assistant\assistant_back4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="assistant_front1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Assistant\assistant_front1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="assistant_front2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Assistant\assistant_front2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="assistant_front3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Assistant\assistant_front3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="assistant_front4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Assistant\assistant_front4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="assistant_left1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Assistant\assistant_left1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="assistant_left2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Assistant\assistant_left2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="assistant_left3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Assistant\assistant_left3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="assistant_left4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Assistant\assistant_left4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="assistant_right1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Assistant\assistant_right1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="assistant_right2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Assistant\assistant_right2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="assistant_right3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Assistant\assistant_right3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="assistant_right4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Assistant\assistant_right4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guard_back1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuardMan\guard_back1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guard_back2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuardMan\guard_back2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guard_back3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuardMan\guard_back3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guard_back4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuardMan\guard_back4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guard_front1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuardMan\guard_front1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guard_front2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuardMan\guard_front2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guard_front3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuardMan\guard_front3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guard_front4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuardMan\guard_front4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guard_left1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuardMan\guard_left1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guard_left2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuardMan\guard_left2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guard_left3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuardMan\guard_left3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guard_left4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuardMan\guard_left4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guard_right1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuardMan\guard_right1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guard_right2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuardMan\guard_right2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guard_right3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuardMan\guard_right3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guard_right4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuardMan\guard_right4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
