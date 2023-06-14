@@ -12,6 +12,7 @@ namespace WindowsFormsApp2.UDC
 {
     public partial class EndingSucceed : UserControl
     {
+        int x = 20, y = 100;
         public EndingSucceed()
         {
             InitializeComponent();
@@ -62,6 +63,11 @@ namespace WindowsFormsApp2.UDC
 
             lblEndingSucceed.Text = txt.Substring(0, counter);
             lblEndingSucceed.Height = 200;
+
+            lblEndingSucceed.SetBounds(x, y, 1, 1);
+            y--;
+
+
         }
     }
 }

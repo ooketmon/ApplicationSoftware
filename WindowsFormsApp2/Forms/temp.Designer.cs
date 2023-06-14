@@ -38,7 +38,7 @@
             this.endingSucceed1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.endingSucceed1.Font = new System.Drawing.Font("굴림", 15F);
             this.endingSucceed1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.endingSucceed1.Location = new System.Drawing.Point(-28, -57);
+            this.endingSucceed1.Location = new System.Drawing.Point(-1, 2);
             this.endingSucceed1.Margin = new System.Windows.Forms.Padding(5);
             this.endingSucceed1.Name = "endingSucceed1";
             this.endingSucceed1.Size = new System.Drawing.Size(2100, 1333);

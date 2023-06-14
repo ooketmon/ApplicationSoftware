@@ -6,6 +6,7 @@ namespace WindowsFormsApp2.UDC
 {
     public partial class EndingFail : UserControl
     {
+        int x = 20, y = 100;
         public EndingFail()
         {
             //System.Drawing.Text.PrivateFontCollection privateFonts = new System.Drawing.Text.PrivateFontCollection();
@@ -46,6 +47,8 @@ namespace WindowsFormsApp2.UDC
 
         }
 
+
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             counter++;
@@ -58,6 +61,9 @@ namespace WindowsFormsApp2.UDC
 
             lblEndingFail.Text = txt.Substring(0, counter);
             lblEndingFail.Height = 200;
+
+            lblEndingFail.SetBounds(x, y, 1, 1);
+            y--;
         }
 
         private void lblEndingFail_Click(object sender, EventArgs e)
