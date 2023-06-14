@@ -19,7 +19,7 @@ namespace WindowsFormsApp2
         public bool havetoGoGuardRoom = false;
 
 
-        public bool guardmanChasing = true;
+        public bool guardmanChasing = false;
         public bool assistantChasing = false;
         public bool assistantEvent = false;
         public bool firstStart = true;
