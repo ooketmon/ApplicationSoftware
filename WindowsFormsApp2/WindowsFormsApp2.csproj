@@ -85,6 +85,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="UDC\Doorlock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UDC\Doorlock.Designer.cs">
+      <DependentUpon>Doorlock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UDC\Pc_lock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UDC\Pc_lock.Designer.cs">
+      <DependentUpon>Pc_lock.cs</DependentUpon>
+    </Compile>
     <Compile Include="UDC\PosterZoomUDC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -286,6 +298,9 @@
     <EmbeddedResource Include="UDC\ConvModeUDC.resx">
       <DependentUpon>ConvModeUDC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UDC\Doorlock.resx">
+      <DependentUpon>Doorlock.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UDC\ElevatorChoiceUDC.resx">
       <DependentUpon>ElevatorChoiceUDC.cs</DependentUpon>
     </EmbeddedResource>
@@ -297,6 +312,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UDC\inventory_item.resx">
       <DependentUpon>inventory_item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UDC\Pc_lock.resx">
+      <DependentUpon>Pc_lock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UDC\PosterZoomUDC.resx">
       <DependentUpon>PosterZoomUDC.cs</DependentUpon>
@@ -465,6 +483,12 @@
     <None Include="resources\Assistant\assistant_right2.png" />
     <None Include="resources\Assistant\assistant_right3.png" />
     <None Include="resources\Assistant\assistant_right4.png" />
+    <None Include="resources\clue\2_computer_lock.png" />
+    <None Include="resources\clue\2_test_lock.png" />
+    <None Include="resources\clue\4_Papper_open.png" />
+    <None Include="resources\clue\8F_clock4.png" />
+    <None Include="resources\clue\8F_world4.png" />
+    <None Include="resources\clue\lecuture_Door.png" />
     <Content Include="resources\Floor1\IMG_0808.PNG" />
     <None Include="resources\ui\Button.png" />
     <None Include="resources\ui\ConvBack.png" />
@@ -564,6 +588,11 @@
     <None Include="resources\GuardMan\guard_right2.png" />
     <None Include="resources\GuardMan\guard_right3.png" />
     <None Include="resources\GuardMan\guard_right4.png" />
+    <None Include="resources\Floor2-8\IMG_0909.PNG" />
+    <None Include="resources\Floor2-8\IMG_09093.PNG" />
+    <None Include="resources\Floor2-8\IMG_09092.PNG" />
+    <None Include="resources\Floor2-8\IMG_09091.PNG" />
+    <None Include="resources\Floor2-8\IMG_0910.PNG" />
     <Content Include="resources\Player\IMG_0809.PNG" />
     <Content Include="resources\Player\IMG_0811.PNG" />
     <Content Include="resources\Player\IMG_0812.PNG" />
