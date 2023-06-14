@@ -103,7 +103,7 @@ namespace WindowsFormsApp2
             phase=1;
             eventType = placeinfo;
             target.nameCharacter.Text = string.Format("{0}", STUDENT_INFO.name);
-            target.contentConv.Text = string.Format("이건 2층 만남의 장소다.");
+            target.contentConv.Text = string.Format("이건 2층 상상공간이다.");
             Room_StartupClub3 meetingPlace = new Room_StartupClub3(this);
             target.Controls.Add(meetingPlace);
             meetingPlace.SendToBack();
@@ -536,7 +536,7 @@ namespace WindowsFormsApp2
 
         public void SecondFloorNPC2()
         {
-            phase++;
+            phase++ ;
             foreach (Control c in target.Controls)
             {
                 if (c.Name == "btnSkip")
@@ -545,7 +545,7 @@ namespace WindowsFormsApp2
                 }
             }
             target.nameCharacter.Text = "대학원생";
-            target.text = string.Format("네 교수님, 4실습실이랑 4연구실 열쇠 과사에..있.. …\r\nzzZZZ.z..zZZZ…");
+            target.text = string.Format("네 민수빈 교수님, 4실습실이랑 4연구실 열쇠 과사에..있.. …\r\nzzZZZ.z..zZZZ…");
             target.timerReset();
         }
 
@@ -1267,6 +1267,10 @@ namespace WindowsFormsApp2
                 if(event_split.Length > 1 && event_split[1]== "SecondNPC"&& phase<3) {
                     SecondFloorNPC2();
                     return;   
+                }else if (event_split.Length > 1 && event_split[1] == "SecondNPC" && phase == 3)
+                {
+                    MeetingPlaceInit("meetingplace");
+                    return;
                 }
                 if (event_split.Length > 1 && event_split[1] == "GetSecondFloorCardKey" && phase < 3)
                 {
