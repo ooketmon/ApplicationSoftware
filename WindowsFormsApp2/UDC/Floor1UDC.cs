@@ -158,7 +158,7 @@ namespace WindowsFormsApp2
                 chaser.BackColor = Color.Transparent;
                 chaser.BringToFront();
                 chaser_timer = new System.Threading.Timer(Chaser_Move_CallBack);
-                chaser_timer.Change(0, 30);
+                chaser_timer.Change(0, 100);
 
                 chaser_wood_timer1 = new System.Threading.Timer(ChaserWoodCallBack1);
                 chaser_wood_timer1.Change(0, 10);
@@ -288,23 +288,7 @@ namespace WindowsFormsApp2
                     {
                         convHitTest = true;
                         //엔딩화면으로 넘어가는 코드
-                        ((InitMenu)this.Parent).CallEndingFail();
                     }
-
-                    if (x is PictureBox && (x.Name as string) == "gameOverExit")
-                    {
-                        Control parentControl = this.Parent;
-                        if (parentControl != null && parentControl is InitMenu)
-                        {
-                            InitMenu initMenu = (InitMenu)parentControl;
-                            if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest)
-                            {
-                                initMenu.CallEndingSucceed();
-                                return;
-                            }
-                        }
-                    }
-
                 }
 
             }
