@@ -28,48 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btn_input = new System.Windows.Forms.Button();
             this.btn_quit = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.pictureBox1.Location = new System.Drawing.Point(25, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(450, 450);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(25, 466);
+            this.textBox1.Location = new System.Drawing.Point(0, 449);
+            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(281, 25);
+            this.textBox1.Size = new System.Drawing.Size(412, 34);
             this.textBox1.TabIndex = 1;
             // 
             // btn_input
             // 
-            this.btn_input.Location = new System.Drawing.Point(310, 466);
+            this.btn_input.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_input.Location = new System.Drawing.Point(412, 449);
             this.btn_input.Name = "btn_input";
-            this.btn_input.Size = new System.Drawing.Size(90, 25);
+            this.btn_input.Size = new System.Drawing.Size(38, 34);
             this.btn_input.TabIndex = 2;
-            this.btn_input.Text = "입력";
-            this.btn_input.UseVisualStyleBackColor = true;
+            this.btn_input.Text = "▶";
+            this.btn_input.UseVisualStyleBackColor = false;
             this.btn_input.Click += new System.EventHandler(this.btn_input_Click);
             // 
             // btn_quit
             // 
-            this.btn_quit.Location = new System.Drawing.Point(407, 466);
+            this.btn_quit.BackColor = System.Drawing.Color.IndianRed;
+            this.btn_quit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_quit.Location = new System.Drawing.Point(405, 12);
             this.btn_quit.Name = "btn_quit";
-            this.btn_quit.Size = new System.Drawing.Size(90, 25);
+            this.btn_quit.Size = new System.Drawing.Size(33, 30);
             this.btn_quit.TabIndex = 2;
-            this.btn_quit.Text = "그만두기";
-            this.btn_quit.UseVisualStyleBackColor = true;
+            this.btn_quit.Text = "X";
+            this.btn_quit.UseVisualStyleBackColor = false;
             this.btn_quit.Click += new System.EventHandler(this.btn_quit_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.pictureBox1.Image = global::WindowsFormsApp2.Properties.Resources._8F_world4;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(450, 450);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // puzzle
             // 
@@ -80,7 +86,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "puzzle";
-            this.Size = new System.Drawing.Size(500, 500);
+            this.Size = new System.Drawing.Size(451, 486);
             this.Load += new System.EventHandler(this.puzzle_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
