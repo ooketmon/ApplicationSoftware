@@ -537,13 +537,6 @@ namespace WindowsFormsApp2
         public void SecondFloorNPC2()
         {
             phase++ ;
-            foreach (Control c in target.Controls)
-            {
-                if (c.Name == "btnSkip")
-                {
-                    c.Text = "나가기";
-                }
-            }
             target.nameCharacter.Text = "대학원생";
             target.text = string.Format("네 민수빈 교수님, 4실습실이랑 4연구실 열쇠 과사에..있.. …\r\nzzZZZ.z..zZZZ…");
             target.timerReset();
@@ -1269,6 +1262,13 @@ namespace WindowsFormsApp2
                     return;   
                 }else if (event_split.Length > 1 && event_split[1] == "SecondNPC" && phase == 3)
                 {
+                    foreach (Control c in target.Controls)
+                    {
+                        if (c.Name == "btnSkip")
+                        {
+                            c.Text = "나가기";
+                        }
+                    }
                     MeetingPlaceInit("meetingplace");
                     return;
                 }

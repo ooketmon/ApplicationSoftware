@@ -449,7 +449,6 @@
     <None Include="resources\clue\8F_bookcase.png" />
     <None Include="resources\clue\8F_locecase4.png" />
     <None Include="resources\back-elevator.png" />
-    <None Include="resources\classicclock.jpg" />
     <Content Include="resources\Floor1\IMG_0808.PNG" />
     <None Include="resources\ui\Button.png" />
     <None Include="resources\ui\ConvBack.png" />
