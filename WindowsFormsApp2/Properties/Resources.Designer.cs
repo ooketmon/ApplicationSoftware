@@ -83,9 +83,29 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap _2_computer_lock {
+            get {
+                object obj = ResourceManager.GetObject("_2_computer_lock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap _2_Test {
             get {
                 object obj = ResourceManager.GetObject("_2_Test", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2_test_lock {
+            get {
+                object obj = ResourceManager.GetObject("_2_test_lock", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,6 +223,16 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap _4_Papper_open {
+            get {
+                object obj = ResourceManager.GetObject("_4_Papper_open", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap _4_Safecard {
             get {
                 object obj = ResourceManager.GetObject("_4_Safecard", resourceCulture);
@@ -243,6 +273,16 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap _8F_clock4 {
+            get {
+                object obj = ResourceManager.GetObject("_8F_clock4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap _8F_lab2PC {
             get {
                 object obj = ResourceManager.GetObject("_8F_lab2PC", resourceCulture);
@@ -266,6 +306,16 @@ namespace WindowsFormsApp2.Properties {
         internal static System.Drawing.Bitmap _8F_Printer1 {
             get {
                 object obj = ResourceManager.GetObject("8F_Printer1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap _8F_world4 {
+            get {
+                object obj = ResourceManager.GetObject("_8F_world4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1086,6 +1136,16 @@ namespace WindowsFormsApp2.Properties {
         internal static System.Drawing.Bitmap lecture_room_4 {
             get {
                 object obj = ResourceManager.GetObject("lecture-room-4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap lecuture_Door {
+            get {
+                object obj = ResourceManager.GetObject("lecuture_Door", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

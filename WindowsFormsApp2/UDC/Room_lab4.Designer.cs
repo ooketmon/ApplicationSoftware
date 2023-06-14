@@ -51,10 +51,10 @@
             // 
             this.clock_roma.BackColor = System.Drawing.Color.Transparent;
             this.clock_roma.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.clock_roma.Image = global::WindowsFormsApp2.Properties.Resources.rome_clock;
-            this.clock_roma.Location = new System.Drawing.Point(583, 82);
+            this.clock_roma.Image = global::WindowsFormsApp2.Properties.Resources._8F_clock4;
+            this.clock_roma.Location = new System.Drawing.Point(565, 45);
             this.clock_roma.Name = "clock_roma";
-            this.clock_roma.Size = new System.Drawing.Size(137, 138);
+            this.clock_roma.Size = new System.Drawing.Size(189, 185);
             this.clock_roma.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.clock_roma.TabIndex = 1;
             this.clock_roma.TabStop = false;

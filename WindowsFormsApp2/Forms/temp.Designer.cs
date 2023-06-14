@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.room_department1 = new WindowsFormsApp2.UDC.Room_department();
+            this.room_Board1 = new WindowsFormsApp2.UDC.Room_Board();
             this.SuspendLayout();
             // 
-            // room_department1
-
-            this.room_department1.Location = new System.Drawing.Point(0, 0);
-            this.room_department1.Name = "room_department1";
-            this.room_department1.Size = new System.Drawing.Size(1200, 800);
-            this.room_department1.TabIndex = 0;
+            // room_Board1
+            // 
+            this.room_Board1.Location = new System.Drawing.Point(1, -1);
+            this.room_Board1.Name = "room_Board1";
+            this.room_Board1.Size = new System.Drawing.Size(1200, 800);
+            this.room_Board1.TabIndex = 1;
             // 
             // temp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 800);
-            this.Controls.Add(this.room_department1);
+            this.Controls.Add(this.room_Board1);
             this.Name = "temp";
             this.Text = "temp";
             this.ResumeLayout(false);
@@ -52,6 +52,6 @@
 
         #endregion
 
-        private UDC.Room_department room_department1;
+        private UDC.Room_Board room_Board1;
     }
 }
