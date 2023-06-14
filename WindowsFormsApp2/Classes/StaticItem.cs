@@ -17,7 +17,7 @@ namespace WindowsFormsApp2
         public static bool mTest1 = false;
 
         //2. 강의실2 - 연구실2 관련 item
-        public static bool mTest2 = false;
+        public static bool mTest2 = true;
 
         //3. 창업동아리 - 강의실3 - 연구실3 관련 item
         public static bool mPapper3 = false;

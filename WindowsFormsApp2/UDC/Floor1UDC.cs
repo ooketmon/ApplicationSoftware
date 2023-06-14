@@ -294,22 +294,22 @@ namespace WindowsFormsApp2
                         //엔딩화면으로 넘어가는 코드
                         // 엔딩도움
                         //UDC > EndingFail 연결
+                        ((InitMenu)this.Parent).CallEndingFail();
                     }
                 }
 
-                if (mTest1 == true && mTest2 == true && mTest3 == true && mTest4 == true)
+                if (x is PictureBox && (x.Name as string) == "gameOverExit")
                 {
-                   
-                    if (x is PictureBox && (x.Name as string) == "gameOverExit")
+                    Control parentControl = this.Parent;
+                    if (parentControl != null && parentControl is InitMenu)
                     {
-                        // 엔딩도움
-                        // convHitTest = true;
-                        //((InitMenu)this.Parent).     .(x.Name.ToString());
-                        //return;
-                        //UDC > EndingSucceed 연결되도록 
-
+                        InitMenu initMenu = (InitMenu)parentControl;
+                        if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest)
+                        {
+                            initMenu.CallEndingSucceed();
+                            return;
+                        }
                     }
-
                 }
 
             }
