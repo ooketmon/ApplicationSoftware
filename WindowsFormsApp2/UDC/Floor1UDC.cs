@@ -288,7 +288,23 @@ namespace WindowsFormsApp2
                     {
                         convHitTest = true;
                         //엔딩화면으로 넘어가는 코드
+                        ((InitMenu)this.Parent).CallEndingFail();
                     }
+
+                    if (x is PictureBox && (x.Name as string) == "gameOverExit")
+                    {
+                        Control parentControl = this.Parent;
+                        if (parentControl != null && parentControl is InitMenu)
+                        {
+                            InitMenu initMenu = (InitMenu)parentControl;
+                            if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest)
+                            {
+                                initMenu.CallEndingSucceed();
+                                return;
+                            }
+                        }
+                    }
+
                 }
 
             }

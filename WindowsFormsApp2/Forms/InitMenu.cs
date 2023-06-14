@@ -361,5 +361,17 @@ namespace WindowsFormsApp2
             }
         }
 
+        public void CallEndingFail()
+        {
+            this.Controls.Clear();
+            this.Controls.Add(new EndingFail());
+        }
+
+        public void CallEndingSucceed()
+        {
+            this.Controls.Clear();
+            this.Controls.Add(new EndingSucceed());
+        }
+
     }
 }

@@ -96,6 +96,7 @@
             this.pictureBox52 = new System.Windows.Forms.PictureBox();
             this.elevator = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.gameOverExit = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).BeginInit();
@@ -162,6 +163,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.elevator)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gameOverExit)).BeginInit();
             this.SuspendLayout();
             // 
             // timerFloor1
@@ -352,7 +354,7 @@
             // 
             this.player.BackColor = System.Drawing.Color.Silver;
             this.player.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player.Location = new System.Drawing.Point(1040, 695);
+            this.player.Location = new System.Drawing.Point(1036, 630);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(39, 45);
             this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -895,12 +897,21 @@
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Tag = "obstacle";
             // 
+            // gameOverExit
+            // 
+            this.gameOverExit.Location = new System.Drawing.Point(435, 759);
+            this.gameOverExit.Name = "gameOverExit";
+            this.gameOverExit.Size = new System.Drawing.Size(665, 40);
+            this.gameOverExit.TabIndex = 184;
+            this.gameOverExit.TabStop = false;
+            // 
             // Floor1UDC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.IMG_0872;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.gameOverExit);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox42);
             this.Controls.Add(this.pictureBox7);
@@ -1042,6 +1053,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.elevator)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gameOverExit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1116,5 +1128,6 @@
         private System.Windows.Forms.PictureBox pictureBox52;
         private System.Windows.Forms.PictureBox elevator;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox gameOverExit;
     }
 }
