@@ -12,7 +12,7 @@ namespace WindowsFormsApp2
         public static double total_grade = -1;
         public static string name = "아무개";
 
-        public static List<string> low_grade_courses=/*new List<string>()*/new List<string>(){ "a","b","c","d"};
+        public static List<string> low_grade_courses=new List<string>();
 
     }
 }

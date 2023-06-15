@@ -123,12 +123,12 @@ namespace WindowsFormsApp2
                 description = "찢어진 포스터 조각이다.";
             } else if (itemName == items[1] && inventory[1])
             {
-                MessageBox.Show(string.Format("{0} 시험지다."), STUDENT_INFO.low_grade_courses[0]);
+                MessageBox.Show(string.Format(("{0} 시험지다."), STUDENT_INFO.low_grade_courses[0]));
                 return;
             }
             else if (itemName == items[2] && inventory[2])
             {
-                MessageBox.Show(string.Format("{0} 시험지다."), STUDENT_INFO.low_grade_courses[1]);
+                MessageBox.Show(string.Format(("{0} 시험지다."), STUDENT_INFO.low_grade_courses[1]));
                 return;
             }
             else if (itemName == items[3] && inventory[3])
@@ -147,7 +147,7 @@ namespace WindowsFormsApp2
                 description = "연구실 홍보 포스터다.";
             } else if (itemName == items[6] && inventory[6])
             {
-                MessageBox.Show(string.Format("{0} 시험지다."), STUDENT_INFO.low_grade_courses[2]);
+                MessageBox.Show(string.Format(("{0} 시험지다."), STUDENT_INFO.low_grade_courses[2]));
                 return;
             }
             else if (itemName == items[7] && inventory[7])
@@ -163,7 +163,7 @@ namespace WindowsFormsApp2
                 return;
             } else if (itemName == items[10] && inventory[10])
             {
-                MessageBox.Show(string.Format("{0} 시험지다."), STUDENT_INFO.low_grade_courses[3]);
+                MessageBox.Show(string.Format(("{0} 시험지다."), STUDENT_INFO.low_grade_courses[3]));
                 return;
             }
             /*
