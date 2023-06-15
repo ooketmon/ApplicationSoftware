@@ -151,7 +151,7 @@ namespace WindowsFormsApp2
                     {
                         dic_iter.MoveNext();
                         var item = dic_iter.Current;
-                        if (item.Value < 4)
+                        if (item.Value < 3)
                         {
                             STUDENT_INFO.low_grade_courses.Add(item.Key);
                         }
