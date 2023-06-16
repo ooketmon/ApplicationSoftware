@@ -45,7 +45,6 @@ namespace WindowsFormsApp2
             if (e.KeyCode == Keys.Up) { goUp = true; currentDirection = Keys.Up; }
             if (e.KeyCode == Keys.Down) { goDown = true; currentDirection = Keys.Down; }
 
-            MovePlayer();
         }
         public void PlayerKeyUp(object sender, KeyEventArgs e)
         {
@@ -53,8 +52,6 @@ namespace WindowsFormsApp2
             if (e.KeyCode == Keys.Right) {goRight = false; ResetPlayerImage(); }
             if (e.KeyCode == Keys.Up) { goUp = false; ResetPlayerImage(); }
             if (e.KeyCode == Keys.Down) { goDown = false; ResetPlayerImage(); }
-
-            MovePlayer();
         }
 
         public void ForceToStop()

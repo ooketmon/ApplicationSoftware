@@ -21,7 +21,7 @@ namespace WindowsFormsApp2
         {
             (this.Parent as InitMenu).ResetAll();
             (this.Parent as InitMenu).GoToLogin();
-            //(this.Parent as InitMenu).FloorChange(1);
+           // (this.Parent as InitMenu).FloorChange(1);
         }
 
     }

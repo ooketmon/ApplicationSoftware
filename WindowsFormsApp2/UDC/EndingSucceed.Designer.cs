@@ -36,7 +36,7 @@
             // lblEndingSucceed
             // 
             this.lblEndingSucceed.AutoSize = true;
-            this.lblEndingSucceed.Location = new System.Drawing.Point(100, 500);
+            this.lblEndingSucceed.Location = new System.Drawing.Point(108, 775);
             this.lblEndingSucceed.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblEndingSucceed.Name = "lblEndingSucceed";
             this.lblEndingSucceed.Size = new System.Drawing.Size(77, 25);
@@ -45,6 +45,7 @@
             // 
             // timer1
             // 
+            this.timer1.Interval = 30;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // EndingSucceed

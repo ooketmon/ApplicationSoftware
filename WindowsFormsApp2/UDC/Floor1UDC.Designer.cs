@@ -79,7 +79,7 @@
             this.sofa1 = new System.Windows.Forms.PictureBox();
             this.hintNPC_1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox38 = new System.Windows.Forms.PictureBox();
+            this.back_elevator = new System.Windows.Forms.PictureBox();
             this.guardroom = new System.Windows.Forms.PictureBox();
             this.pictureBox30 = new System.Windows.Forms.PictureBox();
             this.pictureBox28 = new System.Windows.Forms.PictureBox();
@@ -152,7 +152,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.sofa1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hintNPC_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.back_elevator)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guardroom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
@@ -366,7 +366,7 @@
             // 
             this.player.BackColor = System.Drawing.Color.Silver;
             this.player.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player.Location = new System.Drawing.Point(1039, 695);
+            this.player.Location = new System.Drawing.Point(1006, 77);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(39, 45);
             this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -725,22 +725,22 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBox2.Location = new System.Drawing.Point(746, -80);
+            this.pictureBox2.Location = new System.Drawing.Point(746, -85);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(60, 90);
             this.pictureBox2.TabIndex = 85;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Tag = "obstacle";
             // 
-            // pictureBox38
+            // back_elevator
             // 
-            this.pictureBox38.Location = new System.Drawing.Point(746, -40);
-            this.pictureBox38.Name = "pictureBox38";
-            this.pictureBox38.Size = new System.Drawing.Size(60, 65);
-            this.pictureBox38.TabIndex = 144;
-            this.pictureBox38.TabStop = false;
-            this.pictureBox38.Tag = "elevator";
-            this.pictureBox38.Visible = false;
+            this.back_elevator.Location = new System.Drawing.Point(746, -49);
+            this.back_elevator.Name = "back_elevator";
+            this.back_elevator.Size = new System.Drawing.Size(60, 65);
+            this.back_elevator.TabIndex = 144;
+            this.back_elevator.TabStop = false;
+            this.back_elevator.Tag = "elevator";
+            this.back_elevator.Visible = false;
             // 
             // guardroom
             // 
@@ -883,9 +883,9 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pictureBox1.Location = new System.Drawing.Point(745, 65);
+            this.pictureBox1.Location = new System.Drawing.Point(745, 86);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(15, 70);
+            this.pictureBox1.Size = new System.Drawing.Size(15, 49);
             this.pictureBox1.TabIndex = 217;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Tag = "obstacle";
@@ -923,7 +923,7 @@
             // pictureBox54
             // 
             this.pictureBox54.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pictureBox54.Location = new System.Drawing.Point(745, 65);
+            this.pictureBox54.Location = new System.Drawing.Point(745, 78);
             this.pictureBox54.Name = "pictureBox54";
             this.pictureBox54.Size = new System.Drawing.Size(75, 15);
             this.pictureBox54.TabIndex = 216;
@@ -945,7 +945,7 @@
             this.pictureBox56.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.pictureBox56.Location = new System.Drawing.Point(806, -80);
             this.pictureBox56.Name = "pictureBox56";
-            this.pictureBox56.Size = new System.Drawing.Size(15, 145);
+            this.pictureBox56.Size = new System.Drawing.Size(15, 160);
             this.pictureBox56.TabIndex = 212;
             this.pictureBox56.TabStop = false;
             this.pictureBox56.Tag = "obstacle";
@@ -963,9 +963,9 @@
             // pictureBox58
             // 
             this.pictureBox58.BackColor = System.Drawing.Color.Black;
-            this.pictureBox58.Location = new System.Drawing.Point(749, 73);
+            this.pictureBox58.Location = new System.Drawing.Point(749, 92);
             this.pictureBox58.Name = "pictureBox58";
-            this.pictureBox58.Size = new System.Drawing.Size(130, 49);
+            this.pictureBox58.Size = new System.Drawing.Size(130, 30);
             this.pictureBox58.TabIndex = 220;
             this.pictureBox58.TabStop = false;
             this.pictureBox58.Tag = "obstacle";
@@ -1055,7 +1055,7 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox38);
+            this.Controls.Add(this.back_elevator);
             this.Controls.Add(this.stair);
             this.Controls.Add(this.pictureBox57);
             this.Cursor = System.Windows.Forms.Cursors.Default;
@@ -1117,7 +1117,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.sofa1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hintNPC_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.back_elevator)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guardroom)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
@@ -1198,7 +1198,7 @@
         private System.Windows.Forms.PictureBox sofa1;
         private System.Windows.Forms.PictureBox hintNPC_1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox38;
+        private System.Windows.Forms.PictureBox back_elevator;
         private System.Windows.Forms.PictureBox guardroom;
         private System.Windows.Forms.PictureBox pictureBox30;
         private System.Windows.Forms.PictureBox pictureBox28;

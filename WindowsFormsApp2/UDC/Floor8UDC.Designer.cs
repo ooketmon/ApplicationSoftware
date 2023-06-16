@@ -66,7 +66,7 @@
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.back_elevator = new System.Windows.Forms.PictureBox();
             this.pictureBox38 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -125,7 +125,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.back_elevator)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -545,18 +545,18 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Tag = "obstacle";
             // 
-            // pictureBox13
+            // back_elevator
             // 
-            this.pictureBox13.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox13.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0899;
-            this.pictureBox13.Location = new System.Drawing.Point(414, 0);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(62, 77);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox13.TabIndex = 193;
-            this.pictureBox13.TabStop = false;
-            this.pictureBox13.Tag = "elevator";
+            this.back_elevator.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.back_elevator.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.back_elevator.Image = global::WindowsFormsApp2.Properties.Resources.IMG_0899;
+            this.back_elevator.Location = new System.Drawing.Point(414, 0);
+            this.back_elevator.Name = "back_elevator";
+            this.back_elevator.Size = new System.Drawing.Size(62, 77);
+            this.back_elevator.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.back_elevator.TabIndex = 193;
+            this.back_elevator.TabStop = false;
+            this.back_elevator.Tag = "elevator";
             // 
             // pictureBox38
             // 
@@ -788,6 +788,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.IMG_0864;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.pictureBox64);
             this.Controls.Add(this.pictureBox62);
             this.Controls.Add(this.pictureBox30);
@@ -846,7 +847,8 @@
             this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.pictureBox21);
             this.Controls.Add(this.pictureBox27);
-            this.Controls.Add(this.pictureBox13);
+            this.Controls.Add(this.back_elevator);
+            this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(0);
             this.MaximumSize = new System.Drawing.Size(1200, 800);
             this.MinimumSize = new System.Drawing.Size(1200, 800);
@@ -891,7 +893,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.back_elevator)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -958,7 +960,7 @@
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.PictureBox back_elevator;
         private System.Windows.Forms.PictureBox pictureBox38;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;

@@ -14,6 +14,8 @@ namespace WindowsFormsApp2
 {
     public partial class ElevatorChoiceUDC : UserControl
     {
+
+        string where = "";
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
             if ((keyData == Keys.Right) || (keyData == Keys.Left) ||
@@ -36,11 +38,12 @@ namespace WindowsFormsApp2
             InitializeComponent();
             buttons = new List<Button>();
         }
-        public ElevatorChoiceUDC(int floor)
+        public ElevatorChoiceUDC(int floor,string where)
         {
             InitializeComponent();
             currentFloor= floor;
             buttons = new List<Button>();
+            this.where = where;
         }
 
         private void ElevatorChoiceUDC_Load(object sender, EventArgs e)
@@ -341,20 +344,47 @@ namespace WindowsFormsApp2
                     }
                     else
                     {
-                        (this.Parent as InitMenu).FloorChange(1);
+                        if (where == "front")
+                        {
+                            (this.Parent as InitMenu).FloorChange(1);
+                        }
+                        else
+                        {
+                            (this.Parent as InitMenu).FloorChangeForBackElevator(1);
+                        }
                     }
                     break;
                 case "button2":
-
-                    (this.Parent as InitMenu).FloorChange(2);
+                    if (where == "front")
+                    {
+                        (this.Parent as InitMenu).FloorChange(2);
+                    }
+                    else
+                    {
+                        (this.Parent as InitMenu).FloorChangeForBackElevator(2);
+                    }
                     break;
                 case "button3":
-                    (this.Parent as InitMenu).FloorChange(3);
+                    if (where == "front")
+                    {
+                        (this.Parent as InitMenu).FloorChange(3);
+                    }
+                    else
+                    {
+                        (this.Parent as InitMenu).FloorChangeForBackElevator(3);
+                    }
 
                     break;
                 case "button4":
 
-                    (this.Parent as InitMenu).FloorChange(4);
+                    if (where == "front")
+                    {
+                        (this.Parent as InitMenu).FloorChange(4);
+                    }
+                    else
+                    {
+                        (this.Parent as InitMenu).FloorChangeForBackElevator(4);
+                    }
 
                     break;
                 case "button5":
@@ -364,7 +394,14 @@ namespace WindowsFormsApp2
                     }
                     else
                     {
-                        (this.Parent as InitMenu).FloorChange(8);
+                        if (where == "front")
+                        {
+                            (this.Parent as InitMenu).FloorChange(8);
+                        }
+                        else
+                        {
+                            (this.Parent as InitMenu).FloorChangeForBackElevator(8);
+                        }
                     }
 
 

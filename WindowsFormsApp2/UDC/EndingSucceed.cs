@@ -7,11 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static WindowsFormsApp2.UDC.EndingFail;
 
 namespace WindowsFormsApp2.UDC
 {
     public partial class EndingSucceed : UserControl
     {
+        bool timingtoGoMain=false;
+        int stopcounter = 0;
+
+        System.Threading.Timer timer;
+        public delegate void controller();
+
         public EndingSucceed()
         {
             InitializeComponent();
@@ -46,22 +53,40 @@ namespace WindowsFormsApp2.UDC
             len = txt.Length;
             lblEndingSucceed.Text = "";
             timer1.Start();
+            timer = new System.Threading.Timer(controllerCallBack);
+            timer.Change(0, 180);
         }
 
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             counter++;
-
             if (counter >= len)
             {
                 timer1.Enabled = false;
-                System.Threading.Thread.Sleep(5000);
-                (this.Parent as InitMenu).CallMainMenu();
             }
 
             lblEndingSucceed.Text = txt.Substring(0, counter);
-            lblEndingSucceed.Height = 200;
+        }
+
+        public void controllerCallBack(object status)
+        {
+            BeginInvoke(new controller(() =>
+            {
+                if (lblEndingSucceed.Text.Length != txt.Length)
+                {
+                    lblEndingSucceed.Top -= 9;
+                }
+                else
+                {
+                    stopcounter += 180;
+                    if (stopcounter >= 5000 && !timingtoGoMain)
+                    {
+                        timingtoGoMain = true;
+                        (this.Parent as InitMenu).CallMainMenu();
+                    }
+                }
+            }));
         }
     }
 }

@@ -106,10 +106,16 @@ namespace WindowsFormsApp2
                 }
                 if (x is PictureBox && (string)x.Tag == "elevator")
                 {
-                    if (player.Bounds.IntersectsWith(x.Bounds) && !playerisOnElevator)
+                    if (player.Bounds.IntersectsWith(x.Bounds) && !playerisOnElevator && x.Name=="elevator")
                     {
                         playerisOnElevator = true;
                         ((InitMenu)this.Parent).ElevatorCall(3);
+                        return;
+                    }
+                    if(player.Bounds.IntersectsWith(x.Bounds)&& !playerisOnElevator && x.Name == "back_elevator")
+                    {
+                        playerisOnElevator = true;
+                        ((InitMenu)this.Parent).BackElevatorCall(3);
                         return;
                     }
                 }

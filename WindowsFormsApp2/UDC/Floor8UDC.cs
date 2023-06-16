@@ -127,7 +127,7 @@ namespace WindowsFormsApp2
                 Controls.Add(chaser);
 
                 chaser_timer = new System.Threading.Timer(Chaser_Move_CallBack);
-                chaser_timer.Change(0, 65);
+                chaser_timer.Change(0, 55);
 
             }
 
@@ -156,10 +156,16 @@ namespace WindowsFormsApp2
             {
                 if (x is PictureBox && (string)x.Tag == "elevator")
                 {
-                    if (player.Bounds.IntersectsWith(x.Bounds) && !playerisOnElevator)
+                    if (player.Bounds.IntersectsWith(x.Bounds) && !playerisOnElevator && x.Name == "elevator")
                     {
                         playerisOnElevator = true;
                         ((InitMenu)this.Parent).ElevatorCall(8);
+                        return;
+                    }
+                    if (player.Bounds.IntersectsWith(x.Bounds) && !playerisOnElevator && x.Name == "back_elevator")
+                    {
+                        playerisOnElevator = true;
+                        ((InitMenu)this.Parent).BackElevatorCall(8);
                         return;
                     }
                 }

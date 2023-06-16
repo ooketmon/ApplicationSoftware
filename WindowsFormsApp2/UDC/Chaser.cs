@@ -93,7 +93,7 @@ namespace WindowsFormsApp2
                                 chaser_go_left = false;
                                 chaser_go_bottom = true;
                                 
-                                chaser_y -= chaser_speed;
+                                chaser_y += chaser_speed;
                             }
                             else
                             {
@@ -101,7 +101,7 @@ namespace WindowsFormsApp2
                                 chaser_go_left = false;
                                 chaser_go_top = true;
                                 
-                                chaser_y += chaser_speed;
+                                chaser_y -= chaser_speed;
                             }
                         }
                         else if (chaser_go_right)

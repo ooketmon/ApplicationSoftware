@@ -212,20 +212,26 @@ namespace WindowsFormsApp2
                 }
 
                 //엘레베이터 이벤트
-                if (x is PictureBox && (string)x.Name == "elevator")
+                if (x is PictureBox && x.Name.Contains("elevator"))
                 {
-                    if (player.Bounds.IntersectsWith(x.Bounds) && !playerisOnElevator && !(this.Parent as InitMenu).guardmanChasing)
-                    {
-                        playerisOnElevator = true;
-                        ((InitMenu)this.Parent).ElevatorCall(1);
-                        return;
-                    }
-                    else if (player.Bounds.IntersectsWith(x.Bounds) && !playerisOnElevator && (this.Parent as InitMenu).guardmanChasing)
+                    if (player.Bounds.IntersectsWith(x.Bounds) && !playerisOnElevator && (this.Parent as InitMenu).guardmanChasing)
                     {
                         playerisOnElevator = true;
                         MessageBox.Show("빨리 나가야해!");
                         player.Left += 50;
                         playerisOnElevator = false;
+                        return;
+                    }
+                    if (player.Bounds.IntersectsWith(x.Bounds) && !playerisOnElevator && !(this.Parent as InitMenu).guardmanChasing &&x.Name=="elevator")
+                    {
+                        playerisOnElevator = true;
+                        ((InitMenu)this.Parent).ElevatorCall(1);
+                        return;
+                    }
+                    if (player.Bounds.IntersectsWith(x.Bounds) && !playerisOnElevator && !(this.Parent as InitMenu).guardmanChasing && x.Name == "back_elevator")
+                    {
+                        playerisOnElevator = true;
+                        ((InitMenu)this.Parent).BackElevatorCall(1);
                         return;
                     }
                 }

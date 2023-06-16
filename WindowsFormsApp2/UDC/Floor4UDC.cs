@@ -51,9 +51,7 @@ namespace WindowsFormsApp2
             if ((keyData == Keys.Right) || (keyData == Keys.Left) ||
                 (keyData == Keys.Up) || (keyData == Keys.Down))
             {
-
                 Floor4_KeyDown(new object[] { }, new KeyEventArgs(keyData));
-
                 return true;
             }else if (keyData == Keys.I)
             {
@@ -100,10 +98,16 @@ namespace WindowsFormsApp2
                 }
                 if (x is PictureBox && (string)x.Tag == "elevator")
                 {
-                    if (player.Bounds.IntersectsWith(x.Bounds) && !playerisOnElevator)
+                    if (player.Bounds.IntersectsWith(x.Bounds) && !playerisOnElevator && x.Name=="elevator")
                     {
                         playerisOnElevator = true;
                         ((InitMenu)this.Parent).ElevatorCall(4);
+                        return;
+                    }
+                    if (player.Bounds.IntersectsWith(x.Bounds) && !playerisOnElevator && x.Name == "back_elevator")
+                    {
+                        playerisOnElevator = true;
+                        ((InitMenu)this.Parent).BackElevatorCall(4);
                         return;
                     }
                 }
@@ -152,69 +156,7 @@ namespace WindowsFormsApp2
             }
         }
 
-        private void pictureBox18_Click(object sender, EventArgs e)
-        {
 
-        }
 
-        private void pictureBox15_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox16_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox19_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox28_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void stairs2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox29_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox23_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox17_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox24_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

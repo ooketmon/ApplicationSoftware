@@ -28,6 +28,11 @@ namespace WindowsFormsApp2.UDC
         int len = 0;
         string txt;
         string whoCatchMe = "";
+        int stopcounter = 0;
+        bool timingtoGoMain = false;
+
+        System.Threading.Timer timer;
+        public delegate void controller();
 
 
         private void EndingFail_Load(object sender, EventArgs e)
@@ -64,24 +69,42 @@ namespace WindowsFormsApp2.UDC
             len = txt.Length;
             lblEndingFail.Text = "";
             timer1.Start();
-
+            timer = new System.Threading.Timer(controllerCallBack);
+            timer.Change(0, 180);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             counter++;
 
-            if (counter >=len)
+            if (counter>=len)
             {
                 timer1.Enabled = false;
-                System.Threading.Thread.Sleep(5000);
-                (this.Parent as InitMenu).CallMainMenu();
             }
 
             lblEndingFail.Text = txt.Substring(0, counter);
-            lblEndingFail.Height = 200;
+            
         }
 
+        public void controllerCallBack(object status)
+        {
+            BeginInvoke(new controller(() =>
+            {
+                if (lblEndingFail.Text.Length != txt.Length)
+                {
+                    lblEndingFail.Top -= 7;
+                }
+                else
+                {
+                    stopcounter+=180;
+                    if (stopcounter >= 5000 && !timingtoGoMain)
+                    {
+                        timingtoGoMain = true;
+                        (this.Parent as InitMenu).CallMainMenu();
+                    }
+                }
+            }));
+        }
 
         private void lblEndingFail_Click(object sender, EventArgs e)
         {
