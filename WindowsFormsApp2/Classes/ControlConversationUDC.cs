@@ -537,7 +537,7 @@ namespace WindowsFormsApp2
 
         public void SecondFloorNPC2()
         {
-            phase++ ;
+            phase=3 ;
             target.nameCharacter.Text = "대학원생";
             target.text = string.Format("네 민수빈 교수님, 4실습실이랑 4연구실 열쇠 과사에..있.. …\r\nzzZZZ.z..zZZZ…");
             target.timerReset();

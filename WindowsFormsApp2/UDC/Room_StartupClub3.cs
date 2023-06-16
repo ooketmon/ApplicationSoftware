@@ -22,6 +22,9 @@ namespace WindowsFormsApp2.UDC
 
             cardkey_3.BackColor = Color.Transparent;
             cardkey_3.Parent = room_sofa;
+
+            npc_sleep.Parent = room_sofa;
+            npc_sleep.BackColor = Color.Transparent;
             this.controller = controller;
 
         }
@@ -49,6 +52,7 @@ namespace WindowsFormsApp2.UDC
             {
                 cardkey_3.Visible = false;
             }
+
         }
     }
 }

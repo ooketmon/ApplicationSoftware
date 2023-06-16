@@ -28,23 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.npc_sleep = new System.Windows.Forms.PictureBox();
             this.cardkey_3 = new System.Windows.Forms.PictureBox();
             this.room_sofa = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.npc_sleep)).BeginInit();
+            this.npc_sleep = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.cardkey_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.room_sofa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.npc_sleep)).BeginInit();
             this.SuspendLayout();
-            // 
-            // npc_sleep
-            // 
-            this.npc_sleep.BackColor = System.Drawing.Color.Transparent;
-            this.npc_sleep.Location = new System.Drawing.Point(416, 354);
-            this.npc_sleep.Name = "npc_sleep";
-            this.npc_sleep.Size = new System.Drawing.Size(281, 74);
-            this.npc_sleep.TabIndex = 2;
-            this.npc_sleep.TabStop = false;
-            this.npc_sleep.Click += new System.EventHandler(this.Npc_Click);
             // 
             // cardkey_3
             // 
@@ -70,6 +60,16 @@
             this.room_sofa.TabIndex = 0;
             this.room_sofa.TabStop = false;
             // 
+            // npc_sleep
+            // 
+            this.npc_sleep.BackColor = System.Drawing.Color.Transparent;
+            this.npc_sleep.Location = new System.Drawing.Point(416, 354);
+            this.npc_sleep.Name = "npc_sleep";
+            this.npc_sleep.Size = new System.Drawing.Size(281, 74);
+            this.npc_sleep.TabIndex = 2;
+            this.npc_sleep.TabStop = false;
+            this.npc_sleep.Click += new System.EventHandler(this.Npc_Click);
+            // 
             // Room_StartupClub3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -80,9 +80,9 @@
             this.Name = "Room_StartupClub3";
             this.Size = new System.Drawing.Size(1200, 800);
             this.Load += new System.EventHandler(this.Room_StartupClub3_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.npc_sleep)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardkey_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.room_sofa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.npc_sleep)).EndInit();
             this.ResumeLayout(false);
 
         }
