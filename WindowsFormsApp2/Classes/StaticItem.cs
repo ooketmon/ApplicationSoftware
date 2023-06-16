@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -48,6 +49,23 @@ namespace WindowsFormsApp2
             inventory[9] = mKey4;
             inventory[10] = mTest4;
             inventory[11] = mCardkey5;
+        }
+
+        public static void inventory_reset()
+        {
+            mPapper1=false;
+             mTest1=false;
+            mTest2= false;
+             mPapper3 = false;
+           mCardkey3 = false;
+           mPoster3 = false;
+            mTest3 = false;
+            mPapper4 = false;
+          mSafekey4 = false;
+            mKey4 = false;
+             mTest4 = false;
+             mCardkey5 = false;
+            inventory_set();
         }
     }
 }

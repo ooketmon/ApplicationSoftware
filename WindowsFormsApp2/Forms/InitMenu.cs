@@ -27,15 +27,13 @@ namespace WindowsFormsApp2
         public bool haveSeenSecondBoard = false;
         public bool knowLab1PW=false;
 
-
         public bool knowLab2PW = false;
         public bool knowLab3PW = false;
-        //public bool knowLab4PW = false;
+
         public bool openLecture2_1 = false;
         public bool openLab1 = false;
         public bool openLab2 = false;
         public bool openLab3 = false;
-        //public bool openLab4 = false;
 
         public bool openPractice1 = false;
         public bool openPractice2 = false;
@@ -45,15 +43,6 @@ namespace WindowsFormsApp2
         public bool Lab2PcSolved=false;
         public bool Lab4LockCaseSolve = false;
 
-
-        public int Lab1PW = 1234;
-        public int Lab2PW = 1366;//코드 비번
-        public int Lab3PW = 9876;
-        public int Lab2PCPW = 8721;//
-        public int Lab4LockCasePW = 2319;//시계 이미지 추가
-
-        public int lecture2_answer = -1;
-        public string lecture2_problem = "";
         public Inventory inventory = new Inventory();
 
         public InitMenu()
@@ -120,7 +109,40 @@ namespace WindowsFormsApp2
 
         }
 
+        public void ResetAll()
+        {
+            haveSeenFourthBoard = false;
+            havetoGoGuardRoom = false;
 
+
+           guardmanChasing = false;
+          assistantChasing = false;
+          assistantEvent = false;
+         firstStart = true;
+
+        haveSeenSecondBoard = false;
+       knowLab1PW = false;
+
+        knowLab2PW = false;
+             knowLab3PW = false;
+
+            openLecture2_1 = false;
+             openLab1 = false;
+         openLab2 = false;
+          openLab3 = false;
+
+            openPractice1 = false;
+            openPractice2 = false;
+             openPractice3 = false;
+            openPractice4 = false;
+
+         Lab2PcSolved = false;
+           Lab4LockCaseSolve = false;
+            STUDENT_INFO.ResetStudentInfo();
+            StaticItem.inventory_reset();
+
+
+    }
 
         public void ElevatorCall(int floor)
         {
@@ -324,12 +346,6 @@ namespace WindowsFormsApp2
         private void InitMenu_Load(object sender, EventArgs e)
         {
             CallMainMenu();
-            Random random = new Random();
-            lecture2_answer = random.Next(128);
-            for (int i = 7; i >= 0; i--)
-            {
-                lecture2_problem += ((lecture2_answer >> i) & 1).ToString();
-            }
         }
         public void GoToLogin()
         {

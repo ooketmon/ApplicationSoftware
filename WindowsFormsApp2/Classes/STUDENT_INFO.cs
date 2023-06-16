@@ -14,5 +14,13 @@ namespace WindowsFormsApp2
 
         public static List<string> low_grade_courses = new List<string>();
 
+        public static void ResetStudentInfo()
+        {
+            all_course_grade.Clear();
+            low_grade_courses.Clear();
+            total_grade = -1;
+            name = "아무개";
+        }
+
     }
 }
