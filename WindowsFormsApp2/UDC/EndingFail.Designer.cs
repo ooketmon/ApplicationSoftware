@@ -48,7 +48,7 @@
             this.lblEndingFail.AutoSize = true;
             this.lblEndingFail.Font = new System.Drawing.Font("굴림", 15F);
             this.lblEndingFail.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblEndingFail.Location = new System.Drawing.Point(49, 30);
+            this.lblEndingFail.Location = new System.Drawing.Point(100, 500);
             this.lblEndingFail.Name = "lblEndingFail";
             this.lblEndingFail.Size = new System.Drawing.Size(77, 25);
             this.lblEndingFail.TabIndex = 1;

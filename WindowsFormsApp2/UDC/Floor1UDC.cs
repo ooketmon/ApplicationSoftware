@@ -269,7 +269,7 @@ namespace WindowsFormsApp2
                     if(player.Bounds.IntersectsWith(x.Bounds) && !convHitTest && !(this.Parent as InitMenu).guardmanChasing)
                     {
                         convHitTest = true;
-                        player.Left -= 50;
+                        player.Top -= 50;
                         MessageBox.Show("이대로 돌아갈 순 없어!");
                         convHitTest = false;
                         return;
@@ -315,12 +315,6 @@ namespace WindowsFormsApp2
             inventory.Show();
 
         }
-
-        private void player_Click(object sender, EventArgs e)
-        {
-
-        }
-
 
         /*
          아래는 쇼파 움직임 표현 코드

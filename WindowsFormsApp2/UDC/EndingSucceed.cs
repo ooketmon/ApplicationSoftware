@@ -33,8 +33,6 @@ namespace WindowsFormsApp2.UDC
                 "아침이라기엔 너무 환한 창문과, 활기있는 길거리 소리가 들렸다." + "\n\n" + 
                 "\'...?!\'" + "\n\n"+
                 "\'이러면 안되는데..?????";
-
-
         }
 
         int counter = 0;

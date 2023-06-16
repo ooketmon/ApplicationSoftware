@@ -61,11 +61,13 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.SmartSelectImage_2023_05_29_16_52_301;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Image = global::WindowsFormsApp2.Properties.Resources.SmartSelectImage_2023_05_29_16_52_30;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1203, 800);
+            this.pictureBox2.Size = new System.Drawing.Size(1200, 800);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
@@ -77,10 +79,10 @@
             this.Controls.Add(this.web_view);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
-            this.MaximumSize = new System.Drawing.Size(1203, 800);
-            this.MinimumSize = new System.Drawing.Size(1203, 800);
+            this.MaximumSize = new System.Drawing.Size(1200, 800);
+            this.MinimumSize = new System.Drawing.Size(1200, 800);
             this.Name = "LoginStartUDC";
-            this.Size = new System.Drawing.Size(1203, 800);
+            this.Size = new System.Drawing.Size(1200, 800);
             this.Load += new System.EventHandler(this.UserControl6_Load);
             ((System.ComponentModel.ISupportInitialize)(this.web_view)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

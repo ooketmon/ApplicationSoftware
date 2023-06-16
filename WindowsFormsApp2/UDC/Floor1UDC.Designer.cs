@@ -102,6 +102,7 @@
             this.pictureBox56 = new System.Windows.Forms.PictureBox();
             this.pictureBox57 = new System.Windows.Forms.PictureBox();
             this.pictureBox58 = new System.Windows.Forms.PictureBox();
+            this.pictureBox59 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox47)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox46)).BeginInit();
@@ -174,6 +175,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox57)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox58)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox59)).BeginInit();
             this.SuspendLayout();
             // 
             // timerFloor1
@@ -231,7 +233,7 @@
             this.pictureBox44.Size = new System.Drawing.Size(45, 65);
             this.pictureBox44.TabIndex = 123;
             this.pictureBox44.TabStop = false;
-            this.pictureBox44.Tag = "entrance";
+            this.pictureBox44.Tag = "";
             // 
             // pictureBox43
             // 
@@ -272,7 +274,7 @@
             this.picturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picturebox.TabIndex = 120;
             this.picturebox.TabStop = false;
-            this.picturebox.Tag = "entrance";
+            this.picturebox.Tag = "";
             // 
             // pictureBox37
             // 
@@ -968,12 +970,23 @@
             this.pictureBox58.TabStop = false;
             this.pictureBox58.Tag = "obstacle";
             // 
+            // pictureBox59
+            // 
+            this.pictureBox59.Location = new System.Drawing.Point(820, 776);
+            this.pictureBox59.Name = "pictureBox59";
+            this.pictureBox59.Size = new System.Drawing.Size(308, 24);
+            this.pictureBox59.TabIndex = 221;
+            this.pictureBox59.TabStop = false;
+            this.pictureBox59.Tag = "entrance";
+            this.pictureBox59.Visible = false;
+            // 
             // Floor1UDC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.IMG_0872;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.pictureBox59);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox39);
@@ -1127,6 +1140,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox57)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox58)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox59)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1207,5 +1221,6 @@
         private System.Windows.Forms.PictureBox pictureBox56;
         private System.Windows.Forms.PictureBox pictureBox57;
         private System.Windows.Forms.PictureBox pictureBox58;
+        private System.Windows.Forms.PictureBox pictureBox59;
     }
 }
