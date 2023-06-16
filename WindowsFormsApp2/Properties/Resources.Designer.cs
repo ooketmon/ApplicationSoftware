@@ -333,6 +333,16 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap _8F_world4_2_ {
+            get {
+                object obj = ResourceManager.GetObject("8F_world4(2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap assistant_back1 {
             get {
                 object obj = ResourceManager.GetObject("assistant_back1", resourceCulture);

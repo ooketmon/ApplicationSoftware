@@ -69,7 +69,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.pictureBox1.Image = global::WindowsFormsApp2.Properties.Resources._8F_world4;
+            this.pictureBox1.Image = global::WindowsFormsApp2.Properties.Resources._8F_world4_2_;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(450, 450);

@@ -508,6 +508,7 @@
     <None Include="resources\clue\8F_clock4.png" />
     <None Include="resources\clue\8F_world4.png" />
     <None Include="resources\clue\lecuture_Door.png" />
+    <None Include="resources\clue\8F_world4%282%29.png" />
     <Content Include="resources\Floor1\IMG_0808.PNG" />
     <None Include="resources\ui\Button.png" />
     <None Include="resources\ui\ConvBack.png" />
