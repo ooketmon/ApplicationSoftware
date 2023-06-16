@@ -28,29 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.down = new System.Windows.Forms.Button();
             this.up = new System.Windows.Forms.Button();
+            this.down = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // down
-            // 
-            this.down.Location = new System.Drawing.Point(47, 99);
-            this.down.Name = "down";
-            this.down.Size = new System.Drawing.Size(75, 23);
-            this.down.TabIndex = 2;
-            this.down.Text = "내려가기";
-            this.down.UseVisualStyleBackColor = true;
-            this.down.Click += new System.EventHandler(this.down_Click);
             // 
             // up
             // 
-            this.up.Location = new System.Drawing.Point(184, 99);
+            this.up.BackColor = System.Drawing.Color.Transparent;
+            this.up.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.IMG_0919;
+            this.up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.up.FlatAppearance.BorderSize = 0;
+            this.up.Location = new System.Drawing.Point(184, 77);
             this.up.Name = "up";
-            this.up.Size = new System.Drawing.Size(75, 23);
+            this.up.Size = new System.Drawing.Size(60, 60);
             this.up.TabIndex = 3;
-            this.up.Text = "올라가기";
-            this.up.UseVisualStyleBackColor = true;
+            this.up.UseVisualStyleBackColor = false;
             this.up.Click += new System.EventHandler(this.up_Click);
+            // 
+            // down
+            // 
+            this.down.BackColor = System.Drawing.Color.Transparent;
+            this.down.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.IMG_0920;
+            this.down.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.down.FlatAppearance.BorderSize = 0;
+            this.down.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.down.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.down.ForeColor = System.Drawing.Color.Transparent;
+            this.down.Location = new System.Drawing.Point(55, 92);
+            this.down.Name = "down";
+            this.down.Size = new System.Drawing.Size(60, 60);
+            this.down.TabIndex = 2;
+            this.down.UseVisualStyleBackColor = false;
+            this.down.Click += new System.EventHandler(this.down_Click);
             // 
             // StairChoice
             // 

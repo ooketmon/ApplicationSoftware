@@ -1393,6 +1393,26 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap IMG_0919 {
+            get {
+                object obj = ResourceManager.GetObject("IMG_0919", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap IMG_0920 {
+            get {
+                object obj = ResourceManager.GetObject("IMG_0920", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap init_image {
             get {
                 object obj = ResourceManager.GetObject("init_image", resourceCulture);
@@ -1736,6 +1756,16 @@ namespace WindowsFormsApp2.Properties {
         internal static System.Drawing.Bitmap Stair {
             get {
                 object obj = ResourceManager.GetObject("Stair", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap Stair1 {
+            get {
+                object obj = ResourceManager.GetObject("Stair1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

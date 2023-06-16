@@ -233,7 +233,7 @@
             this.pictureBox44.Size = new System.Drawing.Size(45, 65);
             this.pictureBox44.TabIndex = 123;
             this.pictureBox44.TabStop = false;
-            this.pictureBox44.Tag = "";
+            this.pictureBox44.Tag = "lock2";
             // 
             // pictureBox43
             // 
@@ -274,7 +274,7 @@
             this.picturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picturebox.TabIndex = 120;
             this.picturebox.TabStop = false;
-            this.picturebox.Tag = "";
+            this.picturebox.Tag = "lock2";
             // 
             // pictureBox37
             // 

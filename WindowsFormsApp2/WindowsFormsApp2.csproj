@@ -435,6 +435,8 @@
     <None Include="resources\IMG_0793.PNG" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="resources\ui\IMG_0919.PNG" />
+    <None Include="resources\ui\IMG_0920.PNG" />
     <None Include="resources\rome_clock.png" />
     <None Include="resources\비밀번호1.png" />
     <None Include="resources\pwdpad.jpg" />

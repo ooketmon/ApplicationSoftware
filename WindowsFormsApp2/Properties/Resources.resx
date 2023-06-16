@@ -157,6 +157,9 @@
   <data name="3F-meeting-room-2 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\3F-meeting-room-2 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="IMG_0919" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\ui\IMG_0919.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="IMG_0907" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Floor2-8\IMG_0907.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -170,9 +173,6 @@
     <value>..\resources\Player\left3.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IMG_07931" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\IMG_0793.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="IMG_0793" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\IMG_0793.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="lab_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -235,11 +235,11 @@
   <data name="IMG_0835" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Elevator\IMG_0835.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="assistant_back1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Assistant\assistant_back1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="_5_Cardkey_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\clue\5_Cardkey .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_2_Test" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\clue\2_Test.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LibraryComputer 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\LibraryComputer 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -328,8 +328,17 @@
   <data name="front1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Player\front1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="assistant_right3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Assistant\assistant_right3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="front3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Player\front3.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8F_world4(2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clue\8F_world4(2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guard_front2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuardMan\guard_front2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_1_Papper" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\clue\1_Papper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -343,8 +352,11 @@
   <data name="IMG_09093" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Floor2-8\IMG_09093.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hint" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\hint.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="right3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Player\right3.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMG_0829" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Floor1\IMG_0829.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IMG_0836" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Elevator\IMG_0836.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -387,9 +399,6 @@
   </data>
   <data name="IMG_0860" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Floor2-8\IMG_0860.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_3_Cardkey" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\clue\3_Cardkey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IMG_0847" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Floor1\IMG_0847.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -442,17 +451,14 @@
   <data name="temp_1685679902248_2036404291" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Floor2-8\temp_1685679902248.2036404291.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lab_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\lab,office\lab_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="IMG_0871" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Floor1\IMG_0871.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="department_office" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\lab,office\department_office.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="assistant_front4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\Assistant\assistant_front4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="guard_left1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuardMan\guard_left1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Stair" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Stair.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -463,14 +469,8 @@
   <data name="s_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\saebit-cartoon\s-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pc2pwd" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\pc2pwd.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="assistant_front3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Assistant\assistant_front3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="IMG_0808" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\Floor1\IMG_0808.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="lobby_sofa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\lobby-sofa2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -499,11 +499,11 @@
   <data name="tri" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\tri.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\ui\Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="_8F_clock4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\clue\8F_clock4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="IMG_0874" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\Floor1\IMG_0874.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IMG_0869" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Floor1\IMG_0869.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -529,6 +529,9 @@
   <data name="guard_left4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\GuardMan\guard_left4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="assistant_front2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Assistant\assistant_front2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="IMG_0908" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Floor2-8\IMG_0908.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -547,17 +550,17 @@
   <data name="guard_right3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\GuardMan\guard_right3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="assistant_back1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\Assistant\assistant_back1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IMG_0793" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\IMG_0793.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NeoDunggeunmoPro_Regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\NeoDunggeunmoPro-Regular.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="guard_left1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\GuardMan\guard_left1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="_2_Test" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clue\2_Test.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IMG_0829" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\Floor1\IMG_0829.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IMG_0808" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Floor1\IMG_0808.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_1_Test" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\clue\1_Test.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -571,11 +574,11 @@
   <data name="assistant_right1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Assistant\assistant_right1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="assistant_front2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\Assistant\assistant_front2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IMG_0874" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Floor1\IMG_0874.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="right3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\Player\right3.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lab_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\lab,office\lab_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="8F_Printer1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\clue\8F_Printer1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -601,11 +604,14 @@
   <data name="IMG_0840" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Floor1\IMG_0840.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\ui\Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\hint.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="assistant_right3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\Assistant\assistant_right3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IMG_0920" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\ui\IMG_0920.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pc2pwd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\pc2pwd.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="guard_back1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\GuardMan\guard_back1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -613,14 +619,17 @@
   <data name="left2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\Player\left2.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IMG_08981" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\Floor2-8\IMG_08981.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="guard_front4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\GuardMan\guard_front4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="guard_front2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\GuardMan\guard_front2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IMG_08981" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Floor2-8\IMG_08981.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="assistant_front4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Assistant\assistant_front4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3_Cardkey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\clue\3_Cardkey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_4_Safecard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\clue\4_Safecard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -628,7 +637,7 @@
   <data name="_3_Test" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\clue\3_Test.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="8F_world4(2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\clue\8F_world4(2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Stair1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Stair.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

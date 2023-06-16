@@ -31,7 +31,8 @@ namespace WindowsFormsApp2.UDC
         {
             switch (currentFloor)
             {
-                case 1: break;
+                case 1: MessageBox.Show("더 내려갈 수 없어.");
+                    break;
                 case 2:
                     if ((this.Parent as InitMenu).guardmanChasing)
                     {
@@ -55,7 +56,8 @@ namespace WindowsFormsApp2.UDC
                 case 1: (this.Parent as InitMenu).FloorChange(2); break;
                 case 2: (this.Parent as InitMenu).FloorChange(3); break;
                 case 3: (this.Parent as InitMenu).FloorChange(4); break;
-                case 4: break;
+                case 4: MessageBox.Show("다른데나 더 둘러보자");
+                    break;
             }
         }
     }
