@@ -105,7 +105,7 @@ namespace WindowsFormsApp2
                         return;
                     }
                 }
-                if (x is PictureBox && (string)x.Name == "elevator")
+                if (x is PictureBox && (string)x.Tag == "elevator")
                 {
                     if (player.Bounds.IntersectsWith(x.Bounds) && !playerisOnElevator)
                     {

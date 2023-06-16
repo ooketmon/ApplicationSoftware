@@ -79,6 +79,7 @@
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox40 = new System.Windows.Forms.PictureBox();
             this.pictureBox48 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
@@ -128,6 +129,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -190,10 +192,11 @@
             // 
             // board4_1
             // 
-            this.board4_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.board4_1.Location = new System.Drawing.Point(420, 550);
+            this.board4_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.board4_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.board4_1.Location = new System.Drawing.Point(419, 535);
             this.board4_1.Name = "board4_1";
-            this.board4_1.Size = new System.Drawing.Size(350, 15);
+            this.board4_1.Size = new System.Drawing.Size(347, 15);
             this.board4_1.TabIndex = 140;
             this.board4_1.TabStop = false;
             this.board4_1.Tag = "";
@@ -654,6 +657,16 @@
             this.pictureBox48.TabStop = false;
             this.pictureBox48.Tag = "obstacle";
             // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pictureBox12.Location = new System.Drawing.Point(420, 550);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(346, 15);
+            this.pictureBox12.TabIndex = 221;
+            this.pictureBox12.TabStop = false;
+            this.pictureBox12.Tag = "";
+            // 
             // Floor4UDC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -680,7 +693,6 @@
             this.Controls.Add(this.pictureBox51);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox23);
             this.Controls.Add(this.pictureBox15);
             this.Controls.Add(this.pictureBox43);
             this.Controls.Add(this.pictureBox42);
@@ -708,6 +720,8 @@
             this.Controls.Add(this.pictureBox20);
             this.Controls.Add(this.player);
             this.Controls.Add(this.pictureBox40);
+            this.Controls.Add(this.pictureBox12);
+            this.Controls.Add(this.pictureBox23);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.MaximumSize = new System.Drawing.Size(1200, 800);
             this.MinimumSize = new System.Drawing.Size(1200, 800);
@@ -765,6 +779,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox48)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -821,5 +836,6 @@
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox40;
         private System.Windows.Forms.PictureBox pictureBox48;
+        private System.Windows.Forms.PictureBox pictureBox12;
     }
 }

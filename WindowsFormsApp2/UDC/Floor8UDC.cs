@@ -154,7 +154,7 @@ namespace WindowsFormsApp2
 
             foreach (Control x in this.Controls)
             {
-                if (x is PictureBox && (string)x.Name == "elevator")
+                if (x is PictureBox && (string)x.Tag == "elevator")
                 {
                     if (player.Bounds.IntersectsWith(x.Bounds) && !playerisOnElevator)
                     {

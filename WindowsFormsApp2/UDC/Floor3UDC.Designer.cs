@@ -739,9 +739,9 @@
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.stair);
             this.Controls.Add(this.elevator);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox40);
             this.Controls.Add(this.pictureBox48);
+            this.Controls.Add(this.pictureBox2);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(0);
             this.MaximumSize = new System.Drawing.Size(1200, 800);

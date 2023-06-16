@@ -744,8 +744,9 @@
             // 
             // board2_1
             // 
-            this.board2_1.BackColor = System.Drawing.Color.Gray;
-            this.board2_1.Location = new System.Drawing.Point(660, 505);
+            this.board2_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.board2_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.board2_1.Location = new System.Drawing.Point(659, 505);
             this.board2_1.Name = "board2_1";
             this.board2_1.Size = new System.Drawing.Size(20, 195);
             this.board2_1.TabIndex = 150;
@@ -884,7 +885,6 @@
             this.Controls.Add(this.stair);
             this.Controls.Add(this.pictureBox25);
             this.Controls.Add(this.pictureBox24);
-            this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox32);
             this.Controls.Add(this.pictureBox28);
             this.Controls.Add(this.board2_1);
@@ -924,6 +924,7 @@
             this.Controls.Add(this.pictureBox45);
             this.Controls.Add(this.pictureBox43);
             this.Controls.Add(this.pictureBox48);
+            this.Controls.Add(this.pictureBox8);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(0);
             this.MaximumSize = new System.Drawing.Size(1200, 800);

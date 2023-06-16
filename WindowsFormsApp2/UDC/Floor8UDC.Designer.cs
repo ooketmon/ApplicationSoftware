@@ -814,7 +814,6 @@
             this.Controls.Add(this.stair);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox13);
             this.Controls.Add(this.pictureBox40);
             this.Controls.Add(this.pictureBox36);
             this.Controls.Add(this.pictureBox7);
@@ -847,6 +846,7 @@
             this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.pictureBox21);
             this.Controls.Add(this.pictureBox27);
+            this.Controls.Add(this.pictureBox13);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.MaximumSize = new System.Drawing.Size(1200, 800);
             this.MinimumSize = new System.Drawing.Size(1200, 800);
