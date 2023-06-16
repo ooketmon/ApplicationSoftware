@@ -100,7 +100,7 @@ namespace WindowsFormsApp2
                                 case "D+":
                                     real_value = 1.5;
                                     break;
-                                case "C":
+                                case "C0":
                                     real_value = 2.0;
                                     break;
                                 case "C+":
