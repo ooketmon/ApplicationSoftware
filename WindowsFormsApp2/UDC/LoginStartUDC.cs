@@ -90,6 +90,7 @@ namespace WindowsFormsApp2
                             double real_value = -1;
                             switch (value)
                             {
+                                case "NP":
                                 case "F":
                                     real_value = 0.0;
                                     break;
@@ -114,6 +115,7 @@ namespace WindowsFormsApp2
                                 case "A0":
                                     real_value = 4.0;
                                     break;
+                                case "P":
                                 case "A+":
                                     real_value = 4.5;
                                     break;
