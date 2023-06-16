@@ -13,6 +13,22 @@ namespace WindowsFormsApp2.UDC
 {
     public partial class Doorlock : UserControl
     {
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData==Keys.Enter)
+            {
+                  Doorlock_KeyDown(new object[] { }, new KeyEventArgs(keyData));
+
+                
+
+                return true;
+            }
+
+            else
+            {
+                return base.ProcessCmdKey(ref msg, keyData);
+            }
+        }
         string whoCallMe = "";
         public Doorlock()
         {
@@ -61,64 +77,73 @@ namespace WindowsFormsApp2.UDC
             {
                 room_number.Text = "4실습실";
             }
+            txt_password.Focus();
         }
 
-        private void btn_enter_Click(object sender, EventArgs e)
+        public void checkAnswer()
         {
-            if (whoCallMe=="lecture2_1"&&txt_password.Text == "201")
+            if (whoCallMe == "lecture2_1" && txt_password.Text.Trim() == "201")
             {
                 (this.Parent.Parent as InitMenu).openLecture2_1 = true;
                 (this.Parent.Parent as InitMenu).CallConvMode("room2_1");
             }
-            else if (whoCallMe == "lab_1" && txt_password.Text == "0303")
+            else if (whoCallMe == "lab_1" && txt_password.Text.Trim() == "0303")
             {
 
-                    (this.Parent.Parent as InitMenu).openLab1 = true;
-                    (this.Parent.Parent as InitMenu).CallConvMode("lab_1");
-                
+                (this.Parent.Parent as InitMenu).openLab1 = true;
+                (this.Parent.Parent as InitMenu).CallConvMode("lab_1");
+
             }
-            else if (whoCallMe == "lab_2" && txt_password.Text == "142259")
+            else if (whoCallMe == "lab_2" && txt_password.Text.Trim() == "142259")
             {
-  
-                    (this.Parent.Parent as InitMenu).openLab2 = true;
-                    (this.Parent.Parent as InitMenu).CallConvMode("lab_2");
-                
+
+                (this.Parent.Parent as InitMenu).openLab2 = true;
+                (this.Parent.Parent as InitMenu).CallConvMode("lab_2");
+
             }
-            else if (whoCallMe == "lab_3" && txt_password.Text == "0212")
+            else if (whoCallMe == "lab_3" && txt_password.Text.Trim() == "0212")
             {
 
                 (this.Parent.Parent as InitMenu).openLab3 = true;
                 (this.Parent.Parent as InitMenu).CallConvMode("lab_3");
 
             }
-            else if (whoCallMe == "practice3_1" && txt_password.Text == "5614")
+            else if (whoCallMe == "practice3_1" && txt_password.Text.Trim() == "5614")
             {
 
                 (this.Parent.Parent as InitMenu).openPractice1 = true;
                 (this.Parent.Parent as InitMenu).CallConvMode("practice3_1");
 
             }
-            else if (whoCallMe == "practice3_2" && txt_password.Text == "1234")
+            else if (whoCallMe == "practice3_2" && txt_password.Text.Trim() == "1234")
             {
 
                 (this.Parent.Parent as InitMenu).openPractice2 = true;
                 (this.Parent.Parent as InitMenu).CallConvMode("practice3_2");
 
             }
-            else if (whoCallMe == "practice3_3" && txt_password.Text == "4319")
+            else if (whoCallMe == "practice3_3" && txt_password.Text.Trim() == "4319")
             {
 
                 (this.Parent.Parent as InitMenu).openPractice3 = true;
                 (this.Parent.Parent as InitMenu).CallConvMode("practice3_3");
 
             }
-            else if (whoCallMe == "practice3_4" && txt_password.Text == "4567")
+            else if (whoCallMe == "practice3_4" && txt_password.Text.Trim() == "4567")
             {
 
                 (this.Parent.Parent as InitMenu).openPractice4 = true;
                 (this.Parent.Parent as InitMenu).CallConvMode("practice3_4");
 
             }
+            else
+            {
+                txt_password.Text = "";
+            }
+        }
+        private void btn_enter_Click(object sender, EventArgs e)
+        {
+            checkAnswer();
         }
 
         private void btn_x_Click(object sender, EventArgs e)
@@ -136,6 +161,11 @@ namespace WindowsFormsApp2.UDC
                 (this.Parent as Floor3UDC).puzzleOn = false;
                 (this.Parent.Parent as InitMenu).GetRidofPuzzleInFloor();
             }
+        }
+
+        private void Doorlock_KeyDown(object sender, KeyEventArgs e)
+        {
+            checkAnswer();
         }
     }
 }

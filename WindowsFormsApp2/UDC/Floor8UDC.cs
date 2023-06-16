@@ -17,9 +17,9 @@ namespace WindowsFormsApp2
         public delegate void Chasing();
 
         private PlayerControl playerMove;
-        bool playerisOnStair = false;
-        bool playerisOnElevator = false;
-        bool convHitTest = false;
+        public bool playerisOnStair = false;
+        public bool playerisOnElevator = false;
+        public bool convHitTest = false;
         public bool puzzleOn = false;
 
         List<Control> jumpscarePoint = new List<Control>();
@@ -127,7 +127,7 @@ namespace WindowsFormsApp2
                 Controls.Add(chaser);
 
                 chaser_timer = new System.Threading.Timer(Chaser_Move_CallBack);
-                chaser_timer.Change(0, 70);
+                chaser_timer.Change(0, 65);
 
             }
 

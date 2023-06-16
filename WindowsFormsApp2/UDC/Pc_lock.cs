@@ -15,7 +15,25 @@ namespace WindowsFormsApp2.UDC
     {
         string whoCallme = "";
         ControlConversationUDC controller=null;
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.Enter)
+            {
 
+
+
+                Pc_lock_KeyDown(new object[] { }, new KeyEventArgs(keyData));
+
+
+
+                return true;
+            }
+
+            else
+            {
+                return base.ProcessCmdKey(ref msg, keyData);
+            }
+        }
         public Pc_lock()
         {
             InitializeComponent();
@@ -39,29 +57,37 @@ namespace WindowsFormsApp2.UDC
                 img_lock.BackgroundImage = Properties.Resources._2_test_lock;
                 img_lock.BackgroundImageLayout = ImageLayout.Stretch;
             }
+            txt_password.Focus();
         }
 
         private void btn_enter_Click(object sender, EventArgs e)
         {
+            checkAnswer();
+        }
+
+        public void checkAnswer()
+        {
             if (whoCallme == "lecture2_2")
             {
-                if (txt_password.Text == "4367")
+                if (txt_password.Text.Trim() == "4367")
                 {
                     controller.Room2_2PuzzleSolved();
                 }
                 else
                 {
+                    txt_password.Text = "";
                     controller.Room2_2PuzzleWrong();
                 }
             }
             else if (whoCallme == "lab_2")
             {
-                if (txt_password.Text == "8721")
+                if (txt_password.Text.Trim() == "8721")
                 {
                     controller.Lab2_PcPuzzleSolve();
                 }
                 else
                 {
+                    txt_password.Text = "";
                     controller.Lab2_PcPuzzleWrong();
                 }
             }
@@ -76,6 +102,11 @@ namespace WindowsFormsApp2.UDC
             {
                 controller.Lab2_PcPuzzleQuit();
             }
+        }
+
+        private void Pc_lock_KeyDown(object sender, KeyEventArgs e)
+        {
+            checkAnswer();
         }
     }
 }

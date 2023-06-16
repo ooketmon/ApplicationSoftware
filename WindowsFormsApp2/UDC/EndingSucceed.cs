@@ -50,14 +50,16 @@ namespace WindowsFormsApp2.UDC
             timer1.Start();
         }
 
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             counter++;
 
-            if (counter > len)
+            if (counter >= len)
             {
-                counter = 0;
-                lblEndingSucceed.Text = "";
+                timer1.Enabled = false;
+                System.Threading.Thread.Sleep(5000);
+                (this.Parent as InitMenu).CallMainMenu();
             }
 
             lblEndingSucceed.Text = txt.Substring(0, counter);

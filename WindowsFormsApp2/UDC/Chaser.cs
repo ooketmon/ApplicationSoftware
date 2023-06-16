@@ -18,6 +18,9 @@ namespace WindowsFormsApp2
         private int currentImageIndex = 0;
         Dictionary<Keys, Image[]> directionImages = new Dictionary<Keys, Image[]>();
         string WhoAmI = "";
+
+        bool hitTestwithPlayer = false;
+
         public Chaser()
         {
             InitializeComponent();
@@ -170,15 +173,24 @@ namespace WindowsFormsApp2
                 }
                 if(x is PictureBox && (string)x.Name == "player")
                 {
-                    if (x.Bounds.IntersectsWith(this.Bounds))
+                    if (x.Bounds.IntersectsWith(this.Bounds) && !hitTestwithPlayer)
                     {
+                        hitTestwithPlayer = true;
                         switch (WhoAmI)
                         {
                             case "guardman":
                                 //경비원 붙잡힐 때 엔딩
+                                if (!(this.Parent as Floor1UDC).convHitTest)
+                                {
+                                    (this.Parent.Parent as InitMenu).CallEndingFail("guardman");
+                                }
                                 break;
                             case "assistant":
                                 //행정조교 붙잡힐 때 엔딩
+                                if(!(this.Parent as Floor8UDC).playerisOnElevator) 
+                                {
+                                    (this.Parent.Parent as InitMenu).CallEndingFail("assistant");
+                                }
                                 break;
                         }
                     }

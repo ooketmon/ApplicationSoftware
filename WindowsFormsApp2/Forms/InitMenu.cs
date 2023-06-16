@@ -114,7 +114,6 @@ namespace WindowsFormsApp2
                 case 8:
                     tmp = new Floor8UDC();
                     this.Controls.Add(tmp);
-
                     break;
             }
             tmp.Focus();
@@ -366,6 +365,18 @@ namespace WindowsFormsApp2
                 assistantChasing = true;
                 guardmanChasing = true;
             }
+        }
+
+        public void CallEndingFail(string whoCatchMe)
+        {
+            this.Controls.Clear();
+            this.Controls.Add(new EndingFail(whoCatchMe));
+        }
+
+        public void CallEndingSucceed()
+        {
+            this.Controls.Clear();
+            this.Controls.Add(new EndingSucceed());
         }
 
     }

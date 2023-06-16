@@ -87,6 +87,7 @@
             this.Name = "Pc_lock";
             this.Size = new System.Drawing.Size(849, 573);
             this.Load += new System.EventHandler(this.Pc_lock_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Pc_lock_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.img_lock)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

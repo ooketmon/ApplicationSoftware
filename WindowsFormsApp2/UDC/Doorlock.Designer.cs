@@ -102,6 +102,7 @@
             this.Name = "Doorlock";
             this.Size = new System.Drawing.Size(292, 435);
             this.Load += new System.EventHandler(this.Doorlock_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Doorlock_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

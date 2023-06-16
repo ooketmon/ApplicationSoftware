@@ -17,7 +17,7 @@ namespace WindowsFormsApp2
         private PlayerControl playerMove;
         bool playerisOnStair = false;
         bool playerisOnElevator = false;
-        bool convHitTest = false;
+        public bool convHitTest = false;
 
 
         bool wood1_Hit = false;
@@ -147,7 +147,7 @@ namespace WindowsFormsApp2
                 chaser.BackColor = Color.Transparent;
                 chaser.BringToFront();
                 chaser_timer = new System.Threading.Timer(Chaser_Move_CallBack);
-                chaser_timer.Change(0, 50);
+                chaser_timer.Change(0, 45);
 
                 chaser_wood_timer1 = new System.Threading.Timer(ChaserWoodCallBack1);
                 chaser_wood_timer1.Change(0, 10);
@@ -277,6 +277,7 @@ namespace WindowsFormsApp2
                     {
                         convHitTest = true;
                         //엔딩화면으로 넘어가는 코드
+                        (this.Parent as InitMenu).CallEndingSucceed();
                     }
                 }
 
@@ -320,19 +321,6 @@ namespace WindowsFormsApp2
 
         }
 
-        /*
-        public void Chaser_Move_CallBack(object status)
-        {
-            BeginInvoke(new chase_delegate(
-                () =>
-                {
-                    if (chaser != null)
-                    {
-                        chaser.chaser_move();
-                    }
-                }));
-        }
-        */
 
         /*
          아래는 쇼파 움직임 표현 코드

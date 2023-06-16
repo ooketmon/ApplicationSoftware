@@ -88,6 +88,7 @@
             this.Name = "puzzle";
             this.Size = new System.Drawing.Size(451, 486);
             this.Load += new System.EventHandler(this.puzzle_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.puzzle_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
