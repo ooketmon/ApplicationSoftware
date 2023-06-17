@@ -270,7 +270,18 @@ namespace WindowsFormsApp2
                         return;
                     }
                 }
-                if(x is PictureBox && (string)x.Tag == "entrance")
+                if (x is PictureBox && (string)x.Tag == "lock3")
+                {
+                    if (player.Bounds.IntersectsWith(x.Bounds) && !convHitTest)
+                    {
+                        convHitTest = true;
+                        player.Left -= 50;
+                        MessageBox.Show("여기는 잠겨있다.");
+                        convHitTest = false;
+                        return;
+                    }
+                }
+                if (x is PictureBox && (string)x.Tag == "entrance")
                 {
                     if(player.Bounds.IntersectsWith(x.Bounds) && !convHitTest && !(this.Parent as InitMenu).guardmanChasing)
                     {

@@ -231,9 +231,10 @@
             this.pictureBox44.Location = new System.Drawing.Point(1170, 415);
             this.pictureBox44.Name = "pictureBox44";
             this.pictureBox44.Size = new System.Drawing.Size(45, 65);
+            this.pictureBox44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox44.TabIndex = 123;
             this.pictureBox44.TabStop = false;
-            this.pictureBox44.Tag = "lock2";
+            this.pictureBox44.Tag = "lock3";
             // 
             // pictureBox43
             // 
@@ -274,7 +275,7 @@
             this.picturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picturebox.TabIndex = 120;
             this.picturebox.TabStop = false;
-            this.picturebox.Tag = "lock2";
+            this.picturebox.Tag = "lock3";
             // 
             // pictureBox37
             // 
