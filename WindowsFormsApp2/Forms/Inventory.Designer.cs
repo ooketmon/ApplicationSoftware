@@ -41,15 +41,15 @@
             this.Papper_1 = new System.Windows.Forms.PictureBox();
             this.box_papper_4 = new System.Windows.Forms.PictureBox();
             this.box_key = new System.Windows.Forms.PictureBox();
-            this.box_test_4 = new System.Windows.Forms.PictureBox();
             this.box_test_3 = new System.Windows.Forms.PictureBox();
-            this.box_test_2 = new System.Windows.Forms.PictureBox();
             this.box_test_1 = new System.Windows.Forms.PictureBox();
             this.box_safecard = new System.Windows.Forms.PictureBox();
             this.box_poster = new System.Windows.Forms.PictureBox();
             this.box_cardkey = new System.Windows.Forms.PictureBox();
-            this.box_papper_3 = new System.Windows.Forms.PictureBox();
             this.box_papper_1 = new System.Windows.Forms.PictureBox();
+            this.box_test_2 = new System.Windows.Forms.PictureBox();
+            this.box_papper_3 = new System.Windows.Forms.PictureBox();
+            this.box_test_4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Test_4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Key_4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Safecard_4)).BeginInit();
@@ -63,15 +63,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.Papper_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_papper_4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_key)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.box_test_4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_test_3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.box_test_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_test_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_safecard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_poster)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_cardkey)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.box_papper_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_papper_1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.box_test_2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.box_papper_3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.box_test_4)).BeginInit();
             this.SuspendLayout();
             // 
             // Test_4
@@ -247,107 +247,132 @@
             // box_papper_4
             // 
             this.box_papper_4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.box_papper_4.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.inventory;
             this.box_papper_4.Location = new System.Drawing.Point(12, 273);
             this.box_papper_4.Name = "box_papper_4";
             this.box_papper_4.Size = new System.Drawing.Size(75, 75);
             this.box_papper_4.TabIndex = 11;
             this.box_papper_4.TabStop = false;
+            this.box_papper_4.Tag = "inv_square";
             // 
             // box_key
             // 
             this.box_key.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.box_key.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.inventory;
             this.box_key.Location = new System.Drawing.Point(186, 273);
             this.box_key.Name = "box_key";
             this.box_key.Size = new System.Drawing.Size(75, 75);
             this.box_key.TabIndex = 10;
             this.box_key.TabStop = false;
-            // 
-            // box_test_4
-            // 
-            this.box_test_4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.box_test_4.Location = new System.Drawing.Point(273, 273);
-            this.box_test_4.Name = "box_test_4";
-            this.box_test_4.Size = new System.Drawing.Size(75, 75);
-            this.box_test_4.TabIndex = 9;
-            this.box_test_4.TabStop = false;
+            this.box_key.Tag = "inv_square";
             // 
             // box_test_3
             // 
             this.box_test_3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.box_test_3.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.inventory;
             this.box_test_3.Location = new System.Drawing.Point(273, 186);
             this.box_test_3.Name = "box_test_3";
             this.box_test_3.Size = new System.Drawing.Size(75, 75);
             this.box_test_3.TabIndex = 7;
             this.box_test_3.TabStop = false;
-            // 
-            // box_test_2
-            // 
-            this.box_test_2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.box_test_2.Location = new System.Drawing.Point(12, 99);
-            this.box_test_2.Name = "box_test_2";
-            this.box_test_2.Size = new System.Drawing.Size(75, 75);
-            this.box_test_2.TabIndex = 6;
-            this.box_test_2.TabStop = false;
-            this.box_test_2.Click += new System.EventHandler(this.box_test_2_Click);
+            this.box_test_3.Tag = "inv_square";
             // 
             // box_test_1
             // 
             this.box_test_1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.box_test_1.Image = global::WindowsFormsApp2.Properties.Resources.inventory;
             this.box_test_1.Location = new System.Drawing.Point(99, 12);
             this.box_test_1.Name = "box_test_1";
             this.box_test_1.Size = new System.Drawing.Size(75, 75);
             this.box_test_1.TabIndex = 5;
             this.box_test_1.TabStop = false;
+            this.box_test_1.Tag = "inv_square";
             // 
             // box_safecard
             // 
             this.box_safecard.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.box_safecard.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.inventory;
             this.box_safecard.Location = new System.Drawing.Point(99, 273);
             this.box_safecard.Name = "box_safecard";
             this.box_safecard.Size = new System.Drawing.Size(75, 75);
             this.box_safecard.TabIndex = 4;
             this.box_safecard.TabStop = false;
+            this.box_safecard.Tag = "inv_square";
             // 
             // box_poster
             // 
             this.box_poster.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.box_poster.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.inventory;
             this.box_poster.Location = new System.Drawing.Point(186, 186);
             this.box_poster.Name = "box_poster";
             this.box_poster.Size = new System.Drawing.Size(75, 75);
             this.box_poster.TabIndex = 3;
             this.box_poster.TabStop = false;
+            this.box_poster.Tag = "inv_square";
             // 
             // box_cardkey
             // 
             this.box_cardkey.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.box_cardkey.Image = global::WindowsFormsApp2.Properties.Resources.inventory;
             this.box_cardkey.Location = new System.Drawing.Point(99, 186);
             this.box_cardkey.Name = "box_cardkey";
             this.box_cardkey.Size = new System.Drawing.Size(75, 75);
             this.box_cardkey.TabIndex = 2;
             this.box_cardkey.TabStop = false;
-            // 
-            // box_papper_3
-            // 
-            this.box_papper_3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.box_papper_3.Location = new System.Drawing.Point(12, 186);
-            this.box_papper_3.Name = "box_papper_3";
-            this.box_papper_3.Size = new System.Drawing.Size(75, 75);
-            this.box_papper_3.TabIndex = 1;
-            this.box_papper_3.TabStop = false;
+            this.box_cardkey.Tag = "inv_square";
             // 
             // box_papper_1
             // 
             this.box_papper_1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.box_papper_1.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.inventory;
+            this.box_papper_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.box_papper_1.Location = new System.Drawing.Point(12, 12);
             this.box_papper_1.Name = "box_papper_1";
             this.box_papper_1.Size = new System.Drawing.Size(75, 75);
             this.box_papper_1.TabIndex = 0;
             this.box_papper_1.TabStop = false;
+            this.box_papper_1.Tag = "inv_square";
+            // 
+            // box_test_2
+            // 
+            this.box_test_2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.box_test_2.Image = global::WindowsFormsApp2.Properties.Resources.inventory;
+            this.box_test_2.Location = new System.Drawing.Point(12, 99);
+            this.box_test_2.Name = "box_test_2";
+            this.box_test_2.Size = new System.Drawing.Size(75, 75);
+            this.box_test_2.TabIndex = 6;
+            this.box_test_2.TabStop = false;
+            this.box_test_2.Tag = "inv_square";
+            this.box_test_2.Click += new System.EventHandler(this.box_test_2_Click);
+            // 
+            // box_papper_3
+            // 
+            this.box_papper_3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.box_papper_3.Image = global::WindowsFormsApp2.Properties.Resources.inventory;
+            this.box_papper_3.Location = new System.Drawing.Point(12, 186);
+            this.box_papper_3.Name = "box_papper_3";
+            this.box_papper_3.Size = new System.Drawing.Size(75, 75);
+            this.box_papper_3.TabIndex = 1;
+            this.box_papper_3.TabStop = false;
+            this.box_papper_3.Tag = "inv_square";
+            // 
+            // box_test_4
+            // 
+            this.box_test_4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.box_test_4.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.inventory;
+            this.box_test_4.Location = new System.Drawing.Point(273, 273);
+            this.box_test_4.Name = "box_test_4";
+            this.box_test_4.Size = new System.Drawing.Size(75, 75);
+            this.box_test_4.TabIndex = 9;
+            this.box_test_4.TabStop = false;
+            this.box_test_4.Tag = "inv_square";
             // 
             // Inventory
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.BackgroundImage = global::WindowsFormsApp2.Properties.Resources.inventory_background;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(357, 448);
             this.ControlBox = false;
             this.Controls.Add(this.Test_4);
@@ -372,6 +397,7 @@
             this.Controls.Add(this.box_test_2);
             this.Controls.Add(this.box_papper_3);
             this.Controls.Add(this.box_test_4);
+            this.DoubleBuffered = true;
             this.Location = new System.Drawing.Point(50, 50);
             this.MaximumSize = new System.Drawing.Size(375, 495);
             this.MinimumSize = new System.Drawing.Size(375, 495);
@@ -392,15 +418,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.Papper_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_papper_4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_key)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.box_test_4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_test_3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.box_test_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_test_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_safecard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_poster)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_cardkey)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.box_papper_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.box_papper_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.box_test_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.box_papper_3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.box_test_4)).EndInit();
             this.ResumeLayout(false);
 
         }

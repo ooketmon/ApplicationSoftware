@@ -615,6 +615,8 @@
     <None Include="resources\Floor2-8\IMG_09092.PNG" />
     <None Include="resources\Floor2-8\IMG_09091.PNG" />
     <None Include="resources\Floor2-8\IMG_0910.PNG" />
+    <None Include="resources\inventory.png" />
+    <None Include="resources\inventory_background.png" />
     <Content Include="resources\Player\IMG_0809.PNG" />
     <Content Include="resources\Player\IMG_0811.PNG" />
     <Content Include="resources\Player\IMG_0812.PNG" />
