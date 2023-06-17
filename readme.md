@@ -1,13 +1,10 @@
-# Readme.md
-
 ## 🌟 A+을 받고 싶어서… 교수님의 시험지를 훔침! 🌟
 <p align="center"> <img src= "https://github.com/ooketmon/ApplicationSoftware/assets/49191920/4a268037-8b52-4a02-accc-3d4841a20e66" width=500> </p>
-
 <!--<p align="center">  2023학년도 1학기 광운대학교 소프트웨어학부 응용소프트웨어 실습 과목 8조 %팀 </b> 프로젝트입니다. </p>-->
 
 
 
-> 🧑‍💻 개발 인원 : 2023-1 광운대학교 소프트웨어학부 응용소프트웨어실습 8조 %팀 <br> 🕰️ 개발 기간 : 23.04월 - 23.06월
+> 🧑‍💻 개발 인원 : 2023-1 광운대학교 소프트웨어학부 응용소프트웨어실습 8조 %팀 <br> 🕰️ 개발 기간 : 23.03.30 - 06.18
 
 ### 🧑 프로젝트 참여 인원 소개
 - 응용소프트웨어실습 목요일 분반 8조 %팀 구성원들
@@ -37,9 +34,7 @@
 Windows Form과 .NET 6.0 을 사용하여 만든 게임입니다. 게임 기획에 대한 부분은 [GameDesign](https://github.com/ooketmon/ApplicationSoftware/blob/main/project/GameDesign.md)에서 찾으실 수 있습니다.
 
 ### ✏️시놉시스  
-개강이 엊그제 같은데 눈깜빡해보니 기말고사 기간! 살면서 50번도 넘게 치른 시험이지만 이번에도 시험 범위도 다 못 훑고 치러가게 생겼다.   
-어디 좋은 방법이 없을까 생각하던 중 '나'는 교수님의 연구실에 들어가서 시험지를 훔쳐 A+을 받아야겠다는 계획을 세운다.   
-이를 위해 새빛관에 몰래 잠입하는데.. 과연 건물 곳곳에 숨겨진 시험지를 찾아 잘 탈출할 수 잇을까 ?
+여느때와 다름 없이 다가온 시험기간,, 공부를 하지 않은 ‘나’는 성적을 잘 받고 싶어 온갖 궁리를 하다 결국 교수님의 시험지를 훔친다는 대담한 계획을 세우게 된다. 목표를 이루기 위해 한밤중 새빛관에 잠입하지만, 연구실과 강의실은 잠겨있다. 잘 하면 풀릴 것 같기도 하고,, 그러나 마냥 쉬운 일은 없는 일. 새빛관 곳곳에는 나 말고도 다른 사람들이 있었다. ‘나’는 과연 해가 뜨기전에 성공적으로 시험지를 훔쳐 좋은 성적을 받을 수 있을까 ?
 
 ### ✅게임 진행 구조
 <img src = "https://github.com/ooketmon/ApplicationSoftware/assets/49191920/7784b018-527b-4aab-be59-8e0fc8591a31" width=600>>
@@ -53,6 +48,10 @@ Windows Form과 .NET 6.0 을 사용하여 만든 게임입니다. 게임 기획�
 | <img width="400" src="https://github.com/ooketmon/ApplicationSoftware/assets/49191920/2a77266a-3b03-4fc3-90d2-e78a15671cb2"/>   |  <img width="400" src="https://github.com/ooketmon/ApplicationSoftware/assets/49191920/acf08277-55e1-4621-9d5c-7124b0e07bd9"/>     |
 | 인벤토리   |  단서찾기/문제풀이 화면   |  
 | <img height="250" src="https://github.com/ooketmon/ApplicationSoftware/assets/49191920/e132da8a-b9e9-4198-901b-d7cc7f45214f"/>   |  <img width="400" src="https://github.com/ooketmon/ApplicationSoftware/assets/49191920/c6514964-4840-421d-b949-617c494e52d7"/>     |
+
+### 🎦 시연영상  
+[![시연영상](http://img.youtube.com/vi/9ditu0FQiXE/0.jpg)](https://youtu.be/9ditu0FQiXE)   
+이미지를 클릭하면 시연영상으로 연결됩니다.
 
 ### 🖱️공략집
 보다 원활한 플레이를 위하여 공략집을 제공합니다. [여기](https://github.com/ooketmon/ApplicationSoftware/tree/main/project)서 각 층에 대한 설정을 보실 수 있습니다.
