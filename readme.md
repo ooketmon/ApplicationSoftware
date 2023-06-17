@@ -52,7 +52,7 @@ Windows Form과 .NET 6.0 을 사용하여 만든 게임입니다. 게임 기획�
 | 대화창   |  메인플레이 화면   |  
 | <img width="400" src="https://github.com/ooketmon/ApplicationSoftware/assets/49191920/2a77266a-3b03-4fc3-90d2-e78a15671cb2"/>   |  <img width="400" src="https://github.com/ooketmon/ApplicationSoftware/assets/49191920/acf08277-55e1-4621-9d5c-7124b0e07bd9"/>     |
 | 인벤토리   |  단서찾기/문제풀이 화면   |  
-| <img height="250" src="https://github.com/ooketmon/ApplicationSoftware/assets/49191920/8d7e9236-0804-47eb-8ae6-ae38fe6a559f"/>   |  <img width="400" src="https://github.com/ooketmon/ApplicationSoftware/assets/49191920/c6514964-4840-421d-b949-617c494e52d7"/>     |
+| <img height="250" src="https://github.com/ooketmon/ApplicationSoftware/assets/49191920/e132da8a-b9e9-4198-901b-d7cc7f45214f"/>   |  <img width="400" src="https://github.com/ooketmon/ApplicationSoftware/assets/49191920/c6514964-4840-421d-b949-617c494e52d7"/>     |
 
 ### 🖱️공략집
 보다 원활한 플레이를 위하여 공략집을 제공합니다. [여기](https://github.com/ooketmon/ApplicationSoftware/tree/main/project)서 각 층에 대한 설정을 보실 수 있습니다.
