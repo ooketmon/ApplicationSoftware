@@ -866,7 +866,6 @@
             this.Controls.Add(this.pictureBox47);
             this.Controls.Add(this.pictureBox46);
             this.Controls.Add(this.pictureBox44);
-            this.Controls.Add(this.pictureBox42);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox40);
             this.Controls.Add(this.pictureBox31);
@@ -925,6 +924,7 @@
             this.Controls.Add(this.pictureBox43);
             this.Controls.Add(this.pictureBox48);
             this.Controls.Add(this.back_elevator);
+            this.Controls.Add(this.pictureBox42);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(0);
             this.MaximumSize = new System.Drawing.Size(1200, 800);
