@@ -83,8 +83,8 @@ namespace WindowsFormsApp2
 
                         }
 
-                        player.Left = elevator.Left + 100;
-                        player.Top = elevator.Top;
+                        player.Left = elevator.Left + 220;
+                        player.Top = elevator.Top + 80;
                     }
                     this.Controls.Add(tmp);
                     break;
@@ -128,7 +128,7 @@ namespace WindowsFormsApp2
                             {
                                 player = c;
                             }
-                            if (c.Name.Contains("elevator"))
+                            if (c.Name.Contains("back_elevator"))
                             {
                                 elevator = c;
                             }
